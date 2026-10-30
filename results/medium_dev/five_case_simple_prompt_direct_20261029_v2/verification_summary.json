@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "A",
+      "status": "completed",
+      "before_count": 116,
+      "after_count": 123,
+      "operation_counts": {
+        "UPDATE": 5,
+        "ADD": 7
+      },
+      "plan_counts": {
+        "NONE": 49,
+        "UPDATE": 5,
+        "ADD": 7
+      },
+      "none_dispatch": 49,
+      "invalid_id_skips": [],
+      "native_errors": [],
+      "llm_calls": 2,
+      "embedding_calls": 20,
+      "elapsed_seconds": 66.47190753399627,
+      "full_update_prompt_reconstructed_exact": true,
+      "history_and_persistence_verified": true
+    },
+    {
+      "case": "B",
+      "status": "completed_with_errors",
+      "before_count": 94,
+      "after_count": 108,
+      "operation_counts": {
+        "UPDATE": 3,
+        "ADD": 14
+      },
+      "plan_counts": {
+        "UPDATE": 5,
+        "NONE": 34,
+        "ADD": 14
+      },
+      "none_dispatch": 34,
+      "invalid_id_skips": [
+        {
+          "id": "44",
+          "event": "UPDATE",
+          "text": "Goal is to become a renowned director known for historically accurate films"
+        },
+        {
+          "id": "45",
+          "event": "UPDATE",
+          "text": "Wants to inspire others through historically accurate storytelling"
+        }
+      ],
+      "native_errors": [
+        "Error processing memory action: {'id': '44', 'text': 'Goal is to become a renowned director known for historically accurate films', 'event': 'UPDATE', 'old_memory': 'Goal is to create historically accurate films'}, Error: '44'",
+        "Error processing memory action: {'id': '45', 'text': 'Wants to inspire others through historically accurate storytelling', 'event': 'UPDATE', 'old_memory': 'Hopes films inspire appreciation of history and its nuances'}, Error: '45'"
+      ],
+      "llm_calls": 2,
+      "embedding_calls": 23,
+      "elapsed_seconds": 59.473635449016,
+      "full_update_prompt_reconstructed_exact": true,
+      "history_and_persistence_verified": true
+    },
+    {
+      "case": "C",
+      "status": "completed_with_errors",
+      "before_count": 114,
+      "after_count": 127,
+      "operation_counts": {
+        "UPDATE": 11,
+        "ADD": 13
+      },
+      "plan_counts": {
+        "NONE": 40,
+        "UPDATE": 12,
+        "ADD": 13
+      },
+      "none_dispatch": 40,
+      "invalid_id_skips": [
+        {
+          "id": "62",
+          "event": "UPDATE",
+          "text": "Innovative and actively thinking"
+        }
+      ],
+      "native_errors": [
+        "Error processing memory action: {'id': '62', 'text': 'Innovative and actively thinking', 'event': 'UPDATE', 'old_memory': 'Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive'}, Error: '62'"
+      ],
+      "llm_calls": 2,
+      "embedding_calls": 26,
+      "elapsed_seconds": 68.61659729399253,
+      "full_update_prompt_reconstructed_exact": true,
+      "history_and_persistence_verified": true
+    },
+    {
+      "case": "target_7",
+      "status": "completed",
+      "before_count": 107,
+      "after_count": 114,
+      "operation_counts": {
+        "UPDATE": 24,
+        "ADD": 7
+      },
+      "plan_counts": {
+        "NONE": 21,
+        "UPDATE": 24,
+        "ADD": 7
+      },
+      "none_dispatch": 21,
+      "invalid_id_skips": [],
+      "native_errors": [],
+      "llm_calls": 2,
+      "embedding_calls": 31,
+      "elapsed_seconds": 65.9032659259974,
+      "full_update_prompt_reconstructed_exact": true,
+      "history_and_persistence_verified": true
+    },
+    {
+      "case": "target_10",
+      "status": "completed_with_errors",
+      "before_count": 72,
+      "after_count": 84,
+      "operation_counts": {
+        "UPDATE": 11,
+        "ADD": 12
+      },
+      "plan_counts": {
+        "NONE": 27,
+        "UPDATE": 12,
+        "ADD": 12
+      },
+      "none_dispatch": 27,
+      "invalid_id_skips": [
+        {
+          "id": "43",
+          "event": "UPDATE",
+          "text": "Hobby is reading historical biographies"
+        }
+      ],
+      "native_errors": [
+        "Error processing memory action: {'id': '43', 'text': 'Hobby is reading historical biographies', 'event': 'UPDATE', 'old_memory': 'Likes historical biographies because they vividly capture the lives and impact of historical figures'}, Error: '43'"
+      ],
+      "llm_calls": 2,
+      "embedding_calls": 30,
+      "elapsed_seconds": 57.24826721003046,
+      "full_update_prompt_reconstructed_exact": true,
+      "history_and_persistence_verified": true
+    }
+  ],
+  "experiment_calls": {
+    "llm": 10,
+    "embedding": 130
+  },
+  "experiment_usage": {
+    "llm": {
+      "completion_tokens": 12870,
+      "prompt_tokens": 30718,
+      "total_tokens": 43588
+    },
+    "embedding": {
+      "prompt_tokens": 1721,
+      "total_tokens": 1721
+    }
+  },
+  "connectivity_calls": {
+    "llm": 1,
+    "embedding": 1
+  },
+  "failed_run_hashes_unchanged": 161,
+  "baseline_and_backup_hashes_unchanged": true,
+  "credential_scan": "PASS",
+  "update_model_inputs_exact": true
+}

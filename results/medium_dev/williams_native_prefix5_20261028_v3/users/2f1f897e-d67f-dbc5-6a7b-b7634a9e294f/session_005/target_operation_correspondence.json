@@ -1,0 +1,252 @@
+[
+  {
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004",
+    "related_target_ids": [],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "dataset_line_one_based": 1,
+      "original_session_index_zero_based": 4,
+      "memory_point_index_zero_based": 0,
+      "annotation_index": 1,
+      "chronological_session_ordinal_one_based": 5,
+      "annotation_json_pointer": "/sessions/4/memory_points/0",
+      "annotation": {
+        "index": 1,
+        "memory_content": "Martin has modified his pet preference from Labradors to Golden Retrievers due to their gentle nature and adaptability.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Martin Mark Pets I like: Dogs, especially Labradors",
+          "Martin Mark Pets I like Dogs, especially Labradors reason: I love Labradors because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit."
+        ],
+        "timestamp": "Jan 06, 2026, 20:12:29",
+        "importance": 0.75
+      },
+      "category": "partial_attribute",
+      "old_proposition": "Martin likes dogs, especially Labradors.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 2,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/2/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 06, 2025, 22:44:54",
+          "quote": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/4/dialogue/0",
+          "role": "user",
+          "timestamp": "Jan 06, 2026, 17:48:59",
+          "quote": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive."
+        },
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/4/dialogue/2",
+          "role": "user",
+          "timestamp": "Jan 06, 2026, 17:55:15",
+          "quote": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions."
+        },
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/4/dialogue/6",
+          "role": "user",
+          "timestamp": "Jan 06, 2026, 18:02:45",
+          "quote": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well."
+        },
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 12,
+          "json_pointer": "/sessions/4/dialogue/12",
+          "role": "user",
+          "timestamp": "Jan 06, 2026, 18:17:19",
+          "quote": "I'm optimistic about how this new preference will fit into my life."
+        }
+      ],
+      "expected_new_state": "Martin now appreciates Golden Retrievers for gentleness and adaptability.",
+      "allowed_modification_scope": "Add or refine the dog-breed preference; retain other pets.",
+      "interpretation_note": "Dialogue supports a new preference but does not explicitly revoke liking Labradors; do not require its deletion.",
+      "candidate_protections": [
+        {
+          "proposition": "Martin’s highest education is Bachelor in Public Health.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 18:50:22",
+            "quote": "Of course. My highest education level is Bachelor, and my major is Public Health."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Martin’s father is a retired doctor.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 19:38:09",
+            "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Martin likes yoga for flexibility and mental clarity.",
+          "evidence": {
+            "session_index_zero_based": 2,
+            "message_index_zero_based": 6,
+            "json_pointer": "/sessions/2/dialogue/6",
+            "role": "user",
+            "timestamp": "Sep 06, 2025, 22:52:30",
+            "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being. I don't like boxing due to its aggressive nature and the potential for physical harm, which contradicts my focus on health. I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth. I dislike automobile racing, I am not fond of automobile racing because of the environmental impact and the lack of physical engagement. I like yoga, because yoga helps me maintain flexibility and mental clarity, which are essential for my demanding job in the medical field."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004",
+      "related_target_ids": []
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "369ba144-28ab-4a62-9029-130aed19cf89",
+      "48052369-b295-4435-b636-e54e57d1ceef",
+      "4eca623b-1c47-48c9-affe-d9cc139812e4",
+      "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+      "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+      "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+      "90d20f0f-949d-44ec-938a-8d0b611d2059",
+      "99805cd4-1742-4f47-bd28-054b333c006c",
+      "9b768fe2-b39f-42e7-b754-b881c32165a5",
+      "a04985bf-b835-46a6-aff8-ae2fed526bca",
+      "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "a734e783-f463-46cf-abc9-e193f68acee8",
+      "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+      "bd52b893-fb10-4022-a5e2-812302934c8d",
+      "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 88,
+        "id": "0077e822-4464-4fcd-9acc-b77406badd35",
+        "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+        "old_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        "new_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:09:28.576093-07:00",
+        "updated_at": "2026-10-28T00:10:57.866909-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 89,
+        "id": "ebc6ca08-9310-4da7-89cf-fec889e636b5",
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "old_memory": null,
+        "new_memory": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:10:58.626183-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      88,
+      89
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Martin’s highest education is Bachelor in Public Health.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 18:50:22",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Public Health."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Martin’s father is a retired doctor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 19:38:09",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Martin likes yoga for flexibility and mental clarity.",
+        "evidence": {
+          "session_index_zero_based": 2,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/2/dialogue/6",
+          "role": "user",
+          "timestamp": "Sep 06, 2025, 22:52:30",
+          "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being. I don't like boxing due to its aggressive nature and the potential for physical harm, which contradicts my focus on health. I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth. I dislike automobile racing, I am not fond of automobile racing because of the environmental impact and the lack of physical engagement. I like yoga, because yoga helps me maintain flexibility and mental clarity, which are essential for my demanding job in the medical field."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/input.json",
+      "before.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+      "after.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/after.json",
+      "extracted_facts.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/extracted_facts.json",
+      "recall_candidates.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/recall_candidates.json",
+      "update_model_io.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/update_model_io.json",
+      "full_operation_plan.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/full_operation_plan.json",
+      "execution_results.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/execution_results.json",
+      "actual_operations.json": "users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/actual_operations.json"
+    }
+  }
+]

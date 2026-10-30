@@ -1,0 +1,12 @@
+[
+  {
+    "time": "2026-10-22T20:33:03.626929+08:00",
+    "phase": "session_02",
+    "level": "ERROR",
+    "logger": "__main__",
+    "message": "Final database verification failed",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/scripts/local_smoke.py\", line 489, in main\n    assert persisted == final[\"database_points_with_vectors\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "resolved": true,
+    "resolution": "Offline persistence verification passed with float32 vector tolerance and exact ID/payload equality. Initial overly strict vector comparison corrected; no model calls repeated."
+  }
+]

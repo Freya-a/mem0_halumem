@@ -1,0 +1,647 @@
+[
+  {
+    "sequence": 38,
+    "time": "2026-10-29T11:06:09.317607+08:00",
+    "phase": "target_7",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\nAdditional memory preservation guidance:\nWhen updating or deleting, preserve independently supported details that are not contradicted by the new facts. If only one attribute changes, retain unrelated attributes and relevant historical context. When a fact has clearly changed, represent the new state and distinguish the earlier state as historical when appropriate; do not assume an exact date. Do not invent facts. If an old detail is not contradicted but cannot be safely merged, retain it separately rather than discard it. Apply the existing ADD, UPDATE, DELETE, and NONE operations and existing ID and JSON rules.\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Name is Martin'}, {'id': '1', 'text': \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\"}, {'id': '2', 'text': 'Date of birth is 1996-08-02'}, {'id': '3', 'text': 'Gender is Male'}, {'id': '4', 'text': \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\"}, {'id': '5', 'text': 'Looking for a new job with better work-life balance'}, {'id': '6', 'text': 'Career change is being considered due to impact on mental health'}, {'id': '7', 'text': 'Committed to balancing professional responsibilities with personal health and creativity'}, {'id': '8', 'text': 'Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life'}, {'id': '9', 'text': 'Considers work-life balance a key factor in evaluating new roles'}, {'id': '10', 'text': 'Experiencing mental strain from current role and considering career change for mental health'}, {'id': '11', 'text': 'Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions'}, {'id': '12', 'text': 'Employed in the healthcare industry'}, {'id': '13', 'text': 'Works in consulting; background in public health'}, {'id': '14', 'text': 'Interested in non-profit organizations focused on healthcare access'}, {'id': '15', 'text': 'Career goals are aligned with humanitarian values'}, {'id': '16', 'text': 'Financial stability is secondary to humanitarian goals and personal well-being'}, {'id': '17', 'text': 'Wants to improve healthcare for underserved communities'}, {'id': '18', 'text': 'Aims to refine skills through mentorship to increase impact in healthcare'}, {'id': '19', 'text': 'Measures success by impact on healthcare access, personal health, and creativity'}, {'id': '20', 'text': 'Uses tools and collaboration to inspire ideas and overcome creative blocks'}, {'id': '21', 'text': 'Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values'}, {'id': '22', 'text': 'Values alignment of work with personal values'}, {'id': '23', 'text': 'Values flexibility and growth in future roles'}, {'id': '24', 'text': 'Values open communication and innovative thinking in workplace culture'}, {'id': '25', 'text': 'Believes flexibility in job is crucial for managing professional responsibilities and personal well-being'}, {'id': '26', 'text': 'Thrives in collaborative environments'}, {'id': '27', 'text': 'Seeks mentorship from individuals who value innovation and empathy'}, {'id': '28', 'text': 'Susan provides encouragement and helps maintain focus on goals'}, {'id': '29', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic'}, {'id': '30', 'text': 'Grateful for support from Susan, Daniel, and Joshua'}, {'id': '31', 'text': \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\"}, {'id': '32', 'text': 'Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning'}, {'id': '33', 'text': 'Daniel offers insights that push thinking outside the box and foster innovation'}, {'id': '34', 'text': 'Uses debate skills to encourage open dialogue and idea exchange'}, {'id': '35', 'text': \"Joshua's collaborative approach has positively influenced leadership style\"}, {'id': '36', 'text': 'Adapts leadership style through active listening and openness to feedback'}, {'id': '37', 'text': 'Leads by setting clear expectations and trusting team autonomy'}, {'id': '38', 'text': 'Has secured interviews and job offers through social network'}, {'id': '39', 'text': 'Interested in opportunities with higher salary as part of career transition'}, {'id': '40', 'text': 'Plans to network with professionals in the non-profit sector'}, {'id': '41', 'text': 'Has empathetic nature that helps understand diverse perspectives'}, {'id': '42', 'text': \"Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career\"}, {'id': '43', 'text': \"Motivated by family's medical background and desire to promote well-being globally\"}, {'id': '44', 'text': 'Primary career motivation is improving healthcare access for underserved communities'}, {'id': '45', 'text': 'Aspires to create a ripple effect of positive change in the broader healthcare landscape'}, {'id': '46', 'text': 'Passionate about improving health outcomes'}, {'id': '47', 'text': 'Plans to enroll in online courses and seek mentorship from industry leaders'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Name is Martin', 'Has transitioned to a new role with healthier work-life balance', 'New role improves mental health and reduces stress from previous job', 'Works in the healthcare sector', 'Has humanitarian care goals', 'Has artistic goals', 'Values creativity in professional work', 'Has a strong support network including friends and colleagues', 'Key supporters are Susan, Daniel, and Joshua', 'Susan provided encouragement and helped maintain focus on goals', 'Daniel offered insights that encouraged thinking outside the box', 'Joshua influenced leadership style through collaborative approach', 'Social network played a crucial role in career transition', 'Grateful for journey, lessons learned, and opportunities received', 'Motivated by potential for impact and desire to make a difference', 'Eager to embrace future challenges and possibilities', 'Sees new role as empowering, transformative, and a perfect fit']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "1": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "2": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "3": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "4": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "5": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+      "6": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "7": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+      "8": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+      "9": "0db431ab-6638-42b8-b509-d715dbb286bc",
+      "10": "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+      "11": "58589cd3-36bc-439f-8003-d6416735b820",
+      "12": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "13": "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+      "14": "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+      "15": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "16": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+      "17": "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+      "18": "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+      "19": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+      "20": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+      "21": "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a",
+      "22": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "23": "14992e21-9f5b-4357-809b-6aabebc55480",
+      "24": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+      "25": "eb152c7d-17df-4b3a-8a99-9f6211614e2a",
+      "26": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "27": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "28": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "29": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "30": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "31": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "32": "4efe5474-e307-4e34-99be-de45431d2fd2",
+      "33": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "34": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "35": "3588abfc-5f64-40cf-b71d-53d7108d0375",
+      "36": "369ba144-28ab-4a62-9029-130aed19cf89",
+      "37": "a0dc7abe-082a-4f7d-b89b-4dce8012809b",
+      "38": "bc4366a1-d9e6-4e96-84fe-6247e96ef3d6",
+      "39": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+      "40": "07c06494-0e65-46b5-83a4-077c41bab41a",
+      "41": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "42": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "43": "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+      "44": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "45": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+      "46": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "47": "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b"
+    },
+    "native_new_facts": [
+      "Name is Martin",
+      "Has transitioned to a new role with healthier work-life balance",
+      "New role improves mental health and reduces stress from previous job",
+      "Works in the healthcare sector",
+      "Has humanitarian care goals",
+      "Has artistic goals",
+      "Values creativity in professional work",
+      "Has a strong support network including friends and colleagues",
+      "Key supporters are Susan, Daniel, and Joshua",
+      "Susan provided encouragement and helped maintain focus on goals",
+      "Daniel offered insights that encouraged thinking outside the box",
+      "Joshua influenced leadership style through collaborative approach",
+      "Social network played a crucial role in career transition",
+      "Grateful for journey, lessons learned, and opportunities received",
+      "Motivated by potential for impact and desire to make a difference",
+      "Eager to embrace future challenges and possibilities",
+      "Sees new role as empowering, transformative, and a perfect fit"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Name is Martin"
+      },
+      {
+        "id": "1",
+        "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting"
+      },
+      {
+        "id": "2",
+        "text": "Date of birth is 1996-08-02"
+      },
+      {
+        "id": "3",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "4",
+        "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+      },
+      {
+        "id": "5",
+        "text": "Looking for a new job with better work-life balance"
+      },
+      {
+        "id": "6",
+        "text": "Career change is being considered due to impact on mental health"
+      },
+      {
+        "id": "7",
+        "text": "Committed to balancing professional responsibilities with personal health and creativity"
+      },
+      {
+        "id": "8",
+        "text": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life"
+      },
+      {
+        "id": "9",
+        "text": "Considers work-life balance a key factor in evaluating new roles"
+      },
+      {
+        "id": "10",
+        "text": "Experiencing mental strain from current role and considering career change for mental health"
+      },
+      {
+        "id": "11",
+        "text": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions"
+      },
+      {
+        "id": "12",
+        "text": "Employed in the healthcare industry"
+      },
+      {
+        "id": "13",
+        "text": "Works in consulting; background in public health"
+      },
+      {
+        "id": "14",
+        "text": "Interested in non-profit organizations focused on healthcare access"
+      },
+      {
+        "id": "15",
+        "text": "Career goals are aligned with humanitarian values"
+      },
+      {
+        "id": "16",
+        "text": "Financial stability is secondary to humanitarian goals and personal well-being"
+      },
+      {
+        "id": "17",
+        "text": "Wants to improve healthcare for underserved communities"
+      },
+      {
+        "id": "18",
+        "text": "Aims to refine skills through mentorship to increase impact in healthcare"
+      },
+      {
+        "id": "19",
+        "text": "Measures success by impact on healthcare access, personal health, and creativity"
+      },
+      {
+        "id": "20",
+        "text": "Uses tools and collaboration to inspire ideas and overcome creative blocks"
+      },
+      {
+        "id": "21",
+        "text": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values"
+      },
+      {
+        "id": "22",
+        "text": "Values alignment of work with personal values"
+      },
+      {
+        "id": "23",
+        "text": "Values flexibility and growth in future roles"
+      },
+      {
+        "id": "24",
+        "text": "Values open communication and innovative thinking in workplace culture"
+      },
+      {
+        "id": "25",
+        "text": "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being"
+      },
+      {
+        "id": "26",
+        "text": "Thrives in collaborative environments"
+      },
+      {
+        "id": "27",
+        "text": "Seeks mentorship from individuals who value innovation and empathy"
+      },
+      {
+        "id": "28",
+        "text": "Susan provides encouragement and helps maintain focus on goals"
+      },
+      {
+        "id": "29",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+      },
+      {
+        "id": "30",
+        "text": "Grateful for support from Susan, Daniel, and Joshua"
+      },
+      {
+        "id": "31",
+        "text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management"
+      },
+      {
+        "id": "32",
+        "text": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning"
+      },
+      {
+        "id": "33",
+        "text": "Daniel offers insights that push thinking outside the box and foster innovation"
+      },
+      {
+        "id": "34",
+        "text": "Uses debate skills to encourage open dialogue and idea exchange"
+      },
+      {
+        "id": "35",
+        "text": "Joshua's collaborative approach has positively influenced leadership style"
+      },
+      {
+        "id": "36",
+        "text": "Adapts leadership style through active listening and openness to feedback"
+      },
+      {
+        "id": "37",
+        "text": "Leads by setting clear expectations and trusting team autonomy"
+      },
+      {
+        "id": "38",
+        "text": "Has secured interviews and job offers through social network"
+      },
+      {
+        "id": "39",
+        "text": "Interested in opportunities with higher salary as part of career transition"
+      },
+      {
+        "id": "40",
+        "text": "Plans to network with professionals in the non-profit sector"
+      },
+      {
+        "id": "41",
+        "text": "Has empathetic nature that helps understand diverse perspectives"
+      },
+      {
+        "id": "42",
+        "text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career"
+      },
+      {
+        "id": "43",
+        "text": "Motivated by family's medical background and desire to promote well-being globally"
+      },
+      {
+        "id": "44",
+        "text": "Primary career motivation is improving healthcare access for underserved communities"
+      },
+      {
+        "id": "45",
+        "text": "Aspires to create a ripple effect of positive change in the broader healthcare landscape"
+      },
+      {
+        "id": "46",
+        "text": "Passionate about improving health outcomes"
+      },
+      {
+        "id": "47",
+        "text": "Plans to enroll in online courses and seek mentorship from industry leaders"
+      }
+    ]
+  },
+  {
+    "sequence": 39,
+    "time": "2026-10-29T11:07:04.619356+08:00",
+    "phase": "target_7",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Name is Martin\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Date of birth is 1996-08-02\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Has transitioned to a new role with healthier work-life balance\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Looking for a new job with better work-life balance\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"New role improves mental health and reduces stress from previous job\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Career change is being considered due to impact on mental health\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Committed to balancing professional responsibilities with personal health and creativity\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Committed to balancing professional responsibilities with personal health and creativity\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Considers work-life balance a key factor in evaluating new roles\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Considers work-life balance a key factor in evaluating new roles\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"New role improves mental health and reduces stress from previous job\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Experiencing mental strain from current role and considering career change for mental health\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"New role improves mental health and reduces stress from previous job\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Works in the healthcare sector\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Employed in the healthcare industry\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Works in consulting; background in public health\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Works in consulting; background in public health\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Interested in non-profit organizations focused on healthcare access\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Career goals are aligned with humanitarian values\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Career goals are aligned with humanitarian values\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Financial stability is secondary to humanitarian goals and personal well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Wants to improve healthcare for underserved communities\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Aims to refine skills through mentorship to increase impact in healthcare\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Measures success by impact on healthcare access, personal health, and creativity\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Measures success by impact on healthcare access, personal health, and creativity\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Uses tools and collaboration to inspire ideas and overcome creative blocks\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Uses tools and collaboration to inspire ideas and overcome creative blocks\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Values alignment of work with personal values\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Values flexibility and growth in future roles\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Values open communication and innovative thinking in workplace culture\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Believes flexibility in job is crucial for managing professional responsibilities and personal well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Thrives in collaborative environments\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Seeks mentorship from individuals who value innovation and empathy\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Susan provides encouragement and helps maintain focus on goals\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Susan provides encouragement and helps maintain focus on goals\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Has a strong support network including friends and colleagues\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Grateful for support from Susan, Daniel, and Joshua\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Daniel offers insights that push thinking outside the box and foster innovation\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Daniel offers insights that push thinking outside the box and foster innovation\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Uses debate skills to encourage open dialogue and idea exchange\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Joshua's collaborative approach has positively influenced leadership style\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Joshua's collaborative approach has positively influenced leadership style\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Adapts leadership style through active listening and openness to feedback\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Leads by setting clear expectations and trusting team autonomy\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Social network played a crucial role in career transition\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has secured interviews and job offers through social network\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Interested in opportunities with higher salary as part of career transition\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Plans to network with professionals in the non-profit sector\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Has empathetic nature that helps understand diverse perspectives\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Motivated by family's medical background and desire to promote well-being globally\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Motivated by family's medical background and desire to promote well-being globally\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Primary career motivation is improving healthcare access for underserved communities\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Aspires to create a ripple effect of positive change in the broader healthcare landscape\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Passionate about improving health outcomes\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Plans to enroll in online courses and seek mentorship from industry leaders\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Has humanitarian care goals\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Has artistic goals\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"50\",\n            \"text\": \"Values creativity in professional work\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"51\",\n            \"text\": \"Key supporters are Susan, Daniel, and Joshua\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"52\",\n            \"text\": \"Grateful for journey, lessons learned, and opportunities received\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"53\",\n            \"text\": \"Motivated by potential for impact and desire to make a difference\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"54\",\n            \"text\": \"Eager to embrace future challenges and possibilities\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"55\",\n            \"text\": \"Sees new role as empowering, transformative, and a perfect fit\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Name is Martin",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+          "event": "UPDATE",
+          "old_memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting"
+        },
+        {
+          "id": "2",
+          "text": "Date of birth is 1996-08-02",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Gender is Male",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "event": "UPDATE",
+          "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+        },
+        {
+          "id": "5",
+          "text": "Has transitioned to a new role with healthier work-life balance",
+          "event": "UPDATE",
+          "old_memory": "Looking for a new job with better work-life balance"
+        },
+        {
+          "id": "6",
+          "text": "New role improves mental health and reduces stress from previous job",
+          "event": "UPDATE",
+          "old_memory": "Career change is being considered due to impact on mental health"
+        },
+        {
+          "id": "7",
+          "text": "Committed to balancing professional responsibilities with personal health and creativity",
+          "event": "UPDATE",
+          "old_memory": "Committed to balancing professional responsibilities with personal health and creativity"
+        },
+        {
+          "id": "8",
+          "text": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+          "event": "UPDATE",
+          "old_memory": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life"
+        },
+        {
+          "id": "9",
+          "text": "Considers work-life balance a key factor in evaluating new roles",
+          "event": "UPDATE",
+          "old_memory": "Considers work-life balance a key factor in evaluating new roles"
+        },
+        {
+          "id": "10",
+          "text": "New role improves mental health and reduces stress from previous job",
+          "event": "UPDATE",
+          "old_memory": "Experiencing mental strain from current role and considering career change for mental health"
+        },
+        {
+          "id": "11",
+          "text": "New role improves mental health and reduces stress from previous job",
+          "event": "UPDATE",
+          "old_memory": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions"
+        },
+        {
+          "id": "12",
+          "text": "Works in the healthcare sector",
+          "event": "UPDATE",
+          "old_memory": "Employed in the healthcare industry"
+        },
+        {
+          "id": "13",
+          "text": "Works in consulting; background in public health",
+          "event": "UPDATE",
+          "old_memory": "Works in consulting; background in public health"
+        },
+        {
+          "id": "14",
+          "text": "Interested in non-profit organizations focused on healthcare access",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Career goals are aligned with humanitarian values",
+          "event": "UPDATE",
+          "old_memory": "Career goals are aligned with humanitarian values"
+        },
+        {
+          "id": "16",
+          "text": "Financial stability is secondary to humanitarian goals and personal well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Wants to improve healthcare for underserved communities",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "Aims to refine skills through mentorship to increase impact in healthcare",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Measures success by impact on healthcare access, personal health, and creativity",
+          "event": "UPDATE",
+          "old_memory": "Measures success by impact on healthcare access, personal health, and creativity"
+        },
+        {
+          "id": "20",
+          "text": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+          "event": "UPDATE",
+          "old_memory": "Uses tools and collaboration to inspire ideas and overcome creative blocks"
+        },
+        {
+          "id": "21",
+          "text": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+          "event": "UPDATE",
+          "old_memory": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values"
+        },
+        {
+          "id": "22",
+          "text": "Values alignment of work with personal values",
+          "event": "NONE"
+        },
+        {
+          "id": "23",
+          "text": "Values flexibility and growth in future roles",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Values open communication and innovative thinking in workplace culture",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "26",
+          "text": "Thrives in collaborative environments",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Seeks mentorship from individuals who value innovation and empathy",
+          "event": "NONE"
+        },
+        {
+          "id": "28",
+          "text": "Susan provides encouragement and helps maintain focus on goals",
+          "event": "UPDATE",
+          "old_memory": "Susan provides encouragement and helps maintain focus on goals"
+        },
+        {
+          "id": "29",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+          "event": "NONE"
+        },
+        {
+          "id": "30",
+          "text": "Has a strong support network including friends and colleagues",
+          "event": "UPDATE",
+          "old_memory": "Grateful for support from Susan, Daniel, and Joshua"
+        },
+        {
+          "id": "31",
+          "text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+          "event": "UPDATE",
+          "old_memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management"
+        },
+        {
+          "id": "32",
+          "text": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Daniel offers insights that push thinking outside the box and foster innovation",
+          "event": "UPDATE",
+          "old_memory": "Daniel offers insights that push thinking outside the box and foster innovation"
+        },
+        {
+          "id": "34",
+          "text": "Uses debate skills to encourage open dialogue and idea exchange",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Joshua's collaborative approach has positively influenced leadership style",
+          "event": "UPDATE",
+          "old_memory": "Joshua's collaborative approach has positively influenced leadership style"
+        },
+        {
+          "id": "36",
+          "text": "Adapts leadership style through active listening and openness to feedback",
+          "event": "NONE"
+        },
+        {
+          "id": "37",
+          "text": "Leads by setting clear expectations and trusting team autonomy",
+          "event": "NONE"
+        },
+        {
+          "id": "38",
+          "text": "Social network played a crucial role in career transition",
+          "event": "UPDATE",
+          "old_memory": "Has secured interviews and job offers through social network"
+        },
+        {
+          "id": "39",
+          "text": "Interested in opportunities with higher salary as part of career transition",
+          "event": "NONE"
+        },
+        {
+          "id": "40",
+          "text": "Plans to network with professionals in the non-profit sector",
+          "event": "NONE"
+        },
+        {
+          "id": "41",
+          "text": "Has empathetic nature that helps understand diverse perspectives",
+          "event": "NONE"
+        },
+        {
+          "id": "42",
+          "text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+          "event": "NONE"
+        },
+        {
+          "id": "43",
+          "text": "Motivated by family's medical background and desire to promote well-being globally",
+          "event": "UPDATE",
+          "old_memory": "Motivated by family's medical background and desire to promote well-being globally"
+        },
+        {
+          "id": "44",
+          "text": "Primary career motivation is improving healthcare access for underserved communities",
+          "event": "NONE"
+        },
+        {
+          "id": "45",
+          "text": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+          "event": "NONE"
+        },
+        {
+          "id": "46",
+          "text": "Passionate about improving health outcomes",
+          "event": "NONE"
+        },
+        {
+          "id": "47",
+          "text": "Plans to enroll in online courses and seek mentorship from industry leaders",
+          "event": "NONE"
+        },
+        {
+          "id": "48",
+          "text": "Has humanitarian care goals",
+          "event": "ADD"
+        },
+        {
+          "id": "49",
+          "text": "Has artistic goals",
+          "event": "ADD"
+        },
+        {
+          "id": "50",
+          "text": "Values creativity in professional work",
+          "event": "ADD"
+        },
+        {
+          "id": "51",
+          "text": "Key supporters are Susan, Daniel, and Joshua",
+          "event": "ADD"
+        },
+        {
+          "id": "52",
+          "text": "Grateful for journey, lessons learned, and opportunities received",
+          "event": "ADD"
+        },
+        {
+          "id": "53",
+          "text": "Motivated by potential for impact and desire to make a difference",
+          "event": "ADD"
+        },
+        {
+          "id": "54",
+          "text": "Eager to embrace future challenges and possibilities",
+          "event": "ADD"
+        },
+        {
+          "id": "55",
+          "text": "Sees new role as empowering, transformative, and a perfect fit",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "1": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "2": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "3": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "4": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "5": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+      "6": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "7": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+      "8": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+      "9": "0db431ab-6638-42b8-b509-d715dbb286bc",
+      "10": "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+      "11": "58589cd3-36bc-439f-8003-d6416735b820",
+      "12": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "13": "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+      "14": "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+      "15": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "16": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+      "17": "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+      "18": "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+      "19": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+      "20": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+      "21": "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a",
+      "22": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "23": "14992e21-9f5b-4357-809b-6aabebc55480",
+      "24": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+      "25": "eb152c7d-17df-4b3a-8a99-9f6211614e2a",
+      "26": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "27": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "28": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "29": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "30": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "31": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "32": "4efe5474-e307-4e34-99be-de45431d2fd2",
+      "33": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "34": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "35": "3588abfc-5f64-40cf-b71d-53d7108d0375",
+      "36": "369ba144-28ab-4a62-9029-130aed19cf89",
+      "37": "a0dc7abe-082a-4f7d-b89b-4dce8012809b",
+      "38": "bc4366a1-d9e6-4e96-84fe-6247e96ef3d6",
+      "39": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+      "40": "07c06494-0e65-46b5-83a4-077c41bab41a",
+      "41": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "42": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "43": "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+      "44": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "45": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+      "46": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "47": "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b"
+    },
+    "elapsed_seconds": 55.3010233490495
+  }
+]

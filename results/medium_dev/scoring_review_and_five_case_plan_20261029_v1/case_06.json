@@ -1,0 +1,179 @@
+{
+  "number": 6,
+  "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s001_q001",
+  "kind": "qa",
+  "automatic_label": "Correct",
+  "selection_sha256": "07d867e4c1c0af0b9da3036e41be47c19add887fcf472deadf620e82f19e8782",
+  "decision_llm_assisted": "存疑",
+  "review_rationale": "回答否认失业且称经济稳定，参考答案还明确包含月收入 15700 USD；判词以“高收入”推断稳定并称没有遗漏，但收入数额不等于必然经济稳定，且严格按参考答案衡量是否省略数字值得复核。",
+  "caveat": "原话另说收入使其能舒适储蓄，但评分器只可依参考和 key points 判定；不得把额外原话当评分器已有证据。",
+  "source": {
+    "uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session_index_zero_based": 1,
+    "session_ordinal_one_based": 2,
+    "question_index_zero_based": 1,
+    "question": {
+      "question": "Is Martin Mark unemployed and struggling financially as of Sep 06, 2025?",
+      "answer": "No, Martin Mark is employed with a monthly income of 15700 USD.",
+      "evidence": [
+        {
+          "memory_content": "Martin Mark's employment status is Employed",
+          "memory_type": "Persona Memory"
+        },
+        {
+          "memory_content": "Martin Mark's monthly income is 15700 USD",
+          "memory_type": "Persona Memory"
+        }
+      ],
+      "difficulty": "medium",
+      "question_type": "Memory Conflict"
+    },
+    "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/after.json",
+    "snapshot_sha256": "7260b0cc5daff1cc939a6de837d66adb8ce22dcd391803b9f672785e71b3a12d",
+    "retrieval_and_response_status": "not_recorded_in_original_run"
+  },
+  "session_start": "Sep 05, 2025, 22:32:20",
+  "session_end": "Sep 06, 2025, 01:02:20",
+  "source_dialogue_highlights": [
+    {
+      "session_index_zero_based": 1,
+      "message_index_zero_based": 2,
+      "role": "user",
+      "content": "I am currently Employed, working in the healthcare industry. I work at Huaxin Consulting as a director. My monthly income is 15700 USD, and I currently have 43700 USD in savings. As the director at Huaxin Consulting, I lead initiatives to enhance healthcare services and promote well-being across all aspects of life. My passion for improving health outcomes drives me to innovate and collaborate with various stakeholders. The financial compensation is rewarding, allowing me to save comfortably while investing in my personal and professional growth.",
+      "timestamp": "Sep 05, 2025, 22:35:55",
+      "dialogue_turn": 1
+    }
+  ],
+  "source_full_session_input": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/input.json",
+  "relevant_complete_source_data_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/HaluMem/data/HaluMem-Medium.jsonl",
+  "retrieved_hits": [
+    {
+      "id": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "memory": "Name is Martin Mark",
+      "timestamp": "2026-10-28T00:07:46.364495-07:00",
+      "score": 0.7192877128640469
+    },
+    {
+      "id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "timestamp": "2026-10-28T00:08:17.237490-07:00",
+      "score": 0.44925748400497334
+    },
+    {
+      "id": "ef0c4933-39c8-40b5-a118-a5677130bdcb",
+      "memory": "Has 43700 USD in savings",
+      "timestamp": "2026-10-28T00:08:17.182483-07:00",
+      "score": 0.4468842718461794
+    },
+    {
+      "id": "50aed4f4-9f64-4824-8f3d-15fc8e939ebb",
+      "memory": "Age is 29",
+      "timestamp": "2026-10-28T00:07:46.390053-07:00",
+      "score": 0.4144411601359149
+    },
+    {
+      "id": "b0112296-bf99-441e-aa14-a3a447a06836",
+      "memory": "Monthly income is 15700 USD",
+      "timestamp": "2026-10-28T00:08:17.174290-07:00",
+      "score": 0.389348636408411
+    },
+    {
+      "id": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "memory": "Date of birth is 1996-08-02",
+      "timestamp": "2026-10-28T00:07:46.381734-07:00",
+      "score": 0.3482830207967092
+    },
+    {
+      "id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "memory": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+      "timestamp": "2026-10-28T00:07:46.457874-07:00",
+      "score": 0.342968069291366
+    },
+    {
+      "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "timestamp": "2026-10-28T00:08:17.229415-07:00",
+      "score": 0.3371292365228717
+    },
+    {
+      "id": "ba086990-e950-4245-aacc-44844940d397",
+      "memory": "Mother was born on 1963-08-02, nurse with a passion for community health",
+      "timestamp": "2026-10-28T00:07:46.466288-07:00",
+      "score": 0.32028716517874417
+    },
+    {
+      "id": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "memory": "Employed in the healthcare industry",
+      "timestamp": "2026-10-28T00:08:17.157288-07:00",
+      "score": 0.31720574180307193
+    },
+    {
+      "id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "memory": "No children",
+      "timestamp": "2026-10-28T00:07:46.449330-07:00",
+      "score": 0.31388001519067354
+    },
+    {
+      "id": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "memory": "Gender is Male",
+      "timestamp": "2026-10-28T00:07:46.373235-07:00",
+      "score": 0.3038318388446825
+    },
+    {
+      "id": "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c",
+      "memory": "Both parents are alive",
+      "timestamp": "2026-10-28T00:07:46.440901-07:00",
+      "score": 0.2805035602221117
+    },
+    {
+      "id": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "timestamp": "2026-10-28T00:08:17.245442-07:00",
+      "score": 0.27602031768242535
+    },
+    {
+      "id": "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7",
+      "memory": "Lives in Columbus",
+      "timestamp": "2026-10-28T00:07:46.398786-07:00",
+      "score": 0.2708951436872076
+    },
+    {
+      "id": "13a9a169-1fbc-4b0c-976d-b0d21209526d",
+      "memory": "Works at Huaxin Consulting as a director",
+      "timestamp": "2026-10-28T00:08:17.165847-07:00",
+      "score": 0.27049041084074565
+    },
+    {
+      "id": "58589cd3-36bc-439f-8003-d6416735b820",
+      "memory": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+      "timestamp": "2026-10-28T00:08:17.221631-07:00",
+      "score": 0.2698024188180711
+    },
+    {
+      "id": "a734e783-f463-46cf-abc9-e193f68acee8",
+      "memory": "Physical condition is normal, no chronic diseases",
+      "timestamp": "2026-10-28T00:08:17.205621-07:00",
+      "score": 0.2552658226270088
+    },
+    {
+      "id": "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8",
+      "memory": "Hope to provide healthcare access to 1 million people in underserved areas",
+      "timestamp": "2026-10-28T00:07:46.499968-07:00",
+      "score": 0.25495467391700416
+    },
+    {
+      "id": "49f70983-6dd1-45ec-ab75-12dbf70045f7",
+      "memory": "MBTI personality type is ENTP",
+      "timestamp": "2026-10-28T00:07:46.424209-07:00",
+      "score": 0.23001575078006128
+    }
+  ],
+  "system_response": "No — employed and financially stable.",
+  "official_judge_result": {
+    "reasoning": "The Memory System Response states 'No — employed and financially stable.' The Key Memory Points confirm Martin Mark is 'Employed' and has a 'monthly income of 15700 USD', which supports employment and implies financial stability (no indication of struggle). The Reference Answer is 'No, Martin Mark is employed with a monthly income of 15700 USD.' While the system response omits the specific income figure, it does not contradict any Key Memory Point or the Reference Answer; 'financially stable' is a reasonable inference from a high monthly income (15700 USD) and employment status, and no Key Memory Point prohibits such qualitative summarization. The core factual claim — that Martin Mark is not unemployed and not struggling financially — is fully supported and semantically equivalent to the Reference Answer's 'No' and its justification. No hallucinated facts are present, and no required element (e.g., employment status) is omitted.",
+    "evaluation_result": "Correct"
+  },
+  "snapshot_sha256": "7260b0cc5daff1cc939a6de837d66adb8ce22dcd391803b9f672785e71b3a12d",
+  "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/after.json",
+  "official_record_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/official_eval_development_20261029_v1/records.jsonl"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "tests": {
+    "llm": {
+      "status": "ok",
+      "dimensions": null,
+      "elapsed_seconds": 0.910202341969125,
+      "model_returned": "qwen-plus",
+      "usage": {
+        "completion_tokens": 2,
+        "prompt_tokens": 12,
+        "total_tokens": 14,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0
+        }
+      }
+    },
+    "embedding": {
+      "status": "ok",
+      "dimensions": 1024,
+      "elapsed_seconds": 0.7140535560320131,
+      "model_returned": "text-embedding-v4",
+      "usage": {
+        "prompt_tokens": 5,
+        "total_tokens": 5
+      }
+    }
+  },
+  "calls_attempted": 2,
+  "finished_at": "2026-10-29T10:25:21.832004+08:00"
+}

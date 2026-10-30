@@ -1,0 +1,522 @@
+[
+  {
+    "sequence": 184,
+    "time": "2026-10-22T21:14:15.427312+08:00",
+    "phase": "session_04",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Name is Martin Mark'}, {'id': '1', 'text': \"Has a colleague named MartinezDaniel (referred to as 'Daniel') who specializes in healthcare consulting\"}, {'id': '2', 'text': 'Date of birth is 1996-08-02'}, {'id': '3', 'text': 'Gender is Male'}, {'id': '4', 'text': \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\"}, {'id': '5', 'text': 'Works at Huaxin Consulting as a director'}, {'id': '6', 'text': \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\"}, {'id': '7', 'text': 'Life goal is to establish a global health initiative to improve access to healthcare for underserved communities'}, {'id': '8', 'text': 'Monthly income is 15700 USD'}, {'id': '9', 'text': 'Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions'}, {'id': '10', 'text': 'Mental health is mildly abnormal but has no diagnosed mental health issues'}, {'id': '11', 'text': 'Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field'}, {'id': '12', 'text': 'Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health'}, {'id': '13', 'text': 'Passionate about improving health outcomes'}, {'id': '14', 'text': 'Aims to provide healthcare access to 1 million people in underserved areas'}, {'id': '15', 'text': \"Motivated by family's medical background and desire to promote well-being globally\"}, {'id': '16', 'text': 'Leads initiatives to enhance healthcare services and promote well-being'}, {'id': '17', 'text': 'Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being'}, {'id': '18', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic'}, {'id': '19', 'text': 'Likes jazz for its improvisational style and ability to stimulate creativity'}, {'id': '20', 'text': 'MBTI personality type is ENTP'}, {'id': '21', 'text': 'Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession'}, {'id': '22', 'text': 'Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle'}, {'id': '23', 'text': 'Dislikes violent video games because they promote aggression, contrary to values of peace and well-being'}, {'id': '24', 'text': 'Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth'}, {'id': '25', 'text': 'Employed in the healthcare industry'}, {'id': '26', 'text': 'Likes classical music for relaxation and focus, as it creates a peaceful atmosphere'}, {'id': '27', 'text': 'Likes herbal teas for their calming properties and health benefits, supporting overall well-being'}, {'id': '28', 'text': 'Likes wellness retreats because they offer relaxation and activities promoting physical and mental health, aligning with lifestyle'}, {'id': '29', 'text': 'Likes ambient music for unwinding after a busy day, as it helps relax and recharge'}, {'id': '30', 'text': 'Physical condition is normal with no chronic diseases'}, {'id': '31', 'text': 'Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance'}, {'id': '32', 'text': 'Likes casual business attire for work as it balances professionalism and comfort'}, {'id': '33', 'text': 'Highest education level is Bachelor'}, {'id': '34', 'text': 'Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Name is Martin', 'Current role is director at Huaxin Consulting', 'Career change is being considered due to impact on mental health', 'Primary career motivation is improving healthcare access for underserved communities', 'Values humanitarian goals and personal well-being over financial stability', 'Thrives in environments with open communication and innovative thinking', 'Believes in collaboration as a key driver of innovation and conflict resolution', 'Has led projects resulting in innovative healthcare solutions', 'Practices yoga for mental clarity and flexibility', 'Prioritizes regular exercise and mindfulness as non-negotiable self-care activities', 'Plans to discuss work-life balance during job interviews', 'Aims to enhance leadership skills and deepen understanding of global health initiatives', 'Intends to enroll in online courses and seek mentorship from industry leaders', 'Shares knowledge through workshops and collaborative projects', 'Has empathetic nature and strong debate skills that support inclusive dialogue', 'Sets clear goals and stays adaptable while remaining grounded in core values', 'Envisions leading a team that develops solutions to enhance healthcare access and promote well-being in underserved communities', 'Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning', 'Leads by setting clear expectations and trusting team autonomy', 'Adapts leadership style through active listening and openness to feedback', 'Hopes to inspire a ripple effect of positive change in the broader healthcare landscape']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "4f5fdedd-66dc-4d61-990e-3660923fe44b",
+      "1": "d9985830-9fe7-4c2d-bde5-63b6ca15ff2e",
+      "2": "fc003473-821f-4553-b8e3-8e685bde8169",
+      "3": "e2b54053-802e-4274-8c53-959952fdf771",
+      "4": "ee31bf34-9c4c-41a5-b0ce-3dff16257094",
+      "5": "caad6800-03dd-4b74-bc09-7a1dbb2a5315",
+      "6": "d9abc169-48ca-419c-89e9-8d549f212965",
+      "7": "984a6ea9-04f3-4b66-907d-11dd1f817061",
+      "8": "0ccafd56-d99c-467e-b5ba-8c51a6f74006",
+      "9": "9a10ef7e-b165-4362-a1b3-f93c35f601a3",
+      "10": "77e035ac-87b9-4cbb-b806-45a0c660aeb4",
+      "11": "ed88894a-0679-413e-a6dd-8590b1dfc3ec",
+      "12": "7271ec7f-affb-42af-9baa-0a6aa8d7bec6",
+      "13": "2a17f70c-f57f-4ada-a43d-c0c680bb61ec",
+      "14": "7e0762ed-317b-43b3-8bb7-baee5cce740a",
+      "15": "fd6f5208-4c8a-4935-b4b0-32ac568ca6da",
+      "16": "fc34b088-2c58-4063-a9ee-b57a85c97901",
+      "17": "b855916e-8930-491e-a514-4744cf0660b5",
+      "18": "4f326f12-6bb7-420d-a427-c0d74d343e60",
+      "19": "ff7600e5-14b0-4225-b1c8-e6066cbb05b0",
+      "20": "12f54bc5-debd-4c4a-84b9-5a5f8f652788",
+      "21": "23b8e3f5-f6c8-4167-8c7d-cdc25600c541",
+      "22": "bdda0afe-a09a-4585-8fff-9a44b6bcd51c",
+      "23": "8128ae53-0a62-44cb-8369-50c53d67545c",
+      "24": "34f71c2a-0316-48fa-9002-ba8a20cd8cd0",
+      "25": "eb71b67b-7837-40ac-b777-87a760861d3a",
+      "26": "b038fd5f-5f02-4173-bf16-5b694bdddbb7",
+      "27": "a16fd1dc-39c1-4d1c-b7a6-b12406f23673",
+      "28": "dc5523cf-0469-4e12-a80c-f33e40567bee",
+      "29": "d6ea8f3c-9587-49d1-9a59-7b0d44409c18",
+      "30": "2abea898-86b3-4151-80f0-467cf12b502d",
+      "31": "6dcb3123-291d-4c53-aa6d-07e9d1a4c016",
+      "32": "88021172-76d5-42d3-a621-05f959f7afd5",
+      "33": "e2cdbdba-1415-4025-8f5a-51f08668a84e",
+      "34": "621ed9f4-d2fe-4e61-bf27-1098a99cd6a3"
+    },
+    "native_new_facts": [
+      "Name is Martin",
+      "Current role is director at Huaxin Consulting",
+      "Career change is being considered due to impact on mental health",
+      "Primary career motivation is improving healthcare access for underserved communities",
+      "Values humanitarian goals and personal well-being over financial stability",
+      "Thrives in environments with open communication and innovative thinking",
+      "Believes in collaboration as a key driver of innovation and conflict resolution",
+      "Has led projects resulting in innovative healthcare solutions",
+      "Practices yoga for mental clarity and flexibility",
+      "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+      "Plans to discuss work-life balance during job interviews",
+      "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+      "Intends to enroll in online courses and seek mentorship from industry leaders",
+      "Shares knowledge through workshops and collaborative projects",
+      "Has empathetic nature and strong debate skills that support inclusive dialogue",
+      "Sets clear goals and stays adaptable while remaining grounded in core values",
+      "Envisions leading a team that develops solutions to enhance healthcare access and promote well-being in underserved communities",
+      "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+      "Leads by setting clear expectations and trusting team autonomy",
+      "Adapts leadership style through active listening and openness to feedback",
+      "Hopes to inspire a ripple effect of positive change in the broader healthcare landscape"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Name is Martin Mark"
+      },
+      {
+        "id": "1",
+        "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') who specializes in healthcare consulting"
+      },
+      {
+        "id": "2",
+        "text": "Date of birth is 1996-08-02"
+      },
+      {
+        "id": "3",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "4",
+        "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+      },
+      {
+        "id": "5",
+        "text": "Works at Huaxin Consulting as a director"
+      },
+      {
+        "id": "6",
+        "text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management"
+      },
+      {
+        "id": "7",
+        "text": "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities"
+      },
+      {
+        "id": "8",
+        "text": "Monthly income is 15700 USD"
+      },
+      {
+        "id": "9",
+        "text": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions"
+      },
+      {
+        "id": "10",
+        "text": "Mental health is mildly abnormal but has no diagnosed mental health issues"
+      },
+      {
+        "id": "11",
+        "text": "Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field"
+      },
+      {
+        "id": "12",
+        "text": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health"
+      },
+      {
+        "id": "13",
+        "text": "Passionate about improving health outcomes"
+      },
+      {
+        "id": "14",
+        "text": "Aims to provide healthcare access to 1 million people in underserved areas"
+      },
+      {
+        "id": "15",
+        "text": "Motivated by family's medical background and desire to promote well-being globally"
+      },
+      {
+        "id": "16",
+        "text": "Leads initiatives to enhance healthcare services and promote well-being"
+      },
+      {
+        "id": "17",
+        "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+      },
+      {
+        "id": "18",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+      },
+      {
+        "id": "19",
+        "text": "Likes jazz for its improvisational style and ability to stimulate creativity"
+      },
+      {
+        "id": "20",
+        "text": "MBTI personality type is ENTP"
+      },
+      {
+        "id": "21",
+        "text": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession"
+      },
+      {
+        "id": "22",
+        "text": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle"
+      },
+      {
+        "id": "23",
+        "text": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being"
+      },
+      {
+        "id": "24",
+        "text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth"
+      },
+      {
+        "id": "25",
+        "text": "Employed in the healthcare industry"
+      },
+      {
+        "id": "26",
+        "text": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere"
+      },
+      {
+        "id": "27",
+        "text": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being"
+      },
+      {
+        "id": "28",
+        "text": "Likes wellness retreats because they offer relaxation and activities promoting physical and mental health, aligning with lifestyle"
+      },
+      {
+        "id": "29",
+        "text": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge"
+      },
+      {
+        "id": "30",
+        "text": "Physical condition is normal with no chronic diseases"
+      },
+      {
+        "id": "31",
+        "text": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance"
+      },
+      {
+        "id": "32",
+        "text": "Likes casual business attire for work as it balances professionalism and comfort"
+      },
+      {
+        "id": "33",
+        "text": "Highest education level is Bachelor"
+      },
+      {
+        "id": "34",
+        "text": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge"
+      }
+    ]
+  },
+  {
+    "sequence": 185,
+    "time": "2026-10-22T21:14:59.697863+08:00",
+    "phase": "session_04",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Name is Martin\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Name is Martin Mark\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') who specializes in healthcare consulting\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Date of birth is 1996-08-02\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Current role is director at Huaxin Consulting\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Works at Huaxin Consulting as a director\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Primary career motivation is improving healthcare access for underserved communities\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Life goal is to establish a global health initiative to improve access to healthcare for underserved communities\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Monthly income is 15700 USD\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Career change is being considered due to impact on mental health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Values humanitarian goals and personal well-being over financial stability\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Practices yoga for mental clarity and flexibility\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Passionate about improving health outcomes\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Aims to provide healthcare access to 1 million people in underserved areas\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Motivated by family's medical background and desire to promote well-being globally\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Thrives in environments with open communication and innovative thinking\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Likes jazz for its improvisational style and ability to stimulate creativity\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"MBTI personality type is ENTP\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Dislikes violent video games because they promote aggression, contrary to values of peace and well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Employed in the healthcare industry\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Likes classical music for relaxation and focus, as it creates a peaceful atmosphere\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Likes herbal teas for their calming properties and health benefits, supporting overall well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Likes wellness retreats because they offer relaxation and activities promoting physical and mental health, aligning with lifestyle\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Likes ambient music for unwinding after a busy day, as it helps relax and recharge\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Physical condition is normal with no chronic diseases\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Likes casual business attire for work as it balances professionalism and comfort\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Highest education level is Bachelor\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Believes in collaboration as a key driver of innovation and conflict resolution\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Has led projects resulting in innovative healthcare solutions\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Prioritizes regular exercise and mindfulness as non-negotiable self-care activities\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Plans to discuss work-life balance during job interviews\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Aims to enhance leadership skills and deepen understanding of global health initiatives\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Intends to enroll in online courses and seek mentorship from industry leaders\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Shares knowledge through workshops and collaborative projects\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Has empathetic nature and strong debate skills that support inclusive dialogue\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Sets clear goals and stays adaptable while remaining grounded in core values\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Envisions leading a team that develops solutions to enhance healthcare access and promote well-being in underserved communities\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Leads by setting clear expectations and trusting team autonomy\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Adapts leadership style through active listening and openness to feedback\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Hopes to inspire a ripple effect of positive change in the broader healthcare landscape\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Name is Martin",
+          "event": "UPDATE",
+          "old_memory": "Name is Martin Mark"
+        },
+        {
+          "id": "1",
+          "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') who specializes in healthcare consulting",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Date of birth is 1996-08-02",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Gender is Male",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Current role is director at Huaxin Consulting",
+          "event": "UPDATE",
+          "old_memory": "Works at Huaxin Consulting as a director"
+        },
+        {
+          "id": "6",
+          "text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Primary career motivation is improving healthcare access for underserved communities",
+          "event": "UPDATE",
+          "old_memory": "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities"
+        },
+        {
+          "id": "8",
+          "text": "Monthly income is 15700 USD",
+          "event": "NONE"
+        },
+        {
+          "id": "9",
+          "text": "Career change is being considered due to impact on mental health",
+          "event": "ADD"
+        },
+        {
+          "id": "10",
+          "text": "Values humanitarian goals and personal well-being over financial stability",
+          "event": "ADD"
+        },
+        {
+          "id": "11",
+          "text": "Practices yoga for mental clarity and flexibility",
+          "event": "UPDATE",
+          "old_memory": "Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field"
+        },
+        {
+          "id": "12",
+          "text": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Passionate about improving health outcomes",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Aims to provide healthcare access to 1 million people in underserved areas",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Motivated by family's medical background and desire to promote well-being globally",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Thrives in environments with open communication and innovative thinking",
+          "event": "ADD"
+        },
+        {
+          "id": "17",
+          "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+          "event": "UPDATE",
+          "old_memory": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+        },
+        {
+          "id": "19",
+          "text": "Likes jazz for its improvisational style and ability to stimulate creativity",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "MBTI personality type is ENTP",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+          "event": "NONE"
+        },
+        {
+          "id": "22",
+          "text": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+          "event": "NONE"
+        },
+        {
+          "id": "23",
+          "text": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Employed in the healthcare industry",
+          "event": "NONE"
+        },
+        {
+          "id": "26",
+          "text": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "28",
+          "text": "Likes wellness retreats because they offer relaxation and activities promoting physical and mental health, aligning with lifestyle",
+          "event": "NONE"
+        },
+        {
+          "id": "29",
+          "text": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+          "event": "NONE"
+        },
+        {
+          "id": "30",
+          "text": "Physical condition is normal with no chronic diseases",
+          "event": "NONE"
+        },
+        {
+          "id": "31",
+          "text": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+          "event": "NONE"
+        },
+        {
+          "id": "32",
+          "text": "Likes casual business attire for work as it balances professionalism and comfort",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Highest education level is Bachelor",
+          "event": "NONE"
+        },
+        {
+          "id": "34",
+          "text": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Believes in collaboration as a key driver of innovation and conflict resolution",
+          "event": "ADD"
+        },
+        {
+          "id": "36",
+          "text": "Has led projects resulting in innovative healthcare solutions",
+          "event": "ADD"
+        },
+        {
+          "id": "37",
+          "text": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+          "event": "ADD"
+        },
+        {
+          "id": "38",
+          "text": "Plans to discuss work-life balance during job interviews",
+          "event": "ADD"
+        },
+        {
+          "id": "39",
+          "text": "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+          "event": "ADD"
+        },
+        {
+          "id": "40",
+          "text": "Intends to enroll in online courses and seek mentorship from industry leaders",
+          "event": "ADD"
+        },
+        {
+          "id": "41",
+          "text": "Shares knowledge through workshops and collaborative projects",
+          "event": "ADD"
+        },
+        {
+          "id": "42",
+          "text": "Has empathetic nature and strong debate skills that support inclusive dialogue",
+          "event": "UPDATE",
+          "old_memory": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+        },
+        {
+          "id": "43",
+          "text": "Sets clear goals and stays adaptable while remaining grounded in core values",
+          "event": "ADD"
+        },
+        {
+          "id": "44",
+          "text": "Envisions leading a team that develops solutions to enhance healthcare access and promote well-being in underserved communities",
+          "event": "ADD"
+        },
+        {
+          "id": "45",
+          "text": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Leads by setting clear expectations and trusting team autonomy",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Adapts leadership style through active listening and openness to feedback",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Hopes to inspire a ripple effect of positive change in the broader healthcare landscape",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "4f5fdedd-66dc-4d61-990e-3660923fe44b",
+      "1": "d9985830-9fe7-4c2d-bde5-63b6ca15ff2e",
+      "2": "fc003473-821f-4553-b8e3-8e685bde8169",
+      "3": "e2b54053-802e-4274-8c53-959952fdf771",
+      "4": "ee31bf34-9c4c-41a5-b0ce-3dff16257094",
+      "5": "caad6800-03dd-4b74-bc09-7a1dbb2a5315",
+      "6": "d9abc169-48ca-419c-89e9-8d549f212965",
+      "7": "984a6ea9-04f3-4b66-907d-11dd1f817061",
+      "8": "0ccafd56-d99c-467e-b5ba-8c51a6f74006",
+      "9": "9a10ef7e-b165-4362-a1b3-f93c35f601a3",
+      "10": "77e035ac-87b9-4cbb-b806-45a0c660aeb4",
+      "11": "ed88894a-0679-413e-a6dd-8590b1dfc3ec",
+      "12": "7271ec7f-affb-42af-9baa-0a6aa8d7bec6",
+      "13": "2a17f70c-f57f-4ada-a43d-c0c680bb61ec",
+      "14": "7e0762ed-317b-43b3-8bb7-baee5cce740a",
+      "15": "fd6f5208-4c8a-4935-b4b0-32ac568ca6da",
+      "16": "fc34b088-2c58-4063-a9ee-b57a85c97901",
+      "17": "b855916e-8930-491e-a514-4744cf0660b5",
+      "18": "4f326f12-6bb7-420d-a427-c0d74d343e60",
+      "19": "ff7600e5-14b0-4225-b1c8-e6066cbb05b0",
+      "20": "12f54bc5-debd-4c4a-84b9-5a5f8f652788",
+      "21": "23b8e3f5-f6c8-4167-8c7d-cdc25600c541",
+      "22": "bdda0afe-a09a-4585-8fff-9a44b6bcd51c",
+      "23": "8128ae53-0a62-44cb-8369-50c53d67545c",
+      "24": "34f71c2a-0316-48fa-9002-ba8a20cd8cd0",
+      "25": "eb71b67b-7837-40ac-b777-87a760861d3a",
+      "26": "b038fd5f-5f02-4173-bf16-5b694bdddbb7",
+      "27": "a16fd1dc-39c1-4d1c-b7a6-b12406f23673",
+      "28": "dc5523cf-0469-4e12-a80c-f33e40567bee",
+      "29": "d6ea8f3c-9587-49d1-9a59-7b0d44409c18",
+      "30": "2abea898-86b3-4151-80f0-467cf12b502d",
+      "31": "6dcb3123-291d-4c53-aa6d-07e9d1a4c016",
+      "32": "88021172-76d5-42d3-a621-05f959f7afd5",
+      "33": "e2cdbdba-1415-4025-8f5a-51f08668a84e",
+      "34": "621ed9f4-d2fe-4e61-bf27-1098a99cd6a3"
+    },
+    "elapsed_seconds": 44.269558166968636
+  }
+]

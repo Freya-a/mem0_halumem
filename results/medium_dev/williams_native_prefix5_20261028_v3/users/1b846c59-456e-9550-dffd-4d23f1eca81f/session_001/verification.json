@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 26.090955263003707,
+  "add_elapsed_seconds": 25.381018099025823,
+  "native_error_count": 0,
+  "token_usage": {
+    "groups": {
+      "session_001:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 894,
+          "prompt_tokens": 2796,
+          "total_tokens": 3690
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_001:embedding": {
+        "calls": 19,
+        "usage": {
+          "prompt_tokens": 208,
+          "total_tokens": 208
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      }
+    },
+    "note": "Provider-reported usage only; unavailable fields remain absent. SDK max_retries=0."
+  },
+  "planned_mutations_match_attempts": true,
+  "planned_operation_counts_including_NONE": {
+    "ADD": 19
+  },
+  "native_NONE_dispatch_count": 0,
+  "planned_NONE_matches_native_dispatch": true
+}

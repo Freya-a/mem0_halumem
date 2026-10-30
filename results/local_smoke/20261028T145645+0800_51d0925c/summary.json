@@ -1,0 +1,118 @@
+{
+  "run_id": "20261028T145645+0800_51d0925c",
+  "status": "completed",
+  "completed_sessions": 2,
+  "output_directory": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/local_smoke/20261028T145645+0800_51d0925c",
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "sessions": [
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "ADD": 17
+      },
+      "native_error_count": 0,
+      "add_error": null,
+      "before_count": 0,
+      "after_count": 17,
+      "elapsed_seconds": 22.47549707000144
+    },
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "ADD": 12
+      },
+      "native_error_count": 0,
+      "add_error": null,
+      "before_count": 17,
+      "after_count": 29,
+      "elapsed_seconds": 27.705858187982813
+    }
+  ],
+  "final_memory_count": 29,
+  "actual_operation_counts": {
+    "ADD": 29,
+    "UPDATE": 0,
+    "DELETE": 0
+  },
+  "persistence_comparison": {
+    "ids_and_payloads_exact": true,
+    "vector_relative_tolerance": 1e-06,
+    "vector_absolute_tolerance": 1e-07,
+    "max_vector_absolute_difference": 2.9802322387695312e-08,
+    "count": 29
+  },
+  "persistence_verified_after_reopen": true,
+  "history_integrity_check": "ok",
+  "elapsed_seconds": 58.04880435799714,
+  "usage": {
+    "groups": {
+      "preflight:llm": {
+        "calls": 1,
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 20,
+          "total_tokens": 25
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "preflight:embedding": {
+        "calls": 1,
+        "usage": {
+          "prompt_tokens": 5,
+          "total_tokens": 5
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      },
+      "session_01:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 803,
+          "prompt_tokens": 2721,
+          "total_tokens": 3524
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_01:embedding": {
+        "calls": 17,
+        "usage": {
+          "prompt_tokens": 188,
+          "total_tokens": 188
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      },
+      "session_02:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 1094,
+          "prompt_tokens": 3008,
+          "total_tokens": 4102
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_02:embedding": {
+        "calls": 12,
+        "usage": {
+          "prompt_tokens": 144,
+          "total_tokens": 144
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      }
+    },
+    "note": "Usage is provider-reported; unavailable fields remain absent. Hidden SDK retries are not counted separately."
+  },
+  "update_protection_conclusion": "No UPDATE occurred. Only the basic pipeline was verified; update protection cannot be assessed."
+}

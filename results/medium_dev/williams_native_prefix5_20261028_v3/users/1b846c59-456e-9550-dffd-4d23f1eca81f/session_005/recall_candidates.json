@@ -1,0 +1,1758 @@
+[
+  {
+    "sequence": 4,
+    "time": "2026-10-28T14:40:53.133213+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Name is Williams",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 5,
+    "time": "2026-10-28T14:40:53.135384+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Name is Williams",
+    "candidates": [
+      {
+        "id": "76b41491-9d4b-4443-8877-0c6227a79aba",
+        "version": 0,
+        "score": 0.9999999999999999,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Name is Williams",
+          "hash": "b5d532921c6a42068fce489dfb3ca61d",
+          "created_at": "2026-10-27T23:37:45.714054-07:00",
+          "updated_at": "2026-10-27T23:40:45.129125-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.5533042701946053,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+        "version": 0,
+        "score": 0.40627289742022,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+          "hash": "241811ca8d05ddfaf74c61989852ba8d",
+          "created_at": "2026-10-27T23:38:18.727572-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+        "version": 0,
+        "score": 0.3747721556128747,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Gender is Male",
+          "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+          "created_at": "2026-10-27T23:37:45.722866-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+        "version": 0,
+        "score": 0.3669779156613985,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Date of birth is 1984-06-16",
+          "hash": "4485226ee743c7ac03a3bd97b325a175",
+          "created_at": "2026-10-27T23:37:45.731598-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0021756429923698306
+  },
+  {
+    "sequence": 6,
+    "time": "2026-10-28T14:40:53.274486+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Recently promoted to lead director at Historical Productions Ltd",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 7,
+    "time": "2026-10-28T14:40:53.276177+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Recently promoted to lead director at Historical Productions Ltd",
+    "candidates": [
+      {
+        "id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "version": 0,
+        "score": 0.7885431127502496,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Works at Historical Productions Ltd. as a Director",
+          "hash": "edf970918256d104f69189949f994711",
+          "created_at": "2026-10-27T23:38:18.636327-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.524532480132011,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+        "version": 0,
+        "score": 0.4725495073336873,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+          "hash": "2334de5f376873ae50a560396bfa22f2",
+          "created_at": "2026-10-27T23:38:18.708401-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+        "version": 0,
+        "score": 0.4540127579387724,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Incorporating themes of historical depth into upcoming film projects",
+          "hash": "5e7c8389f369989e135ae7473b343195",
+          "created_at": "2026-10-27T23:40:45.721837-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "version": 0,
+        "score": 0.4492064012665304,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "hash": "896e733a5aade249e1c76535db1f8f2d",
+          "created_at": "2026-10-27T23:38:18.690128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001697547035291791
+  },
+  {
+    "sequence": 8,
+    "time": "2026-10-28T14:40:53.532277+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Goal is to achieve historical accuracy in films",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 9,
+    "time": "2026-10-28T14:40:53.534247+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Goal is to achieve historical accuracy in films",
+    "candidates": [
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.9568411027907656,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "version": 0,
+        "score": 0.6075828592366249,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "hash": "896e733a5aade249e1c76535db1f8f2d",
+          "created_at": "2026-10-27T23:38:18.690128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+        "version": 0,
+        "score": 0.5958954951299326,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Incorporating themes of historical depth into upcoming film projects",
+          "hash": "5e7c8389f369989e135ae7473b343195",
+          "created_at": "2026-10-27T23:40:45.721837-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.5662673745081318,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.5495990806592321,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0019743050215765834
+  },
+  {
+    "sequence": 10,
+    "time": "2026-10-28T14:40:53.667431+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 11,
+    "time": "2026-10-28T14:40:53.669318+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+    "candidates": [
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.561627857832558,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+        "version": 0,
+        "score": 0.5237674888486905,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Incorporating themes of historical depth into upcoming film projects",
+          "hash": "5e7c8389f369989e135ae7473b343195",
+          "created_at": "2026-10-27T23:40:45.721837-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.46749554337181415,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.4328130077669883,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7ad28253-8ba5-4531-b52c-208430e589b2",
+        "version": 0,
+        "score": 0.37864766805963646,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to revisit the tea house with friends who share passion for historical exploration",
+          "hash": "2818a0ba4fc9b86497124f4ba33451e6",
+          "created_at": "2026-10-27T23:40:45.687369-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018907760386355221
+  },
+  {
+    "sequence": 12,
+    "time": "2026-10-28T14:40:53.830620+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Monthly income increased from $75,000 to $90,000",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 13,
+    "time": "2026-10-28T14:40:53.832376+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Monthly income increased from $75,000 to $90,000",
+    "candidates": [
+      {
+        "id": "2975d71e-924e-4fb9-904b-77f74d447312",
+        "version": 0,
+        "score": 0.6950905598388368,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Monthly income is 75000 USD",
+          "hash": "1b86de597f4d9649b51b5c865778f74e",
+          "created_at": "2026-10-27T23:38:18.645030-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b2269ece-4497-4167-94e7-7b7d37375aa6",
+        "version": 0,
+        "score": 0.4605106874993067,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Has 207000 USD in savings",
+          "hash": "72e3562290be81f879dcbe239a2b01b9",
+          "created_at": "2026-10-27T23:38:18.653971-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.3045739531696875,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.25055140397301706,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+        "version": 0,
+        "score": 0.24032479383569857,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "hash": "881629ba735f8b2335921dac61c30ef1",
+          "created_at": "2026-10-27T23:38:18.744569-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0017610110226087272
+  },
+  {
+    "sequence": 14,
+    "time": "2026-10-28T14:40:54.322836+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Savings grown from $207,000 to $250,000",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 15,
+    "time": "2026-10-28T14:40:54.324795+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Savings grown from $207,000 to $250,000",
+    "candidates": [
+      {
+        "id": "b2269ece-4497-4167-94e7-7b7d37375aa6",
+        "version": 0,
+        "score": 0.6703889156028128,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Has 207000 USD in savings",
+          "hash": "72e3562290be81f879dcbe239a2b01b9",
+          "created_at": "2026-10-27T23:38:18.653971-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2975d71e-924e-4fb9-904b-77f74d447312",
+        "version": 0,
+        "score": 0.49957165842644036,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Monthly income is 75000 USD",
+          "hash": "1b86de597f4d9649b51b5c865778f74e",
+          "created_at": "2026-10-27T23:38:18.645030-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.2892292669509149,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.2670718453303883,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.2618976696086834,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0019620709936134517
+  },
+  {
+    "sequence": 16,
+    "time": "2026-10-28T14:40:54.521846+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Colleague named Steven, expertise in set design, helps ensure authenticity",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 17,
+    "time": "2026-10-28T14:40:54.523565+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Colleague named Steven, expertise in set design, helps ensure authenticity",
+    "candidates": [
+      {
+        "id": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+        "version": 0,
+        "score": 0.7998007480104355,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+          "hash": "2334de5f376873ae50a560396bfa22f2",
+          "created_at": "2026-10-27T23:38:18.708401-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+        "version": 0,
+        "score": 0.5659060116662042,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Collaborates with set dressers to create period settings",
+          "hash": "409360c92f3a538567b676fa2be5a402",
+          "created_at": "2026-10-27T23:38:18.663209-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+        "version": 0,
+        "score": 0.554568256776204,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "hash": "881629ba735f8b2335921dac61c30ef1",
+          "created_at": "2026-10-27T23:38:18.744569-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "version": 0,
+        "score": 0.42672347745266126,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "hash": "896e733a5aade249e1c76535db1f8f2d",
+          "created_at": "2026-10-27T23:38:18.690128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.39070305495040974,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001724983041640371
+  },
+  {
+    "sequence": 18,
+    "time": "2026-10-28T14:40:54.930069+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Friend named Mary, encourages taking breaks",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 19,
+    "time": "2026-10-28T14:40:54.931609+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Friend named Mary, encourages taking breaks",
+    "candidates": [
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.7517573701181202,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2fed5e45-3d59-4ea5-b902-2b0b74351b33",
+        "version": 0,
+        "score": 0.45741830532189187,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: MartinezKaren (historian, provides insights on historical contexts)",
+          "hash": "2704382e171c966cb99e5bf35d3d6ca6",
+          "created_at": "2026-10-27T23:38:18.736091-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+        "version": 0,
+        "score": 0.38328214819115386,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "hash": "881629ba735f8b2335921dac61c30ef1",
+          "created_at": "2026-10-27T23:38:18.744569-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+        "version": 0,
+        "score": 0.3600603143732809,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+          "hash": "241811ca8d05ddfaf74c61989852ba8d",
+          "created_at": "2026-10-27T23:38:18.727572-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+        "version": 0,
+        "score": 0.33855463113636897,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+          "hash": "2334de5f376873ae50a560396bfa22f2",
+          "created_at": "2026-10-27T23:38:18.708401-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001546031970065087
+  },
+  {
+    "sequence": 20,
+    "time": "2026-10-28T14:40:55.072610+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Loves visiting historic places, which deeply influence storytelling approach",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 21,
+    "time": "2026-10-28T14:40:55.074408+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Loves visiting historic places, which deeply influence storytelling approach",
+    "candidates": [
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.5996369591074406,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b5fbe40c-9778-4646-abe1-9921c85da36c",
+        "version": 0,
+        "score": 0.5607186123792001,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical biographies because they vividly capture the lives and impact of historical figures",
+          "hash": "8118aafdd89df70cd8848f6e231fca06",
+          "created_at": "2026-10-27T23:40:21.876073-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f9c438a0-c2df-4359-90e1-6f33f1f199a9",
+        "version": 0,
+        "score": 0.5555516719846905,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes Victorian literature because of its intricate storytelling and rich historical context",
+          "hash": "be3dab25651df1e30b4c65695c66c349",
+          "created_at": "2026-10-27T23:40:21.901155-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.5406846171772417,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "098837c8-4b33-4fda-81ef-bcaae08089ac",
+        "version": 0,
+        "score": 0.5067764475640164,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes period pieces because of their authentic costumes, settings, and engaging depiction of the past",
+          "hash": "b8ff798f749ef4f6b4cd814f5232c77d",
+          "created_at": "2026-10-27T23:40:21.998359-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018044669996015728
+  },
+  {
+    "sequence": 22,
+    "time": "2026-10-28T14:40:55.181872+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Hobby is reading historical biographies",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 23,
+    "time": "2026-10-28T14:40:55.183649+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Hobby is reading historical biographies",
+    "candidates": [
+      {
+        "id": "b5fbe40c-9778-4646-abe1-9921c85da36c",
+        "version": 0,
+        "score": 0.6043384650644694,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical biographies because they vividly capture the lives and impact of historical figures",
+          "hash": "8118aafdd89df70cd8848f6e231fca06",
+          "created_at": "2026-10-27T23:40:21.876073-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.4709525622715227,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eb99f61d-b0ec-4478-a313-43146ba0a539",
+        "version": 0,
+        "score": 0.46447762554179867,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Dislikes fantasy novels because they stray too far from reality and hinder historical connection",
+          "hash": "cda252a408e592566db42ab72593b58a",
+          "created_at": "2026-10-27T23:40:21.884278-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "9315a8c1-7611-443b-a5b5-f92b52ea1a11",
+        "version": 0,
+        "score": 0.4310044794641539,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Interested in exploring historical beverages",
+          "hash": "80d4fa13efbb406dadeebd31b37617a4",
+          "created_at": "2026-10-27T23:40:45.704580-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.4273972079980264,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001781987026333809
+  },
+  {
+    "sequence": 24,
+    "time": "2026-10-28T14:40:55.382653+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Success means recognition at major film festivals like Cannes and Sundance",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 25,
+    "time": "2026-10-28T14:40:55.384437+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Success means recognition at major film festivals like Cannes and Sundance",
+    "candidates": [
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.7397618456677719,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.4075420574028536,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7a85fc34-7cea-4f18-9a00-c03c7ec689c4",
+        "version": 0,
+        "score": 0.39833947724877605,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Major is Film Studies",
+          "hash": "775ec194c306e29cb4ce273994ad9b61",
+          "created_at": "2026-10-27T23:37:45.766404-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e6112994-45c2-43d2-86d8-7c8d978f690e",
+        "version": 0,
+        "score": 0.3822754961639552,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Is a filmmaker",
+          "hash": "50c6085435e943bf61df7433a314468d",
+          "created_at": "2026-10-27T23:38:18.626851-07:00",
+          "updated_at": "2026-10-27T23:40:45.651242-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.3695771014640453,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0017895610071718693
+  },
+  {
+    "sequence": 26,
+    "time": "2026-10-28T14:40:55.536649+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Motivated by setting clear goals and maintaining work-life balance",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 27,
+    "time": "2026-10-28T14:40:55.538490+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Motivated by setting clear goals and maintaining work-life balance",
+    "candidates": [
+      {
+        "id": "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+        "version": 0,
+        "score": 0.5361756573763301,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Regularly exercises and maintains a balanced diet",
+          "hash": "f4aff648dfa0964672d2789030b10eea",
+          "created_at": "2026-10-27T23:38:18.681175-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "version": 0,
+        "score": 0.3781609229995482,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "hash": "1a2e41bd1f01283ba852dcf2c6503b0b",
+          "created_at": "2026-10-27T23:37:45.784076-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.36934396543219394,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+        "version": 0,
+        "score": 0.3684855461624209,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Physically healthy with no chronic diseases",
+          "hash": "f72f047a60e54dd895dda6d925fc3252",
+          "created_at": "2026-10-27T23:38:18.672117-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.3398853521451983,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018472009687684476
+  },
+  {
+    "sequence": 28,
+    "time": "2026-10-28T14:40:55.744692+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 29,
+    "time": "2026-10-28T14:40:55.746370+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+    "candidates": [
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.5207544865147113,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+        "version": 0,
+        "score": 0.4405376949211147,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Regularly exercises and maintains a balanced diet",
+          "hash": "f4aff648dfa0964672d2789030b10eea",
+          "created_at": "2026-10-27T23:38:18.681175-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+        "version": 0,
+        "score": 0.3874816540836604,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Physically healthy with no chronic diseases",
+          "hash": "f72f047a60e54dd895dda6d925fc3252",
+          "created_at": "2026-10-27T23:38:18.672117-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+        "version": 0,
+        "score": 0.3737610924992304,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "No diagnosed mental health issues",
+          "hash": "738a37fb965d13d0d3dfca10ff25e9ca",
+          "created_at": "2026-10-27T23:38:18.699035-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+        "version": 0,
+        "score": 0.37132704169518,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "hash": "881629ba735f8b2335921dac61c30ef1",
+          "created_at": "2026-10-27T23:38:18.744569-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0016853970009833574
+  },
+  {
+    "sequence": 30,
+    "time": "2026-10-28T14:40:55.911681+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Love for history and storytelling drives creative decisions",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 31,
+    "time": "2026-10-28T14:40:55.913468+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Love for history and storytelling drives creative decisions",
+    "candidates": [
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.5985184921314831,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.5423836555548727,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.5120072483499235,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+        "version": 0,
+        "score": 0.5014257839612327,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Reflects on balancing historical authenticity with embracing new flavors",
+          "hash": "4997afc82232724a9612aed75f4a790d",
+          "created_at": "2026-10-27T23:40:45.713410-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.5000673160355262,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0017928190063685179
+  },
+  {
+    "sequence": 32,
+    "time": "2026-10-28T14:40:56.038999+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Aims to integrate personal experiences into narratives to resonate with viewers",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 33,
+    "time": "2026-10-28T14:40:56.040929+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Aims to integrate personal experiences into narratives to resonate with viewers",
+    "candidates": [
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.40234303428079193,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.3971749890855615,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.3622586600490858,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "version": 0,
+        "score": 0.35802320866130455,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "hash": "896e733a5aade249e1c76535db1f8f2d",
+          "created_at": "2026-10-27T23:38:18.690128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.3577117489474944,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0019363739993423223
+  },
+  {
+    "sequence": 34,
+    "time": "2026-10-28T14:40:56.220620+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Hopes films inspire appreciation of history and its nuances",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 35,
+    "time": "2026-10-28T14:40:56.222298+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Hopes films inspire appreciation of history and its nuances",
+    "candidates": [
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.5668812453521163,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.5565743246892649,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Goal is to create historically accurate films",
+          "hash": "a6b03074fd4ccbf2c8b14bb9b24190be",
+          "created_at": "2026-10-27T23:37:45.837032-07:00",
+          "updated_at": "2026-10-27T23:40:45.659745-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+        "version": 0,
+        "score": 0.5224512105429557,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Incorporating themes of historical depth into upcoming film projects",
+          "hash": "5e7c8389f369989e135ae7473b343195",
+          "created_at": "2026-10-27T23:40:45.721837-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "28ad9a5b-27d9-4ace-b034-8d6efc5709c8",
+        "version": 0,
+        "score": 0.4998845061171576,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Dislikes science fiction blockbusters because they prioritize visual effects over historical accuracy",
+          "hash": "0d40a4fa1b0b9bb091320190c80a43cd",
+          "created_at": "2026-10-27T23:40:21.989830-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.4595801992014002,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0016834349953569472
+  },
+  {
+    "sequence": 36,
+    "time": "2026-10-28T14:40:56.385779+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Wants to challenge historical narratives and engage audiences on a deeper level",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 37,
+    "time": "2026-10-28T14:40:56.388161+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Wants to challenge historical narratives and engage audiences on a deeper level",
+    "candidates": [
+      {
+        "id": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+        "version": 0,
+        "score": 0.529975963973732,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Reflects on balancing historical authenticity with embracing new flavors",
+          "hash": "4997afc82232724a9612aed75f4a790d",
+          "created_at": "2026-10-27T23:40:45.713410-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b5fbe40c-9778-4646-abe1-9921c85da36c",
+        "version": 0,
+        "score": 0.5151211754778469,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical biographies because they vividly capture the lives and impact of historical figures",
+          "hash": "8118aafdd89df70cd8848f6e231fca06",
+          "created_at": "2026-10-27T23:40:21.876073-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "version": 0,
+        "score": 0.5068173850587925,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "hash": "ce7842a64a263a85ded1c3d5de640aa6",
+          "created_at": "2026-10-27T23:40:21.981615-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+        "version": 0,
+        "score": 0.49222768216859597,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Incorporating themes of historical depth into upcoming film projects",
+          "hash": "5e7c8389f369989e135ae7473b343195",
+          "created_at": "2026-10-27T23:40:45.721837-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.4867639828989989,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0023864330141805112
+  },
+  {
+    "sequence": 38,
+    "time": "2026-10-28T14:40:56.554506+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Strategic thinker and perfectionist",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 39,
+    "time": "2026-10-28T14:40:56.556398+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Strategic thinker and perfectionist",
+    "candidates": [
+      {
+        "id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "version": 0,
+        "score": 0.8062323422982217,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "hash": "1a2e41bd1f01283ba852dcf2c6503b0b",
+          "created_at": "2026-10-27T23:37:45.784076-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b48b7ac5-5d84-466d-9ed5-1ebd9f3f1ca4",
+        "version": 0,
+        "score": 0.4045313445792872,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "MBTI personality type is INTJ",
+          "hash": "d1acd1bd073ac27a594f521d6fb463b0",
+          "created_at": "2026-10-27T23:37:45.775161-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+        "version": 0,
+        "score": 0.3339947743909354,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "hash": "881629ba735f8b2335921dac61c30ef1",
+          "created_at": "2026-10-27T23:38:18.744569-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "version": 0,
+        "score": 0.321150457617123,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "hash": "b5a6e8bbec78dc91a7af36358706cf76",
+          "created_at": "2026-10-27T23:38:18.718370-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.32064957188367244,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018979589804075658
+  },
+  {
+    "sequence": 40,
+    "time": "2026-10-28T14:40:56.821034+08:00",
+    "phase": "session_005",
+    "kind": "recall_input",
+    "query": "Values authenticity, innovation, and creative control",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 41,
+    "time": "2026-10-28T14:40:56.822726+08:00",
+    "phase": "session_005",
+    "kind": "recall_output",
+    "query": "Values authenticity, innovation, and creative control",
+    "candidates": [
+      {
+        "id": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+        "version": 0,
+        "score": 0.39859688592170767,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Reflects on balancing historical authenticity with embracing new flavors",
+          "hash": "4997afc82232724a9612aed75f4a790d",
+          "created_at": "2026-10-27T23:40:45.713410-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "26744cf2-1ca8-4c32-9b41-473761aa1223",
+        "version": 0,
+        "score": 0.35603199729427015,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Dislikes auto-tuned pop music because it lacks authenticity and depth",
+          "hash": "670025049e48c0e471aed520f8960c61",
+          "created_at": "2026-10-27T23:40:21.825290-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "version": 0,
+        "score": 0.3217183149398391,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "hash": "1a2e41bd1f01283ba852dcf2c6503b0b",
+          "created_at": "2026-10-27T23:37:45.784076-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "version": 0,
+        "score": 0.3096044397603862,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "hash": "896e733a5aade249e1c76535db1f8f2d",
+          "created_at": "2026-10-27T23:38:18.690128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+        "version": 0,
+        "score": 0.2821679182994712,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+          "hash": "241811ca8d05ddfaf74c61989852ba8d",
+          "created_at": "2026-10-27T23:38:18.727572-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001698184001725167
+  }
+]

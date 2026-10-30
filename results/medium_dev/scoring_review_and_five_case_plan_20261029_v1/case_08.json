@@ -1,0 +1,161 @@
+{
+  "number": 8,
+  "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s007_q003",
+  "kind": "qa",
+  "automatic_label": "Hallucination",
+  "selection_sha256": "0547f98a5d93b1813585de07a4e71cea3099ae6f47ac6737a4d63628526d22ac",
+  "decision_llm_assisted": "存疑",
+  "review_rationale": "参考是 Unknown、证据为空；回答“未提到兄弟姐妹”是对对话提及情况的否定，并非断言没有兄弟姐妹。仅靠空 key points 不能直接证明跨全部对话的否定命题，但评分理由把两者直接等同也不充分。",
+  "caveat": "可能因回答对全部对话作无证据概括而有风险；不能仅依据记忆未召回断定整段对话确实没有提及。",
+  "source": {
+    "uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session_index_zero_based": 7,
+    "session_ordinal_one_based": 8,
+    "question_index_zero_based": 3,
+    "question": {
+      "question": "Did Martin Mark have any siblings mentioned in the dialogues?",
+      "answer": "Unknown",
+      "evidence": [],
+      "difficulty": "medium",
+      "question_type": "Memory Boundary"
+    },
+    "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/after.json",
+    "snapshot_sha256": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726",
+    "retrieval_and_response_status": "not_recorded_in_original_run"
+  },
+  "session_start": "Mar 01, 2026, 07:04:00",
+  "session_end": "Mar 01, 2026, 09:34:00",
+  "source_dialogue_highlights": [],
+  "source_full_session_input": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json",
+  "relevant_complete_source_data_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/HaluMem/data/HaluMem-Medium.jsonl",
+  "retrieved_hits": [
+    {
+      "id": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "memory": "Name is Martin",
+      "timestamp": "2026-10-28T00:07:46.364495-07:00",
+      "score": 0.6313697486187018
+    },
+    {
+      "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "timestamp": "2026-10-28T00:08:17.229415-07:00",
+      "score": 0.43130497034472265
+    },
+    {
+      "id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "timestamp": "2026-10-28T00:08:17.237490-07:00",
+      "score": 0.42617023424421463
+    },
+    {
+      "id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "memory": "Grateful for support from Susan, Daniel, and Joshua",
+      "timestamp": "2026-10-28T00:13:15.397051-07:00",
+      "score": 0.3909179884612629
+    },
+    {
+      "id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "memory": "No children",
+      "timestamp": "2026-10-28T00:07:46.449330-07:00",
+      "score": 0.3661800661518954
+    },
+    {
+      "id": "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c",
+      "memory": "Both parents are alive",
+      "timestamp": "2026-10-28T00:07:46.440901-07:00",
+      "score": 0.3570282243074137
+    },
+    {
+      "id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "memory": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+      "timestamp": "2026-10-28T00:07:46.457874-07:00",
+      "score": 0.34567589810104127
+    },
+    {
+      "id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "memory": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "timestamp": "2026-10-28T00:14:15.487883-07:00",
+      "score": 0.3390653001494001
+    },
+    {
+      "id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "memory": "Susan offers encouragement and helps maintain focus on goals",
+      "timestamp": "2026-10-28T00:13:15.405071-07:00",
+      "score": 0.3183685114004521
+    },
+    {
+      "id": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "memory": "Seeks mentorship from individuals who value innovation and empathy",
+      "timestamp": "2026-10-28T00:12:01.747625-07:00",
+      "score": 0.2950329323717782
+    },
+    {
+      "id": "50aed4f4-9f64-4824-8f3d-15fc8e939ebb",
+      "memory": "Age is 29",
+      "timestamp": "2026-10-28T00:07:46.390053-07:00",
+      "score": 0.28992848420092254
+    },
+    {
+      "id": "a04985bf-b835-46a6-aff8-ae2fed526bca",
+      "memory": "Tracks progress via milestones and celebrates small victories",
+      "timestamp": "2026-10-28T00:10:29.839194-07:00",
+      "score": 0.2896738650300401
+    },
+    {
+      "id": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "timestamp": "2026-10-28T00:08:17.245442-07:00",
+      "score": 0.2891780475394952
+    },
+    {
+      "id": "ef0c4933-39c8-40b5-a118-a5677130bdcb",
+      "memory": "Has 43700 USD in savings",
+      "timestamp": "2026-10-28T00:08:17.182483-07:00",
+      "score": 0.2872159462884265
+    },
+    {
+      "id": "bc4366a1-d9e6-4e96-84fe-6247e96ef3d6",
+      "memory": "Has secured interviews and job offers through social network",
+      "timestamp": "2026-10-28T00:13:15.429233-07:00",
+      "score": 0.2845818191340406
+    },
+    {
+      "id": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "memory": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+      "timestamp": "2026-10-28T00:07:46.432562-07:00",
+      "score": 0.28404122486803685
+    },
+    {
+      "id": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "memory": "Gender is Male",
+      "timestamp": "2026-10-28T00:07:46.373235-07:00",
+      "score": 0.28233280553941087
+    },
+    {
+      "id": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "memory": "Daniel offers insights that encourage innovative thinking",
+      "timestamp": "2026-10-28T00:13:15.413161-07:00",
+      "score": 0.2804750138579467
+    },
+    {
+      "id": "ba086990-e950-4245-aacc-44844940d397",
+      "memory": "Mother was born on 1963-08-02, nurse with a passion for community health",
+      "timestamp": "2026-10-28T00:07:46.466288-07:00",
+      "score": 0.26721909728311066
+    },
+    {
+      "id": "818912c6-02bb-44f1-8350-8ce250f1fc3e",
+      "memory": "Has transitioned to a new role with healthier work-life balance",
+      "timestamp": "2026-10-28T00:14:12.047302-07:00",
+      "score": 0.2606916173022893
+    }
+  ],
+  "system_response": "No siblings mentioned",
+  "official_judge_result": {
+    "reasoning": "The Key Memory Points are empty, meaning no information about Martin Mark's siblings is provided in the memory. The Reference Answer is 'Unknown', indicating that the correct response should reflect absence of knowledge. The Memory System Response states 'No siblings mentioned', which implies a definite factual claim that no siblings were mentioned — but this goes beyond 'unknown' and asserts a negative fact not supported by the Key Memory Points. Since the Key Memory Points contain no information, asserting 'no siblings mentioned' is an unsupported inference and contradicts the Reference Answer's 'Unknown' (which prohibits definitive negation). Thus, this is a Hallucination.",
+    "evaluation_result": "Hallucination"
+  },
+  "snapshot_sha256": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726",
+  "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/after.json",
+  "official_record_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/official_eval_development_20261029_v1/records.jsonl"
+}

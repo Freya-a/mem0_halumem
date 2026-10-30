@@ -1,0 +1,121 @@
+{
+  "run_id": "20261022T211159+0800_703b7de8",
+  "status": "failed",
+  "linked_original_run": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/results/local_smoke/20261022T203207+0800_a40c12d5",
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "prefix_reused": true,
+  "completed_new_session_ordinals": [
+    3
+  ],
+  "sessions": [
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "ADD": 33
+      },
+      "planned_operation_counts_including_NONE": {
+        "NONE": 21,
+        "ADD": 33
+      },
+      "native_NONE_dispatch_count": 21,
+      "planned_NONE_matches_native_dispatch": true,
+      "session_ordinal": 3,
+      "before_count": 29,
+      "after_count": 62,
+      "native_error_count": 0,
+      "add_exception": null,
+      "input_message_count": 32,
+      "all_api_calls_ok": true,
+      "all_llm_outputs_untruncated": true
+    },
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "UPDATE": 5,
+        "ADD": 16
+      },
+      "planned_operation_counts_including_NONE": {
+        "UPDATE": 6,
+        "NONE": 27,
+        "ADD": 16
+      },
+      "native_NONE_dispatch_count": 27,
+      "planned_NONE_matches_native_dispatch": true,
+      "session_ordinal": 4,
+      "before_count": 62,
+      "after_count": 78,
+      "native_error_count": 1,
+      "add_exception": null,
+      "input_message_count": 60,
+      "all_api_calls_ok": true,
+      "all_llm_outputs_untruncated": true
+    }
+  ],
+  "initial_history_count": 29,
+  "exception": "Traceback (most recent call last):\n  File \"/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/scripts/local_update_case.py\", line 447, in execute\n    assert not error and checks['native_error_count'] == 0 and checks['all_api_calls_ok'] and checks['all_llm_outputs_untruncated']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "final_memory_count": 78,
+  "new_actual_operation_counts": {
+    "ADD": 49,
+    "UPDATE": 5
+  },
+  "persistence_comparison": {
+    "ids_and_payloads_exact": true,
+    "vector_relative_tolerance": 1e-06,
+    "vector_absolute_tolerance": 1e-07,
+    "max_vector_absolute_difference": 2.460658182767972e-08,
+    "count": 78
+  },
+  "history_integrity_check": "ok",
+  "elapsed_seconds": 125.87095791706815,
+  "usage": {
+    "groups": {
+      "session_03:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 2835,
+          "prompt_tokens": 4651,
+          "total_tokens": 7486
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_03:embedding": {
+        "calls": 33,
+        "usage": {
+          "prompt_tokens": 607,
+          "total_tokens": 607
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      },
+      "session_04:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 2276,
+          "prompt_tokens": 6418,
+          "total_tokens": 8694
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_04:embedding": {
+        "calls": 22,
+        "usage": {
+          "prompt_tokens": 276,
+          "total_tokens": 276
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      }
+    },
+    "note": "Usage is provider-reported; unavailable fields remain absent. Hidden SDK retries are not counted separately."
+  },
+  "original_run_unchanged": true,
+  "native_source_unchanged": true
+}

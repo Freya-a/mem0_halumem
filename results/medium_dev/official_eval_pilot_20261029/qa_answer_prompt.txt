@@ -1,0 +1,61 @@
+
+    You are an intelligent memory assistant tasked with retrieving accurate information from conversation memories.
+
+    # CONTEXT:
+    You have access to memories from two speakers in a conversation. These memories contain
+    timestamped information that may be relevant to answering the question.
+
+    # INSTRUCTIONS:
+    1. Carefully analyze all provided memories from both speakers
+    2. Pay special attention to the timestamps to determine the answer
+    3. If the question asks about a specific event or fact, look for direct evidence in the memories
+    4. If the memories contain contradictory information, prioritize the most recent memory
+    5. If there is a question about time references (like "last year", "two months ago", etc.),
+       calculate the actual date based on the memory timestamp. For example, if a memory from
+       4 May 2022 mentions "went to India last year," then the trip occurred in 2021.
+    6. Always convert relative time references to specific dates, months, or years. For example,
+       convert "last year" to "2022" or "two months ago" to "March 2023" based on the memory
+       timestamp. Ignore the reference while answering the question.
+    7. Focus only on the content of the memories from both speakers. Do not confuse character
+       names mentioned in memories with the actual users who created those memories.
+    8. The answer should be less than 5-6 words.
+
+    # APPROACH (Think step by step):
+    1. First, examine all memories that contain information related to the question
+    2. Examine the timestamps and content of these memories carefully
+    3. Look for explicit mentions of dates, times, locations, or events that answer the question
+    4. If the answer requires calculation (e.g., converting relative time references), show your work
+    5. Formulate a precise, concise answer based solely on the evidence in the memories
+    6. Double-check that your answer directly addresses the question asked
+    7. Ensure your final answer is specific and avoids vague time references
+
+    Memories for user 1b846c59-456e-9550-dffd-4d23f1eca81f:
+
+    [
+    "2026-10-27T23:40:45.704580-07:00: Interested in exploring historical beverages",
+    "2026-10-27T23:40:21.748566-07:00: Dislikes energy drinks because they are too sweet, artificial, and lack authenticity and historical roots",
+    "2026-10-27T23:40:45.713410-07:00: Reflects on balancing historical authenticity with embracing new flavors",
+    "2026-10-27T23:37:45.714054-07:00: Name is Williams",
+    "2026-10-27T23:40:45.687369-07:00: Plans to revisit the tea house with friends who share passion for historical exploration",
+    "2026-10-27T23:38:18.736091-07:00: Friend: MartinezKaren (historian, provides insights on historical contexts)",
+    "2026-10-27T23:38:18.718370-07:00: Friend: WilliamsMary (provides emotional support and encourages breaks)",
+    "2026-10-27T23:40:21.956449-07:00: Dislikes artificially flavored snacks because they feel synthetic and lack natural or historical roots",
+    "2026-10-27T23:40:21.842323-07:00: Dislikes bright neon colors because they feel too modern, flashy, and clash with understated, historically inspired attire",
+    "2026-10-27T23:38:18.727572-07:00: Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+    "2026-10-27T23:40:21.739303-07:00: Appreciates Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+    "2026-10-27T23:38:18.708401-07:00: Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+    "2026-10-27T23:40:45.678744-07:00: Recently visited a historic tea house",
+    "2026-10-27T23:40:45.696145-07:00: Plans to revisit the tea house with colleagues interested in modern architecture",
+    "2026-10-27T23:40:21.774286-07:00: Dislikes parrots because of their constant noise and chatter, which disrupts a quiet, historical atmosphere",
+    "2026-10-27T23:40:45.721837-07:00: Incorporating themes of historical depth into upcoming film projects",
+    "2026-10-27T23:37:45.826973-07:00: Family shares a passion for history and detail",
+    "2026-10-27T23:40:21.851048-07:00: Dislikes graphic tees because they seem too casual and contemporary, lacking timeless appeal",
+    "2026-10-27T23:37:45.731598-07:00: Date of birth is 1984-06-16",
+    "2026-10-27T23:40:21.756667-07:00: Dislikes bubble tea because of the unappealing texture of tapioca pearls and its overly commercialized nature"
+]
+
+
+    Question: What historical beverage might Williams Daniel explore next after January 6, 2026?
+
+    Answer:
+    

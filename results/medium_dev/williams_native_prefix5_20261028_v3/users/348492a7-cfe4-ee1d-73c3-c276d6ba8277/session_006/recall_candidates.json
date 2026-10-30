@@ -1,0 +1,2039 @@
+[
+  {
+    "sequence": 4,
+    "time": "2026-10-28T15:18:37.655722+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Name is Donald",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 5,
+    "time": "2026-10-28T15:18:37.657934+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Name is Donald",
+    "candidates": [
+      {
+        "id": "0bc768a6-9975-43f1-800e-8c58dc909658",
+        "version": 0,
+        "score": 0.757072750154541,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Name is Donald Smith",
+          "hash": "0cb72d5be1e9b597cdfb08cd1b7d6099",
+          "created_at": "2026-10-28T00:15:33.409523-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "57255411-7097-41af-85ec-cab15e953bd3",
+        "version": 0,
+        "score": 0.37641945483864303,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Gender is Male",
+          "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+          "created_at": "2026-10-28T00:15:33.418164-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+        "version": 0,
+        "score": 0.3593777040211745,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Date of birth is 1980-08-12",
+          "hash": "7b0ec62983183c657e59d66ef9e97581",
+          "created_at": "2026-10-28T00:15:33.426752-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+        "version": 0,
+        "score": 0.34762320666946367,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Lives in Chicago",
+          "hash": "c174ea9a4a532d91e97130022a93e088",
+          "created_at": "2026-10-28T00:15:33.443411-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b720cb31-6b6b-4587-b60d-6efff18457e2",
+        "version": 0,
+        "score": 0.33155890359509116,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Age is 45",
+          "hash": "caa43d079385e639383cd448855decd5",
+          "created_at": "2026-10-28T00:15:33.434972-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0022171029704622924
+  },
+  {
+    "sequence": 6,
+    "time": "2026-10-28T15:18:37.807343+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Is transitioning into political consulting",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 7,
+    "time": "2026-10-28T15:18:37.809187+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Is transitioning into political consulting",
+    "candidates": [
+      {
+        "id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "version": 0,
+        "score": 0.8810611011670584,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Is transitioning from a tech job to political consulting",
+          "hash": "b69472bb245f5d3837ed2749a7eda5a3",
+          "created_at": "2026-10-28T00:16:06.654602-07:00",
+          "updated_at": "2026-10-28T00:18:27.332178-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.5827462389955322,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "version": 0,
+        "score": 0.5363537789888011,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also mentioned financial consulting as a possible related field",
+          "hash": "b70256632e77b3bdc9b56d48b9880b78",
+          "created_at": "2026-10-28T00:17:52.861976-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.46632835753777846,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.4330869482573211,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001851531967986375
+  },
+  {
+    "sequence": 8,
+    "time": "2026-10-28T15:18:37.942183+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Has a relative running a political campaign",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 9,
+    "time": "2026-10-28T15:18:37.944171+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Has a relative running a political campaign",
+    "candidates": [
+      {
+        "id": "913bef92-248b-416b-ba35-052af3a4e960",
+        "version": 0,
+        "score": 0.5880399235816722,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Life goal is to support the political career of a close relative",
+          "hash": "876af0c7e71de81e7a201800188717c6",
+          "created_at": "2026-10-28T00:15:33.610071-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+        "version": 0,
+        "score": 0.5729526192136993,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+          "hash": "5a41d17ac1c958f37d602525eb1b8234",
+          "created_at": "2026-10-28T00:16:06.697942-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.5540776525237132,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+        "version": 0,
+        "score": 0.531335872997188,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "hash": "43cd15007ab171ea070a6f20eb70b14f",
+          "created_at": "2026-10-28T00:17:13.696864-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.5156337718635872,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0019947830005548894
+  },
+  {
+    "sequence": 10,
+    "time": "2026-10-28T15:18:38.092584+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Attended political events in Chicago",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 11,
+    "time": "2026-10-28T15:18:38.094458+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Attended political events in Chicago",
+    "candidates": [
+      {
+        "id": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+        "version": 0,
+        "score": 0.5616245814807905,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Lives in Chicago",
+          "hash": "c174ea9a4a532d91e97130022a93e088",
+          "created_at": "2026-10-28T00:15:33.443411-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.4780695376663324,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2cf8c2bb-8394-4de0-9bd2-25bcec640b1c",
+        "version": 0,
+        "score": 0.46116256934616223,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like wearing bright neon colors because they find them too distracting and unsuitable for the serious tone of political events",
+          "hash": "84c275f7efafb0a47923906fcfb488a7",
+          "created_at": "2026-10-28T00:17:13.612498-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.40279308217771337,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "23cca496-1e02-4b98-87de-3a968f3a74b1",
+        "version": 0,
+        "score": 0.3677473343323765,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes eating chocolate cake as a treat after a successful event, celebrating their relative's positive impact",
+          "hash": "bac6a6db7d2385867ebcb799d1670232",
+          "created_at": "2026-10-28T00:17:13.646768-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018800949910655618
+  },
+  {
+    "sequence": 12,
+    "time": "2026-10-28T15:18:38.425120+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Met John, a political strategist, at political events",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 13,
+    "time": "2026-10-28T15:18:38.426918+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Met John, a political strategist, at political events",
+    "candidates": [
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.46416534050036234,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "version": 0,
+        "score": 0.45409113197104556,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "GonzalezMary is a close friend who discusses political strategies",
+          "hash": "4ae5a12d2a73f3059105fa2cc25de27a",
+          "created_at": "2026-10-28T00:16:06.749761-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.43004672553872136,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.42964123067566495,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+        "version": 0,
+        "score": 0.3920333093168368,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "MooreSandra is a friend who shares political views and supports the same politician",
+          "hash": "fa0ee173c4b3e4e188ffa090281f6b0b",
+          "created_at": "2026-10-28T00:16:06.741597-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018036160035990179
+  },
+  {
+    "sequence": 14,
+    "time": "2026-10-28T15:18:38.585638+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Attended a cultural festival in Chicago for networking purposes",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 15,
+    "time": "2026-10-28T15:18:38.587346+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Attended a cultural festival in Chicago for networking purposes",
+    "candidates": [
+      {
+        "id": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+        "version": 0,
+        "score": 0.5097698176140628,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Lives in Chicago",
+          "hash": "c174ea9a4a532d91e97130022a93e088",
+          "created_at": "2026-10-28T00:15:33.443411-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "23cca496-1e02-4b98-87de-3a968f3a74b1",
+        "version": 0,
+        "score": 0.40240525139016065,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes eating chocolate cake as a treat after a successful event, celebrating their relative's positive impact",
+          "hash": "bac6a6db7d2385867ebcb799d1670232",
+          "created_at": "2026-10-28T00:17:13.646768-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+        "version": 0,
+        "score": 0.38829930323938466,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "hash": "43cd15007ab171ea070a6f20eb70b14f",
+          "created_at": "2026-10-28T00:17:13.696864-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "version": 0,
+        "score": 0.3826621085778836,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also mentioned financial consulting as a possible related field",
+          "hash": "b70256632e77b3bdc9b56d48b9880b78",
+          "created_at": "2026-10-28T00:17:52.861976-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "dd29d5f5-3dad-42bb-9472-bf58b5a29adb",
+        "version": 0,
+        "score": 0.37801226696338497,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes eating roast chicken because it reminds them of family gatherings where they discussed their relative's achievements",
+          "hash": "5487ad9e2204dd015109698b30bfaa43",
+          "created_at": "2026-10-28T00:17:13.621114-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0017146770260296762
+  },
+  {
+    "sequence": 16,
+    "time": "2026-10-28T15:18:38.723035+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Feels a mix of enthusiasm and anxiety about the career transition",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 17,
+    "time": "2026-10-28T15:18:38.724981+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Feels a mix of enthusiasm and anxiety about the career transition",
+    "candidates": [
+      {
+        "id": "d012c01a-8b10-4335-b210-bd3fa579e4b1",
+        "version": 0,
+        "score": 0.7686649093240989,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Feeling stressed and overwhelmed by the career transition",
+          "hash": "50b4b7e5875adb12ec057fcb21a7143f",
+          "created_at": "2026-10-28T00:18:28.585637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4093d6a7-1def-4fba-b9d3-a01bbee80258",
+        "version": 0,
+        "score": 0.4816370403483889,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Reminisces about previous tech job's security and stability",
+          "hash": "6710aa19e3096464b61a3bbfa0aa691c",
+          "created_at": "2026-10-28T00:18:28.650203-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "version": 0,
+        "score": 0.45028722114869113,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Is transitioning from a tech job to political consulting",
+          "hash": "b69472bb245f5d3837ed2749a7eda5a3",
+          "created_at": "2026-10-28T00:16:06.654602-07:00",
+          "updated_at": "2026-10-28T00:18:27.332178-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "b8df9f1d-75a3-4061-ad91-09a212382af5",
+        "version": 0,
+        "score": 0.40038137740132596,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Concerned about income uncertainty and loss of financial stability",
+          "hash": "769d256841f877595654b2fbfc63ac0e",
+          "created_at": "2026-10-28T00:18:28.594616-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "version": 0,
+        "score": 0.3938858491919807,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Monthly income was 17,000 USD before transition",
+          "hash": "701aa840bf20f80cc9f72ba0b348608b",
+          "created_at": "2026-10-28T00:16:06.672012-07:00",
+          "updated_at": "2026-10-28T00:17:52.659130-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0019527060212567449
+  },
+  {
+    "sequence": 18,
+    "time": "2026-10-28T15:18:38.874728+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Is considering adopting physical activities for stress management",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 19,
+    "time": "2026-10-28T15:18:38.877008+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Is considering adopting physical activities for stress management",
+    "candidates": [
+      {
+        "id": "8ca919d1-21f0-4555-8f5f-4d775a2873f9",
+        "version": 0,
+        "score": 0.8788061784451813,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Believes physical activities can help manage stress",
+          "hash": "a40d2766df17a9a3de68ffbbca399602",
+          "created_at": "2026-10-28T00:18:28.622963-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7e0d2d3d-3d72-48fa-a320-fe9256e70ca0",
+        "version": 0,
+        "score": 0.6239255286821315,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Considers meditation and mindfulness practices effective for stress relief",
+          "hash": "a9da243fae79f75e326df3f48e2478a6",
+          "created_at": "2026-10-28T00:18:28.632139-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "version": 0,
+        "score": 0.4965059707643354,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Maintains physical and mental health through activity, work, and political engagement",
+          "hash": "37dced17945f6b6c0cec493d038ed82a",
+          "created_at": "2026-10-28T00:16:06.723804-07:00",
+          "updated_at": "2026-10-28T00:18:27.341964-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "03f69bc2-a92b-454a-a034-1cd7984b0419",
+        "version": 0,
+        "score": 0.4076192766195124,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Physical condition is normal with no chronic diseases",
+          "hash": "22b37530aaf693b628ae8af8a2274c38",
+          "created_at": "2026-10-28T00:16:06.706444-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "bdc018c2-84bb-4b2f-b3c8-60e0affdb884",
+        "version": 0,
+        "score": 0.3999803037406363,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations",
+          "hash": "72536b5e1c0bb5c2b3639cb2eb0ad41b",
+          "created_at": "2026-10-28T00:17:13.663853-07:00",
+          "updated_at": "2026-10-28T00:18:28.428744-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.002286955015733838
+  },
+  {
+    "sequence": 20,
+    "time": "2026-10-28T15:18:38.998253+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Has shared past networking experiences that led to career success",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 21,
+    "time": "2026-10-28T15:18:39.000070+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Has shared past networking experiences that led to career success",
+    "candidates": [
+      {
+        "id": "d012c01a-8b10-4335-b210-bd3fa579e4b1",
+        "version": 0,
+        "score": 0.44471413025300716,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Feeling stressed and overwhelmed by the career transition",
+          "hash": "50b4b7e5875adb12ec057fcb21a7143f",
+          "created_at": "2026-10-28T00:18:28.585637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4093d6a7-1def-4fba-b9d3-a01bbee80258",
+        "version": 0,
+        "score": 0.42212650109782984,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Reminisces about previous tech job's security and stability",
+          "hash": "6710aa19e3096464b61a3bbfa0aa691c",
+          "created_at": "2026-10-28T00:18:28.650203-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+        "version": 0,
+        "score": 0.37233764428702276,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Partner is supportive and shares similar values of family loyalty",
+          "hash": "735b0323b9b5b7bc72526b60f68028f5",
+          "created_at": "2026-10-28T00:15:33.552709-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+        "version": 0,
+        "score": 0.36999900462325663,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "hash": "57f218a9e93e587e39872d77aa015291",
+          "created_at": "2026-10-28T00:17:13.705255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "version": 0,
+        "score": 0.36421485698251077,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also mentioned financial consulting as a possible related field",
+          "hash": "b70256632e77b3bdc9b56d48b9880b78",
+          "created_at": "2026-10-28T00:17:52.861976-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001823769009206444
+  },
+  {
+    "sequence": 22,
+    "time": "2026-10-28T15:18:39.136654+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Friends MooreSandra and GonzalezMary are providing encouragement and strategic advice",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 23,
+    "time": "2026-10-28T15:18:39.138457+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Friends MooreSandra and GonzalezMary are providing encouragement and strategic advice",
+    "candidates": [
+      {
+        "id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+        "version": 0,
+        "score": 0.6051672157859307,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "MooreSandra is a friend who shares political views and supports the same politician",
+          "hash": "fa0ee173c4b3e4e188ffa090281f6b0b",
+          "created_at": "2026-10-28T00:16:06.741597-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "version": 0,
+        "score": 0.596115374135904,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "GonzalezMary is a close friend who discusses political strategies",
+          "hash": "4ae5a12d2a73f3059105fa2cc25de27a",
+          "created_at": "2026-10-28T00:16:06.749761-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+        "version": 0,
+        "score": 0.42020940115203487,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Partner is supportive and shares similar values of family loyalty",
+          "hash": "735b0323b9b5b7bc72526b60f68028f5",
+          "created_at": "2026-10-28T00:15:33.552709-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "3b2db9c7-a00c-4f43-9ddb-f7650c1ee8bb",
+        "version": 0,
+        "score": 0.3780963939240741,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Both parents are alive",
+          "hash": "b500c63ed6c7e9d00806ae0d30851196",
+          "created_at": "2026-10-28T00:15:33.485840-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "97b23dbc-01c7-4472-afb2-bb70973427aa",
+        "version": 0,
+        "score": 0.3544978060401437,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests",
+          "hash": "e5a936fc15e80e5db4e665c54a317946",
+          "created_at": "2026-10-28T00:16:06.758468-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018097650026902556
+  },
+  {
+    "sequence": 24,
+    "time": "2026-10-28T15:18:39.321124+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "New connections are providing fresh perspectives and resources for the relative's political campaign",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 25,
+    "time": "2026-10-28T15:18:39.323568+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "New connections are providing fresh perspectives and resources for the relative's political campaign",
+    "candidates": [
+      {
+        "id": "913bef92-248b-416b-ba35-052af3a4e960",
+        "version": 0,
+        "score": 0.5522240810851498,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Life goal is to support the political career of a close relative",
+          "hash": "876af0c7e71de81e7a201800188717c6",
+          "created_at": "2026-10-28T00:15:33.610071-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+        "version": 0,
+        "score": 0.5071977854658876,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+          "hash": "5a41d17ac1c958f37d602525eb1b8234",
+          "created_at": "2026-10-28T00:16:06.697942-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.5014675024255335,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "version": 0,
+        "score": 0.49257051154550946,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "hash": "ba8fdea7cb76d6706deb848430b277a1",
+          "created_at": "2026-10-28T00:15:33.618102-07:00",
+          "updated_at": "2026-10-28T00:18:28.069831-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.4892915350054745,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.002472019987180829
+  },
+  {
+    "sequence": 26,
+    "time": "2026-10-28T15:18:39.477960+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Is forming a clearer vision for a career in political consulting",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 27,
+    "time": "2026-10-28T15:18:39.480115+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Is forming a clearer vision for a career in political consulting",
+    "candidates": [
+      {
+        "id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "version": 0,
+        "score": 0.6478716599630477,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Is transitioning from a tech job to political consulting",
+          "hash": "b69472bb245f5d3837ed2749a7eda5a3",
+          "created_at": "2026-10-28T00:16:06.654602-07:00",
+          "updated_at": "2026-10-28T00:18:27.332178-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.5544332870829978,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "version": 0,
+        "score": 0.5069802508452266,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also mentioned financial consulting as a possible related field",
+          "hash": "b70256632e77b3bdc9b56d48b9880b78",
+          "created_at": "2026-10-28T00:17:52.861976-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.4898603087030699,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "a299b9ea-6966-4a0d-bb29-be91ed29295c",
+        "version": 0,
+        "score": 0.4746336109515372,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also motivated to establish their own political career",
+          "hash": "1da889d5d1f0ed18409d3efbd7f15a2a",
+          "created_at": "2026-10-28T00:18:28.603872-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.002160881005693227
+  },
+  {
+    "sequence": 28,
+    "time": "2026-10-28T15:18:39.649316+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Feels optimistic about the future",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 29,
+    "time": "2026-10-28T15:18:39.651023+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Feels optimistic about the future",
+    "candidates": [
+      {
+        "id": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+        "version": 0,
+        "score": 0.3753698878716695,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "hash": "57f218a9e93e587e39872d77aa015291",
+          "created_at": "2026-10-28T00:17:13.705255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "33835e8a-ed5c-4c8a-a112-ec9b9eb738ab",
+        "version": 0,
+        "score": 0.35414923184763203,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like wearing casual shorts because they feel too informal for the image they want to project in support of their relative",
+          "hash": "8c075ca282ab7e3c6ab223a59b6dce39",
+          "created_at": "2026-10-28T00:17:13.587189-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "3449b941-d168-46f5-afdb-3c1aa42bad17",
+        "version": 0,
+        "score": 0.350630505763315,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has two children",
+          "hash": "a5005dc372a0dafcfbf6603c02484582",
+          "created_at": "2026-10-28T00:15:33.502530-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "8c0a007f-e94b-4855-a3e6-a07a08fb2949",
+        "version": 0,
+        "score": 0.3505017378791979,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes wearing formal suits because they make them feel confident and prepared to support their relative during important events",
+          "hash": "03c91d68f55e11a3018224fdfee62b8f",
+          "created_at": "2026-10-28T00:17:13.569993-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "version": 0,
+        "score": 0.34991865653789567,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "hash": "c3bb9c970b2c6929a7a88e0f98ca9868",
+          "created_at": "2026-10-28T00:17:13.680639-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0017130319611169398
+  },
+  {
+    "sequence": 30,
+    "time": "2026-10-28T15:18:39.904892+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Plans to attend more events and engage with individuals who provide strategic insights and resources",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 31,
+    "time": "2026-10-28T15:18:39.906551+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Plans to attend more events and engage with individuals who provide strategic insights and resources",
+    "candidates": [
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.42773088534212345,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.39139303411246346,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+        "version": 0,
+        "score": 0.3731507085154419,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative",
+          "hash": "22fcd06a3031b8de42a1b8d124bf1e65",
+          "created_at": "2026-10-28T00:17:13.779897-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.36779557531445506,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eb9e2181-81bd-4f4d-aed4-6c9f17855744",
+        "version": 0,
+        "score": 0.367363664783922,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes playing card games for their strategic depth and the opportunity to engage with others in a relaxed setting",
+          "hash": "45d89ef78632afe1c940ce52f6383c32",
+          "created_at": "2026-10-28T00:17:13.813191-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0016666959854774177
+  },
+  {
+    "sequence": 32,
+    "time": "2026-10-28T15:18:40.025811+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Prioritizes events that align with goals while balancing family and personal interests",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 33,
+    "time": "2026-10-28T15:18:40.027647+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Prioritizes events that align with goals while balancing family and personal interests",
+    "candidates": [
+      {
+        "id": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+        "version": 0,
+        "score": 0.49656952636840046,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "hash": "57f218a9e93e587e39872d77aa015291",
+          "created_at": "2026-10-28T00:17:13.705255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+        "version": 0,
+        "score": 0.466196549858733,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "hash": "43cd15007ab171ea070a6f20eb70b14f",
+          "created_at": "2026-10-28T00:17:13.696864-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "913bef92-248b-416b-ba35-052af3a4e960",
+        "version": 0,
+        "score": 0.4487897718600632,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Life goal is to support the political career of a close relative",
+          "hash": "876af0c7e71de81e7a201800188717c6",
+          "created_at": "2026-10-28T00:15:33.610071-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "version": 0,
+        "score": 0.44159575971108034,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Maintains physical and mental health through activity, work, and political engagement",
+          "hash": "37dced17945f6b6c0cec493d038ed82a",
+          "created_at": "2026-10-28T00:16:06.723804-07:00",
+          "updated_at": "2026-10-28T00:18:27.341964-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "6e979956-47d6-405f-95d5-df176978b42a",
+        "version": 0,
+        "score": 0.4400529656345322,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "hash": "d745cb5d7d0a577e62755ce06ed4c894",
+          "created_at": "2026-10-28T00:17:13.771347-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018552379915490746
+  },
+  {
+    "sequence": 34,
+    "time": "2026-10-28T15:18:40.225073+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 35,
+    "time": "2026-10-28T15:18:40.226921+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights",
+    "candidates": [
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.42192184578366887,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+        "version": 0,
+        "score": 0.41286717204293955,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+          "hash": "c5a8e15302c73664f5a0cfbe018300e7",
+          "created_at": "2026-10-28T00:17:52.878053-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "6e979956-47d6-405f-95d5-df176978b42a",
+        "version": 0,
+        "score": 0.37462855672541573,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "hash": "d745cb5d7d0a577e62755ce06ed4c894",
+          "created_at": "2026-10-28T00:17:13.771347-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+        "version": 0,
+        "score": 0.37237452314944164,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "hash": "43cd15007ab171ea070a6f20eb70b14f",
+          "created_at": "2026-10-28T00:17:13.696864-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "23cca496-1e02-4b98-87de-3a968f3a74b1",
+        "version": 0,
+        "score": 0.36815576470555594,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes eating chocolate cake as a treat after a successful event, celebrating their relative's positive impact",
+          "hash": "bac6a6db7d2385867ebcb799d1670232",
+          "created_at": "2026-10-28T00:17:13.646768-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018538979929871857
+  },
+  {
+    "sequence": 36,
+    "time": "2026-10-28T15:18:40.356706+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Adapts strategies to be more inclusive and considers diverse viewpoints",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 37,
+    "time": "2026-10-28T15:18:40.358477+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Adapts strategies to be more inclusive and considers diverse viewpoints",
+    "candidates": [
+      {
+        "id": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+        "version": 0,
+        "score": 0.4434913404817936,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Focuses on strategic communication and understanding voter behavior",
+          "hash": "2759a4b5791844fc0ba0e4b6464aafab",
+          "created_at": "2026-10-28T00:17:52.640982-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "799ad175-99c1-40e9-870a-4d4acb767863",
+        "version": 0,
+        "score": 0.41557516777110587,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Values strategic communication and leadership skills",
+          "hash": "a408bdc31c9efb8f9f9c822b02e7e438",
+          "created_at": "2026-10-28T00:17:52.894035-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+        "version": 0,
+        "score": 0.3891213579038856,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative",
+          "hash": "22fcd06a3031b8de42a1b8d124bf1e65",
+          "created_at": "2026-10-28T00:17:13.779897-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+        "version": 0,
+        "score": 0.3885165895534476,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Partner is supportive and shares similar values of family loyalty",
+          "hash": "735b0323b9b5b7bc72526b60f68028f5",
+          "created_at": "2026-10-28T00:15:33.552709-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.3823090709446262,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001777400029823184
+  },
+  {
+    "sequence": 38,
+    "time": "2026-10-28T15:18:40.495505+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Cultivates innovative spirit and active thinking by staying open to new ideas and seeking knowledge",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 39,
+    "time": "2026-10-28T15:18:40.497185+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Cultivates innovative spirit and active thinking by staying open to new ideas and seeking knowledge",
+    "candidates": [
+      {
+        "id": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+        "version": 0,
+        "score": 0.5935797849827312,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive",
+          "hash": "c60d8d57b17f9273cb2ce3cff7f44ebe",
+          "created_at": "2026-10-28T00:15:33.477466-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+        "version": 0,
+        "score": 0.4427124986751254,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+          "hash": "b4297faebad592fea2c96d3ff1344505",
+          "created_at": "2026-10-28T00:16:06.689413-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "version": 0,
+        "score": 0.4064600965213274,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Maintains physical and mental health through activity, work, and political engagement",
+          "hash": "37dced17945f6b6c0cec493d038ed82a",
+          "created_at": "2026-10-28T00:16:06.723804-07:00",
+          "updated_at": "2026-10-28T00:18:27.341964-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.3958327028548164,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+        "version": 0,
+        "score": 0.33695041230803036,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like listening to techno because they find it too repetitive and prefer tunes that inspire and motivate them",
+          "hash": "62d6e771e69c3eddcbc0dde2f680cacf",
+          "created_at": "2026-10-28T00:17:13.763063-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0016882020281627774
+  },
+  {
+    "sequence": 40,
+    "time": "2026-10-28T15:18:40.613047+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 41,
+    "time": "2026-10-28T15:18:40.614850+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign",
+    "candidates": [
+      {
+        "id": "6e979956-47d6-405f-95d5-df176978b42a",
+        "version": 0,
+        "score": 0.5282705929743136,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "hash": "d745cb5d7d0a577e62755ce06ed4c894",
+          "created_at": "2026-10-28T00:17:13.771347-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+        "version": 0,
+        "score": 0.5139432947925544,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "hash": "43cd15007ab171ea070a6f20eb70b14f",
+          "created_at": "2026-10-28T00:17:13.696864-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7cf37b2e-3d24-447a-a44d-5071804b3d04",
+        "version": 0,
+        "score": 0.4613132847119015,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Values mental health as essential to effectively supporting their relative",
+          "hash": "7ed46a34179b26794a7162e7cb537f6e",
+          "created_at": "2026-10-28T00:18:28.641981-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+        "version": 0,
+        "score": 0.44787483721856225,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative",
+          "hash": "22fcd06a3031b8de42a1b8d124bf1e65",
+          "created_at": "2026-10-28T00:17:13.779897-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+        "version": 0,
+        "score": 0.44724000060386426,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "hash": "57f218a9e93e587e39872d77aa015291",
+          "created_at": "2026-10-28T00:17:13.705255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0018099559820257127
+  },
+  {
+    "sequence": 42,
+    "time": "2026-10-28T15:18:41.320342+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Envisions a long-term career in political consulting that supports the relative's legacy",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 43,
+    "time": "2026-10-28T15:18:41.322149+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Envisions a long-term career in political consulting that supports the relative's legacy",
+    "candidates": [
+      {
+        "id": "913bef92-248b-416b-ba35-052af3a4e960",
+        "version": 0,
+        "score": 0.6946311274506365,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Life goal is to support the political career of a close relative",
+          "hash": "876af0c7e71de81e7a201800188717c6",
+          "created_at": "2026-10-28T00:15:33.610071-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "version": 0,
+        "score": 0.5926115250298498,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Has friends in the political field whom they plan to consult for advice",
+          "hash": "256a5c128f13082b35967704a5967622",
+          "created_at": "2026-10-28T00:18:28.613662-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "version": 0,
+        "score": 0.5701386477687334,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Is transitioning from a tech job to political consulting",
+          "hash": "b69472bb245f5d3837ed2749a7eda5a3",
+          "created_at": "2026-10-28T00:16:06.654602-07:00",
+          "updated_at": "2026-10-28T00:18:27.332178-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "version": 0,
+        "score": 0.5505935283670466,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Also mentioned financial consulting as a possible related field",
+          "hash": "b70256632e77b3bdc9b56d48b9880b78",
+          "created_at": "2026-10-28T00:17:52.861976-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "version": 0,
+        "score": 0.5361842629236457,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "hash": "ba8fdea7cb76d6706deb848430b277a1",
+          "created_at": "2026-10-28T00:15:33.618102-07:00",
+          "updated_at": "2026-10-28T00:18:28.069831-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001812934991903603
+  },
+  {
+    "sequence": 44,
+    "time": "2026-10-28T15:18:41.469180+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Sustains optimism and clarity by focusing on motivations and positive impact",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 45,
+    "time": "2026-10-28T15:18:41.470844+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Sustains optimism and clarity by focusing on motivations and positive impact",
+    "candidates": [
+      {
+        "id": "6e979956-47d6-405f-95d5-df176978b42a",
+        "version": 0,
+        "score": 0.4547605605000785,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "hash": "d745cb5d7d0a577e62755ce06ed4c894",
+          "created_at": "2026-10-28T00:17:13.771347-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+        "version": 0,
+        "score": 0.4461049482016667,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Supporting the politician gives a sense of purpose and fulfillment",
+          "hash": "871c0df2ae5ea0ac0e4caba1b1cba9dd",
+          "created_at": "2026-10-28T00:16:06.732948-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "version": 0,
+        "score": 0.40131061183201566,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Maintains physical and mental health through activity, work, and political engagement",
+          "hash": "37dced17945f6b6c0cec493d038ed82a",
+          "created_at": "2026-10-28T00:16:06.723804-07:00",
+          "updated_at": "2026-10-28T00:18:27.341964-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7cf37b2e-3d24-447a-a44d-5071804b3d04",
+        "version": 0,
+        "score": 0.3935667316453,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Values mental health as essential to effectively supporting their relative",
+          "hash": "7ed46a34179b26794a7162e7cb537f6e",
+          "created_at": "2026-10-28T00:18:28.641981-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+        "version": 0,
+        "score": 0.38718802996585155,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive",
+          "hash": "c60d8d57b17f9273cb2ce3cff7f44ebe",
+          "created_at": "2026-10-28T00:15:33.477466-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0016711729695089161
+  },
+  {
+    "sequence": 46,
+    "time": "2026-10-28T15:18:41.599614+08:00",
+    "phase": "session_006",
+    "kind": "recall_input",
+    "query": "Stays connected with network by regularly attending events and maintaining communication with key contacts",
+    "limit": 5,
+    "filters": {
+      "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 47,
+    "time": "2026-10-28T15:18:41.602439+08:00",
+    "phase": "session_006",
+    "kind": "recall_output",
+    "query": "Stays connected with network by regularly attending events and maintaining communication with key contacts",
+    "candidates": [
+      {
+        "id": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+        "version": 0,
+        "score": 0.44308442906909223,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+          "hash": "b4297faebad592fea2c96d3ff1344505",
+          "created_at": "2026-10-28T00:16:06.689413-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "version": 0,
+        "score": 0.42015992794527535,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Maintains physical and mental health through activity, work, and political engagement",
+          "hash": "37dced17945f6b6c0cec493d038ed82a",
+          "created_at": "2026-10-28T00:16:06.723804-07:00",
+          "updated_at": "2026-10-28T00:18:27.341964-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "282c758f-e845-4896-942b-18d70892c22e",
+        "version": 0,
+        "score": 0.40562371300175454,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Actively engaged in political discussions",
+          "hash": "a2b8a4ceed6b7c20301be28e472cf105",
+          "created_at": "2026-10-28T00:15:33.601909-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+        "version": 0,
+        "score": 0.3882186285947178,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "hash": "57f218a9e93e587e39872d77aa015291",
+          "created_at": "2026-10-28T00:17:13.705255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "version": 0,
+        "score": 0.3746436258926333,
+        "payload": {
+          "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+          "data": "Aims to be a key advisor in political campaigns",
+          "hash": "d019b26bb6776e4b0ff0e08dbacfb2aa",
+          "created_at": "2026-10-28T00:17:52.886070-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0028308189939707518
+  }
+]

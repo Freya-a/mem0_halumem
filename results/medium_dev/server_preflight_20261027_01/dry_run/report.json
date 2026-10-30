@@ -1,0 +1,110 @@
+{
+  "status": "passed_offline_dry_run",
+  "environment": {
+    "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+    "executable": "/home/shu1004/anaconda3/envs/mem0_halumem/bin/python",
+    "conda_environment": "mem0_halumem",
+    "mem0ai": "0.1.118",
+    "mem0_loaded_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/mem0_v0.1.118/mem0/__init__.py",
+    "editable_install": {
+      "dir_info": {
+        "editable": true
+      },
+      "url": "file:///home/shu1004/ld/system/mem0_halumem_diagnosis/mem0_v0.1.118"
+    },
+    "dependency_versions": {
+      "openai": "1.109.1",
+      "qdrant-client": "1.20.0",
+      "numpy": "2.4.6",
+      "pydantic": "2.14.1"
+    }
+  },
+  "manifest_sha256": "607882aeefe690c5a4df37b992eee03ab2e7e69ff40a5dc9935d3030ad796590",
+  "profile_sha256": "d30e063009e0510a859a8e3c2b5a0e63d026fd0eddfe58d6df0d6473b891eadf",
+  "missing_credentials": [],
+  "credentials_required_for_dry_run": false,
+  "network": "blocked_in_process",
+  "memory_objects_constructed": 0,
+  "model_calls": 0,
+  "qa": "未运行",
+  "official_scoring": "未运行",
+  "plans": [
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "message_count": 322,
+      "input_sha256": "d15c4c55b3bd5e39bc63d9991250d5b3aae914648c9e57ef7f12cd6104a365b9",
+      "vector_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/qdrant",
+      "history_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/history.db",
+      "runtime_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/mem0_runtime"
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "message_count": 250,
+      "input_sha256": "27c98336289898a00bc95a1e3e8ef1f9269a7daa68dfa5ef853880ca35bcface",
+      "vector_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/qdrant",
+      "history_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/history.db",
+      "runtime_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/mem0_runtime"
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "message_count": 418,
+      "input_sha256": "b63e8823eeaaafa9b5d919c3acad86ca6180d609d9cff58183017c93e598aaa7",
+      "vector_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/1b846c59-456e-9550-dffd-4d23f1eca81f/qdrant",
+      "history_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/1b846c59-456e-9550-dffd-4d23f1eca81f/history.db",
+      "runtime_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/server_preflight_20261027_01/users/1b846c59-456e-9550-dffd-4d23f1eca81f/mem0_runtime"
+    }
+  ],
+  "checks": [
+    "dataset_sha256",
+    "frozen_selection",
+    "evidence_locations",
+    "complete_prefix",
+    "chronological_order",
+    "raw_dialogue_only",
+    "source_hashes",
+    "actual_import_version_and_path",
+    "separate_paths",
+    "partial_session_detection",
+    "resume_ordinal_filter",
+    "explicit_rollback_restores_before_files",
+    "partial_files_archived",
+    "committed_artifact_corruption_detection",
+    "missing_committed_database_refused",
+    "export_name_resolution",
+    "csv_only_human_edits_preserved"
+  ]
+}

@@ -1,0 +1,933 @@
+{
+  "audit_version": "human_review_v1_20261028",
+  "review_date": "2026-10-28",
+  "review_method": "LLM辅助、用户确认",
+  "scope": "数据目标及证据边界；未运行Mem0，未判运行成功或失败",
+  "target_count": 24,
+  "unique_target_ids": 24,
+  "classification_counts": {
+    "修订后接受": 14,
+    "重复确认": 4,
+    "接受": 5,
+    "归并": 1
+  },
+  "counts_by_user": [
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "counts": {
+        "修订后接受": 5,
+        "重复确认": 3
+      }
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "counts": {
+        "接受": 3,
+        "修订后接受": 4,
+        "重复确认": 1
+      }
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "counts": {
+        "修订后接受": 5,
+        "归并": 1,
+        "接受": 2
+      }
+    }
+  ],
+  "original_category_counts": {
+    "partial_attribute": 7,
+    "refinement": 11,
+    "replacement": 6
+  },
+  "structural_checks": {
+    "missing_targets": [],
+    "duplicate_target_ids": [],
+    "order_matches_manifest": true,
+    "category_and_official_annotations_unchanged": true,
+    "quotes_checked": 435,
+    "source_role_time_uuid_quote_or_cutoff_errors": [],
+    "structured_raw_dialogue_refs_checked": 445,
+    "annotation_unit_reference_checked": 1,
+    "coverage_annotation_reference_entries_checked": 8
+  },
+  "semantic_consistency_review": {
+    "method": "LLM回读全部用户确认结论与证据边界，用户确认既有24条；汇总未新增人工判断",
+    "contradictions_found": [],
+    "resolved_dependencies": [
+      "第2/3条新增性分工",
+      "第4/5/6条人物贡献归属",
+      "第12/13条相对改善和因果边界",
+      "第17/18/19/20条归并和方法计划"
+    ],
+    "scope_limit": "数据结论一致性；不表示Mem0运行通过"
+  },
+  "strict_correction": {
+    "predesignated_conditional_candidates": [
+      7,
+      10
+    ],
+    "conditional_candidate_type": "时间状态替换；区别于纠正原本错误事实",
+    "required_common_before_snapshot": "第7条须确有相关旧当前转岗阶段；第10条须确有旧当前具体职称，宽泛导演职业概括不够。缺旧状态单列旧状态未入库，不算局部修订失败，端到端仍检查新状态。",
+    "target_24": "默认排除；仅共同前快照明确有冲突的当前阶段命题时另核局部适用性，不从获客计划推定尚无任何客户。",
+    "all_other_targets": "不直接纳入旧命题明确失效的严格纠错分母。",
+    "actual_denominator": "待共同更新前快照及统一事件规则，不预填为2或其他数量"
+  },
+  "custom_semantic_denominator": {
+    "accepted_or_revised_primary_items": 19,
+    "repeat_controls": [
+      2,
+      5,
+      6,
+      15
+    ],
+    "merged_primary": [
+      20
+    ],
+    "target20_methods": "已确认关联补充子目标，非新增独立转型事件",
+    "target15_new_network": "候选范围未固定；不新增独立样本",
+    "legacy_blank_semantic_flag_rows_preserved": [
+      1,
+      3,
+      4,
+      8,
+      9,
+      11,
+      14,
+      16,
+      22,
+      23
+    ],
+    "actual_denominator": "按固定命题范围、覆盖和去重规则确定；19不是独立实验数，也不直接设为所有指标分母"
+  },
+  "deduplication": {
+    "session_group_count": 16,
+    "shared_multi_target_groups": [
+      {
+        "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005",
+        "target_numbers": [
+          2,
+          3
+        ]
+      },
+      {
+        "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006",
+        "target_numbers": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s004",
+        "target_numbers": [
+          10,
+          11
+        ]
+      },
+      {
+        "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005",
+        "target_numbers": [
+          12,
+          13
+        ]
+      },
+      {
+        "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+        "target_numbers": [
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    ],
+    "rules": [
+      "同UUID同会话仅输入一次，所有子目标共享前后快照。",
+      "目标满足按更新后整体知识内容判断，不要求名为UPDATE的操作或逐目标独立操作。",
+      "同一操作可满足多个子目标，但操作数以日志为准；不把多个命题命中当多次独立实验。",
+      "第20条方向/动机归17、角色意向归18，方法计划关联保留；心理/平衡与其他重叠命题去重。",
+      "官方逐点评分和原分母保持，不能与自定义去重统计混用。"
+    ]
+  },
+  "target15_coverage_check": {
+    "status": "会话级补充诊断候选，评测范围尚未固定",
+    "user_confirmed_content": [
+      {
+        "proposition": "晋升后建立新关系",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "status": "候选",
+        "evidence": {
+          "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "dataset_line_one_based": 14,
+          "json_pointer": "/sessions/7/dialogue/0",
+          "role": "user",
+          "timestamp": "Apr 30, 2026, 06:27:45",
+          "quote": "Since my promotion at Historical Productions Ltd., I've been meeting so many new people. It's been exciting to form new connections, especially with those who share my passion for historical accuracy in films."
+        }
+      },
+      {
+        "proposition": "一位新同事带来新视角并对项目产生影响",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "status": "候选",
+        "evidence": {
+          "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "dataset_line_one_based": 14,
+          "json_pointer": "/sessions/7/dialogue/2",
+          "role": "user",
+          "timestamp": "Apr 30, 2026, 06:30:04",
+          "quote": "The collaboration has been great. This new colleague has introduced some fresh perspectives that are already making a difference in our projects. Balancing new and old relationships is crucial, but I find it rewarding to maintain both."
+        }
+      },
+      {
+        "proposition": "新人脉提供新想法，帮助克服创作障碍",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "status": "候选",
+        "evidence": {
+          "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "dataset_line_one_based": 14,
+          "json_pointer": "/sessions/7/dialogue/6",
+          "role": "user",
+          "timestamp": "Apr 30, 2026, 06:33:29",
+          "quote": "My new network also aids in overcoming creative blocks by providing fresh ideas."
+        }
+      }
+    ],
+    "attribution": "不归入Mary或Steven的既有贡献；新同事姓名未知，不与Steven、Richard等已有姓名自动合并。",
+    "coverage_check_status": "已对照24条选定目标及同会话其他官方点：24条主目标无同一新增目标；同会话m000/m002/m003/m004与候选重叠；尚未固定自定义范围，不新增样本。",
+    "evaluation_scope_fixed": false,
+    "independent_experiment_sample_increment": 0,
+    "official_m006_required": false,
+    "cross_method_rule": "若后续纳入评测，单独标明范围，所有方法采用一致口径。",
+    "coverage_check_details": [
+      {
+        "annotation_json_pointer": "/sessions/7/memory_points/0",
+        "memory_content": "Williams Daniel has formed new professional connections following his promotion at Historical Productions Ltd., including a new colleague who brings innovative ideas.",
+        "source_kind": "官方标注概括，仅用于覆盖范围比较，不是用户原始证据",
+        "selected_target_in_24": false
+      },
+      {
+        "annotation_json_pointer": "/sessions/7/memory_points/2",
+        "memory_content": "Williams Daniel's new colleague introduced innovative ideas that positively influenced his work, enhancing the collaborative environment.",
+        "source_kind": "官方标注概括，仅用于覆盖范围比较，不是用户原始证据",
+        "selected_target_in_24": false
+      },
+      {
+        "annotation_json_pointer": "/sessions/7/memory_points/3",
+        "memory_content": "Williams Daniel emphasized the importance of balancing existing friendships with new professional relationships for personal and professional growth.",
+        "source_kind": "官方标注概括，仅用于覆盖范围比较，不是用户原始证据",
+        "selected_target_in_24": false
+      },
+      {
+        "annotation_json_pointer": "/sessions/7/memory_points/4",
+        "memory_content": "Williams Daniel's promotion expanded his support network, aiding in overcoming creative challenges through fresh ideas from new connections.",
+        "source_kind": "官方标注概括，仅用于覆盖范围比较，不是用户原始证据",
+        "selected_target_in_24": false
+      }
+    ]
+  },
+  "candidate_protections": {
+    "entries_across_rows": 176,
+    "unique_proposition_count": "未将跨目标重复候选条目当作唯一事实计数",
+    "verification_status": "全部待更新前实际知识库、对应条目及更新后保护核验；不预设入库、同条存储或当前永久有效",
+    "historical_vs_current": "带时间的真实历史与未受否定的当前知识分开，不能保护过期当前状态",
+    "user_isolation": "按三个UUID隔离，同名人物不合并"
+  },
+  "runtime": {
+    "status": "待运行核验",
+    "actual_operations": "待运行核验",
+    "knowledge_damage": "待运行核验",
+    "failure_types": "",
+    "model_calls_this_turn": 0
+  },
+  "offline_preflight": {
+    "report": "results/medium_dev/human_review_audit_20261028_v1/dry_run/report.json",
+    "sha256": "eb04eaca7d5fa10f112a5a7f1b6cacfb3e2b89052e543b7d7da7d709ae79ca70",
+    "status": "passed_offline_dry_run",
+    "network": "blocked_in_process",
+    "memory_objects_constructed": 0,
+    "model_calls": 0,
+    "credentials_note": "使用空模板做断网预检；缺凭证提示不代表已检查真实密钥。"
+  },
+  "native_runner_limitations": {
+    "minimum_unit": "单个选定用户完整前缀；现有CLI没有单目标/中途停止选项",
+    "minimum_user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "human_review_auto_loaded": false,
+    "human_review_in_native_run_fingerprint": false,
+    "required_interpretation": "后续运行需关联本审核快照与指纹；生成的review_pending仍来自原初标，须依据人工层解释自定义诊断，不能当作已确认结果。"
+  },
+  "source_sha256": {
+    "diagnosis/medium_dev/manifest.json": "607882aeefe690c5a4df37b992eee03ab2e7e69ff40a5dc9935d3030ad796590",
+    "diagnosis/medium_dev/initial_annotations.csv": "c04495e4c58f63b84514ff998be0fc87fec9cafc849868a25a0792eab282fddb",
+    "diagnosis/medium_dev/TARGETS.md": "dd602e4025b7406a7e099133898202f02858c8b98e9722b358a4229417cde224",
+    "diagnosis/medium_dev/prefix_ranges.json": "4648ff5c3c5725ba0274403c8e5329bc8c56ee5f8058139987debc2b2f62c7d9",
+    "diagnosis/medium_dev/SELECTION_RULES.md": "4e74782c1821d10a3fb2c83766bcba7f67979f714579302983c2b05e22ab09d5",
+    "diagnosis/medium_dev/recipes.json": "3e3f7dd2ea6498da036e1a5e4eba579155cf210fa116d1fa315bce8f0a8edc3a",
+    "HaluMem/data/HaluMem-Medium.jsonl": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7"
+  },
+  "metadata_normalizations": [
+    {
+      "target": 1,
+      "field": "actual_operations_status",
+      "before": "",
+      "after": "待运行核验"
+    },
+    {
+      "target": 2,
+      "field": "actual_operations_status",
+      "before": "待核验",
+      "after": "待运行核验"
+    },
+    {
+      "target": 3,
+      "field": "actual_operations_status",
+      "before": "待核验",
+      "after": "待运行核验"
+    }
+  ],
+  "frozen_manifest_status_note": "原manifest的human_verified_targets=0及pending状态保留为原始快照；当前24条审核状态由独立human_review层记录，不回写manifest。",
+  "full_prefixes": [
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "dataset_line_one_based": 1,
+      "target_count": 8,
+      "first_chronological_ordinal_one_based": 1,
+      "last_chronological_ordinal_one_based": 9,
+      "original_session_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "full_sessions_required": 9,
+      "messages_required": 322,
+      "start_time": "Sep 04, 2025, 18:42:18",
+      "end_time": "Apr 10, 2026, 11:51:02",
+      "sessions": [
+        {
+          "original_session_index_zero_based": 0,
+          "chronological_ordinal_one_based": 1,
+          "start_time": "Sep 04, 2025, 18:42:18",
+          "end_time": "Sep 04, 2025, 21:12:18",
+          "message_count": 12
+        },
+        {
+          "original_session_index_zero_based": 1,
+          "chronological_ordinal_one_based": 2,
+          "start_time": "Sep 05, 2025, 22:32:20",
+          "end_time": "Sep 06, 2025, 01:02:20",
+          "message_count": 8
+        },
+        {
+          "original_session_index_zero_based": 2,
+          "chronological_ordinal_one_based": 3,
+          "start_time": "Sep 06, 2025, 22:43:36",
+          "end_time": "Sep 07, 2025, 01:13:36",
+          "message_count": 32
+        },
+        {
+          "original_session_index_zero_based": 3,
+          "chronological_ordinal_one_based": 4,
+          "start_time": "Dec 15, 2025, 06:11:23",
+          "end_time": "Dec 15, 2025, 08:41:23",
+          "message_count": 60
+        },
+        {
+          "original_session_index_zero_based": 4,
+          "chronological_ordinal_one_based": 5,
+          "start_time": "Jan 06, 2026, 17:48:59",
+          "end_time": "Jan 06, 2026, 20:12:29",
+          "message_count": 52
+        },
+        {
+          "original_session_index_zero_based": 5,
+          "chronological_ordinal_one_based": 6,
+          "start_time": "Jan 10, 2026, 07:21:20",
+          "end_time": "Jan 10, 2026, 08:11:20",
+          "message_count": 30
+        },
+        {
+          "original_session_index_zero_based": 6,
+          "chronological_ordinal_one_based": 7,
+          "start_time": "Feb 05, 2026, 17:13:15",
+          "end_time": "Feb 05, 2026, 18:12:15",
+          "message_count": 30
+        },
+        {
+          "original_session_index_zero_based": 7,
+          "chronological_ordinal_one_based": 8,
+          "start_time": "Mar 01, 2026, 07:04:00",
+          "end_time": "Mar 01, 2026, 09:34:00",
+          "message_count": 60
+        },
+        {
+          "original_session_index_zero_based": 8,
+          "chronological_ordinal_one_based": 9,
+          "start_time": "Apr 10, 2026, 10:40:32",
+          "end_time": "Apr 10, 2026, 11:51:02",
+          "message_count": 38
+        }
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "target_count": 8,
+      "first_chronological_ordinal_one_based": 1,
+      "last_chronological_ordinal_one_based": 8,
+      "original_session_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "full_sessions_required": 8,
+      "messages_required": 250,
+      "start_time": "Sep 04, 2025, 13:58:59",
+      "end_time": "Jan 05, 2026, 10:13:42",
+      "sessions": [
+        {
+          "original_session_index_zero_based": 0,
+          "chronological_ordinal_one_based": 1,
+          "start_time": "Sep 04, 2025, 13:58:59",
+          "end_time": "Sep 04, 2025, 16:28:59",
+          "message_count": 12
+        },
+        {
+          "original_session_index_zero_based": 1,
+          "chronological_ordinal_one_based": 2,
+          "start_time": "Sep 05, 2025, 07:35:40",
+          "end_time": "Sep 05, 2025, 10:05:40",
+          "message_count": 8
+        },
+        {
+          "original_session_index_zero_based": 2,
+          "chronological_ordinal_one_based": 3,
+          "start_time": "Sep 06, 2025, 13:22:33",
+          "end_time": "Sep 06, 2025, 15:52:33",
+          "message_count": 28
+        },
+        {
+          "original_session_index_zero_based": 3,
+          "chronological_ordinal_one_based": 4,
+          "start_time": "Nov 10, 2025, 18:05:35",
+          "end_time": "Nov 10, 2025, 19:08:35",
+          "message_count": 30
+        },
+        {
+          "original_session_index_zero_based": 4,
+          "chronological_ordinal_one_based": 5,
+          "start_time": "Nov 25, 2025, 14:15:47",
+          "end_time": "Nov 25, 2025, 15:50:17",
+          "message_count": 38
+        },
+        {
+          "original_session_index_zero_based": 5,
+          "chronological_ordinal_one_based": 6,
+          "start_time": "Dec 10, 2025, 18:03:38",
+          "end_time": "Dec 10, 2025, 19:38:38",
+          "message_count": 44
+        },
+        {
+          "original_session_index_zero_based": 6,
+          "chronological_ordinal_one_based": 7,
+          "start_time": "Dec 20, 2025, 07:13:08",
+          "end_time": "Dec 20, 2025, 08:20:08",
+          "message_count": 30
+        },
+        {
+          "original_session_index_zero_based": 7,
+          "chronological_ordinal_one_based": 8,
+          "start_time": "Jan 05, 2026, 07:43:42",
+          "end_time": "Jan 05, 2026, 10:13:42",
+          "message_count": 60
+        }
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "dataset_line_one_based": 14,
+      "target_count": 8,
+      "first_chronological_ordinal_one_based": 1,
+      "last_chronological_ordinal_one_based": 11,
+      "original_session_indices_zero_based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "full_sessions_required": 11,
+      "messages_required": 418,
+      "start_time": "Sep 04, 2025, 09:27:31",
+      "end_time": "Jul 13, 2026, 10:34:46",
+      "sessions": [
+        {
+          "original_session_index_zero_based": 0,
+          "chronological_ordinal_one_based": 1,
+          "start_time": "Sep 04, 2025, 09:27:31",
+          "end_time": "Sep 04, 2025, 11:57:31",
+          "message_count": 12
+        },
+        {
+          "original_session_index_zero_based": 1,
+          "chronological_ordinal_one_based": 2,
+          "start_time": "Sep 05, 2025, 14:34:36",
+          "end_time": "Sep 05, 2025, 17:04:36",
+          "message_count": 8
+        },
+        {
+          "original_session_index_zero_based": 2,
+          "chronological_ordinal_one_based": 3,
+          "start_time": "Sep 06, 2025, 22:08:24",
+          "end_time": "Sep 07, 2025, 00:38:24",
+          "message_count": 32
+        },
+        {
+          "original_session_index_zero_based": 3,
+          "chronological_ordinal_one_based": 4,
+          "start_time": "Jan 06, 2026, 06:49:58",
+          "end_time": "Jan 06, 2026, 08:02:28",
+          "message_count": 38
+        },
+        {
+          "original_session_index_zero_based": 4,
+          "chronological_ordinal_one_based": 5,
+          "start_time": "Feb 01, 2026, 18:47:19",
+          "end_time": "Feb 01, 2026, 21:17:19",
+          "message_count": 60
+        },
+        {
+          "original_session_index_zero_based": 5,
+          "chronological_ordinal_one_based": 6,
+          "start_time": "Mar 15, 2026, 13:53:58",
+          "end_time": "Mar 15, 2026, 16:23:58",
+          "message_count": 60
+        },
+        {
+          "original_session_index_zero_based": 6,
+          "chronological_ordinal_one_based": 7,
+          "start_time": "Apr 10, 2026, 11:06:07",
+          "end_time": "Apr 10, 2026, 13:09:07",
+          "message_count": 44
+        },
+        {
+          "original_session_index_zero_based": 7,
+          "chronological_ordinal_one_based": 8,
+          "start_time": "Apr 30, 2026, 06:27:45",
+          "end_time": "Apr 30, 2026, 08:06:45",
+          "message_count": 44
+        },
+        {
+          "original_session_index_zero_based": 8,
+          "chronological_ordinal_one_based": 9,
+          "start_time": "May 20, 2026, 08:49:23",
+          "end_time": "May 20, 2026, 09:44:23",
+          "message_count": 30
+        },
+        {
+          "original_session_index_zero_based": 9,
+          "chronological_ordinal_one_based": 10,
+          "start_time": "Jun 15, 2026, 22:16:26",
+          "end_time": "Jun 15, 2026, 23:42:56",
+          "message_count": 38
+        },
+        {
+          "original_session_index_zero_based": 10,
+          "chronological_ordinal_one_based": 11,
+          "start_time": "Jul 13, 2026, 08:32:16",
+          "end_time": "Jul 13, 2026, 10:34:46",
+          "message_count": 52
+        }
+      ]
+    }
+  ],
+  "total_full_sessions": 28,
+  "total_messages": 990,
+  "target_checks": [
+    {
+      "number": 1,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/4/memory_points/0",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "8d468d79998ebbd33b24ee11f7abf1d60c6fddd3cb4079c3addeec088f493d54",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 2,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m001",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/5/memory_points/1",
+      "review_class": "重复确认",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "7ce46d5c18e423ba54afaf4a3ac6ee417577f59f9b890e7eb8f7cb6f0c5683b2",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 3,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/5/memory_points/4",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "4aa6541b6b43e1524b1204e939c0f9b7e98df465bcb9146d297a24f691db244b",
+      "candidate_entries": 8,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 4,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/6/memory_points/1",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "d3d5b96ede6bb7cd0958cb92813728f8bc92dffac07f9bcdb0e099b9a0444008",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 5,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/6/memory_points/2",
+      "review_class": "重复确认",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "d135cc2850a81a767beb552c02a4cace542e764b0ba86c42b5472068b19d8cea",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 6,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/6/memory_points/3",
+      "review_class": "重复确认",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "88d04348f6caa2681fc99836c6e31b2a385d5bf1d76be3143192a9edddb679f6",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 7,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/7/memory_points/0",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "35d546c978e49ca4a420180880b80a8a2cebf5d06094c6dfc622fdcacb4a98a3",
+      "candidate_entries": 15,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 8,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008:m000",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "annotation_json_pointer": "/sessions/8/memory_points/0",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "b823af88db0bd41396b791c3d09577585cbd47d4083c3ac1161284c355ed552e",
+      "candidate_entries": 10,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 9,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/3/memory_points/1",
+      "review_class": "接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "7c1a4a43823ec9ef717a8a945416412b434c7845fdddc548f439220c518d82ea",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 10,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s004:m000",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/4/memory_points/0",
+      "review_class": "接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "40747876672722f736ce634da021d0a5cd04a5b27c467ef7a0705b29ebff3293",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 11,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s004:m003",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/4/memory_points/3",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "8471b748a5cde1dbaea3beffead8f202d73c2241b2fed2191d1ae59ce3c82514",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 12,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/5/memory_points/0",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "5e74db217f5bfd6739be07193eee1b3816cf4da9314132c5c03952b366bf781c",
+      "candidate_entries": 9,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 13,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/5/memory_points/1",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "3474ed1454dafe41bcceca8710083df969a84cf433e9a944c15492f32ff97114",
+      "candidate_entries": 9,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 14,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s006:m000",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/6/memory_points/0",
+      "review_class": "接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "db623ca37be19c5c83c78bb2554405585d9a3861038aa073ad93c3646a311100",
+      "candidate_entries": 8,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 15,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/7/memory_points/6",
+      "review_class": "重复确认",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "cdf82e419702f55b33dc715ad918e9af1b6e1323d72ef81291643e92f430c10e",
+      "candidate_entries": 6,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 16,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "annotation_json_pointer": "/sessions/10/memory_points/1",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "2d08ae23760975b428e8b198d0e4c5ac6a0fc6aa7a79b048df8778c2491f16d3",
+      "candidate_entries": 5,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 17,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/3/memory_points/1",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "5f12abcf2bbbb6130ff1a542f5f2750f4b1673bf65e319951b0dae9fab6115da",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 18,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/3/memory_points/3",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "e27921e8c92effddcf84c5472eaf55d774f3428925914d131e9356cbc0b6c467",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 19,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/3/memory_points/4",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "8d1b2900e2c949d54472939a79febb1bf9b08f4536efcc7095a3880086a5bcf0",
+      "candidate_entries": 4,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 20,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/3/memory_points/5",
+      "review_class": "归并",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "991380b138d310fb7f6b52419d4d11a5f8e4da8f59b2da59c9a2241df9ecc1cf",
+      "candidate_entries": 8,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 21,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/4/memory_points/0",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "ce1e1877e5313446806324ca8deb100a0ce5d0d5aeb1e392bf973beb14b09244",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 22,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/5/memory_points/4",
+      "review_class": "接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "1f0ea8934c84c657074e8ef87f691a382c11ba714b5989c29d14f1f61f7059b1",
+      "candidate_entries": 5,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 23,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/6/memory_points/1",
+      "review_class": "接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "3143e5f51fe41a7ba8f6d5ef55e76964ae0268b163c398cc8c1f9635745505c4",
+      "candidate_entries": 7,
+      "runtime_status": "待运行核验"
+    },
+    {
+      "number": 24,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s007:m006",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "annotation_json_pointer": "/sessions/7/memory_points/6",
+      "review_class": "修订后接受",
+      "category_unchanged": true,
+      "official_annotation_matches_raw": true,
+      "user_conclusion_sha256": "f17d26972999924aa6e0591e26f8eef9289df61fb1b59ff6b86cef359ff53f45",
+      "candidate_entries": 10,
+      "runtime_status": "待运行核验"
+    }
+  ],
+  "diagnostic_families": [
+    {
+      "type": "体验／偏好补充与范围细化",
+      "target_numbers": [
+        1,
+        8,
+        9,
+        14,
+        16
+      ],
+      "count": 5
+    },
+    {
+      "type": "职业探索／职责能力／支持情境细化",
+      "target_numbers": [
+        3,
+        4,
+        11,
+        22
+      ],
+      "count": 4
+    },
+    {
+      "type": "获客计划与人脉应用情境",
+      "target_numbers": [
+        23
+      ],
+      "count": 1
+    },
+    {
+      "type": "时间状态替换",
+      "target_numbers": [
+        7,
+        10
+      ],
+      "count": 2
+    },
+    {
+      "type": "心理／平衡相对或时间状态更新",
+      "target_numbers": [
+        12,
+        13,
+        21
+      ],
+      "count": 3
+    },
+    {
+      "type": "职业方向／角色意向／阶段性收入进程",
+      "target_numbers": [
+        17,
+        18,
+        19
+      ],
+      "count": 3
+    },
+    {
+      "type": "已获首批客户里程碑",
+      "target_numbers": [
+        24
+      ],
+      "count": 1
+    },
+    {
+      "type": "重复确认对照",
+      "target_numbers": [
+        2,
+        5,
+        6,
+        15
+      ],
+      "count": 4
+    },
+    {
+      "type": "主命题归并，方法计划关联保留",
+      "target_numbers": [
+        20
+      ],
+      "count": 1
+    }
+  ]
+}

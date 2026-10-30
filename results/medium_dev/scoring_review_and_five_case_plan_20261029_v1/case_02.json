@@ -1,0 +1,115 @@
+{
+  "number": 2,
+  "id": "update_1b846c59-456e-9550-dffd-4d23f1eca81f_s004_m000",
+  "kind": "update",
+  "automatic_label": "Correct",
+  "selection_sha256": "3abfc56f2413edeeb44ff85fb110dace20d437047a137cb75456e479039d5f3b",
+  "decision_llm_assisted": "存疑",
+  "review_rationale": "新职称与雇主均被保存，“最近晋升”有新状态线索；旧 Director 文本仍以现在时存在。评分理由称旧记录已被取代，却未说明其是否已明确标为过时；Director 也可能作为职业泛称兼容，故不能仅凭共存判错。",
+  "caveat": "可认可新增晋升事实，但对官方要求的替代/过时条件尚缺充分依据。",
+  "source": {
+    "uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session_index_zero_based": 4,
+    "session_ordinal_one_based": 5,
+    "memory_point_index_zero_based": 0,
+    "memory_point": {
+      "index": 1,
+      "memory_content": "Williams Daniel's career_status updated job_title from \"Director\" to \"Lead Director\" at Historical Productions Ltd.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Williams Daniel's job title is Director"
+      ],
+      "timestamp": "Feb 01, 2026, 21:17:19",
+      "importance": 0.75
+    },
+    "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/after.json",
+    "snapshot_sha256": "1ff29e7b96ed0e9f86140154ed29f2c73e4f496e8b610365429933f5db62ba1f",
+    "retrieval_status": "not_recorded_in_original_run"
+  },
+  "session_start": "Feb 01, 2026, 18:47:19",
+  "session_end": "Feb 01, 2026, 21:17:19",
+  "source_dialogue_highlights": [
+    {
+      "session_index_zero_based": 4,
+      "message_index_zero_based": 0,
+      "role": "user",
+      "content": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+      "timestamp": "Feb 01, 2026, 18:47:19",
+      "dialogue_turn": 0
+    }
+  ],
+  "source_full_session_input": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json",
+  "relevant_complete_source_data_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/HaluMem/data/HaluMem-Medium.jsonl",
+  "retrieved_hits": [
+    {
+      "id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "memory": "Recently promoted to lead director at Historical Productions Ltd",
+      "timestamp": "2026-10-27T23:41:45.187008-07:00",
+      "score": 0.6441214349191312
+    },
+    {
+      "id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory": "Works at Historical Productions Ltd. as a Director",
+      "timestamp": "2026-10-27T23:38:18.636327-07:00",
+      "score": 0.6173432076193024
+    },
+    {
+      "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "memory": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+      "timestamp": "2026-10-27T23:38:18.744569-07:00",
+      "score": 0.49875967723174747
+    },
+    {
+      "id": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "memory": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+      "timestamp": "2026-10-27T23:38:18.727572-07:00",
+      "score": 0.4896353197173239
+    },
+    {
+      "id": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "memory": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+      "timestamp": "2026-10-27T23:38:18.708401-07:00",
+      "score": 0.46384630576427616
+    },
+    {
+      "id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+      "timestamp": "2026-10-27T23:38:18.690128-07:00",
+      "score": 0.42726483365641466
+    },
+    {
+      "id": "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "memory": "Name is Williams",
+      "timestamp": "2026-10-27T23:37:45.714054-07:00",
+      "score": 0.40076225115423786
+    },
+    {
+      "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "memory": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+      "timestamp": "2026-10-27T23:38:18.718370-07:00",
+      "score": 0.38925454493097933
+    },
+    {
+      "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "memory": "Plans to direct 10 award-winning historical films",
+      "timestamp": "2026-10-27T23:37:45.854637-07:00",
+      "score": 0.37846410570969885
+    },
+    {
+      "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "memory": "Goal is to create historically accurate films",
+      "timestamp": "2026-10-27T23:37:45.837032-07:00",
+      "score": 0.37523342487169875
+    }
+  ],
+  "system_response": null,
+  "official_judge_result": {
+    "reason": "The Target Memory for Update specifies that 'Williams Daniel's career_status updated job_title from \"Director\" to \"Lead Director\" at Historical Productions Ltd.' The Generated Memories includes a memory: '2026-10-27T23:41:45.187008-07:00: Recently promoted to lead director at Historical Productions Ltd'. This correctly reflects the update — it captures the promotion, the new title ('lead director'), the company ('Historical Productions Ltd'), and implies replacement of the prior role. Although the name 'Williams Daniel' is not explicitly stated in that entry (only 'Williams' appears elsewhere), the context strongly links it (e.g., 'Name is Williams' and 'Works at Historical Productions Ltd. as a Director' earlier), and 'lead director' is a direct, accurate synonym/upgrade of 'Director' at the same company. No factual contradiction exists; no key information (new title, company, promotion event) is missing. The original 'Director' memory remains present but is superseded by the newer, more specific 'lead director' entry — consistent with typical memory updating where old facts persist unless explicitly deprecated.",
+    "evaluation_result": "Correct"
+  },
+  "snapshot_sha256": "1ff29e7b96ed0e9f86140154ed29f2c73e4f496e8b610365429933f5db62ba1f",
+  "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/after.json",
+  "official_record_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/official_eval_development_20261029_v1/records.jsonl"
+}

@@ -1,0 +1,469 @@
+[
+  {
+    "sequence": 70,
+    "time": "2026-10-28T15:08:40.862708+08:00",
+    "phase": "session_003",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic'}, {'id': '1', 'text': \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\"}, {'id': '2', 'text': 'MBTI personality type is ENTP'}, {'id': '3', 'text': 'Lives in Columbus'}, {'id': '4', 'text': 'Passionate about improving health outcomes'}, {'id': '5', 'text': 'No children'}, {'id': '6', 'text': 'Mental health is mildly abnormal, no diagnosed mental health issues'}, {'id': '7', 'text': \"Motivated by family's medical background and desire to promote well-being globally\"}, {'id': '8', 'text': 'Both parents are alive'}, {'id': '9', 'text': 'Physical condition is normal, no chronic diseases'}, {'id': '10', 'text': 'Life goal is to establish a global health initiative to improve access to healthcare for underserved communities'}, {'id': '11', 'text': 'Father was born on 1963-08-02, retired doctor who inspired interest in health'}, {'id': '12', 'text': 'Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions'}, {'id': '13', 'text': 'Employed in the healthcare industry'}, {'id': '14', 'text': 'Family is deeply rooted in the medical field'}, {'id': '15', 'text': 'Age is 29'}, {'id': '16', 'text': 'Leads initiatives to enhance healthcare services and promote well-being'}, {'id': '17', 'text': 'Date of birth is 1996-08-02'}, {'id': '18', 'text': 'Gender is Male'}, {'id': '19', 'text': 'Works at Huaxin Consulting as a director'}, {'id': '20', 'text': 'Has 43700 USD in savings'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging', 'Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors', 'Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work', 'Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging', 'Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being', 'Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health', 'Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth', 'Dislikes automobile racing due to environmental impact and lack of physical engagement', 'Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field', 'Dislikes violent video games because they promote aggression, contrary to values of peace and well-being', 'Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession', 'Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health', 'Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle', 'Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment', 'Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life', 'Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective', 'Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance', 'Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge', 'Dislikes horror films because they can be disturbing and detract from positive mindset', 'Dislikes slasher films because they are too violent and prefers movies with meaningful narratives', 'Likes herbal teas for their calming properties and health benefits, supporting overall well-being', 'Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle', 'Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach', 'Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial', 'Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music', 'Likes classical music for relaxation and focus, as it creates a peaceful atmosphere', 'Likes jazz for its improvisational style and ability to stimulate creativity', 'Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity', 'Likes ambient music for unwinding after a busy day, as it helps relax and recharge', 'Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle', 'Likes casual business attire for work as it balances professionalism and comfort', 'Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness', 'Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "1": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "2": "49f70983-6dd1-45ec-ab75-12dbf70045f7",
+      "3": "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7",
+      "4": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "5": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "6": "057b5a64-9907-43b0-87d3-17542aba7e36",
+      "7": "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+      "8": "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c",
+      "9": "a734e783-f463-46cf-abc9-e193f68acee8",
+      "10": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "11": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "12": "58589cd3-36bc-439f-8003-d6416735b820",
+      "13": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "14": "8d868048-d0e8-486a-9cc4-02baf4832f64",
+      "15": "50aed4f4-9f64-4824-8f3d-15fc8e939ebb",
+      "16": "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402",
+      "17": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "18": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "19": "13a9a169-1fbc-4b0c-976d-b0d21209526d",
+      "20": "ef0c4933-39c8-40b5-a118-a5677130bdcb"
+    },
+    "native_new_facts": [
+      "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+      "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+      "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+      "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+      "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+      "Dislikes automobile racing due to environmental impact and lack of physical engagement",
+      "Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field",
+      "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+      "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+      "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+      "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+      "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+      "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+      "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+      "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+      "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+      "Dislikes horror films because they can be disturbing and detract from positive mindset",
+      "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+      "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+      "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+      "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+      "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+      "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+      "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+      "Likes jazz for its improvisational style and ability to stimulate creativity",
+      "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+      "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+      "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+      "Likes casual business attire for work as it balances professionalism and comfort",
+      "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+      "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+      },
+      {
+        "id": "1",
+        "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+      },
+      {
+        "id": "2",
+        "text": "MBTI personality type is ENTP"
+      },
+      {
+        "id": "3",
+        "text": "Lives in Columbus"
+      },
+      {
+        "id": "4",
+        "text": "Passionate about improving health outcomes"
+      },
+      {
+        "id": "5",
+        "text": "No children"
+      },
+      {
+        "id": "6",
+        "text": "Mental health is mildly abnormal, no diagnosed mental health issues"
+      },
+      {
+        "id": "7",
+        "text": "Motivated by family's medical background and desire to promote well-being globally"
+      },
+      {
+        "id": "8",
+        "text": "Both parents are alive"
+      },
+      {
+        "id": "9",
+        "text": "Physical condition is normal, no chronic diseases"
+      },
+      {
+        "id": "10",
+        "text": "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities"
+      },
+      {
+        "id": "11",
+        "text": "Father was born on 1963-08-02, retired doctor who inspired interest in health"
+      },
+      {
+        "id": "12",
+        "text": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions"
+      },
+      {
+        "id": "13",
+        "text": "Employed in the healthcare industry"
+      },
+      {
+        "id": "14",
+        "text": "Family is deeply rooted in the medical field"
+      },
+      {
+        "id": "15",
+        "text": "Age is 29"
+      },
+      {
+        "id": "16",
+        "text": "Leads initiatives to enhance healthcare services and promote well-being"
+      },
+      {
+        "id": "17",
+        "text": "Date of birth is 1996-08-02"
+      },
+      {
+        "id": "18",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "19",
+        "text": "Works at Huaxin Consulting as a director"
+      },
+      {
+        "id": "20",
+        "text": "Has 43700 USD in savings"
+      }
+    ]
+  },
+  {
+    "sequence": 71,
+    "time": "2026-10-28T15:09:28.572259+08:00",
+    "phase": "session_003",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"MBTI personality type is ENTP\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Lives in Columbus\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Passionate about improving health outcomes\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"No children\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Mental health is mildly abnormal, no diagnosed mental health issues\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Motivated by family's medical background and desire to promote well-being globally\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Both parents are alive\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Physical condition is normal, no chronic diseases\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Life goal is to establish a global health initiative to improve access to healthcare for underserved communities\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Father was born on 1963-08-02, retired doctor who inspired interest in health\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Employed in the healthcare industry\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Family is deeply rooted in the medical field\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Age is 29\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Leads initiatives to enhance healthcare services and promote well-being\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Date of birth is 1996-08-02\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Works at Huaxin Consulting as a director\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Has 43700 USD in savings\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Dislikes automobile racing due to environmental impact and lack of physical engagement\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Dislikes violent video games because they promote aggression, contrary to values of peace and well-being\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Dislikes horror films because they can be disturbing and detract from positive mindset\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Dislikes slasher films because they are too violent and prefers movies with meaningful narratives\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Likes herbal teas for their calming properties and health benefits, supporting overall well-being\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Likes classical music for relaxation and focus, as it creates a peaceful atmosphere\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Likes jazz for its improvisational style and ability to stimulate creativity\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Likes ambient music for unwinding after a busy day, as it helps relax and recharge\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"50\",\n            \"text\": \"Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"51\",\n            \"text\": \"Likes casual business attire for work as it balances professionalism and comfort\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"52\",\n            \"text\": \"Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"53\",\n            \"text\": \"Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "MBTI personality type is ENTP",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Lives in Columbus",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Passionate about improving health outcomes",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "No children",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Mental health is mildly abnormal, no diagnosed mental health issues",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Motivated by family's medical background and desire to promote well-being globally",
+          "event": "NONE"
+        },
+        {
+          "id": "8",
+          "text": "Both parents are alive",
+          "event": "NONE"
+        },
+        {
+          "id": "9",
+          "text": "Physical condition is normal, no chronic diseases",
+          "event": "NONE"
+        },
+        {
+          "id": "10",
+          "text": "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Employed in the healthcare industry",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Family is deeply rooted in the medical field",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Age is 29",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Leads initiatives to enhance healthcare services and promote well-being",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Date of birth is 1996-08-02",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "Gender is Male",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Works at Huaxin Consulting as a director",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "Has 43700 USD in savings",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "event": "ADD"
+        },
+        {
+          "id": "22",
+          "text": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+          "event": "ADD"
+        },
+        {
+          "id": "23",
+          "text": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+          "event": "ADD"
+        },
+        {
+          "id": "24",
+          "text": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+          "event": "ADD"
+        },
+        {
+          "id": "25",
+          "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "event": "ADD"
+        },
+        {
+          "id": "26",
+          "text": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+          "event": "ADD"
+        },
+        {
+          "id": "27",
+          "text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+          "event": "ADD"
+        },
+        {
+          "id": "28",
+          "text": "Dislikes automobile racing due to environmental impact and lack of physical engagement",
+          "event": "ADD"
+        },
+        {
+          "id": "29",
+          "text": "Likes yoga because it helps maintain flexibility and mental clarity, essential for demanding job in the medical field",
+          "event": "ADD"
+        },
+        {
+          "id": "30",
+          "text": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+          "event": "ADD"
+        },
+        {
+          "id": "31",
+          "text": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+          "event": "ADD"
+        },
+        {
+          "id": "32",
+          "text": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+          "event": "ADD"
+        },
+        {
+          "id": "33",
+          "text": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+          "event": "ADD"
+        },
+        {
+          "id": "34",
+          "text": "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+          "event": "ADD"
+        },
+        {
+          "id": "35",
+          "text": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+          "event": "ADD"
+        },
+        {
+          "id": "36",
+          "text": "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+          "event": "ADD"
+        },
+        {
+          "id": "37",
+          "text": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+          "event": "ADD"
+        },
+        {
+          "id": "38",
+          "text": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+          "event": "ADD"
+        },
+        {
+          "id": "39",
+          "text": "Dislikes horror films because they can be disturbing and detract from positive mindset",
+          "event": "ADD"
+        },
+        {
+          "id": "40",
+          "text": "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+          "event": "ADD"
+        },
+        {
+          "id": "41",
+          "text": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+          "event": "ADD"
+        },
+        {
+          "id": "42",
+          "text": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+          "event": "ADD"
+        },
+        {
+          "id": "43",
+          "text": "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+          "event": "ADD"
+        },
+        {
+          "id": "44",
+          "text": "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+          "event": "ADD"
+        },
+        {
+          "id": "45",
+          "text": "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Likes jazz for its improvisational style and ability to stimulate creativity",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+          "event": "ADD"
+        },
+        {
+          "id": "49",
+          "text": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+          "event": "ADD"
+        },
+        {
+          "id": "50",
+          "text": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+          "event": "ADD"
+        },
+        {
+          "id": "51",
+          "text": "Likes casual business attire for work as it balances professionalism and comfort",
+          "event": "ADD"
+        },
+        {
+          "id": "52",
+          "text": "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+          "event": "ADD"
+        },
+        {
+          "id": "53",
+          "text": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "1": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "2": "49f70983-6dd1-45ec-ab75-12dbf70045f7",
+      "3": "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7",
+      "4": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "5": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "6": "057b5a64-9907-43b0-87d3-17542aba7e36",
+      "7": "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+      "8": "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c",
+      "9": "a734e783-f463-46cf-abc9-e193f68acee8",
+      "10": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "11": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "12": "58589cd3-36bc-439f-8003-d6416735b820",
+      "13": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "14": "8d868048-d0e8-486a-9cc4-02baf4832f64",
+      "15": "50aed4f4-9f64-4824-8f3d-15fc8e939ebb",
+      "16": "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402",
+      "17": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "18": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "19": "13a9a169-1fbc-4b0c-976d-b0d21209526d",
+      "20": "ef0c4933-39c8-40b5-a118-a5677130bdcb"
+    },
+    "elapsed_seconds": 47.70897776802303
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000",
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004",
+    "related_target_ids": [],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "original_session_index_zero_based": 4,
+      "memory_point_index_zero_based": 0,
+      "annotation_index": 1,
+      "chronological_session_ordinal_one_based": 5,
+      "annotation_json_pointer": "/sessions/4/memory_points/0",
+      "annotation": {
+        "index": 1,
+        "memory_content": "Donald Smith's mental health status changed from 'Stable and Normal' to 'Increased Stress' due to career transition into political consulting.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Donald Smith's mental health status: Stable and Normal"
+        ],
+        "timestamp": "Nov 25, 2025, 15:50:17",
+        "importance": 0.75
+      },
+      "category": "replacement",
+      "old_proposition": "Donald describes his mental health as stable and normal.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:27:52",
+          "quote": "My physical condition is Normal. No chronic diseases. In terms of mental health, I am Stable and Normal. No mental health issues. I maintain a stable physical and mental health by staying active and engaged with my work and political activities. Supporting the politician gives me a sense of purpose and fulfillment, contributing positively to my mental well-being."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/4/dialogue/0",
+          "role": "user",
+          "timestamp": "Nov 25, 2025, 14:15:47",
+          "quote": "I've been feeling quite stressed lately with this career transition into political consulting. Leaving my stable tech job has been more challenging than I anticipated."
+        },
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/4/dialogue/2",
+          "role": "user",
+          "timestamp": "Nov 25, 2025, 14:22:20",
+          "quote": "The uncertainty of income is definitely a big concern. I used to feel secure and financially stable, but now everything seems unpredictable."
+        },
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 10,
+          "json_pointer": "/sessions/4/dialogue/10",
+          "role": "user",
+          "timestamp": "Nov 25, 2025, 14:46:47",
+          "quote": "I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now."
+        }
+      ],
+      "expected_new_state": "Donald now reports stress affecting mental health due to leaving a stable tech job and income uncertainty.",
+      "allowed_modification_scope": "Update current mental-health description; preserve physical health and historical stable state; no diagnosis.",
+      "interpretation_note": "",
+      "candidate_protections": [
+        {
+          "proposition": "Donald’s highest education is Master in Political Science.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 14:37:25",
+            "quote": "Of course. My highest education level is Master, and my major is Political Science."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has two children.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 16:17:16",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald describes his physical condition as normal with no chronic diseases.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/1/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 09:27:52",
+            "quote": "My physical condition is Normal. No chronic diseases. In terms of mental health, I am Stable and Normal. No mental health issues. I maintain a stable physical and mental health by staying active and engaged with my work and political activities. Supporting the politician gives me a sense of purpose and fulfillment, contributing positively to my mental well-being."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004",
+      "related_target_ids": []
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "03f69bc2-a92b-454a-a034-1cd7984b0419",
+      "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+      "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "282c758f-e845-4896-942b-18d70892c22e",
+      "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+      "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "6e979956-47d6-405f-95d5-df176978b42a",
+      "7625de05-9638-4b2b-95c4-7a40e5ae75e2",
+      "913bef92-248b-416b-ba35-052af3a4e960",
+      "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "bdc018c2-84bb-4b2f-b3c8-60e0affdb884",
+      "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+      "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "e8ccc4b9-74e0-4aab-9e09-8105194d1f5f",
+      "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 85,
+        "id": "adbade5d-ce0c-43f4-aa30-afb2154c56cc",
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "old_memory": "Career transition from technology to political consulting",
+        "new_memory": "Is transitioning from a tech job to political consulting",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.654602-07:00",
+        "updated_at": "2026-10-28T00:18:27.332178-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 86,
+        "id": "bc0700bb-02b9-4915-8397-f35db5eb3fa8",
+        "memory_id": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "old_memory": "Maintains physical and mental health through activity, work, and political engagement",
+        "new_memory": "Maintains physical and mental health through activity, work, and political engagement",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.723804-07:00",
+        "updated_at": "2026-10-28T00:18:27.341964-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 87,
+        "id": "f2877040-60ba-4a01-ab5e-df953eedee45",
+        "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+        "old_memory": "Mental health is stable and normal with no mental health issues",
+        "new_memory": "Mental health is stable and normal with no mental health issues",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.714790-07:00",
+        "updated_at": "2026-10-28T00:18:27.885065-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 88,
+        "id": "4a9cc87a-3d59-48c5-8fd9-b6c0cd29a229",
+        "memory_id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "new_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.618102-07:00",
+        "updated_at": "2026-10-28T00:18:28.069831-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 89,
+        "id": "397560c7-775f-422a-8295-48708109f39c",
+        "memory_id": "bdc018c2-84bb-4b2f-b3c8-60e0affdb884",
+        "old_memory": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations",
+        "new_memory": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:17:13.663853-07:00",
+        "updated_at": "2026-10-28T00:18:28.428744-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 90,
+        "id": "947cb1d9-40c2-4727-8473-8690993ca76d",
+        "memory_id": "d012c01a-8b10-4335-b210-bd3fa579e4b1",
+        "old_memory": null,
+        "new_memory": "Feeling stressed and overwhelmed by the career transition",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.585637-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 91,
+        "id": "43f0b9e6-2cb2-42b6-8037-0e8dfb884c8f",
+        "memory_id": "b8df9f1d-75a3-4061-ad91-09a212382af5",
+        "old_memory": null,
+        "new_memory": "Concerned about income uncertainty and loss of financial stability",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.594616-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 92,
+        "id": "179992a2-78f2-436c-986e-92c4a29a58b8",
+        "memory_id": "a299b9ea-6966-4a0d-bb29-be91ed29295c",
+        "old_memory": null,
+        "new_memory": "Also motivated to establish their own political career",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.603872-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 93,
+        "id": "65463f5a-4131-440a-b3c0-1fff3065de9d",
+        "memory_id": "da585aa4-285c-49a2-a70f-69aab048b277",
+        "old_memory": null,
+        "new_memory": "Has friends in the political field whom they plan to consult for advice",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.613662-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 94,
+        "id": "b17ebb09-ddb5-43ba-a7b5-fb2239fe79d1",
+        "memory_id": "8ca919d1-21f0-4555-8f5f-4d775a2873f9",
+        "old_memory": null,
+        "new_memory": "Believes physical activities can help manage stress",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.622963-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 95,
+        "id": "a52ec499-0916-4f2f-b27e-ac419ecef357",
+        "memory_id": "7e0d2d3d-3d72-48fa-a320-fe9256e70ca0",
+        "old_memory": null,
+        "new_memory": "Considers meditation and mindfulness practices effective for stress relief",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.632139-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 96,
+        "id": "9b828201-9408-488a-ad78-d69efc30f4a6",
+        "memory_id": "7cf37b2e-3d24-447a-a44d-5071804b3d04",
+        "old_memory": null,
+        "new_memory": "Values mental health as essential to effectively supporting their relative",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.641981-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 97,
+        "id": "e33d85e2-2add-456f-82d9-5c24e0bb6f41",
+        "memory_id": "4093d6a7-1def-4fba-b9d3-a01bbee80258",
+        "old_memory": null,
+        "new_memory": "Reminisces about previous tech job's security and stability",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:18:28.650203-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Donald’s highest education is Master in Political Science.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 14:37:25",
+          "quote": "Of course. My highest education level is Master, and my major is Political Science."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has two children.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 16:17:16",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald describes his physical condition as normal with no chronic diseases.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:27:52",
+          "quote": "My physical condition is Normal. No chronic diseases. In terms of mental health, I am Stable and Normal. No mental health issues. I maintain a stable physical and mental health by staying active and engaged with my work and political activities. Supporting the politician gives me a sense of purpose and fulfillment, contributing positively to my mental well-being."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/input.json",
+      "before.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/before.json",
+      "after.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/after.json",
+      "extracted_facts.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/extracted_facts.json",
+      "recall_candidates.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/recall_candidates.json",
+      "update_model_io.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/update_model_io.json",
+      "full_operation_plan.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/full_operation_plan.json",
+      "execution_results.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/execution_results.json",
+      "actual_operations.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/actual_operations.json"
+    }
+  }
+]

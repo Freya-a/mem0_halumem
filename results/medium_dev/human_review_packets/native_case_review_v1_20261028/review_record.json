@@ -1,0 +1,50 @@
+{
+  "review_version": "native_case_review_v1_20261028",
+  "review_date": "2026-10-28",
+  "review_method": "LLM辅助、用户确认",
+  "scope": "对已有原生Mem0运行的A、B、C、D定向复核；不覆盖human_review_v1_20261028及原生结果",
+  "source_review": "human_review_v1_20261028",
+  "source_evidence_packet": "../native_targeted_cases_20261028_v1.md",
+  "source_run": "../../williams_native_prefix5_20261028_v3",
+  "model_calls_in_this_review": 0,
+  "cases": [
+    {
+      "case": "A", "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f", "original_session_index_zero_based": 8,
+      "target_number": 8, "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03", "actual_history_sequence": 187,
+      "user_conclusion": "历史上‘高受伤风险’具体理由的部分损失，一般安全顾虑仍保留。",
+      "full_snapshot_other_content": "待确认；本次仅确认指定命题，不推断其他知识均无损失。",
+      "evidence_folder": "../../williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009"
+    },
+    {
+      "case": "B", "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f", "original_session_index_zero_based": 6,
+      "target_number": 14, "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da", "actual_history_sequence": 119,
+      "user_conclusion": "波斯猫‘平静性情’细节损失；‘优雅’是否等价保留暂定未知。",
+      "full_snapshot_other_content": "待确认；不将另一品种的平静性情当作波斯猫的保留证据。",
+      "evidence_folder": "../../williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007"
+    },
+    {
+      "case": "C", "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277", "original_session_index_zero_based": 7,
+      "target_number": 24, "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1", "actual_history_sequence": 157,
+      "user_conclusion": "历史雇主Blockchain Tech和高级职级细节损失，不能将历史职位写成当前职位。",
+      "full_snapshot_other_content": "待确认；技术职业概括仍在，其他复合事实独立评估。",
+      "evidence_folder": "../../williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008"
+    },
+    {
+      "case": "D", "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277", "original_session_index_zero_based": 5,
+      "target_number": 22, "model_invalid_temporary_id": "53", "mapped_id_range": "0–47",
+      "user_conclusion": "模型输出无效临时ID导致计划操作被跳过、目标新事实未找到，不计为旧知识损伤。",
+      "full_snapshot_other_content": "待确认；Sandra和Mary的部分旧关系仍在，不能推断其他旧内容全部无损失。",
+      "evidence_folder": "../../williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_006"
+    }
+  ],
+  "state_replacement_targets": [
+    {"target_number": 7, "old_state_present": true, "old_state": "Looking for a new job with better work-life balance", "new_state": "Has transitioned to a new role with healthier work-life balance", "new_state_user_confirmation_time": "Mar 01, 2026, 07:04:00", "old_and_new_temporal_expression": "待进一步评价，不仅凭旧文本存在判错；不推断新岗位具体雇主或职称。"},
+    {"target_number": 10, "old_state_present": true, "old_state": "Works at Historical Productions Ltd. as a Director", "new_state": "Recently promoted to lead director at Historical Productions Ltd", "new_state_user_confirmation_time": "Feb 01, 2026, 18:47:19", "old_and_new_temporal_expression": "待进一步评价，不仅凭旧文本存在判错；准确晋升日期未知。"}
+  ],
+  "group_call_and_operation_status": {
+    "native_mem0": "本次不重新运行；使用先前已记录的实际调用和操作，逐会话计数见common_snapshot_validation.json",
+    "simple_prompt_control": {"status": "未运行", "calls_this_round": 0, "writes_this_round": 0},
+    "improved_method": {"status": "未运行", "calls_this_round": 0, "writes_this_round": 0}
+  },
+  "interpretation_limit": "A、B、C为定向选择的三个用户会话，D为不同会话；不能将3/167解释成总体损伤率。"
+}

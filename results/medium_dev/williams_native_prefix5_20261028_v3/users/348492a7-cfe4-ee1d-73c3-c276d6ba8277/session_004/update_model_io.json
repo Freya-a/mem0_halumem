@@ -1,0 +1,388 @@
+[
+  {
+    "sequence": 32,
+    "time": "2026-10-28T15:17:21.835748+08:00",
+    "phase": "session_004",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Life goal is to support the political career of a close relative'}, {'id': '1', 'text': 'Supporting the politician gives a sense of purpose and fulfillment'}, {'id': '2', 'text': 'Employed in the technology industry'}, {'id': '3', 'text': 'Actively engaged in political discussions'}, {'id': '4', 'text': 'Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics'}, {'id': '5', 'text': \"Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign\"}, {'id': '6', 'text': 'Frequently contributes financially to political campaigns and causes supporting a specific politician'}, {'id': '7', 'text': 'Works at Blockchain Tech as a senior developer'}, {'id': '8', 'text': 'BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests'}, {'id': '9', 'text': 'Role involves innovating new solutions and ensuring technology remains cutting-edge'}, {'id': '10', 'text': 'Age is 45'}, {'id': '11', 'text': 'MBTI personality type is ENTP'}, {'id': '12', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive'}, {'id': '13', 'text': 'Has two children'}, {'id': '14', 'text': \"Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals\"}, {'id': '15', 'text': 'Does not like listening to techno because they find it too repetitive and prefer tunes that inspire and motivate them'}, {'id': '16', 'text': 'Monthly income is 17000 USD'}, {'id': '17', 'text': 'Has 16800 USD in savings'}, {'id': '18', 'text': 'Date of birth is 1980-08-12'}, {'id': '19', 'text': 'Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy'}, {'id': '20', 'text': 'Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative'}, {'id': '21', 'text': 'Major is Political Science'}, {'id': '22', 'text': 'Likes eating fresh salads for their healthy and refreshing taste, keeping them energized during long campaign days'}, {'id': '23', 'text': \"Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign\"}, {'id': '24', 'text': 'Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative'}, {'id': '25', 'text': 'Partner is supportive and shares similar values of family loyalty'}, {'id': '26', 'text': 'Maintains physical and mental health through activity, work, and political engagement'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Career transition from technology to political consulting', \"Motivated by supporting a relative's political ambitions\", 'Previously worked as a senior developer in Blockchain Tech', 'Also mentioned financial consulting as a possible related field', 'Has an ENTP personality', 'Monthly income was 17,000 USD before transition', 'Has savings of 16,800 USD', 'Plans to rely on savings and cut unnecessary expenses during transition', 'Focuses on strategic communication and understanding voter behavior', 'Uses data analytics to analyze voter patterns and tailor campaign strategies', 'Aims to be a key advisor in political campaigns', 'Values strategic communication and leadership skills', 'Believes success means relative winning elections and leaving a legislative legacy', 'Committed to making a meaningful impact through political work']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "913bef92-248b-416b-ba35-052af3a4e960",
+      "1": "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "3": "282c758f-e845-4896-942b-18d70892c22e",
+      "4": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "5": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "6": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "7": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "8": "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "9": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "10": "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "11": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "12": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "13": "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "14": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "15": "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "16": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "17": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "18": "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "19": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "20": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "21": "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "22": "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "23": "6e979956-47d6-405f-95d5-df176978b42a",
+      "24": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "25": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "26": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    },
+    "native_new_facts": [
+      "Career transition from technology to political consulting",
+      "Motivated by supporting a relative's political ambitions",
+      "Previously worked as a senior developer in Blockchain Tech",
+      "Also mentioned financial consulting as a possible related field",
+      "Has an ENTP personality",
+      "Monthly income was 17,000 USD before transition",
+      "Has savings of 16,800 USD",
+      "Plans to rely on savings and cut unnecessary expenses during transition",
+      "Focuses on strategic communication and understanding voter behavior",
+      "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+      "Aims to be a key advisor in political campaigns",
+      "Values strategic communication and leadership skills",
+      "Believes success means relative winning elections and leaving a legislative legacy",
+      "Committed to making a meaningful impact through political work"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Life goal is to support the political career of a close relative"
+      },
+      {
+        "id": "1",
+        "text": "Supporting the politician gives a sense of purpose and fulfillment"
+      },
+      {
+        "id": "2",
+        "text": "Employed in the technology industry"
+      },
+      {
+        "id": "3",
+        "text": "Actively engaged in political discussions"
+      },
+      {
+        "id": "4",
+        "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+      },
+      {
+        "id": "5",
+        "text": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign"
+      },
+      {
+        "id": "6",
+        "text": "Frequently contributes financially to political campaigns and causes supporting a specific politician"
+      },
+      {
+        "id": "7",
+        "text": "Works at Blockchain Tech as a senior developer"
+      },
+      {
+        "id": "8",
+        "text": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests"
+      },
+      {
+        "id": "9",
+        "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge"
+      },
+      {
+        "id": "10",
+        "text": "Age is 45"
+      },
+      {
+        "id": "11",
+        "text": "MBTI personality type is ENTP"
+      },
+      {
+        "id": "12",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive"
+      },
+      {
+        "id": "13",
+        "text": "Has two children"
+      },
+      {
+        "id": "14",
+        "text": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals"
+      },
+      {
+        "id": "15",
+        "text": "Does not like listening to techno because they find it too repetitive and prefer tunes that inspire and motivate them"
+      },
+      {
+        "id": "16",
+        "text": "Monthly income is 17000 USD"
+      },
+      {
+        "id": "17",
+        "text": "Has 16800 USD in savings"
+      },
+      {
+        "id": "18",
+        "text": "Date of birth is 1980-08-12"
+      },
+      {
+        "id": "19",
+        "text": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy"
+      },
+      {
+        "id": "20",
+        "text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative"
+      },
+      {
+        "id": "21",
+        "text": "Major is Political Science"
+      },
+      {
+        "id": "22",
+        "text": "Likes eating fresh salads for their healthy and refreshing taste, keeping them energized during long campaign days"
+      },
+      {
+        "id": "23",
+        "text": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign"
+      },
+      {
+        "id": "24",
+        "text": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative"
+      },
+      {
+        "id": "25",
+        "text": "Partner is supportive and shares similar values of family loyalty"
+      },
+      {
+        "id": "26",
+        "text": "Maintains physical and mental health through activity, work, and political engagement"
+      }
+    ]
+  },
+  {
+    "sequence": 33,
+    "time": "2026-10-28T15:17:51.934810+08:00",
+    "phase": "session_004",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Life goal is to support the political career of a close relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Supporting the politician gives a sense of purpose and fulfillment\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Career transition from technology to political consulting\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Employed in the technology industry\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Actively engaged in political discussions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Motivated by supporting a relative's political ambitions\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Frequently contributes financially to political campaigns and causes supporting a specific politician\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Previously worked as a senior developer in Blockchain Tech\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Works at Blockchain Tech as a senior developer\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Focuses on strategic communication and understanding voter behavior\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Age is 45\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Has an ENTP personality\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"MBTI personality type is ENTP\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Has two children\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Does not like listening to techno because they find it too repetitive and prefer tunes that inspire and motivate them\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Monthly income was 17,000 USD before transition\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Monthly income is 17000 USD\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Has savings of 16,800 USD\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has 16800 USD in savings\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Date of birth is 1980-08-12\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Believes success means relative winning elections and leaving a legislative legacy\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Major is Political Science\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Likes eating fresh salads for their healthy and refreshing taste, keeping them energized during long campaign days\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Partner is supportive and shares similar values of family loyalty\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Maintains physical and mental health through activity, work, and political engagement\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Also mentioned financial consulting as a possible related field\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Plans to rely on savings and cut unnecessary expenses during transition\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Uses data analytics to analyze voter patterns and tailor campaign strategies\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Aims to be a key advisor in political campaigns\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Values strategic communication and leadership skills\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Committed to making a meaningful impact through political work\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Life goal is to support the political career of a close relative",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Supporting the politician gives a sense of purpose and fulfillment",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Career transition from technology to political consulting",
+          "event": "UPDATE",
+          "old_memory": "Employed in the technology industry"
+        },
+        {
+          "id": "3",
+          "text": "Actively engaged in political discussions",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "event": "UPDATE",
+          "old_memory": "Motivated by supporting a relative's political ambitions"
+        },
+        {
+          "id": "5",
+          "text": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Previously worked as a senior developer in Blockchain Tech",
+          "event": "UPDATE",
+          "old_memory": "Works at Blockchain Tech as a senior developer"
+        },
+        {
+          "id": "8",
+          "text": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests",
+          "event": "NONE"
+        },
+        {
+          "id": "9",
+          "text": "Focuses on strategic communication and understanding voter behavior",
+          "event": "ADD"
+        },
+        {
+          "id": "10",
+          "text": "Age is 45",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Has an ENTP personality",
+          "event": "UPDATE",
+          "old_memory": "MBTI personality type is ENTP"
+        },
+        {
+          "id": "12",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Has two children",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Does not like solo travel; prefers traveling with others to stay connected and focused on their relative's goals",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Does not like listening to techno because they find it too repetitive and prefer tunes that inspire and motivate them",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Monthly income was 17,000 USD before transition",
+          "event": "UPDATE",
+          "old_memory": "Monthly income is 17000 USD"
+        },
+        {
+          "id": "17",
+          "text": "Has savings of 16,800 USD",
+          "event": "UPDATE",
+          "old_memory": "Has 16800 USD in savings"
+        },
+        {
+          "id": "18",
+          "text": "Date of birth is 1980-08-12",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+          "event": "UPDATE",
+          "old_memory": "Believes success means relative winning elections and leaving a legislative legacy"
+        },
+        {
+          "id": "20",
+          "text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Major is Political Science",
+          "event": "NONE"
+        },
+        {
+          "id": "22",
+          "text": "Likes eating fresh salads for their healthy and refreshing taste, keeping them energized during long campaign days",
+          "event": "NONE"
+        },
+        {
+          "id": "23",
+          "text": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Partner is supportive and shares similar values of family loyalty",
+          "event": "NONE"
+        },
+        {
+          "id": "26",
+          "text": "Maintains physical and mental health through activity, work, and political engagement",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Also mentioned financial consulting as a possible related field",
+          "event": "ADD"
+        },
+        {
+          "id": "28",
+          "text": "Plans to rely on savings and cut unnecessary expenses during transition",
+          "event": "ADD"
+        },
+        {
+          "id": "29",
+          "text": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+          "event": "ADD"
+        },
+        {
+          "id": "30",
+          "text": "Aims to be a key advisor in political campaigns",
+          "event": "ADD"
+        },
+        {
+          "id": "31",
+          "text": "Values strategic communication and leadership skills",
+          "event": "ADD"
+        },
+        {
+          "id": "32",
+          "text": "Committed to making a meaningful impact through political work",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "913bef92-248b-416b-ba35-052af3a4e960",
+      "1": "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "3": "282c758f-e845-4896-942b-18d70892c22e",
+      "4": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "5": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "6": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "7": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "8": "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "9": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "10": "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "11": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "12": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "13": "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "14": "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "15": "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "16": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "17": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "18": "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "19": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "20": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "21": "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "22": "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "23": "6e979956-47d6-405f-95d5-df176978b42a",
+      "24": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "25": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "26": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    },
+    "elapsed_seconds": 30.09849388001021
+  }
+]

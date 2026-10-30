@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "LLM_MODEL": "gpt-4o",
+    "OPENAI_MAX_TOKENS": "16384",
+    "OPENAI_TEMPERATURE": "0.5",
+    "OPENAI_TIMEOUT": "180"
+  },
+  "sources": {
+    "LLM_MODEL": {
+      "file": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/HaluMem/.env copy",
+      "variable": "OPENAI_MODEL"
+    },
+    "OPENAI_MAX_TOKENS": {
+      "file": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/HaluMem/.env copy",
+      "variable": "OPENAI_MAX_TOKENS"
+    },
+    "OPENAI_TEMPERATURE": {
+      "file": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/HaluMem/.env copy",
+      "variable": "OPENAI_TEMPERATURE"
+    },
+    "OPENAI_TIMEOUT": {
+      "file": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/HaluMem/.env copy",
+      "variable": "OPENAI_TIMEOUT"
+    }
+  },
+  "missing_fields": [
+    "LLM_BASE_URL",
+    "LLM_API_KEY",
+    "EMBEDDING_BASE_URL",
+    "EMBEDDING_API_KEY",
+    "EMBEDDING_MODEL",
+    "EMBEDDING_DIMS"
+  ],
+  "provider": "openai (OpenAI-compatible API adapter)",
+  "infer": true,
+  "custom_prompts": null,
+  "graph_enabled": false,
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "vector_path": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/results/local_smoke/20261022T202432+0800_044ae508/qdrant",
+  "history_db_path": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/results/local_smoke/20261022T202432+0800_044ae508/history.db",
+  "dataset_facts_and_answers_used_as_input": false
+}

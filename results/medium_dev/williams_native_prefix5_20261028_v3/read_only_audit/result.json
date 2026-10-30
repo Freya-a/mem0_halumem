@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "review_fingerprint": "adcec5002d99bc4500f86ef00b37991d58b85ccafc786e84c71a6152b45f87e4",
+  "failed_launches": [
+    {
+      "run_id": "williams_native_prefix5_20261028_v1",
+      "history_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v1/users/1b846c59-456e-9550-dffd-4d23f1eca81f/history.db",
+      "vector_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v1/users/1b846c59-456e-9550-dffd-4d23f1eca81f/qdrant",
+      "writes": 0,
+      "failed_api_requests": 1
+    },
+    {
+      "run_id": "williams_native_prefix5_20261028_v2",
+      "history_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v2/users/1b846c59-456e-9550-dffd-4d23f1eca81f/history.db",
+      "vector_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v2/users/1b846c59-456e-9550-dffd-4d23f1eca81f/qdrant",
+      "writes": 0,
+      "failed_api_requests": 1
+    }
+  ],
+  "formal_v3_first_before_empty": true,
+  "completed_ordinals": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "committed_artifacts_verified": true,
+  "current_vectors_and_history_match": true,
+  "existing_files_unchanged": true,
+  "observed_vs_sdk_raw_io_equal": true,
+  "native_prompt_regeneration_equal": true,
+  "native_recall_top5_and_user_filter_equal": true,
+  "invalid_id_origin": {
+    "mapping": {
+      "0": "7a85fc34-7cea-4f18-9a00-c03c7ec689c4",
+      "1": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "2": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "3": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "4": "d2a36010-9586-465e-9638-0913198e57f6",
+      "5": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "6": "a0890e00-0564-4490-8e5b-15b02025e910",
+      "7": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+      "8": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+      "9": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "10": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "11": "322dffcf-4884-43fa-a185-718600a36cdc",
+      "12": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "13": "676be8c0-c989-4581-9251-e21c493a318a",
+      "14": "76b41491-9d4b-4443-8877-0c6227a79aba"
+    },
+    "model_raw_action": {
+      "id": "19",
+      "text": "Meticulous director focused on historical accuracy",
+      "event": "UPDATE",
+      "old_memory": "Career goal is to become a renowned director known for historically accurate films"
+    },
+    "real_old_memory_id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+    "actual_operations": 14,
+    "diagnosis": "Provider output assigns UPDATE to new temporary ID19 absent from existing ID0..14 map. Native lookup raises before observer operation wrapper; native catches and skips. Instrumentation forwards identical arguments and raw result; no response or retrieval mutation."
+  },
+  "source_review": "Observer.install and APIAudit.wrap reviewed: original arguments/results forwarded; mappings only deep-copied for logging. Frozen native/harness hashes match audit version.",
+  "condition_for_resume": "Confirmed clean independent namespace and unchanged native data path. Continue existing native state; retain observed anomaly."
+}

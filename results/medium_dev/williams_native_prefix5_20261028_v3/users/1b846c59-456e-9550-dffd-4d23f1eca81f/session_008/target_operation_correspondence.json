@@ -1,0 +1,458 @@
+[
+  {
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006",
+    "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007",
+    "related_target_ids": [],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "dataset_line_one_based": 14,
+      "original_session_index_zero_based": 7,
+      "memory_point_index_zero_based": 6,
+      "annotation_index": 7,
+      "chronological_session_ordinal_one_based": 8,
+      "annotation_json_pointer": "/sessions/7/memory_points/6",
+      "annotation": {
+        "index": 7,
+        "memory_content": "Williams Daniel expressed gratitude for the support from friends like Mary and colleagues like Steven in his professional growth.",
+        "memory_type": "Relationship Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Williams Daniel expressed gratitude for the support from friends and colleagues in his professional growth."
+        ],
+        "timestamp": "Apr 30, 2026, 08:06:45",
+        "importance": 0.75
+      },
+      "category": "refinement",
+      "old_proposition": "Williams is grateful for support from colleagues and friends after promotion.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 4,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/4/dialogue/6",
+          "role": "user",
+          "timestamp": "Feb 01, 2026, 18:57:12",
+          "quote": "I'm grateful for the support from my colleagues and friends. Their encouragement helps me stay grounded."
+        },
+        {
+          "session_index_zero_based": 5,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/5/dialogue/2",
+          "role": "user",
+          "timestamp": "Mar 15, 2026, 13:58:50",
+          "quote": "The support from my colleagues and friends has been instrumental in my journey. It's refreshing to have a positive work environment that encourages my commitment to historical accuracy in films."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 7,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/7/dialogue/4",
+          "role": "user",
+          "timestamp": "Apr 30, 2026, 06:31:17",
+          "quote": "I focus on balancing both, as each type of relationship offers different support and opportunities. My existing friends have been a great source of encouragement, and the new connections are inspiring my work."
+        },
+        {
+          "session_index_zero_based": 7,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/7/dialogue/6",
+          "role": "user",
+          "timestamp": "Apr 30, 2026, 06:33:29",
+          "quote": "They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas."
+        }
+      ],
+      "expected_new_state": "Williams values Mary’s help unwinding and Steven’s set-design expertise as well as support from new connections.",
+      "allowed_modification_scope": "Specify support roles; preserve old friendships and new relationships together.",
+      "interpretation_note": "",
+      "candidate_protections": [
+        {
+          "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 09:43:52",
+            "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams’s father is a retired history professor.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 10:49:29",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams likes 1920s jazz for its historical and cultural significance.",
+          "evidence": {
+            "session_index_zero_based": 2,
+            "message_index_zero_based": 10,
+            "json_pointer": "/sessions/2/dialogue/10",
+            "role": "user",
+            "timestamp": "Sep 06, 2025, 22:39:05",
+            "quote": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience. I like jazz from the 1920s, because I am captivated by the rich history and cultural significance of 1920s jazz. It transports me to a different era. I dislike auto-tuned pop music, because I find auto-tuned pop music lacks authenticity and depth, which are qualities I highly value in my musical preferences."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007",
+      "related_target_ids": []
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "03afcc93-335c-4519-81ad-e375984ffe31",
+      "0a572a48-0a25-48b0-8b72-088133cb6578",
+      "1043672a-eb91-4a73-841a-f6204f50bf61",
+      "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+      "1a0436c7-0c14-46dd-bb52-ba315c750351",
+      "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "1cc86bcf-f1b7-48e2-901a-2d50214975f0",
+      "24ac231f-fd30-4418-8db6-0bd0cd4e06de",
+      "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+      "317d0abd-09eb-461b-aec9-72c31c5fc989",
+      "3845e0b4-f8a9-4695-baba-261e433b9278",
+      "39c03132-d975-489c-88af-b9c6a4606717",
+      "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "4ed2931d-bca9-419e-99ab-44ec866f224f",
+      "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "57749a01-c7f7-474a-aa4a-770781436d98",
+      "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "676be8c0-c989-4581-9251-e21c493a318a",
+      "6b0d05e1-6554-4c18-9997-7e28da7a8049",
+      "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "7620713d-829a-441e-ae4f-cf4398ca3f04",
+      "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "7a85fc34-7cea-4f18-9a00-c03c7ec689c4",
+      "7ad28253-8ba5-4531-b52c-208430e589b2",
+      "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+      "86741d82-0d63-4429-af44-834d7ac14043",
+      "893662d8-11a6-48f7-9f3a-034a53dda482",
+      "8c75c81e-6f7e-4604-81b7-e4d0b2115d81",
+      "911de0b3-2dbe-423c-abb6-85f569c657bb",
+      "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "a8611a3d-c6dd-48ac-8805-8a35ab5894b0",
+      "b48b7ac5-5d84-466d-9ed5-1ebd9f3f1ca4",
+      "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "b77be932-7af4-4557-b93a-bc40d9edd549",
+      "bba09e85-d53e-4636-b39e-c77308301d33",
+      "bf54f3d3-d427-4898-a1cb-37c1f63a3954",
+      "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "cbd00090-e0b9-4f07-9659-9596d64afbd3",
+      "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+      "de587c3d-adb4-4436-bc04-9036aa391d87",
+      "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "eef34a57-c82a-4995-877d-66b54b9589da",
+      "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "f71eebcd-d556-436f-97be-a8dca4c99de9"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 142,
+        "id": "53fc066c-46b1-4547-8eef-0af44eb5301c",
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "old_memory": "Works at Historical Productions Ltd. as a Director",
+        "new_memory": "Works at Historical Productions Ltd. as a Director",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:38:18.636327-07:00",
+        "updated_at": "2026-10-28T00:03:46.048246-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 143,
+        "id": "0459e795-eff3-4446-b502-dea4a525fde7",
+        "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "old_memory": "Recently promoted to lead director at Historical Productions Ltd.",
+        "new_memory": "Recently promoted to lead director at Historical Productions Ltd.",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.187008-07:00",
+        "updated_at": "2026-10-28T00:03:46.596075-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 144,
+        "id": "0ab51acc-3acb-42a4-8d22-5fd796739c9e",
+        "memory_id": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+        "old_memory": "Focuses on historical accuracy in films",
+        "new_memory": "Focuses on historical accuracy in films",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:01:42.016500-07:00",
+        "updated_at": "2026-10-28T00:03:46.740011-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 145,
+        "id": "f1a885ed-b01c-4019-88b9-9f2ecab96426",
+        "memory_id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "old_memory": "Goal is to create historically accurate films",
+        "new_memory": "Goal is to create historically accurate films",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:37:45.837032-07:00",
+        "updated_at": "2026-10-28T00:03:46.859448-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 146,
+        "id": "ce0eb10d-e791-43a0-a413-10fcc3ebc036",
+        "memory_id": "3845e0b4-f8a9-4695-baba-261e433b9278",
+        "old_memory": "Goal is to become a renowned director known for historically accurate films",
+        "new_memory": "Goal is to become a renowned director known for historically accurate films",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:02:45.678581-07:00",
+        "updated_at": "2026-10-28T00:03:47.312341-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 147,
+        "id": "a29b6b50-959c-44e2-940c-0b10d824f855",
+        "memory_id": "39c03132-d975-489c-88af-b9c6a4606717",
+        "old_memory": "Aims to create immersive film experiences that transport viewers to different eras",
+        "new_memory": "Aims to create immersive film experiences that transport viewers to different eras",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:02:45.694502-07:00",
+        "updated_at": "2026-10-28T00:03:47.453860-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 148,
+        "id": "1df0001f-ec69-4ebf-98bc-acf8e8f27bcf",
+        "memory_id": "7620713d-829a-441e-ae4f-cf4398ca3f04",
+        "old_memory": "Inspired by tea house visit to explore nuanced tastes and their relation to broader goals",
+        "new_memory": "Inspired by tea house visit to explore nuanced tastes and their relation to broader goals",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:40:45.730273-07:00",
+        "updated_at": "2026-10-28T00:03:47.622609-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 149,
+        "id": "d2cdf834-0dcc-4d68-a697-65870dd429cf",
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "old_memory": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "new_memory": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:40:21.765216-07:00",
+        "updated_at": "2026-10-28T00:03:47.794705-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 150,
+        "id": "0216d344-910a-4b2a-878c-360da5834ec1",
+        "memory_id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "old_memory": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+        "new_memory": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:37:45.784076-07:00",
+        "updated_at": "2026-10-28T00:03:47.997550-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 151,
+        "id": "79564b85-7ae5-49da-9577-0a4a708d2c60",
+        "memory_id": "893662d8-11a6-48f7-9f3a-034a53dda482",
+        "old_memory": "Uses AI to manage schedule and improve efficiency",
+        "new_memory": "Uses AI to manage schedule and improve efficiency",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:01:42.024382-07:00",
+        "updated_at": "2026-10-28T00:03:48.137381-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 152,
+        "id": "92991497-ebcd-4785-8d04-e9b580c70d68",
+        "memory_id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "old_memory": "Family shares a passion for history and detail",
+        "new_memory": "Family shares a passion for history and detail",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:37:45.826973-07:00",
+        "updated_at": "2026-10-28T00:03:48.269140-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 153,
+        "id": "b5abfd29-29bd-4cc6-b0a9-c837ff8601e1",
+        "memory_id": "dfb12ae7-8e08-493c-bd03-fbb5fa485185",
+        "old_memory": null,
+        "new_memory": "Prioritizes communication and collaboration in relationships",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:03:48.421570-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 154,
+        "id": "065532a5-eabf-4f61-9a4d-ef4fdc3c9497",
+        "memory_id": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+        "old_memory": null,
+        "new_memory": "Believes in mutually beneficial professional relationships",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:03:48.431019-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 155,
+        "id": "3ca0eab6-5e47-40c0-ae48-e4dd5e7e3e5f",
+        "memory_id": "c6e7cc37-0864-48cd-8bd7-ef68bb6fdcfe",
+        "old_memory": null,
+        "new_memory": "Motivated to bring history to life through film",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:03:48.439741-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 156,
+        "id": "b53a9231-7520-47f8-9866-10a020dae053",
+        "memory_id": "b64b8d75-c516-4472-bd1c-aa3fe468685f",
+        "old_memory": null,
+        "new_memory": "Plans to celebrate milestones by reflecting and acknowledging support network",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:03:48.448130-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 09:43:52",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams’s father is a retired history professor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 10:49:29",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams likes 1920s jazz for its historical and cultural significance.",
+        "evidence": {
+          "session_index_zero_based": 2,
+          "message_index_zero_based": 10,
+          "json_pointer": "/sessions/2/dialogue/10",
+          "role": "user",
+          "timestamp": "Sep 06, 2025, 22:39:05",
+          "quote": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience. I like jazz from the 1920s, because I am captivated by the rich history and cultural significance of 1920s jazz. It transports me to a different era. I dislike auto-tuned pop music, because I find auto-tuned pop music lacks authenticity and depth, which are qualities I highly value in my musical preferences."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/input.json",
+      "before.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/before.json",
+      "after.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/after.json",
+      "extracted_facts.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/extracted_facts.json",
+      "recall_candidates.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/recall_candidates.json",
+      "update_model_io.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/update_model_io.json",
+      "full_operation_plan.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/full_operation_plan.json",
+      "execution_results.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/execution_results.json",
+      "actual_operations.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/actual_operations.json"
+    }
+  }
+]

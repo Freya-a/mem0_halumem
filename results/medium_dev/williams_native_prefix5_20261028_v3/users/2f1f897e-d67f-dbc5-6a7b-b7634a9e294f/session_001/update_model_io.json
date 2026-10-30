@@ -1,0 +1,139 @@
+[
+  {
+    "sequence": 38,
+    "time": "2026-10-28T15:07:32.855110+08:00",
+    "phase": "session_001",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Current memory is empty.\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Name is Martin Mark', 'Gender is Male', 'Date of birth is 1996-08-02', 'Age is 29', 'Lives in Columbus', 'Highest education level is Bachelor', 'Major is Public Health', 'MBTI personality type is ENTP', 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic', 'Both parents are alive', 'No children', 'Father was born on 1963-08-02, retired doctor who inspired interest in health', 'Mother was born on 1963-08-02, nurse with a passion for community health', 'Family is deeply rooted in the medical field', 'Life goal is to establish a global health initiative to improve access to healthcare for underserved communities', \"Motivated by family's medical background and desire to promote well-being globally\", 'Hope to provide healthcare access to 1 million people in underserved areas']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {},
+    "native_new_facts": [
+      "Name is Martin Mark",
+      "Gender is Male",
+      "Date of birth is 1996-08-02",
+      "Age is 29",
+      "Lives in Columbus",
+      "Highest education level is Bachelor",
+      "Major is Public Health",
+      "MBTI personality type is ENTP",
+      "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+      "Both parents are alive",
+      "No children",
+      "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+      "Mother was born on 1963-08-02, nurse with a passion for community health",
+      "Family is deeply rooted in the medical field",
+      "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities",
+      "Motivated by family's medical background and desire to promote well-being globally",
+      "Hope to provide healthcare access to 1 million people in underserved areas"
+    ],
+    "native_retrieved_old_memory": []
+  },
+  {
+    "sequence": 39,
+    "time": "2026-10-28T15:07:46.353931+08:00",
+    "phase": "session_001",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Name is Martin Mark\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Date of birth is 1996-08-02\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Age is 29\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Lives in Columbus\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Highest education level is Bachelor\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Major is Public Health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"MBTI personality type is ENTP\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Both parents are alive\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"No children\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Father was born on 1963-08-02, retired doctor who inspired interest in health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Mother was born on 1963-08-02, nurse with a passion for community health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Family is deeply rooted in the medical field\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Life goal is to establish a global health initiative to improve access to healthcare for underserved communities\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Motivated by family's medical background and desire to promote well-being globally\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Hope to provide healthcare access to 1 million people in underserved areas\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Name is Martin Mark",
+          "event": "ADD"
+        },
+        {
+          "id": "1",
+          "text": "Gender is Male",
+          "event": "ADD"
+        },
+        {
+          "id": "2",
+          "text": "Date of birth is 1996-08-02",
+          "event": "ADD"
+        },
+        {
+          "id": "3",
+          "text": "Age is 29",
+          "event": "ADD"
+        },
+        {
+          "id": "4",
+          "text": "Lives in Columbus",
+          "event": "ADD"
+        },
+        {
+          "id": "5",
+          "text": "Highest education level is Bachelor",
+          "event": "ADD"
+        },
+        {
+          "id": "6",
+          "text": "Major is Public Health",
+          "event": "ADD"
+        },
+        {
+          "id": "7",
+          "text": "MBTI personality type is ENTP",
+          "event": "ADD"
+        },
+        {
+          "id": "8",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+          "event": "ADD"
+        },
+        {
+          "id": "9",
+          "text": "Both parents are alive",
+          "event": "ADD"
+        },
+        {
+          "id": "10",
+          "text": "No children",
+          "event": "ADD"
+        },
+        {
+          "id": "11",
+          "text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+          "event": "ADD"
+        },
+        {
+          "id": "12",
+          "text": "Mother was born on 1963-08-02, nurse with a passion for community health",
+          "event": "ADD"
+        },
+        {
+          "id": "13",
+          "text": "Family is deeply rooted in the medical field",
+          "event": "ADD"
+        },
+        {
+          "id": "14",
+          "text": "Life goal is to establish a global health initiative to improve access to healthcare for underserved communities",
+          "event": "ADD"
+        },
+        {
+          "id": "15",
+          "text": "Motivated by family's medical background and desire to promote well-being globally",
+          "event": "ADD"
+        },
+        {
+          "id": "16",
+          "text": "Hope to provide healthcare access to 1 million people in underserved areas",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {},
+    "elapsed_seconds": 13.498546458024066
+  }
+]

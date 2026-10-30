@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "mem0ai_version": "0.1.118",
+  "source_relative_path": "mem0_v0.1.118",
+  "native_source_sha256": {
+    "mem0/memory/main.py": "b4e774c71adbe1e928511a0cf96872e6c841de50a0379360d0d544af4e9df8b1",
+    "mem0/memory/utils.py": "1b72f6603f29ec2a30e8221ccb4dcfc42b6a47d74b0f55176f2974e5f0e139af",
+    "mem0/configs/prompts.py": "29f07c090ad82ab010f0a07d0dcffc828138287e9ba6ca4e6d74f6f268705dfe",
+    "mem0/vector_stores/qdrant.py": "d74f7a787df50224cafdd61a39aeab870fe12256c7af3c4e92522c374adec769",
+    "mem0/llms/openai.py": "4090b2b768cf9bcaf7891bbdea3eeefec0586c29ea77b99e9dcb971efcd860e6",
+    "mem0/embeddings/openai.py": "2a246f3303a35cbb5cd678d4f6c01ceb1b3313b03970389e222187e9822c77eb",
+    "mem0/memory/storage.py": "7cc563d2cb63f5662ccdc4fe4bf861e7dd2ac8dbb3cacdd0499dfb18f35c1890"
+  },
+  "reused_harness_sha256": {
+    "scripts/local_smoke.py": "03c89277044d6b91388a36acc4c9bc1f50476c70d95b1edf00f16835f1919404",
+    "scripts/local_update_case.py": "f53694846eaaf309086cbf3c7b62ef5168ef6efc3eb65ab8bce2b3f1037a6d2b"
+  },
+  "llm": {
+    "model": "qwen-plus",
+    "openai_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_tokens": 16384,
+    "temperature": 0.5
+  },
+  "embedder": {
+    "model": "text-embedding-v4",
+    "openai_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "embedding_dims": 1024
+  },
+  "timeout_seconds": 180,
+  "sdk_max_retries": 0,
+  "infer": true,
+  "native_recall_limit": 5,
+  "custom_prompts": null,
+  "graph_enabled": false,
+  "note": "模型/温度/max_tokens/维度沿用已验证配置；仅将SDK传输重试显式设为0，避免隐藏重试。无额外接口预试调用。"
+}

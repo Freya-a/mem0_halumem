@@ -1,0 +1,106 @@
+{
+  "selection_rule": "五类各2条；SHA-256(UTF-8(\"halumem-review-v1:\"+id)) 字典序升序取前2；QA Hallucination 强制保留 pilot 争议题，再取其余中哈希最小1条。",
+  "method": "LLM辅助复核，不代表人工确认",
+  "cases": [
+    {
+      "number": 1,
+      "id": "update_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s007_m000",
+      "kind": "update",
+      "label": "Correct",
+      "selection_sha256": "02047e66854cd88b9818f0b4e73864825afca14ee9b17b76c5780792b45683e4",
+      "review": "存疑",
+      "case_evidence": "case_01.json",
+      "snapshot_sha256": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726"
+    },
+    {
+      "number": 2,
+      "id": "update_1b846c59-456e-9550-dffd-4d23f1eca81f_s004_m000",
+      "kind": "update",
+      "label": "Correct",
+      "selection_sha256": "3abfc56f2413edeeb44ff85fb110dace20d437047a137cb75456e479039d5f3b",
+      "review": "存疑",
+      "case_evidence": "case_02.json",
+      "snapshot_sha256": "1ff29e7b96ed0e9f86140154ed29f2c73e4f496e8b610365429933f5db62ba1f"
+    },
+    {
+      "number": 3,
+      "id": "update_1b846c59-456e-9550-dffd-4d23f1eca81f_s008_m003",
+      "kind": "update",
+      "label": "Omission",
+      "selection_sha256": "00099f942ff4b7d3dcd1501665cc41f848efb8d64e5b30a525c97c7113470f9f",
+      "review": "认可",
+      "case_evidence": "case_03.json",
+      "snapshot_sha256": "2d40b8629361dac912522527a38239d41430df505d0be01c1124709e3551d7c4"
+    },
+    {
+      "number": 4,
+      "id": "update_1b846c59-456e-9550-dffd-4d23f1eca81f_s009_m004",
+      "kind": "update",
+      "label": "Omission",
+      "selection_sha256": "00dafc4903645a72caefcc20694e22498a6201995110a6e6c5d08c7c9a90dee2",
+      "review": "存疑",
+      "case_evidence": "case_04.json",
+      "snapshot_sha256": "34d00a1ec2c01cf039d54864fc7ea247f325c85011562e7c8089d18637bf1fc6"
+    },
+    {
+      "number": 5,
+      "id": "qa_348492a7-cfe4-ee1d-73c3-c276d6ba8277_s002_q002",
+      "kind": "qa",
+      "label": "Correct",
+      "selection_sha256": "01d72854231b8170df453717c58abfa2f8eaae92feed82dda761be9f52d41eba",
+      "review": "认可",
+      "case_evidence": "case_05.json",
+      "snapshot_sha256": "0d9aad3208f78973994acafa8c5c712064a80bb0ac07606b3d5877ab035b5b19"
+    },
+    {
+      "number": 6,
+      "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s001_q001",
+      "kind": "qa",
+      "label": "Correct",
+      "selection_sha256": "07d867e4c1c0af0b9da3036e41be47c19add887fcf472deadf620e82f19e8782",
+      "review": "存疑",
+      "case_evidence": "case_06.json",
+      "snapshot_sha256": "7260b0cc5daff1cc939a6de837d66adb8ce22dcd391803b9f672785e71b3a12d"
+    },
+    {
+      "number": 7,
+      "id": "qa_1b846c59-456e-9550-dffd-4d23f1eca81f_s003_q000",
+      "kind": "qa",
+      "label": "Hallucination",
+      "selection_sha256": "771ef276f607e2ccce27c05151a1c544ee9a58565ff07a32f8d8e955be3ee312",
+      "review": "不认可",
+      "case_evidence": "case_07.json",
+      "snapshot_sha256": "3b796dee39609d8a939054b5eb6bcbd18935f2a2c767381343975640a677f34e"
+    },
+    {
+      "number": 8,
+      "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s007_q003",
+      "kind": "qa",
+      "label": "Hallucination",
+      "selection_sha256": "0547f98a5d93b1813585de07a4e71cea3099ae6f47ac6737a4d63628526d22ac",
+      "review": "存疑",
+      "case_evidence": "case_08.json",
+      "snapshot_sha256": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726"
+    },
+    {
+      "number": 9,
+      "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s000_q002",
+      "kind": "qa",
+      "label": "Omission",
+      "selection_sha256": "1b8c9dfa57cb6fa34f5be076dc4d2287e07fd8c85cb0898405edef58352c9b0b",
+      "review": "存疑",
+      "case_evidence": "case_09.json",
+      "snapshot_sha256": "099d3712ca18ac696e448d9e834fe5c0dd07d4aa0f5b2570b4126ef44aa2dd24"
+    },
+    {
+      "number": 10,
+      "id": "qa_2f1f897e-d67f-dbc5-6a7b-b7634a9e294f_s007_q007",
+      "kind": "qa",
+      "label": "Omission",
+      "selection_sha256": "1e773fb68014f37dac15455153c2a848de24e9ccb97cb5975511043ad92f148d",
+      "review": "无法判断",
+      "case_evidence": "case_10.json",
+      "snapshot_sha256": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726"
+    }
+  ]
+}

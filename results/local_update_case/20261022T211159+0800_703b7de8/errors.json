@@ -1,0 +1,17 @@
+[
+  {
+    "time": "2026-10-22T21:15:00.057403+08:00",
+    "phase": "session_04",
+    "level": "ERROR",
+    "logger": "mem0.memory.main",
+    "message": "Error processing memory action: {'id': '42', 'text': 'Has empathetic nature and strong debate skills that support inclusive dialogue', 'event': 'UPDATE', 'old_memory': 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic'}, Error: '42'"
+  },
+  {
+    "time": "2026-10-22T21:15:00.127640+08:00",
+    "phase": "session_04",
+    "level": "ERROR",
+    "logger": "__main__",
+    "message": "Update case failed",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/scripts/local_update_case.py\", line 447, in execute\n    assert not error and checks['native_error_count'] == 0 and checks['all_api_calls_ok'] and checks['all_llm_outputs_untruncated']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+  }
+]

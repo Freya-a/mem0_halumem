@@ -1,0 +1,32 @@
+{
+  "version": "v1.1",
+  "llm": {
+    "provider": "openai",
+    "config": {
+      "model": "qwen-plus",
+      "openai_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "max_tokens": 16384,
+      "temperature": 0.5,
+      "api_key": "<redacted>"
+    }
+  },
+  "embedder": {
+    "provider": "openai",
+    "config": {
+      "model": "text-embedding-v4",
+      "openai_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "embedding_dims": 1024,
+      "api_key": "<redacted>"
+    }
+  },
+  "vector_store": {
+    "provider": "qdrant",
+    "config": {
+      "collection_name": "medium_dev",
+      "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v1/users/1b846c59-456e-9550-dffd-4d23f1eca81f/qdrant",
+      "on_disk": true,
+      "embedding_model_dims": 1024
+    }
+  },
+  "history_db_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v1/users/1b846c59-456e-9550-dffd-4d23f1eca81f/history.db"
+}

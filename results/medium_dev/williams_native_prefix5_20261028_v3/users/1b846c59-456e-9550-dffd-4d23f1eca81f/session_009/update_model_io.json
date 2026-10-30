@@ -1,0 +1,566 @@
+[
+  {
+    "sequence": 32,
+    "time": "2026-10-28T15:03:56.553405+08:00",
+    "phase": "session_009",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Works at Historical Productions Ltd. as a Director'}, {'id': '1', 'text': 'Recently promoted to lead director at Historical Productions Ltd.'}, {'id': '2', 'text': 'Plans to direct 10 award-winning historical films'}, {'id': '3', 'text': 'Experiences stress due to historical accuracy demands and tight production schedules'}, {'id': '4', 'text': 'Goal is to become a renowned director known for historically accurate films'}, {'id': '5', 'text': 'Motivated to bring history to life through film'}, {'id': '6', 'text': 'Plans to initiate groundbreaking historical dramas and possibly science fiction dramas'}, {'id': '7', 'text': 'Friend: WilliamsRichard (fellow director, inspires innovative storytelling)'}, {'id': '8', 'text': 'Focuses on historical accuracy in films'}, {'id': '9', 'text': 'Goal is to create historically accurate films'}, {'id': '10', 'text': 'Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques'}, {'id': '11', 'text': 'Likes historical dramas because of their attention to detail and accurate portrayal of past events'}, {'id': '12', 'text': 'Aims to win multiple international awards'}, {'id': '13', 'text': 'Reflects on balancing historical authenticity with embracing new flavors'}, {'id': '14', 'text': 'Wants to challenge historical narratives and engage audiences on a deeper level'}, {'id': '15', 'text': 'Love for history and storytelling drives creative decisions'}, {'id': '16', 'text': 'Aims to create immersive film experiences that transport viewers to different eras'}, {'id': '17', 'text': 'Incorporating themes of historical depth into upcoming film projects'}, {'id': '18', 'text': \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\"}, {'id': '19', 'text': 'Plans to highlight key historical figures and events pivotal in technological developments'}, {'id': '20', 'text': 'Regularly exercises and maintains a balanced diet'}, {'id': '21', 'text': 'Prioritizes self-care and seeks support from friends and colleagues to manage stress'}, {'id': '22', 'text': 'Motivated by setting clear goals and maintaining work-life balance'}, {'id': '23', 'text': 'Physically healthy with no chronic diseases'}, {'id': '24', 'text': 'Improved mental health since promotion'}, {'id': '25', 'text': 'Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented'}, {'id': '26', 'text': 'Lifestyle choices, including pet preferences, are aligned with efficiency and career goals'}, {'id': '27', 'text': 'Values authenticity, innovation, and creative control'}, {'id': '28', 'text': 'Believes in mutually beneficial professional relationships'}, {'id': '29', 'text': 'Colleagues Steven and Mary are key supporters'}, {'id': '30', 'text': 'Friends and colleagues are main support system'}, {'id': '31', 'text': 'Friend: WilliamsMary (provides emotional support and encourages breaks)'}, {'id': '32', 'text': 'Colleague: SmithSteven (expert in set design, shares passion for historical detail)'}, {'id': '33', 'text': 'Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)'}, {'id': '34', 'text': 'Plans to celebrate milestones by reflecting and acknowledging support network'}, {'id': '35', 'text': 'Prioritizes communication and collaboration in relationships'}, {'id': '36', 'text': 'Aims to integrate personal experiences into narratives to resonate with viewers'}, {'id': '37', 'text': 'Seeks recognition at major film festivals like Cannes and Sundance'}, {'id': '38', 'text': 'Uses AI to manage schedule and improve efficiency'}, {'id': '39', 'text': 'Wants to inspire others through historically accurate storytelling'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Is a director at Historical Productions Ltd.', 'Directed a critically acclaimed historical drama', 'Also directed a science fiction drama', 'Values historical accuracy in films', 'Committed to balancing critical acclaim with audience feedback', 'Interested in exploring the Renaissance period and its cultural impact in upcoming projects', 'Incorporates mindfulness practices and regular exercise into routine for well-being', 'Uses strategic thinking and perfectionism in work', 'Grateful towards colleagues like Steven and friends like Mary', 'Plans to set aside dedicated time for personal and professional interactions', 'Aims to integrate diverse cultural perspectives into films', 'Plans to regularly review goals and progress', 'Seeks input and collaboration from colleagues and friends for projects', 'Aspires to become a renowned director known for historically accurate films']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "1": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "2": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "3": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "4": "3845e0b4-f8a9-4695-baba-261e433b9278",
+      "5": "c6e7cc37-0864-48cd-8bd7-ef68bb6fdcfe",
+      "6": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "7": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "8": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "9": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "10": "4ed2931d-bca9-419e-99ab-44ec866f224f",
+      "11": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "12": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "13": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "14": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "15": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "16": "39c03132-d975-489c-88af-b9c6a4606717",
+      "17": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "18": "86004297-6841-4e4e-b98e-bcb0f4a4b380",
+      "19": "f6c33e62-64f5-4c96-aa20-2d5d1d041664",
+      "20": "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+      "21": "bba09e85-d53e-4636-b39e-c77308301d33",
+      "22": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "23": "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+      "24": "317d0abd-09eb-461b-aec9-72c31c5fc989",
+      "25": "676be8c0-c989-4581-9251-e21c493a318a",
+      "26": "cbd00090-e0b9-4f07-9659-9596d64afbd3",
+      "27": "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "28": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+      "29": "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+      "30": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "31": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "32": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "33": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "34": "b64b8d75-c516-4472-bd1c-aa3fe468685f",
+      "35": "dfb12ae7-8e08-493c-bd03-fbb5fa485185",
+      "36": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "37": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "38": "893662d8-11a6-48f7-9f3a-034a53dda482",
+      "39": "86741d82-0d63-4429-af44-834d7ac14043"
+    },
+    "native_new_facts": [
+      "Is a director at Historical Productions Ltd.",
+      "Directed a critically acclaimed historical drama",
+      "Also directed a science fiction drama",
+      "Values historical accuracy in films",
+      "Committed to balancing critical acclaim with audience feedback",
+      "Interested in exploring the Renaissance period and its cultural impact in upcoming projects",
+      "Incorporates mindfulness practices and regular exercise into routine for well-being",
+      "Uses strategic thinking and perfectionism in work",
+      "Grateful towards colleagues like Steven and friends like Mary",
+      "Plans to set aside dedicated time for personal and professional interactions",
+      "Aims to integrate diverse cultural perspectives into films",
+      "Plans to regularly review goals and progress",
+      "Seeks input and collaboration from colleagues and friends for projects",
+      "Aspires to become a renowned director known for historically accurate films"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Works at Historical Productions Ltd. as a Director"
+      },
+      {
+        "id": "1",
+        "text": "Recently promoted to lead director at Historical Productions Ltd."
+      },
+      {
+        "id": "2",
+        "text": "Plans to direct 10 award-winning historical films"
+      },
+      {
+        "id": "3",
+        "text": "Experiences stress due to historical accuracy demands and tight production schedules"
+      },
+      {
+        "id": "4",
+        "text": "Goal is to become a renowned director known for historically accurate films"
+      },
+      {
+        "id": "5",
+        "text": "Motivated to bring history to life through film"
+      },
+      {
+        "id": "6",
+        "text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas"
+      },
+      {
+        "id": "7",
+        "text": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)"
+      },
+      {
+        "id": "8",
+        "text": "Focuses on historical accuracy in films"
+      },
+      {
+        "id": "9",
+        "text": "Goal is to create historically accurate films"
+      },
+      {
+        "id": "10",
+        "text": "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques"
+      },
+      {
+        "id": "11",
+        "text": "Likes historical dramas because of their attention to detail and accurate portrayal of past events"
+      },
+      {
+        "id": "12",
+        "text": "Aims to win multiple international awards"
+      },
+      {
+        "id": "13",
+        "text": "Reflects on balancing historical authenticity with embracing new flavors"
+      },
+      {
+        "id": "14",
+        "text": "Wants to challenge historical narratives and engage audiences on a deeper level"
+      },
+      {
+        "id": "15",
+        "text": "Love for history and storytelling drives creative decisions"
+      },
+      {
+        "id": "16",
+        "text": "Aims to create immersive film experiences that transport viewers to different eras"
+      },
+      {
+        "id": "17",
+        "text": "Incorporating themes of historical depth into upcoming film projects"
+      },
+      {
+        "id": "18",
+        "text": "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further"
+      },
+      {
+        "id": "19",
+        "text": "Plans to highlight key historical figures and events pivotal in technological developments"
+      },
+      {
+        "id": "20",
+        "text": "Regularly exercises and maintains a balanced diet"
+      },
+      {
+        "id": "21",
+        "text": "Prioritizes self-care and seeks support from friends and colleagues to manage stress"
+      },
+      {
+        "id": "22",
+        "text": "Motivated by setting clear goals and maintaining work-life balance"
+      },
+      {
+        "id": "23",
+        "text": "Physically healthy with no chronic diseases"
+      },
+      {
+        "id": "24",
+        "text": "Improved mental health since promotion"
+      },
+      {
+        "id": "25",
+        "text": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented"
+      },
+      {
+        "id": "26",
+        "text": "Lifestyle choices, including pet preferences, are aligned with efficiency and career goals"
+      },
+      {
+        "id": "27",
+        "text": "Values authenticity, innovation, and creative control"
+      },
+      {
+        "id": "28",
+        "text": "Believes in mutually beneficial professional relationships"
+      },
+      {
+        "id": "29",
+        "text": "Colleagues Steven and Mary are key supporters"
+      },
+      {
+        "id": "30",
+        "text": "Friends and colleagues are main support system"
+      },
+      {
+        "id": "31",
+        "text": "Friend: WilliamsMary (provides emotional support and encourages breaks)"
+      },
+      {
+        "id": "32",
+        "text": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)"
+      },
+      {
+        "id": "33",
+        "text": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)"
+      },
+      {
+        "id": "34",
+        "text": "Plans to celebrate milestones by reflecting and acknowledging support network"
+      },
+      {
+        "id": "35",
+        "text": "Prioritizes communication and collaboration in relationships"
+      },
+      {
+        "id": "36",
+        "text": "Aims to integrate personal experiences into narratives to resonate with viewers"
+      },
+      {
+        "id": "37",
+        "text": "Seeks recognition at major film festivals like Cannes and Sundance"
+      },
+      {
+        "id": "38",
+        "text": "Uses AI to manage schedule and improve efficiency"
+      },
+      {
+        "id": "39",
+        "text": "Wants to inspire others through historically accurate storytelling"
+      }
+    ]
+  },
+  {
+    "sequence": 33,
+    "time": "2026-10-28T15:04:42.306896+08:00",
+    "phase": "session_009",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Works at Historical Productions Ltd. as a Director\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Recently promoted to lead director at Historical Productions Ltd.\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Plans to direct 10 award-winning historical films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Goal is to become a renowned director known for historically accurate films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Goal is to become a renowned director known for historically accurate films\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Motivated to bring history to life through film\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Plans to initiate groundbreaking historical dramas and possibly science fiction dramas\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Plans to initiate groundbreaking historical dramas and possibly science fiction dramas\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Friend: WilliamsRichard (fellow director, inspires innovative storytelling)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Focuses on historical accuracy in films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Focuses on historical accuracy in films\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Goal is to create historically accurate films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Likes historical dramas because of their attention to detail and accurate portrayal of past events\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Aims to win multiple international awards\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Reflects on balancing historical authenticity with embracing new flavors\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Wants to challenge historical narratives and engage audiences on a deeper level\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Love for history and storytelling drives creative decisions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Aims to create immersive film experiences that transport viewers to different eras\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Incorporating themes of historical depth into upcoming film projects\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Incorporating themes of historical depth into upcoming film projects\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Plans to highlight key historical figures and events pivotal in technological developments\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Regularly exercises and maintains a balanced diet\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Regularly exercises and maintains a balanced diet\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Prioritizes self-care and seeks support from friends and colleagues to manage stress\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Prioritizes self-care and seeks support from friends and colleagues to manage stress\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Motivated by setting clear goals and maintaining work-life balance\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Motivated by setting clear goals and maintaining work-life balance\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Physically healthy with no chronic diseases\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Improved mental health since promotion\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Lifestyle choices, including pet preferences, are aligned with efficiency and career goals\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Values authenticity, innovation, and creative control\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Values authenticity, innovation, and creative control\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Believes in mutually beneficial professional relationships\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Colleagues Steven and Mary are key supporters\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Colleagues Steven and Mary are key supporters\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Friends and colleagues are main support system\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Friend: WilliamsMary (provides emotional support and encourages breaks)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Colleague: SmithSteven (expert in set design, shares passion for historical detail)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Plans to celebrate milestones by reflecting and acknowledging support network\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Prioritizes communication and collaboration in relationships\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Prioritizes communication and collaboration in relationships\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Aims to integrate personal experiences into narratives to resonate with viewers\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Aims to integrate personal experiences into narratives to resonate with viewers\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Seeks recognition at major film festivals like Cannes and Sundance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Uses AI to manage schedule and improve efficiency\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Wants to inspire others through historically accurate storytelling\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Is a director at Historical Productions Ltd.\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Directed a critically acclaimed historical drama\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Also directed a science fiction drama\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Committed to balancing critical acclaim with audience feedback\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Interested in exploring the Renaissance period and its cultural impact in upcoming projects\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Incorporates mindfulness practices and regular exercise into routine for well-being\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Grateful towards colleagues like Steven and friends like Mary\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Plans to set aside dedicated time for personal and professional interactions\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Aims to integrate diverse cultural perspectives into films\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Plans to regularly review goals and progress\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"50\",\n            \"text\": \"Seeks input and collaboration from colleagues and friends for projects\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"51\",\n            \"text\": \"Aspires to become a renowned director known for historically accurate films\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Works at Historical Productions Ltd. as a Director",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Recently promoted to lead director at Historical Productions Ltd.",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Plans to direct 10 award-winning historical films",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Goal is to become a renowned director known for historically accurate films",
+          "event": "UPDATE",
+          "old_memory": "Goal is to become a renowned director known for historically accurate films"
+        },
+        {
+          "id": "5",
+          "text": "Motivated to bring history to life through film",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+          "event": "UPDATE",
+          "old_memory": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas"
+        },
+        {
+          "id": "7",
+          "text": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+          "event": "NONE"
+        },
+        {
+          "id": "8",
+          "text": "Focuses on historical accuracy in films",
+          "event": "UPDATE",
+          "old_memory": "Focuses on historical accuracy in films"
+        },
+        {
+          "id": "9",
+          "text": "Goal is to create historically accurate films",
+          "event": "NONE"
+        },
+        {
+          "id": "10",
+          "text": "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Aims to win multiple international awards",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Reflects on balancing historical authenticity with embracing new flavors",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Wants to challenge historical narratives and engage audiences on a deeper level",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Love for history and storytelling drives creative decisions",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Aims to create immersive film experiences that transport viewers to different eras",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Incorporating themes of historical depth into upcoming film projects",
+          "event": "UPDATE",
+          "old_memory": "Incorporating themes of historical depth into upcoming film projects"
+        },
+        {
+          "id": "18",
+          "text": "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Plans to highlight key historical figures and events pivotal in technological developments",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "Regularly exercises and maintains a balanced diet",
+          "event": "UPDATE",
+          "old_memory": "Regularly exercises and maintains a balanced diet"
+        },
+        {
+          "id": "21",
+          "text": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+          "event": "UPDATE",
+          "old_memory": "Prioritizes self-care and seeks support from friends and colleagues to manage stress"
+        },
+        {
+          "id": "22",
+          "text": "Motivated by setting clear goals and maintaining work-life balance",
+          "event": "UPDATE",
+          "old_memory": "Motivated by setting clear goals and maintaining work-life balance"
+        },
+        {
+          "id": "23",
+          "text": "Physically healthy with no chronic diseases",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Improved mental health since promotion",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "event": "UPDATE",
+          "old_memory": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented"
+        },
+        {
+          "id": "26",
+          "text": "Lifestyle choices, including pet preferences, are aligned with efficiency and career goals",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Values authenticity, innovation, and creative control",
+          "event": "UPDATE",
+          "old_memory": "Values authenticity, innovation, and creative control"
+        },
+        {
+          "id": "28",
+          "text": "Believes in mutually beneficial professional relationships",
+          "event": "NONE"
+        },
+        {
+          "id": "29",
+          "text": "Colleagues Steven and Mary are key supporters",
+          "event": "UPDATE",
+          "old_memory": "Colleagues Steven and Mary are key supporters"
+        },
+        {
+          "id": "30",
+          "text": "Friends and colleagues are main support system",
+          "event": "NONE"
+        },
+        {
+          "id": "31",
+          "text": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "event": "NONE"
+        },
+        {
+          "id": "32",
+          "text": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "event": "NONE"
+        },
+        {
+          "id": "34",
+          "text": "Plans to celebrate milestones by reflecting and acknowledging support network",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Prioritizes communication and collaboration in relationships",
+          "event": "UPDATE",
+          "old_memory": "Prioritizes communication and collaboration in relationships"
+        },
+        {
+          "id": "36",
+          "text": "Aims to integrate personal experiences into narratives to resonate with viewers",
+          "event": "UPDATE",
+          "old_memory": "Aims to integrate personal experiences into narratives to resonate with viewers"
+        },
+        {
+          "id": "37",
+          "text": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "event": "NONE"
+        },
+        {
+          "id": "38",
+          "text": "Uses AI to manage schedule and improve efficiency",
+          "event": "NONE"
+        },
+        {
+          "id": "39",
+          "text": "Wants to inspire others through historically accurate storytelling",
+          "event": "NONE"
+        },
+        {
+          "id": "40",
+          "text": "Is a director at Historical Productions Ltd.",
+          "event": "ADD"
+        },
+        {
+          "id": "41",
+          "text": "Directed a critically acclaimed historical drama",
+          "event": "ADD"
+        },
+        {
+          "id": "42",
+          "text": "Also directed a science fiction drama",
+          "event": "ADD"
+        },
+        {
+          "id": "43",
+          "text": "Committed to balancing critical acclaim with audience feedback",
+          "event": "ADD"
+        },
+        {
+          "id": "44",
+          "text": "Interested in exploring the Renaissance period and its cultural impact in upcoming projects",
+          "event": "ADD"
+        },
+        {
+          "id": "45",
+          "text": "Incorporates mindfulness practices and regular exercise into routine for well-being",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Grateful towards colleagues like Steven and friends like Mary",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Plans to set aside dedicated time for personal and professional interactions",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Aims to integrate diverse cultural perspectives into films",
+          "event": "ADD"
+        },
+        {
+          "id": "49",
+          "text": "Plans to regularly review goals and progress",
+          "event": "ADD"
+        },
+        {
+          "id": "50",
+          "text": "Seeks input and collaboration from colleagues and friends for projects",
+          "event": "ADD"
+        },
+        {
+          "id": "51",
+          "text": "Aspires to become a renowned director known for historically accurate films",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "1": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "2": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "3": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "4": "3845e0b4-f8a9-4695-baba-261e433b9278",
+      "5": "c6e7cc37-0864-48cd-8bd7-ef68bb6fdcfe",
+      "6": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "7": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "8": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "9": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "10": "4ed2931d-bca9-419e-99ab-44ec866f224f",
+      "11": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "12": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "13": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "14": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "15": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "16": "39c03132-d975-489c-88af-b9c6a4606717",
+      "17": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "18": "86004297-6841-4e4e-b98e-bcb0f4a4b380",
+      "19": "f6c33e62-64f5-4c96-aa20-2d5d1d041664",
+      "20": "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+      "21": "bba09e85-d53e-4636-b39e-c77308301d33",
+      "22": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "23": "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+      "24": "317d0abd-09eb-461b-aec9-72c31c5fc989",
+      "25": "676be8c0-c989-4581-9251-e21c493a318a",
+      "26": "cbd00090-e0b9-4f07-9659-9596d64afbd3",
+      "27": "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "28": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+      "29": "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+      "30": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "31": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "32": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "33": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "34": "b64b8d75-c516-4472-bd1c-aa3fe468685f",
+      "35": "dfb12ae7-8e08-493c-bd03-fbb5fa485185",
+      "36": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "37": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "38": "893662d8-11a6-48f7-9f3a-034a53dda482",
+      "39": "86741d82-0d63-4429-af44-834d7ac14043"
+    },
+    "elapsed_seconds": 45.75285270099994
+  }
+]

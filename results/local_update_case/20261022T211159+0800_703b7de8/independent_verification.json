@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "additional_model_calls": 0,
+  "time": "2026-10-22T21:21:46.354718+08:00",
+  "sessions": [
+    {
+      "ordinal": 3,
+      "message_count": 32,
+      "facts": 33,
+      "recall_queries": 33,
+      "unique_candidates": 21,
+      "plan_entries": 54,
+      "executed_operations": 33,
+      "NONE_dispatches": 21,
+      "native_rejected_actions": 0
+    },
+    {
+      "ordinal": 4,
+      "message_count": 60,
+      "facts": 21,
+      "recall_queries": 21,
+      "unique_candidates": 35,
+      "plan_entries": 49,
+      "executed_operations": 21,
+      "NONE_dispatches": 27,
+      "native_rejected_actions": 1
+    }
+  ],
+  "original_run_byte_identical": true,
+  "native_source_unchanged": true,
+  "input_and_both_native_prompts_exact": true,
+  "recall_candidates_and_integer_ID_mapping_verified": true,
+  "full_plans_including_NONE_and_rejected_actions_match_native_dispatch_and_history": true,
+  "native_action_error_count": 1,
+  "snapshot_chain_and_history_replay_verified": true,
+  "history_integrity_check": "ok",
+  "persistence_comparison": {
+    "ids_and_payloads_exact": true,
+    "vector_relative_tolerance": 1e-06,
+    "vector_absolute_tolerance": 1e-07,
+    "max_vector_absolute_difference": 2.460658182767972e-08,
+    "count": 78
+  },
+  "single_target_stop_boundary_verified": true
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "algorithm": "SHA-256",
+  "canonicalization": "json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(comma,colon)); UTF-8; no trailing newline",
+  "version_fingerprint_sha256": "adcec5002d99bc4500f86ef00b37991d58b85ccafc786e84c71a6152b45f87e4",
+  "payload": {
+    "audit_version": "human_review_v1_20261028",
+    "review_method": "LLM辅助、用户确认",
+    "source_sha256": {
+      "diagnosis/medium_dev/manifest.json": "607882aeefe690c5a4df37b992eee03ab2e7e69ff40a5dc9935d3030ad796590",
+      "diagnosis/medium_dev/initial_annotations.csv": "c04495e4c58f63b84514ff998be0fc87fec9cafc849868a25a0792eab282fddb",
+      "diagnosis/medium_dev/TARGETS.md": "dd602e4025b7406a7e099133898202f02858c8b98e9722b358a4229417cde224",
+      "diagnosis/medium_dev/prefix_ranges.json": "4648ff5c3c5725ba0274403c8e5329bc8c56ee5f8058139987debc2b2f62c7d9",
+      "diagnosis/medium_dev/SELECTION_RULES.md": "4e74782c1821d10a3fb2c83766bcba7f67979f714579302983c2b05e22ab09d5",
+      "diagnosis/medium_dev/recipes.json": "3e3f7dd2ea6498da036e1a5e4eba579155cf210fa116d1fa315bce8f0a8edc3a",
+      "HaluMem/data/HaluMem-Medium.jsonl": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+      "config/medium_dev.profile.json": "d30e063009e0510a859a8e3c2b5a0e63d026fd0eddfe58d6df0d6473b891eadf",
+      "config/requirements-medium-dev.txt": "a6610de77b2c2f61af4f81159cbc33c9cfcca63c1821e40d2277e7792f0f405e",
+      "config/medium_dev.env.example": "68e281617e0541eb0958239abafca112e0a188d51397c32f6e28d57ad5d59f55",
+      "scripts/medium_dev_run.py": "6a490725c612c927e0868cb43b83a7e9bdb8196f34cdf81174f727fd7b78a6b3",
+      "scripts/medium_dev_data.py": "7a331d371092b61472e8acd24383a4242ee976d8f70222127f6ce49a4c704b9b",
+      "scripts/medium_dev_review.py": "b2ca25463dad85362c697dbf3314c26598f8e84f880df9481cf6d88856929352",
+      "scripts/local_smoke.py": "03c89277044d6b91388a36acc4c9bc1f50476c70d95b1edf00f16835f1919404",
+      "scripts/local_update_case.py": "f53694846eaaf309086cbf3c7b62ef5168ef6efc3eb65ab8bce2b3f1037a6d2b"
+    },
+    "native_source_sha256": {
+      "mem0_v0.1.118/mem0/memory/main.py": "b4e774c71adbe1e928511a0cf96872e6c841de50a0379360d0d544af4e9df8b1",
+      "mem0_v0.1.118/mem0/memory/utils.py": "1b72f6603f29ec2a30e8221ccb4dcfc42b6a47d74b0f55176f2974e5f0e139af",
+      "mem0_v0.1.118/mem0/configs/prompts.py": "29f07c090ad82ab010f0a07d0dcffc828138287e9ba6ca4e6d74f6f268705dfe",
+      "mem0_v0.1.118/mem0/vector_stores/qdrant.py": "d74f7a787df50224cafdd61a39aeab870fe12256c7af3c4e92522c374adec769",
+      "mem0_v0.1.118/mem0/llms/openai.py": "4090b2b768cf9bcaf7891bbdea3eeefec0586c29ea77b99e9dcb971efcd860e6",
+      "mem0_v0.1.118/mem0/embeddings/openai.py": "2a246f3303a35cbb5cd678d4f6c01ceb1b3313b03970389e222187e9822c77eb",
+      "mem0_v0.1.118/mem0/memory/storage.py": "7cc563d2cb63f5662ccdc4fe4bf861e7dd2ac8dbb3cacdd0499dfb18f35c1890"
+    },
+    "artifact_sha256": {
+      "diagnosis/medium_dev/human_review.csv": "3b882a112682b59bf6b1800e0ae88f6257221809a883641109694b77faf4066b",
+      "diagnosis/medium_dev/human_review_summary.md": "12439c71f3565cd7011b88ca55ace1331cc40d4edc3573326837199b956b4e64",
+      "diagnosis/medium_dev/human_review_audit.json": "2d1e4611c3a6cf408db0aaff77fdb78a89a6247a27450c249833f61a723e6639"
+    },
+    "offline_preflight": {
+      "report": "results/medium_dev/human_review_audit_20261028_v1/dry_run/report.json",
+      "sha256": "eb04eaca7d5fa10f112a5a7f1b6cacfb3e2b89052e543b7d7da7d709ae79ca70",
+      "status": "passed_offline_dry_run",
+      "network": "blocked_in_process",
+      "memory_objects_constructed": 0,
+      "model_calls": 0,
+      "credentials_note": "使用空模板做断网预检；缺凭证提示不代表已检查真实密钥。"
+    }
+  },
+  "snapshot_relative_path": "diagnosis/medium_dev/review_versions/human_review_v1_20261028",
+  "self_hash_policy": "fingerprint excludes its own bytes; snapshot SHA256SUMS includes this file"
+}

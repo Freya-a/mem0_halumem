@@ -1,0 +1,448 @@
+[
+  {
+    "sequence": 30,
+    "time": "2026-10-28T15:14:22.903858+08:00",
+    "phase": "session_009",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Name is Martin'}, {'id': '1', 'text': \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\"}, {'id': '2', 'text': 'Date of birth is 1996-08-02'}, {'id': '3', 'text': 'Gender is Male'}, {'id': '4', 'text': \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\"}, {'id': '5', 'text': 'Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being'}, {'id': '6', 'text': 'Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life'}, {'id': '7', 'text': 'Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession'}, {'id': '8', 'text': 'Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle'}, {'id': '9', 'text': 'Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth'}, {'id': '10', 'text': 'Dislikes automobile racing due to environmental impact and lack of physical engagement'}, {'id': '11', 'text': 'Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health'}, {'id': '12', 'text': 'Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors'}, {'id': '13', 'text': 'Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort'}, {'id': '14', 'text': 'Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle'}, {'id': '15', 'text': 'Practices yoga for mental clarity and flexibility'}, {'id': '16', 'text': 'Practices or is open to yoga for supporting personal health and transition'}, {'id': '17', 'text': 'Likes classical music for relaxation and focus, as it creates a peaceful atmosphere'}, {'id': '18', 'text': 'Likes herbal teas for their calming properties and health benefits, supporting overall well-being'}, {'id': '19', 'text': 'Believes flexibility in job is crucial for managing professional responsibilities and personal well-being'}, {'id': '20', 'text': 'Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief'}, {'id': '21', 'text': \"Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career\"}, {'id': '22', 'text': 'Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging'}, {'id': '23', 'text': 'Has transitioned to a new role with healthier work-life balance'}, {'id': '24', 'text': 'Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work'}, {'id': '25', 'text': 'Dislikes violent video games because they promote aggression, contrary to values of peace and well-being'}, {'id': '26', 'text': 'Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance'}, {'id': '27', 'text': 'Values alignment of work with personal values'}, {'id': '28', 'text': 'Career goals are aligned with humanitarian values'}, {'id': '29', 'text': 'Financial stability is secondary to humanitarian goals and personal well-being'}, {'id': '30', 'text': 'Career change is being considered due to impact on mental health'}, {'id': '31', 'text': 'Has humanitarian care goals'}, {'id': '32', 'text': 'Thrives in collaborative environments'}, {'id': '33', 'text': 'Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition'}, {'id': '34', 'text': 'Views support network as a cornerstone of success'}, {'id': '35', 'text': 'Plans to network with professionals in the non-profit sector'}, {'id': '36', 'text': 'Values gratitude, optimism, resilience, and personal growth'}, {'id': '37', 'text': 'Grateful for support from Susan, Daniel, and Joshua'}, {'id': '38', 'text': 'Interested in opportunities with higher salary as part of career transition'}, {'id': '39', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic'}, {'id': '40', 'text': 'Uses debate skills to encourage open dialogue and idea exchange'}, {'id': '41', 'text': 'Daniel offers insights that encourage innovative thinking'}, {'id': '42', 'text': 'Seeks mentorship from individuals who value innovation and empathy'}, {'id': '43', 'text': 'Has empathetic nature that helps understand diverse perspectives'}, {'id': '44', 'text': 'Seeks to make a real impact and inspire change'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Name is Martin', 'Recently tried simulated skydiving at a team-building event', 'Previously avoided extreme sports due to safety concerns', 'Now more open to trying new things and extreme sports', 'Finds adrenaline rush from extreme sports enjoyable and creatively stimulating', 'Practices yoga regularly for mental clarity and flexibility', 'Owns Golden Retrievers (previously had Labradors)', 'Values safety while engaging in thrilling activities', 'Underwent a career change aligned with humanitarian goals and personal well-being', 'Has a supportive network of friends and colleagues', 'Grateful for opportunities that have come his way', 'Maintains an open-minded and curious mindset', 'Believes trying new things in different life areas leads to positive changes']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "1": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "2": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "3": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "4": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "5": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "6": "48052369-b295-4435-b636-e54e57d1ceef",
+      "7": "969b7b20-fddc-4330-b2b5-86b351cfb850",
+      "8": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+      "9": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+      "10": "ffec4e1c-1465-4721-a8a5-ea412779b62c",
+      "11": "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0",
+      "12": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+      "13": "99805cd4-1742-4f47-bd28-054b333c006c",
+      "14": "9c93e91b-e131-4f02-9363-fe2b78a38ac6",
+      "15": "04d538a9-5ea1-4364-a5f0-47a108ead2a6",
+      "16": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "17": "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+      "18": "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+      "19": "eb152c7d-17df-4b3a-8a99-9f6211614e2a",
+      "20": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "21": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "22": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "23": "818912c6-02bb-44f1-8350-8ce250f1fc3e",
+      "24": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+      "25": "18d6e235-3713-4f55-8a5f-17c4c0d691b9",
+      "26": "90d20f0f-949d-44ec-938a-8d0b611d2059",
+      "27": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "28": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "29": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+      "30": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "31": "50fc59c3-70c8-4335-a2a1-3d05df52a65d",
+      "32": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "33": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "34": "0fcc7637-cd67-4fad-baff-13dccec40294",
+      "35": "07c06494-0e65-46b5-83a4-077c41bab41a",
+      "36": "fb7db018-65d9-48b3-a5ad-939e2dbb18e9",
+      "37": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "38": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+      "39": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "40": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "41": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "42": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "43": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "44": "fe835b36-340f-4b83-85d6-78a2705e4e33"
+    },
+    "native_new_facts": [
+      "Name is Martin",
+      "Recently tried simulated skydiving at a team-building event",
+      "Previously avoided extreme sports due to safety concerns",
+      "Now more open to trying new things and extreme sports",
+      "Finds adrenaline rush from extreme sports enjoyable and creatively stimulating",
+      "Practices yoga regularly for mental clarity and flexibility",
+      "Owns Golden Retrievers (previously had Labradors)",
+      "Values safety while engaging in thrilling activities",
+      "Underwent a career change aligned with humanitarian goals and personal well-being",
+      "Has a supportive network of friends and colleagues",
+      "Grateful for opportunities that have come his way",
+      "Maintains an open-minded and curious mindset",
+      "Believes trying new things in different life areas leads to positive changes"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Name is Martin"
+      },
+      {
+        "id": "1",
+        "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting"
+      },
+      {
+        "id": "2",
+        "text": "Date of birth is 1996-08-02"
+      },
+      {
+        "id": "3",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "4",
+        "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+      },
+      {
+        "id": "5",
+        "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+      },
+      {
+        "id": "6",
+        "text": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life"
+      },
+      {
+        "id": "7",
+        "text": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession"
+      },
+      {
+        "id": "8",
+        "text": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle"
+      },
+      {
+        "id": "9",
+        "text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth"
+      },
+      {
+        "id": "10",
+        "text": "Dislikes automobile racing due to environmental impact and lack of physical engagement"
+      },
+      {
+        "id": "11",
+        "text": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health"
+      },
+      {
+        "id": "12",
+        "text": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors"
+      },
+      {
+        "id": "13",
+        "text": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort"
+      },
+      {
+        "id": "14",
+        "text": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle"
+      },
+      {
+        "id": "15",
+        "text": "Practices yoga for mental clarity and flexibility"
+      },
+      {
+        "id": "16",
+        "text": "Practices or is open to yoga for supporting personal health and transition"
+      },
+      {
+        "id": "17",
+        "text": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere"
+      },
+      {
+        "id": "18",
+        "text": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being"
+      },
+      {
+        "id": "19",
+        "text": "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being"
+      },
+      {
+        "id": "20",
+        "text": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief"
+      },
+      {
+        "id": "21",
+        "text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career"
+      },
+      {
+        "id": "22",
+        "text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging"
+      },
+      {
+        "id": "23",
+        "text": "Has transitioned to a new role with healthier work-life balance"
+      },
+      {
+        "id": "24",
+        "text": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work"
+      },
+      {
+        "id": "25",
+        "text": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being"
+      },
+      {
+        "id": "26",
+        "text": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance"
+      },
+      {
+        "id": "27",
+        "text": "Values alignment of work with personal values"
+      },
+      {
+        "id": "28",
+        "text": "Career goals are aligned with humanitarian values"
+      },
+      {
+        "id": "29",
+        "text": "Financial stability is secondary to humanitarian goals and personal well-being"
+      },
+      {
+        "id": "30",
+        "text": "Career change is being considered due to impact on mental health"
+      },
+      {
+        "id": "31",
+        "text": "Has humanitarian care goals"
+      },
+      {
+        "id": "32",
+        "text": "Thrives in collaborative environments"
+      },
+      {
+        "id": "33",
+        "text": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition"
+      },
+      {
+        "id": "34",
+        "text": "Views support network as a cornerstone of success"
+      },
+      {
+        "id": "35",
+        "text": "Plans to network with professionals in the non-profit sector"
+      },
+      {
+        "id": "36",
+        "text": "Values gratitude, optimism, resilience, and personal growth"
+      },
+      {
+        "id": "37",
+        "text": "Grateful for support from Susan, Daniel, and Joshua"
+      },
+      {
+        "id": "38",
+        "text": "Interested in opportunities with higher salary as part of career transition"
+      },
+      {
+        "id": "39",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+      },
+      {
+        "id": "40",
+        "text": "Uses debate skills to encourage open dialogue and idea exchange"
+      },
+      {
+        "id": "41",
+        "text": "Daniel offers insights that encourage innovative thinking"
+      },
+      {
+        "id": "42",
+        "text": "Seeks mentorship from individuals who value innovation and empathy"
+      },
+      {
+        "id": "43",
+        "text": "Has empathetic nature that helps understand diverse perspectives"
+      },
+      {
+        "id": "44",
+        "text": "Seeks to make a real impact and inspire change"
+      }
+    ]
+  },
+  {
+    "sequence": 31,
+    "time": "2026-10-28T15:14:50.745471+08:00",
+    "phase": "session_009",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Name is Martin\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Previously avoided extreme sports due to safety concerns, but recently tried simulated skydiving at a team-building event and is now more open to trying new things and extreme sports; finds adrenaline rush from extreme sports enjoyable and creatively stimulating; values safety while engaging in thrilling activities\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Practices yoga regularly for mental clarity and flexibility\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Practices yoga for mental clarity and flexibility\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Practices or is open to yoga for supporting personal health and transition\",\n            \"event\": \"DELETE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Owns Golden Retrievers (previously had Labradors); recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Has transitioned to a new role with healthier work-life balance\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has transitioned to a new role with healthier work-life balance\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Values alignment of work with personal values\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Values alignment of work with personal values\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Career goals are aligned with humanitarian values\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Career goals are aligned with humanitarian values\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Career change is being considered due to impact on mental health\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Career change is being considered due to impact on mental health\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Views support network as a cornerstone of success\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Views support network as a cornerstone of success\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Grateful for support from Susan, Daniel, and Joshua\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Grateful for support from Susan, Daniel, and Joshua\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Seeks mentorship from individuals who value innovation and empathy\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Seeks mentorship from individuals who value innovation and empathy\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Has empathetic nature that helps understand diverse perspectives\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has empathetic nature that helps understand diverse perspectives\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Seeks to make a real impact and inspire change\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Seeks to make a real impact and inspire change\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Underwent a career change aligned with humanitarian goals and personal well-being\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Has a supportive network of friends and colleagues\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Grateful for opportunities that have come his way\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Maintains an open-minded and curious mindset\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Believes trying new things in different life areas leads to positive changes\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Name is Martin",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Previously avoided extreme sports due to safety concerns, but recently tried simulated skydiving at a team-building event and is now more open to trying new things and extreme sports; finds adrenaline rush from extreme sports enjoyable and creatively stimulating; values safety while engaging in thrilling activities",
+          "event": "UPDATE",
+          "old_memory": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "id": "15",
+          "text": "Practices yoga regularly for mental clarity and flexibility",
+          "event": "UPDATE",
+          "old_memory": "Practices yoga for mental clarity and flexibility"
+        },
+        {
+          "id": "16",
+          "text": "Practices or is open to yoga for supporting personal health and transition",
+          "event": "DELETE"
+        },
+        {
+          "id": "21",
+          "text": "Owns Golden Retrievers (previously had Labradors); recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+          "event": "UPDATE",
+          "old_memory": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career"
+        },
+        {
+          "id": "22",
+          "text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "event": "UPDATE",
+          "old_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging"
+        },
+        {
+          "id": "23",
+          "text": "Has transitioned to a new role with healthier work-life balance",
+          "event": "UPDATE",
+          "old_memory": "Has transitioned to a new role with healthier work-life balance"
+        },
+        {
+          "id": "27",
+          "text": "Values alignment of work with personal values",
+          "event": "UPDATE",
+          "old_memory": "Values alignment of work with personal values"
+        },
+        {
+          "id": "28",
+          "text": "Career goals are aligned with humanitarian values",
+          "event": "UPDATE",
+          "old_memory": "Career goals are aligned with humanitarian values"
+        },
+        {
+          "id": "30",
+          "text": "Career change is being considered due to impact on mental health",
+          "event": "UPDATE",
+          "old_memory": "Career change is being considered due to impact on mental health"
+        },
+        {
+          "id": "33",
+          "text": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+          "event": "UPDATE",
+          "old_memory": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition"
+        },
+        {
+          "id": "34",
+          "text": "Views support network as a cornerstone of success",
+          "event": "UPDATE",
+          "old_memory": "Views support network as a cornerstone of success"
+        },
+        {
+          "id": "37",
+          "text": "Grateful for support from Susan, Daniel, and Joshua",
+          "event": "UPDATE",
+          "old_memory": "Grateful for support from Susan, Daniel, and Joshua"
+        },
+        {
+          "id": "39",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+          "event": "UPDATE",
+          "old_memory": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic"
+        },
+        {
+          "id": "42",
+          "text": "Seeks mentorship from individuals who value innovation and empathy",
+          "event": "UPDATE",
+          "old_memory": "Seeks mentorship from individuals who value innovation and empathy"
+        },
+        {
+          "id": "43",
+          "text": "Has empathetic nature that helps understand diverse perspectives",
+          "event": "UPDATE",
+          "old_memory": "Has empathetic nature that helps understand diverse perspectives"
+        },
+        {
+          "id": "44",
+          "text": "Seeks to make a real impact and inspire change",
+          "event": "UPDATE",
+          "old_memory": "Seeks to make a real impact and inspire change"
+        },
+        {
+          "id": "45",
+          "text": "Underwent a career change aligned with humanitarian goals and personal well-being",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Has a supportive network of friends and colleagues",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Grateful for opportunities that have come his way",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Maintains an open-minded and curious mindset",
+          "event": "ADD"
+        },
+        {
+          "id": "49",
+          "text": "Believes trying new things in different life areas leads to positive changes",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "1": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "2": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "3": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "4": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "5": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "6": "48052369-b295-4435-b636-e54e57d1ceef",
+      "7": "969b7b20-fddc-4330-b2b5-86b351cfb850",
+      "8": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+      "9": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+      "10": "ffec4e1c-1465-4721-a8a5-ea412779b62c",
+      "11": "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0",
+      "12": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+      "13": "99805cd4-1742-4f47-bd28-054b333c006c",
+      "14": "9c93e91b-e131-4f02-9363-fe2b78a38ac6",
+      "15": "04d538a9-5ea1-4364-a5f0-47a108ead2a6",
+      "16": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "17": "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+      "18": "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+      "19": "eb152c7d-17df-4b3a-8a99-9f6211614e2a",
+      "20": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "21": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "22": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "23": "818912c6-02bb-44f1-8350-8ce250f1fc3e",
+      "24": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+      "25": "18d6e235-3713-4f55-8a5f-17c4c0d691b9",
+      "26": "90d20f0f-949d-44ec-938a-8d0b611d2059",
+      "27": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "28": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "29": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+      "30": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "31": "50fc59c3-70c8-4335-a2a1-3d05df52a65d",
+      "32": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "33": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "34": "0fcc7637-cd67-4fad-baff-13dccec40294",
+      "35": "07c06494-0e65-46b5-83a4-077c41bab41a",
+      "36": "fb7db018-65d9-48b3-a5ad-939e2dbb18e9",
+      "37": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "38": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+      "39": "cc0ef275-2ae2-4c05-93d6-c693a62d41a1",
+      "40": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "41": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "42": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "43": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "44": "fe835b36-340f-4b83-85d6-78a2705e4e33"
+    },
+    "elapsed_seconds": 27.840923323004972
+  }
+]

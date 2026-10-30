@@ -1,0 +1,6 @@
+{
+  "status": "failed_or_partial_uncommitted",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/shu1004/ld/system/mem0_halumem_diagnosis/scripts/medium_dev_run.py\", line 249, in run_session\n    data.require(not bad and not sdk_bad and not log.errors,'Native/model/transport error; session remains uncommitted')\n  File \"/home/shu1004/ld/system/mem0_halumem_diagnosis/scripts/medium_dev_data.py\", line 22, in require\n    raise ValueError(message)\nValueError: Native/model/transport error; session remains uncommitted\n",
+  "elapsed_seconds": 63.053950110974256,
+  "handling": "Ordinary resume refused. Inspect partial writes; explicitly rollback this session to saved before-state or use a new run_id."
+}

@@ -1,0 +1,888 @@
+[
+  {
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+    "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005",
+    "related_target_ids": [
+      "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "dataset_line_one_based": 14,
+      "original_session_index_zero_based": 5,
+      "memory_point_index_zero_based": 0,
+      "annotation_index": 1,
+      "chronological_session_ordinal_one_based": 6,
+      "annotation_json_pointer": "/sessions/5/memory_points/0",
+      "annotation": {
+        "index": 1,
+        "memory_content": "Williams Daniel's mental health status improved due to his promotion to lead director at Historical Productions Ltd.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Williams Daniel's mental health status: Stressed"
+        ],
+        "timestamp": "Mar 15, 2026, 16:23:58",
+        "importance": 0.75
+      },
+      "category": "replacement",
+      "old_proposition": "Williams describes his mental health as stressed by film-detail demands and tight schedules.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 14:55:40",
+          "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 5,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/5/dialogue/0",
+          "role": "user",
+          "timestamp": "Mar 15, 2026, 13:53:58",
+          "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+        },
+        {
+          "session_index_zero_based": 5,
+          "message_index_zero_based": 14,
+          "json_pointer": "/sessions/5/dialogue/14",
+          "role": "user",
+          "timestamp": "Mar 15, 2026, 14:31:44",
+          "quote": "Delegating tasks has been key to reducing stress and improving my mental health. It's been a significant change since becoming lead director."
+        }
+      ],
+      "expected_new_state": "Williams reports significant mental health improvement and reduced stress after promotion and delegation.",
+      "allowed_modification_scope": "Replace current stressed-state description with relative improvement; preserve history and avoid clinical recovery claims.",
+      "interpretation_note": "",
+      "candidate_protections": [
+        {
+          "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 09:43:52",
+            "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams’s father is a retired history professor.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 10:49:29",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/1/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 14:55:40",
+            "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005",
+      "related_target_ids": [
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+      "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "26744cf2-1ca8-4c32-9b41-473761aa1223",
+      "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "2975d71e-924e-4fb9-904b-77f74d447312",
+      "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "2fed5e45-3d59-4ea5-b902-2b0b74351b33",
+      "322dffcf-4884-43fa-a185-718600a36cdc",
+      "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "6a80e8a5-7007-4694-ab27-0f1581980a3a",
+      "6b2ae9b2-8a57-407b-a2ec-61348ff1039e",
+      "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+      "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "8086f7b3-9cf7-4080-8fb2-660edef69299",
+      "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+      "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+      "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "bba09e85-d53e-4636-b39e-c77308301d33",
+      "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "cff412be-1593-4d43-8971-83794acb1a87",
+      "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+      "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "f71eebcd-d556-436f-97be-a8dca4c99de9"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 103,
+        "id": "3a163cc0-e7fd-4581-848a-3ecc8f61fc23",
+        "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "old_memory": "Recently promoted to lead director at Historical Productions Ltd",
+        "new_memory": "Recently promoted to lead director at Historical Productions Ltd",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.187008-07:00",
+        "updated_at": "2026-10-28T00:01:40.739046-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 104,
+        "id": "639d6b91-d4d7-419e-8b07-22b42ef3d693",
+        "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "old_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "new_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:38:18.690128-07:00",
+        "updated_at": "2026-10-28T00:01:41.057332-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 105,
+        "id": "457725f3-2c39-4774-a7f2-c7ebdbdee92b",
+        "memory_id": "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+        "old_memory": "No diagnosed mental health issues",
+        "new_memory": "No diagnosed mental health issues",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:38:18.699035-07:00",
+        "updated_at": "2026-10-28T00:01:41.266531-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 106,
+        "id": "134134d6-434c-4d6a-8103-b4519fabdecb",
+        "memory_id": "bba09e85-d53e-4636-b39e-c77308301d33",
+        "old_memory": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        "new_memory": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.246009-07:00",
+        "updated_at": "2026-10-28T00:01:41.521944-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 107,
+        "id": "24c50e61-1fbb-44bd-a104-8fd5be1cfdca",
+        "memory_id": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+        "old_memory": "Motivated by setting clear goals and maintaining work-life balance",
+        "new_memory": "Motivated by setting clear goals and maintaining work-life balance",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.235596-07:00",
+        "updated_at": "2026-10-28T00:01:41.692177-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 108,
+        "id": "462b85c5-76b8-419b-9b94-b656fc0d56dc",
+        "memory_id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "old_memory": "Goal is to create historically accurate films",
+        "new_memory": "Goal is to create historically accurate films",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:37:45.837032-07:00",
+        "updated_at": "2026-10-28T00:01:41.853321-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 109,
+        "id": "81ddfbb8-4871-4978-967c-0c85179b0b5a",
+        "memory_id": "317d0abd-09eb-461b-aec9-72c31c5fc989",
+        "old_memory": null,
+        "new_memory": "Improved mental health since promotion",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:41.999249-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 110,
+        "id": "6f0d089a-a87b-49c9-95f2-919230e5342c",
+        "memory_id": "03afcc93-335c-4519-81ad-e375984ffe31",
+        "old_memory": null,
+        "new_memory": "Delegating tasks has reduced stress and enhanced focus on projects",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.008060-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 111,
+        "id": "5a1ec310-b507-4d5e-b113-fe300030de12",
+        "memory_id": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+        "old_memory": null,
+        "new_memory": "Focuses on historical accuracy in films",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.016500-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 112,
+        "id": "13291968-4291-40d4-ac6b-150cf4ef6ae6",
+        "memory_id": "893662d8-11a6-48f7-9f3a-034a53dda482",
+        "old_memory": null,
+        "new_memory": "Uses AI to manage schedule and improve efficiency",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.024382-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 113,
+        "id": "b1531821-0e3a-4634-8a35-54d372824746",
+        "memory_id": "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+        "old_memory": null,
+        "new_memory": "Colleagues Steven and Mary are key supporters",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.032777-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 114,
+        "id": "46086b7a-0d25-4ee1-bc98-5c6c13709b8a",
+        "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+        "old_memory": null,
+        "new_memory": "Friends and colleagues are main support system",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.040728-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 115,
+        "id": "6eab2448-59e5-41fe-a87b-b78f6dd1ba8b",
+        "memory_id": "57749a01-c7f7-474a-aa4a-770781436d98",
+        "old_memory": null,
+        "new_memory": "Has not explored new hobbies recently",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.048685-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 116,
+        "id": "bd87ac4f-55d8-45eb-987f-563600cde5e3",
+        "memory_id": "06714d4b-0dbf-406b-bb4e-07fd7a274337",
+        "old_memory": null,
+        "new_memory": "Has not sought mentorship from industry veterans yet, but is open to considering it",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.056561-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 117,
+        "id": "030bafde-3f2e-4cb9-8ac4-96533b941ac7",
+        "memory_id": "1043672a-eb91-4a73-841a-f6204f50bf61",
+        "old_memory": null,
+        "new_memory": "Work-life balance improved due to role change",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.064529-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 118,
+        "id": "40582a06-1c16-40c3-a0a7-c0e53466783b",
+        "memory_id": "4fc05270-e53d-4b0a-ac6e-459e7a0677fe",
+        "old_memory": null,
+        "new_memory": "No demanding family life to balance",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.072525-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 09:43:52",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams’s father is a retired history professor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 10:49:29",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 14:55:40",
+          "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/input.json",
+      "before.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+      "after.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/after.json",
+      "extracted_facts.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/extracted_facts.json",
+      "recall_candidates.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/recall_candidates.json",
+      "update_model_io.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/update_model_io.json",
+      "full_operation_plan.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/full_operation_plan.json",
+      "execution_results.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/execution_results.json",
+      "actual_operations.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/actual_operations.json"
+    }
+  },
+  {
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001",
+    "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005",
+    "related_target_ids": [
+      "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "dataset_line_one_based": 14,
+      "original_session_index_zero_based": 5,
+      "memory_point_index_zero_based": 1,
+      "annotation_index": 2,
+      "chronological_session_ordinal_one_based": 6,
+      "annotation_json_pointer": "/sessions/5/memory_points/1",
+      "annotation": {
+        "index": 2,
+        "memory_content": "Williams Daniel's mental health improved significantly with a better work-life balance achieved through his new role, feeling less stressed and more capable of handling career demands.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Williams Daniel's situation_reason is My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+        ],
+        "timestamp": "Mar 15, 2026, 16:23:58",
+        "importance": 0.75
+      },
+      "category": "partial_attribute",
+      "old_proposition": "Williams’s mental health suffers from detail and production-schedule stress; physical health is generally good.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 14:55:40",
+          "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 5,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/5/dialogue/0",
+          "role": "user",
+          "timestamp": "Mar 15, 2026, 13:53:58",
+          "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+        },
+        {
+          "session_index_zero_based": 5,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/5/dialogue/4",
+          "role": "user",
+          "timestamp": "Mar 15, 2026, 14:00:38",
+          "quote": "I haven't had to balance a demanding family life, but I do focus on my career goals. My recent role change has definitely helped me achieve a better work-life balance."
+        }
+      ],
+      "expected_new_state": "Delegation in the new role has reduced mental stress and improved work-life balance.",
+      "allowed_modification_scope": "Change the mental-stress/work-balance component only; preserve physical health, exercise and diet.",
+      "interpretation_note": "Overlaps the mental-state target in this same session; not an independent experimental event.",
+      "candidate_protections": [
+        {
+          "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 09:43:52",
+            "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams’s father is a retired history professor.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 10:49:29",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/1/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 14:55:40",
+            "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005",
+      "related_target_ids": [
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+      "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "26744cf2-1ca8-4c32-9b41-473761aa1223",
+      "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "2975d71e-924e-4fb9-904b-77f74d447312",
+      "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "2fed5e45-3d59-4ea5-b902-2b0b74351b33",
+      "322dffcf-4884-43fa-a185-718600a36cdc",
+      "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "6a80e8a5-7007-4694-ab27-0f1581980a3a",
+      "6b2ae9b2-8a57-407b-a2ec-61348ff1039e",
+      "72acfe7a-ac52-44ec-998a-247f71f5d3a1",
+      "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "8086f7b3-9cf7-4080-8fb2-660edef69299",
+      "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+      "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+      "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "bba09e85-d53e-4636-b39e-c77308301d33",
+      "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "cff412be-1593-4d43-8971-83794acb1a87",
+      "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "e15483c3-f7fb-4952-a8ef-23c1fcd3d2ab",
+      "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "f71eebcd-d556-436f-97be-a8dca4c99de9"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 103,
+        "id": "3a163cc0-e7fd-4581-848a-3ecc8f61fc23",
+        "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "old_memory": "Recently promoted to lead director at Historical Productions Ltd",
+        "new_memory": "Recently promoted to lead director at Historical Productions Ltd",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.187008-07:00",
+        "updated_at": "2026-10-28T00:01:40.739046-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 104,
+        "id": "639d6b91-d4d7-419e-8b07-22b42ef3d693",
+        "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "old_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "new_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:38:18.690128-07:00",
+        "updated_at": "2026-10-28T00:01:41.057332-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 105,
+        "id": "457725f3-2c39-4774-a7f2-c7ebdbdee92b",
+        "memory_id": "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+        "old_memory": "No diagnosed mental health issues",
+        "new_memory": "No diagnosed mental health issues",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:38:18.699035-07:00",
+        "updated_at": "2026-10-28T00:01:41.266531-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 106,
+        "id": "134134d6-434c-4d6a-8103-b4519fabdecb",
+        "memory_id": "bba09e85-d53e-4636-b39e-c77308301d33",
+        "old_memory": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        "new_memory": "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.246009-07:00",
+        "updated_at": "2026-10-28T00:01:41.521944-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 107,
+        "id": "24c50e61-1fbb-44bd-a104-8fd5be1cfdca",
+        "memory_id": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+        "old_memory": "Motivated by setting clear goals and maintaining work-life balance",
+        "new_memory": "Motivated by setting clear goals and maintaining work-life balance",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:41:45.235596-07:00",
+        "updated_at": "2026-10-28T00:01:41.692177-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 108,
+        "id": "462b85c5-76b8-419b-9b94-b656fc0d56dc",
+        "memory_id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "old_memory": "Goal is to create historically accurate films",
+        "new_memory": "Goal is to create historically accurate films",
+        "event": "UPDATE",
+        "created_at": "2026-10-27T23:37:45.837032-07:00",
+        "updated_at": "2026-10-28T00:01:41.853321-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 109,
+        "id": "81ddfbb8-4871-4978-967c-0c85179b0b5a",
+        "memory_id": "317d0abd-09eb-461b-aec9-72c31c5fc989",
+        "old_memory": null,
+        "new_memory": "Improved mental health since promotion",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:41.999249-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 110,
+        "id": "6f0d089a-a87b-49c9-95f2-919230e5342c",
+        "memory_id": "03afcc93-335c-4519-81ad-e375984ffe31",
+        "old_memory": null,
+        "new_memory": "Delegating tasks has reduced stress and enhanced focus on projects",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.008060-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 111,
+        "id": "5a1ec310-b507-4d5e-b113-fe300030de12",
+        "memory_id": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+        "old_memory": null,
+        "new_memory": "Focuses on historical accuracy in films",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.016500-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 112,
+        "id": "13291968-4291-40d4-ac6b-150cf4ef6ae6",
+        "memory_id": "893662d8-11a6-48f7-9f3a-034a53dda482",
+        "old_memory": null,
+        "new_memory": "Uses AI to manage schedule and improve efficiency",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.024382-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 113,
+        "id": "b1531821-0e3a-4634-8a35-54d372824746",
+        "memory_id": "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+        "old_memory": null,
+        "new_memory": "Colleagues Steven and Mary are key supporters",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.032777-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 114,
+        "id": "46086b7a-0d25-4ee1-bc98-5c6c13709b8a",
+        "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+        "old_memory": null,
+        "new_memory": "Friends and colleagues are main support system",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.040728-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 115,
+        "id": "6eab2448-59e5-41fe-a87b-b78f6dd1ba8b",
+        "memory_id": "57749a01-c7f7-474a-aa4a-770781436d98",
+        "old_memory": null,
+        "new_memory": "Has not explored new hobbies recently",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.048685-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 116,
+        "id": "bd87ac4f-55d8-45eb-987f-563600cde5e3",
+        "memory_id": "06714d4b-0dbf-406b-bb4e-07fd7a274337",
+        "old_memory": null,
+        "new_memory": "Has not sought mentorship from industry veterans yet, but is open to considering it",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.056561-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 117,
+        "id": "030bafde-3f2e-4cb9-8ac4-96533b941ac7",
+        "memory_id": "1043672a-eb91-4a73-841a-f6204f50bf61",
+        "old_memory": null,
+        "new_memory": "Work-life balance improved due to role change",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.064529-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 118,
+        "id": "40582a06-1c16-40c3-a0a7-c0e53466783b",
+        "memory_id": "4fc05270-e53d-4b0a-ac6e-459e7a0677fe",
+        "old_memory": null,
+        "new_memory": "No demanding family life to balance",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:01:42.072525-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Williams’s highest education is Bachelor in Film Studies.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 09:43:52",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Film Studies."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams’s father is a retired history professor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 10:49:29",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, No children. My Father was born on 1954-06-16, Retired history professor, inspiring a love for historical accuracy. My Mother was born on 1954-06-16, Former librarian, instilled a passion for research and detail. My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history. Overall, Williams has a supportive family that shares his passion for history and detail, which influences his work as a director."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 14:55:40",
+          "quote": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/input.json",
+      "before.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+      "after.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/after.json",
+      "extracted_facts.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/extracted_facts.json",
+      "recall_candidates.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/recall_candidates.json",
+      "update_model_io.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/update_model_io.json",
+      "full_operation_plan.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/full_operation_plan.json",
+      "execution_results.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/execution_results.json",
+      "actual_operations.json": "users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/actual_operations.json"
+    }
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "sequence": 52,
+    "time": "2026-10-28T15:06:07.438233+08:00",
+    "phase": "session_011",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Name is Williams'}, {'id': '1', 'text': 'Friend: WilliamsMary (provides emotional support and encourages breaks)'}, {'id': '2', 'text': 'Friend: WilliamsRichard (fellow director, inspires innovative storytelling)'}, {'id': '3', 'text': 'Gender is Male'}, {'id': '4', 'text': 'Date of birth is 1984-06-16'}, {'id': '5', 'text': 'Is a filmmaker'}, {'id': '6', 'text': 'Aspires to become a renowned director known for historically accurate films'}, {'id': '7', 'text': 'Goal is to become a renowned director known for historically accurate films'}, {'id': '8', 'text': 'Life goal is to become a renowned director known for historically accurate storytelling'}, {'id': '9', 'text': 'Directed a critically acclaimed historical drama'}, {'id': '10', 'text': 'Plans to direct 10 award-winning historical films'}, {'id': '11', 'text': 'Motivated to bring history to life through film'}, {'id': '12', 'text': 'Reflects on balancing historical authenticity with embracing new flavors'}, {'id': '13', 'text': 'Interested in historical authenticity and its alignment with personal and professional life'}, {'id': '14', 'text': 'Values authenticity and historical accuracy in films'}, {'id': '15', 'text': 'Wants to challenge historical narratives and engage audiences on a deeper level'}, {'id': '16', 'text': 'Focuses on historical accuracy in films'}, {'id': '17', 'text': 'Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience'}, {'id': '18', 'text': 'Attends film festivals for inspiration'}, {'id': '19', 'text': 'Lives in Philadelphia'}, {'id': '20', 'text': 'Committed to balancing critical acclaim with audience feedback'}, {'id': '21', 'text': 'Recently visited a historic tea house'}, {'id': '22', 'text': 'Dislikes auto-tuned pop music because it lacks authenticity and depth'}, {'id': '23', 'text': 'Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era'}, {'id': '24', 'text': 'Dislikes science fiction because its futuristic themes conflict with preference for historical accuracy and authenticity'}, {'id': '25', 'text': 'Goal is to create historically accurate films'}, {'id': '26', 'text': 'Incorporating themes of historical depth into upcoming film projects'}, {'id': '27', 'text': 'Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques'}, {'id': '28', 'text': 'Has strategic thinking and perfectionist traits'}, {'id': '29', 'text': 'Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented'}, {'id': '30', 'text': 'Wants to inspire others through historically accurate storytelling'}, {'id': '31', 'text': 'Experiences stress due to historical accuracy demands and tight production schedules'}, {'id': '32', 'text': 'Aims to integrate personal experiences into narratives to resonate with viewers'}, {'id': '33', 'text': 'Prioritizes key elements that enhance historical authenticity while balancing budget and production quality'}, {'id': '34', 'text': 'Love for history and storytelling drives creative decisions'}, {'id': '35', 'text': 'Aims to integrate diverse cultural perspectives into films'}, {'id': '36', 'text': 'Aims to create immersive film experiences that transport viewers to different eras'}, {'id': '37', 'text': \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\"}, {'id': '38', 'text': 'Believes in mutually beneficial professional relationships'}, {'id': '39', 'text': 'Plans to celebrate milestones by reflecting and acknowledging support network'}, {'id': '40', 'text': 'Friends and colleagues are main support system'}, {'id': '41', 'text': 'Plans to set aside dedicated time for personal and professional interactions'}, {'id': '42', 'text': 'Prioritizes communication and collaboration in relationships'}, {'id': '43', 'text': 'Loves visiting historic places, which deeply influence storytelling approach'}, {'id': '44', 'text': 'Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling'}, {'id': '45', 'text': 'Success means recognition at major film festivals like Cannes and Sundance'}, {'id': '46', 'text': 'Seeks recognition at major film festivals like Cannes and Sundance'}, {'id': '47', 'text': 'Relies on meticulous planning and collaboration with a talented team for film production'}, {'id': '48', 'text': 'Collaborates with set dressers to create period settings'}, {'id': '49', 'text': 'Values authenticity, innovation, and creative control'}, {'id': '50', 'text': 'Motivated by setting clear goals and maintaining work-life balance'}, {'id': '51', 'text': 'Balancing ambition with personal well-being is an ongoing priority'}, {'id': '52', 'text': 'Excited about exploring new historical themes and narratives'}, {'id': '53', 'text': 'Plans to regularly review goals and progress'}, {'id': '54', 'text': 'Seeks input and collaboration from colleagues and friends for projects'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Name is Williams', 'Is a film director', 'Life goal is to direct award-winning historical films', 'Appreciates historical depth and authenticity', 'Recently attended a live orchestral performance at a renowned concert hall', 'Has shifted musical preferences towards Baroque symphonies', \"Finds Baroque music's historical richness and complexity aligns with appreciation for authenticity\", 'Is exploring ways to incorporate Baroque music into films to enhance historical accuracy and emotional resonance', 'Has perfectionist traits and strives for historical accuracy in every detail', 'Faces challenge of ensuring music complements visual storytelling without overshadowing it', 'Has found success in using Baroque music to enhance emotional depth in films', 'Is open to Romantic symphonies as a potential future influence, provided they align with historical accuracy', 'Plans to attend more live performances and engage with musicians specializing in historical music', 'Aims for authentic collaborations with musicians to enhance historical authenticity of films', 'Focuses on nurturing both existing and new professional relationships to build a supportive network', 'Plans to attend industry events and engage with professionals who share passion for historical storytelling', 'Measures success by audience impact and recognition at major film festivals', 'Works closely with composers to ensure music enhances narrative and supports visual storytelling', 'Strives to balance high standards with creative flexibility and experimentation', 'Uses strategic thinking to carefully select musical and thematic influences that align with vision and historical authenticity', 'Stays inspired by seeking new experiences and learning from other creatives passionate about history', 'Celebrates successes by sharing them with network and reflecting on audience impact', 'Actively seeks feedback from trusted colleagues to refine storytelling techniques', 'Believes balancing artistic vision with practical production involves careful planning and collaboration with a skilled team']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "1": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "2": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "3": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "4": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "5": "e6112994-45c2-43d2-86d8-7c8d978f690e",
+      "6": "ef7f5f79-734d-4014-b7b3-5dc5bfb70aab",
+      "7": "3845e0b4-f8a9-4695-baba-261e433b9278",
+      "8": "fd99c41a-2b26-4f6c-ac58-88fa27f35788",
+      "9": "9dc10b2a-a119-434a-b623-05e70f1146f2",
+      "10": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "11": "c6e7cc37-0864-48cd-8bd7-ef68bb6fdcfe",
+      "12": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "13": "de587c3d-adb4-4436-bc04-9036aa391d87",
+      "14": "4ff8cfcc-50b0-4393-acaa-cd9a7e7da8c6",
+      "15": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "16": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "17": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+      "18": "a5b570bb-99d1-4624-9a67-206466557a02",
+      "19": "d2a36010-9586-465e-9638-0913198e57f6",
+      "20": "be937262-37a4-4591-a0b9-5cd63605920c",
+      "21": "24ac231f-fd30-4418-8db6-0bd0cd4e06de",
+      "22": "26744cf2-1ca8-4c32-9b41-473761aa1223",
+      "23": "38d07cc6-7e8e-4e05-a5aa-646dc7b7aa19",
+      "24": "702889f6-20b1-46cf-95b9-cb5eeac421e2",
+      "25": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "26": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "27": "4ed2931d-bca9-419e-99ab-44ec866f224f",
+      "28": "b18ced9e-6910-4735-863c-1814244da08e",
+      "29": "676be8c0-c989-4581-9251-e21c493a318a",
+      "30": "86741d82-0d63-4429-af44-834d7ac14043",
+      "31": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "32": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "33": "0a572a48-0a25-48b0-8b72-088133cb6578",
+      "34": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "35": "101ab548-a40c-4acd-8c31-4ab3b8ba2723",
+      "36": "39c03132-d975-489c-88af-b9c6a4606717",
+      "37": "86004297-6841-4e4e-b98e-bcb0f4a4b380",
+      "38": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+      "39": "b64b8d75-c516-4472-bd1c-aa3fe468685f",
+      "40": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "41": "ed9b09b6-9de7-4966-8db2-8e610e2980bd",
+      "42": "dfb12ae7-8e08-493c-bd03-fbb5fa485185",
+      "43": "b77be932-7af4-4557-b93a-bc40d9edd549",
+      "44": "36574505-36f3-48be-a10b-7d45029cd600",
+      "45": "8c75c81e-6f7e-4604-81b7-e4d0b2115d81",
+      "46": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "47": "1a0436c7-0c14-46dd-bb52-ba315c750351",
+      "48": "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+      "49": "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "50": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "51": "ba4543e0-035a-4cfd-8351-c4f1a3e6923c",
+      "52": "d372e31b-e6bf-47c0-825d-2a08eb440c32",
+      "53": "38e40ee9-9a0c-4013-8c1b-50d47a3301c3",
+      "54": "5f2ba8bb-6c43-4861-b93b-4b65bcdcfbff"
+    },
+    "native_new_facts": [
+      "Name is Williams",
+      "Is a film director",
+      "Life goal is to direct award-winning historical films",
+      "Appreciates historical depth and authenticity",
+      "Recently attended a live orchestral performance at a renowned concert hall",
+      "Has shifted musical preferences towards Baroque symphonies",
+      "Finds Baroque music's historical richness and complexity aligns with appreciation for authenticity",
+      "Is exploring ways to incorporate Baroque music into films to enhance historical accuracy and emotional resonance",
+      "Has perfectionist traits and strives for historical accuracy in every detail",
+      "Faces challenge of ensuring music complements visual storytelling without overshadowing it",
+      "Has found success in using Baroque music to enhance emotional depth in films",
+      "Is open to Romantic symphonies as a potential future influence, provided they align with historical accuracy",
+      "Plans to attend more live performances and engage with musicians specializing in historical music",
+      "Aims for authentic collaborations with musicians to enhance historical authenticity of films",
+      "Focuses on nurturing both existing and new professional relationships to build a supportive network",
+      "Plans to attend industry events and engage with professionals who share passion for historical storytelling",
+      "Measures success by audience impact and recognition at major film festivals",
+      "Works closely with composers to ensure music enhances narrative and supports visual storytelling",
+      "Strives to balance high standards with creative flexibility and experimentation",
+      "Uses strategic thinking to carefully select musical and thematic influences that align with vision and historical authenticity",
+      "Stays inspired by seeking new experiences and learning from other creatives passionate about history",
+      "Celebrates successes by sharing them with network and reflecting on audience impact",
+      "Actively seeks feedback from trusted colleagues to refine storytelling techniques",
+      "Believes balancing artistic vision with practical production involves careful planning and collaboration with a skilled team"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Name is Williams"
+      },
+      {
+        "id": "1",
+        "text": "Friend: WilliamsMary (provides emotional support and encourages breaks)"
+      },
+      {
+        "id": "2",
+        "text": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)"
+      },
+      {
+        "id": "3",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "4",
+        "text": "Date of birth is 1984-06-16"
+      },
+      {
+        "id": "5",
+        "text": "Is a filmmaker"
+      },
+      {
+        "id": "6",
+        "text": "Aspires to become a renowned director known for historically accurate films"
+      },
+      {
+        "id": "7",
+        "text": "Goal is to become a renowned director known for historically accurate films"
+      },
+      {
+        "id": "8",
+        "text": "Life goal is to become a renowned director known for historically accurate storytelling"
+      },
+      {
+        "id": "9",
+        "text": "Directed a critically acclaimed historical drama"
+      },
+      {
+        "id": "10",
+        "text": "Plans to direct 10 award-winning historical films"
+      },
+      {
+        "id": "11",
+        "text": "Motivated to bring history to life through film"
+      },
+      {
+        "id": "12",
+        "text": "Reflects on balancing historical authenticity with embracing new flavors"
+      },
+      {
+        "id": "13",
+        "text": "Interested in historical authenticity and its alignment with personal and professional life"
+      },
+      {
+        "id": "14",
+        "text": "Values authenticity and historical accuracy in films"
+      },
+      {
+        "id": "15",
+        "text": "Wants to challenge historical narratives and engage audiences on a deeper level"
+      },
+      {
+        "id": "16",
+        "text": "Focuses on historical accuracy in films"
+      },
+      {
+        "id": "17",
+        "text": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience"
+      },
+      {
+        "id": "18",
+        "text": "Attends film festivals for inspiration"
+      },
+      {
+        "id": "19",
+        "text": "Lives in Philadelphia"
+      },
+      {
+        "id": "20",
+        "text": "Committed to balancing critical acclaim with audience feedback"
+      },
+      {
+        "id": "21",
+        "text": "Recently visited a historic tea house"
+      },
+      {
+        "id": "22",
+        "text": "Dislikes auto-tuned pop music because it lacks authenticity and depth"
+      },
+      {
+        "id": "23",
+        "text": "Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era"
+      },
+      {
+        "id": "24",
+        "text": "Dislikes science fiction because its futuristic themes conflict with preference for historical accuracy and authenticity"
+      },
+      {
+        "id": "25",
+        "text": "Goal is to create historically accurate films"
+      },
+      {
+        "id": "26",
+        "text": "Incorporating themes of historical depth into upcoming film projects"
+      },
+      {
+        "id": "27",
+        "text": "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques"
+      },
+      {
+        "id": "28",
+        "text": "Has strategic thinking and perfectionist traits"
+      },
+      {
+        "id": "29",
+        "text": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented"
+      },
+      {
+        "id": "30",
+        "text": "Wants to inspire others through historically accurate storytelling"
+      },
+      {
+        "id": "31",
+        "text": "Experiences stress due to historical accuracy demands and tight production schedules"
+      },
+      {
+        "id": "32",
+        "text": "Aims to integrate personal experiences into narratives to resonate with viewers"
+      },
+      {
+        "id": "33",
+        "text": "Prioritizes key elements that enhance historical authenticity while balancing budget and production quality"
+      },
+      {
+        "id": "34",
+        "text": "Love for history and storytelling drives creative decisions"
+      },
+      {
+        "id": "35",
+        "text": "Aims to integrate diverse cultural perspectives into films"
+      },
+      {
+        "id": "36",
+        "text": "Aims to create immersive film experiences that transport viewers to different eras"
+      },
+      {
+        "id": "37",
+        "text": "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further"
+      },
+      {
+        "id": "38",
+        "text": "Believes in mutually beneficial professional relationships"
+      },
+      {
+        "id": "39",
+        "text": "Plans to celebrate milestones by reflecting and acknowledging support network"
+      },
+      {
+        "id": "40",
+        "text": "Friends and colleagues are main support system"
+      },
+      {
+        "id": "41",
+        "text": "Plans to set aside dedicated time for personal and professional interactions"
+      },
+      {
+        "id": "42",
+        "text": "Prioritizes communication and collaboration in relationships"
+      },
+      {
+        "id": "43",
+        "text": "Loves visiting historic places, which deeply influence storytelling approach"
+      },
+      {
+        "id": "44",
+        "text": "Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling"
+      },
+      {
+        "id": "45",
+        "text": "Success means recognition at major film festivals like Cannes and Sundance"
+      },
+      {
+        "id": "46",
+        "text": "Seeks recognition at major film festivals like Cannes and Sundance"
+      },
+      {
+        "id": "47",
+        "text": "Relies on meticulous planning and collaboration with a talented team for film production"
+      },
+      {
+        "id": "48",
+        "text": "Collaborates with set dressers to create period settings"
+      },
+      {
+        "id": "49",
+        "text": "Values authenticity, innovation, and creative control"
+      },
+      {
+        "id": "50",
+        "text": "Motivated by setting clear goals and maintaining work-life balance"
+      },
+      {
+        "id": "51",
+        "text": "Balancing ambition with personal well-being is an ongoing priority"
+      },
+      {
+        "id": "52",
+        "text": "Excited about exploring new historical themes and narratives"
+      },
+      {
+        "id": "53",
+        "text": "Plans to regularly review goals and progress"
+      },
+      {
+        "id": "54",
+        "text": "Seeks input and collaboration from colleagues and friends for projects"
+      }
+    ]
+  },
+  {
+    "sequence": 53,
+    "time": "2026-10-28T15:07:17.427054+08:00",
+    "phase": "session_011",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Name is Williams\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Friend: WilliamsMary (provides emotional support and encourages breaks)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Friend: WilliamsRichard (fellow director, inspires innovative storytelling)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Date of birth is 1984-06-16\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Is a filmmaker\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Is a filmmaker\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Aspires to become a renowned director known for historically accurate films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Aspires to become a renowned director known for historically accurate films\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Goal is to become a renowned director known for historically accurate films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Goal is to become a renowned director known for historically accurate films\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Life goal is to become a renowned director known for historically accurate storytelling\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Life goal is to become a renowned director known for historically accurate storytelling\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Directed a critically acclaimed historical drama\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Plans to direct 10 award-winning historical films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Motivated to bring history to life through film\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Reflects on balancing historical authenticity with embracing new flavors\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Interested in historical authenticity and its alignment with personal and professional life\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Values authenticity and historical accuracy in films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Values authenticity and historical accuracy in films\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Wants to challenge historical narratives and engage audiences on a deeper level\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Focuses on historical accuracy in films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Attends film festivals for inspiration\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Lives in Philadelphia\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Committed to balancing critical acclaim with audience feedback\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Recently visited a historic tea house\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Dislikes auto-tuned pop music because it lacks authenticity and depth\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Dislikes science fiction because its futuristic themes conflict with preference for historical accuracy and authenticity\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Goal is to create historically accurate films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Goal is to create historically accurate films\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Incorporating themes of historical depth into upcoming film projects\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Has strategic thinking and perfectionist traits\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has strategic thinking and perfectionist traits\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Wants to inspire others through historically accurate storytelling\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Aims to integrate personal experiences into narratives to resonate with viewers\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Prioritizes key elements that enhance historical authenticity while balancing budget and production quality\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Love for history and storytelling drives creative decisions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Aims to integrate diverse cultural perspectives into films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Aims to create immersive film experiences that transport viewers to different eras\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Believes in mutually beneficial professional relationships\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Plans to celebrate milestones by reflecting and acknowledging support network\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Plans to celebrate milestones by reflecting and acknowledging support network\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Friends and colleagues are main support system\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Plans to set aside dedicated time for personal and professional interactions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Prioritizes communication and collaboration in relationships\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Loves visiting historic places, which deeply influence storytelling approach\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Success means recognition at major film festivals like Cannes and Sundance\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Success means recognition at major film festivals like Cannes and Sundance\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Seeks recognition at major film festivals like Cannes and Sundance\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Seeks recognition at major film festivals like Cannes and Sundance\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Relies on meticulous planning and collaboration with a talented team for film production\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Relies on meticulous planning and collaboration with a talented team for film production\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Collaborates with set dressers to create period settings\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Values authenticity, innovation, and creative control\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"50\",\n            \"text\": \"Motivated by setting clear goals and maintaining work-life balance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"51\",\n            \"text\": \"Balancing ambition with personal well-being is an ongoing priority\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"52\",\n            \"text\": \"Excited about exploring new historical themes and narratives\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"53\",\n            \"text\": \"Plans to regularly review goals and progress\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"54\",\n            \"text\": \"Seeks input and collaboration from colleagues and friends for projects\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"55\",\n            \"text\": \"Is a film director\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"56\",\n            \"text\": \"Life goal is to direct award-winning historical films\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"57\",\n            \"text\": \"Appreciates historical depth and authenticity\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"58\",\n            \"text\": \"Recently attended a live orchestral performance at a renowned concert hall\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"59\",\n            \"text\": \"Has shifted musical preferences towards Baroque symphonies\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"60\",\n            \"text\": \"Finds Baroque music's historical richness and complexity aligns with appreciation for authenticity\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"61\",\n            \"text\": \"Is exploring ways to incorporate Baroque music into films to enhance historical accuracy and emotional resonance\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"62\",\n            \"text\": \"Has perfectionist traits and strives for historical accuracy in every detail\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has strategic thinking and perfectionist traits\"\n        },\n        {\n            \"id\": \"63\",\n            \"text\": \"Faces challenge of ensuring music complements visual storytelling without overshadowing it\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"64\",\n            \"text\": \"Has found success in using Baroque music to enhance emotional depth in films\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"65\",\n            \"text\": \"Is open to Romantic symphonies as a potential future influence, provided they align with historical accuracy\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"66\",\n            \"text\": \"Plans to attend more live performances and engage with musicians specializing in historical music\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"67\",\n            \"text\": \"Aims for authentic collaborations with musicians to enhance historical authenticity of films\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"68\",\n            \"text\": \"Focuses on nurturing both existing and new professional relationships to build a supportive network\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"69\",\n            \"text\": \"Plans to attend industry events and engage with professionals who share passion for historical storytelling\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"70\",\n            \"text\": \"Measures success by audience impact and recognition at major film festivals\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Success means recognition at major film festivals like Cannes and Sundance\"\n        },\n        {\n            \"id\": \"71\",\n            \"text\": \"Works closely with composers to ensure music enhances narrative and supports visual storytelling\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"72\",\n            \"text\": \"Strives to balance high standards with creative flexibility and experimentation\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"73\",\n            \"text\": \"Uses strategic thinking to carefully select musical and thematic influences that align with vision and historical authenticity\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has strategic thinking and perfectionist traits\"\n        },\n        {\n            \"id\": \"74\",\n            \"text\": \"Stays inspired by seeking new experiences and learning from other creatives passionate about history\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"75\",\n            \"text\": \"Celebrates successes by sharing them with network and reflecting on audience impact\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Plans to celebrate milestones by reflecting and acknowledging support network\"\n        },\n        {\n            \"id\": \"76\",\n            \"text\": \"Actively seeks feedback from trusted colleagues to refine storytelling techniques\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"77\",\n            \"text\": \"Believes balancing artistic vision with practical production involves careful planning and collaboration with a skilled team\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Relies on meticulous planning and collaboration with a talented team for film production\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Name is Williams",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Gender is Male",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Date of birth is 1984-06-16",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Is a filmmaker",
+          "event": "UPDATE",
+          "old_memory": "Is a filmmaker"
+        },
+        {
+          "id": "6",
+          "text": "Aspires to become a renowned director known for historically accurate films",
+          "event": "UPDATE",
+          "old_memory": "Aspires to become a renowned director known for historically accurate films"
+        },
+        {
+          "id": "7",
+          "text": "Goal is to become a renowned director known for historically accurate films",
+          "event": "UPDATE",
+          "old_memory": "Goal is to become a renowned director known for historically accurate films"
+        },
+        {
+          "id": "8",
+          "text": "Life goal is to become a renowned director known for historically accurate storytelling",
+          "event": "UPDATE",
+          "old_memory": "Life goal is to become a renowned director known for historically accurate storytelling"
+        },
+        {
+          "id": "9",
+          "text": "Directed a critically acclaimed historical drama",
+          "event": "NONE"
+        },
+        {
+          "id": "10",
+          "text": "Plans to direct 10 award-winning historical films",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Motivated to bring history to life through film",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Reflects on balancing historical authenticity with embracing new flavors",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Interested in historical authenticity and its alignment with personal and professional life",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Values authenticity and historical accuracy in films",
+          "event": "UPDATE",
+          "old_memory": "Values authenticity and historical accuracy in films"
+        },
+        {
+          "id": "15",
+          "text": "Wants to challenge historical narratives and engage audiences on a deeper level",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Focuses on historical accuracy in films",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+          "event": "UPDATE",
+          "old_memory": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience"
+        },
+        {
+          "id": "18",
+          "text": "Attends film festivals for inspiration",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Lives in Philadelphia",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "Committed to balancing critical acclaim with audience feedback",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Recently visited a historic tea house",
+          "event": "NONE"
+        },
+        {
+          "id": "22",
+          "text": "Dislikes auto-tuned pop music because it lacks authenticity and depth",
+          "event": "NONE"
+        },
+        {
+          "id": "23",
+          "text": "Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Dislikes science fiction because its futuristic themes conflict with preference for historical accuracy and authenticity",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Goal is to create historically accurate films",
+          "event": "UPDATE",
+          "old_memory": "Goal is to create historically accurate films"
+        },
+        {
+          "id": "26",
+          "text": "Incorporating themes of historical depth into upcoming film projects",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques",
+          "event": "NONE"
+        },
+        {
+          "id": "28",
+          "text": "Has strategic thinking and perfectionist traits",
+          "event": "UPDATE",
+          "old_memory": "Has strategic thinking and perfectionist traits"
+        },
+        {
+          "id": "29",
+          "text": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "event": "UPDATE",
+          "old_memory": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented"
+        },
+        {
+          "id": "30",
+          "text": "Wants to inspire others through historically accurate storytelling",
+          "event": "NONE"
+        },
+        {
+          "id": "31",
+          "text": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "event": "NONE"
+        },
+        {
+          "id": "32",
+          "text": "Aims to integrate personal experiences into narratives to resonate with viewers",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Prioritizes key elements that enhance historical authenticity while balancing budget and production quality",
+          "event": "NONE"
+        },
+        {
+          "id": "34",
+          "text": "Love for history and storytelling drives creative decisions",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Aims to integrate diverse cultural perspectives into films",
+          "event": "NONE"
+        },
+        {
+          "id": "36",
+          "text": "Aims to create immersive film experiences that transport viewers to different eras",
+          "event": "NONE"
+        },
+        {
+          "id": "37",
+          "text": "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further",
+          "event": "NONE"
+        },
+        {
+          "id": "38",
+          "text": "Believes in mutually beneficial professional relationships",
+          "event": "NONE"
+        },
+        {
+          "id": "39",
+          "text": "Plans to celebrate milestones by reflecting and acknowledging support network",
+          "event": "UPDATE",
+          "old_memory": "Plans to celebrate milestones by reflecting and acknowledging support network"
+        },
+        {
+          "id": "40",
+          "text": "Friends and colleagues are main support system",
+          "event": "NONE"
+        },
+        {
+          "id": "41",
+          "text": "Plans to set aside dedicated time for personal and professional interactions",
+          "event": "NONE"
+        },
+        {
+          "id": "42",
+          "text": "Prioritizes communication and collaboration in relationships",
+          "event": "NONE"
+        },
+        {
+          "id": "43",
+          "text": "Loves visiting historic places, which deeply influence storytelling approach",
+          "event": "NONE"
+        },
+        {
+          "id": "44",
+          "text": "Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling",
+          "event": "NONE"
+        },
+        {
+          "id": "45",
+          "text": "Success means recognition at major film festivals like Cannes and Sundance",
+          "event": "UPDATE",
+          "old_memory": "Success means recognition at major film festivals like Cannes and Sundance"
+        },
+        {
+          "id": "46",
+          "text": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "event": "UPDATE",
+          "old_memory": "Seeks recognition at major film festivals like Cannes and Sundance"
+        },
+        {
+          "id": "47",
+          "text": "Relies on meticulous planning and collaboration with a talented team for film production",
+          "event": "UPDATE",
+          "old_memory": "Relies on meticulous planning and collaboration with a talented team for film production"
+        },
+        {
+          "id": "48",
+          "text": "Collaborates with set dressers to create period settings",
+          "event": "NONE"
+        },
+        {
+          "id": "49",
+          "text": "Values authenticity, innovation, and creative control",
+          "event": "NONE"
+        },
+        {
+          "id": "50",
+          "text": "Motivated by setting clear goals and maintaining work-life balance",
+          "event": "NONE"
+        },
+        {
+          "id": "51",
+          "text": "Balancing ambition with personal well-being is an ongoing priority",
+          "event": "NONE"
+        },
+        {
+          "id": "52",
+          "text": "Excited about exploring new historical themes and narratives",
+          "event": "NONE"
+        },
+        {
+          "id": "53",
+          "text": "Plans to regularly review goals and progress",
+          "event": "NONE"
+        },
+        {
+          "id": "54",
+          "text": "Seeks input and collaboration from colleagues and friends for projects",
+          "event": "NONE"
+        },
+        {
+          "id": "55",
+          "text": "Is a film director",
+          "event": "ADD"
+        },
+        {
+          "id": "56",
+          "text": "Life goal is to direct award-winning historical films",
+          "event": "ADD"
+        },
+        {
+          "id": "57",
+          "text": "Appreciates historical depth and authenticity",
+          "event": "ADD"
+        },
+        {
+          "id": "58",
+          "text": "Recently attended a live orchestral performance at a renowned concert hall",
+          "event": "ADD"
+        },
+        {
+          "id": "59",
+          "text": "Has shifted musical preferences towards Baroque symphonies",
+          "event": "ADD"
+        },
+        {
+          "id": "60",
+          "text": "Finds Baroque music's historical richness and complexity aligns with appreciation for authenticity",
+          "event": "ADD"
+        },
+        {
+          "id": "61",
+          "text": "Is exploring ways to incorporate Baroque music into films to enhance historical accuracy and emotional resonance",
+          "event": "ADD"
+        },
+        {
+          "id": "62",
+          "text": "Has perfectionist traits and strives for historical accuracy in every detail",
+          "event": "UPDATE",
+          "old_memory": "Has strategic thinking and perfectionist traits"
+        },
+        {
+          "id": "63",
+          "text": "Faces challenge of ensuring music complements visual storytelling without overshadowing it",
+          "event": "ADD"
+        },
+        {
+          "id": "64",
+          "text": "Has found success in using Baroque music to enhance emotional depth in films",
+          "event": "ADD"
+        },
+        {
+          "id": "65",
+          "text": "Is open to Romantic symphonies as a potential future influence, provided they align with historical accuracy",
+          "event": "ADD"
+        },
+        {
+          "id": "66",
+          "text": "Plans to attend more live performances and engage with musicians specializing in historical music",
+          "event": "ADD"
+        },
+        {
+          "id": "67",
+          "text": "Aims for authentic collaborations with musicians to enhance historical authenticity of films",
+          "event": "ADD"
+        },
+        {
+          "id": "68",
+          "text": "Focuses on nurturing both existing and new professional relationships to build a supportive network",
+          "event": "ADD"
+        },
+        {
+          "id": "69",
+          "text": "Plans to attend industry events and engage with professionals who share passion for historical storytelling",
+          "event": "ADD"
+        },
+        {
+          "id": "70",
+          "text": "Measures success by audience impact and recognition at major film festivals",
+          "event": "UPDATE",
+          "old_memory": "Success means recognition at major film festivals like Cannes and Sundance"
+        },
+        {
+          "id": "71",
+          "text": "Works closely with composers to ensure music enhances narrative and supports visual storytelling",
+          "event": "ADD"
+        },
+        {
+          "id": "72",
+          "text": "Strives to balance high standards with creative flexibility and experimentation",
+          "event": "ADD"
+        },
+        {
+          "id": "73",
+          "text": "Uses strategic thinking to carefully select musical and thematic influences that align with vision and historical authenticity",
+          "event": "UPDATE",
+          "old_memory": "Has strategic thinking and perfectionist traits"
+        },
+        {
+          "id": "74",
+          "text": "Stays inspired by seeking new experiences and learning from other creatives passionate about history",
+          "event": "ADD"
+        },
+        {
+          "id": "75",
+          "text": "Celebrates successes by sharing them with network and reflecting on audience impact",
+          "event": "UPDATE",
+          "old_memory": "Plans to celebrate milestones by reflecting and acknowledging support network"
+        },
+        {
+          "id": "76",
+          "text": "Actively seeks feedback from trusted colleagues to refine storytelling techniques",
+          "event": "ADD"
+        },
+        {
+          "id": "77",
+          "text": "Believes balancing artistic vision with practical production involves careful planning and collaboration with a skilled team",
+          "event": "UPDATE",
+          "old_memory": "Relies on meticulous planning and collaboration with a talented team for film production"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "76b41491-9d4b-4443-8877-0c6227a79aba",
+      "1": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "2": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "3": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+      "4": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+      "5": "e6112994-45c2-43d2-86d8-7c8d978f690e",
+      "6": "ef7f5f79-734d-4014-b7b3-5dc5bfb70aab",
+      "7": "3845e0b4-f8a9-4695-baba-261e433b9278",
+      "8": "fd99c41a-2b26-4f6c-ac58-88fa27f35788",
+      "9": "9dc10b2a-a119-434a-b623-05e70f1146f2",
+      "10": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "11": "c6e7cc37-0864-48cd-8bd7-ef68bb6fdcfe",
+      "12": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "13": "de587c3d-adb4-4436-bc04-9036aa391d87",
+      "14": "4ff8cfcc-50b0-4393-acaa-cd9a7e7da8c6",
+      "15": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "16": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "17": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+      "18": "a5b570bb-99d1-4624-9a67-206466557a02",
+      "19": "d2a36010-9586-465e-9638-0913198e57f6",
+      "20": "be937262-37a4-4591-a0b9-5cd63605920c",
+      "21": "24ac231f-fd30-4418-8db6-0bd0cd4e06de",
+      "22": "26744cf2-1ca8-4c32-9b41-473761aa1223",
+      "23": "38d07cc6-7e8e-4e05-a5aa-646dc7b7aa19",
+      "24": "702889f6-20b1-46cf-95b9-cb5eeac421e2",
+      "25": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "26": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "27": "4ed2931d-bca9-419e-99ab-44ec866f224f",
+      "28": "b18ced9e-6910-4735-863c-1814244da08e",
+      "29": "676be8c0-c989-4581-9251-e21c493a318a",
+      "30": "86741d82-0d63-4429-af44-834d7ac14043",
+      "31": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "32": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "33": "0a572a48-0a25-48b0-8b72-088133cb6578",
+      "34": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "35": "101ab548-a40c-4acd-8c31-4ab3b8ba2723",
+      "36": "39c03132-d975-489c-88af-b9c6a4606717",
+      "37": "86004297-6841-4e4e-b98e-bcb0f4a4b380",
+      "38": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+      "39": "b64b8d75-c516-4472-bd1c-aa3fe468685f",
+      "40": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "41": "ed9b09b6-9de7-4966-8db2-8e610e2980bd",
+      "42": "dfb12ae7-8e08-493c-bd03-fbb5fa485185",
+      "43": "b77be932-7af4-4557-b93a-bc40d9edd549",
+      "44": "36574505-36f3-48be-a10b-7d45029cd600",
+      "45": "8c75c81e-6f7e-4604-81b7-e4d0b2115d81",
+      "46": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "47": "1a0436c7-0c14-46dd-bb52-ba315c750351",
+      "48": "199dfd83-57fc-4c71-ba24-e78ac99fd607",
+      "49": "ede9660f-f56c-4e47-b331-48cf33e00740",
+      "50": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "51": "ba4543e0-035a-4cfd-8351-c4f1a3e6923c",
+      "52": "d372e31b-e6bf-47c0-825d-2a08eb440c32",
+      "53": "38e40ee9-9a0c-4013-8c1b-50d47a3301c3",
+      "54": "5f2ba8bb-6c43-4861-b93b-4b65bcdcfbff"
+    },
+    "elapsed_seconds": 69.98798954696395
+  }
+]

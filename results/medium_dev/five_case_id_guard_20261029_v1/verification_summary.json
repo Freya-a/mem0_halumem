@@ -1,0 +1,304 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "A",
+      "status": "completed",
+      "initial_invalid_ids": [],
+      "valid_id_count": 46,
+      "valid_id_min": 0,
+      "valid_id_max": 45,
+      "retry": false,
+      "initial_plan_counts": {
+        "NONE": 40,
+        "UPDATE": 5,
+        "ADD": 6
+      },
+      "final_plan_counts": {
+        "NONE": 40,
+        "UPDATE": 5,
+        "ADD": 6
+      },
+      "actual_operation_counts": {
+        "UPDATE": 5,
+        "ADD": 6
+      },
+      "skipped_none": 40,
+      "native_errors": [],
+      "calls": {
+        "llm": 2,
+        "embedding": 19
+      },
+      "usage": {
+        "llm": {
+          "completion_tokens": 2376,
+          "prompt_tokens": 4919,
+          "total_tokens": 7295
+        },
+        "embedding": {
+          "prompt_tokens": 345,
+          "total_tokens": 345
+        }
+      },
+      "elapsed_seconds": 57.907620706944726,
+      "llm_returned": [
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "all_plan_mutations_match_history_in_order": true
+    },
+    {
+      "case": "B",
+      "status": "completed",
+      "initial_invalid_ids": [],
+      "valid_id_count": 38,
+      "valid_id_min": 0,
+      "valid_id_max": 37,
+      "retry": false,
+      "initial_plan_counts": {
+        "UPDATE": 6,
+        "NONE": 32,
+        "ADD": 14
+      },
+      "final_plan_counts": {
+        "UPDATE": 6,
+        "NONE": 32,
+        "ADD": 14
+      },
+      "actual_operation_counts": {
+        "UPDATE": 6,
+        "ADD": 14
+      },
+      "skipped_none": 32,
+      "native_errors": [],
+      "calls": {
+        "llm": 2,
+        "embedding": 24
+      },
+      "usage": {
+        "llm": {
+          "completion_tokens": 2409,
+          "prompt_tokens": 5675,
+          "total_tokens": 8084
+        },
+        "embedding": {
+          "prompt_tokens": 386,
+          "total_tokens": 386
+        }
+      },
+      "elapsed_seconds": 59.34192921698559,
+      "llm_returned": [
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "all_plan_mutations_match_history_in_order": true
+    },
+    {
+      "case": "C",
+      "status": "completed",
+      "initial_invalid_ids": [
+        "70"
+      ],
+      "valid_id_count": 56,
+      "valid_id_min": 0,
+      "valid_id_max": 55,
+      "retry": true,
+      "initial_plan_counts": {
+        "NONE": 42,
+        "UPDATE": 14,
+        "ADD": 14
+      },
+      "final_plan_counts": {
+        "NONE": 43,
+        "UPDATE": 12,
+        "ADD": 14
+      },
+      "actual_operation_counts": {
+        "UPDATE": 12,
+        "ADD": 14
+      },
+      "skipped_none": 43,
+      "native_errors": [],
+      "calls": {
+        "llm": 3,
+        "embedding": 29
+      },
+      "usage": {
+        "llm": {
+          "completion_tokens": 6075,
+          "prompt_tokens": 14217,
+          "total_tokens": 20292
+        },
+        "embedding": {
+          "prompt_tokens": 339,
+          "total_tokens": 339
+        }
+      },
+      "elapsed_seconds": 141.7384946270613,
+      "llm_returned": [
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "all_plan_mutations_match_history_in_order": true
+    },
+    {
+      "case": "target_7",
+      "status": "completed",
+      "initial_invalid_ids": [],
+      "valid_id_count": 48,
+      "valid_id_min": 0,
+      "valid_id_max": 47,
+      "retry": false,
+      "initial_plan_counts": {
+        "NONE": 26,
+        "UPDATE": 22,
+        "ADD": 8
+      },
+      "final_plan_counts": {
+        "NONE": 26,
+        "UPDATE": 22,
+        "ADD": 8
+      },
+      "actual_operation_counts": {
+        "UPDATE": 22,
+        "ADD": 8
+      },
+      "skipped_none": 26,
+      "native_errors": [],
+      "calls": {
+        "llm": 2,
+        "embedding": 32
+      },
+      "usage": {
+        "llm": {
+          "completion_tokens": 2670,
+          "prompt_tokens": 6045,
+          "total_tokens": 8715
+        },
+        "embedding": {
+          "prompt_tokens": 377,
+          "total_tokens": 377
+        }
+      },
+      "elapsed_seconds": 66.52883519395255,
+      "llm_returned": [
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "all_plan_mutations_match_history_in_order": true
+    },
+    {
+      "case": "target_10",
+      "status": "completed",
+      "initial_invalid_ids": [],
+      "valid_id_count": 36,
+      "valid_id_min": 0,
+      "valid_id_max": 35,
+      "retry": false,
+      "initial_plan_counts": {
+        "NONE": 24,
+        "UPDATE": 12,
+        "ADD": 9
+      },
+      "final_plan_counts": {
+        "NONE": 24,
+        "UPDATE": 12,
+        "ADD": 9
+      },
+      "actual_operation_counts": {
+        "UPDATE": 12,
+        "ADD": 9
+      },
+      "skipped_none": 24,
+      "native_errors": [],
+      "calls": {
+        "llm": 2,
+        "embedding": 26
+      },
+      "usage": {
+        "llm": {
+          "completion_tokens": 2041,
+          "prompt_tokens": 6215,
+          "total_tokens": 8256
+        },
+        "embedding": {
+          "prompt_tokens": 324,
+          "total_tokens": 324
+        }
+      },
+      "elapsed_seconds": 50.94783287693281,
+      "llm_returned": [
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        },
+        {
+          "model": "qwen-plus",
+          "system_fingerprint": null,
+          "finish_reason": "stop"
+        }
+      ],
+      "all_plan_mutations_match_history_in_order": true
+    }
+  ],
+  "calls": {
+    "llm": 11,
+    "embedding": 130
+  },
+  "usage": {
+    "llm": {
+      "completion_tokens": 15571,
+      "prompt_tokens": 37071,
+      "total_tokens": 52642
+    },
+    "embedding": {
+      "prompt_tokens": 1771,
+      "total_tokens": 1771
+    }
+  },
+  "prior_run_file_counts": {
+    "five_case_simple_prompt_20261029_v1": 161,
+    "five_case_simple_prompt_direct_20261029_v2": 169
+  },
+  "backup_baseline_native_source_unchanged": true,
+  "credential_scan": "PASS",
+  "all_actual_update_prompts_verified": true
+}

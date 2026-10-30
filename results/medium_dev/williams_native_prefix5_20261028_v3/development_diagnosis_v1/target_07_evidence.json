@@ -1,0 +1,2519 @@
+{
+  "number": 7,
+  "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+  "review": {
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+    "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "dataset_line_one_based": "1",
+    "annotation_json_pointer": "/sessions/7/memory_points/0",
+    "review_date": "2026-10-27",
+    "reviewer": "user",
+    "review_scope": "数据目标及证据边界",
+    "review_decision": "修订后接受",
+    "category": "replacement",
+    "human_interpretation": "时间状态替换；此前求职和考虑转岗的历史真实，并非纠正原本就错误的事实。",
+    "supported_new_state": "截至2026-03-01用户确认已转到新岗位，自述工作生活平衡更健康；不能仅以仍等待完成此次转岗概括当前进展。",
+    "allowed_modification_scope": "更新所讨论这次岗位转变的当前进展，正确保留历史；2026-03-01仅为确认时间；不推断此后不再寻找任何机会。",
+    "uncertain_current_state": "{\"新雇主\": \"未知\", \"新职称\": \"未知\", \"薪资\": \"未知\", \"组织性质\": \"未知\", \"具体转岗日期\": \"未知\", \"是否离开Huaxin Consulting\": \"未知\"}",
+    "unsupported_inferences": "[\"2026-03-01就是准确转岗日期\", \"此后不再寻找任何机会\", \"心理健康完全康复或不存在任何问题\", \"最终进入非营利组织\", \"旧雇主和职称可直接赋给新岗位\", \"已离开Huaxin Consulting\"]",
+    "candidate_protections": "[{\"proposition\": \"此前在Huaxin Consulting担任总监\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/1/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 22:35:55\", \"quote\": \"I work at Huaxin Consulting as a director.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前工作职责和压力影响心理健康\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/1/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 23:15:17\", \"quote\": \"My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前因总监工作影响心理健康而认为需要改变\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/3/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Dec 15, 2025, 06:11:23\", \"quote\": \"I've been reflecting a lot on my career lately, especially how my current role as a director at Huaxin Consulting is impacting my mental health. It's becoming increasingly clear that I need to make a change.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前仍考虑转职以改善心理健康\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/5/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Jan 10, 2026, 07:21:20\", \"quote\": \"Lately, I've been feeling the weight of my role as director at Huaxin Consulting. The mental strain is starting to affect me, and I'm considering a career change to improve my mental health.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前寻找更平衡且符合人道目标的新工作\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:13:15\", \"quote\": \"I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前已获得面试和offer，未据此确认已接受\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/8\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:33:24\", \"quote\": \"Yes, my network has been instrumental in opening doors for me. I'm grateful for the interviews and job offers that have come my way. It's reassuring to know I'm moving towards a more fulfilling path.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前期待找到支持职业目标及个人健康的岗位\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/10\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:37:37\", \"quote\": \"I'm really looking forward to finding a position that supports both my career goals and my personal health. It's been a challenging journey, but I'm hopeful about the future.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"Martin’s highest education is Bachelor in Public Health.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/0/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 18:50:22\", \"quote\": \"Of course. My highest education level is Bachelor, and my major is Public Health.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin’s father is a retired doctor.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 8, \"json_pointer\": \"/sessions/0/dialogue/8\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 19:38:09\", \"quote\": \"Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin describes his physical condition as normal with no chronic diseases.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 1, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/1/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 23:15:17\", \"quote\": \"My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"建立全球健康倡议、改善服务不足社区医疗可及性的目标\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/0/dialogue/10\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 21:12:18\", \"quote\": \"Specifically, Establish a global health initiative to improve access to healthcare for underserved communities. The motivation for this goal is Inspired by his family's medical background and a desire to promote well-being globally. I hope to Provide healthcare access to 1 million people in underserved areas.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"人道目标与个人健康优先、财务稳定次要\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/3/dialogue/28\", \"role\": \"user\", \"timestamp\": \"Dec 15, 2025, 07:33:25\", \"quote\": \"My focus is primarily on finding a role that aligns with my humanitarian goals and personal well-being. Financial stability is secondary to me.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"此前明确表达的宠物偏好\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/2/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Sep 06, 2025, 22:44:54\", \"quote\": \"I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"喜欢瑜伽，有助于柔韧性和思维清晰\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/2/dialogue/6\", \"role\": \"user\", \"timestamp\": \"Sep 06, 2025, 22:52:30\", \"quote\": \"I like yoga, because yoga helps me maintain flexibility and mental clarity, which are essential for my demanding job in the medical field.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"欣赏金毛的温顺及适应能力\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/4/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Jan 06, 2026, 17:48:59\", \"quote\": \"I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}]",
+    "protection_verification_requirement": "所有候选均须核实更新前实际入库情况和对应条目；历史真实性与当前有效状态分开核验，不能为保护历史继续将过期求职阶段当作当前状态；身体状况及偏好保留原陈述时间。",
+    "diagnostic_use": "语义状态更新诊断；严格纠错中的时间状态替换候选。",
+    "strict_correction_denominator_included": "Conditional",
+    "strict_correction_exclusion_reason": "局部纠错若共同更新前快照无相关旧状态，单列旧状态未入库，不算本次局部修订失败；端到端仍检查新状态。",
+    "official_annotation_disagreement": "官方m000及其口径保留不变；心理健康改善为有用户原话支持的补充诊断内容，不能要求官方本条评分必须包含。",
+    "official_annotation_original": "Martin successfully transitioned to a new role offering a healthier balance between professional demands and personal well-being.",
+    "runtime_verification_status": "待运行核验",
+    "mem0_update_error_status": "待运行核验",
+    "valid_content_damage_status": "待运行核验",
+    "failure_types": "",
+    "human_conclusion_verbatim": "1. 审核结果：修订后接受，保留replacement，注明“时间状态替换”。此前寻找／考虑新岗位的历史是真实的；截至2026-03-01的用户陈述，所讨论的这次岗位转变已经完成。\n2. 核心预期新状态：Martin已转到新岗位，自述工作生活平衡更健康。不能继续仅以“仍等待完成此次转岗”概括其当前进展。2026-03-01是确认时间，不是已知的准确转岗日期；也不能推断他此后不再寻找任何机会。\n3. 心理健康改善有dialogue/2的用户明确确认，单独记录为用户自述，不扩写为完全康复或不存在任何心理健康问题。它是相对于官方m000的补充诊断内容，不能要求官方本条评分必须包含；与其他目标重叠时不得重复计算独立成功次数。\n4. 新雇主、新职称、薪资、组织性质、具体转岗日期及是否离开Huaxin Consulting均标为未知。此前考虑非营利岗位不能证明最终进入非营利组织；此前的雇主和职称也不能未经核实直接赋给新岗位。\n5. 保护候选分开记录：\n- 历史记录：此前在Huaxin Consulting担任总监、工作压力及求职过程，保留对应时间。\n- 未受本次变化否定的知识：有依据的人道医疗目标、其他个人事实及既往偏好。\n历史真实性与当前仍有效的状态分开核验，不能为了保护历史而继续把过期求职阶段当作当前状态。全部候选仍需检查更新前实际入库情况。\n6. 本条纳入语义状态更新诊断，并作为严格纠错评测中的“时间状态替换”候选，区别于纠正原本就错误的事实。局部纠错评测需共同更新前快照中确有相关旧状态；若未入库，单列为旧状态未入库，不算本次局部修订失败。端到端评测仍检查是否正确保存新状态，不能因旧状态漏存而直接跳过。各方法比较须使用一致的事件口径。\n7. 判断依据是更新后知识整体是否表达正确的新状态、正确区分历史，不要求必须执行UPDATE。实际操作、保护结果和失败类型仍待运行核验。记录完成后展示第八条，不自动确认其他目标。",
+    "source_manifest_sha256": "607882aeefe690c5a4df37b992eee03ab2e7e69ff40a5dc9935d3030ad796590",
+    "source_initial_annotations_sha256": "c04495e4c58f63b84514ff998be0fc87fec9cafc849868a25a0792eab282fddb",
+    "semantic_update_denominator_included": "True",
+    "semantic_update_exclusion_reason": "",
+    "reasonable_system_behavior": "按更新后知识整体是否表达正确新状态并正确区分历史判断，不要求UPDATE。",
+    "actual_operations_status": "待运行核验",
+    "same_topic_candidate_protections": "",
+    "other_candidate_protections": "[{\"proposition\": \"Martin’s highest education is Bachelor in Public Health.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/0/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 18:50:22\", \"quote\": \"Of course. My highest education level is Bachelor, and my major is Public Health.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin’s father is a retired doctor.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 8, \"json_pointer\": \"/sessions/0/dialogue/8\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 19:38:09\", \"quote\": \"Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin describes his physical condition as normal with no chronic diseases.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 1, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/1/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 23:15:17\", \"quote\": \"My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}]",
+    "novelty_assessment": "从此前寻找／考虑新岗位转为用户明确确认已完成这次岗位转变；原历史不失真。",
+    "custom_diagnostic_additions": "{\"proposition\": \"新岗位改善心理健康：用户自述\", \"status\": \"人工确认的补充诊断内容\", \"evidence\": {\"json_pointer\": \"/sessions/7/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Mar 01, 2026, 07:09:03\", \"quote\": \"Yes, the new role has definitely improved my mental health. The stress and pressure from my previous job were really taking a toll.\"}, \"official_m000_required\": false, \"deduplication\": \"与其他目标重叠时不得重复计算独立成功次数。\", \"interpretation_limit\": \"不表示完全康复或不存在任何心理健康问题。\"}",
+    "shared_session_evaluation_rule": "",
+    "core_evidence": "{\"proposition\": \"已转到新岗位，工作生活平衡更健康\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/7/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Mar 01, 2026, 07:04:00\", \"quote\": \"I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.\"}}",
+    "separate_progress_evidence": "{\"proposition\": \"新岗位改善心理健康：用户自述\", \"status\": \"人工确认的补充诊断内容\", \"evidence\": {\"json_pointer\": \"/sessions/7/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Mar 01, 2026, 07:09:03\", \"quote\": \"Yes, the new role has definitely improved my mental health. The stress and pressure from my previous job were really taking a toll.\"}, \"official_m000_required\": false, \"deduplication\": \"与其他目标重叠时不得重复计算独立成功次数。\", \"interpretation_limit\": \"不表示完全康复或不存在任何心理健康问题。\"}",
+    "confirmation_timestamp": "Mar 01, 2026, 07:04:00",
+    "confirmation_context": "本会话开场用户直接确认完成岗位转变；日期为确认时间，不是已知准确转岗日期。",
+    "session_supplement_notes": "",
+    "historical_candidate_protections": "[{\"proposition\": \"此前在Huaxin Consulting担任总监\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/1/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 22:35:55\", \"quote\": \"I work at Huaxin Consulting as a director.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前工作职责和压力影响心理健康\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/1/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 23:15:17\", \"quote\": \"My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前因总监工作影响心理健康而认为需要改变\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/3/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Dec 15, 2025, 06:11:23\", \"quote\": \"I've been reflecting a lot on my career lately, especially how my current role as a director at Huaxin Consulting is impacting my mental health. It's becoming increasingly clear that I need to make a change.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前仍考虑转职以改善心理健康\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/5/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Jan 10, 2026, 07:21:20\", \"quote\": \"Lately, I've been feeling the weight of my role as director at Huaxin Consulting. The mental strain is starting to affect me, and I'm considering a career change to improve my mental health.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前寻找更平衡且符合人道目标的新工作\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:13:15\", \"quote\": \"I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前已获得面试和offer，未据此确认已接受\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/8\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:33:24\", \"quote\": \"Yes, my network has been instrumental in opening doors for me. I'm grateful for the interviews and job offers that have come my way. It's reassuring to know I'm moving towards a more fulfilling path.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}, {\"proposition\": \"此前期待找到支持职业目标及个人健康的岗位\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/6/dialogue/10\", \"role\": \"user\", \"timestamp\": \"Feb 05, 2026, 17:37:37\", \"quote\": \"I'm really looking forward to finding a position that supports both my career goals and my personal health. It's been a challenging journey, but I'm hopeful about the future.\"}, \"temporal_scope\": \"按原陈述时间保留历史，不作为目标会话后的当前求职阶段。\"}]",
+    "unaffected_candidate_protections": "[{\"proposition\": \"Martin’s highest education is Bachelor in Public Health.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/0/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 18:50:22\", \"quote\": \"Of course. My highest education level is Bachelor, and my major is Public Health.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin’s father is a retired doctor.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 0, \"message_index_zero_based\": 8, \"json_pointer\": \"/sessions/0/dialogue/8\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 19:38:09\", \"quote\": \"Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"Martin describes his physical condition as normal with no chronic diseases.\", \"status\": \"候选\", \"evidence\": {\"session_index_zero_based\": 1, \"message_index_zero_based\": 4, \"json_pointer\": \"/sessions/1/dialogue/4\", \"role\": \"user\", \"timestamp\": \"Sep 05, 2025, 23:15:17\", \"quote\": \"My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"建立全球健康倡议、改善服务不足社区医疗可及性的目标\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/0/dialogue/10\", \"role\": \"user\", \"timestamp\": \"Sep 04, 2025, 21:12:18\", \"quote\": \"Specifically, Establish a global health initiative to improve access to healthcare for underserved communities. The motivation for this goal is Inspired by his family's medical background and a desire to promote well-being globally. I hope to Provide healthcare access to 1 million people in underserved areas.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"人道目标与个人健康优先、财务稳定次要\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/3/dialogue/28\", \"role\": \"user\", \"timestamp\": \"Dec 15, 2025, 07:33:25\", \"quote\": \"My focus is primarily on finding a role that aligns with my humanitarian goals and personal well-being. Financial stability is secondary to me.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"此前明确表达的宠物偏好\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/2/dialogue/2\", \"role\": \"user\", \"timestamp\": \"Sep 06, 2025, 22:44:54\", \"quote\": \"I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"喜欢瑜伽，有助于柔韧性和思维清晰\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/2/dialogue/6\", \"role\": \"user\", \"timestamp\": \"Sep 06, 2025, 22:52:30\", \"quote\": \"I like yoga, because yoga helps me maintain flexibility and mental clarity, which are essential for my demanding job in the medical field.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}, {\"proposition\": \"欣赏金毛的温顺及适应能力\", \"status\": \"候选\", \"evidence\": {\"json_pointer\": \"/sessions/4/dialogue/0\", \"role\": \"user\", \"timestamp\": \"Jan 06, 2026, 17:48:59\", \"quote\": \"I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.\"}, \"temporal_scope\": \"本次转岗未否定；保留证据时间，仍需按各自后续证据核验，不预设永久成立或当前偏好排序。\"}]",
+    "strict_correction_candidate_type": "时间状态替换",
+    "local_correction_evaluation_rule": "须核实共同更新前快照确有相关旧状态；未入库时单列旧状态未入库，不判本次局部修订失败。",
+    "end_to_end_evaluation_rule": "仍检查是否正确保存新状态，不能因旧状态漏存而跳过。",
+    "cross_method_comparison_rule": "各方法使用一致的事件口径；与其他目标重叠内容不得重复计算独立成功次数。",
+    "user_isolation_rule": "",
+    "full_session_modification_scope": "",
+    "evaluation_context_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007",
+    "evaluation_subtarget_role": "时间状态替换；此前求职和考虑转岗的历史真实，并非纠正原本就错误的事实。",
+    "operation_count_policy": "",
+    "review_method": "LLM辅助、用户确认",
+    "review_class": "修订后接受",
+    "custom_primary_target_status": "按用户确认边界保留的诊断目标；非运行成功判定",
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007",
+    "protection_verification_status": "全部候选待核对共同更新前实际知识库、对应条目及更新后保护结果；不预设入库或同条存储",
+    "audit_version": "human_review_v1_20261028",
+    "official_scoring_policy": "保留官方标注及官方逐点评分与原分母；人工边界与去重仅用于自定义诊断",
+    "post_review_resolution": ""
+  },
+  "original_target": {
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+    "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "dataset_line_one_based": 1,
+    "original_session_index_zero_based": 7,
+    "memory_point_index_zero_based": 0,
+    "annotation_index": 1,
+    "chronological_session_ordinal_one_based": 8,
+    "annotation_json_pointer": "/sessions/7/memory_points/0",
+    "annotation": {
+      "index": 1,
+      "memory_content": "Martin successfully transitioned to a new role offering a healthier balance between professional demands and personal well-being.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Martin is considering a career change due to health impacts from his current role.",
+        "Martin's current job as director at Huaxin Consulting is affecting his mental health.",
+        "Martin aims to find a job that better aligns with his personal well-being and career goals."
+      ],
+      "timestamp": "Mar 01, 2026, 09:34:00",
+      "importance": 0.75
+    },
+    "category": "replacement",
+    "old_proposition": "Martin is looking for a new job with better work-life balance.",
+    "old_dialogue_evidence": [
+      {
+        "session_index_zero_based": 6,
+        "message_index_zero_based": 0,
+        "json_pointer": "/sessions/6/dialogue/0",
+        "role": "user",
+        "timestamp": "Feb 05, 2026, 17:13:15",
+        "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+      },
+      {
+        "session_index_zero_based": 6,
+        "message_index_zero_based": 10,
+        "json_pointer": "/sessions/6/dialogue/10",
+        "role": "user",
+        "timestamp": "Feb 05, 2026, 17:37:37",
+        "quote": "I'm really looking forward to finding a position that supports both my career goals and my personal health. It's been a challenging journey, but I'm hopeful about the future."
+      }
+    ],
+    "new_dialogue_evidence": [
+      {
+        "session_index_zero_based": 7,
+        "message_index_zero_based": 0,
+        "json_pointer": "/sessions/7/dialogue/0",
+        "role": "user",
+        "timestamp": "Mar 01, 2026, 07:04:00",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+      },
+      {
+        "session_index_zero_based": 7,
+        "message_index_zero_based": 2,
+        "json_pointer": "/sessions/7/dialogue/2",
+        "role": "user",
+        "timestamp": "Mar 01, 2026, 07:09:03",
+        "quote": "Yes, the new role has definitely improved my mental health. The stress and pressure from my previous job were really taking a toll."
+      }
+    ],
+    "expected_new_state": "Martin has transitioned to a new role with healthier work-life balance and improved mental health.",
+    "allowed_modification_scope": "Update current job-search/transition state; retain past director role as history; no new employer/title is supplied.",
+    "interpretation_note": "",
+    "candidate_protections": [
+      {
+        "proposition": "Martin’s highest education is Bachelor in Public Health.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 18:50:22",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Public Health."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      },
+      {
+        "proposition": "Martin’s father is a retired doctor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 19:38:09",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      },
+      {
+        "proposition": "Martin describes his physical condition as normal with no chronic diseases.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/1/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 23:15:17",
+          "quote": "My physical condition is Normal. No chronic diseases. In terms of mental health, I am Mildly Abnormal. No mental health issues. While my physical health remains stable due to my active lifestyle and focus on well-being, my mental health occasionally feels strained due to the demanding nature of my role and the pressure to consistently deliver high-quality healthcare solutions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      }
+    ],
+    "annotation_status": "自动初标，待人工核验",
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007",
+    "related_target_ids": []
+  },
+  "before": {
+    "04d538a9-5ea1-4364-a5f0-47a108ead2a6": "Practices yoga for mental clarity and flexibility",
+    "053a6d8a-a05a-41e2-af0c-0bc4b672dedc": "Dislikes horror films because they can be disturbing and detract from positive mindset",
+    "057b5a64-9907-43b0-87d3-17542aba7e36": "Mental health is mildly abnormal, no diagnosed mental health issues",
+    "05b23c45-294e-402c-bcb9-d66ccbac6371": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+    "06032171-cb35-427f-ba01-937a6ebd2c7b": "Has resolved past conflicts through innovation and teamwork",
+    "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a": "Financial stability is secondary to humanitarian goals and personal well-being",
+    "07c06494-0e65-46b5-83a4-077c41bab41a": "Plans to network with professionals in the non-profit sector",
+    "0da9428c-2fe6-4254-b818-58991562b49d": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+    "0db431ab-6638-42b8-b509-d715dbb286bc": "Considers work-life balance a key factor in evaluating new roles",
+    "13a9a169-1fbc-4b0c-976d-b0d21209526d": "Current role is Director at Huaxin Consulting",
+    "14992e21-9f5b-4357-809b-6aabebc55480": "Values flexibility and growth in future roles",
+    "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402": "Leads initiatives to enhance healthcare services and promote well-being",
+    "18d6e235-3713-4f55-8a5f-17c4c0d691b9": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+    "1b88d72f-28fa-46e5-9628-a0831e1e046e": "Measures success by impact on healthcare access, personal health, and creativity",
+    "1c01de7e-7ef0-429d-92df-e09ebd442027": "Likes jazz for its improvisational style and ability to stimulate creativity",
+    "1fd1c83f-6203-4e36-aa42-4009909da526": "Career goals are aligned with humanitarian values",
+    "20891999-4762-4706-b3f5-01d9a496f572": "Has led projects resulting in innovative healthcare solutions",
+    "22af5bec-0ec1-4482-8c4e-23d3c50441a4": "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+    "2f749bd4-e6f9-4a3a-a519-66b642dca680": "Uses debate skills to encourage open dialogue and idea exchange",
+    "3222ecb2-2fc0-482b-96d1-c6327079ce4a": "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+    "33235351-ece6-4365-82d8-0503d3c8c534": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+    "3588abfc-5f64-40cf-b71d-53d7108d0375": "Joshua's collaborative approach has positively influenced leadership style",
+    "369ba144-28ab-4a62-9029-130aed19cf89": "Adapts leadership style through active listening and openness to feedback",
+    "37dd67dc-9c67-41b7-bf8d-bbd881504737": "Gender is Male",
+    "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd": "Grateful for support from Susan, Daniel, and Joshua",
+    "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+    "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258": "Committed to balancing professional responsibilities with personal health and creativity",
+    "40c29476-81a2-477d-9e75-a2a3a92d46c7": "No children",
+    "4640f2fb-70f4-4a29-b36a-e1cac9869ae3": "Is a software engineer",
+    "48052369-b295-4435-b636-e54e57d1ceef": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+    "49f70983-6dd1-45ec-ab75-12dbf70045f7": "MBTI personality type is ENTP",
+    "4bae5ada-124c-4cc5-9eaf-739039542dd3": "Values alignment of work with personal values",
+    "4eca623b-1c47-48c9-affe-d9cc139812e4": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+    "4efe5474-e307-4e34-99be-de45431d2fd2": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+    "4f51947c-5cb3-419e-a04e-1142410c0b9e": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+    "50aed4f4-9f64-4824-8f3d-15fc8e939ebb": "Age is 29",
+    "50e85b21-0bef-45e8-b74c-9f11d1572458": "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+    "55a03720-e0c8-4d30-931e-ce52b8cbe732": "Likes casual business attire for work as it balances professionalism and comfort",
+    "58589cd3-36bc-439f-8003-d6416735b820": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+    "59371a37-5b3c-47a4-9ee6-193602f1db94": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+    "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8": "Hope to provide healthcare access to 1 million people in underserved areas",
+    "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+    "6189e2f2-90c8-4562-839d-6489bd0262c8": "Date of birth is 1996-08-02",
+    "61cef1b4-a449-4e7f-a16a-3e0fb99a0401": "Interested in non-profit organizations focused on healthcare access",
+    "713ab38a-b45a-4867-ad13-17faebeb266f": "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+    "727c24da-80f3-48b2-a34c-2e29f8e76da3": "Interested in opportunities with higher salary as part of career transition",
+    "735cfd3c-3d16-4f96-b666-1fafab9f8dd8": "Values open communication and innovative thinking in workplace culture",
+    "7fc8a288-6b52-4261-8f5b-0174d5f2d5a3": "Major is Public Health",
+    "845853d3-9c8f-4075-828c-206f4a2531cc": "Daniel offers insights that push thinking outside the box and foster innovation",
+    "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+    "85ae1801-fb3b-4b2a-88cf-68002f519e39": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+    "88e4fcd9-0719-4f3c-bb36-a14bed591477": "Susan provides encouragement and helps maintain focus on goals",
+    "8b033f27-7945-4de0-848f-746c43614d6c": "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+    "8d868048-d0e8-486a-9cc4-02baf4832f64": "Family is deeply rooted in the medical field",
+    "90d20f0f-949d-44ec-938a-8d0b611d2059": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+    "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7": "Lives in Columbus",
+    "969b7b20-fddc-4330-b2b5-86b351cfb850": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+    "973aec15-9e76-4dc3-9e06-e4cc8d182a3f": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+    "992ae849-3f40-4ffe-a2ec-16e20959ca86": "Practices or is open to yoga for supporting personal health and transition",
+    "996a85a6-7ab7-4562-b980-83695a5c4ea8": "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+    "99805cd4-1742-4f47-bd28-054b333c006c": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+    "9b09e9d4-9d90-4330-bc6d-81fca4766952": "Aims to refine skills through mentorship to increase impact in healthcare",
+    "9b768fe2-b39f-42e7-b754-b881c32165a5": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+    "9c93e91b-e131-4f02-9363-fe2b78a38ac6": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+    "a04985bf-b835-46a6-aff8-ae2fed526bca": "Tracks progress via milestones and celebrates small victories",
+    "a07bd4a7-257f-4dab-b7e2-224841cb4746": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+    "a0dc7abe-082a-4f7d-b89b-4dce8012809b": "Leads by setting clear expectations and trusting team autonomy",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "a734e783-f463-46cf-abc9-e193f68acee8": "Physical condition is normal, no chronic diseases",
+    "a90e498c-4586-4237-8a4b-c830847f8819": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+    "aa764342-2fe6-4632-9efd-e5e0cc032185": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+    "aaf723e0-370d-4166-ae24-c8fb7ac20973": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+    "ac2dea9b-830b-450d-b0dc-0ad5a5075e22": "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+    "b0112296-bf99-441e-aa14-a3a447a06836": "Monthly income is 15700 USD",
+    "b79a25de-05b7-47b7-bb0b-8c59b44a61ec": "Primary career motivation is improving healthcare access for underserved communities",
+    "b8b279a5-880e-43b8-abd9-e3358b1cf1a2": "Highest education level is Bachelor",
+    "ba086990-e950-4245-aacc-44844940d397": "Mother was born on 1963-08-02, nurse with a passion for community health",
+    "bae3551e-596c-4ae8-8b5e-859ac4ebfd28": "Passionate about improving health outcomes",
+    "bc4366a1-d9e6-4e96-84fe-6247e96ef3d6": "Has secured interviews and job offers through social network",
+    "bd52b893-fb10-4022-a5e2-812302934c8d": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+    "bde67e08-ad3b-476a-9874-0368cc33de71": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+    "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b": "Plans to enroll in online courses and seek mentorship from industry leaders",
+    "cc0ef275-2ae2-4c05-93d6-c693a62d41a1": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4": "Has empathetic nature that helps understand diverse perspectives",
+    "d479bb3e-e76a-4d70-887d-ae7aa4142b8b": "Wants to improve healthcare for underserved communities",
+    "d575dfc1-59ec-43b4-83c4-6b94457a83f6": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "d611e30f-d08c-4cc5-b7d6-8a0329b6db99": "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+    "d89a12f2-be5e-49dc-b30c-0a8c65984ab9": "Experiencing mental strain from current role and considering career change for mental health",
+    "d8b24dc3-73e3-4015-933e-67b2bde2afe7": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+    "dbde186e-ddd7-4940-9707-5f62c2e04163": "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+    "dda86e57-3db9-480a-826c-e3879684a73e": "Seeks mentorship from individuals who value innovation and empathy",
+    "df53cffd-d550-4e8d-80ec-3ae11f7ea026": "Motivated by family's medical background and desire to promote well-being globally",
+    "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c": "Both parents are alive",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "e6ab178b-c0f9-4adb-bfb7-e4648617a950": "Looking for a new job with better work-life balance",
+    "e9823d6d-9441-4fc8-b19c-95a76a730dde": "Employed in the healthcare industry",
+    "e9a340e2-5418-43f5-b8d4-86729c408ee2": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+    "eb152c7d-17df-4b3a-8a99-9f6211614e2a": "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being",
+    "eb3725dc-6297-4519-9898-6ceb7a7613fc": "Works in consulting; background in public health",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470": "Career change is being considered due to impact on mental health",
+    "ed3fcdb8-fd07-4709-973e-bfa6466d39c8": "Name is Martin",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b": "Thrives in collaborative environments",
+    "ef0c4933-39c8-40b5-a118-a5677130bdcb": "Has 43700 USD in savings",
+    "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+    "f982f0d7-e0a1-48fb-bc16-e31397945c99": "Shares knowledge through workshops and collaborative projects",
+    "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+    "ffec4e1c-1465-4721-a8a5-ea412779b62c": "Dislikes automobile racing due to environmental impact and lack of physical engagement"
+  },
+  "after": {
+    "04d538a9-5ea1-4364-a5f0-47a108ead2a6": "Practices yoga for mental clarity and flexibility",
+    "053a6d8a-a05a-41e2-af0c-0bc4b672dedc": "Dislikes horror films because they can be disturbing and detract from positive mindset",
+    "057b5a64-9907-43b0-87d3-17542aba7e36": "Mental health is mildly abnormal, no diagnosed mental health issues",
+    "05b23c45-294e-402c-bcb9-d66ccbac6371": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+    "06032171-cb35-427f-ba01-937a6ebd2c7b": "Has resolved past conflicts through innovation and teamwork",
+    "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a": "Financial stability is secondary to humanitarian goals and personal well-being",
+    "07c06494-0e65-46b5-83a4-077c41bab41a": "Plans to network with professionals in the non-profit sector",
+    "0da9428c-2fe6-4254-b818-58991562b49d": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+    "0db431ab-6638-42b8-b509-d715dbb286bc": "Considers work-life balance a key factor in evaluating new roles",
+    "0fcc7637-cd67-4fad-baff-13dccec40294": "Views support network as a cornerstone of success",
+    "13a9a169-1fbc-4b0c-976d-b0d21209526d": "Current role is Director at Huaxin Consulting",
+    "14992e21-9f5b-4357-809b-6aabebc55480": "Values flexibility and growth in future roles",
+    "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402": "Leads initiatives to enhance healthcare services and promote well-being",
+    "18d6e235-3713-4f55-8a5f-17c4c0d691b9": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+    "1b88d72f-28fa-46e5-9628-a0831e1e046e": "Measures success by impact on healthcare access, personal health, and creativity",
+    "1c01de7e-7ef0-429d-92df-e09ebd442027": "Likes jazz for its improvisational style and ability to stimulate creativity",
+    "1fd1c83f-6203-4e36-aa42-4009909da526": "Career goals are aligned with humanitarian values",
+    "20891999-4762-4706-b3f5-01d9a496f572": "Has led projects resulting in innovative healthcare solutions",
+    "22af5bec-0ec1-4482-8c4e-23d3c50441a4": "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+    "2f749bd4-e6f9-4a3a-a519-66b642dca680": "Uses debate skills to encourage open dialogue and idea exchange",
+    "3222ecb2-2fc0-482b-96d1-c6327079ce4a": "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+    "33235351-ece6-4365-82d8-0503d3c8c534": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+    "3588abfc-5f64-40cf-b71d-53d7108d0375": "Joshua's collaborative approach has positively influenced leadership style",
+    "369ba144-28ab-4a62-9029-130aed19cf89": "Adapts leadership style through active listening and openness to feedback",
+    "37dd67dc-9c67-41b7-bf8d-bbd881504737": "Gender is Male",
+    "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd": "Grateful for support from Susan, Daniel, and Joshua",
+    "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+    "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258": "Committed to balancing professional responsibilities with personal health and creativity",
+    "40c29476-81a2-477d-9e75-a2a3a92d46c7": "No children",
+    "4640f2fb-70f4-4a29-b36a-e1cac9869ae3": "Is a software engineer",
+    "48052369-b295-4435-b636-e54e57d1ceef": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+    "49f70983-6dd1-45ec-ab75-12dbf70045f7": "MBTI personality type is ENTP",
+    "4bae5ada-124c-4cc5-9eaf-739039542dd3": "Values alignment of work with personal values",
+    "4eca623b-1c47-48c9-affe-d9cc139812e4": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+    "4efe5474-e307-4e34-99be-de45431d2fd2": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+    "4f51947c-5cb3-419e-a04e-1142410c0b9e": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+    "50aed4f4-9f64-4824-8f3d-15fc8e939ebb": "Age is 29",
+    "50e85b21-0bef-45e8-b74c-9f11d1572458": "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+    "50fc59c3-70c8-4335-a2a1-3d05df52a65d": "Has humanitarian care goals",
+    "55a03720-e0c8-4d30-931e-ce52b8cbe732": "Likes casual business attire for work as it balances professionalism and comfort",
+    "58589cd3-36bc-439f-8003-d6416735b820": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+    "59371a37-5b3c-47a4-9ee6-193602f1db94": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+    "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8": "Hope to provide healthcare access to 1 million people in underserved areas",
+    "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+    "6189e2f2-90c8-4562-839d-6489bd0262c8": "Date of birth is 1996-08-02",
+    "61cef1b4-a449-4e7f-a16a-3e0fb99a0401": "Interested in non-profit organizations focused on healthcare access",
+    "63afc877-8768-4e3d-98d4-68bcb2538e65": "New role improves mental health and reduces stress from previous job",
+    "713ab38a-b45a-4867-ad13-17faebeb266f": "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+    "727c24da-80f3-48b2-a34c-2e29f8e76da3": "Interested in opportunities with higher salary as part of career transition",
+    "735cfd3c-3d16-4f96-b666-1fafab9f8dd8": "Values open communication and innovative thinking in workplace culture",
+    "7fc8a288-6b52-4261-8f5b-0174d5f2d5a3": "Major is Public Health",
+    "818912c6-02bb-44f1-8350-8ce250f1fc3e": "Has transitioned to a new role with healthier work-life balance",
+    "845853d3-9c8f-4075-828c-206f4a2531cc": "Daniel offers insights that encourage innovative thinking",
+    "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+    "85ae1801-fb3b-4b2a-88cf-68002f519e39": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+    "88e4fcd9-0719-4f3c-bb36-a14bed591477": "Susan offers encouragement and helps maintain focus on goals",
+    "8b033f27-7945-4de0-848f-746c43614d6c": "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+    "8d868048-d0e8-486a-9cc4-02baf4832f64": "Family is deeply rooted in the medical field",
+    "90d20f0f-949d-44ec-938a-8d0b611d2059": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+    "93d9e572-f052-41b6-9387-9e7583b8c3ab": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+    "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7": "Lives in Columbus",
+    "969b7b20-fddc-4330-b2b5-86b351cfb850": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+    "973aec15-9e76-4dc3-9e06-e4cc8d182a3f": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+    "992ae849-3f40-4ffe-a2ec-16e20959ca86": "Practices or is open to yoga for supporting personal health and transition",
+    "996a85a6-7ab7-4562-b980-83695a5c4ea8": "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+    "99805cd4-1742-4f47-bd28-054b333c006c": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+    "9b09e9d4-9d90-4330-bc6d-81fca4766952": "Aims to refine skills through mentorship to increase impact in healthcare",
+    "9b768fe2-b39f-42e7-b754-b881c32165a5": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+    "9c93e91b-e131-4f02-9363-fe2b78a38ac6": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+    "9efefa41-03ed-40d5-9b42-5bd41a6be2d1": "Has artistic goals that complement professional work and support personal well-being",
+    "a04985bf-b835-46a6-aff8-ae2fed526bca": "Tracks progress via milestones and celebrates small victories",
+    "a07bd4a7-257f-4dab-b7e2-224841cb4746": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+    "a0dc7abe-082a-4f7d-b89b-4dce8012809b": "Leads by setting clear expectations and trusting team autonomy",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "a734e783-f463-46cf-abc9-e193f68acee8": "Physical condition is normal, no chronic diseases",
+    "a90e498c-4586-4237-8a4b-c830847f8819": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+    "aa764342-2fe6-4632-9efd-e5e0cc032185": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+    "aaf723e0-370d-4166-ae24-c8fb7ac20973": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+    "ac2dea9b-830b-450d-b0dc-0ad5a5075e22": "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+    "b0112296-bf99-441e-aa14-a3a447a06836": "Monthly income is 15700 USD",
+    "b79a25de-05b7-47b7-bb0b-8c59b44a61ec": "Primary career motivation is improving healthcare access for underserved communities",
+    "b8b279a5-880e-43b8-abd9-e3358b1cf1a2": "Highest education level is Bachelor",
+    "ba086990-e950-4245-aacc-44844940d397": "Mother was born on 1963-08-02, nurse with a passion for community health",
+    "bae3551e-596c-4ae8-8b5e-859ac4ebfd28": "Passionate about improving health outcomes",
+    "bc4366a1-d9e6-4e96-84fe-6247e96ef3d6": "Has secured interviews and job offers through social network",
+    "bd52b893-fb10-4022-a5e2-812302934c8d": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+    "bde67e08-ad3b-476a-9874-0368cc33de71": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+    "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b": "Plans to enroll in online courses and seek mentorship from industry leaders",
+    "cc0ef275-2ae2-4c05-93d6-c693a62d41a1": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4": "Has empathetic nature that helps understand diverse perspectives",
+    "d2f9ec87-e472-4808-890e-395443f45c64": "New role has a creative aspect that enables innovation in healthcare",
+    "d479bb3e-e76a-4d70-887d-ae7aa4142b8b": "Wants to improve healthcare for underserved communities",
+    "d575dfc1-59ec-43b4-83c4-6b94457a83f6": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "d611e30f-d08c-4cc5-b7d6-8a0329b6db99": "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+    "d89a12f2-be5e-49dc-b30c-0a8c65984ab9": "Experiencing mental strain from current role and considering career change for mental health",
+    "d8b24dc3-73e3-4015-933e-67b2bde2afe7": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+    "dbde186e-ddd7-4940-9707-5f62c2e04163": "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+    "dda86e57-3db9-480a-826c-e3879684a73e": "Seeks mentorship from individuals who value innovation and empathy",
+    "df53cffd-d550-4e8d-80ec-3ae11f7ea026": "Motivated by family's medical background and desire to promote well-being globally",
+    "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c": "Both parents are alive",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "e6ab178b-c0f9-4adb-bfb7-e4648617a950": "Looking for a new job with better work-life balance",
+    "e9823d6d-9441-4fc8-b19c-95a76a730dde": "Works in the healthcare sector",
+    "e9a340e2-5418-43f5-b8d4-86729c408ee2": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+    "eb152c7d-17df-4b3a-8a99-9f6211614e2a": "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being",
+    "eb3725dc-6297-4519-9898-6ceb7a7613fc": "Works in consulting; background in public health",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470": "Career change is being considered due to impact on mental health",
+    "ed3fcdb8-fd07-4709-973e-bfa6466d39c8": "Name is Martin",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b": "Thrives in collaborative environments",
+    "ef0c4933-39c8-40b5-a118-a5677130bdcb": "Has 43700 USD in savings",
+    "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+    "f982f0d7-e0a1-48fb-bc16-e31397945c99": "Shares knowledge through workshops and collaborative projects",
+    "fb7db018-65d9-48b3-a5ad-939e2dbb18e9": "Values gratitude, optimism, resilience, and personal growth",
+    "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+    "fe835b36-340f-4b83-85d6-78a2705e4e33": "Seeks to make a real impact and inspire change",
+    "ffec4e1c-1465-4721-a8a5-ea412779b62c": "Dislikes automobile racing due to environmental impact and lack of physical engagement"
+  },
+  "recalled_ids": [
+    "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+    "07c06494-0e65-46b5-83a4-077c41bab41a",
+    "0da9428c-2fe6-4254-b818-58991562b49d",
+    "0db431ab-6638-42b8-b509-d715dbb286bc",
+    "14992e21-9f5b-4357-809b-6aabebc55480",
+    "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+    "1fd1c83f-6203-4e36-aa42-4009909da526",
+    "20891999-4762-4706-b3f5-01d9a496f572",
+    "3588abfc-5f64-40cf-b71d-53d7108d0375",
+    "369ba144-28ab-4a62-9029-130aed19cf89",
+    "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+    "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+    "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+    "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+    "58589cd3-36bc-439f-8003-d6416735b820",
+    "6189e2f2-90c8-4562-839d-6489bd0262c8",
+    "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+    "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+    "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+    "845853d3-9c8f-4075-828c-206f4a2531cc",
+    "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+    "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+    "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+    "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+    "a0dc7abe-082a-4f7d-b89b-4dce8012809b",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "a90e498c-4586-4237-8a4b-c830847f8819",
+    "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+    "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+    "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+    "dda86e57-3db9-480a-826c-e3879684a73e",
+    "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+    "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+    "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+    "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+    "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+    "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a"
+  ],
+  "recall_queries": [
+    {
+      "sequence": 5,
+      "time": "2026-10-28T15:13:21.286983+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Name is Martin",
+      "candidates": [
+        {
+          "id": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+          "version": 0,
+          "score": 1.0000000000000004,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Name is Martin",
+            "hash": "c0bf08bb0ad14942ce812eea944ff778",
+            "created_at": "2026-10-28T00:07:46.364495-07:00",
+            "updated_at": "2026-10-28T00:11:59.367177-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "0da9428c-2fe6-4254-b818-58991562b49d",
+          "version": 0,
+          "score": 0.428228826978463,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+            "hash": "92224960c7d14b762e5811ed3dd71bef",
+            "created_at": "2026-10-28T00:08:17.237490-07:00",
+            "updated_at": "2026-10-28T00:13:08.708411-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+          "version": 0,
+          "score": 0.4000454063028696,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Date of birth is 1996-08-02",
+            "hash": "154be0c44a3f554f9da96acbaa4523f9",
+            "created_at": "2026-10-28T00:07:46.381734-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+          "version": 0,
+          "score": 0.3852839597824508,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Gender is Male",
+            "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+            "created_at": "2026-10-28T00:07:46.373235-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "version": 0,
+          "score": 0.3839546287846513,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "hash": "ddc67118d2a18e3923c532500e71d8c4",
+            "created_at": "2026-10-28T00:08:17.229415-07:00",
+            "updated_at": "2026-10-28T00:13:09.222456-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0022025450016371906
+    },
+    {
+      "sequence": 7,
+      "time": "2026-10-28T15:13:21.446240+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Has transitioned to a new role with healthier work-life balance",
+      "candidates": [
+        {
+          "id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "version": 0,
+          "score": 0.6025439541082915,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Looking for a new job with better work-life balance",
+            "hash": "98ed22ad1c5d239705381435c68da0a8",
+            "created_at": "2026-10-28T00:13:15.362070-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+          "version": 0,
+          "score": 0.5292761219617641,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Career change is being considered due to impact on mental health",
+            "hash": "b4971727cc25ed9a403771fc76d8d10a",
+            "created_at": "2026-10-28T00:10:29.755378-07:00",
+            "updated_at": "2026-10-28T00:13:10.290021-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+          "version": 0,
+          "score": 0.5223662652833655,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Committed to balancing professional responsibilities with personal health and creativity",
+            "hash": "7382890794d40dc7336630a682fa2e3c",
+            "created_at": "2026-10-28T00:13:15.453686-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+          "version": 0,
+          "score": 0.5170488531663849,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+            "hash": "2d4678ebf183d272c843983878041b34",
+            "created_at": "2026-10-28T00:12:01.780745-07:00",
+            "updated_at": "2026-10-28T00:13:10.609682-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "0db431ab-6638-42b8-b509-d715dbb286bc",
+          "version": 0,
+          "score": 0.5147096184271289,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Considers work-life balance a key factor in evaluating new roles",
+            "hash": "08c5a895f6343932ca10ede99bbd7ed7",
+            "created_at": "2026-10-28T00:10:29.823090-07:00",
+            "updated_at": "2026-10-28T00:13:09.990035-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0020647170022130013
+    },
+    {
+      "sequence": 9,
+      "time": "2026-10-28T15:13:22.063859+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "New role improves mental health and reduces stress from previous job",
+      "candidates": [
+        {
+          "id": "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+          "version": 0,
+          "score": 0.6057581990379659,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Experiencing mental strain from current role and considering career change for mental health",
+            "hash": "aa3ff2e8872b13b85ae0f7acf5c72058",
+            "created_at": "2026-10-28T00:12:01.715189-07:00",
+            "updated_at": "2026-10-28T00:13:10.756476-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+          "version": 0,
+          "score": 0.5729966078117248,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Career change is being considered due to impact on mental health",
+            "hash": "b4971727cc25ed9a403771fc76d8d10a",
+            "created_at": "2026-10-28T00:10:29.755378-07:00",
+            "updated_at": "2026-10-28T00:13:10.290021-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "version": 0,
+          "score": 0.48598120486774044,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Looking for a new job with better work-life balance",
+            "hash": "98ed22ad1c5d239705381435c68da0a8",
+            "created_at": "2026-10-28T00:13:15.362070-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "58589cd3-36bc-439f-8003-d6416735b820",
+          "version": 0,
+          "score": 0.47940816471757985,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+            "hash": "ec2cb703346dcafcc1269c87ca91ed38",
+            "created_at": "2026-10-28T00:08:17.221631-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "0db431ab-6638-42b8-b509-d715dbb286bc",
+          "version": 0,
+          "score": 0.4579266496120593,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Considers work-life balance a key factor in evaluating new roles",
+            "hash": "08c5a895f6343932ca10ede99bbd7ed7",
+            "created_at": "2026-10-28T00:10:29.823090-07:00",
+            "updated_at": "2026-10-28T00:13:09.990035-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.002167636004742235
+    },
+    {
+      "sequence": 11,
+      "time": "2026-10-28T15:13:22.219688+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Works in the healthcare sector",
+      "candidates": [
+        {
+          "id": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+          "version": 0,
+          "score": 0.7964903314790692,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Employed in the healthcare industry",
+            "hash": "c63fc8037bf1280d7544a552304c6923",
+            "created_at": "2026-10-28T00:08:17.157288-07:00",
+            "updated_at": "2026-10-28T00:13:09.423558-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+          "version": 0,
+          "score": 0.6210697687642369,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Works in consulting; background in public health",
+            "hash": "7598d7e02dac15472aea10f1af275978",
+            "created_at": "2026-10-28T00:12:01.706364-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+          "version": 0,
+          "score": 0.4977956635541641,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+            "hash": "2d4678ebf183d272c843983878041b34",
+            "created_at": "2026-10-28T00:12:01.780745-07:00",
+            "updated_at": "2026-10-28T00:13:10.609682-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+          "version": 0,
+          "score": 0.4927980861839031,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Interested in non-profit organizations focused on healthcare access",
+            "hash": "a663507bc4f6bc3dfb38de64bf72de9e",
+            "created_at": "2026-10-28T00:12:01.723093-07:00",
+            "updated_at": "2026-10-28T00:13:11.883156-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "58589cd3-36bc-439f-8003-d6416735b820",
+          "version": 0,
+          "score": 0.4861261958946539,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+            "hash": "ec2cb703346dcafcc1269c87ca91ed38",
+            "created_at": "2026-10-28T00:08:17.221631-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.00213668798096478
+    },
+    {
+      "sequence": 13,
+      "time": "2026-10-28T15:13:22.577414+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Has humanitarian care goals",
+      "candidates": [
+        {
+          "id": "1fd1c83f-6203-4e36-aa42-4009909da526",
+          "version": 0,
+          "score": 0.7402827411424936,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Career goals are aligned with humanitarian values",
+            "hash": "9a42dec3d72ac4f0bbe709963f786a12",
+            "created_at": "2026-10-28T00:13:15.370555-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+          "version": 0,
+          "score": 0.6642050208643056,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Financial stability is secondary to humanitarian goals and personal well-being",
+            "hash": "d2f5ddd5a64ac2006be08eca38aeb42d",
+            "created_at": "2026-10-28T00:10:29.926911-07:00",
+            "updated_at": "2026-10-28T00:13:11.569200-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+          "version": 0,
+          "score": 0.472448555198798,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Interested in non-profit organizations focused on healthcare access",
+            "hash": "a663507bc4f6bc3dfb38de64bf72de9e",
+            "created_at": "2026-10-28T00:12:01.723093-07:00",
+            "updated_at": "2026-10-28T00:13:11.883156-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+          "version": 0,
+          "score": 0.45538532093114853,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Wants to improve healthcare for underserved communities",
+            "hash": "3de5b67a141a9dac565783cbfb2a2533",
+            "created_at": "2026-10-28T00:13:15.380982-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+          "version": 0,
+          "score": 0.4317842227948263,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Aims to refine skills through mentorship to increase impact in healthcare",
+            "hash": "ee965e8eb688ee92b368fdb0325dadb4",
+            "created_at": "2026-10-28T00:12:01.772450-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0019019650062546134
+    },
+    {
+      "sequence": 15,
+      "time": "2026-10-28T15:13:22.730269+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Has artistic goals that complement professional work and support personal well-being",
+      "candidates": [
+        {
+          "id": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+          "version": 0,
+          "score": 0.6509349458676366,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Committed to balancing professional responsibilities with personal health and creativity",
+            "hash": "7382890794d40dc7336630a682fa2e3c",
+            "created_at": "2026-10-28T00:13:15.453686-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+          "version": 0,
+          "score": 0.45334078331250977,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Financial stability is secondary to humanitarian goals and personal well-being",
+            "hash": "d2f5ddd5a64ac2006be08eca38aeb42d",
+            "created_at": "2026-10-28T00:10:29.926911-07:00",
+            "updated_at": "2026-10-28T00:13:11.569200-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+          "version": 0,
+          "score": 0.4533259099578333,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values alignment of work with personal values",
+            "hash": "38c0b4c817c157c5479fc88175da7c05",
+            "created_at": "2026-10-28T00:12:01.731054-07:00",
+            "updated_at": "2026-10-28T00:13:11.406047-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+          "version": 0,
+          "score": 0.45303437946429287,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Measures success by impact on healthcare access, personal health, and creativity",
+            "hash": "a9c7fd94424312d1db80365a43722bfb",
+            "created_at": "2026-10-28T00:10:29.831088-07:00",
+            "updated_at": "2026-10-28T00:13:15.184779-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "1fd1c83f-6203-4e36-aa42-4009909da526",
+          "version": 0,
+          "score": 0.4477692572640846,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Career goals are aligned with humanitarian values",
+            "hash": "9a42dec3d72ac4f0bbe709963f786a12",
+            "created_at": "2026-10-28T00:13:15.370555-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.001899769005831331
+    },
+    {
+      "sequence": 17,
+      "time": "2026-10-28T15:13:22.896304+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "candidates": [
+        {
+          "id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+          "version": 0,
+          "score": 0.7070039313130747,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Grateful for support from Susan, Daniel, and Joshua",
+            "hash": "d87f485f1eb64696f46dbc376d10f597",
+            "created_at": "2026-10-28T00:13:15.397051-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "version": 0,
+          "score": 0.5548343694031342,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "hash": "ddc67118d2a18e3923c532500e71d8c4",
+            "created_at": "2026-10-28T00:08:17.229415-07:00",
+            "updated_at": "2026-10-28T00:13:09.222456-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+          "version": 0,
+          "score": 0.4913914462323605,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Susan provides encouragement and helps maintain focus on goals",
+            "hash": "841e0c148588b91eae56b5ddfb10fc6d",
+            "created_at": "2026-10-28T00:13:15.405071-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+          "version": 0,
+          "score": 0.4901093776791307,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Interested in opportunities with higher salary as part of career transition",
+            "hash": "3ef183eab49382430b28ec80d3f8aab0",
+            "created_at": "2026-10-28T00:13:15.437593-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a90e498c-4586-4237-8a4b-c830847f8819",
+          "version": 0,
+          "score": 0.48631162296274044,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+            "hash": "77e4c9c986620b48778c5504af124367",
+            "created_at": "2026-10-28T00:08:17.245442-07:00",
+            "updated_at": "2026-10-28T00:13:13.004293-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.001883331045974046
+    },
+    {
+      "sequence": 19,
+      "time": "2026-10-28T15:13:23.063647+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Susan offered encouragement and helped maintain focus on goals",
+      "candidates": [
+        {
+          "id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+          "version": 0,
+          "score": 0.9498025626194843,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Susan provides encouragement and helps maintain focus on goals",
+            "hash": "841e0c148588b91eae56b5ddfb10fc6d",
+            "created_at": "2026-10-28T00:13:15.405071-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "version": 0,
+          "score": 0.6273294703319956,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "hash": "ddc67118d2a18e3923c532500e71d8c4",
+            "created_at": "2026-10-28T00:08:17.229415-07:00",
+            "updated_at": "2026-10-28T00:13:09.222456-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+          "version": 0,
+          "score": 0.5587567505709008,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Grateful for support from Susan, Daniel, and Joshua",
+            "hash": "d87f485f1eb64696f46dbc376d10f597",
+            "created_at": "2026-10-28T00:13:15.397051-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a",
+          "version": 0,
+          "score": 0.456890606897232,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+            "hash": "2c9e21fb85e8adc19aa3de4c5f047b4e",
+            "created_at": "2026-10-28T00:10:29.887136-07:00",
+            "updated_at": "2026-10-28T00:13:11.732027-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+          "version": 0,
+          "score": 0.4362833362027676,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+            "hash": "6076f1b38806037c877ccab075176f2d",
+            "created_at": "2026-10-28T00:10:29.790603-07:00",
+            "updated_at": "2026-10-28T00:13:13.459794-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0020592460059560835
+    },
+    {
+      "sequence": 21,
+      "time": "2026-10-28T15:13:23.300782+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Daniel provided insights that encouraged innovative thinking",
+      "candidates": [
+        {
+          "id": "845853d3-9c8f-4075-828c-206f4a2531cc",
+          "version": 0,
+          "score": 0.8761809070986377,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Daniel offers insights that push thinking outside the box and foster innovation",
+            "hash": "f738c4ee0f652f31acc15d624cfd0557",
+            "created_at": "2026-10-28T00:13:15.413161-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+          "version": 0,
+          "score": 0.4902958848677429,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+            "hash": "6076f1b38806037c877ccab075176f2d",
+            "created_at": "2026-10-28T00:10:29.790603-07:00",
+            "updated_at": "2026-10-28T00:13:13.459794-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+          "version": 0,
+          "score": 0.48709270073180855,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Grateful for support from Susan, Daniel, and Joshua",
+            "hash": "d87f485f1eb64696f46dbc376d10f597",
+            "created_at": "2026-10-28T00:13:15.397051-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+          "version": 0,
+          "score": 0.4730393912188523,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values open communication and innovative thinking in workplace culture",
+            "hash": "ffcb856a2a0c180ac9dde85476139225",
+            "created_at": "2026-10-28T00:10:29.771903-07:00",
+            "updated_at": "2026-10-28T00:13:12.867777-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "0da9428c-2fe6-4254-b818-58991562b49d",
+          "version": 0,
+          "score": 0.4606245608204931,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+            "hash": "92224960c7d14b762e5811ed3dd71bef",
+            "created_at": "2026-10-28T00:08:17.237490-07:00",
+            "updated_at": "2026-10-28T00:13:08.708411-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.002083014987874776
+    },
+    {
+      "sequence": 23,
+      "time": "2026-10-28T15:13:23.450538+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Joshua influenced leadership style through collaborative approach",
+      "candidates": [
+        {
+          "id": "3588abfc-5f64-40cf-b71d-53d7108d0375",
+          "version": 0,
+          "score": 0.9552974052067543,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Joshua's collaborative approach has positively influenced leadership style",
+            "hash": "0cc42f6ea54bd78203637e1d77b1a6c3",
+            "created_at": "2026-10-28T00:13:15.421164-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a90e498c-4586-4237-8a4b-c830847f8819",
+          "version": 0,
+          "score": 0.570412239736567,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+            "hash": "77e4c9c986620b48778c5504af124367",
+            "created_at": "2026-10-28T00:08:17.245442-07:00",
+            "updated_at": "2026-10-28T00:13:13.004293-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "369ba144-28ab-4a62-9029-130aed19cf89",
+          "version": 0,
+          "score": 0.5466816687074985,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Adapts leadership style through active listening and openness to feedback",
+            "hash": "4269ae19a9902659c1374fb8c99c0d5d",
+            "created_at": "2026-10-28T00:10:29.911127-07:00",
+            "updated_at": "2026-10-28T00:13:13.973030-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a0dc7abe-082a-4f7d-b89b-4dce8012809b",
+          "version": 0,
+          "score": 0.4688452104153129,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Leads by setting clear expectations and trusting team autonomy",
+            "hash": "3117ea5ba5561e7b4740b3ca095d2337",
+            "created_at": "2026-10-28T00:10:29.903156-07:00",
+            "updated_at": "2026-10-28T00:13:14.255298-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+          "version": 0,
+          "score": 0.4326678430579718,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Thrives in collaborative environments",
+            "hash": "922beab0bc097d2db6ab786dadbd651a",
+            "created_at": "2026-10-28T00:10:29.782500-07:00",
+            "updated_at": "2026-10-28T00:13:14.114940-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0024640500196255744
+    },
+    {
+      "sequence": 25,
+      "time": "2026-10-28T15:13:23.588512+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "New role has a creative aspect that enables innovation in healthcare",
+      "candidates": [
+        {
+          "id": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+          "version": 0,
+          "score": 0.5954883166140839,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+            "hash": "2d4678ebf183d272c843983878041b34",
+            "created_at": "2026-10-28T00:12:01.780745-07:00",
+            "updated_at": "2026-10-28T00:13:10.609682-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+          "version": 0,
+          "score": 0.578465266734683,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Measures success by impact on healthcare access, personal health, and creativity",
+            "hash": "a9c7fd94424312d1db80365a43722bfb",
+            "created_at": "2026-10-28T00:10:29.831088-07:00",
+            "updated_at": "2026-10-28T00:13:15.184779-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+          "version": 0,
+          "score": 0.5767753908239506,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+            "hash": "c56d5bb4a814fb8819d826738bf0b7c9",
+            "created_at": "2026-10-28T00:10:29.919288-07:00",
+            "updated_at": "2026-10-28T00:13:12.143842-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "20891999-4762-4706-b3f5-01d9a496f572",
+          "version": 0,
+          "score": 0.5449731984788007,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has led projects resulting in innovative healthcare solutions",
+            "hash": "530e3d311a9333894881b1f346333119",
+            "created_at": "2026-10-28T00:10:29.807201-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+          "version": 0,
+          "score": 0.5296701870875026,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Committed to balancing professional responsibilities with personal health and creativity",
+            "hash": "7382890794d40dc7336630a682fa2e3c",
+            "created_at": "2026-10-28T00:13:15.453686-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0021424490259960294
+    },
+    {
+      "sequence": 27,
+      "time": "2026-10-28T15:13:23.751102+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Values gratitude, optimism, resilience, and personal growth",
+      "candidates": [
+        {
+          "id": "14992e21-9f5b-4357-809b-6aabebc55480",
+          "version": 0,
+          "score": 0.5641117253117027,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values flexibility and growth in future roles",
+            "hash": "d6bacdee1126c38339968d3945b0df25",
+            "created_at": "2026-10-28T00:13:15.389082-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+          "version": 0,
+          "score": 0.5159735073381818,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has empathetic nature that helps understand diverse perspectives",
+            "hash": "01116ea8db3e555a4388f5d37e040293",
+            "created_at": "2026-10-28T00:10:29.870789-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+          "version": 0,
+          "score": 0.5037475920950925,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values alignment of work with personal values",
+            "hash": "38c0b4c817c157c5479fc88175da7c05",
+            "created_at": "2026-10-28T00:12:01.731054-07:00",
+            "updated_at": "2026-10-28T00:13:11.406047-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a",
+          "version": 0,
+          "score": 0.49378016057620644,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+            "hash": "2c9e21fb85e8adc19aa3de4c5f047b4e",
+            "created_at": "2026-10-28T00:10:29.887136-07:00",
+            "updated_at": "2026-10-28T00:13:11.732027-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+          "version": 0,
+          "score": 0.48784166918610594,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Thrives in collaborative environments",
+            "hash": "922beab0bc097d2db6ab786dadbd651a",
+            "created_at": "2026-10-28T00:10:29.782500-07:00",
+            "updated_at": "2026-10-28T00:13:14.114940-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.002080940001178533
+    },
+    {
+      "sequence": 29,
+      "time": "2026-10-28T15:13:23.884869+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Seeks to make a real impact and inspire change",
+      "candidates": [
+        {
+          "id": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+          "version": 0,
+          "score": 0.6389524028191883,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+            "hash": "c56d5bb4a814fb8819d826738bf0b7c9",
+            "created_at": "2026-10-28T00:10:29.919288-07:00",
+            "updated_at": "2026-10-28T00:13:12.143842-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "dda86e57-3db9-480a-826c-e3879684a73e",
+          "version": 0,
+          "score": 0.6064808294887367,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Seeks mentorship from individuals who value innovation and empathy",
+            "hash": "9f9cd40cf2be58c06f6bc30ff378c251",
+            "created_at": "2026-10-28T00:12:01.747625-07:00",
+            "updated_at": "2026-10-28T00:13:09.799872-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+          "version": 0,
+          "score": 0.5483894580004156,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Passionate about improving health outcomes",
+            "hash": "f5cc4f3a401a2a820cf4e1771836065c",
+            "created_at": "2026-10-28T00:08:17.197997-07:00",
+            "updated_at": "2026-10-28T00:13:12.591188-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+          "version": 0,
+          "score": 0.5316207590737765,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Measures success by impact on healthcare access, personal health, and creativity",
+            "hash": "a9c7fd94424312d1db80365a43722bfb",
+            "created_at": "2026-10-28T00:10:29.831088-07:00",
+            "updated_at": "2026-10-28T00:13:15.184779-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+          "version": 0,
+          "score": 0.5139867850944755,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Aims to refine skills through mentorship to increase impact in healthcare",
+            "hash": "ee965e8eb688ee92b368fdb0325dadb4",
+            "created_at": "2026-10-28T00:12:01.772450-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0021231829887256026
+    },
+    {
+      "sequence": 31,
+      "time": "2026-10-28T15:13:24.038300+08:00",
+      "phase": "session_008",
+      "kind": "recall_output",
+      "query": "Views support network as a cornerstone of success",
+      "candidates": [
+        {
+          "id": "14992e21-9f5b-4357-809b-6aabebc55480",
+          "version": 0,
+          "score": 0.5000264917877887,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values flexibility and growth in future roles",
+            "hash": "d6bacdee1126c38339968d3945b0df25",
+            "created_at": "2026-10-28T00:13:15.389082-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+          "version": 0,
+          "score": 0.4502205418337989,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Measures success by impact on healthcare access, personal health, and creativity",
+            "hash": "a9c7fd94424312d1db80365a43722bfb",
+            "created_at": "2026-10-28T00:10:29.831088-07:00",
+            "updated_at": "2026-10-28T00:13:15.184779-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "07c06494-0e65-46b5-83a4-077c41bab41a",
+          "version": 0,
+          "score": 0.4492712452722001,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Plans to network with professionals in the non-profit sector",
+            "hash": "3339db99bf7f4383ef676004107e8a47",
+            "created_at": "2026-10-28T00:12:01.755564-07:00",
+            "updated_at": "2026-10-28T00:13:12.020225-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+          "version": 0,
+          "score": 0.44753781667515063,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Values open communication and innovative thinking in workplace culture",
+            "hash": "ffcb856a2a0c180ac9dde85476139225",
+            "created_at": "2026-10-28T00:10:29.771903-07:00",
+            "updated_at": "2026-10-28T00:13:12.867777-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "dda86e57-3db9-480a-826c-e3879684a73e",
+          "version": 0,
+          "score": 0.4198760942319601,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Seeks mentorship from individuals who value innovation and empathy",
+            "hash": "9f9cd40cf2be58c06f6bc30ff378c251",
+            "created_at": "2026-10-28T00:12:01.747625-07:00",
+            "updated_at": "2026-10-28T00:13:09.799872-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.002064038999378681
+    }
+  ],
+  "changed": [
+    {
+      "id": "0fcc7637-cd67-4fad-baff-13dccec40294",
+      "before": null,
+      "after": "Views support network as a cornerstone of success"
+    },
+    {
+      "id": "50fc59c3-70c8-4335-a2a1-3d05df52a65d",
+      "before": null,
+      "after": "Has humanitarian care goals"
+    },
+    {
+      "id": "63afc877-8768-4e3d-98d4-68bcb2538e65",
+      "before": null,
+      "after": "New role improves mental health and reduces stress from previous job"
+    },
+    {
+      "id": "818912c6-02bb-44f1-8350-8ce250f1fc3e",
+      "before": null,
+      "after": "Has transitioned to a new role with healthier work-life balance"
+    },
+    {
+      "id": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "before": "Daniel offers insights that push thinking outside the box and foster innovation",
+      "after": "Daniel offers insights that encourage innovative thinking"
+    },
+    {
+      "id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "before": "Susan provides encouragement and helps maintain focus on goals",
+      "after": "Susan offers encouragement and helps maintain focus on goals"
+    },
+    {
+      "id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "before": null,
+      "after": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition"
+    },
+    {
+      "id": "9efefa41-03ed-40d5-9b42-5bd41a6be2d1",
+      "before": null,
+      "after": "Has artistic goals that complement professional work and support personal well-being"
+    },
+    {
+      "id": "d2f9ec87-e472-4808-890e-395443f45c64",
+      "before": null,
+      "after": "New role has a creative aspect that enables innovation in healthcare"
+    },
+    {
+      "id": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "before": "Employed in the healthcare industry",
+      "after": "Works in the healthcare sector"
+    },
+    {
+      "id": "fb7db018-65d9-48b3-a5ad-939e2dbb18e9",
+      "before": null,
+      "after": "Values gratitude, optimism, resilience, and personal growth"
+    },
+    {
+      "id": "fe835b36-340f-4b83-85d6-78a2705e4e33",
+      "before": null,
+      "after": "Seeks to make a real impact and inspire change"
+    }
+  ],
+  "raw_facts": [
+    {
+      "sequence": 3,
+      "time": "2026-10-28T15:13:20.713355+08:00",
+      "phase": "session_008",
+      "kind": "model_output",
+      "stage": "extraction",
+      "raw_response": "{\"facts\": [\"Name is Martin\", \"Has transitioned to a new role with healthier work-life balance\", \"New role improves mental health and reduces stress from previous job\", \"Works in the healthcare sector\", \"Has humanitarian care goals\", \"Has artistic goals that complement professional work and support personal well-being\", \"Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition\", \"Susan offered encouragement and helped maintain focus on goals\", \"Daniel provided insights that encouraged innovative thinking\", \"Joshua influenced leadership style through collaborative approach\", \"New role has a creative aspect that enables innovation in healthcare\", \"Values gratitude, optimism, resilience, and personal growth\", \"Seeks to make a real impact and inspire change\", \"Views support network as a cornerstone of success\"]}",
+      "parsed": {
+        "facts": [
+          "Name is Martin",
+          "Has transitioned to a new role with healthier work-life balance",
+          "New role improves mental health and reduces stress from previous job",
+          "Works in the healthcare sector",
+          "Has humanitarian care goals",
+          "Has artistic goals that complement professional work and support personal well-being",
+          "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+          "Susan offered encouragement and helped maintain focus on goals",
+          "Daniel provided insights that encouraged innovative thinking",
+          "Joshua influenced leadership style through collaborative approach",
+          "New role has a creative aspect that enables innovation in healthcare",
+          "Values gratitude, optimism, resilience, and personal growth",
+          "Seeks to make a real impact and inspire change",
+          "Views support network as a cornerstone of success"
+        ]
+      },
+      "parse_error": null,
+      "native_temp_uuid_mapping": {},
+      "elapsed_seconds": 4.322296425001696
+    }
+  ],
+  "plan": [
+    {
+      "plan_index_zero_based": 0,
+      "id": "0",
+      "text": "Name is Martin",
+      "event": "NONE",
+      "resolved_existing_memory_id": "ed3fcdb8-fd07-4709-973e-bfa6466d39c8",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 1,
+      "id": "1",
+      "text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "event": "UPDATE",
+      "old_memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "resolved_existing_memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 2,
+      "id": "2",
+      "text": "Date of birth is 1996-08-02",
+      "event": "NONE",
+      "resolved_existing_memory_id": "6189e2f2-90c8-4562-839d-6489bd0262c8",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 3,
+      "id": "3",
+      "text": "Gender is Male",
+      "event": "NONE",
+      "resolved_existing_memory_id": "37dd67dc-9c67-41b7-bf8d-bbd881504737",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 4,
+      "id": "4",
+      "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "event": "UPDATE",
+      "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "resolved_existing_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 5,
+      "id": "5",
+      "text": "Has transitioned to a new role with healthier work-life balance",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 6,
+      "id": "6",
+      "text": "New role improves mental health and reduces stress from previous job",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 7,
+      "id": "7",
+      "text": "Committed to balancing professional responsibilities with personal health and creativity",
+      "event": "UPDATE",
+      "old_memory": "Committed to balancing professional responsibilities with personal health and creativity",
+      "resolved_existing_memory_id": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 8,
+      "id": "8",
+      "text": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+      "event": "UPDATE",
+      "old_memory": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+      "resolved_existing_memory_id": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 9,
+      "id": "9",
+      "text": "Considers work-life balance a key factor in evaluating new roles",
+      "event": "UPDATE",
+      "old_memory": "Considers work-life balance a key factor in evaluating new roles",
+      "resolved_existing_memory_id": "0db431ab-6638-42b8-b509-d715dbb286bc",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 10,
+      "id": "10",
+      "text": "Experiencing mental strain from current role and considering career change for mental health",
+      "event": "UPDATE",
+      "old_memory": "Experiencing mental strain from current role and considering career change for mental health",
+      "resolved_existing_memory_id": "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 11,
+      "id": "11",
+      "text": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+      "event": "UPDATE",
+      "old_memory": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+      "resolved_existing_memory_id": "58589cd3-36bc-439f-8003-d6416735b820",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 12,
+      "id": "12",
+      "text": "Works in the healthcare sector",
+      "event": "UPDATE",
+      "old_memory": "Employed in the healthcare industry",
+      "resolved_existing_memory_id": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 13,
+      "id": "13",
+      "text": "Works in consulting; background in public health",
+      "event": "UPDATE",
+      "old_memory": "Works in consulting; background in public health",
+      "resolved_existing_memory_id": "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 14,
+      "id": "14",
+      "text": "Interested in non-profit organizations focused on healthcare access",
+      "event": "NONE",
+      "resolved_existing_memory_id": "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 15,
+      "id": "15",
+      "text": "Career goals are aligned with humanitarian values",
+      "event": "UPDATE",
+      "old_memory": "Career goals are aligned with humanitarian values",
+      "resolved_existing_memory_id": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 16,
+      "id": "16",
+      "text": "Financial stability is secondary to humanitarian goals and personal well-being",
+      "event": "NONE",
+      "resolved_existing_memory_id": "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 17,
+      "id": "17",
+      "text": "Wants to improve healthcare for underserved communities",
+      "event": "UPDATE",
+      "old_memory": "Wants to improve healthcare for underserved communities",
+      "resolved_existing_memory_id": "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 18,
+      "id": "18",
+      "text": "Aims to refine skills through mentorship to increase impact in healthcare",
+      "event": "NONE",
+      "resolved_existing_memory_id": "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 19,
+      "id": "19",
+      "text": "Values alignment of work with personal values",
+      "event": "UPDATE",
+      "old_memory": "Values alignment of work with personal values",
+      "resolved_existing_memory_id": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 20,
+      "id": "20",
+      "text": "Measures success by impact on healthcare access, personal health, and creativity",
+      "event": "UPDATE",
+      "old_memory": "Measures success by impact on healthcare access, personal health, and creativity",
+      "resolved_existing_memory_id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 21,
+      "id": "21",
+      "text": "Grateful for support from Susan, Daniel, and Joshua",
+      "event": "UPDATE",
+      "old_memory": "Grateful for support from Susan, Daniel, and Joshua",
+      "resolved_existing_memory_id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 22,
+      "id": "22",
+      "text": "Susan offers encouragement and helps maintain focus on goals",
+      "event": "UPDATE",
+      "old_memory": "Susan provides encouragement and helps maintain focus on goals",
+      "resolved_existing_memory_id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 23,
+      "id": "23",
+      "text": "Interested in opportunities with higher salary as part of career transition",
+      "event": "NONE",
+      "resolved_existing_memory_id": "727c24da-80f3-48b2-a34c-2e29f8e76da3",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 24,
+      "id": "24",
+      "text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "event": "UPDATE",
+      "old_memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "resolved_existing_memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 25,
+      "id": "25",
+      "text": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+      "event": "NONE",
+      "resolved_existing_memory_id": "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 26,
+      "id": "26",
+      "text": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+      "event": "UPDATE",
+      "old_memory": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+      "resolved_existing_memory_id": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 27,
+      "id": "27",
+      "text": "Daniel offers insights that encourage innovative thinking",
+      "event": "UPDATE",
+      "old_memory": "Daniel offers insights that push thinking outside the box and foster innovation",
+      "resolved_existing_memory_id": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 28,
+      "id": "28",
+      "text": "Values open communication and innovative thinking in workplace culture",
+      "event": "UPDATE",
+      "old_memory": "Values open communication and innovative thinking in workplace culture",
+      "resolved_existing_memory_id": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 29,
+      "id": "29",
+      "text": "Joshua's collaborative approach has positively influenced leadership style",
+      "event": "UPDATE",
+      "old_memory": "Joshua's collaborative approach has positively influenced leadership style",
+      "resolved_existing_memory_id": "3588abfc-5f64-40cf-b71d-53d7108d0375",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 30,
+      "id": "30",
+      "text": "Adapts leadership style through active listening and openness to feedback",
+      "event": "NONE",
+      "resolved_existing_memory_id": "369ba144-28ab-4a62-9029-130aed19cf89",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 31,
+      "id": "31",
+      "text": "Leads by setting clear expectations and trusting team autonomy",
+      "event": "NONE",
+      "resolved_existing_memory_id": "a0dc7abe-082a-4f7d-b89b-4dce8012809b",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 32,
+      "id": "32",
+      "text": "Thrives in collaborative environments",
+      "event": "NONE",
+      "resolved_existing_memory_id": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 33,
+      "id": "33",
+      "text": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+      "event": "UPDATE",
+      "old_memory": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+      "resolved_existing_memory_id": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 34,
+      "id": "34",
+      "text": "Has led projects resulting in innovative healthcare solutions",
+      "event": "UPDATE",
+      "old_memory": "Has led projects resulting in innovative healthcare solutions",
+      "resolved_existing_memory_id": "20891999-4762-4706-b3f5-01d9a496f572",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 35,
+      "id": "35",
+      "text": "Values flexibility and growth in future roles",
+      "event": "NONE",
+      "resolved_existing_memory_id": "14992e21-9f5b-4357-809b-6aabebc55480",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 36,
+      "id": "36",
+      "text": "Has empathetic nature that helps understand diverse perspectives",
+      "event": "NONE",
+      "resolved_existing_memory_id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 37,
+      "id": "37",
+      "text": "Seeks mentorship from individuals who value innovation and empathy",
+      "event": "NONE",
+      "resolved_existing_memory_id": "dda86e57-3db9-480a-826c-e3879684a73e",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 38,
+      "id": "38",
+      "text": "Passionate about improving health outcomes",
+      "event": "UPDATE",
+      "old_memory": "Passionate about improving health outcomes",
+      "resolved_existing_memory_id": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 39,
+      "id": "39",
+      "text": "Plans to network with professionals in the non-profit sector",
+      "event": "NONE",
+      "resolved_existing_memory_id": "07c06494-0e65-46b5-83a4-077c41bab41a",
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 40,
+      "id": "40",
+      "text": "Has humanitarian care goals",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 41,
+      "id": "41",
+      "text": "Has artistic goals that complement professional work and support personal well-being",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 42,
+      "id": "42",
+      "text": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 43,
+      "id": "43",
+      "text": "New role has a creative aspect that enables innovation in healthcare",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 44,
+      "id": "44",
+      "text": "Values gratitude, optimism, resilience, and personal growth",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 45,
+      "id": "45",
+      "text": "Seeks to make a real impact and inspire change",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    },
+    {
+      "plan_index_zero_based": 46,
+      "id": "46",
+      "text": "Views support network as a cornerstone of success",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 33
+    }
+  ],
+  "actual": [
+    {
+      "sequence": 155,
+      "id": "873de725-f1b4-4ed3-8f1d-e79925ddd225",
+      "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "old_memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "new_memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.237490-07:00",
+      "updated_at": "2026-10-28T00:14:11.280360-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 156,
+      "id": "a0f44d75-95f3-4279-b6a7-fd270962d1a0",
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "new_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.229415-07:00",
+      "updated_at": "2026-10-28T00:14:11.886693-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 157,
+      "id": "e40e5c79-43f8-40e4-9a8d-7a3983e390bf",
+      "memory_id": "818912c6-02bb-44f1-8350-8ce250f1fc3e",
+      "old_memory": null,
+      "new_memory": "Has transitioned to a new role with healthier work-life balance",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:12.047302-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 158,
+      "id": "cb688789-a773-425f-b7ad-602804277fae",
+      "memory_id": "63afc877-8768-4e3d-98d4-68bcb2538e65",
+      "old_memory": null,
+      "new_memory": "New role improves mental health and reduces stress from previous job",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:12.056282-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 159,
+      "id": "fbb2f1fb-7230-4571-b660-a0b1cd0a9506",
+      "memory_id": "3efbf0ad-6dc2-4cf6-96a5-59cc44d59258",
+      "old_memory": "Committed to balancing professional responsibilities with personal health and creativity",
+      "new_memory": "Committed to balancing professional responsibilities with personal health and creativity",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.453686-07:00",
+      "updated_at": "2026-10-28T00:14:12.064300-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 160,
+      "id": "85114756-2291-47eb-b6fa-20ca4ca5a5cb",
+      "memory_id": "a07bd4a7-257f-4dab-b7e2-224841cb4746",
+      "old_memory": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+      "new_memory": "Envisions ideal role as one contributing to healthcare initiatives while sustaining a balanced and fulfilling life",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:12:01.780745-07:00",
+      "updated_at": "2026-10-28T00:14:12.222346-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 161,
+      "id": "0ea82570-e7e4-4b3d-9486-ddf1999e4ec8",
+      "memory_id": "0db431ab-6638-42b8-b509-d715dbb286bc",
+      "old_memory": "Considers work-life balance a key factor in evaluating new roles",
+      "new_memory": "Considers work-life balance a key factor in evaluating new roles",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.823090-07:00",
+      "updated_at": "2026-10-28T00:14:12.364935-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 162,
+      "id": "992b30b5-0403-458f-ae7e-94e12613e94d",
+      "memory_id": "d89a12f2-be5e-49dc-b30c-0a8c65984ab9",
+      "old_memory": "Experiencing mental strain from current role and considering career change for mental health",
+      "new_memory": "Experiencing mental strain from current role and considering career change for mental health",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:12:01.715189-07:00",
+      "updated_at": "2026-10-28T00:14:12.524246-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 163,
+      "id": "e4da0486-5288-480d-8b0d-29b5f7a04a62",
+      "memory_id": "58589cd3-36bc-439f-8003-d6416735b820",
+      "old_memory": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+      "new_memory": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.221631-07:00",
+      "updated_at": "2026-10-28T00:14:12.723616-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 164,
+      "id": "2194fb38-0edc-4337-be2d-74a06d20da89",
+      "memory_id": "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+      "old_memory": "Employed in the healthcare industry",
+      "new_memory": "Works in the healthcare sector",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.157288-07:00",
+      "updated_at": "2026-10-28T00:14:12.885849-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 165,
+      "id": "6c1da856-8ed0-44da-8643-f07e30f00c44",
+      "memory_id": "eb3725dc-6297-4519-9898-6ceb7a7613fc",
+      "old_memory": "Works in consulting; background in public health",
+      "new_memory": "Works in consulting; background in public health",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:12:01.706364-07:00",
+      "updated_at": "2026-10-28T00:14:12.893903-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 166,
+      "id": "bb1c1778-58f6-4641-b825-051110755e9f",
+      "memory_id": "1fd1c83f-6203-4e36-aa42-4009909da526",
+      "old_memory": "Career goals are aligned with humanitarian values",
+      "new_memory": "Career goals are aligned with humanitarian values",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.370555-07:00",
+      "updated_at": "2026-10-28T00:14:13.163638-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 167,
+      "id": "d0ba7773-2723-4304-964e-32a4790bd764",
+      "memory_id": "d479bb3e-e76a-4d70-887d-ae7aa4142b8b",
+      "old_memory": "Wants to improve healthcare for underserved communities",
+      "new_memory": "Wants to improve healthcare for underserved communities",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.380982-07:00",
+      "updated_at": "2026-10-28T00:14:13.384993-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 168,
+      "id": "afaa4ccc-cd03-4104-a4ca-6d629d7a1e09",
+      "memory_id": "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+      "old_memory": "Values alignment of work with personal values",
+      "new_memory": "Values alignment of work with personal values",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:12:01.731054-07:00",
+      "updated_at": "2026-10-28T00:14:13.525067-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 169,
+      "id": "6942b57e-2b63-442b-9e06-fce9609559cf",
+      "memory_id": "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+      "old_memory": "Measures success by impact on healthcare access, personal health, and creativity",
+      "new_memory": "Measures success by impact on healthcare access, personal health, and creativity",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.831088-07:00",
+      "updated_at": "2026-10-28T00:14:13.687190-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 170,
+      "id": "4263cfb9-3e1a-4452-9130-2c8e280db99b",
+      "memory_id": "37fd291e-d0a7-4d4c-9fdd-f5342b7648dd",
+      "old_memory": "Grateful for support from Susan, Daniel, and Joshua",
+      "new_memory": "Grateful for support from Susan, Daniel, and Joshua",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.397051-07:00",
+      "updated_at": "2026-10-28T00:14:13.854298-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 171,
+      "id": "35524e98-83a6-48eb-a70f-edd1a4280f69",
+      "memory_id": "88e4fcd9-0719-4f3c-bb36-a14bed591477",
+      "old_memory": "Susan provides encouragement and helps maintain focus on goals",
+      "new_memory": "Susan offers encouragement and helps maintain focus on goals",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.405071-07:00",
+      "updated_at": "2026-10-28T00:14:14.044655-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 172,
+      "id": "878fccd6-53c6-4dc5-b18f-ef47b596b2a4",
+      "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "old_memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "new_memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.245442-07:00",
+      "updated_at": "2026-10-28T00:14:14.204843-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 173,
+      "id": "9b34bf64-936b-4d95-9386-d67eff1615f8",
+      "memory_id": "973aec15-9e76-4dc3-9e06-e4cc8d182a3f",
+      "old_memory": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+      "new_memory": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.790603-07:00",
+      "updated_at": "2026-10-28T00:14:14.347088-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 174,
+      "id": "8198b2fa-1b4a-4790-9543-bbdf84923c0b",
+      "memory_id": "845853d3-9c8f-4075-828c-206f4a2531cc",
+      "old_memory": "Daniel offers insights that push thinking outside the box and foster innovation",
+      "new_memory": "Daniel offers insights that encourage innovative thinking",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.413161-07:00",
+      "updated_at": "2026-10-28T00:14:14.499482-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 175,
+      "id": "abfbd9f1-a9e1-4454-8ee5-f3b36ed0f100",
+      "memory_id": "735cfd3c-3d16-4f96-b666-1fafab9f8dd8",
+      "old_memory": "Values open communication and innovative thinking in workplace culture",
+      "new_memory": "Values open communication and innovative thinking in workplace culture",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.771903-07:00",
+      "updated_at": "2026-10-28T00:14:14.679151-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 176,
+      "id": "90ca0f7f-b56a-437c-bbf2-f082014e78b6",
+      "memory_id": "3588abfc-5f64-40cf-b71d-53d7108d0375",
+      "old_memory": "Joshua's collaborative approach has positively influenced leadership style",
+      "new_memory": "Joshua's collaborative approach has positively influenced leadership style",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:13:15.421164-07:00",
+      "updated_at": "2026-10-28T00:14:14.832862-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 177,
+      "id": "1d65c8d4-1f1b-43ad-8fc6-e73b45ca48df",
+      "memory_id": "e9a340e2-5418-43f5-b8d4-86729c408ee2",
+      "old_memory": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+      "new_memory": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.919288-07:00",
+      "updated_at": "2026-10-28T00:14:14.976442-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 178,
+      "id": "a7f1a945-782c-41a4-a6d0-79ad7f5a9d07",
+      "memory_id": "20891999-4762-4706-b3f5-01d9a496f572",
+      "old_memory": "Has led projects resulting in innovative healthcare solutions",
+      "new_memory": "Has led projects resulting in innovative healthcare solutions",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:10:29.807201-07:00",
+      "updated_at": "2026-10-28T00:14:15.196534-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 179,
+      "id": "9e430958-c3f0-4464-972b-ed015b1ddae1",
+      "memory_id": "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+      "old_memory": "Passionate about improving health outcomes",
+      "new_memory": "Passionate about improving health outcomes",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:08:17.197997-07:00",
+      "updated_at": "2026-10-28T00:14:15.342967-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 180,
+      "id": "07b0fb3f-f8dd-413c-a199-22bb4a814bab",
+      "memory_id": "50fc59c3-70c8-4335-a2a1-3d05df52a65d",
+      "old_memory": null,
+      "new_memory": "Has humanitarian care goals",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.471576-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 181,
+      "id": "aa8a4d68-5289-469c-8418-4014b2d7eb83",
+      "memory_id": "9efefa41-03ed-40d5-9b42-5bd41a6be2d1",
+      "old_memory": null,
+      "new_memory": "Has artistic goals that complement professional work and support personal well-being",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.479692-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 182,
+      "id": "4fb0e089-6054-493e-8696-f132f5403e82",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "old_memory": null,
+      "new_memory": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.487883-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 183,
+      "id": "3e5ca92e-98ae-4467-a6a3-1d651d4d6457",
+      "memory_id": "d2f9ec87-e472-4808-890e-395443f45c64",
+      "old_memory": null,
+      "new_memory": "New role has a creative aspect that enables innovation in healthcare",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.496284-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 184,
+      "id": "64990196-a249-4e31-8cd9-0c534a546115",
+      "memory_id": "fb7db018-65d9-48b3-a5ad-939e2dbb18e9",
+      "old_memory": null,
+      "new_memory": "Values gratitude, optimism, resilience, and personal growth",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.504412-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 185,
+      "id": "1861032e-37e8-47bf-86b9-699b128abf02",
+      "memory_id": "fe835b36-340f-4b83-85d6-78a2705e4e33",
+      "old_memory": null,
+      "new_memory": "Seeks to make a real impact and inspire change",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.512728-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 186,
+      "id": "efab3fb5-7625-4e77-94a5-2a3b4452e7d2",
+      "memory_id": "0fcc7637-cd67-4fad-baff-13dccec40294",
+      "old_memory": null,
+      "new_memory": "Views support network as a cornerstone of success",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:14:15.520727-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    }
+  ]
+}

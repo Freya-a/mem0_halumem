@@ -1,0 +1,777 @@
+{
+  "schema_version": 1,
+  "targets": [
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 4,
+      "point_index": 0,
+      "category": "partial_attribute",
+      "old_proposition": "Martin likes dogs, especially Labradors.",
+      "old_evidence": [
+        [
+          2,
+          2
+        ]
+      ],
+      "expected_new_state": "Martin now appreciates Golden Retrievers for gentleness and adaptability.",
+      "new_evidence": [
+        0,
+        2,
+        6,
+        12
+      ],
+      "allowed_modification_scope": "Add or refine the dog-breed preference; retain other pets.",
+      "interpretation_note": "Dialogue supports a new preference but does not explicitly revoke liking Labradors; do not require its deletion.",
+      "extra_protections": [
+        [
+          "Martin likes yoga for flexibility and mental clarity.",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 5,
+      "point_index": 1,
+      "category": "refinement",
+      "old_proposition": "Martin is considering a career change because his current director role affects his mental health.",
+      "old_evidence": [
+        [
+          3,
+          0
+        ]
+      ],
+      "expected_new_state": "Martin continues considering a career change for mental health and alignment with personal and professional goals.",
+      "new_evidence": [
+        0,
+        2,
+        4
+      ],
+      "allowed_modification_scope": "Refine career-change motivation; preserve humanitarian goal and historical employer.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 5,
+      "point_index": 4,
+      "category": "refinement",
+      "old_proposition": "Martin wants a job aligned with well-being and healthcare access for underserved communities.",
+      "old_evidence": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          24
+        ]
+      ],
+      "expected_new_state": "Martin is exploring flexible nonprofit healthcare roles to improve work-life balance.",
+      "new_evidence": [
+        4,
+        6,
+        12
+      ],
+      "allowed_modification_scope": "Add flexibility/nonprofit focus; do not assert a job offer or completed move.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 6,
+      "point_index": 1,
+      "category": "refinement",
+      "old_proposition": "Susan is a supportive friend who encourages Martin to focus on personal and professional well-being.",
+      "old_evidence": [
+        [
+          1,
+          6
+        ]
+      ],
+      "expected_new_state": "Susan provides valuable support and encouragement during the career transition.",
+      "new_evidence": [
+        0,
+        2,
+        12
+      ],
+      "allowed_modification_scope": "Refine the support context; preserve friendship and existing support.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 6,
+      "point_index": 2,
+      "category": "refinement",
+      "old_proposition": "Colleague Daniel provides healthcare insights that challenge Martin and aid career growth.",
+      "old_evidence": [
+        [
+          1,
+          6
+        ]
+      ],
+      "expected_new_state": "Daniel offers insights that push Martin to think outside the box during the job search.",
+      "new_evidence": [
+        0,
+        2
+      ],
+      "allowed_modification_scope": "Refine Daniel’s contribution; preserve colleague identity and healthcare expertise.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 6,
+      "point_index": 3,
+      "category": "refinement",
+      "old_proposition": "Joshua’s collaborative approach positively influences Martin’s work and leadership.",
+      "old_evidence": [
+        [
+          1,
+          6
+        ]
+      ],
+      "expected_new_state": "Martin is integrating Joshua’s positive influence on leadership while seeking a better-balanced role.",
+      "new_evidence": [
+        0,
+        4
+      ],
+      "allowed_modification_scope": "Refine current application of Joshua’s influence; do not revoke old relationship.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 7,
+      "point_index": 0,
+      "category": "replacement",
+      "old_proposition": "Martin is looking for a new job with better work-life balance.",
+      "old_evidence": [
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "expected_new_state": "Martin has transitioned to a new role with healthier work-life balance and improved mental health.",
+      "new_evidence": [
+        0,
+        2
+      ],
+      "allowed_modification_scope": "Update current job-search/transition state; retain past director role as history; no new employer/title is supplied.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Martin describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 8,
+      "point_index": 0,
+      "category": "partial_attribute",
+      "old_proposition": "Martin dislikes extreme sports such as skydiving because of injury risk.",
+      "old_evidence": [
+        [
+          2,
+          6
+        ]
+      ],
+      "expected_new_state": "Martin enjoyed simulated skydiving and is open to such experiences while still prioritizing safety.",
+      "new_evidence": [
+        0,
+        2,
+        8
+      ],
+      "allowed_modification_scope": "Limit to simulated skydiving and increased openness; preserve safety concern, yoga and other sports preferences.",
+      "interpretation_note": "Does not establish liking all extreme sports or real outdoor skydiving.",
+      "extra_protections": [
+        [
+          "Martin likes yoga for flexibility and mental clarity.",
+          2,
+          6
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 3,
+      "point_index": 1,
+      "category": "refinement",
+      "old_proposition": "Williams likes Earl Grey tea for history, bergamot aroma and nostalgia.",
+      "old_evidence": [
+        [
+          2,
+          2
+        ]
+      ],
+      "expected_new_state": "Williams’s appreciation of Earl Grey deepened after tasting layered flavors at a historic tea house.",
+      "new_evidence": [
+        0,
+        2
+      ],
+      "allowed_modification_scope": "Add the tea-house experience and flavor appreciation; preserve prior reasons and other beverages.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams likes 1920s jazz for its historical and cultural significance.",
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 4,
+      "point_index": 0,
+      "category": "replacement",
+      "old_proposition": "Williams is Director at Historical Productions Ltd.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "Williams is now lead director at Historical Productions Ltd.",
+      "new_evidence": [
+        0
+      ],
+      "allowed_modification_scope": "Update current title only; preserve employer, historical title and film interests.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams works at Historical Productions Ltd.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 4,
+      "point_index": 3,
+      "category": "partial_attribute",
+      "old_proposition": "Williams directs historically accurate films and collaborates on period settings.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "As lead director Williams has greater creative control, encourages innovation and higher authenticity.",
+      "new_evidence": [
+        0,
+        2,
+        10
+      ],
+      "allowed_modification_scope": "Refine responsibilities and control; retain accuracy goal and employer; no numeric financial changes.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams works at Historical Productions Ltd.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 5,
+      "point_index": 0,
+      "category": "replacement",
+      "old_proposition": "Williams describes his mental health as stressed by film-detail demands and tight schedules.",
+      "old_evidence": [
+        [
+          1,
+          4
+        ]
+      ],
+      "expected_new_state": "Williams reports significant mental health improvement and reduced stress after promotion and delegation.",
+      "new_evidence": [
+        0,
+        14
+      ],
+      "allowed_modification_scope": "Replace current stressed-state description with relative improvement; preserve history and avoid clinical recovery claims.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 5,
+      "point_index": 1,
+      "category": "partial_attribute",
+      "old_proposition": "Williams’s mental health suffers from detail and production-schedule stress; physical health is generally good.",
+      "old_evidence": [
+        [
+          1,
+          4
+        ]
+      ],
+      "expected_new_state": "Delegation in the new role has reduced mental stress and improved work-life balance.",
+      "new_evidence": [
+        0,
+        4
+      ],
+      "allowed_modification_scope": "Change the mental-stress/work-balance component only; preserve physical health, exercise and diet.",
+      "interpretation_note": "Overlaps the mental-state target in this same session; not an independent experimental event.",
+      "extra_protections": [
+        [
+          "Williams describes his physical health as generally good, supported by exercise and a balanced diet.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 6,
+      "point_index": 0,
+      "category": "refinement",
+      "old_proposition": "Williams likes Persian cats for regal calmness and historical elegance.",
+      "old_evidence": [
+        [
+          2,
+          6
+        ]
+      ],
+      "expected_new_state": "A documentary deepened Williams’s admiration of Persian cats’ historical lineage and royal associations.",
+      "new_evidence": [
+        0,
+        2
+      ],
+      "allowed_modification_scope": "Add documentary-based appreciation; preserve liking and other pet preferences.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams likes 1920s jazz for its historical and cultural significance.",
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 7,
+      "point_index": 6,
+      "category": "refinement",
+      "old_proposition": "Williams is grateful for support from colleagues and friends after promotion.",
+      "old_evidence": [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "expected_new_state": "Williams values Mary’s help unwinding and Steven’s set-design expertise as well as support from new connections.",
+      "new_evidence": [
+        4,
+        6
+      ],
+      "allowed_modification_scope": "Specify support roles; preserve old friendships and new relationships together.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams likes 1920s jazz for its historical and cultural significance.",
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 10,
+      "point_index": 1,
+      "category": "partial_attribute",
+      "old_proposition": "Williams likes classical symphonies for complexity and historical significance.",
+      "old_evidence": [
+        [
+          2,
+          10
+        ]
+      ],
+      "expected_new_state": "Williams is now exploring Baroque symphonies after a live orchestral performance.",
+      "new_evidence": [
+        0,
+        2,
+        12
+      ],
+      "allowed_modification_scope": "Add/refine Baroque interest; do not erase classical symphonies or 1920s jazz.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Williams likes 1920s jazz for its historical and cultural significance.",
+          2,
+          10
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 3,
+      "point_index": 1,
+      "category": "replacement",
+      "old_proposition": "Donald works in the technology industry.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "Donald is transitioning from technology into political consulting.",
+      "new_evidence": [
+        0,
+        2
+      ],
+      "allowed_modification_scope": "Update current career direction as transitioning; do not claim an established firm yet.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Donald has 16800 USD in savings, distinct from monthly income.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 3,
+      "point_index": 3,
+      "category": "partial_attribute",
+      "old_proposition": "Donald is a senior developer at Blockchain Tech.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "Donald is moving from a senior technology role toward advising political campaigns.",
+      "new_evidence": [
+        0,
+        2,
+        12
+      ],
+      "allowed_modification_scope": "Update role direction; preserve technology experience; do not invent a finalized title.",
+      "interpretation_note": "Consultant title in annotation is narrowed to the direction explicitly expressed in dialogue.",
+      "extra_protections": [
+        [
+          "Donald has 16800 USD in savings, distinct from monthly income.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 3,
+      "point_index": 4,
+      "category": "replacement",
+      "old_proposition": "Donald’s monthly income is 17000 USD.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "Donald anticipates zero immediate income during the transition from a comfortable salary.",
+      "new_evidence": [
+        4,
+        6
+      ],
+      "allowed_modification_scope": "Update immediate transition income; preserve savings as a separate attribute and historical income.",
+      "interpretation_note": "Original-memory label says yuan whereas original dialogue says USD; use dialogue units. Zero is explicitly stated; no currency conversion.",
+      "extra_protections": [
+        [
+          "Donald has 16800 USD in savings, distinct from monthly income.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 3,
+      "point_index": 5,
+      "category": "partial_attribute",
+      "old_proposition": "Donald innovates technology as a senior developer and supports political causes financially.",
+      "old_evidence": [
+        [
+          1,
+          2
+        ]
+      ],
+      "expected_new_state": "Donald is transitioning toward political campaign strategy to support his relative, using technology/problem-solving experience.",
+      "new_evidence": [
+        0,
+        2,
+        12,
+        14
+      ],
+      "allowed_modification_scope": "Refine career duties/direction and motivation; preserve past experience, family goal and old historical facts.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Donald has 16800 USD in savings, distinct from monthly income.",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 4,
+      "point_index": 0,
+      "category": "replacement",
+      "old_proposition": "Donald describes his mental health as stable and normal.",
+      "old_evidence": [
+        [
+          1,
+          4
+        ]
+      ],
+      "expected_new_state": "Donald now reports stress affecting mental health due to leaving a stable tech job and income uncertainty.",
+      "new_evidence": [
+        0,
+        2,
+        10
+      ],
+      "allowed_modification_scope": "Update current mental-health description; preserve physical health and historical stable state; no diagnosis.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Donald describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 5,
+      "point_index": 4,
+      "category": "refinement",
+      "old_proposition": "Friends Sandra and Mary provide encouragement and political-strategy support.",
+      "old_evidence": [
+        [
+          1,
+          6
+        ]
+      ],
+      "expected_new_state": "MooreSandra and GonzalezMary are supporting Donald with encouragement and strategic advice throughout his career transition.",
+      "new_evidence": [
+        10
+      ],
+      "allowed_modification_scope": "Add career-transition context; keep identities, friendship and prior support.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Donald describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 6,
+      "point_index": 1,
+      "category": "refinement",
+      "old_proposition": "Sandra and Mary provide encouragement and political-strategy support to Donald.",
+      "old_evidence": [
+        [
+          1,
+          6
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "expected_new_state": "Donald plans to leverage his network, including Sandra and Mary, to secure initial clients for his newly launching consulting firm.",
+      "new_evidence": [
+        0
+      ],
+      "allowed_modification_scope": "Add client-acquisition plan and network application; preserve friendship and support; do not assert clients already secured.",
+      "interpretation_note": "",
+      "extra_protections": [
+        [
+          "Donald describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 7,
+      "point_index": 6,
+      "category": "refinement",
+      "old_proposition": "Donald is excited about launching his political consulting firm and intends to secure initial clients.",
+      "old_evidence": [
+        [
+          6,
+          0
+        ]
+      ],
+      "expected_new_state": "Donald feels achievement and relief because his consulting firm has now secured initial clients.",
+      "new_evidence": [
+        0
+      ],
+      "allowed_modification_scope": "Refine launch-stage enthusiasm with initial-client milestone and relief; preserve the launch history and do not infer income amounts.",
+      "interpretation_note": "A new observed milestone; not just a repeated stress-management intention.",
+      "extra_protections": [
+        [
+          "Donald describes his physical condition as normal with no chronic diseases.",
+          1,
+          4
+        ]
+      ]
+    }
+  ],
+  "candidate_protections": {
+    "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f": [
+      [
+        "Martin’s highest education is Bachelor in Public Health.",
+        0,
+        4
+      ],
+      [
+        "Martin’s father is a retired doctor.",
+        0,
+        8
+      ]
+    ],
+    "1b846c59-456e-9550-dffd-4d23f1eca81f": [
+      [
+        "Williams’s highest education is Bachelor in Film Studies.",
+        0,
+        4
+      ],
+      [
+        "Williams’s father is a retired history professor.",
+        0,
+        8
+      ]
+    ],
+    "348492a7-cfe4-ee1d-73c3-c276d6ba8277": [
+      [
+        "Donald’s highest education is Master in Political Science.",
+        0,
+        4
+      ],
+      [
+        "Donald has two children.",
+        0,
+        8
+      ]
+    ]
+  },
+  "insufficient_evidence": [
+    {
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "session_index": 3,
+      "point_index": 0,
+      "reason": "旧标注声称此前已考虑换工作；首个换工作表述实际出现在本目标会话。更早会话只有工作压力，不能证明旧的换工作命题。",
+      "searched_prior_sessions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 4,
+      "point_index": 1,
+      "reason": "早期原话收入75000 USD；目标会话仅说increased income，未给90000；original_memories还存在yuan单位冲突。",
+      "searched_prior_sessions": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "session_index": 4,
+      "point_index": 2,
+      "reason": "早期原话储蓄207000 USD；目标会话未明确250000的新储蓄值。",
+      "searched_prior_sessions": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 3,
+      "point_index": 0,
+      "reason": "transitioning from employed to a new role没有明确的新雇佣状态；职业转向不能直接推定失业。",
+      "searched_prior_sessions": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "session_index": 6,
+      "point_index": 3,
+      "reason": "当前用户原话只说stress management；meditation只由助手建议/归因，用户没有明确确认。不能作为用户已探索冥想的证据。",
+      "searched_prior_sessions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

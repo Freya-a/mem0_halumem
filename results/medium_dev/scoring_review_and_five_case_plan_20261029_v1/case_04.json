@@ -1,0 +1,139 @@
+{
+  "number": 4,
+  "id": "update_1b846c59-456e-9550-dffd-4d23f1eca81f_s009_m004",
+  "kind": "update",
+  "automatic_label": "Omission",
+  "selection_sha256": "00dafc4903645a72caefcc20694e22498a6201995110a6e6c5d08c7c9a90dee2",
+  "decision_llm_assisted": "存疑",
+  "review_rationale": "检索表达了对同事朋友的感激，但没有明确说他们促进了成功；这一缺失可以支持遗漏。评分理由又称主语被误指为 user、全名缺失即不匹配，忽略这些都是同用户隔离记忆，该理由无充分依据。",
+  "caveat": "分类可能合理，但理由混入不成立的主体推断；用户原话是否充分支持“促成成功”也需核对。",
+  "source": {
+    "uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session_index_zero_based": 9,
+    "session_ordinal_one_based": 10,
+    "memory_point_index_zero_based": 4,
+    "memory_point": {
+      "index": 5,
+      "memory_content": "Williams Daniel expressed gratitude for the support from colleagues and friends, acknowledging their role in his success.",
+      "memory_type": "Relationship Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Williams expressed gratitude towards colleagues and friends for their support during the film project."
+      ],
+      "timestamp": "Jun 15, 2026, 23:42:56",
+      "importance": 0.75
+    },
+    "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_010/after.json",
+    "snapshot_sha256": "34d00a1ec2c01cf039d54864fc7ea247f325c85011562e7c8089d18637bf1fc6",
+    "retrieval_status": "not_recorded_in_original_run"
+  },
+  "session_start": "Jun 15, 2026, 22:16:26",
+  "session_end": "Jun 15, 2026, 23:42:56",
+  "source_dialogue_highlights": [
+    {
+      "session_index_zero_based": 9,
+      "message_index_zero_based": 0,
+      "role": "user",
+      "content": "It's been quite a journey since my promotion at Historical Productions Ltd. The success of my last film has really opened doors for new projects. I'm eager to explore more historical themes.",
+      "timestamp": "Jun 15, 2026, 22:16:26",
+      "dialogue_turn": 0
+    },
+    {
+      "session_index_zero_based": 9,
+      "message_index_zero_based": 2,
+      "role": "user",
+      "content": "Absolutely, the backing from my professional network has been invaluable. I'm particularly grateful for Steven's expertise in set design; it really enhances the authenticity of my films.",
+      "timestamp": "Jun 15, 2026, 22:26:10",
+      "dialogue_turn": 1
+    },
+    {
+      "session_index_zero_based": 9,
+      "message_index_zero_based": 10,
+      "role": "user",
+      "content": "I'm grateful for the support from my friends and colleagues. Their encouragement keeps me motivated.",
+      "timestamp": "Jun 15, 2026, 22:42:07",
+      "dialogue_turn": 5
+    },
+    {
+      "session_index_zero_based": 9,
+      "message_index_zero_based": 24,
+      "role": "user",
+      "content": "I'm grateful for the encouragement from friends and colleagues during the film project.",
+      "timestamp": "Jun 15, 2026, 23:16:01",
+      "dialogue_turn": 12
+    }
+  ],
+  "source_full_session_input": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_010/input.json",
+  "relevant_complete_source_data_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/HaluMem/data/HaluMem-Medium.jsonl",
+  "retrieved_hits": [
+    {
+      "id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "memory": "Grateful towards colleagues like Steven and friends like Mary",
+      "timestamp": "2026-10-28T00:04:44.719134-07:00",
+      "score": 0.5949291180826024
+    },
+    {
+      "id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "memory": "Friends and colleagues are main support system",
+      "timestamp": "2026-10-28T00:01:42.040728-07:00",
+      "score": 0.5040851241924365
+    },
+    {
+      "id": "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+      "memory": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+      "timestamp": "2026-10-27T23:38:18.718370-07:00",
+      "score": 0.5036991759215265
+    },
+    {
+      "id": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "memory": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+      "timestamp": "2026-10-27T23:38:18.744569-07:00",
+      "score": 0.4896026786764677
+    },
+    {
+      "id": "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+      "memory": "Colleagues Steven and Mary are key supporters",
+      "timestamp": "2026-10-28T00:01:42.032777-07:00",
+      "score": 0.47406784929220946
+    },
+    {
+      "id": "eee03dd5-d84c-4a87-a5b0-afba59162367",
+      "memory": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+      "timestamp": "2026-10-27T23:38:18.727572-07:00",
+      "score": 0.45864655431259754
+    },
+    {
+      "id": "5f2ba8bb-6c43-4861-b93b-4b65bcdcfbff",
+      "memory": "Seeks input and collaboration from colleagues and friends for projects",
+      "timestamp": "2026-10-28T00:04:44.751713-07:00",
+      "score": 0.42673074498975005
+    },
+    {
+      "id": "798bf5f5-4eba-4500-88e6-6ee76321fe0e",
+      "memory": "Looks forward to collaborating with new colleagues bringing fresh perspectives",
+      "timestamp": "2026-10-28T00:05:51.446672-07:00",
+      "score": 0.4183373064097867
+    },
+    {
+      "id": "e2debf9c-a071-45a3-88ae-c97ebdbaad65",
+      "memory": "Believes in mutually beneficial professional relationships",
+      "timestamp": "2026-10-28T00:03:48.431019-07:00",
+      "score": 0.37151268654679226
+    },
+    {
+      "id": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "memory": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+      "timestamp": "2026-10-27T23:38:18.708401-07:00",
+      "score": 0.3686660865045007
+    }
+  ],
+  "system_response": null,
+  "official_judge_result": {
+    "reason": "The Target Memory for Update states: 'Williams Daniel expressed gratitude for the support from colleagues and friends, acknowledging their role in his success.' This introduces the full name 'Williams Daniel' and emphasizes 'acknowledging their role in his success' — a key nuance not present in the original memory. In Generated Memories, no memory mentions 'Williams Daniel'; instead, there are entries for 'WilliamsMary', 'WilliamsRichard', and 'JacksonWilliam', but none for 'Williams Daniel'. The closest is 'Grateful towards colleagues like Steven and friends like Mary' (2026-10-28T00:04:44.719134-07:00), which expresses gratitude but omits the full name 'Williams Daniel', misattributes the subject (it reads as *the user* being grateful, not *Williams Daniel* expressing gratitude), and lacks the critical clause about 'acknowledging their role in his success'. Thus, the target memory is not represented — the subject, agency, and key semantic content are all missing or misrepresented.",
+    "evaluation_result": "Omission"
+  },
+  "snapshot_sha256": "34d00a1ec2c01cf039d54864fc7ea247f325c85011562e7c8089d18637bf1fc6",
+  "snapshot_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_010/after.json",
+  "official_record_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/official_eval_development_20261029_v1/records.jsonl"
+}

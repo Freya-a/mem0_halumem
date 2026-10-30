@@ -1,0 +1,1382 @@
+[
+  {
+    "sequence": 4,
+    "time": "2026-10-28T14:37:51.931563+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Employed in the film industry",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 5,
+    "time": "2026-10-28T14:37:51.934131+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Employed in the film industry",
+    "candidates": [
+      {
+        "id": "7a85fc34-7cea-4f18-9a00-c03c7ec689c4",
+        "version": 0,
+        "score": 0.4184947221040779,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Major is Film Studies",
+          "hash": "775ec194c306e29cb4ce273994ad9b61",
+          "created_at": "2026-10-27T23:37:45.766404-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.39041248633094794,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.36694001436473,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.28995230367931013,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.24619932929471985,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0025727920001372695
+  },
+  {
+    "sequence": 6,
+    "time": "2026-10-28T14:37:52.134010+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Works at Historical Productions Ltd. as a Director",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 7,
+    "time": "2026-10-28T14:37:52.135040+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Works at Historical Productions Ltd. as a Director",
+    "candidates": [
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.5438741171624999,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.5022032815591452,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.37504582119809865,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "version": 0,
+        "score": 0.33518871049764,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "created_at": "2026-10-27T23:37:45.818215-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.2918774592200385,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0010368999792262912
+  },
+  {
+    "sequence": 8,
+    "time": "2026-10-28T14:37:52.393997+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Monthly income is 75000 USD",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 9,
+    "time": "2026-10-28T14:37:52.395021+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Monthly income is 75000 USD",
+    "candidates": [
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.36613902065122694,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.3267333497120788,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+        "version": 0,
+        "score": 0.3090144069119768,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Date of birth is 1984-06-16",
+          "hash": "4485226ee743c7ac03a3bd97b325a175",
+          "created_at": "2026-10-27T23:37:45.731598-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.3001495710517253,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.2826487689626502,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0010318419663235545
+  },
+  {
+    "sequence": 10,
+    "time": "2026-10-28T14:37:52.630903+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Has 207000 USD in savings",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 11,
+    "time": "2026-10-28T14:37:52.631905+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Has 207000 USD in savings",
+    "candidates": [
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.28665787611716076,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.2779767621136857,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+        "version": 0,
+        "score": 0.26777275343667634,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Date of birth is 1984-06-16",
+          "hash": "4485226ee743c7ac03a3bd97b325a175",
+          "created_at": "2026-10-27T23:37:45.731598-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.26055434463172766,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.2526423478839295,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.00100845901761204
+  },
+  {
+    "sequence": 12,
+    "time": "2026-10-28T14:37:52.811002+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Meticulous director focused on historical accuracy",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 13,
+    "time": "2026-10-28T14:37:52.811996+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Meticulous director focused on historical accuracy",
+    "candidates": [
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.5823661004882514,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.5235280983958145,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.4086383651142259,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.3065327234869469,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.2980825086908934,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.000998360977973789
+  },
+  {
+    "sequence": 14,
+    "time": "2026-10-28T14:37:52.952875+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Collaborates with set dressers to create period settings",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 15,
+    "time": "2026-10-28T14:37:52.953896+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Collaborates with set dressers to create period settings",
+    "candidates": [
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.33965035122631015,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "version": 0,
+        "score": 0.3305995028844082,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "created_at": "2026-10-27T23:37:45.818215-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.29695042999181853,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.28864788421465953,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+        "version": 0,
+        "score": 0.28813221915735254,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Date of birth is 1984-06-16",
+          "hash": "4485226ee743c7ac03a3bd97b325a175",
+          "created_at": "2026-10-27T23:37:45.731598-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001027293037623167
+  },
+  {
+    "sequence": 16,
+    "time": "2026-10-28T14:37:53.168766+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Physically healthy with no chronic diseases",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 17,
+    "time": "2026-10-28T14:37:53.169763+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Physically healthy with no chronic diseases",
+    "candidates": [
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.3778082546250835,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.3399770301865745,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.29974843737651585,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.2882042694047832,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+        "version": 0,
+        "score": 0.26115590790506626,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Gender is Male",
+          "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+          "created_at": "2026-10-27T23:37:45.722866-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0010050159762613475
+  },
+  {
+    "sequence": 18,
+    "time": "2026-10-28T14:37:53.323090+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Regularly exercises and maintains a balanced diet",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 19,
+    "time": "2026-10-28T14:37:53.324123+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Regularly exercises and maintains a balanced diet",
+    "candidates": [
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.3344841708699227,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+        "version": 0,
+        "score": 0.2988274788895823,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Aims to win multiple international awards",
+          "hash": "8f3572e412c8820af15d3bd63a64dd5e",
+          "created_at": "2026-10-27T23:37:45.846255-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.29541647094309975,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.23969300635854934,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.23490871918000966,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0010400149622000754
+  },
+  {
+    "sequence": 20,
+    "time": "2026-10-28T14:37:53.467415+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Experiences stress due to historical accuracy demands and tight production schedules",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 21,
+    "time": "2026-10-28T14:37:53.468594+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Experiences stress due to historical accuracy demands and tight production schedules",
+    "candidates": [
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.4194498523205963,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.4072185853031345,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.38465489026723904,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.312025556356735,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.2967240233560064,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001185486966278404
+  },
+  {
+    "sequence": 22,
+    "time": "2026-10-28T14:37:53.629643+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "No diagnosed mental health issues",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 23,
+    "time": "2026-10-28T14:37:53.630590+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "No diagnosed mental health issues",
+    "candidates": [
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.31166714438057475,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "322dffcf-4884-43fa-a185-718600a36cdc",
+        "version": 0,
+        "score": 0.28978754654983196,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Both parents are alive and married",
+          "hash": "ee87350cae8c9478b093bbed466cd266",
+          "created_at": "2026-10-27T23:37:45.792611-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+        "version": 0,
+        "score": 0.27564405407564313,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Gender is Male",
+          "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+          "created_at": "2026-10-27T23:37:45.722866-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "version": 0,
+        "score": 0.25748151758384363,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "hash": "1a2e41bd1f01283ba852dcf2c6503b0b",
+          "created_at": "2026-10-27T23:37:45.784076-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.2336545130160444,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0009521310566924512
+  },
+  {
+    "sequence": 24,
+    "time": "2026-10-28T14:37:53.784784+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 25,
+    "time": "2026-10-28T14:37:53.785669+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+    "candidates": [
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.44979931153904174,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.42041360207882517,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "version": 0,
+        "score": 0.38785149074426695,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "created_at": "2026-10-27T23:37:45.818215-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.3283233143515131,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.30434897094502983,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.000892097014002502
+  },
+  {
+    "sequence": 26,
+    "time": "2026-10-28T14:37:53.941642+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 27,
+    "time": "2026-10-28T14:37:53.942613+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+    "candidates": [
+      {
+        "id": "76b41491-9d4b-4443-8877-0c6227a79aba",
+        "version": 0,
+        "score": 0.4765031568722041,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Name is Williams Daniel",
+          "hash": "ff98e457e19c1c69e1724d277d1cf4f3",
+          "created_at": "2026-10-27T23:37:45.714054-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "d2a36010-9586-465e-9638-0913198e57f6",
+        "version": 0,
+        "score": 0.36949352372306754,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Lives in Philadelphia",
+          "hash": "3b37bfd368a20af77a73207159e9cafb",
+          "created_at": "2026-10-27T23:37:45.748970-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.3462334266270545,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "27c1b916-1b18-4b7b-aa28-5ec74ccce5ef",
+        "version": 0,
+        "score": 0.34053199241122445,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Date of birth is 1984-06-16",
+          "hash": "4485226ee743c7ac03a3bd97b325a175",
+          "created_at": "2026-10-27T23:37:45.731598-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "7797e705-4fc0-4424-8b0c-8db4f5b6bb93",
+        "version": 0,
+        "score": 0.3181945552498042,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Gender is Male",
+          "hash": "2fbabad842a3e9f2595e6b9ad4730277",
+          "created_at": "2026-10-27T23:37:45.722866-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0009778759558685124
+  },
+  {
+    "sequence": 28,
+    "time": "2026-10-28T14:37:54.059598+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 29,
+    "time": "2026-10-28T14:37:54.061579+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Friend: WilliamsRichard (fellow director, inspires innovative storytelling)",
+    "candidates": [
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.38952800216238015,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "76b41491-9d4b-4443-8877-0c6227a79aba",
+        "version": 0,
+        "score": 0.3832726168145393,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Name is Williams Daniel",
+          "hash": "ff98e457e19c1c69e1724d277d1cf4f3",
+          "created_at": "2026-10-27T23:37:45.714054-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.319947401289946,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+        "version": 0,
+        "score": 0.31524030093150107,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "hash": "2e255003ed07336f27961d00434f2eec",
+          "created_at": "2026-10-27T23:37:45.863036-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.28880678310219665,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001986652030609548
+  },
+  {
+    "sequence": 30,
+    "time": "2026-10-28T14:37:54.249586+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Friend: MartinezKaren (historian, provides insights on historical contexts)",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 31,
+    "time": "2026-10-28T14:37:54.250567+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Friend: MartinezKaren (historian, provides insights on historical contexts)",
+    "candidates": [
+      {
+        "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "version": 0,
+        "score": 0.43014006505676683,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "created_at": "2026-10-27T23:37:45.818215-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.41941384375204205,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+        "version": 0,
+        "score": 0.3188895148111479,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Plans to direct 10 award-winning historical films",
+          "hash": "de66194b12fc12b9f12a90c114600a86",
+          "created_at": "2026-10-27T23:37:45.854637-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "version": 0,
+        "score": 0.3028874050281351,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Motivated by family background in history and passion for storytelling",
+          "hash": "226c429688671f06c935f273a9f65902",
+          "created_at": "2026-10-27T23:37:45.871763-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "84ac51ff-a2a7-419f-a7e3-83b342ed1fc3",
+        "version": 0,
+        "score": 0.290490735168343,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Age is 41",
+          "hash": "21bd6eb283acb53f7da7f84e1e82e611",
+          "created_at": "2026-10-27T23:37:45.740128-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.0009877189877443016
+  },
+  {
+    "sequence": 32,
+    "time": "2026-10-28T14:37:54.371493+08:00",
+    "phase": "session_002",
+    "kind": "recall_input",
+    "query": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+    "limit": 5,
+    "filters": {
+      "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+    },
+    "vector_dimensions": 1024
+  },
+  {
+    "sequence": 33,
+    "time": "2026-10-28T14:37:54.372498+08:00",
+    "phase": "session_002",
+    "kind": "recall_output",
+    "query": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+    "candidates": [
+      {
+        "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "version": 0,
+        "score": 0.334774966975028,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "created_at": "2026-10-27T23:37:45.818215-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "version": 0,
+        "score": 0.33267333776565755,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Family shares a passion for history and detail",
+          "hash": "c7c2ab35b78317b0945b2842bfe2c942",
+          "created_at": "2026-10-27T23:37:45.826973-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "76b41491-9d4b-4443-8877-0c6227a79aba",
+        "version": 0,
+        "score": 0.3202014268393869,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Name is Williams Daniel",
+          "hash": "ff98e457e19c1c69e1724d277d1cf4f3",
+          "created_at": "2026-10-27T23:37:45.714054-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+        "version": 0,
+        "score": 0.30616405130751717,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Career goal is to become a renowned director known for historically accurate films",
+          "hash": "21eadbc04aaa60ddd412c8516dd2dcf3",
+          "created_at": "2026-10-27T23:37:45.837032-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      },
+      {
+        "id": "676be8c0-c989-4581-9251-e21c493a318a",
+        "version": 0,
+        "score": 0.3025980204687196,
+        "payload": {
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+          "data": "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+          "hash": "1a2e41bd1f01283ba852dcf2c6503b0b",
+          "created_at": "2026-10-27T23:37:45.784076-07:00"
+        },
+        "vector": null,
+        "shard_key": null,
+        "order_value": null
+      }
+    ],
+    "elapsed_seconds": 0.001010462990961969
+  }
+]

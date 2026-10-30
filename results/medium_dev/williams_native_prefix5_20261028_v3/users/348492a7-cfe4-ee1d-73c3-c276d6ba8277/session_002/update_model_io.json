@@ -1,0 +1,305 @@
+[
+  {
+    "sequence": 30,
+    "time": "2026-10-28T15:15:42.831258+08:00",
+    "phase": "session_002",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Actively engaged in political discussions'}, {'id': '1', 'text': 'Age is 45'}, {'id': '2', 'text': 'Lives in Chicago'}, {'id': '3', 'text': 'Highest education level is Master'}, {'id': '4', 'text': 'Has two children'}, {'id': '5', 'text': 'Date of birth is 1980-08-12'}, {'id': '6', 'text': 'Life goal is to support the political career of a close relative'}, {'id': '7', 'text': 'Partner is supportive and shares similar values of family loyalty'}, {'id': '8', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive'}, {'id': '9', 'text': 'Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy'}, {'id': '10', 'text': 'Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics'}, {'id': '11', 'text': 'Child1 is a high school student with interest in political science'}, {'id': '12', 'text': 'Both parents are alive'}, {'id': '13', 'text': 'Parents are married'}, {'id': '14', 'text': 'Child1 was born on 2005-08-12'}, {'id': '15', 'text': 'Gender is Male'}, {'id': '16', 'text': 'Child2 is an aspiring artist who enjoys family discussions on current events'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Employed in the technology industry', 'Works at Blockchain Tech as a senior developer', 'Monthly income is 17000 USD', 'Has 16800 USD in savings', 'Role involves innovating new solutions and ensuring technology remains cutting-edge', 'Frequently contributes financially to political campaigns and causes supporting a specific politician', 'Physical condition is normal with no chronic diseases', 'Mental health is stable and normal with no mental health issues', 'Maintains physical and mental health through activity, work, and political engagement', 'Supporting the politician gives a sense of purpose and fulfillment', 'MooreSandra is a friend who shares political views and supports the same politician', 'GonzalezMary is a close friend who discusses political strategies', 'BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "282c758f-e845-4896-942b-18d70892c22e",
+      "1": "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "2": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+      "3": "257fca96-f3dd-49db-8805-fa8bad67dfe0",
+      "4": "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "5": "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "6": "913bef92-248b-416b-ba35-052af3a4e960",
+      "7": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "8": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "9": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "10": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "11": "9e9c1f02-f357-4ebb-abfc-0ea565ffe5d6",
+      "12": "3b2db9c7-a00c-4f43-9ddb-f7650c1ee8bb",
+      "13": "7534d06b-35f1-48ee-9b36-d214a636dbdf",
+      "14": "cbbf5967-9a76-44eb-84db-da242ac39009",
+      "15": "57255411-7097-41af-85ec-cab15e953bd3",
+      "16": "0777e438-45e1-41a3-b610-324b42e21e22"
+    },
+    "native_new_facts": [
+      "Employed in the technology industry",
+      "Works at Blockchain Tech as a senior developer",
+      "Monthly income is 17000 USD",
+      "Has 16800 USD in savings",
+      "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+      "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+      "Physical condition is normal with no chronic diseases",
+      "Mental health is stable and normal with no mental health issues",
+      "Maintains physical and mental health through activity, work, and political engagement",
+      "Supporting the politician gives a sense of purpose and fulfillment",
+      "MooreSandra is a friend who shares political views and supports the same politician",
+      "GonzalezMary is a close friend who discusses political strategies",
+      "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Actively engaged in political discussions"
+      },
+      {
+        "id": "1",
+        "text": "Age is 45"
+      },
+      {
+        "id": "2",
+        "text": "Lives in Chicago"
+      },
+      {
+        "id": "3",
+        "text": "Highest education level is Master"
+      },
+      {
+        "id": "4",
+        "text": "Has two children"
+      },
+      {
+        "id": "5",
+        "text": "Date of birth is 1980-08-12"
+      },
+      {
+        "id": "6",
+        "text": "Life goal is to support the political career of a close relative"
+      },
+      {
+        "id": "7",
+        "text": "Partner is supportive and shares similar values of family loyalty"
+      },
+      {
+        "id": "8",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive"
+      },
+      {
+        "id": "9",
+        "text": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy"
+      },
+      {
+        "id": "10",
+        "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+      },
+      {
+        "id": "11",
+        "text": "Child1 is a high school student with interest in political science"
+      },
+      {
+        "id": "12",
+        "text": "Both parents are alive"
+      },
+      {
+        "id": "13",
+        "text": "Parents are married"
+      },
+      {
+        "id": "14",
+        "text": "Child1 was born on 2005-08-12"
+      },
+      {
+        "id": "15",
+        "text": "Gender is Male"
+      },
+      {
+        "id": "16",
+        "text": "Child2 is an aspiring artist who enjoys family discussions on current events"
+      }
+    ]
+  },
+  {
+    "sequence": 31,
+    "time": "2026-10-28T15:16:06.651666+08:00",
+    "phase": "session_002",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Actively engaged in political discussions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Age is 45\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Lives in Chicago\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Highest education level is Master\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Has two children\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Date of birth is 1980-08-12\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Life goal is to support the political career of a close relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Partner is supportive and shares similar values of family loyalty\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Child1 is a high school student with interest in political science\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Both parents are alive\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Parents are married\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Child1 was born on 2005-08-12\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Gender is Male\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Child2 is an aspiring artist who enjoys family discussions on current events\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Employed in the technology industry\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Works at Blockchain Tech as a senior developer\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Monthly income is 17000 USD\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Has 16800 USD in savings\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Role involves innovating new solutions and ensuring technology remains cutting-edge\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Frequently contributes financially to political campaigns and causes supporting a specific politician\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Physical condition is normal with no chronic diseases\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Mental health is stable and normal with no mental health issues\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Maintains physical and mental health through activity, work, and political engagement\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Supporting the politician gives a sense of purpose and fulfillment\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"GonzalezMary is a close friend who discusses political strategies\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Actively engaged in political discussions",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Age is 45",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Lives in Chicago",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Highest education level is Master",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Has two children",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Date of birth is 1980-08-12",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Life goal is to support the political career of a close relative",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Partner is supportive and shares similar values of family loyalty",
+          "event": "NONE"
+        },
+        {
+          "id": "8",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive",
+          "event": "NONE"
+        },
+        {
+          "id": "9",
+          "text": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+          "event": "NONE"
+        },
+        {
+          "id": "10",
+          "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Child1 is a high school student with interest in political science",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Both parents are alive",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Parents are married",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Child1 was born on 2005-08-12",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Gender is Male",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Child2 is an aspiring artist who enjoys family discussions on current events",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Employed in the technology industry",
+          "event": "ADD"
+        },
+        {
+          "id": "18",
+          "text": "Works at Blockchain Tech as a senior developer",
+          "event": "ADD"
+        },
+        {
+          "id": "19",
+          "text": "Monthly income is 17000 USD",
+          "event": "ADD"
+        },
+        {
+          "id": "20",
+          "text": "Has 16800 USD in savings",
+          "event": "ADD"
+        },
+        {
+          "id": "21",
+          "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+          "event": "ADD"
+        },
+        {
+          "id": "22",
+          "text": "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+          "event": "ADD"
+        },
+        {
+          "id": "23",
+          "text": "Physical condition is normal with no chronic diseases",
+          "event": "ADD"
+        },
+        {
+          "id": "24",
+          "text": "Mental health is stable and normal with no mental health issues",
+          "event": "ADD"
+        },
+        {
+          "id": "25",
+          "text": "Maintains physical and mental health through activity, work, and political engagement",
+          "event": "ADD"
+        },
+        {
+          "id": "26",
+          "text": "Supporting the politician gives a sense of purpose and fulfillment",
+          "event": "ADD"
+        },
+        {
+          "id": "27",
+          "text": "MooreSandra is a friend who shares political views and supports the same politician",
+          "event": "ADD"
+        },
+        {
+          "id": "28",
+          "text": "GonzalezMary is a close friend who discusses political strategies",
+          "event": "ADD"
+        },
+        {
+          "id": "29",
+          "text": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "282c758f-e845-4896-942b-18d70892c22e",
+      "1": "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "2": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+      "3": "257fca96-f3dd-49db-8805-fa8bad67dfe0",
+      "4": "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "5": "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "6": "913bef92-248b-416b-ba35-052af3a4e960",
+      "7": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "8": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "9": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "10": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "11": "9e9c1f02-f357-4ebb-abfc-0ea565ffe5d6",
+      "12": "3b2db9c7-a00c-4f43-9ddb-f7650c1ee8bb",
+      "13": "7534d06b-35f1-48ee-9b36-d214a636dbdf",
+      "14": "cbbf5967-9a76-44eb-84db-da242ac39009",
+      "15": "57255411-7097-41af-85ec-cab15e953bd3",
+      "16": "0777e438-45e1-41a3-b610-324b42e21e22"
+    },
+    "elapsed_seconds": 23.82000451697968
+  }
+]

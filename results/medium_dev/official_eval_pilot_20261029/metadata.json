@@ -1,0 +1,28 @@
+{
+  "run": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3",
+  "snapshot": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_004/after.json",
+  "snapshot_sha256": "3b796dee39609d8a939054b5eb6bcbd18935f2a2c767381343975640a677f34e",
+  "uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+  "ordinal_one_based": 4,
+  "source_session_index_zero_based": 3,
+  "session_end": "Jan 06, 2026, 08:02:28",
+  "update_source_memory_index": 2,
+  "qa_source_question_index_zero_based": 0,
+  "embedding_model": "text-embedding-v4",
+  "embedding_dimensions": 1024,
+  "answer_and_judge_model": "qwen-plus",
+  "temperature": 0.0,
+  "max_tokens": 16384,
+  "timeout_seconds": 180,
+  "sdk_retries": 0,
+  "search_limits": {
+    "update": 10,
+    "qa": 20
+  },
+  "notes": [
+    "使用每会话after快照和本地Qdrant cosine重建检索；非原运行期间保存的检索。",
+    "快照created_at为实际执行时间，不是对话时间；保持官方上下文格式并披露限制。",
+    "qwen-plus作为回答模型和评分模型；相对于论文及托管Mem0流程是协议调整。",
+    "无原始库写入或会话重放。"
+  ]
+}

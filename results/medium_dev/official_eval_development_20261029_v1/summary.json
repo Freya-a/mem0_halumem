@@ -1,0 +1,313 @@
+{
+  "metrics": {
+    "update": {
+      "candidates": 56,
+      "retrieved": 56,
+      "empty": 0,
+      "retrieval_failed_or_unknown": 0,
+      "scoring_attempted": 56,
+      "scoring_completed": 56,
+      "official_all": 56,
+      "valid": 55,
+      "counts": {
+        "Correct": 13,
+        "Hallucination": 0,
+        "Omission": 42,
+        "Other": 0
+      },
+      "ratio_all": {
+        "Correct": 0.23214285714285715,
+        "Hallucination": 0.0,
+        "Omission": 0.75,
+        "Other": 0.0
+      },
+      "ratio_valid": {
+        "Correct": 0.23636363636363636,
+        "Hallucination": 0.0,
+        "Omission": 0.7636363636363637,
+        "Other": 0.0
+      },
+      "embedding_attempted": 56,
+      "retrieval_attempted": 56,
+      "answer_generated": null,
+      "judge_api_attempted": 56,
+      "judge_response_received": 56,
+      "invalid_judge_label": 0,
+      "item_with_error_or_uncertain": 1,
+      "unresolved_without_judgment": 0
+    },
+    "qa": {
+      "candidates": 75,
+      "retrieved": 75,
+      "empty": 0,
+      "retrieval_failed_or_unknown": 0,
+      "scoring_attempted": 75,
+      "scoring_completed": 75,
+      "official_all": 75,
+      "valid": 75,
+      "counts": {
+        "Correct": 42,
+        "Hallucination": 25,
+        "Omission": 8
+      },
+      "ratio_all": {
+        "Correct": 0.56,
+        "Hallucination": 0.3333333333333333,
+        "Omission": 0.10666666666666667
+      },
+      "ratio_valid": {
+        "Correct": 0.56,
+        "Hallucination": 0.3333333333333333,
+        "Omission": 0.10666666666666667
+      },
+      "embedding_attempted": 75,
+      "retrieval_attempted": 75,
+      "answer_generated": 75,
+      "judge_api_attempted": 75,
+      "judge_response_received": 75,
+      "invalid_judge_label": 0,
+      "item_with_error_or_uncertain": 0,
+      "unresolved_without_judgment": 0,
+      "actual_official_input_records_with_answer": 75
+    }
+  },
+  "calls": {
+    "development": {
+      "attempts": 332,
+      "successful": 332,
+      "errors": 0,
+      "unknown_started": 0,
+      "by_stage": {
+        "embedding": {
+          "attempts": 129,
+          "success": 129,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 2683,
+          "completion_tokens": 0,
+          "total_tokens": 2683
+        },
+        "judge": {
+          "attempts": 129,
+          "success": 129,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 118115,
+          "completion_tokens": 26092,
+          "total_tokens": 144207
+        },
+        "answer": {
+          "attempts": 74,
+          "success": 74,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 109063,
+          "completion_tokens": 527,
+          "total_tokens": 109590
+        }
+      },
+      "tokens": {
+        "prompt_tokens": 229861,
+        "completion_tokens": 26619,
+        "total_tokens": 256480
+      },
+      "usage_missing": 0,
+      "fee": null
+    },
+    "development_retry": {
+      "attempts": 1,
+      "successful": 1,
+      "errors": 0,
+      "unknown_started": 0,
+      "by_stage": {
+        "judge": {
+          "attempts": 1,
+          "success": 1,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 950,
+          "completion_tokens": 317,
+          "total_tokens": 1267
+        }
+      },
+      "tokens": {
+        "prompt_tokens": 950,
+        "completion_tokens": 317,
+        "total_tokens": 1267
+      },
+      "usage_missing": 0,
+      "fee": null
+    },
+    "pilot": {
+      "attempts": 5,
+      "successful": 5,
+      "errors": 0,
+      "unknown_started": 0,
+      "by_stage": {
+        "embedding": {
+          "attempts": 2,
+          "success": 2,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 42,
+          "completion_tokens": 0,
+          "total_tokens": 42
+        },
+        "answer": {
+          "attempts": 1,
+          "success": 1,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 1514,
+          "completion_tokens": 15,
+          "total_tokens": 1529
+        },
+        "judge": {
+          "attempts": 2,
+          "success": 2,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 1879,
+          "completion_tokens": 440,
+          "total_tokens": 2319
+        }
+      },
+      "tokens": {
+        "prompt_tokens": 3435,
+        "completion_tokens": 455,
+        "total_tokens": 3890
+      },
+      "usage_missing": 0,
+      "fee": null
+    },
+    "combined": {
+      "attempts": 338,
+      "successful": 338,
+      "errors": 0,
+      "unknown_started": 0,
+      "by_stage": {
+        "embedding": {
+          "attempts": 131,
+          "success": 131,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 2725,
+          "completion_tokens": 0,
+          "total_tokens": 2725
+        },
+        "answer": {
+          "attempts": 75,
+          "success": 75,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 110577,
+          "completion_tokens": 542,
+          "total_tokens": 111119
+        },
+        "judge": {
+          "attempts": 132,
+          "success": 132,
+          "errors": 0,
+          "started": 0,
+          "prompt_tokens": 120944,
+          "completion_tokens": 26849,
+          "total_tokens": 147793
+        }
+      },
+      "tokens": {
+        "prompt_tokens": 234246,
+        "completion_tokens": 27391,
+        "total_tokens": 261637
+      },
+      "usage_missing": 0,
+      "fee": null
+    }
+  },
+  "latency": {
+    "development:embedding": {
+      "n": 129,
+      "sum_seconds": 45.5288063812186,
+      "mean_seconds": 0.35293648357533797,
+      "median_seconds": 0.2155840530176647,
+      "p95_seconds": 0.9879905430134386,
+      "max_seconds": 1.9907238919986412
+    },
+    "development:answer": {
+      "n": 74,
+      "sum_seconds": 43.326665514847264,
+      "mean_seconds": 0.5854954799303684,
+      "median_seconds": 0.509639577998314,
+      "p95_seconds": 1.0388877380173653,
+      "max_seconds": 1.500133299967274
+    },
+    "development:judge": {
+      "n": 129,
+      "sum_seconds": 634.895378767862,
+      "mean_seconds": 4.921669602851643,
+      "median_seconds": 4.712911651004106,
+      "p95_seconds": 7.465450000949204,
+      "max_seconds": 9.301341303042136
+    },
+    "development_retry:judge": {
+      "n": 1,
+      "sum_seconds": 7.856740790011827,
+      "mean_seconds": 7.856740790011827,
+      "median_seconds": 7.856740790011827,
+      "p95_seconds": 7.856740790011827,
+      "max_seconds": 7.856740790011827
+    },
+    "pilot:embedding": {
+      "n": 2,
+      "sum_seconds": 1.268,
+      "mean_seconds": 0.634,
+      "median_seconds": 0.634,
+      "p95_seconds": 0.974,
+      "max_seconds": 0.974
+    },
+    "pilot:answer": {
+      "n": 1,
+      "sum_seconds": 1.336,
+      "mean_seconds": 1.336,
+      "median_seconds": 1.336,
+      "p95_seconds": 1.336,
+      "max_seconds": 1.336
+    },
+    "pilot:judge": {
+      "n": 2,
+      "sum_seconds": 10.68,
+      "mean_seconds": 5.34,
+      "median_seconds": 5.34,
+      "p95_seconds": 5.609,
+      "max_seconds": 5.609
+    },
+    "combined:embedding": {
+      "n": 131,
+      "sum_seconds": 46.796806381218595,
+      "mean_seconds": 0.3572275296276229,
+      "median_seconds": 0.21791234600823373,
+      "p95_seconds": 0.9879905430134386,
+      "max_seconds": 1.9907238919986412
+    },
+    "combined:answer": {
+      "n": 75,
+      "sum_seconds": 44.66266551484726,
+      "mean_seconds": 0.5955022068646302,
+      "median_seconds": 0.5112406080006622,
+      "p95_seconds": 1.1789574569556862,
+      "max_seconds": 1.500133299967274
+    },
+    "combined:judge": {
+      "n": 132,
+      "sum_seconds": 653.4321195578739,
+      "mean_seconds": 4.950243329983892,
+      "median_seconds": 4.785987584997201,
+      "p95_seconds": 7.621921006997582,
+      "max_seconds": 9.301341303042136
+    }
+  },
+  "manual_review_count": 76,
+  "empty_retrieval_count": 0,
+  "error_count": 1,
+  "historical_json_parse_failures": 2,
+  "timestamp_utc": "2026-10-29T01:53:02.941141Z"
+}

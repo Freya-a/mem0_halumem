@@ -1,0 +1,80 @@
+{
+  "status": "verified_complete_prefix_with_recorded_native_anomalies",
+  "sessions": [
+    {
+      "ordinal": 1,
+      "original_index": 0,
+      "messages": 12,
+      "before": 0,
+      "after": 19,
+      "operations": {
+        "ADD": 19
+      }
+    },
+    {
+      "ordinal": 2,
+      "original_index": 1,
+      "messages": 8,
+      "before": 19,
+      "after": 33,
+      "operations": {
+        "ADD": 14
+      }
+    },
+    {
+      "ordinal": 3,
+      "original_index": 2,
+      "messages": 32,
+      "before": 33,
+      "after": 64,
+      "operations": {
+        "ADD": 31
+      }
+    },
+    {
+      "ordinal": 4,
+      "original_index": 3,
+      "messages": 38,
+      "before": 64,
+      "after": 72,
+      "operations": {
+        "UPDATE": 4,
+        "ADD": 8
+      }
+    },
+    {
+      "ordinal": 5,
+      "original_index": 4,
+      "messages": 60,
+      "before": 72,
+      "after": 84,
+      "operations": {
+        "UPDATE": 14,
+        "ADD": 12
+      }
+    }
+  ],
+  "model_api_calls": 121,
+  "native_anomalies": [
+    {
+      "ordinal": 2,
+      "details": {
+        "status": "native_add_returned_with_swallowed_plan_errors",
+        "errors": [
+          {
+            "time": "2026-10-28T14:38:18.662942+08:00",
+            "phase": "session_002",
+            "level": "ERROR",
+            "logger": "mem0.memory.main",
+            "message": "Error processing memory action: {'id': '19', 'text': 'Meticulous director focused on historical accuracy', 'event': 'UPDATE', 'old_memory': 'Career goal is to become a renowned director known for historically accurate films'}, Error: '19'"
+          }
+        ],
+        "policy": "Preserve native resulting state. No replay, repair, rollback, or success assertion. Strict harness rejection remains in error.json."
+      }
+    }
+  ],
+  "empty_initial_database": true,
+  "review_version": "human_review_v1_20261028",
+  "input_policy": "Exact full raw dialogue role/content only; no labels or prefilled memories",
+  "checkpoint_verified": true
+}

@@ -1,0 +1,119 @@
+Obtaining file:///Users/freya/Documents/git-folder/mem0_halumem_diagnosis/mem0_v0.1.118
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting openai<1.110.0,>=1.90.0 (from mem0ai==0.1.118)
+  Downloading openai-1.109.1-py3-none-any.whl.metadata (29 kB)
+Collecting posthog>=3.5.0 (from mem0ai==0.1.118)
+  Downloading posthog-7.75.4-py3-none-any.whl.metadata (6.0 kB)
+Collecting protobuf<6.0.0,>=5.29.0 (from mem0ai==0.1.118)
+  Downloading protobuf-5.29.6-cp38-abi3-macosx_10_9_universal2.whl.metadata (592 bytes)
+Collecting pydantic>=2.7.3 (from mem0ai==0.1.118)
+  Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Collecting pytz>=2024.1 (from mem0ai==0.1.118)
+  Downloading pytz-2026.5-py2.py3-none-any.whl.metadata (22 kB)
+Collecting qdrant-client>=1.9.1 (from mem0ai==0.1.118)
+  Downloading qdrant_client-1.20.0-py3-none-any.whl.metadata (11 kB)
+Collecting sqlalchemy>=2.0.31 (from mem0ai==0.1.118)
+  Downloading sqlalchemy-2.1.6-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.7 kB)
+Collecting anyio<5,>=3.5.0 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting distro<2,>=1.7.0 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Collecting httpx<1,>=0.23.0 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting jiter<1,>=0.4.0 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading jiter-0.17.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting sniffio (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting tqdm>4 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting typing-extensions<5,>=4.11 (from openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting idna>=2.8 (from anyio<5,>=3.5.0->openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting certifi (from httpx<1,>=0.23.0->openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->openai<1.110.0,>=1.90.0->mem0ai==0.1.118)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.7.3->mem0ai==0.1.118)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.50.1 (from pydantic>=2.7.3->mem0ai==0.1.118)
+  Downloading pydantic_core-2.50.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.5 kB)
+Collecting typing-inspection>=0.4.4 (from pydantic>=2.7.3->mem0ai==0.1.118)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting requests<3.0,>=2.7 (from posthog>=3.5.0->mem0ai==0.1.118)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting backoff>=1.10.0 (from posthog>=3.5.0->mem0ai==0.1.118)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0,>=2.7->posthog>=3.5.0->mem0ai==0.1.118)
+  Downloading charset_normalizer-3.5.2-cp311-cp311-macosx_10_9_universal2.whl.metadata (46 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0,>=2.7->posthog>=3.5.0->mem0ai==0.1.118)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting grpcio>=1.41.0 (from qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Downloading grpcio-1.84.0-cp311-cp311-macosx_11_0_universal2.whl.metadata (3.8 kB)
+Collecting numpy>=1.21 (from qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Downloading numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting portalocker<5.0,>=2.7.0 (from qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Downloading portalocker-4.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting h2<5,>=3 (from httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Downloading h2-4.4.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Using cached hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.2 (from h2<5,>=3->httpx[http2]>=0.20.0->qdrant-client>=1.9.1->mem0ai==0.1.118)
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading openai-1.109.1-py3-none-any.whl (948 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 948.6/948.6 kB 2.5 MB/s  0:00:00
+Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading jiter-0.17.0-cp311-cp311-macosx_11_0_arm64.whl (324 kB)
+Downloading protobuf-5.29.6-cp38-abi3-macosx_10_9_universal2.whl (418 kB)
+Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+Downloading pydantic_core-2.50.1-cp311-cp311-macosx_11_0_arm64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 2.6 MB/s  0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading posthog-7.75.4-py3-none-any.whl (921 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 921.4/921.4 kB 3.0 MB/s  0:00:00
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.2-cp311-cp311-macosx_10_9_universal2.whl (370 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Downloading pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Downloading qdrant_client-1.20.0-py3-none-any.whl (471 kB)
+Downloading portalocker-4.4.1-py3-none-any.whl (129 kB)
+Downloading grpcio-1.84.0-cp311-cp311-macosx_11_0_universal2.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 2.4 MB/s  0:00:05
+Downloading h2-4.4.1-py3-none-any.whl (62 kB)
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Using cached hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Downloading numpy-2.4.6-cp311-cp311-macosx_14_0_arm64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 2.1 MB/s  0:00:02
+Downloading sqlalchemy-2.1.6-cp311-cp311-macosx_11_0_arm64.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 2.4 MB/s  0:00:01
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Building wheels for collected packages: mem0ai
+  Building editable for mem0ai (pyproject.toml): started
+  Building editable for mem0ai (pyproject.toml): finished with status 'done'
+  Created wheel for mem0ai: filename=mem0ai-0.1.118-py3-none-any.whl size=11980 sha256=1abb1087833ae45de1c59de2488fa5c5b42bd91e8fed6e71c36103d3ec324b3a
+  Stored in directory: /private/var/folders/n8/xd_rww1n2mv7y_hmk5r0lqyh0000gn/T/pip-ephem-wheel-cache-6ezyecoe/wheels/51/e7/8c/8d955204c24aaf619b9cfe49b15853e65dda0977b7e35bebef
+Successfully built mem0ai
+Installing collected packages: pytz, urllib3, typing-extensions, tqdm, sniffio, protobuf, portalocker, numpy, jiter, idna, hyperframe, hpack, h11, distro, charset_normalizer, certifi, backoff, annotated-types, typing-inspection, sqlalchemy, requests, pydantic-core, httpcore, h2, grpcio, anyio, pydantic, posthog, httpx, openai, qdrant-client, mem0ai
+
+Successfully installed annotated-types-0.8.0 anyio-4.15.1 backoff-2.2.1 certifi-2026.10.19 charset_normalizer-3.5.2 distro-1.9.0 grpcio-1.84.0 h11-0.16.0 h2-4.4.1 hpack-4.2.0 httpcore-1.0.9 httpx-0.28.1 hyperframe-6.1.0 idna-3.20 jiter-0.17.0 mem0ai-0.1.118 numpy-2.4.6 openai-1.109.1 portalocker-4.4.1 posthog-7.75.4 protobuf-5.29.6 pydantic-2.14.1 pydantic-core-2.50.1 pytz-2026.5 qdrant-client-1.20.0 requests-2.34.2 sniffio-1.3.1 sqlalchemy-2.1.6 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0

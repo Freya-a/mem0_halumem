@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "case": "B",
+  "input_role_content_source_match": true,
+  "copy_files_sha256": {
+    "history.db": "028d781c67656f90cc1fbfc66f97693656b7fce37d4f7b7a0457f47fc55d9d1b",
+    "qdrant/meta.json": "1b40c90b883b4dce439b2a00e636dbbbb379fbf988219191e4a1c5039da33325",
+    "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+    "qdrant/collection/medium_dev/storage.sqlite": "caffe222de8e7964ed73439df780298d105dac2ce5e09f50140966506bc6a9a3"
+  },
+  "history_matches_previous": true,
+  "history_rows": 118,
+  "vector_verification": {
+    "ids_and_payloads_exact": true,
+    "vector_relative_tolerance": 1e-06,
+    "vector_absolute_tolerance": 1e-07,
+    "max_vector_absolute_difference": 0.0,
+    "count": 94
+  },
+  "baseline_artifact_sha256": {
+    "after.json": "c0c70ff638dd7cb39b281446e92a6b66bb4b061627d45e43dbe64c190e02af4e",
+    "actual_operations.json": "6b76fdf958c216b8c3527e2d5e572ac79593064b14d7a464e020b0417f6d72aa",
+    "full_operation_plan.json": "385e0dca2b9640b44ca047c500b801eac673e735eb4a93f205d39922f783ed63",
+    "api_calls.jsonl": "251d39356d6d6ecda7dfce2bb6b9f8b51760e293c2c1c4b41594a589ffde08d4",
+    "update_model_io.json": "e58fe37e1065a47bed92fa14ebe73862b00906aed26ef439591074daa35471f7"
+  },
+  "baseline_folder": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007",
+  "prepared_at": "2026-10-29T10:13:38.898376+08:00",
+  "model_calls": 0
+}

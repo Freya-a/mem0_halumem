@@ -1,0 +1,538 @@
+[
+  {
+    "sequence": 28,
+    "time": "2026-10-28T15:19:49.011306+08:00",
+    "phase": "session_007",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Is transitioning into political consulting'}, {'id': '1', 'text': \"Envisions a long-term career in political consulting that supports the relative's legacy\"}, {'id': '2', 'text': 'Is forming a clearer vision for a career in political consulting'}, {'id': '3', 'text': 'Has friends in the political field whom they plan to consult for advice'}, {'id': '4', 'text': 'Aims to be a key advisor in political campaigns'}, {'id': '5', 'text': 'Has a relative running a political campaign'}, {'id': '6', 'text': \"New connections are providing fresh perspectives and resources for the relative's political campaign\"}, {'id': '7', 'text': 'MooreSandra is a friend who shares political views and supports the same politician'}, {'id': '8', 'text': 'GonzalezMary is a close friend who discusses political strategies'}, {'id': '9', 'text': 'Stays connected with network by regularly attending events and maintaining communication with key contacts'}, {'id': '10', 'text': 'BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests'}, {'id': '11', 'text': 'Has shared past networking experiences that led to career success'}, {'id': '12', 'text': 'Attended political events in Chicago'}, {'id': '13', 'text': 'Attended a cultural festival in Chicago for networking purposes'}, {'id': '14', 'text': 'Lives in Chicago'}, {'id': '15', 'text': 'Does not like wearing bright neon colors because they find them too distracting and unsuitable for the serious tone of political events'}, {'id': '16', 'text': 'Actively engaged in political discussions'}, {'id': '17', 'text': \"Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign\"}, {'id': '18', 'text': 'Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights'}, {'id': '19', 'text': 'Uses data analytics to analyze voter patterns and tailor campaign strategies'}, {'id': '20', 'text': 'Adapts strategies to be more inclusive and considers diverse viewpoints'}, {'id': '21', 'text': 'Plans to attend more events and engage with individuals who provide strategic insights and resources'}, {'id': '22', 'text': 'Considers meditation and mindfulness practices effective for stress relief'}, {'id': '23', 'text': 'Maintains physical and mental health through activity, work, and political engagement'}, {'id': '24', 'text': 'Is considering adopting physical activities for stress management'}, {'id': '25', 'text': 'Mental health is stable and normal with no mental health issues'}, {'id': '26', 'text': 'Values mental health as essential to effectively supporting their relative'}, {'id': '27', 'text': 'Life goal is to support the political career of a close relative'}, {'id': '28', 'text': 'Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics'}, {'id': '29', 'text': 'Feels optimistic about the future'}, {'id': '30', 'text': 'Role involves innovating new solutions and ensuring technology remains cutting-edge'}, {'id': '31', 'text': 'Sustains optimism and clarity by focusing on motivations and positive impact'}, {'id': '32', 'text': 'Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive'}, {'id': '33', 'text': 'Focuses on strategic communication and understanding voter behavior'}, {'id': '34', 'text': 'Previously worked as a senior developer in Blockchain Tech'}, {'id': '35', 'text': 'Partner is supportive and shares similar values of family loyalty'}, {'id': '36', 'text': \"Reminisces about previous tech job's security and stability\"}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Launching a political consulting firm on December 20, 2025', 'Firm advises political campaigns', 'Network includes MooreSandra and GonzalezMary', 'Attended political events in Chicago on December 10, 2025', \"Focuses on strategic, personalized advice tailored to each campaign's unique challenges\", 'Plans to add digital campaign strategies and data analysis services', 'Uses case studies, success stories, and anecdotes from past networking experiences to demonstrate value', 'Incorporates meditation and stress management techniques to maintain mental health', \"Motivated by supporting a relative's political career\", \"Optimistic about the firm's future, emphasizing innovative strategies and modern technology\", 'Marketing strategy aligns with the political season to meet current campaign needs', 'Trains team and collaborates with tech experts to deliver cutting-edge solutions']\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "1": "38cb0274-b1a4-4648-a665-d11eb74487c0",
+      "2": "6b30b758-5eeb-4b32-8ead-dca740a3f60b",
+      "3": "da585aa4-285c-49a2-a70f-69aab048b277",
+      "4": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+      "5": "6e6df2dc-1469-4871-9565-b6d5a25e7420",
+      "6": "ea7b33a6-5ea3-48fe-b6b4-5bd8ff5adc7f",
+      "7": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+      "8": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+      "9": "cf54b6a7-21e5-4f2e-b815-9b1ffadc51b7",
+      "10": "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "11": "bfb15d6b-4748-4e95-9cbe-9d54ba1eb063",
+      "12": "ef2971c8-a4f6-4496-beef-867ba169759f",
+      "13": "e556e311-a618-49a2-993a-2e12e3615873",
+      "14": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+      "15": "2cf8c2bb-8394-4de0-9bd2-25bcec640b1c",
+      "16": "282c758f-e845-4896-942b-18d70892c22e",
+      "17": "57da260c-789f-4fcf-8096-eb049d84daf5",
+      "18": "744adcd8-d115-4123-9aef-397bb18766fa",
+      "19": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+      "20": "25ae64d5-2184-4b8a-98b1-e99357965e48",
+      "21": "12bffa77-0696-48e3-9f88-446fe100678a",
+      "22": "7e0d2d3d-3d72-48fa-a320-fe9256e70ca0",
+      "23": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+      "24": "8ca919d1-21f0-4555-8f5f-4d775a2873f9",
+      "25": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "26": "7cf37b2e-3d24-447a-a44d-5071804b3d04",
+      "27": "913bef92-248b-416b-ba35-052af3a4e960",
+      "28": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "29": "a79b4370-af7c-4d51-a40a-db525badf684",
+      "30": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "31": "8dec75c1-3b76-4396-a719-02ec73d03e02",
+      "32": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "33": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+      "34": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "35": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "36": "4093d6a7-1def-4fba-b9d3-a01bbee80258"
+    },
+    "native_new_facts": [
+      "Launching a political consulting firm on December 20, 2025",
+      "Firm advises political campaigns",
+      "Network includes MooreSandra and GonzalezMary",
+      "Attended political events in Chicago on December 10, 2025",
+      "Focuses on strategic, personalized advice tailored to each campaign's unique challenges",
+      "Plans to add digital campaign strategies and data analysis services",
+      "Uses case studies, success stories, and anecdotes from past networking experiences to demonstrate value",
+      "Incorporates meditation and stress management techniques to maintain mental health",
+      "Motivated by supporting a relative's political career",
+      "Optimistic about the firm's future, emphasizing innovative strategies and modern technology",
+      "Marketing strategy aligns with the political season to meet current campaign needs",
+      "Trains team and collaborates with tech experts to deliver cutting-edge solutions"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Is transitioning into political consulting"
+      },
+      {
+        "id": "1",
+        "text": "Envisions a long-term career in political consulting that supports the relative's legacy"
+      },
+      {
+        "id": "2",
+        "text": "Is forming a clearer vision for a career in political consulting"
+      },
+      {
+        "id": "3",
+        "text": "Has friends in the political field whom they plan to consult for advice"
+      },
+      {
+        "id": "4",
+        "text": "Aims to be a key advisor in political campaigns"
+      },
+      {
+        "id": "5",
+        "text": "Has a relative running a political campaign"
+      },
+      {
+        "id": "6",
+        "text": "New connections are providing fresh perspectives and resources for the relative's political campaign"
+      },
+      {
+        "id": "7",
+        "text": "MooreSandra is a friend who shares political views and supports the same politician"
+      },
+      {
+        "id": "8",
+        "text": "GonzalezMary is a close friend who discusses political strategies"
+      },
+      {
+        "id": "9",
+        "text": "Stays connected with network by regularly attending events and maintaining communication with key contacts"
+      },
+      {
+        "id": "10",
+        "text": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests"
+      },
+      {
+        "id": "11",
+        "text": "Has shared past networking experiences that led to career success"
+      },
+      {
+        "id": "12",
+        "text": "Attended political events in Chicago"
+      },
+      {
+        "id": "13",
+        "text": "Attended a cultural festival in Chicago for networking purposes"
+      },
+      {
+        "id": "14",
+        "text": "Lives in Chicago"
+      },
+      {
+        "id": "15",
+        "text": "Does not like wearing bright neon colors because they find them too distracting and unsuitable for the serious tone of political events"
+      },
+      {
+        "id": "16",
+        "text": "Actively engaged in political discussions"
+      },
+      {
+        "id": "17",
+        "text": "Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign"
+      },
+      {
+        "id": "18",
+        "text": "Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights"
+      },
+      {
+        "id": "19",
+        "text": "Uses data analytics to analyze voter patterns and tailor campaign strategies"
+      },
+      {
+        "id": "20",
+        "text": "Adapts strategies to be more inclusive and considers diverse viewpoints"
+      },
+      {
+        "id": "21",
+        "text": "Plans to attend more events and engage with individuals who provide strategic insights and resources"
+      },
+      {
+        "id": "22",
+        "text": "Considers meditation and mindfulness practices effective for stress relief"
+      },
+      {
+        "id": "23",
+        "text": "Maintains physical and mental health through activity, work, and political engagement"
+      },
+      {
+        "id": "24",
+        "text": "Is considering adopting physical activities for stress management"
+      },
+      {
+        "id": "25",
+        "text": "Mental health is stable and normal with no mental health issues"
+      },
+      {
+        "id": "26",
+        "text": "Values mental health as essential to effectively supporting their relative"
+      },
+      {
+        "id": "27",
+        "text": "Life goal is to support the political career of a close relative"
+      },
+      {
+        "id": "28",
+        "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+      },
+      {
+        "id": "29",
+        "text": "Feels optimistic about the future"
+      },
+      {
+        "id": "30",
+        "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge"
+      },
+      {
+        "id": "31",
+        "text": "Sustains optimism and clarity by focusing on motivations and positive impact"
+      },
+      {
+        "id": "32",
+        "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive"
+      },
+      {
+        "id": "33",
+        "text": "Focuses on strategic communication and understanding voter behavior"
+      },
+      {
+        "id": "34",
+        "text": "Previously worked as a senior developer in Blockchain Tech"
+      },
+      {
+        "id": "35",
+        "text": "Partner is supportive and shares similar values of family loyalty"
+      },
+      {
+        "id": "36",
+        "text": "Reminisces about previous tech job's security and stability"
+      }
+    ]
+  },
+  {
+    "sequence": 29,
+    "time": "2026-10-28T15:20:37.654914+08:00",
+    "phase": "session_007",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Is transitioning into political consulting\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Envisions a long-term career in political consulting that supports the relative's legacy\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Envisions a long-term career in political consulting that supports the relative's legacy\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Is forming a clearer vision for a career in political consulting\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Is forming a clearer vision for a career in political consulting\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Has friends in the political field whom they plan to consult for advice\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has friends in the political field whom they plan to consult for advice\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Aims to be a key advisor in political campaigns\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Aims to be a key advisor in political campaigns\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Has a relative running a political campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"New connections are providing fresh perspectives and resources for the relative's political campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"MooreSandra is a friend who shares political views and supports the same politician\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"GonzalezMary is a close friend who discusses political strategies\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"GonzalezMary is a close friend who discusses political strategies\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Stays connected with network by regularly attending events and maintaining communication with key contacts\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Stays connected with network by regularly attending events and maintaining communication with key contacts\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Has shared past networking experiences that led to career success\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Has shared past networking experiences that led to career success\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Attended political events in Chicago\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Attended political events in Chicago\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Attended a cultural festival in Chicago for networking purposes\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Lives in Chicago\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Does not like wearing bright neon colors because they find them too distracting and unsuitable for the serious tone of political events\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Actively engaged in political discussions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Uses data analytics to analyze voter patterns and tailor campaign strategies\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Uses data analytics to analyze voter patterns and tailor campaign strategies\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Adapts strategies to be more inclusive and considers diverse viewpoints\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Plans to attend more events and engage with individuals who provide strategic insights and resources\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Plans to attend more events and engage with individuals who provide strategic insights and resources\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Considers meditation and mindfulness practices effective for stress relief\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Considers meditation and mindfulness practices effective for stress relief\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Maintains physical and mental health through activity, work, and political engagement\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Maintains physical and mental health through activity, work, and political engagement\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Is considering adopting physical activities for stress management\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Mental health is stable and normal with no mental health issues\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Values mental health as essential to effectively supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Life goal is to support the political career of a close relative\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Life goal is to support the political career of a close relative\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Feels optimistic about the future\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Feels optimistic about the future\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Role involves innovating new solutions and ensuring technology remains cutting-edge\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Role involves innovating new solutions and ensuring technology remains cutting-edge\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Sustains optimism and clarity by focusing on motivations and positive impact\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Sustains optimism and clarity by focusing on motivations and positive impact\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Focuses on strategic communication and understanding voter behavior\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Focuses on strategic communication and understanding voter behavior\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Previously worked as a senior developer in Blockchain Tech\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Partner is supportive and shares similar values of family loyalty\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Reminisces about previous tech job's security and stability\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Launching a political consulting firm on December 20, 2025\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Firm advises political campaigns\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Network includes MooreSandra and GonzalezMary\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Attended political events in Chicago on December 10, 2025\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Focuses on strategic, personalized advice tailored to each campaign's unique challenges\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Plans to add digital campaign strategies and data analysis services\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Uses case studies, success stories, and anecdotes from past networking experiences to demonstrate value\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Incorporates meditation and stress management techniques to maintain mental health\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Motivated by supporting a relative's political career\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Optimistic about the firm's future, emphasizing innovative strategies and modern technology\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Marketing strategy aligns with the political season to meet current campaign needs\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Trains team and collaborates with tech experts to deliver cutting-edge solutions\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Is transitioning into political consulting",
+          "event": "NONE"
+        },
+        {
+          "id": "1",
+          "text": "Envisions a long-term career in political consulting that supports the relative's legacy",
+          "event": "UPDATE",
+          "old_memory": "Envisions a long-term career in political consulting that supports the relative's legacy"
+        },
+        {
+          "id": "2",
+          "text": "Is forming a clearer vision for a career in political consulting",
+          "event": "UPDATE",
+          "old_memory": "Is forming a clearer vision for a career in political consulting"
+        },
+        {
+          "id": "3",
+          "text": "Has friends in the political field whom they plan to consult for advice",
+          "event": "UPDATE",
+          "old_memory": "Has friends in the political field whom they plan to consult for advice"
+        },
+        {
+          "id": "4",
+          "text": "Aims to be a key advisor in political campaigns",
+          "event": "UPDATE",
+          "old_memory": "Aims to be a key advisor in political campaigns"
+        },
+        {
+          "id": "5",
+          "text": "Has a relative running a political campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "New connections are providing fresh perspectives and resources for the relative's political campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "MooreSandra is a friend who shares political views and supports the same politician",
+          "event": "UPDATE",
+          "old_memory": "MooreSandra is a friend who shares political views and supports the same politician"
+        },
+        {
+          "id": "8",
+          "text": "GonzalezMary is a close friend who discusses political strategies",
+          "event": "UPDATE",
+          "old_memory": "GonzalezMary is a close friend who discusses political strategies"
+        },
+        {
+          "id": "9",
+          "text": "Stays connected with network by regularly attending events and maintaining communication with key contacts",
+          "event": "UPDATE",
+          "old_memory": "Stays connected with network by regularly attending events and maintaining communication with key contacts"
+        },
+        {
+          "id": "10",
+          "text": "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Has shared past networking experiences that led to career success",
+          "event": "UPDATE",
+          "old_memory": "Has shared past networking experiences that led to career success"
+        },
+        {
+          "id": "12",
+          "text": "Attended political events in Chicago",
+          "event": "UPDATE",
+          "old_memory": "Attended political events in Chicago"
+        },
+        {
+          "id": "13",
+          "text": "Attended a cultural festival in Chicago for networking purposes",
+          "event": "NONE"
+        },
+        {
+          "id": "14",
+          "text": "Lives in Chicago",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Does not like wearing bright neon colors because they find them too distracting and unsuitable for the serious tone of political events",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Actively engaged in political discussions",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Integrates insights from diverse experiences (e.g., cultural festivals) to improve strategies and support the relative's campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "Sets specific goals for events, such as meeting new contacts and gaining campaign-beneficial insights",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+          "event": "UPDATE",
+          "old_memory": "Uses data analytics to analyze voter patterns and tailor campaign strategies"
+        },
+        {
+          "id": "20",
+          "text": "Adapts strategies to be more inclusive and considers diverse viewpoints",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Plans to attend more events and engage with individuals who provide strategic insights and resources",
+          "event": "UPDATE",
+          "old_memory": "Plans to attend more events and engage with individuals who provide strategic insights and resources"
+        },
+        {
+          "id": "22",
+          "text": "Considers meditation and mindfulness practices effective for stress relief",
+          "event": "UPDATE",
+          "old_memory": "Considers meditation and mindfulness practices effective for stress relief"
+        },
+        {
+          "id": "23",
+          "text": "Maintains physical and mental health through activity, work, and political engagement",
+          "event": "UPDATE",
+          "old_memory": "Maintains physical and mental health through activity, work, and political engagement"
+        },
+        {
+          "id": "24",
+          "text": "Is considering adopting physical activities for stress management",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Mental health is stable and normal with no mental health issues",
+          "event": "NONE"
+        },
+        {
+          "id": "26",
+          "text": "Values mental health as essential to effectively supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "27",
+          "text": "Life goal is to support the political career of a close relative",
+          "event": "UPDATE",
+          "old_memory": "Life goal is to support the political career of a close relative"
+        },
+        {
+          "id": "28",
+          "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "event": "UPDATE",
+          "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+        },
+        {
+          "id": "29",
+          "text": "Feels optimistic about the future",
+          "event": "UPDATE",
+          "old_memory": "Feels optimistic about the future"
+        },
+        {
+          "id": "30",
+          "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+          "event": "UPDATE",
+          "old_memory": "Role involves innovating new solutions and ensuring technology remains cutting-edge"
+        },
+        {
+          "id": "31",
+          "text": "Sustains optimism and clarity by focusing on motivations and positive impact",
+          "event": "UPDATE",
+          "old_memory": "Sustains optimism and clarity by focusing on motivations and positive impact"
+        },
+        {
+          "id": "32",
+          "text": "Described by friends as Innovative Spirit, Active Thinking, Loyal, Supportive",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Focuses on strategic communication and understanding voter behavior",
+          "event": "UPDATE",
+          "old_memory": "Focuses on strategic communication and understanding voter behavior"
+        },
+        {
+          "id": "34",
+          "text": "Previously worked as a senior developer in Blockchain Tech",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Partner is supportive and shares similar values of family loyalty",
+          "event": "NONE"
+        },
+        {
+          "id": "36",
+          "text": "Reminisces about previous tech job's security and stability",
+          "event": "NONE"
+        },
+        {
+          "id": "37",
+          "text": "Launching a political consulting firm on December 20, 2025",
+          "event": "ADD"
+        },
+        {
+          "id": "38",
+          "text": "Firm advises political campaigns",
+          "event": "ADD"
+        },
+        {
+          "id": "39",
+          "text": "Network includes MooreSandra and GonzalezMary",
+          "event": "ADD"
+        },
+        {
+          "id": "40",
+          "text": "Attended political events in Chicago on December 10, 2025",
+          "event": "ADD"
+        },
+        {
+          "id": "41",
+          "text": "Focuses on strategic, personalized advice tailored to each campaign's unique challenges",
+          "event": "ADD"
+        },
+        {
+          "id": "42",
+          "text": "Plans to add digital campaign strategies and data analysis services",
+          "event": "ADD"
+        },
+        {
+          "id": "43",
+          "text": "Uses case studies, success stories, and anecdotes from past networking experiences to demonstrate value",
+          "event": "ADD"
+        },
+        {
+          "id": "44",
+          "text": "Incorporates meditation and stress management techniques to maintain mental health",
+          "event": "ADD"
+        },
+        {
+          "id": "45",
+          "text": "Motivated by supporting a relative's political career",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Optimistic about the firm's future, emphasizing innovative strategies and modern technology",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Marketing strategy aligns with the political season to meet current campaign needs",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Trains team and collaborates with tech experts to deliver cutting-edge solutions",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "1": "38cb0274-b1a4-4648-a665-d11eb74487c0",
+      "2": "6b30b758-5eeb-4b32-8ead-dca740a3f60b",
+      "3": "da585aa4-285c-49a2-a70f-69aab048b277",
+      "4": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+      "5": "6e6df2dc-1469-4871-9565-b6d5a25e7420",
+      "6": "ea7b33a6-5ea3-48fe-b6b4-5bd8ff5adc7f",
+      "7": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+      "8": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+      "9": "cf54b6a7-21e5-4f2e-b815-9b1ffadc51b7",
+      "10": "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "11": "bfb15d6b-4748-4e95-9cbe-9d54ba1eb063",
+      "12": "ef2971c8-a4f6-4496-beef-867ba169759f",
+      "13": "e556e311-a618-49a2-993a-2e12e3615873",
+      "14": "70bce2f0-1ff6-4cdd-9ede-a2913723609b",
+      "15": "2cf8c2bb-8394-4de0-9bd2-25bcec640b1c",
+      "16": "282c758f-e845-4896-942b-18d70892c22e",
+      "17": "57da260c-789f-4fcf-8096-eb049d84daf5",
+      "18": "744adcd8-d115-4123-9aef-397bb18766fa",
+      "19": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+      "20": "25ae64d5-2184-4b8a-98b1-e99357965e48",
+      "21": "12bffa77-0696-48e3-9f88-446fe100678a",
+      "22": "7e0d2d3d-3d72-48fa-a320-fe9256e70ca0",
+      "23": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+      "24": "8ca919d1-21f0-4555-8f5f-4d775a2873f9",
+      "25": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "26": "7cf37b2e-3d24-447a-a44d-5071804b3d04",
+      "27": "913bef92-248b-416b-ba35-052af3a4e960",
+      "28": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "29": "a79b4370-af7c-4d51-a40a-db525badf684",
+      "30": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "31": "8dec75c1-3b76-4396-a719-02ec73d03e02",
+      "32": "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "33": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+      "34": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "35": "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "36": "4093d6a7-1def-4fba-b9d3-a01bbee80258"
+    },
+    "elapsed_seconds": 48.64298239594791
+  }
+]

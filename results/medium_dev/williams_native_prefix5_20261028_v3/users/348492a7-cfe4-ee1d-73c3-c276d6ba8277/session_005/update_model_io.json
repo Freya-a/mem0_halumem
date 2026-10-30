@@ -1,0 +1,337 @@
+[
+  {
+    "sequence": 24,
+    "time": "2026-10-28T15:17:59.525930+08:00",
+    "phase": "session_005",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Career transition from technology to political consulting'}, {'id': '1', 'text': 'Also mentioned financial consulting as a possible related field'}, {'id': '2', 'text': 'Life goal is to support the political career of a close relative'}, {'id': '3', 'text': 'Supporting the politician gives a sense of purpose and fulfillment'}, {'id': '4', 'text': 'Aims to be a key advisor in political campaigns'}, {'id': '5', 'text': 'Monthly income was 17,000 USD before transition'}, {'id': '6', 'text': 'Plans to rely on savings and cut unnecessary expenses during transition'}, {'id': '7', 'text': 'Maintains physical and mental health through activity, work, and political engagement'}, {'id': '8', 'text': 'Mental health is stable and normal with no mental health issues'}, {'id': '9', 'text': 'Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics'}, {'id': '10', 'text': 'Frequently contributes financially to political campaigns and causes supporting a specific politician'}, {'id': '11', 'text': \"Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign\"}, {'id': '12', 'text': 'Actively engaged in political discussions'}, {'id': '13', 'text': 'Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations'}, {'id': '14', 'text': 'Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative'}, {'id': '15', 'text': 'Physical condition is normal with no chronic diseases'}, {'id': '16', 'text': 'Does not like listening to heavy metal because its aggressive sound distracts from the calm environment needed to support their relative'}, {'id': '17', 'text': \"Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign\"}, {'id': '18', 'text': 'Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative'}, {'id': '19', 'text': 'Likes playing board games for their social aspect, allowing bonding with family and friends while supporting their relative'}, {'id': '20', 'text': 'Previously worked as a senior developer in Blockchain Tech'}, {'id': '21', 'text': 'Role involves innovating new solutions and ensuring technology remains cutting-edge'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Is transitioning from a tech job to political consulting', 'Feeling stressed and overwhelmed by the career transition', 'Concerned about income uncertainty and loss of financial stability', \"Motivated primarily by desire to support a relative's political career\", 'Also motivated to establish their own political career', 'Has friends in the political field whom they plan to consult for advice', 'Believes physical activities can help manage stress', 'Considers meditation and mindfulness practices effective for stress relief', 'Values mental health as essential to effectively supporting their relative', \"Reminisces about previous tech job's security and stability\"]\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "1": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+      "2": "913bef92-248b-416b-ba35-052af3a4e960",
+      "3": "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "4": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+      "5": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "6": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+      "7": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+      "8": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "9": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "10": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "11": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "12": "282c758f-e845-4896-942b-18d70892c22e",
+      "13": "bdc018c2-84bb-4b2f-b3c8-60e0affdb884",
+      "14": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "15": "03f69bc2-a92b-454a-a034-1cd7984b0419",
+      "16": "7625de05-9638-4b2b-95c4-7a40e5ae75e2",
+      "17": "6e979956-47d6-405f-95d5-df176978b42a",
+      "18": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "19": "e8ccc4b9-74e0-4aab-9e09-8105194d1f5f",
+      "20": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "21": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b"
+    },
+    "native_new_facts": [
+      "Is transitioning from a tech job to political consulting",
+      "Feeling stressed and overwhelmed by the career transition",
+      "Concerned about income uncertainty and loss of financial stability",
+      "Motivated primarily by desire to support a relative's political career",
+      "Also motivated to establish their own political career",
+      "Has friends in the political field whom they plan to consult for advice",
+      "Believes physical activities can help manage stress",
+      "Considers meditation and mindfulness practices effective for stress relief",
+      "Values mental health as essential to effectively supporting their relative",
+      "Reminisces about previous tech job's security and stability"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Career transition from technology to political consulting"
+      },
+      {
+        "id": "1",
+        "text": "Also mentioned financial consulting as a possible related field"
+      },
+      {
+        "id": "2",
+        "text": "Life goal is to support the political career of a close relative"
+      },
+      {
+        "id": "3",
+        "text": "Supporting the politician gives a sense of purpose and fulfillment"
+      },
+      {
+        "id": "4",
+        "text": "Aims to be a key advisor in political campaigns"
+      },
+      {
+        "id": "5",
+        "text": "Monthly income was 17,000 USD before transition"
+      },
+      {
+        "id": "6",
+        "text": "Plans to rely on savings and cut unnecessary expenses during transition"
+      },
+      {
+        "id": "7",
+        "text": "Maintains physical and mental health through activity, work, and political engagement"
+      },
+      {
+        "id": "8",
+        "text": "Mental health is stable and normal with no mental health issues"
+      },
+      {
+        "id": "9",
+        "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+      },
+      {
+        "id": "10",
+        "text": "Frequently contributes financially to political campaigns and causes supporting a specific politician"
+      },
+      {
+        "id": "11",
+        "text": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign"
+      },
+      {
+        "id": "12",
+        "text": "Actively engaged in political discussions"
+      },
+      {
+        "id": "13",
+        "text": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations"
+      },
+      {
+        "id": "14",
+        "text": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative"
+      },
+      {
+        "id": "15",
+        "text": "Physical condition is normal with no chronic diseases"
+      },
+      {
+        "id": "16",
+        "text": "Does not like listening to heavy metal because its aggressive sound distracts from the calm environment needed to support their relative"
+      },
+      {
+        "id": "17",
+        "text": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign"
+      },
+      {
+        "id": "18",
+        "text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative"
+      },
+      {
+        "id": "19",
+        "text": "Likes playing board games for their social aspect, allowing bonding with family and friends while supporting their relative"
+      },
+      {
+        "id": "20",
+        "text": "Previously worked as a senior developer in Blockchain Tech"
+      },
+      {
+        "id": "21",
+        "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge"
+      }
+    ]
+  },
+  {
+    "sequence": 25,
+    "time": "2026-10-28T15:18:27.331134+08:00",
+    "phase": "session_005",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Is transitioning from a tech job to political consulting\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Career transition from technology to political consulting\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Also mentioned financial consulting as a possible related field\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Life goal is to support the political career of a close relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Supporting the politician gives a sense of purpose and fulfillment\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Aims to be a key advisor in political campaigns\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Monthly income was 17,000 USD before transition\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Plans to rely on savings and cut unnecessary expenses during transition\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Maintains physical and mental health through activity, work, and political engagement\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Maintains physical and mental health through activity, work, and political engagement\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Mental health is stable and normal with no mental health issues\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Mental health is stable and normal with no mental health issues\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Frequently contributes financially to political campaigns and causes supporting a specific politician\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Actively engaged in political discussions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Physical condition is normal with no chronic diseases\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Does not like listening to heavy metal because its aggressive sound distracts from the calm environment needed to support their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Likes playing board games for their social aspect, allowing bonding with family and friends while supporting their relative\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Previously worked as a senior developer in Blockchain Tech\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Role involves innovating new solutions and ensuring technology remains cutting-edge\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Feeling stressed and overwhelmed by the career transition\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Concerned about income uncertainty and loss of financial stability\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Also motivated to establish their own political career\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Has friends in the political field whom they plan to consult for advice\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Believes physical activities can help manage stress\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Considers meditation and mindfulness practices effective for stress relief\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Values mental health as essential to effectively supporting their relative\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Reminisces about previous tech job's security and stability\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Is transitioning from a tech job to political consulting",
+          "event": "UPDATE",
+          "old_memory": "Career transition from technology to political consulting"
+        },
+        {
+          "id": "1",
+          "text": "Also mentioned financial consulting as a possible related field",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Life goal is to support the political career of a close relative",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Supporting the politician gives a sense of purpose and fulfillment",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Aims to be a key advisor in political campaigns",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Monthly income was 17,000 USD before transition",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Plans to rely on savings and cut unnecessary expenses during transition",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Maintains physical and mental health through activity, work, and political engagement",
+          "event": "UPDATE",
+          "old_memory": "Maintains physical and mental health through activity, work, and political engagement"
+        },
+        {
+          "id": "8",
+          "text": "Mental health is stable and normal with no mental health issues",
+          "event": "UPDATE",
+          "old_memory": "Mental health is stable and normal with no mental health issues"
+        },
+        {
+          "id": "9",
+          "text": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+          "event": "UPDATE",
+          "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics"
+        },
+        {
+          "id": "10",
+          "text": "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Does not like adventure sports trips because they distract from the purpose of travel, which is to support their relative's campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Actively engaged in political discussions",
+          "event": "NONE"
+        },
+        {
+          "id": "13",
+          "text": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations",
+          "event": "UPDATE",
+          "old_memory": "Likes drinking green tea for its calming effect, helping them stay focused and composed during stressful situations"
+        },
+        {
+          "id": "14",
+          "text": "Likes playing strategy games because they challenge the mind and improve problem-solving skills useful for supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Physical condition is normal with no chronic diseases",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Does not like listening to heavy metal because its aggressive sound distracts from the calm environment needed to support their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Likes classical music for its soothing melodies, helping them maintain focus and clarity while working on their relative's campaign",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Likes playing board games for their social aspect, allowing bonding with family and friends while supporting their relative",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "Previously worked as a senior developer in Blockchain Tech",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+          "event": "NONE"
+        },
+        {
+          "id": "22",
+          "text": "Feeling stressed and overwhelmed by the career transition",
+          "event": "ADD"
+        },
+        {
+          "id": "23",
+          "text": "Concerned about income uncertainty and loss of financial stability",
+          "event": "ADD"
+        },
+        {
+          "id": "24",
+          "text": "Also motivated to establish their own political career",
+          "event": "ADD"
+        },
+        {
+          "id": "25",
+          "text": "Has friends in the political field whom they plan to consult for advice",
+          "event": "ADD"
+        },
+        {
+          "id": "26",
+          "text": "Believes physical activities can help manage stress",
+          "event": "ADD"
+        },
+        {
+          "id": "27",
+          "text": "Considers meditation and mindfulness practices effective for stress relief",
+          "event": "ADD"
+        },
+        {
+          "id": "28",
+          "text": "Values mental health as essential to effectively supporting their relative",
+          "event": "ADD"
+        },
+        {
+          "id": "29",
+          "text": "Reminisces about previous tech job's security and stability",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "1": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+      "2": "913bef92-248b-416b-ba35-052af3a4e960",
+      "3": "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "4": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+      "5": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "6": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+      "7": "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+      "8": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "9": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "10": "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "11": "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "12": "282c758f-e845-4896-942b-18d70892c22e",
+      "13": "bdc018c2-84bb-4b2f-b3c8-60e0affdb884",
+      "14": "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "15": "03f69bc2-a92b-454a-a034-1cd7984b0419",
+      "16": "7625de05-9638-4b2b-95c4-7a40e5ae75e2",
+      "17": "6e979956-47d6-405f-95d5-df176978b42a",
+      "18": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "19": "e8ccc4b9-74e0-4aab-9e09-8105194d1f5f",
+      "20": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "21": "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b"
+    },
+    "elapsed_seconds": 27.80469046800863
+  }
+]

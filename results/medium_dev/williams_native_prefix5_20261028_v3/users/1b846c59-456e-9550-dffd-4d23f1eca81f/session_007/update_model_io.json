@@ -1,0 +1,561 @@
+[
+  {
+    "sequence": 44,
+    "time": "2026-10-28T15:01:55.463577+08:00",
+    "phase": "session_007",
+    "kind": "model_input",
+    "stage": "update",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a smart memory manager which controls the memory of a system.\nYou can perform four operations: (1) add into the memory, (2) update the memory, (3) delete from the memory, and (4) no change.\n\nBased on the above four operations, the memory will change.\n\nCompare newly retrieved facts with the existing memory. For each new fact, decide whether to:\n- ADD: Add it to the memory as a new element\n- UPDATE: Update an existing memory element\n- DELETE: Delete an existing memory element\n- NONE: Make no change (if the fact is already present or irrelevant)\n\nThere are specific guidelines to select which operation to perform:\n\n1. **Add**: If the retrieved facts contain new information not present in the memory, then you have to add it by generating a new ID in the id field.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"User is a software engineer\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n            \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"ADD\"\n                }\n            ]\n\n        }\n\n2. **Update**: If the retrieved facts contain information that is already present in the memory but the information is totally different, then you have to update it. \nIf the retrieved fact contains information that conveys the same thing as the elements present in the memory, then you have to keep the fact which has the most information. \nExample (a) -- if the memory contains \"User likes to play cricket\" and the retrieved fact is \"Loves to play cricket with friends\", then update the memory with the retrieved facts.\nExample (b) -- if the memory contains \"Likes cheese pizza\" and the retrieved fact is \"Loves cheese pizza\", then you do not need to update it because they convey the same information.\nIf the direction is to update the memory, then you have to update it.\nPlease keep in mind while updating you have to keep the same ID.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"I really like cheese pizza\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"User is a software engineer\"\n            },\n            {\n                \"id\" : \"2\",\n                \"text\" : \"User likes to play cricket\"\n            }\n        ]\n    - Retrieved facts: [\"Loves chicken pizza\", \"Loves to play cricket with friends\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Loves cheese and chicken pizza\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"I really like cheese pizza\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"User is a software engineer\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"2\",\n                    \"text\" : \"Loves to play cricket with friends\",\n                    \"event\" : \"UPDATE\",\n                    \"old_memory\" : \"User likes to play cricket\"\n                }\n            ]\n        }\n\n\n3. **Delete**: If the retrieved facts contain information that contradicts the information present in the memory, then you have to delete it. Or if the direction is to delete the memory, then you have to delete it.\nPlease note to return the IDs in the output from the input IDs only and do not generate any new ID.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Dislikes cheese pizza\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"DELETE\"\n                }\n        ]\n        }\n\n4. **No Change**: If the retrieved facts contain information that is already present in the memory, then you do not need to make any changes.\n- **Example**:\n    - Old Memory:\n        [\n            {\n                \"id\" : \"0\",\n                \"text\" : \"Name is John\"\n            },\n            {\n                \"id\" : \"1\",\n                \"text\" : \"Loves cheese pizza\"\n            }\n        ]\n    - Retrieved facts: [\"Name is John\"]\n    - New Memory:\n        {\n        \"memory\" : [\n                {\n                    \"id\" : \"0\",\n                    \"text\" : \"Name is John\",\n                    \"event\" : \"NONE\"\n                },\n                {\n                    \"id\" : \"1\",\n                    \"text\" : \"Loves cheese pizza\",\n                    \"event\" : \"NONE\"\n                }\n            ]\n        }\n\n\n    \n    Below is the current content of my memory which I have collected till now. You have to update it in the following format only:\n\n    ```\n    [{'id': '0', 'text': 'Likes Persian cats because of their regal and calm nature, elegance, and historical charm'}, {'id': '1', 'text': 'Seeks recognition at major film festivals like Cannes and Sundance'}, {'id': '2', 'text': 'Likes British Shorthair cats because of their calm, collected nature and historical charm'}, {'id': '3', 'text': 'Success means recognition at major film festivals like Cannes and Sundance'}, {'id': '4', 'text': 'Is a filmmaker'}, {'id': '5', 'text': 'Likes greyhounds because of their noble history and gentle demeanor, fitting for a soothing lifestyle'}, {'id': '6', 'text': 'Likes tweed jackets because of their classic, durable quality and association with a bygone era'}, {'id': '7', 'text': 'Dislikes parrots because of their constant noise and chatter, which disrupts a quiet, historical atmosphere'}, {'id': '8', 'text': 'Likes historical dramas because of their attention to detail and accurate portrayal of past events'}, {'id': '9', 'text': 'Likes tortoises because their slow, deliberate movements symbolize the passage of time and history'}, {'id': '10', 'text': 'Wants to challenge historical narratives and engage audiences on a deeper level'}, {'id': '11', 'text': 'Likes historical biographies because they vividly capture the lives and impact of historical figures'}, {'id': '12', 'text': 'Reflects on balancing historical authenticity with embracing new flavors'}, {'id': '13', 'text': 'Focuses on historical accuracy in films'}, {'id': '14', 'text': 'Loves visiting historic places, which deeply influence storytelling approach'}, {'id': '15', 'text': 'Dislikes skinny jeans because they feel restrictive and lack historical elegance'}, {'id': '16', 'text': 'Dislikes bright neon colors because they feel too modern, flashy, and clash with understated, historically inspired attire'}, {'id': '17', 'text': 'Motivated by setting clear goals and maintaining work-life balance'}, {'id': '18', 'text': 'No demanding family life to balance'}, {'id': '19', 'text': 'Has not explored new hobbies recently'}, {'id': '20', 'text': 'Work-life balance improved due to role change'}, {'id': '21', 'text': 'Recently promoted to lead director at Historical Productions Ltd'}, {'id': '22', 'text': 'Works at Historical Productions Ltd. as a Director'}, {'id': '23', 'text': 'Plans to direct 10 award-winning historical films'}, {'id': '24', 'text': 'Colleague: SmithSteven (expert in set design, shares passion for historical detail)'}, {'id': '25', 'text': 'Incorporating themes of historical depth into upcoming film projects'}, {'id': '26', 'text': 'Goal is to create historically accurate films'}, {'id': '27', 'text': 'Plans to initiate groundbreaking historical dramas and possibly science fiction dramas'}, {'id': '28', 'text': 'Hopes films inspire appreciation of history and its nuances'}, {'id': '29', 'text': 'Plans to revisit the tea house with friends who share passion for historical exploration'}, {'id': '30', 'text': 'Love for history and storytelling drives creative decisions'}, {'id': '31', 'text': 'Motivated by family background in history and passion for storytelling'}, {'id': '32', 'text': 'Aims to integrate personal experiences into narratives to resonate with viewers'}, {'id': '33', 'text': 'Aims to win multiple international awards'}, {'id': '34', 'text': 'Experiences stress due to historical accuracy demands and tight production schedules'}, {'id': '35', 'text': 'Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)'}, {'id': '36', 'text': 'Family shares a passion for history and detail'}, {'id': '37', 'text': 'Interested in exploring historical beverages'}]\n    ```\n\n    \n\n    The new retrieved facts are mentioned in the triple backticks. You have to analyze the new retrieved facts and determine whether these facts should be added, updated, or deleted in the memory.\n\n    ```\n    ['Recently attended a film festival and watched a documentary about Persian cats', 'Has a deep admiration for Persian cats and their historical lineage and association with royalty', 'Also has a deep admiration for Siamese cats, especially after watching a documentary highlighting their historical significance and royal connections', 'Interested in historical authenticity and its alignment with personal and professional life', \"Reflects on the practical challenges of maintaining Persian cats' regal appearance\", 'Balances historical admiration with practical care requirements for pets', 'Lifestyle choices, including pet preferences, are aligned with efficiency and career goals', 'Recently promoted to lead director at Historical Productions Ltd.', 'Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques', 'Aims to explore lesser-known historical events and figures that had significant but overlooked impact', 'Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling', 'Goal is to become a renowned director known for historically accurate films', 'Wants to inspire others through historically accurate storytelling', 'Aims to create immersive film experiences that transport viewers to different eras', 'Relies on meticulous planning and collaboration with a talented team for film production', 'Prioritizes key elements that enhance historical authenticity while balancing budget and production quality', 'Draws professional inspiration from personal interests, especially the historical significance of Persian and Siamese cats', 'Excited to explore the intersection of history and technology, particularly how historical events shaped technological advancements', 'Plans to highlight key historical figures and events pivotal in technological developments', \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\"]\n    ```\n\n    You must return your response in the following JSON structure only:\n\n    {\n        \"memory\" : [\n            {\n                \"id\" : \"<ID of the memory>\",                # Use existing ID for updates/deletes, or new ID for additions\n                \"text\" : \"<Content of the memory>\",         # Content of the memory\n                \"event\" : \"<Operation to be performed>\",    # Must be \"ADD\", \"UPDATE\", \"DELETE\", or \"NONE\"\n                \"old_memory\" : \"<Old memory content>\"       # Required only if the event is \"UPDATE\"\n            },\n            ...\n        ]\n    }\n\n    Follow the instruction mentioned below:\n    - Do not return anything from the custom few shot prompts provided above.\n    - If the current memory is empty, then you have to add the new retrieved facts to the memory.\n    - You should return the updated memory in only JSON format as shown below. The memory key should be the same if no changes are made.\n    - If there is an addition, generate a new key and add the new memory corresponding to it.\n    - If there is a deletion, the memory key-value pair should be removed from the memory.\n    - If there is an update, the ID key should remain the same and only the value needs to be updated.\n\n    Do not return anything except the JSON format.\n    "
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "native_temp_uuid_mapping": {
+      "0": "eef34a57-c82a-4995-877d-66b54b9589da",
+      "1": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "2": "a8611a3d-c6dd-48ac-8805-8a35ab5894b0",
+      "3": "8c75c81e-6f7e-4604-81b7-e4d0b2115d81",
+      "4": "e6112994-45c2-43d2-86d8-7c8d978f690e",
+      "5": "308d8dcb-59c6-4f41-824b-7454c648c32e",
+      "6": "6c0819ca-ab03-488f-a983-3566a7b37b29",
+      "7": "6b0d05e1-6554-4c18-9997-7e28da7a8049",
+      "8": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "9": "670899d2-6dbe-440e-8fa4-a267370456eb",
+      "10": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "11": "b5fbe40c-9778-4646-abe1-9921c85da36c",
+      "12": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "13": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "14": "b77be932-7af4-4557-b93a-bc40d9edd549",
+      "15": "6f8c679f-925d-4f4e-b1f8-4a1460ac58bb",
+      "16": "6f49c3e3-2f70-451f-9407-58aaa5f347bd",
+      "17": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "18": "4fc05270-e53d-4b0a-ac6e-459e7a0677fe",
+      "19": "57749a01-c7f7-474a-aa4a-770781436d98",
+      "20": "1043672a-eb91-4a73-841a-f6204f50bf61",
+      "21": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "22": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "23": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "24": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "25": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "26": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "27": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "28": "6b2ae9b2-8a57-407b-a2ec-61348ff1039e",
+      "29": "7ad28253-8ba5-4531-b52c-208430e589b2",
+      "30": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "31": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+      "32": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "33": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "34": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "35": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "36": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "37": "9315a8c1-7611-443b-a5b5-f92b52ea1a11"
+    },
+    "native_new_facts": [
+      "Recently attended a film festival and watched a documentary about Persian cats",
+      "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+      "Also has a deep admiration for Siamese cats, especially after watching a documentary highlighting their historical significance and royal connections",
+      "Interested in historical authenticity and its alignment with personal and professional life",
+      "Reflects on the practical challenges of maintaining Persian cats' regal appearance",
+      "Balances historical admiration with practical care requirements for pets",
+      "Lifestyle choices, including pet preferences, are aligned with efficiency and career goals",
+      "Recently promoted to lead director at Historical Productions Ltd.",
+      "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques",
+      "Aims to explore lesser-known historical events and figures that had significant but overlooked impact",
+      "Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling",
+      "Goal is to become a renowned director known for historically accurate films",
+      "Wants to inspire others through historically accurate storytelling",
+      "Aims to create immersive film experiences that transport viewers to different eras",
+      "Relies on meticulous planning and collaboration with a talented team for film production",
+      "Prioritizes key elements that enhance historical authenticity while balancing budget and production quality",
+      "Draws professional inspiration from personal interests, especially the historical significance of Persian and Siamese cats",
+      "Excited to explore the intersection of history and technology, particularly how historical events shaped technological advancements",
+      "Plans to highlight key historical figures and events pivotal in technological developments",
+      "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further"
+    ],
+    "native_retrieved_old_memory": [
+      {
+        "id": "0",
+        "text": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm"
+      },
+      {
+        "id": "1",
+        "text": "Seeks recognition at major film festivals like Cannes and Sundance"
+      },
+      {
+        "id": "2",
+        "text": "Likes British Shorthair cats because of their calm, collected nature and historical charm"
+      },
+      {
+        "id": "3",
+        "text": "Success means recognition at major film festivals like Cannes and Sundance"
+      },
+      {
+        "id": "4",
+        "text": "Is a filmmaker"
+      },
+      {
+        "id": "5",
+        "text": "Likes greyhounds because of their noble history and gentle demeanor, fitting for a soothing lifestyle"
+      },
+      {
+        "id": "6",
+        "text": "Likes tweed jackets because of their classic, durable quality and association with a bygone era"
+      },
+      {
+        "id": "7",
+        "text": "Dislikes parrots because of their constant noise and chatter, which disrupts a quiet, historical atmosphere"
+      },
+      {
+        "id": "8",
+        "text": "Likes historical dramas because of their attention to detail and accurate portrayal of past events"
+      },
+      {
+        "id": "9",
+        "text": "Likes tortoises because their slow, deliberate movements symbolize the passage of time and history"
+      },
+      {
+        "id": "10",
+        "text": "Wants to challenge historical narratives and engage audiences on a deeper level"
+      },
+      {
+        "id": "11",
+        "text": "Likes historical biographies because they vividly capture the lives and impact of historical figures"
+      },
+      {
+        "id": "12",
+        "text": "Reflects on balancing historical authenticity with embracing new flavors"
+      },
+      {
+        "id": "13",
+        "text": "Focuses on historical accuracy in films"
+      },
+      {
+        "id": "14",
+        "text": "Loves visiting historic places, which deeply influence storytelling approach"
+      },
+      {
+        "id": "15",
+        "text": "Dislikes skinny jeans because they feel restrictive and lack historical elegance"
+      },
+      {
+        "id": "16",
+        "text": "Dislikes bright neon colors because they feel too modern, flashy, and clash with understated, historically inspired attire"
+      },
+      {
+        "id": "17",
+        "text": "Motivated by setting clear goals and maintaining work-life balance"
+      },
+      {
+        "id": "18",
+        "text": "No demanding family life to balance"
+      },
+      {
+        "id": "19",
+        "text": "Has not explored new hobbies recently"
+      },
+      {
+        "id": "20",
+        "text": "Work-life balance improved due to role change"
+      },
+      {
+        "id": "21",
+        "text": "Recently promoted to lead director at Historical Productions Ltd"
+      },
+      {
+        "id": "22",
+        "text": "Works at Historical Productions Ltd. as a Director"
+      },
+      {
+        "id": "23",
+        "text": "Plans to direct 10 award-winning historical films"
+      },
+      {
+        "id": "24",
+        "text": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)"
+      },
+      {
+        "id": "25",
+        "text": "Incorporating themes of historical depth into upcoming film projects"
+      },
+      {
+        "id": "26",
+        "text": "Goal is to create historically accurate films"
+      },
+      {
+        "id": "27",
+        "text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas"
+      },
+      {
+        "id": "28",
+        "text": "Hopes films inspire appreciation of history and its nuances"
+      },
+      {
+        "id": "29",
+        "text": "Plans to revisit the tea house with friends who share passion for historical exploration"
+      },
+      {
+        "id": "30",
+        "text": "Love for history and storytelling drives creative decisions"
+      },
+      {
+        "id": "31",
+        "text": "Motivated by family background in history and passion for storytelling"
+      },
+      {
+        "id": "32",
+        "text": "Aims to integrate personal experiences into narratives to resonate with viewers"
+      },
+      {
+        "id": "33",
+        "text": "Aims to win multiple international awards"
+      },
+      {
+        "id": "34",
+        "text": "Experiences stress due to historical accuracy demands and tight production schedules"
+      },
+      {
+        "id": "35",
+        "text": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)"
+      },
+      {
+        "id": "36",
+        "text": "Family shares a passion for history and detail"
+      },
+      {
+        "id": "37",
+        "text": "Interested in exploring historical beverages"
+      }
+    ]
+  },
+  {
+    "sequence": 45,
+    "time": "2026-10-28T15:02:43.569981+08:00",
+    "phase": "session_007",
+    "kind": "model_output",
+    "stage": "update",
+    "raw_response": "{\n    \"memory\": [\n        {\n            \"id\": \"0\",\n            \"text\": \"Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Likes Persian cats because of their regal and calm nature, elegance, and historical charm\"\n        },\n        {\n            \"id\": \"1\",\n            \"text\": \"Seeks recognition at major film festivals like Cannes and Sundance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"2\",\n            \"text\": \"Likes British Shorthair cats because of their calm, collected nature and historical charm\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"3\",\n            \"text\": \"Success means recognition at major film festivals like Cannes and Sundance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"4\",\n            \"text\": \"Is a filmmaker\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"5\",\n            \"text\": \"Likes greyhounds because of their noble history and gentle demeanor, fitting for a soothing lifestyle\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"6\",\n            \"text\": \"Likes tweed jackets because of their classic, durable quality and association with a bygone era\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"7\",\n            \"text\": \"Dislikes parrots because of their constant noise and chatter, which disrupts a quiet, historical atmosphere\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"8\",\n            \"text\": \"Likes historical dramas because of their attention to detail and accurate portrayal of past events\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"9\",\n            \"text\": \"Likes tortoises because their slow, deliberate movements symbolize the passage of time and history\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"10\",\n            \"text\": \"Wants to challenge historical narratives and engage audiences on a deeper level\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"11\",\n            \"text\": \"Likes historical biographies because they vividly capture the lives and impact of historical figures\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"12\",\n            \"text\": \"Reflects on balancing historical authenticity with embracing new flavors\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Reflects on balancing historical authenticity with embracing new flavors\"\n        },\n        {\n            \"id\": \"13\",\n            \"text\": \"Focuses on historical accuracy in films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Focuses on historical accuracy in films\"\n        },\n        {\n            \"id\": \"14\",\n            \"text\": \"Loves visiting historic places, which deeply influence storytelling approach\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"15\",\n            \"text\": \"Dislikes skinny jeans because they feel restrictive and lack historical elegance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"16\",\n            \"text\": \"Dislikes bright neon colors because they feel too modern, flashy, and clash with understated, historically inspired attire\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"17\",\n            \"text\": \"Motivated by setting clear goals and maintaining work-life balance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"18\",\n            \"text\": \"No demanding family life to balance\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"19\",\n            \"text\": \"Has not explored new hobbies recently\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"20\",\n            \"text\": \"Work-life balance improved due to role change\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"21\",\n            \"text\": \"Recently promoted to lead director at Historical Productions Ltd.\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Recently promoted to lead director at Historical Productions Ltd.\"\n        },\n        {\n            \"id\": \"22\",\n            \"text\": \"Works at Historical Productions Ltd. as a Director\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"23\",\n            \"text\": \"Plans to direct 10 award-winning historical films\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"24\",\n            \"text\": \"Colleague: SmithSteven (expert in set design, shares passion for historical detail)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"25\",\n            \"text\": \"Incorporating themes of historical depth into upcoming film projects\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Incorporating themes of historical depth into upcoming film projects\"\n        },\n        {\n            \"id\": \"26\",\n            \"text\": \"Goal is to create historically accurate films\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Goal is to create historically accurate films\"\n        },\n        {\n            \"id\": \"27\",\n            \"text\": \"Plans to initiate groundbreaking historical dramas and possibly science fiction dramas\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Plans to initiate groundbreaking historical dramas and possibly science fiction dramas\"\n        },\n        {\n            \"id\": \"28\",\n            \"text\": \"Hopes films inspire appreciation of history and its nuances\",\n            \"event\": \"UPDATE\",\n            \"old_memory\": \"Hopes films inspire appreciation of history and its nuances\"\n        },\n        {\n            \"id\": \"29\",\n            \"text\": \"Plans to revisit the tea house with friends who share passion for historical exploration\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"30\",\n            \"text\": \"Love for history and storytelling drives creative decisions\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"31\",\n            \"text\": \"Motivated by family background in history and passion for storytelling\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"32\",\n            \"text\": \"Aims to integrate personal experiences into narratives to resonate with viewers\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"33\",\n            \"text\": \"Aims to win multiple international awards\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"34\",\n            \"text\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"35\",\n            \"text\": \"Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"36\",\n            \"text\": \"Family shares a passion for history and detail\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"37\",\n            \"text\": \"Interested in exploring historical beverages\",\n            \"event\": \"NONE\"\n        },\n        {\n            \"id\": \"38\",\n            \"text\": \"Also has a deep admiration for Siamese cats, especially after watching a documentary highlighting their historical significance and royal connections\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"39\",\n            \"text\": \"Interested in historical authenticity and its alignment with personal and professional life\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"40\",\n            \"text\": \"Lifestyle choices, including pet preferences, are aligned with efficiency and career goals\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"41\",\n            \"text\": \"Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"42\",\n            \"text\": \"Aims to explore lesser-known historical events and figures that had significant but overlooked impact\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"43\",\n            \"text\": \"Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"44\",\n            \"text\": \"Goal is to become a renowned director known for historically accurate films\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"45\",\n            \"text\": \"Wants to inspire others through historically accurate storytelling\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"46\",\n            \"text\": \"Aims to create immersive film experiences that transport viewers to different eras\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"47\",\n            \"text\": \"Relies on meticulous planning and collaboration with a talented team for film production\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"48\",\n            \"text\": \"Prioritizes key elements that enhance historical authenticity while balancing budget and production quality\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"49\",\n            \"text\": \"Draws professional inspiration from personal interests, especially the historical significance of Persian and Siamese cats\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"50\",\n            \"text\": \"Excited to explore the intersection of history and technology, particularly how historical events shaped technological advancements\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"51\",\n            \"text\": \"Plans to highlight key historical figures and events pivotal in technological developments\",\n            \"event\": \"ADD\"\n        },\n        {\n            \"id\": \"52\",\n            \"text\": \"Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further\",\n            \"event\": \"ADD\"\n        }\n    ]\n}",
+    "parsed": {
+      "memory": [
+        {
+          "id": "0",
+          "text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+          "event": "UPDATE",
+          "old_memory": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm"
+        },
+        {
+          "id": "1",
+          "text": "Seeks recognition at major film festivals like Cannes and Sundance",
+          "event": "NONE"
+        },
+        {
+          "id": "2",
+          "text": "Likes British Shorthair cats because of their calm, collected nature and historical charm",
+          "event": "NONE"
+        },
+        {
+          "id": "3",
+          "text": "Success means recognition at major film festivals like Cannes and Sundance",
+          "event": "NONE"
+        },
+        {
+          "id": "4",
+          "text": "Is a filmmaker",
+          "event": "NONE"
+        },
+        {
+          "id": "5",
+          "text": "Likes greyhounds because of their noble history and gentle demeanor, fitting for a soothing lifestyle",
+          "event": "NONE"
+        },
+        {
+          "id": "6",
+          "text": "Likes tweed jackets because of their classic, durable quality and association with a bygone era",
+          "event": "NONE"
+        },
+        {
+          "id": "7",
+          "text": "Dislikes parrots because of their constant noise and chatter, which disrupts a quiet, historical atmosphere",
+          "event": "NONE"
+        },
+        {
+          "id": "8",
+          "text": "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+          "event": "NONE"
+        },
+        {
+          "id": "9",
+          "text": "Likes tortoises because their slow, deliberate movements symbolize the passage of time and history",
+          "event": "NONE"
+        },
+        {
+          "id": "10",
+          "text": "Wants to challenge historical narratives and engage audiences on a deeper level",
+          "event": "NONE"
+        },
+        {
+          "id": "11",
+          "text": "Likes historical biographies because they vividly capture the lives and impact of historical figures",
+          "event": "NONE"
+        },
+        {
+          "id": "12",
+          "text": "Reflects on balancing historical authenticity with embracing new flavors",
+          "event": "UPDATE",
+          "old_memory": "Reflects on balancing historical authenticity with embracing new flavors"
+        },
+        {
+          "id": "13",
+          "text": "Focuses on historical accuracy in films",
+          "event": "UPDATE",
+          "old_memory": "Focuses on historical accuracy in films"
+        },
+        {
+          "id": "14",
+          "text": "Loves visiting historic places, which deeply influence storytelling approach",
+          "event": "NONE"
+        },
+        {
+          "id": "15",
+          "text": "Dislikes skinny jeans because they feel restrictive and lack historical elegance",
+          "event": "NONE"
+        },
+        {
+          "id": "16",
+          "text": "Dislikes bright neon colors because they feel too modern, flashy, and clash with understated, historically inspired attire",
+          "event": "NONE"
+        },
+        {
+          "id": "17",
+          "text": "Motivated by setting clear goals and maintaining work-life balance",
+          "event": "NONE"
+        },
+        {
+          "id": "18",
+          "text": "No demanding family life to balance",
+          "event": "NONE"
+        },
+        {
+          "id": "19",
+          "text": "Has not explored new hobbies recently",
+          "event": "NONE"
+        },
+        {
+          "id": "20",
+          "text": "Work-life balance improved due to role change",
+          "event": "NONE"
+        },
+        {
+          "id": "21",
+          "text": "Recently promoted to lead director at Historical Productions Ltd.",
+          "event": "UPDATE",
+          "old_memory": "Recently promoted to lead director at Historical Productions Ltd."
+        },
+        {
+          "id": "22",
+          "text": "Works at Historical Productions Ltd. as a Director",
+          "event": "NONE"
+        },
+        {
+          "id": "23",
+          "text": "Plans to direct 10 award-winning historical films",
+          "event": "NONE"
+        },
+        {
+          "id": "24",
+          "text": "Colleague: SmithSteven (expert in set design, shares passion for historical detail)",
+          "event": "NONE"
+        },
+        {
+          "id": "25",
+          "text": "Incorporating themes of historical depth into upcoming film projects",
+          "event": "UPDATE",
+          "old_memory": "Incorporating themes of historical depth into upcoming film projects"
+        },
+        {
+          "id": "26",
+          "text": "Goal is to create historically accurate films",
+          "event": "UPDATE",
+          "old_memory": "Goal is to create historically accurate films"
+        },
+        {
+          "id": "27",
+          "text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+          "event": "UPDATE",
+          "old_memory": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas"
+        },
+        {
+          "id": "28",
+          "text": "Hopes films inspire appreciation of history and its nuances",
+          "event": "UPDATE",
+          "old_memory": "Hopes films inspire appreciation of history and its nuances"
+        },
+        {
+          "id": "29",
+          "text": "Plans to revisit the tea house with friends who share passion for historical exploration",
+          "event": "NONE"
+        },
+        {
+          "id": "30",
+          "text": "Love for history and storytelling drives creative decisions",
+          "event": "NONE"
+        },
+        {
+          "id": "31",
+          "text": "Motivated by family background in history and passion for storytelling",
+          "event": "NONE"
+        },
+        {
+          "id": "32",
+          "text": "Aims to integrate personal experiences into narratives to resonate with viewers",
+          "event": "NONE"
+        },
+        {
+          "id": "33",
+          "text": "Aims to win multiple international awards",
+          "event": "NONE"
+        },
+        {
+          "id": "34",
+          "text": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "event": "NONE"
+        },
+        {
+          "id": "35",
+          "text": "Colleague: JacksonWilliam (administrative skills help keep productions running smoothly)",
+          "event": "NONE"
+        },
+        {
+          "id": "36",
+          "text": "Family shares a passion for history and detail",
+          "event": "NONE"
+        },
+        {
+          "id": "37",
+          "text": "Interested in exploring historical beverages",
+          "event": "NONE"
+        },
+        {
+          "id": "38",
+          "text": "Also has a deep admiration for Siamese cats, especially after watching a documentary highlighting their historical significance and royal connections",
+          "event": "ADD"
+        },
+        {
+          "id": "39",
+          "text": "Interested in historical authenticity and its alignment with personal and professional life",
+          "event": "ADD"
+        },
+        {
+          "id": "40",
+          "text": "Lifestyle choices, including pet preferences, are aligned with efficiency and career goals",
+          "event": "ADD"
+        },
+        {
+          "id": "41",
+          "text": "Plans to initiate film projects that blend historical accuracy with innovative storytelling techniques",
+          "event": "ADD"
+        },
+        {
+          "id": "42",
+          "text": "Aims to explore lesser-known historical events and figures that had significant but overlooked impact",
+          "event": "ADD"
+        },
+        {
+          "id": "43",
+          "text": "Plans to conduct thorough research and collaborate with historians for accuracy and depth in storytelling",
+          "event": "ADD"
+        },
+        {
+          "id": "44",
+          "text": "Goal is to become a renowned director known for historically accurate films",
+          "event": "ADD"
+        },
+        {
+          "id": "45",
+          "text": "Wants to inspire others through historically accurate storytelling",
+          "event": "ADD"
+        },
+        {
+          "id": "46",
+          "text": "Aims to create immersive film experiences that transport viewers to different eras",
+          "event": "ADD"
+        },
+        {
+          "id": "47",
+          "text": "Relies on meticulous planning and collaboration with a talented team for film production",
+          "event": "ADD"
+        },
+        {
+          "id": "48",
+          "text": "Prioritizes key elements that enhance historical authenticity while balancing budget and production quality",
+          "event": "ADD"
+        },
+        {
+          "id": "49",
+          "text": "Draws professional inspiration from personal interests, especially the historical significance of Persian and Siamese cats",
+          "event": "ADD"
+        },
+        {
+          "id": "50",
+          "text": "Excited to explore the intersection of history and technology, particularly how historical events shaped technological advancements",
+          "event": "ADD"
+        },
+        {
+          "id": "51",
+          "text": "Plans to highlight key historical figures and events pivotal in technological developments",
+          "event": "ADD"
+        },
+        {
+          "id": "52",
+          "text": "Hopes audiences gain a deeper understanding of history's impact on the present and feel inspired to explore these connections further",
+          "event": "ADD"
+        }
+      ]
+    },
+    "parse_error": null,
+    "native_temp_uuid_mapping": {
+      "0": "eef34a57-c82a-4995-877d-66b54b9589da",
+      "1": "1b1fd0ea-358d-48b7-a160-134bbb6da849",
+      "2": "a8611a3d-c6dd-48ac-8805-8a35ab5894b0",
+      "3": "8c75c81e-6f7e-4604-81b7-e4d0b2115d81",
+      "4": "e6112994-45c2-43d2-86d8-7c8d978f690e",
+      "5": "308d8dcb-59c6-4f41-824b-7454c648c32e",
+      "6": "6c0819ca-ab03-488f-a983-3566a7b37b29",
+      "7": "6b0d05e1-6554-4c18-9997-7e28da7a8049",
+      "8": "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+      "9": "670899d2-6dbe-440e-8fa4-a267370456eb",
+      "10": "4e4655c5-c89f-4fcd-a6bb-4ea500e1e522",
+      "11": "b5fbe40c-9778-4646-abe1-9921c85da36c",
+      "12": "4307efba-c7a6-458b-a0b5-e0b25d272fa3",
+      "13": "02e8d4ac-c863-480a-9985-bc34800e3fec",
+      "14": "b77be932-7af4-4557-b93a-bc40d9edd549",
+      "15": "6f8c679f-925d-4f4e-b1f8-4a1460ac58bb",
+      "16": "6f49c3e3-2f70-451f-9407-58aaa5f347bd",
+      "17": "29f55d6d-4db9-4027-a9c1-baa4759815a1",
+      "18": "4fc05270-e53d-4b0a-ac6e-459e7a0677fe",
+      "19": "57749a01-c7f7-474a-aa4a-770781436d98",
+      "20": "1043672a-eb91-4a73-841a-f6204f50bf61",
+      "21": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "22": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "23": "c95cbc1b-30a6-43e6-99e3-df3d3e41eaab",
+      "24": "b4c92aa8-44f5-48ff-a94d-137e67f02293",
+      "25": "852c32b4-c380-40a2-9d7b-5a4ad0681292",
+      "26": "f71eebcd-d556-436f-97be-a8dca4c99de9",
+      "27": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "28": "6b2ae9b2-8a57-407b-a2ec-61348ff1039e",
+      "29": "7ad28253-8ba5-4531-b52c-208430e589b2",
+      "30": "655e2d5c-1112-4c03-843d-492d15aeb773",
+      "31": "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+      "32": "c7ed3a1f-0e99-405b-9834-ba613efe2894",
+      "33": "f4df31a0-3c5e-4f9d-894e-450451c3f20f",
+      "34": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "35": "565d80ae-05a6-4d8e-a5e4-81659d32caca",
+      "36": "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+      "37": "9315a8c1-7611-443b-a5b5-f92b52ea1a11"
+    },
+    "elapsed_seconds": 48.10572896699887
+  }
+]

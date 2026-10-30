@@ -1,0 +1,110 @@
+{
+  "run_id": "20261022T203207+0800_a40c12d5",
+  "status": "failed",
+  "completed_sessions": 2,
+  "output_directory": "/Users/freya/Documents/git-folder/mem0_halumem_diagnosis/results/local_smoke/20261022T203207+0800_a40c12d5",
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "sessions": [
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "ADD": 17
+      },
+      "native_error_count": 0,
+      "add_error": null,
+      "before_count": 0,
+      "after_count": 17,
+      "elapsed_seconds": 21.41386670898646
+    },
+    {
+      "history_replayed_matches_database": true,
+      "return_matches_history": true,
+      "actual_operation_counts": {
+        "ADD": 12
+      },
+      "native_error_count": 0,
+      "add_error": null,
+      "before_count": 17,
+      "after_count": 29,
+      "elapsed_seconds": 29.970935916993767
+    }
+  ],
+  "final_memory_count": 29,
+  "actual_operation_counts": {
+    "ADD": 29,
+    "UPDATE": 0,
+    "DELETE": 0
+  },
+  "persistence_error": "",
+  "elapsed_seconds": 55.65820820897352,
+  "usage": {
+    "groups": {
+      "preflight:llm": {
+        "calls": 1,
+        "usage": {
+          "completion_tokens": 5,
+          "prompt_tokens": 20,
+          "total_tokens": 25
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "preflight:embedding": {
+        "calls": 1,
+        "usage": {
+          "prompt_tokens": 5,
+          "total_tokens": 5
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      },
+      "session_01:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 805,
+          "prompt_tokens": 2722,
+          "total_tokens": 3527
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_01:embedding": {
+        "calls": 17,
+        "usage": {
+          "prompt_tokens": 189,
+          "total_tokens": 189
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      },
+      "session_02:llm": {
+        "calls": 2,
+        "usage": {
+          "completion_tokens": 1187,
+          "prompt_tokens": 3066,
+          "total_tokens": 4253
+        },
+        "models_returned": [
+          "qwen-plus"
+        ]
+      },
+      "session_02:embedding": {
+        "calls": 12,
+        "usage": {
+          "prompt_tokens": 166,
+          "total_tokens": 166
+        },
+        "models_returned": [
+          "text-embedding-v4"
+        ]
+      }
+    },
+    "note": "Usage is provider-reported; unavailable fields remain absent. Hidden SDK retries are not counted separately."
+  },
+  "update_protection_conclusion": "Two-session smoke run did not complete; the pipeline and update protection are not verified."
+}

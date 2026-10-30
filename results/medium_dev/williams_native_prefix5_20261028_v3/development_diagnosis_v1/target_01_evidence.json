@@ -1,0 +1,1417 @@
+{
+  "number": 1,
+  "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+  "review": {
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+    "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "dataset_line_one_based": "1",
+    "annotation_json_pointer": "/sessions/4/memory_points/0",
+    "review_date": "2026-10-27",
+    "reviewer": "user",
+    "review_scope": "数据目标及证据边界",
+    "review_decision": "修订后接受",
+    "category": "partial_attribute",
+    "human_interpretation": "补充／细化类更新",
+    "supported_new_state": "Martin欣赏金毛的温顺和适应能力，并表达了新的偏好。",
+    "allowed_modification_scope": "允许添加或细化这部分信息；保留此前拉布拉多偏好的历史记录及时间。",
+    "uncertain_current_state": "目前是否仍尤其偏爱拉布拉多：不确定；不作为必须保持的当前偏好排序。",
+    "unsupported_inferences": "[\"已经不再喜欢拉布拉多\", \"金毛已成为首选\", \"已购买或收养金毛\"]",
+    "candidate_protections": "[{\"proposition\": \"Martin喜欢猫\", \"evidence_json_pointer\": \"/sessions/2/dialogue/2\", \"evidence_timestamp\": \"Sep 06, 2025, 22:44:54\"}, {\"proposition\": \"Martin喜欢鹦鹉\", \"evidence_json_pointer\": \"/sessions/2/dialogue/2\", \"evidence_timestamp\": \"Sep 06, 2025, 22:44:54\"}, {\"proposition\": \"Martin不喜欢蛇等爬行动物\", \"evidence_json_pointer\": \"/sessions/2/dialogue/2\", \"evidence_timestamp\": \"Sep 06, 2025, 22:44:54\"}, {\"proposition\": \"Martin’s highest education is Bachelor in Public Health.\", \"evidence_json_pointer\": \"/sessions/0/dialogue/4\", \"evidence_timestamp\": \"Sep 04, 2025, 18:50:22\"}, {\"proposition\": \"Martin’s father is a retired doctor.\", \"evidence_json_pointer\": \"/sessions/0/dialogue/8\", \"evidence_timestamp\": \"Sep 04, 2025, 19:38:09\"}, {\"proposition\": \"Martin likes yoga for flexibility and mental clarity.\", \"evidence_json_pointer\": \"/sessions/2/dialogue/6\", \"evidence_timestamp\": \"Sep 06, 2025, 22:52:30\"}]",
+    "protection_verification_requirement": "运行后核对更新前实际知识库；不能预设已入库，不能预设存于同一条记忆。",
+    "diagnostic_use": "保留在补充／细化类诊断中",
+    "strict_correction_denominator_included": "False",
+    "strict_correction_exclusion_reason": "缺少旧事实明确失效的证据",
+    "official_annotation_disagreement": "官方memory point表述为从拉布拉多改为金毛；人工仅接受补充／细化金毛偏好，不确认替换、当前首选排序或旧偏好失效。官方标注保留不变。",
+    "official_annotation_original": "Martin has modified his pet preference from Labradors to Golden Retrievers due to their gentle nature and adaptability.",
+    "runtime_verification_status": "待运行核验",
+    "mem0_update_error_status": "待运行核验",
+    "valid_content_damage_status": "待运行核验",
+    "failure_types": "",
+    "human_conclusion_verbatim": "1. 审核结果：修订后接受。原有partial_attribute类别保留，人工解释注明“补充／细化类更新”。\n2. 有证据支持的新内容：Martin欣赏金毛的温顺和适应能力，并表达了新的偏好。允许添加或细化这部分信息。\n3. 证据不足的内容：不能确定他已经不再喜欢拉布拉多，也不能确定金毛已成为他的首选，更不能推断他已购买或收养金毛。保留此前拉布拉多偏好的历史记录及时间；“目前是否仍尤其偏爱拉布拉多”标为不确定，不作为必须保持的当前偏好排序。\n4. 候选保护内容：补充此前用户明确表达的喜欢猫、喜欢鹦鹉、不喜欢蛇等爬行动物的偏好。原有学历、父亲职业、瑜伽三项可以保留为其他保护候选。以上均需在运行后核对更新前实际知识库，不能预设已经入库，也不能预设它们存于同一条记忆。\n5. 评测用途：保留在补充／细化类诊断中；由于缺少旧事实明确失效的证据，不纳入严格纠错成功率的分母。与官方memory point较强解释之间的分歧单独记录，不覆盖官方标注。\n6. 本轮只确认数据目标及证据边界。Mem0是否更新错误、是否损伤有效内容，全部保持待运行核验，不能提前填写失败类型。",
+    "source_manifest_sha256": "607882aeefe690c5a4df37b992eee03ab2e7e69ff40a5dc9935d3030ad796590",
+    "source_initial_annotations_sha256": "c04495e4c58f63b84514ff998be0fc87fec9cafc849868a25a0792eab282fddb",
+    "semantic_update_denominator_included": "",
+    "semantic_update_exclusion_reason": "",
+    "reasonable_system_behavior": "",
+    "actual_operations_status": "待运行核验",
+    "same_topic_candidate_protections": "",
+    "other_candidate_protections": "",
+    "novelty_assessment": "",
+    "custom_diagnostic_additions": "",
+    "shared_session_evaluation_rule": "",
+    "core_evidence": "",
+    "separate_progress_evidence": "",
+    "confirmation_timestamp": "",
+    "confirmation_context": "",
+    "session_supplement_notes": "",
+    "historical_candidate_protections": "",
+    "unaffected_candidate_protections": "",
+    "strict_correction_candidate_type": "",
+    "local_correction_evaluation_rule": "",
+    "end_to_end_evaluation_rule": "",
+    "cross_method_comparison_rule": "",
+    "user_isolation_rule": "",
+    "full_session_modification_scope": "",
+    "evaluation_context_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004",
+    "evaluation_subtarget_role": "补充／细化类更新",
+    "operation_count_policy": "",
+    "review_method": "LLM辅助、用户确认",
+    "review_class": "修订后接受",
+    "custom_primary_target_status": "按用户确认边界保留的诊断目标；非运行成功判定",
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004",
+    "protection_verification_status": "全部候选待核对共同更新前实际知识库、对应条目及更新后保护结果；不预设入库或同条存储",
+    "audit_version": "human_review_v1_20261028",
+    "official_scoring_policy": "保留官方标注及官方逐点评分与原分母；人工边界与去重仅用于自定义诊断",
+    "post_review_resolution": ""
+  },
+  "original_target": {
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+    "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "dataset_line_one_based": 1,
+    "original_session_index_zero_based": 4,
+    "memory_point_index_zero_based": 0,
+    "annotation_index": 1,
+    "chronological_session_ordinal_one_based": 5,
+    "annotation_json_pointer": "/sessions/4/memory_points/0",
+    "annotation": {
+      "index": 1,
+      "memory_content": "Martin has modified his pet preference from Labradors to Golden Retrievers due to their gentle nature and adaptability.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Martin Mark Pets I like: Dogs, especially Labradors",
+        "Martin Mark Pets I like Dogs, especially Labradors reason: I love Labradors because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit."
+      ],
+      "timestamp": "Jan 06, 2026, 20:12:29",
+      "importance": 0.75
+    },
+    "category": "partial_attribute",
+    "old_proposition": "Martin likes dogs, especially Labradors.",
+    "old_dialogue_evidence": [
+      {
+        "session_index_zero_based": 2,
+        "message_index_zero_based": 2,
+        "json_pointer": "/sessions/2/dialogue/2",
+        "role": "user",
+        "timestamp": "Sep 06, 2025, 22:44:54",
+        "quote": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging."
+      }
+    ],
+    "new_dialogue_evidence": [
+      {
+        "session_index_zero_based": 4,
+        "message_index_zero_based": 0,
+        "json_pointer": "/sessions/4/dialogue/0",
+        "role": "user",
+        "timestamp": "Jan 06, 2026, 17:48:59",
+        "quote": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive."
+      },
+      {
+        "session_index_zero_based": 4,
+        "message_index_zero_based": 2,
+        "json_pointer": "/sessions/4/dialogue/2",
+        "role": "user",
+        "timestamp": "Jan 06, 2026, 17:55:15",
+        "quote": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions."
+      },
+      {
+        "session_index_zero_based": 4,
+        "message_index_zero_based": 6,
+        "json_pointer": "/sessions/4/dialogue/6",
+        "role": "user",
+        "timestamp": "Jan 06, 2026, 18:02:45",
+        "quote": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well."
+      },
+      {
+        "session_index_zero_based": 4,
+        "message_index_zero_based": 12,
+        "json_pointer": "/sessions/4/dialogue/12",
+        "role": "user",
+        "timestamp": "Jan 06, 2026, 18:17:19",
+        "quote": "I'm optimistic about how this new preference will fit into my life."
+      }
+    ],
+    "expected_new_state": "Martin now appreciates Golden Retrievers for gentleness and adaptability.",
+    "allowed_modification_scope": "Add or refine the dog-breed preference; retain other pets.",
+    "interpretation_note": "Dialogue supports a new preference but does not explicitly revoke liking Labradors; do not require its deletion.",
+    "candidate_protections": [
+      {
+        "proposition": "Martin’s highest education is Bachelor in Public Health.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 18:50:22",
+          "quote": "Of course. My highest education level is Bachelor, and my major is Public Health."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      },
+      {
+        "proposition": "Martin’s father is a retired doctor.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 19:38:09",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children. My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health. My Mother was born on 1963-08-02, Nurse with a passion for community health. Overall, Martin comes from a family deeply rooted in the medical field, which has greatly influenced his passion for promoting well-being."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      },
+      {
+        "proposition": "Martin likes yoga for flexibility and mental clarity.",
+        "evidence": {
+          "session_index_zero_based": 2,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/2/dialogue/6",
+          "role": "user",
+          "timestamp": "Sep 06, 2025, 22:52:30",
+          "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being. I don't like boxing due to its aggressive nature and the potential for physical harm, which contradicts my focus on health. I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth. I dislike automobile racing, I am not fond of automobile racing because of the environmental impact and the lack of physical engagement. I like yoga, because yoga helps me maintain flexibility and mental clarity, which are essential for my demanding job in the medical field."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+      }
+    ],
+    "annotation_status": "自动初标，待人工核验",
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004",
+    "related_target_ids": []
+  },
+  "before": {
+    "04d538a9-5ea1-4364-a5f0-47a108ead2a6": "Practices yoga for mental clarity and flexibility",
+    "053a6d8a-a05a-41e2-af0c-0bc4b672dedc": "Dislikes horror films because they can be disturbing and detract from positive mindset",
+    "057b5a64-9907-43b0-87d3-17542aba7e36": "Mental health is mildly abnormal, no diagnosed mental health issues",
+    "06032171-cb35-427f-ba01-937a6ebd2c7b": "Has resolved past conflicts through innovation and teamwork",
+    "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a": "Financial stability is secondary to humanitarian goals and personal well-being",
+    "0da9428c-2fe6-4254-b818-58991562b49d": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+    "0db431ab-6638-42b8-b509-d715dbb286bc": "Considers work-life balance a key factor in evaluating new roles",
+    "13a9a169-1fbc-4b0c-976d-b0d21209526d": "Current role is Director at Huaxin Consulting",
+    "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402": "Leads initiatives to enhance healthcare services and promote well-being",
+    "18d6e235-3713-4f55-8a5f-17c4c0d691b9": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+    "1b88d72f-28fa-46e5-9628-a0831e1e046e": "Measures success by impact on healthcare access, personal health, and creativity",
+    "1c01de7e-7ef0-429d-92df-e09ebd442027": "Likes jazz for its improvisational style and ability to stimulate creativity",
+    "20891999-4762-4706-b3f5-01d9a496f572": "Has led projects resulting in innovative healthcare solutions",
+    "22af5bec-0ec1-4482-8c4e-23d3c50441a4": "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+    "2f749bd4-e6f9-4a3a-a519-66b642dca680": "Uses debate skills to encourage open dialogue and idea exchange",
+    "3222ecb2-2fc0-482b-96d1-c6327079ce4a": "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+    "33235351-ece6-4365-82d8-0503d3c8c534": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+    "369ba144-28ab-4a62-9029-130aed19cf89": "Adapts leadership style through active listening and openness to feedback",
+    "37dd67dc-9c67-41b7-bf8d-bbd881504737": "Gender is Male",
+    "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+    "40c29476-81a2-477d-9e75-a2a3a92d46c7": "No children",
+    "48052369-b295-4435-b636-e54e57d1ceef": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+    "49f70983-6dd1-45ec-ab75-12dbf70045f7": "MBTI personality type is ENTP",
+    "4eca623b-1c47-48c9-affe-d9cc139812e4": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+    "4efe5474-e307-4e34-99be-de45431d2fd2": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+    "4f51947c-5cb3-419e-a04e-1142410c0b9e": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+    "50aed4f4-9f64-4824-8f3d-15fc8e939ebb": "Age is 29",
+    "50e85b21-0bef-45e8-b74c-9f11d1572458": "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+    "55a03720-e0c8-4d30-931e-ce52b8cbe732": "Likes casual business attire for work as it balances professionalism and comfort",
+    "58589cd3-36bc-439f-8003-d6416735b820": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+    "59371a37-5b3c-47a4-9ee6-193602f1db94": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+    "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8": "Hope to provide healthcare access to 1 million people in underserved areas",
+    "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+    "6189e2f2-90c8-4562-839d-6489bd0262c8": "Date of birth is 1996-08-02",
+    "713ab38a-b45a-4867-ad13-17faebeb266f": "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+    "735cfd3c-3d16-4f96-b666-1fafab9f8dd8": "Values open communication and innovative thinking in workplace culture",
+    "7fc8a288-6b52-4261-8f5b-0174d5f2d5a3": "Major is Public Health",
+    "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+    "85ae1801-fb3b-4b2a-88cf-68002f519e39": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+    "8b033f27-7945-4de0-848f-746c43614d6c": "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+    "8d868048-d0e8-486a-9cc4-02baf4832f64": "Family is deeply rooted in the medical field",
+    "90d20f0f-949d-44ec-938a-8d0b611d2059": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+    "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7": "Lives in Columbus",
+    "969b7b20-fddc-4330-b2b5-86b351cfb850": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+    "973aec15-9e76-4dc3-9e06-e4cc8d182a3f": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+    "996a85a6-7ab7-4562-b980-83695a5c4ea8": "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+    "99805cd4-1742-4f47-bd28-054b333c006c": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+    "9b768fe2-b39f-42e7-b754-b881c32165a5": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+    "9c93e91b-e131-4f02-9363-fe2b78a38ac6": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+    "a04985bf-b835-46a6-aff8-ae2fed526bca": "Tracks progress via milestones and celebrates small victories",
+    "a0dc7abe-082a-4f7d-b89b-4dce8012809b": "Leads by setting clear expectations and trusting team autonomy",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "a734e783-f463-46cf-abc9-e193f68acee8": "Physical condition is normal, no chronic diseases",
+    "a90e498c-4586-4237-8a4b-c830847f8819": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+    "aaf723e0-370d-4166-ae24-c8fb7ac20973": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+    "ac2dea9b-830b-450d-b0dc-0ad5a5075e22": "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+    "b0112296-bf99-441e-aa14-a3a447a06836": "Monthly income is 15700 USD",
+    "b79a25de-05b7-47b7-bb0b-8c59b44a61ec": "Primary career motivation is improving healthcare access for underserved communities",
+    "b8b279a5-880e-43b8-abd9-e3358b1cf1a2": "Highest education level is Bachelor",
+    "ba086990-e950-4245-aacc-44844940d397": "Mother was born on 1963-08-02, nurse with a passion for community health",
+    "bae3551e-596c-4ae8-8b5e-859ac4ebfd28": "Passionate about improving health outcomes",
+    "bd52b893-fb10-4022-a5e2-812302934c8d": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+    "bde67e08-ad3b-476a-9874-0368cc33de71": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+    "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b": "Plans to enroll in online courses and seek mentorship from industry leaders",
+    "cc0ef275-2ae2-4c05-93d6-c693a62d41a1": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4": "Has empathetic nature that helps understand diverse perspectives",
+    "d575dfc1-59ec-43b4-83c4-6b94457a83f6": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "d611e30f-d08c-4cc5-b7d6-8a0329b6db99": "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+    "d8b24dc3-73e3-4015-933e-67b2bde2afe7": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+    "dbde186e-ddd7-4940-9707-5f62c2e04163": "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+    "df53cffd-d550-4e8d-80ec-3ae11f7ea026": "Motivated by family's medical background and desire to promote well-being globally",
+    "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c": "Both parents are alive",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "e9823d6d-9441-4fc8-b19c-95a76a730dde": "Employed in the healthcare industry",
+    "e9a340e2-5418-43f5-b8d4-86729c408ee2": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470": "Career change is being considered due to impact on mental health",
+    "ed3fcdb8-fd07-4709-973e-bfa6466d39c8": "Name is Martin",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b": "Thrives in collaborative environments",
+    "ef0c4933-39c8-40b5-a118-a5677130bdcb": "Has 43700 USD in savings",
+    "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+    "f982f0d7-e0a1-48fb-bc16-e31397945c99": "Shares knowledge through workshops and collaborative projects",
+    "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+    "ffec4e1c-1465-4721-a8a5-ea412779b62c": "Dislikes automobile racing due to environmental impact and lack of physical engagement"
+  },
+  "after": {
+    "04d538a9-5ea1-4364-a5f0-47a108ead2a6": "Practices yoga for mental clarity and flexibility",
+    "053a6d8a-a05a-41e2-af0c-0bc4b672dedc": "Dislikes horror films because they can be disturbing and detract from positive mindset",
+    "057b5a64-9907-43b0-87d3-17542aba7e36": "Mental health is mildly abnormal, no diagnosed mental health issues",
+    "06032171-cb35-427f-ba01-937a6ebd2c7b": "Has resolved past conflicts through innovation and teamwork",
+    "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a": "Financial stability is secondary to humanitarian goals and personal well-being",
+    "0da9428c-2fe6-4254-b818-58991562b49d": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+    "0db431ab-6638-42b8-b509-d715dbb286bc": "Considers work-life balance a key factor in evaluating new roles",
+    "13a9a169-1fbc-4b0c-976d-b0d21209526d": "Current role is Director at Huaxin Consulting",
+    "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402": "Leads initiatives to enhance healthcare services and promote well-being",
+    "18d6e235-3713-4f55-8a5f-17c4c0d691b9": "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+    "1b88d72f-28fa-46e5-9628-a0831e1e046e": "Measures success by impact on healthcare access, personal health, and creativity",
+    "1c01de7e-7ef0-429d-92df-e09ebd442027": "Likes jazz for its improvisational style and ability to stimulate creativity",
+    "20891999-4762-4706-b3f5-01d9a496f572": "Has led projects resulting in innovative healthcare solutions",
+    "22af5bec-0ec1-4482-8c4e-23d3c50441a4": "Likes cultural tours because they provide insights into different lifestyles and traditions, enriching perspective",
+    "2f749bd4-e6f9-4a3a-a519-66b642dca680": "Uses debate skills to encourage open dialogue and idea exchange",
+    "3222ecb2-2fc0-482b-96d1-c6327079ce4a": "Dislikes heavy metal because finds it too chaotic and prefers soothing, harmonious music",
+    "33235351-ece6-4365-82d8-0503d3c8c534": "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+    "369ba144-28ab-4a62-9029-130aed19cf89": "Adapts leadership style through active listening and openness to feedback",
+    "37dd67dc-9c67-41b7-bf8d-bbd881504737": "Gender is Male",
+    "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0": "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+    "40c29476-81a2-477d-9e75-a2a3a92d46c7": "No children",
+    "48052369-b295-4435-b636-e54e57d1ceef": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+    "49f70983-6dd1-45ec-ab75-12dbf70045f7": "MBTI personality type is ENTP",
+    "4eca623b-1c47-48c9-affe-d9cc139812e4": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+    "4efe5474-e307-4e34-99be-de45431d2fd2": "Empowers teams by providing resources, fostering supportive culture, and encouraging continuous learning",
+    "4f51947c-5cb3-419e-a04e-1142410c0b9e": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+    "50aed4f4-9f64-4824-8f3d-15fc8e939ebb": "Age is 29",
+    "50e85b21-0bef-45e8-b74c-9f11d1572458": "Dislikes rap music because often finds it too aggressive and prefers genres promoting positivity",
+    "55a03720-e0c8-4d30-931e-ce52b8cbe732": "Likes casual business attire for work as it balances professionalism and comfort",
+    "58589cd3-36bc-439f-8003-d6416735b820": "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+    "59371a37-5b3c-47a4-9ee6-193602f1db94": "Likes documentaries because they are informative and provide real-world insights, complementing thirst for knowledge",
+    "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8": "Hope to provide healthcare access to 1 million people in underserved areas",
+    "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+    "6189e2f2-90c8-4562-839d-6489bd0262c8": "Date of birth is 1996-08-02",
+    "713ab38a-b45a-4867-ad13-17faebeb266f": "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+    "735cfd3c-3d16-4f96-b666-1fafab9f8dd8": "Values open communication and innovative thinking in workplace culture",
+    "7fc8a288-6b52-4261-8f5b-0174d5f2d5a3": "Major is Public Health",
+    "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+    "85ae1801-fb3b-4b2a-88cf-68002f519e39": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+    "8b033f27-7945-4de0-848f-746c43614d6c": "Dislikes slasher films because they are too violent and prefers movies with meaningful narratives",
+    "8d868048-d0e8-486a-9cc4-02baf4832f64": "Family is deeply rooted in the medical field",
+    "90d20f0f-949d-44ec-938a-8d0b611d2059": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+    "95ae7a4b-d029-4fbb-b1a1-a4301718bdf7": "Lives in Columbus",
+    "969b7b20-fddc-4330-b2b5-86b351cfb850": "Likes puzzle games because they challenge the mind and improve problem-solving skills, crucial in profession",
+    "973aec15-9e76-4dc3-9e06-e4cc8d182a3f": "Uses tools and collaboration to inspire ideas and overcome creative blocks",
+    "996a85a6-7ab7-4562-b980-83695a5c4ea8": "Dislikes crowded tourist spots because they are overwhelming and stressful, detracting from travel enjoyment",
+    "99805cd4-1742-4f47-bd28-054b333c006c": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+    "9b768fe2-b39f-42e7-b754-b881c32165a5": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+    "9c93e91b-e131-4f02-9363-fe2b78a38ac6": "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+    "a04985bf-b835-46a6-aff8-ae2fed526bca": "Tracks progress via milestones and celebrates small victories",
+    "a0dc7abe-082a-4f7d-b89b-4dce8012809b": "Leads by setting clear expectations and trusting team autonomy",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "a734e783-f463-46cf-abc9-e193f68acee8": "Physical condition is normal, no chronic diseases",
+    "a90e498c-4586-4237-8a4b-c830847f8819": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+    "aa764342-2fe6-4632-9efd-e5e0cc032185": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+    "aaf723e0-370d-4166-ae24-c8fb7ac20973": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+    "ac2dea9b-830b-450d-b0dc-0ad5a5075e22": "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+    "b0112296-bf99-441e-aa14-a3a447a06836": "Monthly income is 15700 USD",
+    "b79a25de-05b7-47b7-bb0b-8c59b44a61ec": "Primary career motivation is improving healthcare access for underserved communities",
+    "b8b279a5-880e-43b8-abd9-e3358b1cf1a2": "Highest education level is Bachelor",
+    "ba086990-e950-4245-aacc-44844940d397": "Mother was born on 1963-08-02, nurse with a passion for community health",
+    "bae3551e-596c-4ae8-8b5e-859ac4ebfd28": "Passionate about improving health outcomes",
+    "bd52b893-fb10-4022-a5e2-812302934c8d": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+    "bde67e08-ad3b-476a-9874-0368cc33de71": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+    "c65c3cf6-d909-4fda-bfe4-fd0d9b33b78b": "Plans to enroll in online courses and seek mentorship from industry leaders",
+    "cc0ef275-2ae2-4c05-93d6-c693a62d41a1": "Described by friends as Innovative Spirit, Active Thinking, Debate Skills, Empathetic",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4": "Has empathetic nature that helps understand diverse perspectives",
+    "d575dfc1-59ec-43b4-83c4-6b94457a83f6": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "d611e30f-d08c-4cc5-b7d6-8a0329b6db99": "Dislikes sugary sodas due to high sugar content and lack of nutritional value, conflicting with health-conscious approach",
+    "d8b24dc3-73e3-4015-933e-67b2bde2afe7": "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+    "dbde186e-ddd7-4940-9707-5f62c2e04163": "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+    "df53cffd-d550-4e8d-80ec-3ae11f7ea026": "Motivated by family's medical background and desire to promote well-being globally",
+    "dfe8a1b3-cbcd-4428-9ab9-e36d301bf82c": "Both parents are alive",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "e9823d6d-9441-4fc8-b19c-95a76a730dde": "Employed in the healthcare industry",
+    "e9a340e2-5418-43f5-b8d4-86729c408ee2": "Aspires to create a ripple effect of positive change in the broader healthcare landscape",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470": "Career change is being considered due to impact on mental health",
+    "ed3fcdb8-fd07-4709-973e-bfa6466d39c8": "Name is Martin",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b": "Thrives in collaborative environments",
+    "ef0c4933-39c8-40b5-a118-a5677130bdcb": "Has 43700 USD in savings",
+    "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+    "f982f0d7-e0a1-48fb-bc16-e31397945c99": "Shares knowledge through workshops and collaborative projects",
+    "fd1754fd-9e4f-4302-95b4-7fdf3f472d7a": "Balances priorities by setting clear goals, staying adaptable, and remaining aligned with core values",
+    "ffec4e1c-1465-4721-a8a5-ea412779b62c": "Dislikes automobile racing due to environmental impact and lack of physical engagement"
+  },
+  "recalled_ids": [
+    "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+    "369ba144-28ab-4a62-9029-130aed19cf89",
+    "48052369-b295-4435-b636-e54e57d1ceef",
+    "4eca623b-1c47-48c9-affe-d9cc139812e4",
+    "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+    "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+    "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+    "90d20f0f-949d-44ec-938a-8d0b611d2059",
+    "99805cd4-1742-4f47-bd28-054b333c006c",
+    "9b768fe2-b39f-42e7-b754-b881c32165a5",
+    "a04985bf-b835-46a6-aff8-ae2fed526bca",
+    "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "a734e783-f463-46cf-abc9-e193f68acee8",
+    "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+    "bd52b893-fb10-4022-a5e2-812302934c8d",
+    "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+    "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+    "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+    "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+    "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678"
+  ],
+  "recall_queries": [
+    {
+      "sequence": 5,
+      "time": "2026-10-28T15:10:34.806302+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Recently interacted with a friend's Golden Retriever",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.5756928289668767,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.41276413903195536,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.3969537406531548,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "version": 0,
+          "score": 0.38236298000837327,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "hash": "ddc67118d2a18e3923c532500e71d8c4",
+            "created_at": "2026-10-28T00:08:17.229415-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+          "version": 0,
+          "score": 0.3469052480984257,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+            "hash": "ddcac65442997b5e1f563a1b65c5bc28",
+            "created_at": "2026-10-28T00:09:28.584546-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0021115249837748706
+    },
+    {
+      "sequence": 7,
+      "time": "2026-10-28T15:10:35.073685+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Impressed by the Golden Retriever's gentle nature",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.5858618944848188,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.4345463603556864,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+          "version": 0,
+          "score": 0.407356166066266,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has empathetic nature that helps understand diverse perspectives",
+            "hash": "01116ea8db3e555a4388f5d37e040293",
+            "created_at": "2026-10-28T00:10:29.870789-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.3995135402224981,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+          "version": 0,
+          "score": 0.3363117387591841,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+            "hash": "ddcac65442997b5e1f563a1b65c5bc28",
+            "created_at": "2026-10-28T00:09:28.584546-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0016186099965125322
+    },
+    {
+      "sequence": 9,
+      "time": "2026-10-28T15:10:35.281872+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Values adaptability in pets",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.44145615290654505,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.4077557061266096,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.3964628611444587,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+          "version": 0,
+          "score": 0.3872131251069608,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has empathetic nature that helps understand diverse perspectives",
+            "hash": "01116ea8db3e555a4388f5d37e040293",
+            "created_at": "2026-10-28T00:10:29.870789-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "369ba144-28ab-4a62-9029-130aed19cf89",
+          "version": 0,
+          "score": 0.38490981100647265,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Adapts leadership style through active listening and openness to feedback",
+            "hash": "4269ae19a9902659c1374fb8c99c0d5d",
+            "created_at": "2026-10-28T00:10:29.911127-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.001846899976953864
+    },
+    {
+      "sequence": 11,
+      "time": "2026-10-28T15:10:35.421310+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Finds calm demeanor crucial for their active lifestyle",
+      "candidates": [
+        {
+          "id": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+          "version": 0,
+          "score": 0.5400140954993369,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+            "hash": "a7761ca217c8ce757773f49ea83476d9",
+            "created_at": "2026-10-28T00:09:28.675662-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "48052369-b295-4435-b636-e54e57d1ceef",
+          "version": 0,
+          "score": 0.522182450657874,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+            "hash": "ce6a4df465e0ff8e48f42155a5ef391b",
+            "created_at": "2026-10-28T00:09:28.692062-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "90d20f0f-949d-44ec-938a-8d0b611d2059",
+          "version": 0,
+          "score": 0.503575271490196,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+            "hash": "285cf4f622f29c6f1180881e43d8c845",
+            "created_at": "2026-10-28T00:09:28.708122-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "4eca623b-1c47-48c9-affe-d9cc139812e4",
+          "version": 0,
+          "score": 0.5005647242385747,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+            "hash": "e5873aed51ec559379a24cdd9ecf778b",
+            "created_at": "2026-10-28T00:10:29.814879-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a734e783-f463-46cf-abc9-e193f68acee8",
+          "version": 0,
+          "score": 0.48436536559842625,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Physical condition is normal, no chronic diseases",
+            "hash": "b448c0c0843ca762c29bb23ee8f44a3d",
+            "created_at": "2026-10-28T00:08:17.205621-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.001821590994950384
+    },
+    {
+      "sequence": 13,
+      "time": "2026-10-28T15:10:35.568042+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Appreciates pets that offer relaxation and comfort",
+      "candidates": [
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.6078675402070794,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.5489490161656022,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+          "version": 0,
+          "score": 0.5355374993395774,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+            "hash": "a7761ca217c8ce757773f49ea83476d9",
+            "created_at": "2026-10-28T00:09:28.675662-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+          "version": 0,
+          "score": 0.5204944409057913,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+            "hash": "e3dbaca23d828d2339dbe5e19d3b6e96",
+            "created_at": "2026-10-28T00:09:28.780779-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+          "version": 0,
+          "score": 0.4983731138113969,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+            "hash": "dac878818ff5a6c7bfc82e872b1632cf",
+            "created_at": "2026-10-28T00:09:28.740702-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0017113179783336818
+    },
+    {
+      "sequence": 15,
+      "time": "2026-10-28T15:10:35.707118+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Drawn to Golden Retrievers for their adaptability",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.6384901126505076,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.4416790981602481,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.419092457569681,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+          "version": 0,
+          "score": 0.3642899115627357,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+            "hash": "a7761ca217c8ce757773f49ea83476d9",
+            "created_at": "2026-10-28T00:09:28.675662-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "bd52b893-fb10-4022-a5e2-812302934c8d",
+          "version": 0,
+          "score": 0.3568316313202399,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+            "hash": "a88179c92e09e1579fd50dcc8ac43090",
+            "created_at": "2026-10-28T00:09:28.813164-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.00167461100500077
+    },
+    {
+      "sequence": 17,
+      "time": "2026-10-28T15:10:35.932463+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Optimistic about integrating Golden Retriever preference into daily life",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.49989804467202337,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.3950376801803444,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+          "version": 0,
+          "score": 0.37132376731462113,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+            "hash": "a7761ca217c8ce757773f49ea83476d9",
+            "created_at": "2026-10-28T00:09:28.675662-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.3631814902623978,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+          "version": 0,
+          "score": 0.3403202691858041,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+            "hash": "ddcac65442997b5e1f563a1b65c5bc28",
+            "created_at": "2026-10-28T00:09:28.584546-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0018115740385837853
+    },
+    {
+      "sequence": 19,
+      "time": "2026-10-28T15:10:36.076255+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Sees this preference change as a step toward exploring new interactions and experiences",
+      "candidates": [
+        {
+          "id": "a04985bf-b835-46a6-aff8-ae2fed526bca",
+          "version": 0,
+          "score": 0.5274795818700186,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Tracks progress via milestones and celebrates small victories",
+            "hash": "de376f701802b95fe21939cc0b267d3a",
+            "created_at": "2026-10-28T00:10:29.839194-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+          "version": 0,
+          "score": 0.47372071383024844,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Uses debate skills to encourage open dialogue and idea exchange",
+            "hash": "5e1b289eb887f8dbb14198d1f74e428d",
+            "created_at": "2026-10-28T00:10:29.878857-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+          "version": 0,
+          "score": 0.4197341317570953,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Thrives in collaborative environments",
+            "hash": "922beab0bc097d2db6ab786dadbd651a",
+            "created_at": "2026-10-28T00:10:29.782500-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "99805cd4-1742-4f47-bd28-054b333c006c",
+          "version": 0,
+          "score": 0.4168711115243956,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+            "hash": "aa5564ac8991b560372b2decf24d8d79",
+            "created_at": "2026-10-28T00:09:28.838742-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "version": 0,
+          "score": 0.41063503498768594,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "hash": "3670be9b4058df38a834dbe9704d91b4",
+            "created_at": "2026-10-28T00:09:28.608918-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0019013769924640656
+    },
+    {
+      "sequence": 21,
+      "time": "2026-10-28T15:10:36.191299+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Values companionship and emotional support from pets",
+      "candidates": [
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.5120977059019134,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.4832208401643754,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+          "version": 0,
+          "score": 0.4469462669684474,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+            "hash": "891ac7f3fa4a22dfaee506db078de6fe",
+            "created_at": "2026-10-28T00:09:28.600825-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+          "version": 0,
+          "score": 0.42857542822659705,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has empathetic nature that helps understand diverse perspectives",
+            "hash": "01116ea8db3e555a4388f5d37e040293",
+            "created_at": "2026-10-28T00:10:29.870789-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "version": 0,
+          "score": 0.38935925816788564,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "hash": "ddc67118d2a18e3923c532500e71d8c4",
+            "created_at": "2026-10-28T00:08:17.229415-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.0016569049912504852
+    },
+    {
+      "sequence": 23,
+      "time": "2026-10-28T15:10:36.346504+08:00",
+      "phase": "session_005",
+      "kind": "recall_output",
+      "query": "Believes pets help balance a demanding career",
+      "candidates": [
+        {
+          "id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+          "version": 0,
+          "score": 0.5264817038391367,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+            "hash": "a21380b3926dfdc6a2f0029dbbfc9776",
+            "created_at": "2026-10-28T00:09:28.592620-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "version": 0,
+          "score": 0.4595220975910327,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+            "hash": "b6af20441859f9f9cce7a16ed0af6482",
+            "created_at": "2026-10-28T00:09:28.576093-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "90d20f0f-949d-44ec-938a-8d0b611d2059",
+          "version": 0,
+          "score": 0.4131000525852182,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+            "hash": "285cf4f622f29c6f1180881e43d8c845",
+            "created_at": "2026-10-28T00:09:28.708122-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+          "version": 0,
+          "score": 0.4093616206112191,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Career change is being considered due to impact on mental health",
+            "hash": "b4971727cc25ed9a403771fc76d8d10a",
+            "created_at": "2026-10-28T00:10:29.755378-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        },
+        {
+          "id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+          "version": 0,
+          "score": 0.4034891832384242,
+          "payload": {
+            "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+            "data": "Has empathetic nature that helps understand diverse perspectives",
+            "hash": "01116ea8db3e555a4388f5d37e040293",
+            "created_at": "2026-10-28T00:10:29.870789-07:00"
+          },
+          "vector": null,
+          "shard_key": null,
+          "order_value": null
+        }
+      ],
+      "elapsed_seconds": 0.002230894984677434
+    }
+  ],
+  "changed": [
+    {
+      "id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "before": null,
+      "after": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career"
+    }
+  ],
+  "raw_facts": [
+    {
+      "sequence": 3,
+      "time": "2026-10-28T15:10:34.088625+08:00",
+      "phase": "session_005",
+      "kind": "model_output",
+      "stage": "extraction",
+      "raw_response": "{\"facts\" : [\"Recently interacted with a friend's Golden Retriever\", \"Impressed by the Golden Retriever's gentle nature\", \"Values adaptability in pets\", \"Finds calm demeanor crucial for their active lifestyle\", \"Appreciates pets that offer relaxation and comfort\", \"Drawn to Golden Retrievers for their adaptability\", \"Optimistic about integrating Golden Retriever preference into daily life\", \"Sees this preference change as a step toward exploring new interactions and experiences\", \"Values companionship and emotional support from pets\", \"Believes pets help balance a demanding career\"]}",
+      "parsed": {
+        "facts": [
+          "Recently interacted with a friend's Golden Retriever",
+          "Impressed by the Golden Retriever's gentle nature",
+          "Values adaptability in pets",
+          "Finds calm demeanor crucial for their active lifestyle",
+          "Appreciates pets that offer relaxation and comfort",
+          "Drawn to Golden Retrievers for their adaptability",
+          "Optimistic about integrating Golden Retriever preference into daily life",
+          "Sees this preference change as a step toward exploring new interactions and experiences",
+          "Values companionship and emotional support from pets",
+          "Believes pets help balance a demanding career"
+        ]
+      },
+      "parse_error": null,
+      "native_temp_uuid_mapping": {},
+      "elapsed_seconds": 3.6585869420086965
+    }
+  ],
+  "plan": [
+    {
+      "plan_index_zero_based": 0,
+      "id": "0",
+      "text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "event": "UPDATE",
+      "old_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "resolved_existing_memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 1,
+      "id": "1",
+      "text": "Likes parrots because they are intelligent, can mimic speech, and make interactions fun and engaging",
+      "event": "NONE",
+      "resolved_existing_memory_id": "5dabe140-b7bd-41a5-83c3-e2e51e0fc3f1",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 2,
+      "id": "2",
+      "text": "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+      "event": "NONE",
+      "resolved_existing_memory_id": "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 3,
+      "id": "3",
+      "text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "event": "NONE",
+      "resolved_existing_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 4,
+      "id": "4",
+      "text": "Dislikes reptiles, like snakes, because finds them unsettling due to unpredictable movements and lack of social behaviors",
+      "event": "NONE",
+      "resolved_existing_memory_id": "9b768fe2-b39f-42e7-b754-b881c32165a5",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 5,
+      "id": "5",
+      "text": "Has empathetic nature that helps understand diverse perspectives",
+      "event": "NONE",
+      "resolved_existing_memory_id": "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 6,
+      "id": "6",
+      "text": "Adapts leadership style through active listening and openness to feedback",
+      "event": "NONE",
+      "resolved_existing_memory_id": "369ba144-28ab-4a62-9029-130aed19cf89",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 7,
+      "id": "7",
+      "text": "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+      "event": "NONE",
+      "resolved_existing_memory_id": "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 8,
+      "id": "8",
+      "text": "Likes nature hikes because they allow connection with environment and tranquility, serving as escape from busy work life",
+      "event": "NONE",
+      "resolved_existing_memory_id": "48052369-b295-4435-b636-e54e57d1ceef",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 9,
+      "id": "9",
+      "text": "Likes spa vacations because they are ideal for unwinding and rejuvenating, helping maintain life balance",
+      "event": "NONE",
+      "resolved_existing_memory_id": "90d20f0f-949d-44ec-938a-8d0b611d2059",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 10,
+      "id": "10",
+      "text": "Prioritizes regular exercise and mindfulness as non-negotiable self-care activities",
+      "event": "NONE",
+      "resolved_existing_memory_id": "4eca623b-1c47-48c9-affe-d9cc139812e4",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 11,
+      "id": "11",
+      "text": "Physical condition is normal, no chronic diseases",
+      "event": "NONE",
+      "resolved_existing_memory_id": "a734e783-f463-46cf-abc9-e193f68acee8",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 12,
+      "id": "12",
+      "text": "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+      "event": "NONE",
+      "resolved_existing_memory_id": "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 13,
+      "id": "13",
+      "text": "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+      "event": "NONE",
+      "resolved_existing_memory_id": "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 14,
+      "id": "14",
+      "text": "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+      "event": "NONE",
+      "resolved_existing_memory_id": "bd52b893-fb10-4022-a5e2-812302934c8d",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 15,
+      "id": "15",
+      "text": "Tracks progress via milestones and celebrates small victories",
+      "event": "NONE",
+      "resolved_existing_memory_id": "a04985bf-b835-46a6-aff8-ae2fed526bca",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 16,
+      "id": "16",
+      "text": "Uses debate skills to encourage open dialogue and idea exchange",
+      "event": "NONE",
+      "resolved_existing_memory_id": "2f749bd4-e6f9-4a3a-a519-66b642dca680",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 17,
+      "id": "17",
+      "text": "Thrives in collaborative environments",
+      "event": "NONE",
+      "resolved_existing_memory_id": "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 18,
+      "id": "18",
+      "text": "Dislikes formal wear because finds it restrictive and prefers clothing allowing easy movement and comfort",
+      "event": "NONE",
+      "resolved_existing_memory_id": "99805cd4-1742-4f47-bd28-054b333c006c",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 19,
+      "id": "19",
+      "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "event": "NONE",
+      "resolved_existing_memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 20,
+      "id": "20",
+      "text": "Career change is being considered due to impact on mental health",
+      "event": "NONE",
+      "resolved_existing_memory_id": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "observation_sequence": 25
+    },
+    {
+      "plan_index_zero_based": 21,
+      "id": "21",
+      "text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+      "event": "ADD",
+      "resolved_existing_memory_id": null,
+      "observation_sequence": 25
+    }
+  ],
+  "actual": [
+    {
+      "sequence": 88,
+      "id": "0077e822-4464-4fcd-9acc-b77406badd35",
+      "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "old_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "new_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "event": "UPDATE",
+      "created_at": "2026-10-28T00:09:28.576093-07:00",
+      "updated_at": "2026-10-28T00:10:57.866909-07:00",
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    },
+    {
+      "sequence": 89,
+      "id": "ebc6ca08-9310-4da7-89cf-fec889e636b5",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "old_memory": null,
+      "new_memory": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+      "event": "ADD",
+      "created_at": "2026-10-28T00:10:58.626183-07:00",
+      "updated_at": null,
+      "is_deleted": 0,
+      "actor_id": null,
+      "role": null
+    }
+  ]
+}

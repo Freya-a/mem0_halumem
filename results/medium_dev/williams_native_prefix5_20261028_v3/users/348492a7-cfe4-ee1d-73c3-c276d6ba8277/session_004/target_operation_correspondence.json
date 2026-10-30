@@ -1,0 +1,1686 @@
+[
+  {
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+    "related_target_ids": [
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "original_session_index_zero_based": 3,
+      "memory_point_index_zero_based": 1,
+      "annotation_index": 2,
+      "chronological_session_ordinal_one_based": 4,
+      "annotation_json_pointer": "/sessions/3/memory_points/1",
+      "annotation": {
+        "index": 2,
+        "memory_content": "Donald Smith is transitioning from the technology industry to political consulting.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Donald Smith works in the technology industry"
+        ],
+        "timestamp": "Nov 10, 2025, 19:08:35",
+        "importance": 0.75
+      },
+      "category": "replacement",
+      "old_proposition": "Donald works in the technology industry.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/3/dialogue/0",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:05:35",
+          "quote": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/3/dialogue/2",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:10:01",
+          "quote": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy."
+        }
+      ],
+      "expected_new_state": "Donald is transitioning from technology into political consulting.",
+      "allowed_modification_scope": "Update current career direction as transitioning; do not claim an established firm yet.",
+      "interpretation_note": "",
+      "candidate_protections": [
+        {
+          "proposition": "Donald’s highest education is Master in Political Science.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 14:37:25",
+            "quote": "Of course. My highest education level is Master, and my major is Political Science."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has two children.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 16:17:16",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 2,
+            "json_pointer": "/sessions/1/dialogue/2",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 09:10:09",
+            "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+      "related_target_ids": [
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "282c758f-e845-4896-942b-18d70892c22e",
+      "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "6e979956-47d6-405f-95d5-df176978b42a",
+      "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "913bef92-248b-416b-ba35-052af3a4e960",
+      "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 71,
+        "id": "6397e190-5546-4f55-abf3-7de065678800",
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "old_memory": "Employed in the technology industry",
+        "new_memory": "Career transition from technology to political consulting",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.654602-07:00",
+        "updated_at": "2026-10-28T00:17:51.935957-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 72,
+        "id": "99a933c6-28f1-4fdf-8069-68d2754f7c3a",
+        "memory_id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "new_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.618102-07:00",
+        "updated_at": "2026-10-28T00:17:51.944525-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 73,
+        "id": "62108abc-9526-440e-b8f6-2f02dab3f25d",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_memory": "Works at Blockchain Tech as a senior developer",
+        "new_memory": "Previously worked as a senior developer in Blockchain Tech",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.663413-07:00",
+        "updated_at": "2026-10-28T00:17:52.632642-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 74,
+        "id": "1b99ab3c-7864-4e17-a4f9-8ab9902c128b",
+        "memory_id": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+        "old_memory": null,
+        "new_memory": "Focuses on strategic communication and understanding voter behavior",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.640982-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 75,
+        "id": "b2c61ed3-41e2-44c4-8681-516bff4c8919",
+        "memory_id": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+        "old_memory": "MBTI personality type is ENTP",
+        "new_memory": "Has an ENTP personality",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.468193-07:00",
+        "updated_at": "2026-10-28T00:17:52.650137-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 76,
+        "id": "d9103814-0e5f-4b92-bac4-4bac9f92d498",
+        "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "old_memory": "Monthly income is 17000 USD",
+        "new_memory": "Monthly income was 17,000 USD before transition",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.672012-07:00",
+        "updated_at": "2026-10-28T00:17:52.659130-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 77,
+        "id": "db6cd819-91ec-45d5-8a6e-3b57543b05b1",
+        "memory_id": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+        "old_memory": "Has 16800 USD in savings",
+        "new_memory": "Has savings of 16,800 USD",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.681290-07:00",
+        "updated_at": "2026-10-28T00:17:52.667425-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 78,
+        "id": "ef1229fb-3409-4ffa-86d0-8ccd98d7529a",
+        "memory_id": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+        "old_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "new_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.626046-07:00",
+        "updated_at": "2026-10-28T00:17:52.676272-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 79,
+        "id": "cd535703-ecf4-443b-96b2-bdd980032058",
+        "memory_id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "old_memory": null,
+        "new_memory": "Also mentioned financial consulting as a possible related field",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.861976-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 80,
+        "id": "ed26886b-7fbc-4fdb-b6ec-0cf5ae126adf",
+        "memory_id": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+        "old_memory": null,
+        "new_memory": "Plans to rely on savings and cut unnecessary expenses during transition",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.870086-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 81,
+        "id": "8270d76b-b126-4121-930b-8ae06f0fa18a",
+        "memory_id": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+        "old_memory": null,
+        "new_memory": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.878053-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 82,
+        "id": "35a14e54-aa9f-4822-a566-70e129c9f03a",
+        "memory_id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "old_memory": null,
+        "new_memory": "Aims to be a key advisor in political campaigns",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.886070-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 83,
+        "id": "f17539a9-a5b0-4ce1-ba04-db7f8052bbe2",
+        "memory_id": "799ad175-99c1-40e9-870a-4d4acb767863",
+        "old_memory": null,
+        "new_memory": "Values strategic communication and leadership skills",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.894035-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 84,
+        "id": "a728230c-399c-4e9d-8981-cced6fd94a99",
+        "memory_id": "346dc7f8-02ed-455b-8ae4-ad0e578c3ea4",
+        "old_memory": null,
+        "new_memory": "Committed to making a meaningful impact through political work",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.902165-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Donald’s highest education is Master in Political Science.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 14:37:25",
+          "quote": "Of course. My highest education level is Master, and my major is Political Science."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has two children.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 16:17:16",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/input.json",
+      "before.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+      "after.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/after.json",
+      "extracted_facts.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/extracted_facts.json",
+      "recall_candidates.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/recall_candidates.json",
+      "update_model_io.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/update_model_io.json",
+      "full_operation_plan.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/full_operation_plan.json",
+      "execution_results.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/execution_results.json",
+      "actual_operations.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/actual_operations.json"
+    }
+  },
+  {
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+    "related_target_ids": [
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "original_session_index_zero_based": 3,
+      "memory_point_index_zero_based": 3,
+      "annotation_index": 4,
+      "chronological_session_ordinal_one_based": 4,
+      "annotation_json_pointer": "/sessions/3/memory_points/3",
+      "annotation": {
+        "index": 4,
+        "memory_content": "Donald Smith's job title is transitioning from senior developer to consultant.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Donald Smith's job title is senior developer"
+        ],
+        "timestamp": "Nov 10, 2025, 19:08:35",
+        "importance": 0.75
+      },
+      "category": "partial_attribute",
+      "old_proposition": "Donald is a senior developer at Blockchain Tech.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/3/dialogue/0",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:05:35",
+          "quote": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/3/dialogue/2",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:10:01",
+          "quote": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 12,
+          "json_pointer": "/sessions/3/dialogue/12",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:26:34",
+          "quote": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies."
+        }
+      ],
+      "expected_new_state": "Donald is moving from a senior technology role toward advising political campaigns.",
+      "allowed_modification_scope": "Update role direction; preserve technology experience; do not invent a finalized title.",
+      "interpretation_note": "Consultant title in annotation is narrowed to the direction explicitly expressed in dialogue.",
+      "candidate_protections": [
+        {
+          "proposition": "Donald’s highest education is Master in Political Science.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 14:37:25",
+            "quote": "Of course. My highest education level is Master, and my major is Political Science."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has two children.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 16:17:16",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 2,
+            "json_pointer": "/sessions/1/dialogue/2",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 09:10:09",
+            "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+      "related_target_ids": [
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "282c758f-e845-4896-942b-18d70892c22e",
+      "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "6e979956-47d6-405f-95d5-df176978b42a",
+      "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "913bef92-248b-416b-ba35-052af3a4e960",
+      "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 71,
+        "id": "6397e190-5546-4f55-abf3-7de065678800",
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "old_memory": "Employed in the technology industry",
+        "new_memory": "Career transition from technology to political consulting",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.654602-07:00",
+        "updated_at": "2026-10-28T00:17:51.935957-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 72,
+        "id": "99a933c6-28f1-4fdf-8069-68d2754f7c3a",
+        "memory_id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "new_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.618102-07:00",
+        "updated_at": "2026-10-28T00:17:51.944525-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 73,
+        "id": "62108abc-9526-440e-b8f6-2f02dab3f25d",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_memory": "Works at Blockchain Tech as a senior developer",
+        "new_memory": "Previously worked as a senior developer in Blockchain Tech",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.663413-07:00",
+        "updated_at": "2026-10-28T00:17:52.632642-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 74,
+        "id": "1b99ab3c-7864-4e17-a4f9-8ab9902c128b",
+        "memory_id": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+        "old_memory": null,
+        "new_memory": "Focuses on strategic communication and understanding voter behavior",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.640982-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 75,
+        "id": "b2c61ed3-41e2-44c4-8681-516bff4c8919",
+        "memory_id": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+        "old_memory": "MBTI personality type is ENTP",
+        "new_memory": "Has an ENTP personality",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.468193-07:00",
+        "updated_at": "2026-10-28T00:17:52.650137-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 76,
+        "id": "d9103814-0e5f-4b92-bac4-4bac9f92d498",
+        "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "old_memory": "Monthly income is 17000 USD",
+        "new_memory": "Monthly income was 17,000 USD before transition",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.672012-07:00",
+        "updated_at": "2026-10-28T00:17:52.659130-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 77,
+        "id": "db6cd819-91ec-45d5-8a6e-3b57543b05b1",
+        "memory_id": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+        "old_memory": "Has 16800 USD in savings",
+        "new_memory": "Has savings of 16,800 USD",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.681290-07:00",
+        "updated_at": "2026-10-28T00:17:52.667425-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 78,
+        "id": "ef1229fb-3409-4ffa-86d0-8ccd98d7529a",
+        "memory_id": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+        "old_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "new_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.626046-07:00",
+        "updated_at": "2026-10-28T00:17:52.676272-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 79,
+        "id": "cd535703-ecf4-443b-96b2-bdd980032058",
+        "memory_id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "old_memory": null,
+        "new_memory": "Also mentioned financial consulting as a possible related field",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.861976-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 80,
+        "id": "ed26886b-7fbc-4fdb-b6ec-0cf5ae126adf",
+        "memory_id": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+        "old_memory": null,
+        "new_memory": "Plans to rely on savings and cut unnecessary expenses during transition",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.870086-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 81,
+        "id": "8270d76b-b126-4121-930b-8ae06f0fa18a",
+        "memory_id": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+        "old_memory": null,
+        "new_memory": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.878053-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 82,
+        "id": "35a14e54-aa9f-4822-a566-70e129c9f03a",
+        "memory_id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "old_memory": null,
+        "new_memory": "Aims to be a key advisor in political campaigns",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.886070-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 83,
+        "id": "f17539a9-a5b0-4ce1-ba04-db7f8052bbe2",
+        "memory_id": "799ad175-99c1-40e9-870a-4d4acb767863",
+        "old_memory": null,
+        "new_memory": "Values strategic communication and leadership skills",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.894035-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 84,
+        "id": "a728230c-399c-4e9d-8981-cced6fd94a99",
+        "memory_id": "346dc7f8-02ed-455b-8ae4-ad0e578c3ea4",
+        "old_memory": null,
+        "new_memory": "Committed to making a meaningful impact through political work",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.902165-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Donald’s highest education is Master in Political Science.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 14:37:25",
+          "quote": "Of course. My highest education level is Master, and my major is Political Science."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has two children.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 16:17:16",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/input.json",
+      "before.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+      "after.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/after.json",
+      "extracted_facts.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/extracted_facts.json",
+      "recall_candidates.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/recall_candidates.json",
+      "update_model_io.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/update_model_io.json",
+      "full_operation_plan.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/full_operation_plan.json",
+      "execution_results.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/execution_results.json",
+      "actual_operations.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/actual_operations.json"
+    }
+  },
+  {
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+    "related_target_ids": [
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "original_session_index_zero_based": 3,
+      "memory_point_index_zero_based": 4,
+      "annotation_index": 5,
+      "chronological_session_ordinal_one_based": 4,
+      "annotation_json_pointer": "/sessions/3/memory_points/4",
+      "annotation": {
+        "index": 5,
+        "memory_content": "Donald Smith's monthly income is transitioning from 17,000 USD to zero.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Donald Smith's monthly income is 17000 yuan"
+        ],
+        "timestamp": "Nov 10, 2025, 19:08:35",
+        "importance": 0.75
+      },
+      "category": "replacement",
+      "old_proposition": "Donald’s monthly income is 17000 USD.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/3/dialogue/4",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:15:17",
+          "quote": "One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 6,
+          "json_pointer": "/sessions/3/dialogue/6",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:17:51",
+          "quote": "I plan to rely on my savings and cut down on unnecessary expenses. I believe my contributions to political campaigns are investments towards my relative's success."
+        }
+      ],
+      "expected_new_state": "Donald anticipates zero immediate income during the transition from a comfortable salary.",
+      "allowed_modification_scope": "Update immediate transition income; preserve savings as a separate attribute and historical income.",
+      "interpretation_note": "Original-memory label says yuan whereas original dialogue says USD; use dialogue units. Zero is explicitly stated; no currency conversion.",
+      "candidate_protections": [
+        {
+          "proposition": "Donald’s highest education is Master in Political Science.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 14:37:25",
+            "quote": "Of course. My highest education level is Master, and my major is Political Science."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has two children.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 16:17:16",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 2,
+            "json_pointer": "/sessions/1/dialogue/2",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 09:10:09",
+            "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+      "related_target_ids": [
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "282c758f-e845-4896-942b-18d70892c22e",
+      "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "6e979956-47d6-405f-95d5-df176978b42a",
+      "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "913bef92-248b-416b-ba35-052af3a4e960",
+      "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 71,
+        "id": "6397e190-5546-4f55-abf3-7de065678800",
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "old_memory": "Employed in the technology industry",
+        "new_memory": "Career transition from technology to political consulting",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.654602-07:00",
+        "updated_at": "2026-10-28T00:17:51.935957-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 72,
+        "id": "99a933c6-28f1-4fdf-8069-68d2754f7c3a",
+        "memory_id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "new_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.618102-07:00",
+        "updated_at": "2026-10-28T00:17:51.944525-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 73,
+        "id": "62108abc-9526-440e-b8f6-2f02dab3f25d",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_memory": "Works at Blockchain Tech as a senior developer",
+        "new_memory": "Previously worked as a senior developer in Blockchain Tech",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.663413-07:00",
+        "updated_at": "2026-10-28T00:17:52.632642-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 74,
+        "id": "1b99ab3c-7864-4e17-a4f9-8ab9902c128b",
+        "memory_id": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+        "old_memory": null,
+        "new_memory": "Focuses on strategic communication and understanding voter behavior",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.640982-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 75,
+        "id": "b2c61ed3-41e2-44c4-8681-516bff4c8919",
+        "memory_id": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+        "old_memory": "MBTI personality type is ENTP",
+        "new_memory": "Has an ENTP personality",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.468193-07:00",
+        "updated_at": "2026-10-28T00:17:52.650137-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 76,
+        "id": "d9103814-0e5f-4b92-bac4-4bac9f92d498",
+        "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "old_memory": "Monthly income is 17000 USD",
+        "new_memory": "Monthly income was 17,000 USD before transition",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.672012-07:00",
+        "updated_at": "2026-10-28T00:17:52.659130-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 77,
+        "id": "db6cd819-91ec-45d5-8a6e-3b57543b05b1",
+        "memory_id": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+        "old_memory": "Has 16800 USD in savings",
+        "new_memory": "Has savings of 16,800 USD",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.681290-07:00",
+        "updated_at": "2026-10-28T00:17:52.667425-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 78,
+        "id": "ef1229fb-3409-4ffa-86d0-8ccd98d7529a",
+        "memory_id": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+        "old_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "new_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.626046-07:00",
+        "updated_at": "2026-10-28T00:17:52.676272-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 79,
+        "id": "cd535703-ecf4-443b-96b2-bdd980032058",
+        "memory_id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "old_memory": null,
+        "new_memory": "Also mentioned financial consulting as a possible related field",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.861976-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 80,
+        "id": "ed26886b-7fbc-4fdb-b6ec-0cf5ae126adf",
+        "memory_id": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+        "old_memory": null,
+        "new_memory": "Plans to rely on savings and cut unnecessary expenses during transition",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.870086-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 81,
+        "id": "8270d76b-b126-4121-930b-8ae06f0fa18a",
+        "memory_id": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+        "old_memory": null,
+        "new_memory": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.878053-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 82,
+        "id": "35a14e54-aa9f-4822-a566-70e129c9f03a",
+        "memory_id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "old_memory": null,
+        "new_memory": "Aims to be a key advisor in political campaigns",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.886070-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 83,
+        "id": "f17539a9-a5b0-4ce1-ba04-db7f8052bbe2",
+        "memory_id": "799ad175-99c1-40e9-870a-4d4acb767863",
+        "old_memory": null,
+        "new_memory": "Values strategic communication and leadership skills",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.894035-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 84,
+        "id": "a728230c-399c-4e9d-8981-cced6fd94a99",
+        "memory_id": "346dc7f8-02ed-455b-8ae4-ad0e578c3ea4",
+        "old_memory": null,
+        "new_memory": "Committed to making a meaningful impact through political work",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.902165-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Donald’s highest education is Master in Political Science.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 14:37:25",
+          "quote": "Of course. My highest education level is Master, and my major is Political Science."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has two children.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 16:17:16",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/input.json",
+      "before.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+      "after.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/after.json",
+      "extracted_facts.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/extracted_facts.json",
+      "recall_candidates.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/recall_candidates.json",
+      "update_model_io.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/update_model_io.json",
+      "full_operation_plan.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/full_operation_plan.json",
+      "execution_results.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/execution_results.json",
+      "actual_operations.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/actual_operations.json"
+    }
+  },
+  {
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005",
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+    "related_target_ids": [
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004"
+    ],
+    "status": "待人工审查",
+    "target": {
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "dataset_line_one_based": 17,
+      "original_session_index_zero_based": 3,
+      "memory_point_index_zero_based": 5,
+      "annotation_index": 6,
+      "chronological_session_ordinal_one_based": 4,
+      "annotation_json_pointer": "/sessions/3/memory_points/5",
+      "annotation": {
+        "index": 6,
+        "memory_content": "Donald Smith is transitioning from a senior developer role in technology to political consulting, driven by a desire to support a relative's political career.",
+        "memory_type": "Persona Memory",
+        "memory_source": "secondary",
+        "is_update": "True",
+        "original_memories": [
+          "Donald Smith's career_description is I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        ],
+        "timestamp": "Nov 10, 2025, 19:08:35",
+        "importance": 0.75
+      },
+      "category": "partial_attribute",
+      "old_proposition": "Donald innovates technology as a senior developer and supports political causes financially.",
+      "old_dialogue_evidence": [
+        {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        }
+      ],
+      "new_dialogue_evidence": [
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 0,
+          "json_pointer": "/sessions/3/dialogue/0",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:05:35",
+          "quote": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/3/dialogue/2",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:10:01",
+          "quote": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 12,
+          "json_pointer": "/sessions/3/dialogue/12",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:26:34",
+          "quote": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies."
+        },
+        {
+          "session_index_zero_based": 3,
+          "message_index_zero_based": 14,
+          "json_pointer": "/sessions/3/dialogue/14",
+          "role": "user",
+          "timestamp": "Nov 10, 2025, 18:28:52",
+          "quote": "I plan to use data analytics to understand voter patterns and tailor strategies that resonate with them. It's all about making informed decisions."
+        }
+      ],
+      "expected_new_state": "Donald is transitioning toward political campaign strategy to support his relative, using technology/problem-solving experience.",
+      "allowed_modification_scope": "Refine career duties/direction and motivation; preserve past experience, family goal and old historical facts.",
+      "interpretation_note": "",
+      "candidate_protections": [
+        {
+          "proposition": "Donald’s highest education is Master in Political Science.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 4,
+            "json_pointer": "/sessions/0/dialogue/4",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 14:37:25",
+            "quote": "Of course. My highest education level is Master, and my major is Political Science."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has two children.",
+          "evidence": {
+            "session_index_zero_based": 0,
+            "message_index_zero_based": 8,
+            "json_pointer": "/sessions/0/dialogue/8",
+            "role": "user",
+            "timestamp": "Sep 04, 2025, 16:17:16",
+            "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        },
+        {
+          "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+          "evidence": {
+            "session_index_zero_based": 1,
+            "message_index_zero_based": 2,
+            "json_pointer": "/sessions/1/dialogue/2",
+            "role": "user",
+            "timestamp": "Sep 05, 2025, 09:10:09",
+            "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+          },
+          "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库"
+        }
+      ],
+      "annotation_status": "自动初标，待人工核验",
+      "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003",
+      "related_target_ids": [
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004"
+      ]
+    },
+    "old_proposition_actual_memory_ids": [],
+    "old_exact_text_hint_ids": [],
+    "recalled_memory_ids": [
+      "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "19e69d99-975a-4e8c-977a-ccfccb7a1452",
+      "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+      "282c758f-e845-4896-942b-18d70892c22e",
+      "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+      "2e1a8728-9860-48c4-86fa-e9baca154aba",
+      "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+      "3449b941-d168-46f5-afdb-3c1aa42bad17",
+      "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "4a214f96-f80a-4c4c-ba60-c24baef8f88c",
+      "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+      "6e979956-47d6-405f-95d5-df176978b42a",
+      "7c139a7f-c2ef-4045-87a1-0f0f04c4da52",
+      "81f63185-0ae0-4cb7-8992-a6269b24e72c",
+      "83c953d7-817a-48d2-8276-538bfd4f55d5",
+      "913bef92-248b-416b-ba35-052af3a4e960",
+      "97b23dbc-01c7-4472-afb2-bb70973427aa",
+      "a1834932-bc7e-4c41-9710-25713ae07aae",
+      "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "b720cb31-6b6b-4587-b60d-6efff18457e2",
+      "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+      "e93f9a31-f517-471e-8bb5-313470b1d41e",
+      "eb0ed6ce-d718-4d1d-adcb-427b9a4a739a",
+      "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+      "fd0b7cb9-9438-4410-81d8-ded013f055be",
+      "fe76478b-2e5c-4d34-9e9c-bf81870bd39b"
+    ],
+    "actual_operations": [
+      {
+        "sequence": 71,
+        "id": "6397e190-5546-4f55-abf3-7de065678800",
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "old_memory": "Employed in the technology industry",
+        "new_memory": "Career transition from technology to political consulting",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.654602-07:00",
+        "updated_at": "2026-10-28T00:17:51.935957-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 72,
+        "id": "99a933c6-28f1-4fdf-8069-68d2754f7c3a",
+        "memory_id": "2758550a-32b1-4e3e-88ac-0a2b6fc90dcc",
+        "old_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "new_memory": "Motivation for life goal is growing up in a family that values political engagement and having a close relative in politics",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.618102-07:00",
+        "updated_at": "2026-10-28T00:17:51.944525-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 73,
+        "id": "62108abc-9526-440e-b8f6-2f02dab3f25d",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_memory": "Works at Blockchain Tech as a senior developer",
+        "new_memory": "Previously worked as a senior developer in Blockchain Tech",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.663413-07:00",
+        "updated_at": "2026-10-28T00:17:52.632642-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 74,
+        "id": "1b99ab3c-7864-4e17-a4f9-8ab9902c128b",
+        "memory_id": "3e887750-cbcf-4e95-af28-58a7c5da3895",
+        "old_memory": null,
+        "new_memory": "Focuses on strategic communication and understanding voter behavior",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.640982-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 75,
+        "id": "b2c61ed3-41e2-44c4-8681-516bff4c8919",
+        "memory_id": "f4549cf1-dc0e-4ba5-8ea4-e126d97c20d3",
+        "old_memory": "MBTI personality type is ENTP",
+        "new_memory": "Has an ENTP personality",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.468193-07:00",
+        "updated_at": "2026-10-28T00:17:52.650137-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 76,
+        "id": "d9103814-0e5f-4b92-bac4-4bac9f92d498",
+        "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "old_memory": "Monthly income is 17000 USD",
+        "new_memory": "Monthly income was 17,000 USD before transition",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.672012-07:00",
+        "updated_at": "2026-10-28T00:17:52.659130-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 77,
+        "id": "db6cd819-91ec-45d5-8a6e-3b57543b05b1",
+        "memory_id": "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+        "old_memory": "Has 16800 USD in savings",
+        "new_memory": "Has savings of 16,800 USD",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:16:06.681290-07:00",
+        "updated_at": "2026-10-28T00:17:52.667425-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 78,
+        "id": "ef1229fb-3409-4ffa-86d0-8ccd98d7529a",
+        "memory_id": "c5574ceb-d644-4992-83a8-c0575b1d5cec",
+        "old_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "new_memory": "Hopes to ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy",
+        "event": "UPDATE",
+        "created_at": "2026-10-28T00:15:33.626046-07:00",
+        "updated_at": "2026-10-28T00:17:52.676272-07:00",
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 79,
+        "id": "cd535703-ecf4-443b-96b2-bdd980032058",
+        "memory_id": "19dfbf08-ba3c-4c42-b531-36eff71d832a",
+        "old_memory": null,
+        "new_memory": "Also mentioned financial consulting as a possible related field",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.861976-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 80,
+        "id": "ed26886b-7fbc-4fdb-b6ec-0cf5ae126adf",
+        "memory_id": "e2eeaf05-508f-435b-ba6e-a3229d3f1443",
+        "old_memory": null,
+        "new_memory": "Plans to rely on savings and cut unnecessary expenses during transition",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.870086-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 81,
+        "id": "8270d76b-b126-4121-930b-8ae06f0fa18a",
+        "memory_id": "05c87805-dec1-4f41-b721-fc7082b4f39d",
+        "old_memory": null,
+        "new_memory": "Uses data analytics to analyze voter patterns and tailor campaign strategies",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.878053-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 82,
+        "id": "35a14e54-aa9f-4822-a566-70e129c9f03a",
+        "memory_id": "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "old_memory": null,
+        "new_memory": "Aims to be a key advisor in political campaigns",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.886070-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 83,
+        "id": "f17539a9-a5b0-4ce1-ba04-db7f8052bbe2",
+        "memory_id": "799ad175-99c1-40e9-870a-4d4acb767863",
+        "old_memory": null,
+        "new_memory": "Values strategic communication and leadership skills",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.894035-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      },
+      {
+        "sequence": 84,
+        "id": "a728230c-399c-4e9d-8981-cced6fd94a99",
+        "memory_id": "346dc7f8-02ed-455b-8ae4-ad0e578c3ea4",
+        "old_memory": null,
+        "new_memory": "Committed to making a meaningful impact through political work",
+        "event": "ADD",
+        "created_at": "2026-10-28T00:17:52.902165-07:00",
+        "updated_at": null,
+        "is_deleted": 0,
+        "actor_id": null,
+        "role": null
+      }
+    ],
+    "actual_operation_sequences": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "correspondence": "会话共享候选操作；须人工确认逐命题对应，不能将全部操作归因于每个目标",
+    "old_memory_presence": "待人工语义核实",
+    "old_memory_recalled": "待人工确认旧命题ID后比对",
+    "expected_new_state_satisfied": "待人工语义核实",
+    "allowed_scope_violated": "待人工核实",
+    "valid_knowledge_damaged": "待人工核实",
+    "candidate_protections": [
+      {
+        "proposition": "Donald’s highest education is Master in Political Science.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 4,
+          "json_pointer": "/sessions/0/dialogue/4",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 14:37:25",
+          "quote": "Of course. My highest education level is Master, and my major is Political Science."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has two children.",
+        "evidence": {
+          "session_index_zero_based": 0,
+          "message_index_zero_based": 8,
+          "json_pointer": "/sessions/0/dialogue/8",
+          "role": "user",
+          "timestamp": "Sep 04, 2025, 16:17:16",
+          "quote": "Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      },
+      {
+        "proposition": "Donald has 16800 USD in savings, distinct from monthly income.",
+        "evidence": {
+          "session_index_zero_based": 1,
+          "message_index_zero_based": 2,
+          "json_pointer": "/sessions/1/dialogue/2",
+          "role": "user",
+          "timestamp": "Sep 05, 2025, 09:10:09",
+          "quote": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views."
+        },
+        "runtime_evaluability": "待运行前实际记忆核实；不得假定已入库",
+        "actual_memory_ids": [],
+        "evaluable": "待before快照核实；未入库不可评估",
+        "preserved_after": "待人工核实"
+      }
+    ],
+    "review_category_choices": [
+      "旧命题未入库",
+      "召回不足",
+      "应改未改",
+      "越界修改",
+      "有效知识损伤",
+      "证据不足"
+    ],
+    "review_categories": [],
+    "human_notes": "",
+    "evidence_paths": {
+      "input.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/input.json",
+      "before.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+      "after.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/after.json",
+      "extracted_facts.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/extracted_facts.json",
+      "recall_candidates.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/recall_candidates.json",
+      "update_model_io.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/update_model_io.json",
+      "full_operation_plan.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/full_operation_plan.json",
+      "execution_results.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/execution_results.json",
+      "actual_operations.json": "users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/actual_operations.json"
+    }
+  }
+]

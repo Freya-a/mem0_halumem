@@ -1,0 +1,93 @@
+{
+  "pip-check": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "-m",
+      "pip",
+      "check"
+    ]
+  },
+  "pip-freeze": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "-m",
+      "pip",
+      "freeze",
+      "--all"
+    ]
+  },
+  "data-check": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "scripts/medium_dev_data.py"
+    ]
+  },
+  "compile": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "-m",
+      "py_compile",
+      "scripts/medium_dev_data.py",
+      "scripts/medium_dev_review.py",
+      "scripts/medium_dev_run.py"
+    ]
+  },
+  "preflight": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "scripts/medium_dev_run.py",
+      "--preflight",
+      "--run-id",
+      "server_preflight_20261027_01",
+      "--env-file",
+      ".env.local"
+    ]
+  },
+  "dry-run": {
+    "exit_code": 0,
+    "command": [
+      "conda",
+      "run",
+      "--no-capture-output",
+      "-n",
+      "mem0_halumem",
+      "python",
+      "scripts/medium_dev_run.py",
+      "--dry-run",
+      "--run-id",
+      "server_setup_20261027_01",
+      "--env-file",
+      ".env.local"
+    ]
+  }
+}
