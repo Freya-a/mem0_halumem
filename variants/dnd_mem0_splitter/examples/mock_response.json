@@ -1,0 +1,54 @@
+{
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+      "raw_subfact": "李娜去年没有搬到上海。",
+      "contextualized_subfact": "李娜去年没有搬到上海。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+          "quote": "李娜去年没有搬到上海",
+          "supports": "李娜在“去年”没有搬到上海这一否定陈述。"
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "“去年”对应的具体年份",
+          "reason": "没有提供能够确定该相对时间的可靠锚点。"
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+      "raw_subfact": "王强说，如果获批，他可能明年搬去。",
+      "contextualized_subfact": "王强说，如果获批，王强可能明年搬到上海。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+          "quote": "王强说，如果获批，他可能明年搬去。",
+          "supports": "王强的引述、人物指代、获批条件、相对时间和可能性。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "王强：这里的“搬去”是指搬到上海。",
+          "supports": "补足王强所说的搬迁目的地为上海。"
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "“明年”对应的具体年份",
+          "reason": "没有提供能够确定该相对时间的可靠锚点。"
+        },
+        {
+          "item": "“获批”所指的申请或事项",
+          "reason": "旧记忆及来源上下文均未说明。"
+        }
+      ]
+    }
+  ]
+}

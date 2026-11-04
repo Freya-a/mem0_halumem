@@ -1,0 +1,43 @@
+{
+  "input": {
+    "memory_id": "SYNTHETIC_V4_EXAMPLE_NOT_REAL_ID",
+    "memory_text": "偏好素色杯子。",
+    "source_context": [
+      {
+        "source_id": "synthetic-v4-ctx",
+        "source_ref": "自拟示例/发言1",
+        "text": "我偏好素色杯子，也会整理书桌。",
+        "speaker": "user"
+      }
+    ]
+  },
+  "output": {
+    "memory_id": "SYNTHETIC_V4_EXAMPLE_NOT_REAL_ID",
+    "memory_text": "偏好素色杯子。",
+    "facts": [
+      {
+        "fact_index": 1,
+        "source_memory_id": "SYNTHETIC_V4_EXAMPLE_NOT_REAL_ID",
+        "raw_subfact": "偏好素色杯子。",
+        "contextualized_subfact": "用户偏好素色杯子。",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "SYNTHETIC_V4_EXAMPLE_NOT_REAL_ID",
+            "quote": "偏好素色杯子。",
+            "supports": "旧记忆记载素色杯子的偏好；此引文本身未明确主体。"
+          },
+          {
+            "source_type": "context",
+            "source_id": "synthetic-v4-ctx",
+            "quote": "我偏好素色杯子",
+            "supports": "第一人称同一偏好结合该来源的 user 角色，用于补足该偏好的主体；不支持书桌相关新事实。"
+          }
+        ],
+        "pending_confirmations": []
+      }
+    ]
+  },
+  "existing_validator_passed": true,
+  "real_model_calls": 0
+}

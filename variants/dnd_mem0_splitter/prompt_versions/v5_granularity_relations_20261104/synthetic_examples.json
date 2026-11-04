@@ -1,0 +1,151 @@
+[
+  {
+    "purpose": "独立可变信息分别拆分，不预设固定条数。",
+    "input": {
+      "memory_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+      "memory_text": "程岚出生于1992年4月3日，是修复师，专长为壁画修复。"
+    },
+    "output": {
+      "memory_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+      "memory_text": "程岚出生于1992年4月3日，是修复师，专长为壁画修复。",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+          "raw_subfact": "程岚出生于1992年4月3日。",
+          "contextualized_subfact": "程岚出生于1992年4月3日。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+              "quote": "程岚出生于1992年4月3日",
+              "supports": "旧记忆记载程岚的出生日期。"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        {
+          "fact_index": 2,
+          "source_memory_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+          "raw_subfact": "程岚是修复师。",
+          "contextualized_subfact": "程岚是修复师。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+              "quote": "是修复师",
+              "supports": "该片段记载职业；程岚是同一旧句内部共享的人物。"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        {
+          "fact_index": 3,
+          "source_memory_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+          "raw_subfact": "程岚的专长为壁画修复。",
+          "contextualized_subfact": "程岚的专长为壁画修复。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_PROFILE_NOT_REAL_ID",
+              "quote": "专长为壁画修复",
+              "supports": "该片段记载专长内容；人物由同一旧句共享，不来自外部上下文。"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "保留关系段，同时拆出段外独立偏好。",
+    "input": {
+      "memory_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+      "memory_text": "顾岚在核对地图时比较两条路线，并偏好纸质地图。"
+    },
+    "output": {
+      "memory_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+      "memory_text": "顾岚在核对地图时比较两条路线，并偏好纸质地图。",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+          "raw_subfact": "顾岚在核对地图时比较两条路线。",
+          "contextualized_subfact": "顾岚在核对地图时比较两条路线。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+              "quote": "顾岚在核对地图时比较两条路线",
+              "supports": "旧记忆直接记载核对地图与比较路线的时间联系，保留在同一关系段。"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        {
+          "fact_index": 2,
+          "source_memory_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+          "raw_subfact": "顾岚偏好纸质地图。",
+          "contextualized_subfact": "顾岚偏好纸质地图。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_RELATION_NOT_REAL_ID",
+              "quote": "偏好纸质地图",
+              "supports": "直接记载纸质地图偏好；顾岚是旧句共享人物，不把该偏好写成核对时才成立。"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "原文关系范围不明时保留对应原段并标待确认，省略主体不补用户。",
+    "input": {
+      "memory_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+      "memory_text": "喜爱版画，因经费不足推迟展览并考虑缩小场地。"
+    },
+    "output": {
+      "memory_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+      "memory_text": "喜爱版画，因经费不足推迟展览并考虑缩小场地。",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+          "raw_subfact": "喜爱版画。",
+          "contextualized_subfact": "喜爱版画。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+              "quote": "喜爱版画",
+              "supports": "旧记忆记载版画偏好；此句段省略主体。"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        {
+          "fact_index": 2,
+          "source_memory_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+          "raw_subfact": "因经费不足推迟展览并考虑缩小场地。",
+          "contextualized_subfact": "因经费不足推迟展览并考虑缩小场地。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "SYNTHETIC_V5_AMBIGUITY_NOT_REAL_ID",
+              "quote": "因经费不足推迟展览并考虑缩小场地。",
+              "supports": "直接记载经费不足与推迟展览的原因联系；原因是否同时覆盖考虑缩小场地，当前语法有歧义。"
+            }
+          ],
+          "pending_confirmations": [
+            {
+              "item": "因经费不足的作用范围",
+              "reason": "可仅修饰推迟展览，也可同时覆盖考虑缩小场地；保留原关系段，不自行选择。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

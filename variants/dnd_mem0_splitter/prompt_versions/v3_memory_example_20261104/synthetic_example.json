@@ -1,0 +1,43 @@
+{
+  "handwritten_synthetic_example": true,
+  "not_real_mem0_data": true,
+  "input": {
+    "memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
+    "memory_text": "陈宁在那间教室练习书法。",
+    "source_context": [
+      {
+        "source_id": "example-ctx-1",
+        "source_ref": "自拟示例/message-1",
+        "text": "“那间教室”指西街社区中心的二号教室。"
+      }
+    ]
+  },
+  "response": {
+    "memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
+    "memory_text": "陈宁在那间教室练习书法。",
+    "facts": [
+      {
+        "fact_index": 1,
+        "source_memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
+        "raw_subfact": "陈宁在那间教室练习书法。",
+        "contextualized_subfact": "陈宁在西街社区中心的二号教室练习书法。",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
+            "quote": "陈宁在那间教室练习书法。",
+            "supports": "旧记忆记载陈宁在那间教室练习书法。"
+          },
+          {
+            "source_type": "context",
+            "source_id": "example-ctx-1",
+            "quote": "“那间教室”指西街社区中心的二号教室。",
+            "supports": "仅用于把“那间教室”补足为西街社区中心的二号教室。"
+          }
+        ],
+        "pending_confirmations": []
+      }
+    ]
+  },
+  "existing_validator_offline_result": "passed"
+}

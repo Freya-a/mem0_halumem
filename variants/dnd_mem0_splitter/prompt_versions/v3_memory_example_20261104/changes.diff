@@ -1,0 +1,79 @@
+--- v2_targeted/prompt.txt
++++ v3_memory_example/prompt.txt
+@@ -63,8 +63,10 @@
+    raw 和补充版本都保留旧命题及其关键关系，差异和无法确定之处写入 pending_confirmations。
+    不为了与来源上下文对齐而替换旧记忆中的动作、态度、特征或原因。
+ 
+-10. 每条事实必须有 memory_text 的 evidence。
+-    只有上下文实际用于必要补足或说明具体待确认事项时，才附对应 context evidence；
++10. 每条 facts[i].evidence 至少包含一项 source_type 为 "memory" 的引文。
++    该项 source_id 必须原样复制输入 memory_id，quote 必须是 memory_text 中非空的逐字片段。
++    先写 memory 项；只有上下文实际用于必要补足或说明具体待确认事项时，才追加 context 项。
++    context 引文不能替代 memory 引文；原始说话人归属待确认也不免除引用旧记忆的要求。
+     不为一般佐证或扩写而堆积上下文引文。
+     quote 必须逐字复制所声明来源，保留说明命题及限定所必需的文字。
+ 
+@@ -97,9 +99,9 @@
+       "contextualized_subfact": "有依据地补足上下文后的版本",
+       "evidence": [
+         {
+-          "source_type": "memory 或 context",
+-          "source_id": "对应来源 ID",
+-          "quote": "来源中的逐字引文",
++          "source_type": "memory",
++          "source_id": "原样复制输入 memory_id",
++          "quote": "memory_text 中非空的逐字片段",
+           "supports": "这段引文支持的命题或补充信息"
+         }
+       ],
+@@ -111,4 +113,50 @@
+       ]
+     }
+   ]
++}
++
++上面的 evidence 展示每条事实必需的 memory 项；没有使用上下文时不要追加 context 项。
++下面完全自拟的例子仅演示使用上下文后，仍保留 memory 项并追加 context 项。
++示例 ID 不是真实 Mem0 ID。实际只输出当前输入对应的一份 JSON，不复制示例 ID 或内容。
++
++自拟示例输入：
++{
++  "memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
++  "memory_text": "陈宁在那间教室练习书法。",
++  "source_context": [
++    {
++      "source_id": "example-ctx-1",
++      "source_ref": "自拟示例/message-1",
++      "text": "“那间教室”指西街社区中心的二号教室。"
++    }
++  ]
++}
++
++自拟示例输出：
++{
++  "memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
++  "memory_text": "陈宁在那间教室练习书法。",
++  "facts": [
++    {
++      "fact_index": 1,
++      "source_memory_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
++      "raw_subfact": "陈宁在那间教室练习书法。",
++      "contextualized_subfact": "陈宁在西街社区中心的二号教室练习书法。",
++      "evidence": [
++        {
++          "source_type": "memory",
++          "source_id": "SYNTHETIC_EXAMPLE_NOT_A_REAL_MEM0_ID",
++          "quote": "陈宁在那间教室练习书法。",
++          "supports": "旧记忆记载陈宁在那间教室练习书法。"
++        },
++        {
++          "source_type": "context",
++          "source_id": "example-ctx-1",
++          "quote": "“那间教室”指西街社区中心的二号教室。",
++          "supports": "仅用于把“那间教室”补足为西街社区中心的二号教室。"
++        }
++      ],
++      "pending_confirmations": []
++    }
++  ]
+ }
