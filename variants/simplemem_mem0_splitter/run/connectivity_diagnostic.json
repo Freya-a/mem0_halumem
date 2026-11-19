@@ -1,0 +1,8 @@
+{
+  "model_requests": 0,
+  "target_hostname_dns": "resolved",
+  "proxy_kinds_configured": ["http", "https"],
+  "http_proxy_tcp": {"status": "failed", "error_type": "ConnectionRefusedError", "errno": 111},
+  "https_proxy_tcp": {"status": "failed", "error_type": "ConnectionRefusedError", "errno": 111},
+  "interpretation": "The refused configured proxies are consistent with APIConnectionError. The original exception cause chain was not saved, so causation is not proven. No retry or model request was made for this diagnostic."
+}

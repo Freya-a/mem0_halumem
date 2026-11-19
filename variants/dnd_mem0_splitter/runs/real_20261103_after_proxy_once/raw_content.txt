@@ -1,0 +1,51 @@
+{
+  "memory_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+  "memory_text": "李娜去年没有搬到上海；王强说，如果获批，他可能明年搬去。",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+      "raw_subfact": "李娜去年没有搬到上海。",
+      "contextualized_subfact": "李娜去年没有搬到上海。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+          "quote": "李娜去年没有搬到上海；王强说，如果获批，他可能明年搬去。",
+          "supports": "直接陈述李娜去年未搬家的事实"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+      "raw_subfact": "王强说，如果获批，他可能明年搬去。",
+      "contextualized_subfact": "王强说，如果获批，他可能明年搬到上海。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+          "quote": "李娜去年没有搬到上海；王强说，如果获批，他可能明年搬去。",
+          "supports": "原始陈述中王强的发言内容"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "王强：这里的“搬去”是指搬到上海。",
+          "supports": "明确‘搬去’在该语境中特指搬到上海"
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "‘获批’的具体事项（如签证、工作许可、购房资格等）",
+          "reason": "memory_text 和 source_context 均未说明‘获批’指代何种审批"
+        },
+        {
+          "item": "‘明年’的绝对时间参照点",
+          "reason": "memory_text 使用相对时间‘去年’‘明年’，但未提供锚定年份（如记录时间或上下文时间），无法换算为具体年份"
+        }
+      ]
+    }
+  ]
+}

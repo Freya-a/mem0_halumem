@@ -1,0 +1,33 @@
+{
+  "prompt": {
+    "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/prompt_versions/v4_boundaries_20261104/prompt.txt",
+    "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+  },
+  "result": {
+    "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+    "memory_text": "Works at Historical Productions Ltd. as a Director",
+    "facts": [
+      {
+        "fact_index": 1,
+        "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+        "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "quote": "Works at Historical Productions Ltd. as a Director",
+            "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+          },
+          {
+            "source_type": "context",
+            "source_id": "old-context-1",
+            "quote": "I work at Historical Productions Ltd. as a Director.",
+            "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+          }
+        ],
+        "pending_confirmations": []
+      }
+    ]
+  }
+}

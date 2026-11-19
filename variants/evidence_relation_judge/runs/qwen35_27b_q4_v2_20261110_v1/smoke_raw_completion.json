@@ -1,0 +1,26 @@
+{
+  "template_request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "只输出一个 JSON 对象，不要 Markdown。"
+      },
+      {
+        "role": "user",
+        "content": "输出一个对象，字段 ok 为 true。"
+      }
+    ],
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "template_raw_response": "{\"prompt\":\"<|im_start|>system\\n只输出一个 JSON 对象，不要 Markdown。<|im_end|>\\n<|im_start|>user\\n输出一个对象，字段 ok 为 true。<|im_end|>\\n<|im_start|>assistant\\n<think>\\n\\n</think>\\n\\n\"}",
+  "completion_request": {
+    "prompt": "<|im_start|>system\n只输出一个 JSON 对象，不要 Markdown。<|im_end|>\n<|im_start|>user\n输出一个对象，字段 ok 为 true。<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "temperature": 0,
+    "n_predict": 256,
+    "stream": false
+  },
+  "completion_raw_response": "{\"index\":0,\"content\":\"{\\\"ok\\\":true}\",\"tokens\":[],\"id_slot\":0,\"stop\":true,\"model\":\"local-qwen35\",\"tokens_predicted\":6,\"tokens_evaluated\":37,\"generation_settings\":{\"seed\":4294967295,\"temperature\":0.0,\"dynatemp_range\":0.0,\"dynatemp_exponent\":1.0,\"top_k\":20,\"top_p\":0.949999988079071,\"min_p\":0.05000000074505806,\"top_n_sigma\":-1.0,\"xtc_probability\":0.0,\"xtc_threshold\":0.10000000149011612,\"typical_p\":1.0,\"repeat_last_n\":64,\"repeat_penalty\":1.0,\"presence_penalty\":0.0,\"frequency_penalty\":0.0,\"dry_multiplier\":0.0,\"dry_base\":1.75,\"dry_allowed_length\":2,\"dry_penalty_last_n\":64,\"dry_sequence_breakers\":[\"\\n\",\":\",\"\\\"\",\"*\"],\"mirostat\":0,\"mirostat_tau\":5.0,\"mirostat_eta\":0.10000000149011612,\"adaptive_target\":-1.0,\"adaptive_decay\":0.8999999761581421,\"stop\":[],\"max_tokens\":256,\"n_predict\":256,\"n_keep\":0,\"n_discard\":0,\"ignore_eos\":false,\"stream\":false,\"logit_bias\":[],\"n_probs\":0,\"min_keep\":0,\"grammar\":\"\",\"grammar_lazy\":false,\"grammar_triggers\":[],\"preserved_tokens\":[],\"chat_format\":\"Content-only\",\"reasoning_format\":\"none\",\"reasoning_in_content\":false,\"generation_prompt\":\"\",\"samplers\":[\"penalties\",\"dry\",\"top_n_sigma\",\"top_k\",\"typ_p\",\"top_p\",\"min_p\",\"xtc\",\"temperature\"],\"speculative.types\":\"none\",\"timings_per_token\":false,\"post_sampling_probs\":false,\"backend_sampling\":false,\"lora\":[]},\"prompt\":\"<|im_start|>system\\n只输出一个 JSON 对象，不要 Markdown。<|im_end|>\\n<|im_start|>user\\n输出一个对象，字段 ok 为 true。<|im_end|>\\n<|im_start|>assistant\\n<think>\\n\\n</think>\\n\\n\",\"has_new_line\":false,\"truncated\":false,\"stop_type\":\"eos\",\"stopping_word\":\"\",\"tokens_cached\":42,\"timings\":{\"cache_n\":33,\"prompt_n\":4,\"prompt_ms\":129.37,\"prompt_per_token_ms\":32.3425,\"prompt_per_second\":30.919069336012985,\"predicted_n\":6,\"predicted_ms\":137.22,\"predicted_per_token_ms\":27.444,\"predicted_per_second\":36.437837049992716}}",
+  "elapsed_seconds": 0.26763736599241383
+}

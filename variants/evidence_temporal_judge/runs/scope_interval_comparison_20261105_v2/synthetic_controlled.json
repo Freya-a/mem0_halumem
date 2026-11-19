@@ -1,0 +1,748 @@
+{
+  "origin": "全部输入、拆分、scope、方向判断、时间语义和NLI均为手写模拟，不是v4或任何模型运行结果",
+  "A_simulated_scope": {
+    "memory_id": "m",
+    "memory_text": "小李从2020年1月1日起住在北京，喜欢茶。",
+    "source_context": [],
+    "new_evidence": [
+      {
+        "source_id": "n",
+        "text": "小李2023年1月1日搬到上海。"
+      }
+    ],
+    "time_info": null,
+    "prompt_version": "test",
+    "facts": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "m",
+          "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "m",
+              "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+              "supports": "旧事实"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "status": "involved",
+        "applicability": "involved",
+        "components": [
+          {
+            "fragment": "小李从2020年1月1日起住在北京",
+            "contextualized": "住在北京",
+            "action": "modify",
+            "reason": "迁居",
+            "old_evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+              }
+            ],
+            "new_evidence": [
+              {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              }
+            ]
+          },
+          {
+            "fragment": "喜欢茶",
+            "contextualized": "喜欢茶",
+            "action": "protect",
+            "reason": "未涉及",
+            "old_evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+              }
+            ],
+            "new_evidence": []
+          }
+        ],
+        "semantic_support": "not_verified"
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [],
+      "semantic_support": "not_verified"
+    },
+    "summary": {}
+  },
+  "B_combined": {
+    "request": {
+      "memory_id": "m",
+      "memory_text": "小李从2020年1月1日起住在北京，喜欢茶。",
+      "source_context": []
+    },
+    "split_result": {
+      "memory_id": "m",
+      "memory_text": "小李从2020年1月1日起住在北京，喜欢茶。",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "m",
+          "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "m",
+              "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+              "supports": "旧事实"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "new_evidence": [
+      {
+        "source_id": "n",
+        "text": "小李2023年1月1日搬到上海。"
+      }
+    ],
+    "time_info": {
+      "facts": {
+        "1": {
+          "start": {
+            "value": "2020-01-01",
+            "precision": "day"
+          },
+          "end": null,
+          "basis": {
+            "source_type": "memory",
+            "source_id": "m",
+            "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+          }
+        }
+      },
+      "sources": {
+        "n": {
+          "start": {
+            "value": "2023-01-01",
+            "precision": "day"
+          },
+          "end": null,
+          "kind": "actual",
+          "basis": {
+            "source_id": "n",
+            "quote": "小李2023年1月1日搬到上海。"
+          }
+        }
+      },
+      "transitions": [
+        {
+          "fact_index": 1,
+          "source_id": "n",
+          "quote": "小李2023年1月1日搬到上海。",
+          "at": {
+            "value": "2023-01-01",
+            "precision": "day"
+          },
+          "kind": "actual"
+        }
+      ]
+    },
+    "scope_result": {
+      "memory_id": "m",
+      "memory_text": "小李从2020年1月1日起住在北京，喜欢茶。",
+      "source_context": [],
+      "new_evidence": [
+        {
+          "source_id": "n",
+          "text": "小李2023年1月1日搬到上海。"
+        }
+      ],
+      "time_info": null,
+      "prompt_version": "test",
+      "facts": [
+        {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "involved",
+          "applicability": "involved",
+          "components": [
+            {
+              "fragment": "小李从2020年1月1日起住在北京",
+              "contextualized": "住在北京",
+              "action": "modify",
+              "reason": "迁居",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "n",
+                  "quote": "小李2023年1月1日搬到上海。"
+                }
+              ]
+            },
+            {
+              "fragment": "喜欢茶",
+              "contextualized": "喜欢茶",
+              "action": "protect",
+              "reason": "未涉及",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": []
+            }
+          ],
+          "semantic_support": "not_verified"
+        }
+      ],
+      "new_candidates": {
+        "status": "ok",
+        "candidates": [],
+        "semantic_support": "not_verified"
+      },
+      "summary": {}
+    },
+    "facts": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "m",
+          "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "m",
+              "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+              "supports": "旧事实"
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "scope": {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "involved",
+          "applicability": "involved",
+          "components": [
+            {
+              "fragment": "小李从2020年1月1日起住在北京",
+              "contextualized": "住在北京",
+              "action": "modify",
+              "reason": "迁居",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "n",
+                  "quote": "小李2023年1月1日搬到上海。"
+                }
+              ]
+            },
+            {
+              "fragment": "喜欢茶",
+              "contextualized": "喜欢茶",
+              "action": "protect",
+              "reason": "未涉及",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": []
+            }
+          ],
+          "semantic_support": "not_verified"
+        },
+        "temporal": {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "involved",
+          "applicability": "involved",
+          "erase_label": "Make False",
+          "temporal_relation": "before_after",
+          "temporal_reason": "逐事实影响、转换引文及候选阻断边界共同支持状态先后，仍需核验",
+          "components": [
+            {
+              "fragment": "小李从2020年1月1日起住在北京",
+              "action": "modify",
+              "reason": "迁居",
+              "new_evidence": [
+                {
+                  "source_id": "n",
+                  "quote": "小李2023年1月1日搬到上海。"
+                }
+              ]
+            },
+            {
+              "fragment": "喜欢茶",
+              "action": "protect",
+              "reason": "未涉及",
+              "new_evidence": []
+            }
+          ],
+          "path": [
+            "determine_interval",
+            "block_check",
+            "contradiction_check",
+            "adjustment_candidate"
+          ],
+          "interval_relation": "unknown",
+          "intervals": {
+            "old": {
+              "start": {
+                "value": "2020-01-01",
+                "precision": "day"
+              },
+              "end": null,
+              "basis": {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+              }
+            },
+            "new": {
+              "start": {
+                "value": "2023-01-01",
+                "precision": "day"
+              },
+              "end": null,
+              "kind": "actual",
+              "basis": {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              }
+            }
+          },
+          "nli": {
+            "relation": "contradiction",
+            "score": 0.99
+          },
+          "interval_adjustments": [
+            {
+              "proposed_end": {
+                "value": "2023-01-01",
+                "precision": "day",
+                "inclusive": false
+              },
+              "basis": {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              },
+              "reason": "候选状态转换阻断旧状态向后延续；事件时间和语义仍需核验",
+              "fragments": [
+                "小李从2020年1月1日起住在北京"
+              ]
+            }
+          ],
+          "time_checks": [
+            {
+              "role": "old_start",
+              "boundary": {
+                "value": "2020-01-01",
+                "precision": "day"
+              },
+              "basis": {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+              },
+              "quote_status": "matched",
+              "precision_status": "matched",
+              "semantic_status": "supported",
+              "semantic_reason": "手写合成案例假设事件和日期一致"
+            },
+            {
+              "role": "new_start",
+              "boundary": {
+                "value": "2023-01-01",
+                "precision": "day"
+              },
+              "basis": {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              },
+              "quote_status": "matched",
+              "precision_status": "matched",
+              "semantic_status": "supported",
+              "semantic_reason": "手写合成案例假设事件和日期一致"
+            },
+            {
+              "role": "transition",
+              "boundary": {
+                "value": "2023-01-01",
+                "precision": "day"
+              },
+              "basis": {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              },
+              "quote_status": "matched",
+              "precision_status": "matched",
+              "semantic_status": "supported",
+              "semantic_reason": "手写合成案例假设事件和日期一致"
+            }
+          ],
+          "impact_judgment": {
+            "erase_label": "Make False",
+            "applicability": "involved",
+            "temporal_relation": "before_after",
+            "temporal_reason": "手写受控测试",
+            "components": [
+              {
+                "fragment": "小李从2020年1月1日起住在北京",
+                "action": "modify",
+                "reason": "迁居",
+                "new_evidence": [
+                  {
+                    "source_id": "n",
+                    "quote": "小李2023年1月1日搬到上海。"
+                  }
+                ]
+              },
+              {
+                "fragment": "喜欢茶",
+                "action": "protect",
+                "reason": "未涉及",
+                "new_evidence": []
+              }
+            ]
+          }
+        },
+        "temporal_status": "temporal_candidate",
+        "final": {
+          "scope_components": [
+            {
+              "fragment": "小李从2020年1月1日起住在北京",
+              "contextualized": "住在北京",
+              "action": "modify",
+              "reason": "迁居",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "n",
+                  "quote": "小李2023年1月1日搬到上海。"
+                }
+              ]
+            },
+            {
+              "fragment": "喜欢茶",
+              "contextualized": "喜欢茶",
+              "action": "protect",
+              "reason": "未涉及",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+                }
+              ],
+              "new_evidence": []
+            }
+          ],
+          "scope_status": "involved",
+          "temporal_candidates": [
+            {
+              "proposed_end": {
+                "value": "2023-01-01",
+                "precision": "day",
+                "inclusive": false
+              },
+              "basis": {
+                "source_id": "n",
+                "quote": "小李2023年1月1日搬到上海。"
+              },
+              "reason": "候选状态转换阻断旧状态向后延续；事件时间和语义仍需核验",
+              "fragments": [
+                "小李从2020年1月1日起住在北京"
+              ]
+            }
+          ],
+          "semantic_support": "not_verified",
+          "temporal_relation_candidate": "before_after",
+          "temporal_dependent_conclusions": "candidate_unverified"
+        },
+        "pair_assessment": {
+          "erase_label": "Make False",
+          "temporal_relation": "before_after",
+          "reason": "手写受控测试",
+          "provenance": "synthetic"
+        }
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [],
+      "semantic_support": "not_verified"
+    },
+    "confirmed_valid": 0,
+    "evaluator_calls": [
+      {
+        "backend": "time_verifier",
+        "provenance": {
+          "kind": "simulation",
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/scope_interval/controlled_replay.py"
+        },
+        "input": {
+          "task": "time_support",
+          "role": "old_start",
+          "boundary": {
+            "value": "2020-01-01",
+            "precision": "day"
+          },
+          "basis": {
+            "source_type": "memory",
+            "source_id": "m",
+            "quote": "小李从2020年1月1日起住在北京，喜欢茶。"
+          },
+          "source": {
+            "source_type": "memory",
+            "source_id": "m",
+            "text": "小李从2020年1月1日起住在北京，喜欢茶。"
+          },
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        },
+        "output": {
+          "status": "supported",
+          "reason": "手写合成案例假设事件和日期一致"
+        }
+      },
+      {
+        "backend": "time_verifier",
+        "provenance": {
+          "kind": "simulation",
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/scope_interval/controlled_replay.py"
+        },
+        "input": {
+          "task": "time_support",
+          "role": "new_start",
+          "boundary": {
+            "value": "2023-01-01",
+            "precision": "day"
+          },
+          "basis": {
+            "source_id": "n",
+            "quote": "小李2023年1月1日搬到上海。"
+          },
+          "source": {
+            "source_id": "n",
+            "text": "小李2023年1月1日搬到上海。"
+          },
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        },
+        "output": {
+          "status": "supported",
+          "reason": "手写合成案例假设事件和日期一致"
+        }
+      },
+      {
+        "backend": "time_verifier",
+        "provenance": {
+          "kind": "simulation",
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/scope_interval/controlled_replay.py"
+        },
+        "input": {
+          "task": "time_support",
+          "role": "transition",
+          "boundary": {
+            "value": "2023-01-01",
+            "precision": "day"
+          },
+          "basis": {
+            "source_id": "n",
+            "quote": "小李2023年1月1日搬到上海。"
+          },
+          "source": {
+            "source_id": "n",
+            "text": "小李2023年1月1日搬到上海。"
+          },
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        },
+        "output": {
+          "status": "supported",
+          "reason": "手写合成案例假设事件和日期一致"
+        }
+      },
+      {
+        "backend": "nli",
+        "provenance": {
+          "kind": "simulation",
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/scope_interval/controlled_replay.py"
+        },
+        "input": {
+          "task": "pair_nli",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "m",
+            "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "m",
+                "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                "supports": "旧事实"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "new_evidence": {
+            "source_id": "n",
+            "text": "小李2023年1月1日搬到上海。"
+          },
+          "impact": {
+            "fact": {
+              "fact_index": 1,
+              "source_memory_id": "m",
+              "raw_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+              "contextualized_subfact": "小李从2020年1月1日起住在北京，喜欢茶。",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "m",
+                  "quote": "小李从2020年1月1日起住在北京，喜欢茶。",
+                  "supports": "旧事实"
+                }
+              ],
+              "pending_confirmations": []
+            },
+            "status": "involved",
+            "applicability": "involved",
+            "erase_label": "Make False",
+            "temporal_relation": "before_after",
+            "temporal_reason": "手写受控测试",
+            "components": [
+              {
+                "fragment": "小李从2020年1月1日起住在北京",
+                "action": "modify",
+                "reason": "迁居",
+                "new_evidence": [
+                  {
+                    "source_id": "n",
+                    "quote": "小李2023年1月1日搬到上海。"
+                  }
+                ]
+              },
+              {
+                "fragment": "喜欢茶",
+                "action": "protect",
+                "reason": "未涉及",
+                "new_evidence": []
+              }
+            ]
+          }
+        },
+        "output": {
+          "relation": "contradiction",
+          "score": 0.99
+        }
+      }
+    ]
+  }
+}

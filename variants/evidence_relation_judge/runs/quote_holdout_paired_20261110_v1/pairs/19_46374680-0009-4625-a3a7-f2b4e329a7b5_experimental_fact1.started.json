@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-10T16:22:05.725055+08:00",
+  "record": 19,
+  "version": "experimental",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+    "memory_text": "Monthly income is 17000 USD",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "raw_subfact": "Monthly income is 17000 USD",
+      "contextualized_subfact": "用户的月收入为 17000 美元。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+          "quote": "Monthly income is 17000 USD",
+          "supports": "旧记忆记载月收入为 17000 美元；此引文本身未明确主体。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "My monthly income is 17000 USD",
+          "supports": "来源上下文中的第一人称陈述结合 speaker 为 user 的标记，用于将旧记忆中的收入主体补足为用户。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/2/content",
+        "text": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 09:10:09"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-4",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004 /sessions/3/dialogue/4/content",
+        "text": "One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting.",
+        "speaker": "user",
+        "recorded_at": "Nov 10, 2025, 18:15:17"
+      },
+      {
+        "source_id": "dialogue-6",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004 /sessions/3/dialogue/6/content",
+        "text": "I plan to rely on my savings and cut down on unnecessary expenses. I believe my contributions to political campaigns are investments towards my relative's success.",
+        "speaker": "user",
+        "recorded_at": "Nov 10, 2025, 18:17:51"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a"
+}

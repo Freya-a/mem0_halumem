@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-11-05T09:41:42+08:00",
+  "model": "qwen-plus",
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "endpoint_host": "dashscope.aliyuncs.com",
+  "settings_sources": {
+    "LLM_BASE_URL": {
+      "variable": "LLM_BASE_URL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_API_KEY": {
+      "variable": "LLM_API_KEY",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_MODEL": {
+      "variable": "LLM_MODEL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    }
+  },
+  "request_limit": 10,
+  "prompt_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/prompt_versions/v4_boundaries_20261104/prompt.txt",
+  "prompt_sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3",
+  "selection": [
+    "promotion",
+    "skydiving",
+    "career_history"
+  ],
+  "candidate_extraction": "deferred in judge calls to prioritize module-one fact scope"
+}

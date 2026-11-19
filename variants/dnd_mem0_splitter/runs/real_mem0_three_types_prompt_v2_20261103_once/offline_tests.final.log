@@ -1,0 +1,43 @@
+test_http_and_https_keep_their_separate_uppercase_proxy_values (test_proxy_config.ProxyConfigTests.test_http_and_https_keep_their_separate_uppercase_proxy_values) ... ok
+test_https_uses_uppercase_tunnel_instead_of_stale_lowercase_port (test_proxy_config.ProxyConfigTests.test_https_uses_uppercase_tunnel_instead_of_stale_lowercase_port) ... ok
+test_lowercase_only_configuration_is_preserved (test_proxy_config.ProxyConfigTests.test_lowercase_only_configuration_is_preserved) ... ok
+test_no_proxy_bypass_is_preserved (test_proxy_config.ProxyConfigTests.test_no_proxy_bypass_is_preserved) ... ok
+test_config_missing_stops_and_never_uses_other_provider_key (test_real_backend.RealBackendTests.test_config_missing_stops_and_never_uses_other_provider_key) ... ok
+test_config_priority_aliases_and_secret_repr (test_real_backend.RealBackendTests.test_config_priority_aliases_and_secret_repr) ... ok
+test_http_failure_is_not_retried_and_does_not_expose_secret (test_real_backend.RealBackendTests.test_http_failure_is_not_retried_and_does_not_expose_secret) ... ok
+test_invalid_input_fails_before_any_request (test_real_backend.RealBackendTests.test_invalid_input_fails_before_any_request) ... ok
+test_malformed_and_duplicate_json_are_not_repaired (test_real_backend.RealBackendTests.test_malformed_and_duplicate_json_are_not_repaired) ... ok
+test_original_validator_rejects_bad_quote_and_wrong_model_echo (test_real_backend.RealBackendTests.test_original_validator_rejects_bad_quote_and_wrong_model_echo) ... ok
+test_prompt_is_exact_design_block_and_is_sent_with_separate_input (test_real_backend.RealBackendTests.test_prompt_is_exact_design_block_and_is_sent_with_separate_input) ... ok
+test_run_artifacts_keep_success_or_failure_and_refuse_overwrite (test_real_backend.RealBackendTests.test_run_artifacts_keep_success_or_failure_and_refuse_overwrite) ... ok
+test_sdk_clients_with_retries_are_rejected_before_request (test_real_backend.RealBackendTests.test_sdk_clients_with_retries_are_rejected_before_request) ... ok
+test_single_call_guard_prevents_second_create (test_real_backend.RealBackendTests.test_single_call_guard_prevents_second_create) ... ok
+test_truncated_response_is_a_failure (test_real_backend.RealBackendTests.test_truncated_response_is_a_failure) ... ok
+test_backend_cannot_mutate_the_authoritative_input (test_splitter.SplitterTests.test_backend_cannot_mutate_the_authoritative_input) ... ok
+test_cli_bad_quote_has_no_partial_success_output (test_splitter.SplitterTests.test_cli_bad_quote_has_no_partial_success_output) ... ok
+test_cli_duplicate_keys_and_malformed_json_are_errors (test_splitter.SplitterTests.test_cli_duplicate_keys_and_malformed_json_are_errors) ... ok
+test_cli_missing_file_is_an_explicit_error (test_splitter.SplitterTests.test_cli_missing_file_is_an_explicit_error) ... ok
+test_cli_success_writes_only_the_result_to_stdout (test_splitter.SplitterTests.test_cli_success_writes_only_the_result_to_stdout) ... ok
+test_context_fields_types_and_duplicate_ids (test_splitter.SplitterTests.test_context_fields_types_and_duplicate_ids) ... ok
+test_context_only_fact_is_rejected (test_splitter.SplitterTests.test_context_only_fact_is_rejected) ... ok
+test_context_quote_must_match_declared_source (test_splitter.SplitterTests.test_context_quote_must_match_declared_source) ... ok
+test_evidence_and_confirmation_schemas (test_splitter.SplitterTests.test_evidence_and_confirmation_schemas) ... ok
+test_fact_id_and_memory_evidence_id_must_match (test_splitter.SplitterTests.test_fact_id_and_memory_evidence_id_must_match) ... ok
+test_fact_indexes_are_continuous_integers (test_splitter.SplitterTests.test_fact_indexes_are_continuous_integers) ... ok
+test_memory_quote_must_match_exactly (test_splitter.SplitterTests.test_memory_quote_must_match_exactly) ... ok
+test_no_context_is_needed_for_memory_only_evidence (test_splitter.SplitterTests.test_no_context_is_needed_for_memory_only_evidence) ... ok
+test_omitted_source_context_and_empty_facts_are_valid (test_splitter.SplitterTests.test_omitted_source_context_and_empty_facts_are_valid) ... ok
+test_optional_backend_echo_must_match_input (test_splitter.SplitterTests.test_optional_backend_echo_must_match_input) ... ok
+test_optional_context_metadata_is_accepted (test_splitter.SplitterTests.test_optional_context_metadata_is_accepted) ... ok
+test_required_input_fields_and_types (test_splitter.SplitterTests.test_required_input_fields_and_types) ... ok
+test_required_response_and_fact_fields (test_splitter.SplitterTests.test_required_response_and_fact_fields) ... ok
+test_returned_objects_do_not_alias_caller_data (test_splitter.SplitterTests.test_returned_objects_do_not_alias_caller_data) ... ok
+test_success_keeps_input_identity_and_handwritten_claims (test_splitter.SplitterTests.test_success_keeps_input_identity_and_handwritten_claims) ... ok
+test_unknown_context_and_source_type_are_rejected (test_splitter.SplitterTests.test_unknown_context_and_source_type_are_rejected) ... ok
+test_unknown_fields_are_not_silently_dropped (test_splitter.SplitterTests.test_unknown_fields_are_not_silently_dropped) ... ok
+test_whitespace_in_input_is_preserved (test_splitter.SplitterTests.test_whitespace_in_input_is_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 1.016s
+
+OK

@@ -1,0 +1,200 @@
+{
+  "code_sha256": {
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/relation_judge.py": "8542d0a90bf379a5c34c4de26f5f7d56fad2de1305e01aa5b115185a17300300",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/run_local.py": "ceb4191a4c4707b1bb4cb432f00543f2c3ee39b25947a6e632f28327aa49cd23"
+  },
+  "system_prompt_utf8_sha256": "14dcec1be517b43005549252849f2ab1f482ae7a28d100d611ea1dc517ea84ee",
+  "v4_prompt_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/prompt_versions/v4_boundaries_20261104/prompt.txt",
+  "v4_prompt_sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3",
+  "model_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B",
+  "model_files": {
+    ".gitattributes": {
+      "bytes": 1570,
+      "sha256": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930"
+    },
+    "LICENSE": {
+      "bytes": 11343,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+    },
+    "README.md": {
+      "bytes": 16660,
+      "sha256": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6"
+    },
+    "config.json": {
+      "bytes": 728,
+      "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30"
+    },
+    "generation_config.json": {
+      "bytes": 239,
+      "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2"
+    },
+    "merges.txt": {
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "model-00001-of-00005.safetensors": {
+      "bytes": 3996250744
+    },
+    "model-00002-of-00005.safetensors": {
+      "bytes": 3993160032
+    },
+    "model-00003-of-00005.safetensors": {
+      "bytes": 3959604768
+    },
+    "model-00004-of-00005.safetensors": {
+      "bytes": 3187841392
+    },
+    "model-00005-of-00005.safetensors": {
+      "bytes": 1244659840
+    },
+    "model.safetensors.index.json": {
+      "bytes": 32878,
+      "sha256": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc"
+    },
+    "tokenizer.json": {
+      "bytes": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "tokenizer_config.json": {
+      "bytes": 9732,
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+    },
+    "vocab.json": {
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "cases": {
+    "skydiving": {
+      "prepared_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/real_cases_20261106/skydiving_input.json",
+      "prepared_input_sha256": "f9ff454e8e5458471b7de87ec58adfeb0bba66578b561ef95f3462d3e0b51b90",
+      "saved_model_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/skydiving/model_input.json",
+      "saved_model_input_sha256": "9d3890d135ded38f45f9ba8bbaf6a336962cb3e7d98c0fc9e8098b2d5083b233",
+      "saved_split_result_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/skydiving/split_result.json",
+      "saved_split_result_sha256": "d2c0b681fe2be5ae3648d935fd8c2b64c371308adab316e3350ccc3decf5cc2b",
+      "saved_provenance_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/skydiving/source_provenance.json",
+      "saved_provenance_sha256": "4a6c497137010b6e8c0685c050e825688d36e3abab525e06856778cb8dab1b5b",
+      "original_provenance": {
+        "case_name": "skydiving",
+        "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+        "before_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "before_sha256": "815eeed3870029474b87bbdd4e5f1712acb21cc68784f82134283d2dfd2e274a",
+        "snapshot_pointer": "/api_snapshot/results/100",
+        "input_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json",
+        "input_sha256": "294a2d50c25a3e798f212e422d02cf2ceeed2bc0e665d574039a1560137ef748",
+        "new_evidence_pointers": [
+          "/raw_dialogue/0",
+          "/raw_dialogue/2",
+          "/raw_dialogue/8"
+        ],
+        "dataset_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+        "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+        "old_context_pointer": "dataset line 1, /sessions/2/dialogue/6/content",
+        "old_quote_character_range": [
+          0,
+          169
+        ],
+        "human_review_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/diagnosis/medium_dev/human_review.csv",
+        "human_review_sha256": "3b882a112682b59bf6b1800e0ae88f6257221809a883641109694b77faf4066b",
+        "human_review_row_one_based": 8,
+        "review_scope_note": "用户确认原始事实及范围；本次运行的判断正确性尚未由用户确认"
+      },
+      "checks": [
+        "v4_prompt_hash",
+        "original_file_hashes",
+        "memory_snapshot_id_text_user",
+        "new_source_pointers_text_speaker_time",
+        "old_context_pointer_and_range",
+        "v4_validator",
+        "component_input_validator",
+        "one_fact"
+      ]
+    },
+    "promotion": {
+      "prepared_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/real_cases_20261106/promotion_input.json",
+      "prepared_input_sha256": "64065ba49b96c468e3c123af54c8b3a25076e2b04f1c0cba1ea5d5c0efa4077c",
+      "saved_model_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/promotion/model_input.json",
+      "saved_model_input_sha256": "5c41404e7820c923eb5074df4f2c1d62bfbdd557d7c84a36218324a749b0ce85",
+      "saved_split_result_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/promotion/split_result.json",
+      "saved_split_result_sha256": "74c200bcf8c1fca50e8d6f3198d3e2cd9b829c81af8bc1e10033f1ff3d4b23cc",
+      "saved_provenance_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/promotion/source_provenance.json",
+      "saved_provenance_sha256": "51d43843dc67a679c1f0d75c5949d89dc0fddbf60d3ff2bf6815f1f3b59f8428",
+      "original_provenance": {
+        "case_name": "promotion",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "before_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+        "before_sha256": "f5b4a4668ced3f9afbc79d66f17710d66ff7e9d5bc7101f3d9ad45aa11a8bccf",
+        "snapshot_pointer": "/api_snapshot/results/61",
+        "input_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json",
+        "input_sha256": "2a35a15590c2b794d3cffce0b5871ff6658ae63cd6e44656b3b3abc957eea650",
+        "new_evidence_pointers": [
+          "/raw_dialogue/0"
+        ],
+        "dataset_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+        "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+        "old_context_pointer": "dataset line 14, /sessions/1/dialogue/2/content",
+        "old_quote_character_range": [
+          55,
+          107
+        ],
+        "human_review_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/diagnosis/medium_dev/human_review.csv",
+        "human_review_sha256": "3b882a112682b59bf6b1800e0ae88f6257221809a883641109694b77faf4066b",
+        "human_review_row_one_based": 10,
+        "review_scope_note": "用户确认原始事实及范围；本次运行的判断正确性尚未由用户确认"
+      },
+      "checks": [
+        "v4_prompt_hash",
+        "original_file_hashes",
+        "memory_snapshot_id_text_user",
+        "new_source_pointers_text_speaker_time",
+        "old_context_pointer_and_range",
+        "v4_validator",
+        "component_input_validator",
+        "one_fact"
+      ]
+    },
+    "career_history": {
+      "prepared_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/real_cases_20261106/career_history_input.json",
+      "prepared_input_sha256": "2111e95fd68cfa69519eb24e8cb35f3576abd2c6fdb044ca7515930d09b9f3c4",
+      "saved_model_input_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/career_history/model_input.json",
+      "saved_model_input_sha256": "2d4c4c1bc91abb23020374f43feb9a7b7c17c4d7281f81102312e3ca88bb62f4",
+      "saved_split_result_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/career_history/split_result.json",
+      "saved_split_result_sha256": "8289078012bdf51d861e55589b696df64f0e1335ee00228fbeb4a9f5cd372005",
+      "saved_provenance_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/career_history/source_provenance.json",
+      "saved_provenance_sha256": "c6c555a74cac60faf35618fb7df6cb3dae34ad055dc75ee78ae979c012fc8234",
+      "original_provenance": {
+        "case_name": "career_history",
+        "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+        "before_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "before_sha256": "998a15655de73fefcc8e4c75dc3b2e4e9481cb2cc6a5e27d6f2455585a83e41a",
+        "snapshot_pointer": "/api_snapshot/results/3",
+        "input_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json",
+        "input_sha256": "cb6ce342b291c683ca010b62312d3cbc2f36f7e01792001a41803d0d85fa46bc",
+        "new_evidence_pointers": [
+          "/raw_dialogue/0"
+        ],
+        "dataset_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+        "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+        "old_context_pointer": "dataset line 17, /sessions/1/dialogue/2/content",
+        "old_quote_character_range": [
+          61,
+          109
+        ],
+        "human_review_file": "/home/shu1004/ld/system/mem0_halumem_diagnosis/diagnosis/medium_dev/human_review.csv",
+        "human_review_sha256": "3b882a112682b59bf6b1800e0ae88f6257221809a883641109694b77faf4066b",
+        "human_review_row_one_based": 24,
+        "review_scope_note": "用户确认原始事实及范围；本次运行的判断正确性尚未由用户确认"
+      },
+      "checks": [
+        "v4_prompt_hash",
+        "original_file_hashes",
+        "memory_snapshot_id_text_user",
+        "new_source_pointers_text_speaker_time",
+        "old_context_pointer_and_range",
+        "v4_validator",
+        "component_input_validator",
+        "one_fact"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1299 @@
+[
+  {
+    "record": 1,
+    "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+    "split_key": "8518aaf0bbfffdcb",
+    "input": {
+      "split_result": {
+        "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+        "memory_text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+            "raw_subfact": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.",
+            "contextualized_subfact": "用户喜欢狗，尤其是拉布拉多犬，因为它们友好、忠诚，并且是像慢跑这样的户外活动的绝佳伴侣。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+                "quote": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+                "supports": "旧记忆记载了对狗的喜爱，特别指出拉布拉多犬，并列出了友好、忠诚以及适合慢跑等户外活动作为原因。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+                "supports": "来源上下文中的第一人称陈述与旧记忆内容一致，且标记说话者为 user，用于将旧记忆中省略的主语补足为“用户”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/2/dialogue/2/content",
+          "text": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 22:44:54"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/0/content",
+          "text": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 17:48:59"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/2/content",
+          "text": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 17:55:15"
+        },
+        {
+          "source_id": "dialogue-6",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/6/content",
+          "text": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 18:02:45"
+        },
+        {
+          "source_id": "dialogue-12",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/12/content",
+          "text": "I'm optimistic about how this new preference will fit into my life.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 18:17:19"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+    "split_review": {
+      "usable": true,
+      "records": [
+        1
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 3,
+    "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+    "split_key": "28c844bfd28bc29c",
+    "input": {
+      "split_result": {
+        "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+        "memory_text": "Primary career motivation is improving healthcare access for underserved communities",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+            "raw_subfact": "Primary career motivation is improving healthcare access for underserved communities.",
+            "contextualized_subfact": "用户的主要职业动机是改善弱势社区的医疗可及性。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+                "quote": "Primary career motivation is improving healthcare access for underserved communities",
+                "supports": "旧记忆记载主要职业动机是改善弱势社区的医疗可及性；此引文本身未明确主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I want to ensure that my work supports my aspiration to improve healthcare access for underserved communities.",
+                "supports": "来源中说话者（user）以第一人称陈述该愿望，用于将旧记忆中的动机主体补足为“用户”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/3/dialogue/2/content",
+          "text": "Absolutely, I'm looking for a position that better aligns with my life goals and promotes personal well-being. I want to ensure that my work supports my aspiration to improve healthcare access for underserved communities.",
+          "speaker": "user",
+          "recorded_at": "Dec 15, 2025, 06:28:15"
+        },
+        {
+          "source_id": "ctx-2",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/3/dialogue/24/content",
+          "text": "Yes, discussing work-life balance during interviews is important to me. I want to ensure the role supports my health and goals.",
+          "speaker": "user",
+          "recorded_at": "Dec 15, 2025, 07:27:31"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-4",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/4/content",
+          "text": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.",
+          "speaker": "user",
+          "recorded_at": "Jan 10, 2026, 07:28:06"
+        },
+        {
+          "source_id": "dialogue-6",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/6/content",
+          "text": "I think a job that offers flexibility would help me manage both my professional responsibilities and personal well-being. Pets can definitely provide emotional support, which is valuable.",
+          "speaker": "user",
+          "recorded_at": "Jan 10, 2026, 07:30:21"
+        },
+        {
+          "source_id": "dialogue-12",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/12/content",
+          "text": "I'm planning to network with professionals in the non-profit sector and explore opportunities that align with my goals. It's a step towards finding the right fit.",
+          "speaker": "user",
+          "recorded_at": "Jan 10, 2026, 07:43:11"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004",
+    "split_review": {
+      "usable": true,
+      "records": [
+        3
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 4,
+    "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "split_key": "642115394b85a2b4",
+    "input": {
+      "split_result": {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+            "raw_subfact": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "contextualized_subfact": "The user has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+                "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+                "supports": "Old memory states the user has a friend named ThomasSusan, referred to as 'Susan', who provides support and encouragement."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+                "supports": "Confirms the user explicitly identifies ThomasSusan as 'my Friend' and attributes support and encouragement to 'Susan'; speaker metadata ('speaker': 'user') supports that this is the user's self-report."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/input.json#/raw_dialogue/6/content [characters 0:590, zero-based, end exclusive]",
+          "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 01:02:20"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001 /sessions/6/dialogue/0/content",
+          "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:13:15"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001 /sessions/6/dialogue/2/content",
+          "text": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:15:18"
+        },
+        {
+          "source_id": "dialogue-12",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001 /sessions/6/dialogue/12/content",
+          "text": "I'm grateful for the support I've received. It's made a huge difference in my ability to navigate this transition and stay true to my values.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:46:26"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        4
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 5,
+    "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+    "split_key": "d73be1e43ffe17b6",
+    "input": {
+      "split_result": {
+        "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+        "memory_text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+            "raw_subfact": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.",
+            "contextualized_subfact": "用户有一位名叫 MartinezDaniel（被称为 'Daniel'）的同事，该同事在医疗咨询领域具有专业知识。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+                "quote": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "supports": "旧记忆记载存在一位名为 MartinezDaniel 且被称为 'Daniel' 的同事，其具备医疗咨询专业知识；此引文本身未明确拥有该同事的主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects",
+                "supports": "来源上下文由标记为 'user' 的说话者陈述，确认了 MartinezDaniel 是其同事且具备医疗咨询专业知识，用于补足旧记忆中省略的主体。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 01:02:20"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002 /sessions/6/dialogue/0/content",
+          "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:13:15"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002 /sessions/6/dialogue/2/content",
+          "text": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:15:18"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002",
+    "split_review": {
+      "usable": true,
+      "records": [
+        5
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 6,
+    "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+    "split_key": "b741ab186053ad5f",
+    "input": {
+      "split_result": {
+        "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+        "memory_text": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+            "raw_subfact": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management.",
+            "contextualized_subfact": "用户有一位名叫 WilliamsJoshua（被称为'Joshua'）的同事，以在医疗管理方面的协作方法和见解而闻名。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+                "quote": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+                "supports": "旧记忆记载存在一位名为 WilliamsJoshua 的同事，其别名为'Joshua'，且以协作方法和医疗管理见解著称；此引文未明确主语。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness",
+                "supports": "来源上下文由 user 发言，确认 WilliamsJoshua 是用户的同事，并描述了其协作方法和见解，用于补足旧记忆中的主语及确认关系。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 01:02:20"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003 /sessions/6/dialogue/0/content",
+          "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:13:15"
+        },
+        {
+          "source_id": "dialogue-4",
+          "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003 /sessions/6/dialogue/4/content",
+          "text": "Joshua's approach has definitely influenced my leadership style positively. I'm trying to integrate all these insights as I look for roles that align with my values and offer the balance I need.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:23:32"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003",
+    "split_review": {
+      "usable": true,
+      "records": [
+        6
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 9,
+    "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+    "split_key": "565904641027e99d",
+    "input": {
+      "split_result": {
+        "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+        "memory_text": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+            "raw_subfact": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.",
+            "contextualized_subfact": "用户喜欢伯爵茶，因为其丰富的历史、传统以及唤起怀旧感的佛手柑香气。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "8602da08-fefc-4875-ad50-dba104642365",
+                "quote": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+                "supports": "旧记忆记载了对伯爵茶的喜爱及其原因（历史、传统、佛手柑香气唤起怀旧感）；此引文本身未明确主语。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I like to drink Earl Grey tea, because the rich history and tradition behind Earl Grey tea. Its distinctive bergamot aroma provides a comforting sense of nostalgia.",
+                "supports": "来源中说话者为 user，且陈述内容与旧记忆一致，用于将旧记忆中的主语补足为“用户”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/2/dialogue/2/content",
+          "text": "I like to drink Earl Grey tea, because the rich history and tradition behind Earl Grey tea. Its distinctive bergamot aroma provides a comforting sense of nostalgia. I dislike to drink energy drinks, because I find energy drinks too sweet and artificial. They lack the authenticity and historical roots that I value in my beverages. I dislike to drink bubble tea, because the texture of the tapioca pearls is unappealing to me, and the drink often feels overly commercialized.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 22:16:28"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001 /sessions/3/dialogue/0/content",
+          "text": "I recently visited a historic tea house and it was quite an enlightening experience. The ambiance transported me to a different era.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 06:49:58"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001 /sessions/3/dialogue/2/content",
+          "text": "Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity.",
+          "speaker": "user",
+          "recorded_at": "Jan 06, 2026, 06:54:08"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        9
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 12,
+    "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+    "split_key": "77ac7c89c1c07bc9",
+    "input": {
+      "split_result": {
+        "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "memory_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+            "raw_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+            "contextualized_subfact": "用户因确保电影细节的历史准确性要求以及紧凑的制作日程而感到压力。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "supports": "旧记忆记载了因历史准确性要求和紧凑制作日程而产生压力的事实，但未明确主体及具体领域。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules",
+                "supports": "来源上下文由用户（speaker: user）陈述，明确了压力主体为“用户”，并将“historical accuracy demands”具体化为“确保电影细节的历史准确性”，将“tight production schedules”具体化为“管理紧凑的制作日程”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/1/dialogue/4/content",
+          "text": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 14:55:40"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000 /sessions/5/dialogue/0/content",
+          "text": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.",
+          "speaker": "user",
+          "recorded_at": "Mar 15, 2026, 13:53:58"
+        },
+        {
+          "source_id": "dialogue-14",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000 /sessions/5/dialogue/14/content",
+          "text": "Delegating tasks has been key to reducing stress and improving my mental health. It's been a significant change since becoming lead director.",
+          "speaker": "user",
+          "recorded_at": "Mar 15, 2026, 14:31:44"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+    "split_review": {
+      "usable": true,
+      "records": [
+        12,
+        13
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 13,
+    "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+    "split_key": "77ac7c89c1c07bc9",
+    "input": {
+      "split_result": {
+        "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "memory_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+            "raw_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+            "contextualized_subfact": "用户因确保电影细节的历史准确性要求以及紧凑的制作日程而感到压力。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "supports": "旧记忆记载了因历史准确性要求和紧凑制作日程而产生压力的事实，但未明确主体及具体领域。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules",
+                "supports": "来源上下文由用户（speaker: user）陈述，明确了压力主体为“用户”，并将“historical accuracy demands”具体化为“确保电影细节的历史准确性”，将“tight production schedules”具体化为“管理紧凑的制作日程”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/1/dialogue/4/content",
+          "text": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 14:55:40"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001 /sessions/5/dialogue/0/content",
+          "text": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.",
+          "speaker": "user",
+          "recorded_at": "Mar 15, 2026, 13:53:58"
+        },
+        {
+          "source_id": "dialogue-4",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001 /sessions/5/dialogue/4/content",
+          "text": "I haven't had to balance a demanding family life, but I do focus on my career goals. My recent role change has definitely helped me achieve a better work-life balance.",
+          "speaker": "user",
+          "recorded_at": "Mar 15, 2026, 14:00:38"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        12,
+        13
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 15,
+    "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+    "split_key": "d8b9677a8a1b3a10",
+    "input": {
+      "split_result": {
+        "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+        "memory_text": "Friends and colleagues are main support system",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+            "raw_subfact": "Friends and colleagues are main support system",
+            "contextualized_subfact": "用户的朋友和同事是其主要支持系统。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+                "quote": "Friends and colleagues are main support system",
+                "supports": "旧记忆记载朋友和同事是主要支持系统；此引文本身未明确主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I'm grateful for the support from my colleagues and friends.",
+                "supports": "来源中用户以第一人称表达对同事和朋友支持的感激，用于将旧记忆中的支持系统主体补足为用户。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/4/dialogue/6/content",
+          "text": "I'm grateful for the support from my colleagues and friends. Their encouragement helps me stay grounded.",
+          "speaker": "user",
+          "recorded_at": "Feb 01, 2026, 18:57:12"
+        },
+        {
+          "source_id": "ctx-2",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/5/dialogue/2/content",
+          "text": "The support from my colleagues and friends has been instrumental in my journey. It's refreshing to have a positive work environment that encourages my commitment to historical accuracy in films.",
+          "speaker": "user",
+          "recorded_at": "Mar 15, 2026, 13:58:50"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-4",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006 /sessions/7/dialogue/4/content",
+          "text": "I focus on balancing both, as each type of relationship offers different support and opportunities. My existing friends have been a great source of encouragement, and the new connections are inspiring my work.",
+          "speaker": "user",
+          "recorded_at": "Apr 30, 2026, 06:31:17"
+        },
+        {
+          "source_id": "dialogue-6",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006 /sessions/7/dialogue/6/content",
+          "text": "They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas.",
+          "speaker": "user",
+          "recorded_at": "Apr 30, 2026, 06:33:29"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006",
+    "split_review": {
+      "usable": true,
+      "records": [
+        15
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 16,
+    "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+    "split_key": "add963059b5759b9",
+    "input": {
+      "split_result": {
+        "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+        "memory_text": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+            "raw_subfact": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.",
+            "contextualized_subfact": "用户喜欢古典交响乐，因为其复杂性、历史意义和真实的听觉体验。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+                "quote": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "supports": "旧记忆记载了对古典交响乐的喜爱及其三个具体原因：复杂性、历史意义和真实的听觉体验；此引文本身未明确主语。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience.",
+                "supports": "来源中说话者（user）的第一人称陈述与旧记忆内容一致，用于将旧记忆中的省略主语补足为“用户”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/2/dialogue/10/content",
+          "text": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience. I like jazz from the 1920s, because I am captivated by the rich history and cultural significance of 1920s jazz. It transports me to a different era. I dislike auto-tuned pop music, because I find auto-tuned pop music lacks authenticity and depth, which are qualities I highly value in my musical preferences.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 22:39:05"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/0/content",
+          "text": "I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences.",
+          "speaker": "user",
+          "recorded_at": "Jul 13, 2026, 08:32:16"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/2/content",
+          "text": "The performance inspired me to delve into Baroque symphonies. The historical depth and complexity of the music align with my appreciation for authenticity.",
+          "speaker": "user",
+          "recorded_at": "Jul 13, 2026, 08:37:03"
+        },
+        {
+          "source_id": "dialogue-12",
+          "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/12/content",
+          "text": "I'm focused on Baroque for now, but I'm open to other influences as long as they align with my vision for historical accuracy.",
+          "speaker": "user",
+          "recorded_at": "Jul 13, 2026, 09:04:00"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        16
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 17,
+    "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+    "split_key": "d193847217f4bfbe",
+    "input": {
+      "split_result": {
+        "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "memory_text": "Employed in the technology industry",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+            "raw_subfact": "Employed in the technology industry",
+            "contextualized_subfact": "用户受雇于科技行业。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+                "quote": "Employed in the technology industry",
+                "supports": "旧记忆记载受雇于科技行业；此引文本身未明确主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I am currently Employed, working in the technology industry.",
+                "supports": "第一人称陈述结合该来源的 user 角色，用于补足该就业状态的主体为‘用户’。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/2/content",
+          "text": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 09:10:09"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001 /sessions/3/dialogue/0/content",
+          "text": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:05:35"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001 /sessions/3/dialogue/2/content",
+          "text": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:10:01"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        17
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 18,
+    "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+    "split_key": "0695000c37e52ba2",
+    "input": {
+      "split_result": {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_text": "Works at Blockchain Tech as a senior developer",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "raw_subfact": "Works at Blockchain Tech as a senior developer",
+            "contextualized_subfact": "用户作为高级开发者在 Blockchain Tech 工作。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Works at Blockchain Tech as a senior developer",
+                "supports": "旧记忆记载在 Blockchain Tech 担任高级开发者的工作事实；此引文本身未明确主语。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I work at Blockchain Tech as a senior developer.",
+                "supports": "来源中说话者（user）以第一人称陈述相同内容，用于将旧记忆中的省略主语补足为“用户”。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/2/content",
+          "text": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 09:10:09"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/0/content",
+          "text": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:05:35"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/2/content",
+          "text": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:10:01"
+        },
+        {
+          "source_id": "dialogue-12",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/12/content",
+          "text": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:26:34"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+    "split_review": {
+      "usable": true,
+      "records": [
+        18
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 19,
+    "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+    "split_key": "4a84abe5f1127bbc",
+    "input": {
+      "split_result": {
+        "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "memory_text": "Monthly income is 17000 USD",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+            "raw_subfact": "Monthly income is 17000 USD",
+            "contextualized_subfact": "用户的月收入为 17000 美元。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+                "quote": "Monthly income is 17000 USD",
+                "supports": "旧记忆记载月收入为 17000 美元；此引文本身未明确主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "My monthly income is 17000 USD",
+                "supports": "来源上下文中的第一人称陈述结合 speaker 为 user 的标记，用于将旧记忆中的收入主体补足为用户。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/2/content",
+          "text": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 09:10:09"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-4",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004 /sessions/3/dialogue/4/content",
+          "text": "One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:15:17"
+        },
+        {
+          "source_id": "dialogue-6",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004 /sessions/3/dialogue/6/content",
+          "text": "I plan to rely on my savings and cut down on unnecessary expenses. I believe my contributions to political campaigns are investments towards my relative's success.",
+          "speaker": "user",
+          "recorded_at": "Nov 10, 2025, 18:17:51"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+    "split_review": {
+      "usable": true,
+      "records": [
+        19
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 21,
+    "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+    "split_key": "7e57b35efc3d864a",
+    "input": {
+      "split_result": {
+        "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+        "memory_text": "Mental health is stable and normal with no mental health issues",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+            "raw_subfact": "Mental health is stable and normal with no mental health issues.",
+            "contextualized_subfact": "用户的心理健康状况稳定且正常，没有心理健康问题。",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+                "quote": "Mental health is stable and normal with no mental health issues",
+                "supports": "旧记忆记载心理健康状况稳定、正常且无问题；此引文本身未明确主体。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "In terms of mental health, I am Stable and Normal. No mental health issues.",
+                "supports": "来源中说话者（user）以第一人称陈述相同内容，用于将旧记忆中的无主语句补足为“用户”的陈述。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/4/content",
+          "text": "My physical condition is Normal. No chronic diseases. In terms of mental health, I am Stable and Normal. No mental health issues. I maintain a stable physical and mental health by staying active and engaged with my work and political activities. Supporting the politician gives me a sense of purpose and fulfillment, contributing positively to my mental well-being.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 09:27:52"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000 /sessions/4/dialogue/0/content",
+          "text": "I've been feeling quite stressed lately with this career transition into political consulting. Leaving my stable tech job has been more challenging than I anticipated.",
+          "speaker": "user",
+          "recorded_at": "Nov 25, 2025, 14:15:47"
+        },
+        {
+          "source_id": "dialogue-2",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000 /sessions/4/dialogue/2/content",
+          "text": "The uncertainty of income is definitely a big concern. I used to feel secure and financially stable, but now everything seems unpredictable.",
+          "speaker": "user",
+          "recorded_at": "Nov 25, 2025, 14:22:20"
+        },
+        {
+          "source_id": "dialogue-10",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000 /sessions/4/dialogue/10/content",
+          "text": "I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now.",
+          "speaker": "user",
+          "recorded_at": "Nov 25, 2025, 14:46:47"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000",
+    "split_review": {
+      "usable": true,
+      "records": [
+        21
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 22,
+    "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+    "split_key": "e00c368a59806dd1",
+    "input": {
+      "split_result": {
+        "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+        "memory_text": "MooreSandra is a friend who shares political views and supports the same politician",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+            "raw_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+            "contextualized_subfact": "MooreSandra is a friend of the user who shares the user's political views and supports the same politician as the user.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "supports": "旧记忆记载 MooreSandra 是朋友，且分享政治观点并支持同一位政治家；原文未明确‘朋友’的归属对象及‘同一位’的参照对象。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "MooreSandra is my Friend, Sandra shares my political views and supports the same politician",
+                "supports": "来源上下文由 user 发言，明确 MooreSandra 是‘我的’朋友，且分享‘我的’政治观点并支持‘同一位’政治家，用于补足 raw_subfact 中的归属和参照对象。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 10:05:40"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-10",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004 /sessions/5/dialogue/10/content",
+          "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+          "speaker": "user",
+          "recorded_at": "Dec 10, 2025, 18:27:24"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004",
+    "split_review": {
+      "usable": true,
+      "records": [
+        22,
+        23
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 22,
+    "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+    "split_key": "5d86a83aa90151df",
+    "input": {
+      "split_result": {
+        "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "memory_text": "GonzalezMary is a close friend who discusses political strategies",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+            "raw_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+            "contextualized_subfact": "GonzalezMary is a close friend of the user who discusses political strategies with the user.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "quote": "GonzalezMary is a close friend who discusses political strategies",
+                "supports": "旧记忆记载 GonzalezMary 是密友且讨论政治策略，但未明确‘密友’的对象及‘讨论’的互动对象。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me",
+                "supports": "来源上下文由 user 发言，明确‘密友’关系指向 user，且‘讨论政治策略’是 Mary 与 user 之间的互动，用于补足 raw 中的缺失对象。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 10:05:40"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-10",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004 /sessions/5/dialogue/10/content",
+          "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+          "speaker": "user",
+          "recorded_at": "Dec 10, 2025, 18:27:24"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004",
+    "split_review": {
+      "usable": true,
+      "records": [
+        22,
+        23
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 23,
+    "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+    "split_key": "e00c368a59806dd1",
+    "input": {
+      "split_result": {
+        "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+        "memory_text": "MooreSandra is a friend who shares political views and supports the same politician",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+            "raw_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+            "contextualized_subfact": "MooreSandra is a friend of the user who shares the user's political views and supports the same politician as the user.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "supports": "旧记忆记载 MooreSandra 是朋友，且分享政治观点并支持同一位政治家；原文未明确‘朋友’的归属对象及‘同一位’的参照对象。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "MooreSandra is my Friend, Sandra shares my political views and supports the same politician",
+                "supports": "来源上下文由 user 发言，明确 MooreSandra 是‘我的’朋友，且分享‘我的’政治观点并支持‘同一位’政治家，用于补足 raw_subfact 中的归属和参照对象。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 10:05:40"
+        },
+        {
+          "source_id": "ctx-2",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/5/dialogue/10/content",
+          "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+          "speaker": "user",
+          "recorded_at": "Dec 10, 2025, 18:27:24"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001 /sessions/6/dialogue/0/content",
+          "text": "I'm really excited about finally launching my political consulting firm. It's been a long journey, but it's fulfilling to see it come to fruition. I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.",
+          "speaker": "user",
+          "recorded_at": "Dec 20, 2025, 07:13:08"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        22,
+        23
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  },
+  {
+    "record": 23,
+    "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+    "split_key": "5d86a83aa90151df",
+    "input": {
+      "split_result": {
+        "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "memory_text": "GonzalezMary is a close friend who discusses political strategies",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+            "raw_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+            "contextualized_subfact": "GonzalezMary is a close friend of the user who discusses political strategies with the user.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "quote": "GonzalezMary is a close friend who discusses political strategies",
+                "supports": "旧记忆记载 GonzalezMary 是密友且讨论政治策略，但未明确‘密友’的对象及‘讨论’的互动对象。"
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me",
+                "supports": "来源上下文由 user 发言，明确‘密友’关系指向 user，且‘讨论政治策略’是 Mary 与 user 之间的互动，用于补足 raw 中的缺失对象。"
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "source_context": [
+        {
+          "source_id": "ctx-1",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+          "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 10:05:40"
+        },
+        {
+          "source_id": "ctx-2",
+          "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/5/dialogue/10/content",
+          "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+          "speaker": "user",
+          "recorded_at": "Dec 10, 2025, 18:27:24"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001 /sessions/6/dialogue/0/content",
+          "text": "I'm really excited about finally launching my political consulting firm. It's been a long journey, but it's fulfilling to see it come to fruition. I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.",
+          "speaker": "user",
+          "recorded_at": "Dec 20, 2025, 07:13:08"
+        }
+      ],
+      "time_info": null
+    },
+    "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001",
+    "split_review": {
+      "usable": true,
+      "records": [
+        22,
+        23
+      ],
+      "reason": "人工初筛：旧记忆、子事实、上下文和目标证据可用于候选对照；不代表语义或关系标签金标。",
+      "screening": "assistant_initial_review_pending_human"
+    }
+  }
+]

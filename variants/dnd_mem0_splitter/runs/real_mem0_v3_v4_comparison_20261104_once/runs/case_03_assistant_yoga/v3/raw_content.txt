@@ -1,0 +1,42 @@
+{
+  "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+  "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "raw_subfact": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+      "contextualized_subfact": "The user practices yoga or is open to practicing yoga to support their personal health and career transition.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "Old memory states the user either practices yoga or is open to it, for the purpose of supporting personal health and transition."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "supports": "Confirms 'transition' refers to career transition (specifically seeking a new job aligned with well-being and humanitarian goals)."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "Confirms yoga is framed by the assistant as a supportive practice for balancing professional responsibilities with personal health during transition — consistent with the memory’s purpose clause."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether the user actually practices yoga or only expresses openness to it",
+          "reason": "The disjunction 'practices or is open to' is preserved verbatim in the memory; no source context resolves which disjunct holds."
+        },
+        {
+          "item": "The speaker of the memory statement (i.e., whether it is a direct self-report by the user or an inference/summary by the assistant)",
+          "reason": "The memory text lacks explicit speaker attribution, and while ctx-1 is user-authored and ctx-2 is assistant-authored, neither directly contains the exact phrase 'Practices or is open to yoga for supporting personal health and transition'. Its origin (user utterance vs. system inference) is not confirmed."
+        }
+      ]
+    }
+  ]
+}

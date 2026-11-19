@@ -1,0 +1,129 @@
+{
+  "source_file": "variants/simplemem_mem0_splitter/run_native_mem0_prompt_v2_20261119/case_4.json",
+  "source_sha256": "1311d4e4f4de3bc0385ccae3799aac7cd680474145bfabf7f1855c60eac49710",
+  "input": {
+    "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+    "memory_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+    "source_context": null
+  },
+  "raw_response": "{\n  \"memory_id\": \"4ffee399-c31f-4827-b5fc-5c661baf1fc9\",\n  \"original_text\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n      \"contextualized_statement\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n      \"memory_quotes\": [\"Experiences stress due to historical accuracy demands and tight production schedules\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"Subject of 'Experiences stress' is unspecified (e.g., who or what experiences stress)\",\n    \"No explicit identification of the agent or entity subject to historical accuracy demands and tight production schedules\",\n    \"No temporal specification (e.g., when this stress occurs or occurred)\",\n    \"No clarification whether 'historical accuracy demands' and 'tight production schedules' are concurrent, independent, or jointly causal\"\n  ]\n}",
+  "previous_validation": {
+    "status": "needs_review",
+    "parsed": {
+      "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "original_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "contextualized_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "memory_quotes": [
+            "Experiences stress due to historical accuracy demands and tight production schedules"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "Subject of 'Experiences stress' is unspecified (e.g., who or what experiences stress)",
+        "No explicit identification of the agent or entity subject to historical accuracy demands and tight production schedules",
+        "No temporal specification (e.g., when this stress occurs or occurred)",
+        "No clarification whether 'historical accuracy demands' and 'tight production schedules' are concurrent, independent, or jointly causal"
+      ]
+    },
+    "errors": [],
+    "warnings": [
+      "unresolved issues reported by model"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            84
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "contextualized_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "memory_quotes": [
+          "Experiences stress due to historical accuracy demands and tight production schedules"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ]
+  },
+  "rechecked_validation": {
+    "status": "needs_review",
+    "parsed": {
+      "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "original_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "contextualized_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "memory_quotes": [
+            "Experiences stress due to historical accuracy demands and tight production schedules"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "Subject of 'Experiences stress' is unspecified (e.g., who or what experiences stress)",
+        "No explicit identification of the agent or entity subject to historical accuracy demands and tight production schedules",
+        "No temporal specification (e.g., when this stress occurs or occurred)",
+        "No clarification whether 'historical accuracy demands' and 'tight production schedules' are concurrent, independent, or jointly causal"
+      ]
+    },
+    "errors": [],
+    "warnings": [
+      "unresolved issues reported by model"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            84
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "contextualized_statement": "Experiences stress due to historical accuracy demands and tight production schedules",
+        "memory_quotes": [
+          "Experiences stress due to historical accuracy demands and tight production schedules"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ],
+    "entity_normalizations": []
+  }
+}

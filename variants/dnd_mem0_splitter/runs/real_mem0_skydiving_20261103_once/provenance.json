@@ -1,0 +1,73 @@
+{
+  "selection": "One existing old memory from the simulated-skydiving development case; snapshot artifacts read only.",
+  "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+  "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+  "snapshot_json_pointer": "/api_snapshot/results/100",
+  "database_json_pointer": "/database_points_with_vectors/100/payload/data",
+  "selected_snapshot_entry": {
+    "id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+    "memory": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "hash": "3670be9b4058df38a834dbe9704d91b4",
+    "metadata": null,
+    "created_at": "2026-10-28T00:09:28.608918-07:00",
+    "updated_at": null,
+    "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+  },
+  "snapshot_coverage": {
+    "database_count_exact": 116,
+    "collection_count_exact": 116,
+    "not_truncated": true
+  },
+  "target_id_for_locating_case_only": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008:m000",
+  "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/add_return.json",
+  "origin_ADD_pointer": "/return_value/results/4",
+  "origin_actual_operation_pointer": "/4",
+  "context_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/input.json#/raw_dialogue/6/content",
+  "context_excerpt_character_range": [
+    0,
+    169
+  ],
+  "context_excerpt": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+  "context_speaker": "user",
+  "context_recorded_at_verbatim": "Sep 06, 2025, 22:52:30",
+  "context_timezone": "Not specified in original source; no timezone inferred.",
+  "old_session_ordinal": 3,
+  "target_session_ordinal": 9,
+  "old_source_time": "Sep 06, 2025, 22:52:30",
+  "target_session_start_for_chronology_only": "Apr 10, 2026, 10:40:32",
+  "timing_rule": "Mem0 created_at is a backend processing timestamp, not the original utterance time.",
+  "source_link_basis": "Same user/session input -> exact extraction fact -> real ADD operation/return -> origin after -> previous after -> target before API and database entries; association is not based on text similarity alone.",
+  "before_order_basis": {
+    "file": "system/mem0_halumem_diagnosis/scripts/medium_dev_run.py",
+    "snapshot_saved_at_line": 215,
+    "memory_add_at_line": 231,
+    "script_executed_this_run": false
+  },
+  "input_exclusions": [
+    "target session dialogue",
+    "post-update memories",
+    "human annotations",
+    "expected outputs",
+    "other memories",
+    "full snapshot"
+  ],
+  "source_checks": {
+    "single_memory_selected": true,
+    "before_snapshot_not_truncated": true,
+    "api_and_database_id_text_user_match": true,
+    "previous_session_after_matches_target_before": true,
+    "origin_session_after_matches_target_before": true,
+    "origin_session_before_absent": true,
+    "origin_ADD_return_id_text_match": true,
+    "origin_actual_ADD_id_text_match": true,
+    "origin_extracted_fact_exact_text_match": true,
+    "context_is_exact_old_user_utterance_excerpt": true,
+    "old_context_precedes_target_session": true,
+    "model_input_contains_only_selected_memory_and_old_excerpt": true,
+    "no_future_evidence_or_annotation_fields_in_model_input": true,
+    "configured_model_is_qwen_plus": true,
+    "no_model_request_during_preflight": true
+  }
+}

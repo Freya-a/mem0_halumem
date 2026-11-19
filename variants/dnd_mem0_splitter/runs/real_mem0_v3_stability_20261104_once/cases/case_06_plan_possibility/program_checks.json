@@ -1,0 +1,79 @@
+{
+  "case_id": "case_06_plan_possibility",
+  "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+  "program_status": "passed",
+  "model": "qwen-plus",
+  "returned_model": "qwen-plus",
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2670,
+    "completion_tokens": 702,
+    "total_tokens": 3372
+  },
+  "error": null,
+  "existing_validator_replay_matches": true,
+  "result_json_exists": true,
+  "validated_fact_count": 1,
+  "candidate_fact_count": 1,
+  "input_matches_selected_snapshot": true,
+  "input_bytes_match_frozen_preflight": true,
+  "prompt_matches_frozen_v3": true,
+  "per_fact_evidence_counts": [
+    {
+      "fact_index": 1,
+      "memory_evidence_count": 1,
+      "context_evidence_count": 2
+    }
+  ],
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 0,
+      "source_type": "memory",
+      "source_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "quote": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+      "supports": "Old memory states there are plans to initiate groundbreaking historical dramas and possibly science fiction dramas.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        86
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas.",
+      "supports": "The assistant's question frames the plans as belonging to the user ('how you plan'), supporting attribution of the plans to the user.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        134
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 2,
+      "source_type": "context",
+      "source_id": "ctx-2",
+      "quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+      "supports": "The user expresses agency and intent regarding creative control and authenticity in their work, consistent with initiating original drama projects; supports that the plans reflect the user's own intentions.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        135
+      ]
+    }
+  ],
+  "literal_quotes_matched": 3,
+  "literal_quotes_total": 3,
+  "quote_diagnostic_scope": "For an accepted case these are original-validator checks and independent read-only confirmation; for a rejected case these would be diagnostics only, not an override.",
+  "response_repaired_or_source_relabelled": false,
+  "new_real_model_calls_in_replay": 0,
+  "semantic_review": "初步判断，待人工确认；单独记录，不由程序自动判断。"
+}

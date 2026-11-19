@@ -1,0 +1,154 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_05_relative_time",
+      "summary": "格式检查通过，1条返回事实。职位晋升、lead director、机构和 recently 均保留；未把发言日期等同晋升日期。观察到 raw 补入 memory 未表达的用户主语，属于来源边界问题；该主体在 contextualized 中有 ctx-1 第一人称依据，不判为主体完全无依据。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "覆盖原记忆的近期晋升、职位 lead director 和机构 Historical Productions Ltd。recently 仍为相对时间，未增添具体晋升日期或把 Feb 01, 2026 当作事件日；记录时间是发言记录而非事件发生日。上下文的 exciting 仅保留在引文中，没有成为 raw/contextualized 的额外感受事实。无否定、条件或析取命题需要另行恢复。",
+          "semantic_findings": [
+            {
+              "type": "RAW_CONTEXT_LEAK",
+              "certainty": "observed",
+              "input_quote": "Recently promoted to lead director at Historical Productions Ltd",
+              "output_quote": "The user was recently promoted to lead director at Historical Productions Ltd.",
+              "reason": "memory 省略晋升主体，内部没有可恢复的 The user 共享成分；raw 新增用户主语，超出仅恢复 memory 内部共享成分的边界。ctx-1 的 I recently got promoted 足以支持 contextualized 的用户主体，故此处只记 raw 来源边界问题，不记 UNSUPPORTED_ADDITION 或主体身份错误。"
+            }
+          ],
+          "uncertainties": [],
+          "speaker_review": {
+            "semantic_subject": "user；由同一晋升事件的 ctx-1 第一人称可靠支持。",
+            "original_speaker": "ctx-1 明确标记为 user。",
+            "assessment": "contextualized 的语义主体和 self-reported 归属有依据；raw 不能因此自动补主语。没有把 assistant 的表述冒充 user 原话。"
+          },
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "partially_supported",
+              "reason": "声明的 memory 引文直接支持 recently、晋升、职位及机构；引文本身未明说 the user。用户主体需结合 ctx-1 的同一事件第一人称确定，故不能把该引文视为独立包含显式用户主语；全输入范围内该主体有依据，不另判 supports 越界。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "directly_supported",
+              "reason": "ctx-1 是 user 的 I recently got promoted，同一职位与机构使事件关联可靠；支持用户自述和相对时间依说话视角理解。supports 没有把发言记录时间写成晋升发生日，也没有把 exciting 写为新增事实。此处 agency 依其括号例子理解为第一人称事件主体，并非推断用户主动促成晋升。",
+              "issue_types": []
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": []
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "summary": "格式检查通过，1条返回事实。raw 保留未定主体，contextualized 的用户语义主体可由 assistant 的 you plan 指向；plans 与仅作用于 science fiction dramas 的 possibly 均保留。观察到 ctx-2 supports 将泛化的创作控制/真实性回应当作具体剧类计划的本人意图依据；原计划是否有用户明确原话仍未决。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "完整保留计划发起 groundbreaking historical dramas，以及可能发起 science fiction dramas 的不同情态作用范围；未将 possibly 丢失或把两个剧类都改为确定行动，也未宣称项目已开始、已获批或已融资。There are plans 没有给 raw 补入 user 主体。contextualized 的用户主体符合 ctx-1 的被问对象，但不能据此声称用户已明确确认这些具体项目。",
+          "semantic_findings": [
+            {
+              "type": "SUPPORTS_OVERREACH",
+              "certainty": "observed",
+              "input_quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+              "output_quote": "The user expresses agency and intent regarding creative control and authenticity in their work, consistent with initiating original drama projects; supports that the plans reflect the user's own intentions.",
+              "reason": "用户原话只说明对更多创作控制的兴奋、可追求作品真实性和长期愿望，未表达发起历史剧或科幻剧项目的具体计划。supports 中 consistent with 至多表示相容；其后 supports that the plans reflect the user's own intentions 把相容性升级为具体计划的本人意图证据，越出该引文及必要上下文可支持的范围。此问题发生于 supports；不因旧 memory 的计划可能源于 assistant 而改写或否认拆分目标。"
+            }
+          ],
+          "uncertainties": [
+            {
+              "type": "ORIGINAL_SPEAKER",
+              "reason": "给定上下文中具体 historical dramas / science fiction dramas 计划措辞出自 assistant 问句；user 没有逐项确认。可以确定该引文原始角色为 assistant，但不能确认旧 memory 的具体计划另有可核验的 user 原话来源。"
+            },
+            {
+              "type": "MODAL_OR_RELATION_SCOPE",
+              "reason": "原文只给 Plans/possibly，未说明计划承诺程度、正式立项或资源条件；返回文本保持这种情态，已有 pending 对此保留疑问。不将未提供的项目细节本身计作错误。"
+            }
+          ],
+          "speaker_review": {
+            "semantic_subject": "assistant 的 how you plan 可支持其谈论的是 user 的计划；不因 memory 缺主语而一概判 contextualized 补 user 错误。",
+            "original_speaker": "具体剧类计划措辞见 ctx-1 assistant 问句；ctx-2 user 仅回应创作控制和真实性。",
+            "assessment": "输出正确标出两条上下文角色，未直接把 ctx-1 标成 user。具体计划是否得到 user 明确表达仍不能从 ctx-2 推得；该证据结论的越界记为 SUPPORTS_OVERREACH，不额外将明确角色标签判成错误。"
+          },
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "directly_supported",
+              "reason": "memory 引文直接包含 plans、groundbreaking historical dramas、possibly science fiction dramas；supports 只复述存在这些计划，未新指定主体或承诺程度。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "directly_supported",
+              "reason": "supports 明确说 assistant's question frames，how you plan 确实把问句所指计划的语义主体指向 user。按语义主体归属理解有支持；这一判断不等于用户确曾明确承诺这些计划，不能作为直接用户证言。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 2,
+              "assessment": "overreach",
+              "reason": "引文支持 user 对创作控制/真实性有愿望及行动空间；没有支持发起所列具体历史剧、科幻剧的本人计划。consistent with 只表示相容，不能推出这些计划 reflect the user's own intentions。",
+              "issue_types": [
+                "SUPPORTS_OVERREACH"
+              ]
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "请人工确认具体剧类计划是否有 user 明确表达的来源；目前 assistant 问句中的预设加 user 泛化回应不能完成该确认。现有 pending 只对描述词是否自述提出疑问，尚不足以覆盖整个具体计划的原始证言边界。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "返回 pending 已保留 concrete/committed 与 aspirational/contingent 的区分；现有输入无法判定承诺程度。协作方、正式立项、资金等均未见于事实正文，也不作为本文新增事实或错误统计。"
+        }
+      ]
+    },
+    {
+      "case_id": "case_07_no_children",
+      "summary": "格式检查通过，1条返回事实。No children 的否定状态保留，未扩写为不想要孩子或从未有过孩子。观察到 raw 从上下文补入用户主语；用户家庭自我介绍足以支持 contextualized，但不能突破 raw 仅恢复 memory 内部成分的边界。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "覆盖无子女状态，has no children 保留否定范围；未引申为不愿生育、永久无子女、终身从未有过孩子或无亲属。Both parents are alive 和 no_relationship 仅在逐字引文中出现，没有变成 raw/contextualized 的额外家庭事实。未增加日期、条件或其他情态。",
+          "semantic_findings": [
+            {
+              "type": "RAW_CONTEXT_LEAK",
+              "certainty": "observed",
+              "input_quote": "No children",
+              "output_quote": "The user has no children.",
+              "reason": "memory 只有 No children，内部没有可恢复的 The user 主语。raw 中新增 The user 属于借上下文补主体；该补足应留在 contextualized。ctx-1 的 let me introduce my family 为语义主体提供可靠依据，所以不将其认定为无依据的身份添加。"
+            }
+          ],
+          "uncertainties": [],
+          "speaker_review": {
+            "semantic_subject": "user；由 let me introduce my family 的自我家庭介绍可靠支持。",
+            "original_speaker": "ctx-1 明确标记为 user，且包含 No children。",
+            "assessment": "contextualized 的主体与来源归属无明显问题；raw 的用户补足违反来源边界。未将家庭介绍中的其他人物/关系细节写成新事实。"
+          },
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "partially_supported",
+              "reason": "No children 直接支持无子女的否定状态，但该 memory 引文本身不包含用户或家庭所属的显式主语；用户主体需结合 ctx-1 的家庭自我介绍。全输入有支持，故不另记无依据新增或 supports 越界。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "directly_supported",
+              "reason": "原引文含 let me introduce my family 与 No children，且 speaker=user；支持这是用户关于自身家庭的陈述。supports 不推导生育意愿、既往终身史或父母/伴侣新事实。",
+              "issue_types": []
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": []
+    }
+  ]
+}

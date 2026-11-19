@@ -1,0 +1,60 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "client_trust_env": false,
+  "http_redirects": false,
+  "request_attempts": 1,
+  "model_responses": 0,
+  "status": "stopped_request_error",
+  "cases": [
+    {
+      "memory_id": "halumem-1-s4-m1-old1",
+      "status": "request_error",
+      "file": "case_1.json",
+      "attempts": 1,
+      "elapsed_seconds": 0.576,
+      "error": {
+        "type": "PermissionDeniedError",
+        "http_status": 403,
+        "provider_error_code": "access_denied",
+        "cause_chain": [
+          {
+            "type": "HTTPStatusError"
+          }
+        ]
+      }
+    },
+    {
+      "memory_id": "halumem-1-s9-m2-old0",
+      "status": "not_started"
+    },
+    {
+      "memory_id": "halumem-1-s11-m1-old1",
+      "status": "not_started"
+    },
+    {
+      "memory_id": "halumem-1-s16-m3-old0",
+      "status": "not_started"
+    },
+    {
+      "memory_id": "halumem-1-s3-m1-old0",
+      "status": "not_started"
+    }
+  ],
+  "configuration_sources": {
+    "base_url": "config/medium_full_qwen_plus_20251201.json",
+    "key": "process_environment",
+    "workspace": ".env.server.medium-full"
+  },
+  "error": {
+    "type": "PermissionDeniedError",
+    "http_status": 403,
+    "provider_error_code": "access_denied",
+    "cause_chain": [
+      {
+        "type": "HTTPStatusError"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "all_three_categories_found": true,
+  "unique_real_memory_ids": 3,
+  "model": "qwen-plus",
+  "model_call_attempts_so_far": 0,
+  "max_calls_per_case": 1,
+  "max_calls_this_batch": 3,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "existing_files_tracked": 68,
+  "historical_checkpoint_artifacts_checked": 20,
+  "prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f",
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "type": "多人物",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "origin_ordinal": 8,
+      "target_ordinal": 9
+    },
+    {
+      "case_id": "case_2_time_state",
+      "type": "时间或状态变化",
+      "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "origin_ordinal": 6,
+      "target_ordinal": 7
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "type": "多个偏好及相关事实",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "origin_ordinal": 5,
+      "target_ordinal": 6
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "program_checks": "passed",
+  "observed_cli_exit_code": 0,
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "model": "qwen-plus",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2890,
+    "completion_tokens": 1570,
+    "total_tokens": 4460
+  },
+  "fact_count": 4,
+  "memory_and_text_identity_preserved": true,
+  "all_fact_ids_and_memory_source_ids_match": true,
+  "every_fact_has_memory_evidence": true,
+  "per_fact_evidence_counts": [
+    {
+      "fact_index": 1,
+      "memory": 1,
+      "context": 1
+    },
+    {
+      "fact_index": 2,
+      "memory": 1,
+      "context": 3
+    },
+    {
+      "fact_index": 3,
+      "memory": 1,
+      "context": 1
+    },
+    {
+      "fact_index": 4,
+      "memory": 1,
+      "context": 2
+    }
+  ],
+  "literal_quotes_passed": 11,
+  "literal_quotes_total": 11,
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "quote": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature",
+      "supports": "Old memory states the user recently interacted with a friend's Golden Retriever and was impressed by its gentle nature.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        87
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.",
+      "supports": "Confirms the interaction occurred at a friend's house and that the user perceived the dog’s gentleness; 'gentle creature' directly supports 'gentle nature'.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        169
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "quote": "values adaptability, calm demeanor, and emotional support in pets",
+      "supports": "Old memory explicitly states the user values these three attributes in pets.",
+      "exact_substring": true,
+      "character_range": [
+        89,
+        154
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "I found its adaptability really impressive.",
+      "supports": "Supports that adaptability is valued, observed in the friend's Golden Retriever.",
+      "exact_substring": true,
+      "character_range": [
+        126,
+        169
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 2,
+      "source_type": "context",
+      "source_id": "ctx-2",
+      "quote": "Yes, the emotional support and companionship they offer are invaluable.",
+      "supports": "Confirms emotional support is valued (‘invaluable’).",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        71
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 3,
+      "source_type": "context",
+      "source_id": "ctx-3",
+      "quote": "I find their calm demeanor crucial for my active lifestyle, especially after a long day.",
+      "supports": "Confirms calm demeanor is valued (‘crucial’).",
+      "exact_substring": true,
+      "character_range": [
+        40,
+        128
+      ]
+    },
+    {
+      "fact_index": 3,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "quote": "drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals",
+      "supports": "Old memory states the user is drawn to Golden Retrievers specifically for compatibility with active lifestyle and wellness goals.",
+      "exact_substring": true,
+      "character_range": [
+        156,
+        247
+      ]
+    },
+    {
+      "fact_index": 3,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-3",
+      "quote": "I find their calm demeanor crucial for my active lifestyle, especially after a long day.",
+      "supports": "Links Golden Retrievers (‘their’) and active lifestyle; confirms ‘active lifestyle’ is the user’s own.",
+      "exact_substring": true,
+      "character_range": [
+        40,
+        128
+      ]
+    },
+    {
+      "fact_index": 4,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "quote": "optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+      "supports": "Old memory states the user is optimistic about integrating ‘this preference’ (i.e., preference for Golden Retrievers) as a step toward new experiences and balancing a demanding career.",
+      "exact_substring": true,
+      "character_range": [
+        249,
+        357
+      ]
+    },
+    {
+      "fact_index": 4,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-2",
+      "quote": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions.",
+      "supports": "Confirms the user frames pet-related change as reflecting openness to new experiences; ‘this change’ aligns with integrating the preference.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        149
+      ]
+    },
+    {
+      "fact_index": 4,
+      "evidence_index": 2,
+      "source_type": "context",
+      "source_id": "ctx-3",
+      "quote": "Absolutely, pets do offer that balance.",
+      "supports": "Confirms pets are seen as offering balance — consistent with ‘balancing demanding career’.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        39
+      ]
+    }
+  ],
+  "offline_revalidation_matches_saved_result": true,
+  "input_and_allowed_contexts_byte_identical_to_v2": true,
+  "explicit_request_parameters_equal_to_v2": true,
+  "prompt_matches_archived_v3": true,
+  "response_or_evidence_repaired": false,
+  "context_evidence_relabelled": false,
+  "existing_files_checked": 149,
+  "existing_files_unchanged": 147,
+  "modified_existing_files": [
+    "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/DESIGN.md",
+    "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/PROMPT_CHANGELOG.md"
+  ],
+  "full_v2_design_and_previous_changelog_section_preserved": true,
+  "python_parser_validator_and_backend_unchanged": true,
+  "offline_tests": {
+    "count": 38,
+    "status": "passed",
+    "real_model_calls": 0
+  },
+  "synthetic_example_validation": "passed",
+  "scoped_lexical_observations_not_semantic_proof": {
+    "perceive_in_raw_or_contextualized": false,
+    "companionship_in_raw_or_contextualized": false,
+    "companionship_in_original_evidence_quotes": true,
+    "perceived_in_supports": true
+  },
+  "model_pending_confirmations": [
+    {
+      "fact_index": 1,
+      "items": []
+    },
+    {
+      "fact_index": 2,
+      "items": []
+    },
+    {
+      "fact_index": 3,
+      "items": []
+    },
+    {
+      "fact_index": 4,
+      "items": [
+        {
+          "item": "Whether 'this preference' unambiguously refers only to Golden Retrievers (and not broader pet preference)",
+          "reason": "The memory uses 'this preference' without explicit antecedent noun phrase in the same sentence; while context strongly implies Golden Retrievers (via prior clauses and contextual utterances), the anaphor is not syntactically bound within the memory_text alone."
+        }
+      ]
+    }
+  ],
+  "semantic_review": "Reported separately; literal quote checks do not prove faithful meaning or source attribution.",
+  "extra_real_model_calls_during_review": 0
+}

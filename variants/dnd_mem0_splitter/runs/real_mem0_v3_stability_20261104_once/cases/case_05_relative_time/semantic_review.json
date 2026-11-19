@@ -1,0 +1,90 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_05_relative_time",
+    "categories": [
+      "相对时间",
+      "职位状态变化",
+      "上下文额外感受"
+    ],
+    "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+    "old_memory": "Recently promoted to lead director at Historical Productions Ltd",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 2,
+    "literal_quotes_total": 2,
+    "review_label": "初步判断，待人工确认",
+    "summary": "格式检查通过，1条返回事实。职位晋升、lead director、机构和 recently 均保留；未把发言日期等同晋升日期。观察到 raw 补入 memory 未表达的用户主语，属于来源边界问题；该主体在 contextualized 中有 ctx-1 第一人称依据，不判为主体完全无依据。",
+    "observed_issue_types": [
+      "RAW_CONTEXT_LEAK"
+    ],
+    "has_observed_issue": true,
+    "specific_uncertainty_types": [],
+    "has_specific_unresolved_item": false,
+    "model_pending_item_count": 0,
+    "pending_human_confirmations": [],
+    "independent_review_file": "reviews/group_03.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_05_relative_time",
+      "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [],
+      "raw_subfact": "The user was recently promoted to lead director at Historical Productions Ltd.",
+      "contextualized_subfact": "The user was recently promoted to lead director at Historical Productions Ltd.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+          "quote": "Recently promoted to lead director at Historical Productions Ltd",
+          "supports": "Old memory states that the user was recently promoted to lead director at Historical Productions Ltd."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "supports": "Confirms the promotion is the user's own, specifies first-person agency ('I got promoted'), and anchors 'recently' to the speaker's perspective; supports interpreting the memory as self-reported."
+        }
+      ],
+      "model_pending_confirmations": [],
+      "coverage_summary": "覆盖原记忆的近期晋升、职位 lead director 和机构 Historical Productions Ltd。recently 仍为相对时间，未增添具体晋升日期或把 Feb 01, 2026 当作事件日；记录时间是发言记录而非事件发生日。上下文的 exciting 仅保留在引文中，没有成为 raw/contextualized 的额外感受事实。无否定、条件或析取命题需要另行恢复。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Recently promoted to lead director at Historical Productions Ltd",
+          "output_quote": "The user was recently promoted to lead director at Historical Productions Ltd.",
+          "reason": "memory 省略晋升主体，内部没有可恢复的 The user 共享成分；raw 新增用户主语，超出仅恢复 memory 内部共享成分的边界。ctx-1 的 I recently got promoted 足以支持 contextualized 的用户主体，故此处只记 raw 来源边界问题，不记 UNSUPPORTED_ADDITION 或主体身份错误。"
+        }
+      ],
+      "uncertainties": [],
+      "speaker_review": {
+        "semantic_subject": "user；由同一晋升事件的 ctx-1 第一人称可靠支持。",
+        "original_speaker": "ctx-1 明确标记为 user。",
+        "assessment": "contextualized 的语义主体和 self-reported 归属有依据；raw 不能因此自动补主语。没有把 assistant 的表述冒充 user 原话。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "声明的 memory 引文直接支持 recently、晋升、职位及机构；引文本身未明说 the user。用户主体需结合 ctx-1 的同一事件第一人称确定，故不能把该引文视为独立包含显式用户主语；全输入范围内该主体有依据，不另判 supports 越界。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "ctx-1 是 user 的 I recently got promoted，同一职位与机构使事件关联可靠；支持用户自述和相对时间依说话视角理解。supports 没有把发言记录时间写成晋升发生日，也没有把 exciting 写为新增事实。此处 agency 依其括号例子理解为第一人称事件主体，并非推断用户主动促成晋升。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    }
+  ]
+}

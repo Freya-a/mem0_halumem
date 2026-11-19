@@ -1,0 +1,272 @@
+{
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "type": "多人物",
+      "selection_reason": "One real memory explicitly names Susan, Daniel and Joshua, with group-role and beneficiary attribution to inspect.",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "memory_text": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/59",
+      "database_json_pointer": "/database_points_with_vectors/59/payload/data",
+      "selected_snapshot_entry": {
+        "id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+        "memory": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+        "hash": "1b07a5fd6123f7ef286afa1e1bff41cc",
+        "metadata": null,
+        "created_at": "2026-10-28T00:14:15.487883-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "target_session_ordinal": 9,
+      "target_ids_for_source_location_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008:m000"
+      ],
+      "origin_session_ordinal": 8,
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/27",
+      "origin_actual_operation_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/actual_operations.json",
+      "origin_actual_operation_pointer": "/27",
+      "source_context_audit": [
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/4/content",
+          "character_range": [
+            0,
+            105
+          ],
+          "role": "user",
+          "dialogue_turn": 2,
+          "original_timestamp": "Mar 01, 2026, 07:11:33",
+          "source_session_ordinal": 8,
+          "text": "Absolutely, my friends and colleagues were instrumental in this transition. Their support was invaluable."
+        },
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/8/content",
+          "character_range": [
+            0,
+            105
+          ],
+          "role": "user",
+          "dialogue_turn": 4,
+          "original_timestamp": "Mar 01, 2026, 07:16:19",
+          "source_session_ordinal": 8,
+          "text": "The support I received was incredible. Susan, Daniel, and Joshua really helped me see things differently."
+        }
+      ],
+      "source_link_basis": "Same user/session input and real ADD ID/text -> origin after -> previous session after -> target before API and database ID/text. Historical checkpoint hashes verified. Context association is not text similarity alone.",
+      "source_checks": {
+        "real_id_text_in_target_before": true,
+        "before_snapshot_not_truncated": true,
+        "api_and_database_match": true,
+        "previous_session_after_exact_entry_match": true,
+        "origin_before_id_absent": true,
+        "real_ADD_return_id_text_match": true,
+        "real_ADD_operation_id_text_match": true,
+        "origin_after_text_match": true,
+        "all_context_excerpts_exact": true,
+        "all_context_roles_user": true,
+        "all_context_sessions_before_target": true,
+        "historical_checkpoint_hashes_match": true,
+        "model_request_schema_valid": true
+      },
+      "context_time_policy": "Original timestamp strings retained without inferred timezone. Mem0 created_at/updated_at are processing times, not utterance dates. No target dialogue, after-target memory, human annotation or expected answer is in model input.",
+      "subject_policy": "Only original user role and first-person old utterances supplied; no personal name added to source_context.speaker."
+    },
+    {
+      "case_id": "case_2_time_state",
+      "type": "时间或状态变化",
+      "selection_reason": "One real memory contrasts initial skepticism with now, allowing inspection of chronology, state and the scope of sees.",
+      "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "memory_text": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/3",
+      "database_json_pointer": "/database_points_with_vectors/3/payload/data",
+      "selected_snapshot_entry": {
+        "id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "memory": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "hash": "7ca498966edb86b611bb8332e919dba3",
+        "metadata": null,
+        "created_at": "2026-10-28T00:12:01.739395-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "target_session_ordinal": 7,
+      "target_ids_for_source_location_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001",
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002",
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003"
+      ],
+      "origin_session_ordinal": 6,
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/11",
+      "origin_actual_operation_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/actual_operations.json",
+      "origin_actual_operation_pointer": "/11",
+      "source_context_audit": [
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/input.json#/raw_dialogue/2/content",
+          "character_range": [
+            0,
+            234
+          ],
+          "role": "user",
+          "dialogue_turn": 1,
+          "original_timestamp": "Jan 10, 2026, 07:23:11",
+          "source_session_ordinal": 6,
+          "text": "I believe finding a role that aligns with my personal and professional goals could offer a healthier work-life balance. I'm optimistic about integrating new experiences, like my preference for Golden Retrievers, to help manage stress."
+        },
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/input.json#/raw_dialogue/6/content",
+          "character_range": [
+            122,
+            187
+          ],
+          "role": "user",
+          "dialogue_turn": 3,
+          "original_timestamp": "Jan 10, 2026, 07:30:21",
+          "source_session_ordinal": 6,
+          "text": "Pets can definitely provide emotional support, which is valuable."
+        }
+      ],
+      "source_link_basis": "Same user/session input and real ADD ID/text -> origin after -> previous session after -> target before API and database ID/text. Historical checkpoint hashes verified. Context association is not text similarity alone.",
+      "source_checks": {
+        "real_id_text_in_target_before": true,
+        "before_snapshot_not_truncated": true,
+        "api_and_database_match": true,
+        "previous_session_after_exact_entry_match": true,
+        "origin_before_id_absent": true,
+        "real_ADD_return_id_text_match": true,
+        "real_ADD_operation_id_text_match": true,
+        "origin_after_text_match": true,
+        "all_context_excerpts_exact": true,
+        "all_context_roles_user": true,
+        "all_context_sessions_before_target": true,
+        "historical_checkpoint_hashes_match": true,
+        "model_request_schema_valid": true
+      },
+      "context_time_policy": "Original timestamp strings retained without inferred timezone. Mem0 created_at/updated_at are processing times, not utterance dates. No target dialogue, after-target memory, human annotation or expected answer is in model input.",
+      "subject_policy": "Only original user role and first-person old utterances supplied; no personal name added to source_context.speaker.",
+      "manual_source_caveat_not_sent_to_model": {
+        "item": "Initial skepticism is stated in the old Mem0 memory, but the inspected generating session contains assistant recollections rather than an explicit user self-report of that skepticism. Splitting must not silently correct this old memory or present the recollection as separately verified user testimony.",
+        "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/input.json#/raw_dialogue/1/content",
+        "speaker": "assistant",
+        "quote": "However, I remember you expressing skepticism about integrating this new preference into your daily life."
+      }
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "type": "多个偏好及相关事实",
+      "selection_reason": "One real memory combines an encounter, an impression, multiple valued pet attributes, lifestyle compatibility and optimism about integrating a preference.",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/54",
+      "database_json_pointer": "/database_points_with_vectors/54/payload/data",
+      "selected_snapshot_entry": {
+        "id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "hash": "06f91fb3ce73074f319022d95647de4e",
+        "metadata": null,
+        "created_at": "2026-10-28T00:10:58.626183-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "target_session_ordinal": 6,
+      "target_ids_for_source_location_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m001",
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004"
+      ],
+      "origin_session_ordinal": 5,
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/1",
+      "origin_actual_operation_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/actual_operations.json",
+      "origin_actual_operation_pointer": "/1",
+      "source_context_audit": [
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/input.json#/raw_dialogue/0/content",
+          "character_range": [
+            0,
+            169
+          ],
+          "role": "user",
+          "dialogue_turn": 0,
+          "original_timestamp": "Jan 06, 2026, 17:48:59",
+          "source_session_ordinal": 5,
+          "text": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive."
+        },
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/input.json#/raw_dialogue/2/content",
+          "character_range": [
+            0,
+            149
+          ],
+          "role": "user",
+          "dialogue_turn": 1,
+          "original_timestamp": "Jan 06, 2026, 17:55:15",
+          "source_session_ordinal": 5,
+          "text": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions."
+        },
+        {
+          "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/input.json#/raw_dialogue/4/content",
+          "character_range": [
+            0,
+            128
+          ],
+          "role": "user",
+          "dialogue_turn": 2,
+          "original_timestamp": "Jan 06, 2026, 17:59:17",
+          "source_session_ordinal": 5,
+          "text": "Absolutely, pets do offer that balance. I find their calm demeanor crucial for my active lifestyle, especially after a long day."
+        }
+      ],
+      "source_link_basis": "Same user/session input and real ADD ID/text -> origin after -> previous session after -> target before API and database ID/text. Historical checkpoint hashes verified. Context association is not text similarity alone.",
+      "source_checks": {
+        "real_id_text_in_target_before": true,
+        "before_snapshot_not_truncated": true,
+        "api_and_database_match": true,
+        "previous_session_after_exact_entry_match": true,
+        "origin_before_id_absent": true,
+        "real_ADD_return_id_text_match": true,
+        "real_ADD_operation_id_text_match": true,
+        "origin_after_text_match": true,
+        "all_context_excerpts_exact": true,
+        "all_context_roles_user": true,
+        "all_context_sessions_before_target": true,
+        "historical_checkpoint_hashes_match": true,
+        "model_request_schema_valid": true
+      },
+      "context_time_policy": "Original timestamp strings retained without inferred timezone. Mem0 created_at/updated_at are processing times, not utterance dates. No target dialogue, after-target memory, human annotation or expected answer is in model input.",
+      "subject_policy": "Only original user role and first-person old utterances supplied; no personal name added to source_context.speaker."
+    }
+  ],
+  "historical_checkpoint_hashes_verified": {
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json": "815eeed3870029474b87bbdd4e5f1712acb21cc68784f82134283d2dfd2e274a",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/after.json": "f88741f9e1d99afca92379acd44fb63ff121097759d3f3a8d73cfc5284afd726",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json": "1c6165457486dc88cec360beb97c464061b88b6a1c29e7bd776d0a0ac50df3b2",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/add_return.json": "63108ee222396ecf4aec4c5b6fd573bf3ad8f18864b744c2073b9ca10c6dfefd",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/actual_operations.json": "eb6e0e82cfc356218a5efdef041d67c1c8709bc8b1da39440a4ead428e1d4546",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/target_links.json": "4a0016d81d158ce8747f874208e3a9ade005040ba75f049096dbe9e19363983b",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json": "ca916fc9f795ff277438d68e5acd929e50bc152a0073b5be8970d57eb5f45131",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json": "9acc0d4fea92c9361e2489d04ae8a7502192cee876e83d68051343363af37d06",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/after.json": "3e95c70ff14351e077229b928e346fcd9118ff744ec310af74e3bae6e6a3f8ab",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/before.json": "c7dbbed0413862c1f7aef2ee9f9bcfa8e48675737d528dda872d1bdd43c34aae",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/add_return.json": "fd7d75f2a0f395f73e042669cf7bbf736da2b11541be15e0262f4e4e4445737e",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/actual_operations.json": "4787d079727f0c1efb475d85c86885060684040612dcd3df861c27cfedca4b10",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/target_links.json": "4cc701b4d24740cb15eec1fae8661dd9e49c7edd14d7e9433ab7fdce3669dd05",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/input.json": "62cebae014e8da6e2fcc1d200fa3913c41dd812147f253333c12f6ee3469d822",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/after.json": "3a6e38c26f627d7a44707cde28e7f27cbe8e9d389d5e861f788ff80de91f6e9a",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json": "157f0939a378c34e27ef65e255c1cefc58d2e560a5c993aeb7e7d6618d1238fe",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/add_return.json": "8642d0fb37bf472b570cfb0714eadebc25884ea249450271ba6b523cf4325e41",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/actual_operations.json": "58dadff2562ba23acb06ea28b232e374b94ceb82453fbdd05c7c80c7e04b9c52",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/target_links.json": "e74ef57af77d732efdf8e9b32d7b9090dcad2f4e649ed44a9412290e173e5387",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/input.json": "fa45dae9a492a956d24661e50b4bbbdedc7b3459147147b15062672a718bdf74"
+  },
+  "source_snapshot_order_basis": {
+    "file": "system/mem0_halumem_diagnosis/scripts/medium_dev_run.py",
+    "before_saved_line": 215,
+    "memory_add_line": 231,
+    "executed_this_run": false
+  }
+}

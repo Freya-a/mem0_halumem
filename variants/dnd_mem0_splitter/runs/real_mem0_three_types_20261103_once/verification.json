@@ -1,0 +1,63 @@
+{
+  "all_program_checks_passed": true,
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "execution_exit_code": 0,
+      "model_call_attempts": 1,
+      "automatic_retries": 0,
+      "fact_count": 1,
+      "literal_quotes_passed": 3,
+      "literal_quotes_total": 3,
+      "usage": {
+        "prompt_tokens": 1350,
+        "completion_tokens": 473,
+        "total_tokens": 1823
+      }
+    },
+    {
+      "case_id": "case_2_time_state",
+      "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "execution_exit_code": 0,
+      "model_call_attempts": 1,
+      "automatic_retries": 0,
+      "fact_count": 2,
+      "literal_quotes_passed": 4,
+      "literal_quotes_total": 4,
+      "usage": {
+        "prompt_tokens": 1375,
+        "completion_tokens": 931,
+        "total_tokens": 2306
+      }
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "execution_exit_code": 0,
+      "model_call_attempts": 1,
+      "automatic_retries": 0,
+      "fact_count": 4,
+      "literal_quotes_passed": 12,
+      "literal_quotes_total": 12,
+      "usage": {
+        "prompt_tokens": 1584,
+        "completion_tokens": 1582,
+        "total_tokens": 3166
+      }
+    }
+  ],
+  "total_real_model_calls": 3,
+  "total_automatic_retries": 0,
+  "total_facts": 7,
+  "total_literal_quotes_passed": 19,
+  "historical_checkpoint_artifacts_verified": 20,
+  "existing_files_checked": 68,
+  "existing_files_unchanged": true,
+  "changed_existing_files": [],
+  "api_key_absent_from_artifacts": true,
+  "no_mem0_import_in_offline_verification": true,
+  "no_relationship_assessment_or_mutation_executed": true,
+  "full_development_subset_executed": false,
+  "verification_method": "Existing splitter validator replayed with MockBackend against each original raw response; no additional real model calls."
+}

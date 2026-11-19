@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "case_count": 11,
+  "versions": [
+    "v3",
+    "v4"
+  ],
+  "max_real_calls_per_version_case": 1,
+  "max_real_calls_total": 22,
+  "model_calls_so_far": 0,
+  "model": "qwen-plus",
+  "explicit_generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "v3_prompt_sha256": "28a8aec27d8e15c440ca3e1fb95c1dff3ad25eddb2e3c8cd7bb2700a3450731e",
+  "all_existing_files_must_remain_unchanged": true,
+  "tracked_existing_files": 317,
+  "package_versions": {
+    "openai": "1.100.2",
+    "httpx": "0.27.0"
+  },
+  "unknown_service_parameters": [
+    "Provider default sampling, concrete model revision, routing and backend settings are not confirmed."
+  ],
+  "paired_order_policy": "Interleave versions per case, alternate which version goes first by case ordinal; record exact order before calls.",
+  "active_default_DESIGN_policy": "Leave the existing v3 DESIGN.md unchanged; pass frozen prompt text to the existing OpenAICompatibleBackend API for this isolated experiment."
+}

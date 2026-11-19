@@ -1,0 +1,320 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "versions": {
+    "v3": {
+      "cases": 11,
+      "facts": 17,
+      "cases_with_observed_issue": 6,
+      "facts_with_observed_issue": 6,
+      "cases_with_specific_uncertainty": 10,
+      "issue_types_case_counts": {
+        "ASSERTION_PENDING_CONFLICT": 1,
+        "RAW_CONTEXT_LEAK": 4,
+        "RELATION_SCOPE_CHANGE": 3,
+        "SUPPORTED_UNNECESSARY_ADDITION": 1,
+        "SUPPORTS_OVERREACH": 1
+      },
+      "issue_types_fact_counts": {
+        "ASSERTION_PENDING_CONFLICT": 1,
+        "RAW_CONTEXT_LEAK": 4,
+        "RELATION_SCOPE_CHANGE": 3,
+        "SUPPORTED_UNNECESSARY_ADDITION": 1,
+        "SUPPORTS_OVERREACH": 1
+      },
+      "supports_assessments": {
+        "partially_supported": 5,
+        "directly_supported": 25,
+        "overreach": 1
+      },
+      "coverage_unit_assessments": {
+        "preserved": 34,
+        "uncertain": 1,
+        "omitted": 1
+      },
+      "all_semantic_reviews_await_human": true
+    },
+    "v4": {
+      "cases": 11,
+      "facts": 16,
+      "cases_with_observed_issue": 2,
+      "facts_with_observed_issue": 2,
+      "cases_with_specific_uncertainty": 10,
+      "issue_types_case_counts": {
+        "RELATION_SCOPE_CHANGE": 1,
+        "SUPPORTS_OVERREACH": 2
+      },
+      "issue_types_fact_counts": {
+        "RELATION_SCOPE_CHANGE": 1,
+        "SUPPORTS_OVERREACH": 2
+      },
+      "supports_assessments": {
+        "directly_supported": 22,
+        "partially_supported": 7,
+        "overreach": 2
+      },
+      "coverage_unit_assessments": {
+        "preserved": 35,
+        "omitted": 1
+      },
+      "all_semantic_reviews_await_human": true
+    }
+  },
+  "cohorts": {
+    "regression_7": {
+      "v3": {
+        "cases": 7,
+        "facts": 7,
+        "cases_with_observed_issue": 5,
+        "facts_with_observed_issue": 5,
+        "cases_with_specific_uncertainty": 6,
+        "issue_types_case_counts": {
+          "ASSERTION_PENDING_CONFLICT": 1,
+          "RAW_CONTEXT_LEAK": 4,
+          "RELATION_SCOPE_CHANGE": 2,
+          "SUPPORTED_UNNECESSARY_ADDITION": 1,
+          "SUPPORTS_OVERREACH": 1
+        },
+        "issue_types_fact_counts": {
+          "ASSERTION_PENDING_CONFLICT": 1,
+          "RAW_CONTEXT_LEAK": 4,
+          "RELATION_SCOPE_CHANGE": 2,
+          "SUPPORTED_UNNECESSARY_ADDITION": 1,
+          "SUPPORTS_OVERREACH": 1
+        },
+        "supports_assessments": {
+          "partially_supported": 5,
+          "directly_supported": 9,
+          "overreach": 1
+        },
+        "coverage_unit_assessments": {
+          "preserved": 18
+        },
+        "all_semantic_reviews_await_human": true
+      },
+      "v4": {
+        "cases": 7,
+        "facts": 7,
+        "cases_with_observed_issue": 0,
+        "facts_with_observed_issue": 0,
+        "cases_with_specific_uncertainty": 6,
+        "issue_types_case_counts": {},
+        "issue_types_fact_counts": {},
+        "supports_assessments": {
+          "directly_supported": 11,
+          "partially_supported": 5
+        },
+        "coverage_unit_assessments": {
+          "preserved": 18
+        },
+        "all_semantic_reviews_await_human": true
+      }
+    },
+    "new_compound_4": {
+      "v3": {
+        "cases": 4,
+        "facts": 10,
+        "cases_with_observed_issue": 1,
+        "facts_with_observed_issue": 1,
+        "cases_with_specific_uncertainty": 4,
+        "issue_types_case_counts": {
+          "RELATION_SCOPE_CHANGE": 1
+        },
+        "issue_types_fact_counts": {
+          "RELATION_SCOPE_CHANGE": 1
+        },
+        "supports_assessments": {
+          "directly_supported": 16
+        },
+        "coverage_unit_assessments": {
+          "preserved": 16,
+          "uncertain": 1,
+          "omitted": 1
+        },
+        "all_semantic_reviews_await_human": true
+      },
+      "v4": {
+        "cases": 4,
+        "facts": 9,
+        "cases_with_observed_issue": 2,
+        "facts_with_observed_issue": 2,
+        "cases_with_specific_uncertainty": 4,
+        "issue_types_case_counts": {
+          "RELATION_SCOPE_CHANGE": 1,
+          "SUPPORTS_OVERREACH": 2
+        },
+        "issue_types_fact_counts": {
+          "RELATION_SCOPE_CHANGE": 1,
+          "SUPPORTS_OVERREACH": 2
+        },
+        "supports_assessments": {
+          "directly_supported": 11,
+          "overreach": 2,
+          "partially_supported": 2
+        },
+        "coverage_unit_assessments": {
+          "preserved": 17,
+          "omitted": 1
+        },
+        "all_semantic_reviews_await_human": true
+      }
+    }
+  },
+  "not_a_gold_error_rate": true,
+  "paired_comparisons": [
+    {
+      "case_id": "case_01_multi_person",
+      "improvements": [
+        "初步判断，待人工确认：v4 修复 raw 补用户主体；memory supports 明示引文无主体，并把必要主体补足的 assistant 来源分开引用。",
+        "初步判断，待人工确认：v4 去掉 v3 对 like/instance 的过度否定解释和混写主体/原始说话人的 pending，正文两组关系仍完整。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版本正文均保留感谢对象和关系；具名内容只在 assistant 片段中可见，用户直接原话未确认这一来源限制持续存在。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：v4 pending=[] 未记录具名命题原始用户自述不明；应保留来源未决，不能自动判其已证实，也不因 assistant 来源自动判用户主体虚构。"
+      ]
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "improvements": [
+        "初步判断，待人工确认：v4 修复 raw 上下文主体混入，并去掉 contextualized 有源但非必要的 well-being 效果。",
+        "初步判断，待人工确认：v4 不再把使用 ThomasSusan/Susan 解释成语法上必为不同人物；保留旧记忆的称呼关联。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版本朋友、名称/称呼、支持鼓励覆盖完整；命名 token 的现实完整身份仍不能由现有文本外部验证，但两版本轮 supports 都未宣称 full name 已验证。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：v4 pending=[] 不能证明法律姓名或转写形式已核验；因为正文不改名/不宣称真实全名，此项只记有限未知。"
+      ]
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "improvements": [
+        "初步判断，待人工确认：v4 修复 raw 补用户主体；context supports 更明确区分职业关切、assistant 建议和不能确认实践/开放，不把相容性当用户承诺。",
+        "初步判断，待人工确认：v4 原样保留 transition 并在 pending 记录范围，减少确定采用 career 的解释强度；这属于更谨慎呈现，未据此把 v3 合理同事件共指自动计错。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版本均保留析取与两个目的，没有确定用户实际实践；原始用户瑜伽自述、析取分支仍未知。",
+        "初步判断，待人工确认：memory supports 的 user 主体不是引文字面，需要上下文解释；两版均记部分支持，不自动算现实事实或本人承诺越界。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：用户可为语义讨论对象与没有用户瑜伽自述同时成立；是否应将主体确定程度进一步弱化，需人工按同事件来源关联确认，当前不标主体虚构。",
+        "初步判断，待人工确认：v4 第1项 pending 的 subject of the disjunction 可能把分支/语义主体/说话人混称；正文没有声称直接自述，未自动记 ASSERTION_PENDING_CONFLICT。"
+      ]
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "improvements": [],
+      "persistent": [
+        "初步判断，待人工确认：两版本负偏好、because 原因、清醒负责需求、while 支持 relative 均完整且无额外饮料扩写；用户主体均有第一人称同事件来源。",
+        "初步判断，待人工确认：v3 内部恢复共享 They 与 v4 保留省略都符合 raw-only，不把形式变化记为纠错。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：v4 新增 antecedent pending 可能是冗余的 memory-alone 字面提醒，也可能造成与 The user 断言的确定程度冲突；因其理由明确限制 memory alone，当前只记录歧义，待人工判定是否应计 ASSERTION_PENDING_CONFLICT。"
+      ]
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "improvements": [
+        "初步判断，待人工确认：v4 raw 原样保留旧记忆的省略表达，memory supports 也明确引文本身没有主体；这提高来源边界的可见性，但 v3 的泛称 someone 本身未构成明确身份偷补错误。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版均保留事件、完整职位、机构和 recently，没有将记录日误作事件日，也未把兴奋感扩入正文。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：精确晋升日和 recently 跨度两版均未确定；这不是自动错误或遗漏。"
+      ]
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "improvements": [
+        "初步判断，待人工确认：v4 不再在助手 ctx-1 的支持说明中把 creative control 称为该 quote 已确认；对用户 ctx-2 又明确说明不含 historical/sci-fi dramas，对助手句使用 question/consistent/syntactically，修复 v3 当前可观察到的局部支持越界。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版均完整保留计划、groundbreaking historical dramas 和 possibly science fiction dramas；语义主体可以合理关联用户，且这与用户直接承诺未确认并存。"
+      ],
+      "regressions": [
+        "初步判断，待人工确认：v3 pending 具体保留了原始说话人和科幻 tentative 意向来源疑问，v4 pending=[] 不再披露；这是未决信息呈现减少。正文未将计划语气改为已发生，不能仅凭空 pending 自动计为明确语义错误。"
+      ],
+      "uncertainties": [
+        "初步判断，待人工确认：用户是否直接提出全部计划、科幻可能性是否为自身意向以及具体机会仍未确定；两版的主体关联均不能替代用户承诺证据。"
+      ]
+    },
+    {
+      "case_id": "case_07_no_children",
+      "improvements": [
+        "初步判断，待人工确认：v4 将 raw 的 The user has no children 改为 No children，修复 v3 raw 身份偷补，同时保留 contextualized 中有依据的用户主体。"
+      ],
+      "persistent": [
+        "初步判断，待人工确认：两版无子女否定事实完整，supports 未把来源 quote 的其他家庭信息扩入正文，且用户原始发言与主体均有同主题第一人称依据。"
+      ],
+      "regressions": [],
+      "uncertainties": []
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "improvements": [],
+      "persistent": [
+        "初步判断，待人工确认：两版除句末标点及 supports 的 explicitly 等措辞外，事实内容与拆分粒度实质一致；三个覆盖单元全部 preserved。",
+        "初步判断，待人工确认：两版均保留 specializing 旧命题并仅声称 memory 记载，但 pending 都未披露 specialization 与原会话 keen eye 的证据强度差异；当前记录为具体未决，不将不确定自动计为错误。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "初步判断，待人工确认：需核实原会话 keen eye 是否足以支撑旧总结的专业 specialization，以及伴侣真实身份；不能补入分享历史热情，也不能因此删改现有旧命题。"
+      ]
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "improvements": [],
+      "persistent": [
+        "两版均在事实正文覆盖出生、退休职业和激发健康兴趣，raw 保持受益人省略，contextualized 只补有源 Martin。",
+        "两版均未将 Martin 等同用户；memory 缺项与 context 已解答的分工不构成 ASSERTION_PENDING_CONFLICT。"
+      ],
+      "regressions": [],
+      "uncertainties": [
+        "v4 将职业同位描述写为 was，时间表述需人工确认，尚不作确定 TEMPORAL_CHANGE。",
+        "Martin 的真实身份/亲属关系在两版输入中均未知。"
+      ]
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "improvements": [
+        "v4 整体保留原句，避免分条时对 and prefers 另作句法选择；这属于对原歧义的保留，不证明 v3 明确丢失因果。"
+      ],
+      "persistent": [
+        "明确的“不喜欢摔跤，因为觉得太对抗”关系、finds 的主观视角以及 teamwork/personal growth 偏好在两版正文都保留。",
+        "两版 raw 均未从上下文补用户主体，contextualized 的用户归属有同一偏好第一人称依据。"
+      ],
+      "regressions": [
+        "v4 的 context supports 新增 for emphasis 这一引文未说明的修辞目的，属于局部 SUPPORTS_OVERREACH；正文未受影响。"
+      ],
+      "uncertainties": [
+        "and prefers 是否也受 because 管辖仍有语法歧义；v3 的作用范围风险与确定因果遗漏分开，v4 保留原歧义。"
+      ]
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "improvements": [
+        "v4 第1条 memory supports 更明确说明原 memory 未点名主体；第2条保留 their 后在补充版消歧。这些表述更明示来源分工，但两版都没有 raw 用户泄漏。"
+      ],
+      "persistent": [
+        "欣赏猫/血统/王室关联、反思维持外观的挑战以及平衡历史欣赏/实际需求都进入两版正文；没有因粗细粒度将它们误判遗漏。",
+        "两版均未在正文保留 reflects ... while balancing 的联接，持续 RELATION_SCOPE_CHANGE。",
+        "两版正文没有新增纪录片/电影节、grooming、traits、狗、拥有猫或实际实施照料事实；额外内容仅在 quote 出现不算扩写。"
+      ],
+      "regressions": [
+        "v4 新增 ctx-2 supports，将历史真实性兴趣与反思合成为 grounding balancing as an activity；v3 未作这一直接用户活动确认，属于新增 SUPPORTS_OVERREACH。",
+        "v3 对 balancing 的本人活动/助手解读限制有具体 pending，v4 清空该 pending 而输入仍只含 assistant 的具体 balancing 回述；这是未决项说明变弱，不自动另算 ASSERTION_PENDING_CONFLICT。"
+      ],
+      "uncertainties": [
+        "user 的欣赏、反思有直接第一人称来源；balancing 有 assistant 归因，语义主体可为 user 与本人是否明确自述未确认可以同时成立。",
+        "不以 assistant 源回述替换或删去旧记忆的 balancing/while 命题，也不从 practical care requirements 推断拥有猫或正在照料。"
+      ]
+    }
+  ]
+}

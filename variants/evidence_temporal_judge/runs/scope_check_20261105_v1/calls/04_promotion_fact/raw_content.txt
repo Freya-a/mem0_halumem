@@ -1,0 +1,19 @@
+{
+  "erase_label": "Reinforce",
+  "applicability": "involved",
+  "temporal_relation": "before_after",
+  "temporal_reason": "The new evidence states 'I recently got promoted to lead director at Historical Productions Ltd.' and is recorded on 'Feb 01, 2026, 18:47:19'; the old evidence ('I work at Historical Productions Ltd. as a Director') is recorded on 'Sep 05, 2025, 14:42:35'. 'Recently got promoted' implies the prior role (Director) was held before the promotion; thus the old fact temporally precedes and is reinforced by the new evidence as a prior state.",
+  "components": [
+    {
+      "fragment": "Works at Historical Productions Ltd. as a Director",
+      "action": "confirm",
+      "reason": "The new evidence confirms continuation and evolution of the same employment relationship — 'lead director' is a promotion from 'Director', presupposing prior incumbency in the Director role at the same company.",
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        }
+      ]
+    }
+  ]
+}

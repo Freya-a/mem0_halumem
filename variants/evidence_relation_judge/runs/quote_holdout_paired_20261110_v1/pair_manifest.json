@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-11-10T16:18:15.520875+08:00",
+  "v2_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555",
+  "experimental_prompt_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a",
+  "server_build": "b1-78ffbaa",
+  "model_sha256": "84b5f7f112156d63836a01a69dc3f11a6ba63b10a23b8ca7a7efaf52d5a2d806",
+  "context": 4096,
+  "parameters": {
+    "temperature": 0,
+    "n_predict": 768,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "upstream_splitter_calls": 15,
+  "record_memory_units": 18,
+  "fact_count_per_version": 18,
+  "potential_component1_calls": 36,
+  "no_retry": true,
+  "execution_order": "alternate version order by record-memory unit",
+  "skipped": [
+    {
+      "record": 2,
+      "memory_id": "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+      "split_key": "18d2a27c946db461",
+      "reason": "上游 contextualized_subfact 将 director 写为董事长，不能由原文确定；保留原始结果且不改写。"
+    },
+    {
+      "record": 20,
+      "reason": "human review merges main topic into 17/18; avoid treating as an independent test"
+    }
+  ],
+  "split_review_sha256": "64a942d8176d237528a11e277827a92194f0f06ef883c15f79b7ac088c78de6b",
+  "prepared_sha256": "397fd7d2e956d37ee9427062ecc37909815caeaf511fc8591d0293d413801336",
+  "notes": "Same input and validated source contexts for both versions. Raw model output retained. Labels are not blind gold."
+}

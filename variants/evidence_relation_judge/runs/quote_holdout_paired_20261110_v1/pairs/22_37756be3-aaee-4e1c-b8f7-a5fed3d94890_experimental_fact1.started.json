@@ -1,0 +1,52 @@
+{
+  "started_at": "2026-11-10T16:22:43.184202+08:00",
+  "record": 22,
+  "version": "experimental",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+    "memory_text": "MooreSandra is a friend who shares political views and supports the same politician",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+      "raw_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+      "contextualized_subfact": "MooreSandra is a friend of the user who shares the user's political views and supports the same politician as the user.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+          "quote": "MooreSandra is a friend who shares political views and supports the same politician",
+          "supports": "旧记忆记载 MooreSandra 是朋友，且分享政治观点并支持同一位政治家；原文未明确‘朋友’的归属对象及‘同一位’的参照对象。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "MooreSandra is my Friend, Sandra shares my political views and supports the same politician",
+          "supports": "来源上下文由 user 发言，明确 MooreSandra 是‘我的’朋友，且分享‘我的’政治观点并支持‘同一位’政治家，用于补足 raw_subfact 中的归属和参照对象。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+        "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 10:05:40"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-10",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004 /sessions/5/dialogue/10/content",
+        "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+        "speaker": "user",
+        "recorded_at": "Dec 10, 2025, 18:27:24"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a"
+}

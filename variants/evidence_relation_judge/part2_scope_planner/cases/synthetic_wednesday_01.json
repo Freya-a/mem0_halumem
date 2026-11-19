@@ -1,0 +1,281 @@
+{
+  "case_id": "synthetic_wednesday_01",
+  "origin": "synthetic_manual_not_model_output",
+  "request": {
+    "split_result": {
+      "memory_id": "synthetic_wednesday_01",
+      "memory_text": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "synthetic_wednesday_01",
+          "raw_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "contextualized_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "synthetic_wednesday_01",
+              "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "supports": "The constructed old schedule covers Monday and Wednesday."
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [],
+    "new_evidence": [
+      {
+        "source_id": "new-1",
+        "speaker": "user",
+        "text": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+      }
+    ],
+    "time_info": null
+  },
+  "mock_candidate": {
+    "memory_id": "synthetic_wednesday_01",
+    "fact_index": 1,
+    "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+    "relation": "possible_change",
+    "object": "User",
+    "attribute": "work location",
+    "conditions": "Wednesdays, starting December 1, 2026",
+    "candidate_impact_fragment": "Wednesdays",
+    "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+    "new_quote": {
+      "source_id": "new-1",
+      "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+    },
+    "reason": "The Wednesday work location changes; Monday remains unchanged.",
+    "confirmation_questions": []
+  },
+  "old_units": [
+    {
+      "name": "schedule",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "work_location",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "work from home"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "known",
+        "days": [
+          0,
+          2
+        ],
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "Mondays and Wednesdays"
+          }
+        ]
+      },
+      "valid": {
+        "start": {
+          "kind": "known",
+          "value": "2026-01-01",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "From January 1, 2026 onward"
+            }
+          ]
+        },
+        "end": {
+          "kind": "unbounded",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "onward"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "monday",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "work_location",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "work from home"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "known",
+        "days": [
+          0
+        ],
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "Mondays and Wednesdays"
+          }
+        ]
+      },
+      "valid": {
+        "start": {
+          "kind": "known",
+          "value": "2026-01-01",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "From January 1, 2026 onward"
+            }
+          ]
+        },
+        "end": {
+          "kind": "unbounded",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "onward"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "wednesday",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "work_location",
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "work from home"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "known",
+        "days": [
+          2
+        ],
+        "evidence": [
+          {
+            "source_id": "synthetic_wednesday_01",
+            "quote": "Mondays and Wednesdays"
+          }
+        ]
+      },
+      "valid": {
+        "start": {
+          "kind": "known",
+          "value": "2026-01-01",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "From January 1, 2026 onward"
+            }
+          ]
+        },
+        "end": {
+          "kind": "unbounded",
+          "evidence": [
+            {
+              "source_id": "synthetic_wednesday_01",
+              "quote": "onward"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "new_unit": {
+    "name": "new_wednesday",
+    "subject": {
+      "value": "user",
+      "evidence": [
+        {
+          "source_id": "new-1",
+          "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+        }
+      ]
+    },
+    "attribute": {
+      "value": "work_location",
+      "evidence": [
+        {
+          "source_id": "new-1",
+          "quote": "work from the office"
+        }
+      ]
+    },
+    "weekdays": {
+      "kind": "known",
+      "days": [
+        2
+      ],
+      "evidence": [
+        {
+          "source_id": "new-1",
+          "quote": "Wednesdays only"
+        }
+      ]
+    },
+    "valid": {
+      "start": {
+        "kind": "known",
+        "value": "2026-12-01",
+        "evidence": [
+          {
+            "source_id": "new-1",
+            "quote": "Starting December 1, 2026 onward"
+          }
+        ]
+      },
+      "end": {
+        "kind": "unbounded",
+        "evidence": [
+          {
+            "source_id": "new-1",
+            "quote": "onward"
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Old rule domain is compared as a candidate recurrence, not asserted to remain true after supersession.",
+    "Synthetic onward is a test convention for an open-ended rule; it does not prove a future real-world fact.",
+    "No observation timestamp is specified."
+  ],
+  "scope_unit_roles": {
+    "monday": "derived_view",
+    "wednesday": "derived_view"
+  }
+}

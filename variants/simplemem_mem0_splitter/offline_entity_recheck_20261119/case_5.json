@@ -1,0 +1,164 @@
+{
+  "source_file": "variants/simplemem_mem0_splitter/run_native_mem0_prompt_v2_20261119/case_5.json",
+  "source_sha256": "2ff470e43fb1dd7d88edd02afb0e5ac8aa883bc748629fe0d20f12defba8bb20",
+  "input": {
+    "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+    "memory_text": "Works at Blockchain Tech as a senior developer",
+    "source_context": null
+  },
+  "raw_response": "{\n  \"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n  \"original_text\": \"Works at Blockchain Tech as a senior developer\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"contextualized_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"memory_quotes\": [\"Works at Blockchain Tech as a senior developer\"],\n      \"context_quotes\": [],\n      \"entities\": [\n        {\n          \"type\": \"organization\",\n          \"name\": \"Blockchain Tech\",\n          \"disambiguation_support\": \"explicit name in memory\"\n        },\n        {\n          \"type\": \"job_title\",\n          \"name\": \"senior developer\",\n          \"disambiguation_support\": \"explicit title in memory\"\n        }\n      ],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.\",\n    \"No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact).\"\n  ]\n}",
+  "previous_validation": {
+    "status": "failed",
+    "parsed": {
+      "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "original_text": "Works at Blockchain Tech as a senior developer",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Works at Blockchain Tech as a senior developer",
+          "contextualized_statement": "Works at Blockchain Tech as a senior developer",
+          "memory_quotes": [
+            "Works at Blockchain Tech as a senior developer"
+          ],
+          "context_quotes": [],
+          "entities": [
+            {
+              "type": "organization",
+              "name": "Blockchain Tech",
+              "disambiguation_support": "explicit name in memory"
+            },
+            {
+              "type": "job_title",
+              "name": "senior developer",
+              "disambiguation_support": "explicit title in memory"
+            }
+          ],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.",
+        "No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact)."
+      ]
+    },
+    "errors": [
+      "units[0].entities must be a list of nonempty strings"
+    ],
+    "warnings": [
+      "unresolved issues reported by model"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            46
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": []
+  },
+  "rechecked_validation": {
+    "status": "needs_review",
+    "parsed": {
+      "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "original_text": "Works at Blockchain Tech as a senior developer",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Works at Blockchain Tech as a senior developer",
+          "contextualized_statement": "Works at Blockchain Tech as a senior developer",
+          "memory_quotes": [
+            "Works at Blockchain Tech as a senior developer"
+          ],
+          "context_quotes": [],
+          "entities": [
+            {
+              "type": "organization",
+              "name": "Blockchain Tech",
+              "disambiguation_support": "explicit name in memory"
+            },
+            {
+              "type": "job_title",
+              "name": "senior developer",
+              "disambiguation_support": "explicit title in memory"
+            }
+          ],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.",
+        "No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact)."
+      ]
+    },
+    "errors": [],
+    "warnings": [
+      "unresolved issues reported by model",
+      "units[0].entities[0] normalized from object; review retained original metadata",
+      "units[0].entities[1] normalized from object; review retained original metadata"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            46
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Works at Blockchain Tech as a senior developer",
+        "contextualized_statement": "Works at Blockchain Tech as a senior developer",
+        "memory_quotes": [
+          "Works at Blockchain Tech as a senior developer"
+        ],
+        "context_quotes": [],
+        "entities": [
+          "Blockchain Tech",
+          "senior developer"
+        ],
+        "condition": null,
+        "valid_time": null
+      }
+    ],
+    "entity_normalizations": [
+      {
+        "unit_index": 0,
+        "unit_id": "u1",
+        "entity_index": 0,
+        "original": {
+          "type": "organization",
+          "name": "Blockchain Tech",
+          "disambiguation_support": "explicit name in memory"
+        },
+        "normalized": "Blockchain Tech"
+      },
+      {
+        "unit_index": 0,
+        "unit_id": "u1",
+        "entity_index": 1,
+        "original": {
+          "type": "job_title",
+          "name": "senior developer",
+          "disambiguation_support": "explicit title in memory"
+        },
+        "normalized": "senior developer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2927 @@
+[
+  {
+    "id": "explicit_correction",
+    "input_origin": "hand-authored synthetic v4/v2-shaped fixture; no model output",
+    "human_expected": {
+      "modifications": 1,
+      "old": "blue",
+      "new": "green",
+      "protected": "I enjoy hiking",
+      "valid_end": "unknown"
+    },
+    "actual": {
+      "modifications": 1,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified"
+      ],
+      "interval_relation": "unknown",
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "synthetic-memory-1",
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "synthetic-memory-1",
+              "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+              "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [],
+        "new_evidence": [
+          {
+            "source_id": "new-1",
+            "text": "Correction: my favorite color is green, not blue.",
+            "speaker": "user"
+          }
+        ],
+        "time_info": null
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic-memory-1",
+            "fact_index": 1,
+            "old_subfact": "My favorite color is blue; I enjoy hiking.",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "My favorite color is blue; I enjoy hiking.",
+              "located": "My favorite color is blue; I enjoy hiking.",
+              "method": "exact",
+              "start": 0,
+              "end": 42
+            },
+            "validation": {
+              "passed": true,
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "synthetic-memory-1",
+          "fact_index": 1,
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "synthetic-memory-1",
+            "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+            "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "synthetic-memory-1",
+                "quote": "My favorite color is blue; I enjoy hiking.",
+                "supports": "memory"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "located_candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "fragment_match": {
+                "raw": "My favorite color is blue; I enjoy hiking.",
+                "located": "My favorite color is blue; I enjoy hiking.",
+                "method": "exact",
+                "start": 0,
+                "end": 42
+              },
+              "validation": {
+                "passed": true,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": null,
+            "recorded_times": [],
+            "expressions": [],
+            "period_candidates": {
+              "old": [],
+              "new": []
+            },
+            "errors": [],
+            "interval_relation": "unknown"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            }
+          },
+          "modifications": [
+            {
+              "kind": "modify_candidate",
+              "status": "needs_review",
+              "span": {
+                "start": 21,
+                "end": 25
+              },
+              "old_text": "blue",
+              "proposed_text": "green",
+              "attribute_candidate": "favorite color",
+              "relation_candidate": "explicit_correction",
+              "semantic_correctness": "not_checked",
+              "time_effect": {
+                "state": "unknown"
+              },
+              "conditions": [
+                "human verifies subject, attribute, polarity, temporal scope and dependent clauses",
+                "original memory hash and source quotes remain unchanged",
+                "candidate is not an authorization to write"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue",
+                  "source_type": "memory"
+                },
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "source_type": "new"
+                }
+              ],
+              "reason": "explicit same-phrase correction; literal evidence does not establish semantic correctness"
+            }
+          ],
+          "protected": [
+            {
+              "text": "My favorite color is ",
+              "span": {
+                "start": 0,
+                "end": 21
+              },
+              "reason": "retain original context around candidate; semantic dependencies require review",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is "
+                }
+              ]
+            },
+            {
+              "text": "; I enjoy hiking.",
+              "span": {
+                "start": 25,
+                "end": 42
+              },
+              "reason": "retain original context around candidate; semantic dependencies require review",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "; I enjoy hiking."
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            }
+          ],
+          "additions": [
+            {
+              "text": "Correction: my favorite color is green, not blue.",
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "not_called",
+            "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+          },
+          "fragment_match_rechecked": {
+            "raw": "My favorite color is blue; I enjoy hiking.",
+            "located": "My favorite color is blue; I enjoy hiking.",
+            "method": "exact",
+            "start": 0,
+            "end": 42
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [
+        {
+          "kind": "modify_candidate",
+          "status": "needs_review",
+          "span": {
+            "start": 21,
+            "end": 25
+          },
+          "old_text": "blue",
+          "proposed_text": "green",
+          "attribute_candidate": "favorite color",
+          "relation_candidate": "explicit_correction",
+          "semantic_correctness": "not_checked",
+          "time_effect": {
+            "state": "unknown"
+          },
+          "conditions": [
+            "human verifies subject, attribute, polarity, temporal scope and dependent clauses",
+            "original memory hash and source quotes remain unchanged",
+            "candidate is not an authorization to write"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "synthetic-memory-1",
+              "quote": "My favorite color is blue",
+              "source_type": "memory"
+            },
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "source_type": "new"
+            }
+          ],
+          "reason": "explicit same-phrase correction; literal evidence does not establish semantic correctness",
+          "fact_indices": [
+            1
+          ],
+          "memory_id": "synthetic-memory-1",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066"
+        }
+      ],
+      "additions": [
+        {
+          "text": "Correction: my favorite color is green, not blue.",
+          "source_id": "new-1",
+          "quote": "Correction: my favorite color is green, not blue.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "unanchored_change",
+    "input_origin": "hand-authored synthetic v4/v2-shaped fixture; no model output",
+    "human_expected": {
+      "modifications": 0,
+      "reason": "no explicit correction or established boundary"
+    },
+    "actual": {
+      "modifications": 0,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified"
+      ],
+      "interval_relation": "unknown",
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "synthetic-memory-1",
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "synthetic-memory-1",
+              "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+              "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [],
+        "new_evidence": [
+          {
+            "source_id": "new-1",
+            "text": "My favorite color is green now.",
+            "speaker": "user"
+          }
+        ],
+        "time_info": null
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic-memory-1",
+            "fact_index": 1,
+            "old_subfact": "My favorite color is blue; I enjoy hiking.",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "My favorite color is green now."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "My favorite color is green now."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "My favorite color is blue; I enjoy hiking.",
+              "located": "My favorite color is blue; I enjoy hiking.",
+              "method": "exact",
+              "start": 0,
+              "end": 42
+            },
+            "validation": {
+              "passed": true,
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "synthetic-memory-1",
+          "fact_index": 1,
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "synthetic-memory-1",
+            "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+            "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "synthetic-memory-1",
+                "quote": "My favorite color is blue; I enjoy hiking.",
+                "supports": "memory"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "My favorite color is green now."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "located_candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "My favorite color is green now."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "fragment_match": {
+                "raw": "My favorite color is blue; I enjoy hiking.",
+                "located": "My favorite color is blue; I enjoy hiking.",
+                "method": "exact",
+                "start": 0,
+                "end": 42
+              },
+              "validation": {
+                "passed": true,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": null,
+            "recorded_times": [],
+            "expressions": [],
+            "period_candidates": {
+              "old": [],
+              "new": []
+            },
+            "errors": [],
+            "interval_relation": "unknown"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "My favorite color is green now."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            }
+          },
+          "modifications": [],
+          "protected": [
+            {
+              "text": "My favorite color is blue; I enjoy hiking.",
+              "reason": "scope and semantic impact not verified; protect complete fact",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            }
+          ],
+          "additions": [
+            {
+              "text": "My favorite color is green now.",
+              "source_id": "new-1",
+              "quote": "My favorite color is green now.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-1",
+                  "quote": "My favorite color is green now.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "not_called",
+            "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+          },
+          "fragment_match_rechecked": {
+            "raw": "My favorite color is blue; I enjoy hiking.",
+            "located": "My favorite color is blue; I enjoy hiking.",
+            "method": "exact",
+            "start": 0,
+            "end": 42
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [],
+      "additions": [
+        {
+          "text": "My favorite color is green now.",
+          "source_id": "new-1",
+          "quote": "My favorite color is green now.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-1",
+              "quote": "My favorite color is green now.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "conflicting_corrections",
+    "input_origin": "hand-authored synthetic v4/v2-shaped fixture; no model output",
+    "human_expected": {
+      "modifications": 0,
+      "pending": "conflicting_corrections"
+    },
+    "actual": {
+      "modifications": 0,
+      "additions": 2,
+      "pending": [
+        "semantic_scope_unverified",
+        "conflicting_corrections"
+      ],
+      "interval_relation": "unknown",
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "synthetic-memory-1",
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "synthetic-memory-1",
+              "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+              "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [],
+        "new_evidence": [
+          {
+            "source_id": "new-1",
+            "text": "Correction: my favorite color is green, not blue.",
+            "speaker": "user"
+          },
+          {
+            "source_id": "new-2",
+            "speaker": "user",
+            "text": "Correction: my favorite color is red, not blue."
+          }
+        ],
+        "time_info": null
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic-memory-1",
+            "fact_index": 1,
+            "old_subfact": "My favorite color is blue; I enjoy hiking.",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "My favorite color is blue; I enjoy hiking.",
+              "located": "My favorite color is blue; I enjoy hiking.",
+              "method": "exact",
+              "start": 0,
+              "end": 42
+            },
+            "validation": {
+              "passed": true,
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "synthetic-memory-1",
+          "fact_index": 1,
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "synthetic-memory-1",
+            "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+            "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "synthetic-memory-1",
+                "quote": "My favorite color is blue; I enjoy hiking.",
+                "supports": "memory"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "located_candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "fragment_match": {
+                "raw": "My favorite color is blue; I enjoy hiking.",
+                "located": "My favorite color is blue; I enjoy hiking.",
+                "method": "exact",
+                "start": 0,
+                "end": 42
+              },
+              "validation": {
+                "passed": true,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": null,
+            "recorded_times": [],
+            "expressions": [],
+            "period_candidates": {
+              "old": [],
+              "new": []
+            },
+            "errors": [],
+            "interval_relation": "unknown"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            }
+          },
+          "modifications": [],
+          "protected": [
+            {
+              "text": "My favorite color is blue; I enjoy hiking.",
+              "reason": "scope and semantic impact not verified; protect complete fact",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            },
+            {
+              "code": "conflicting_corrections",
+              "candidates": [
+                {
+                  "start": 21,
+                  "end": 25,
+                  "old": "blue",
+                  "new": "green",
+                  "attribute": "favorite color",
+                  "assertion": "My favorite color is blue",
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                {
+                  "start": 21,
+                  "end": 25,
+                  "old": "blue",
+                  "new": "red",
+                  "attribute": "favorite color",
+                  "assertion": "My favorite color is blue",
+                  "source_id": "new-2",
+                  "quote": "Correction: my favorite color is red, not blue."
+                }
+              ]
+            }
+          ],
+          "additions": [
+            {
+              "text": "Correction: my favorite color is green, not blue.",
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            },
+            {
+              "text": "Correction: my favorite color is red, not blue.",
+              "source_id": "new-2",
+              "quote": "Correction: my favorite color is red, not blue.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-2",
+                  "quote": "Correction: my favorite color is red, not blue.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "not_called",
+            "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+          },
+          "fragment_match_rechecked": {
+            "raw": "My favorite color is blue; I enjoy hiking.",
+            "located": "My favorite color is blue; I enjoy hiking.",
+            "method": "exact",
+            "start": 0,
+            "end": 42
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [],
+      "additions": [
+        {
+          "text": "Correction: my favorite color is green, not blue.",
+          "source_id": "new-1",
+          "quote": "Correction: my favorite color is green, not blue.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        },
+        {
+          "text": "Correction: my favorite color is red, not blue.",
+          "source_id": "new-2",
+          "quote": "Correction: my favorite color is red, not blue.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-2",
+              "quote": "Correction: my favorite color is red, not blue.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ambiguous_old",
+    "input_origin": "hand-authored synthetic v4/v2-shaped fixture; no model output",
+    "human_expected": {
+      "modifications": 0,
+      "reason": "old assertion occurs twice"
+    },
+    "actual": {
+      "modifications": 0,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified"
+      ],
+      "interval_relation": "unknown",
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "synthetic-memory-1",
+          "memory_text": "My favorite color is blue; My favorite color is blue.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "synthetic-memory-1",
+              "raw_subfact": "My favorite color is blue; My favorite color is blue.",
+              "contextualized_subfact": "My favorite color is blue; My favorite color is blue.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; My favorite color is blue.",
+                  "supports": "memory"
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [],
+        "new_evidence": [
+          {
+            "source_id": "new-1",
+            "text": "Correction: my favorite color is green, not blue.",
+            "speaker": "user"
+          }
+        ],
+        "time_info": null
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic-memory-1",
+            "fact_index": 1,
+            "old_subfact": "My favorite color is blue; My favorite color is blue.",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; My favorite color is blue.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; My favorite color is blue.",
+              "old_quote": "My favorite color is blue; My favorite color is blue.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; My favorite color is blue.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; My favorite color is blue.",
+              "old_quote": "My favorite color is blue; My favorite color is blue.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "My favorite color is blue; My favorite color is blue.",
+              "located": "My favorite color is blue; My favorite color is blue.",
+              "method": "exact",
+              "start": 0,
+              "end": 53
+            },
+            "validation": {
+              "passed": true,
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "synthetic-memory-1",
+          "fact_index": 1,
+          "memory_text": "My favorite color is blue; My favorite color is blue.",
+          "memory_sha256": "6d1f975b5f9518374cb137d48351a4f46d1727edd8351b94ebe4c11bf7f25e47",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "synthetic-memory-1",
+            "raw_subfact": "My favorite color is blue; My favorite color is blue.",
+            "contextualized_subfact": "My favorite color is blue; My favorite color is blue.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "synthetic-memory-1",
+                "quote": "My favorite color is blue; My favorite color is blue.",
+                "supports": "memory"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; My favorite color is blue.",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; My favorite color is blue.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; My favorite color is blue.",
+                "old_quote": "My favorite color is blue; My favorite color is blue.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "located_candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; My favorite color is blue.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; My favorite color is blue.",
+                "old_quote": "My favorite color is blue; My favorite color is blue.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "fragment_match": {
+                "raw": "My favorite color is blue; My favorite color is blue.",
+                "located": "My favorite color is blue; My favorite color is blue.",
+                "method": "exact",
+                "start": 0,
+                "end": 53
+              },
+              "validation": {
+                "passed": true,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": null,
+            "recorded_times": [],
+            "expressions": [],
+            "period_candidates": {
+              "old": [],
+              "new": []
+            },
+            "errors": [],
+            "interval_relation": "unknown"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; My favorite color is blue.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; My favorite color is blue.",
+              "old_quote": "My favorite color is blue; My favorite color is blue.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            }
+          },
+          "modifications": [],
+          "protected": [
+            {
+              "text": "My favorite color is blue; My favorite color is blue.",
+              "reason": "scope and semantic impact not verified; protect complete fact",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; My favorite color is blue.",
+                  "supports": "memory"
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            }
+          ],
+          "additions": [
+            {
+              "text": "Correction: my favorite color is green, not blue.",
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "not_called",
+            "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+          },
+          "fragment_match_rechecked": {
+            "raw": "My favorite color is blue; My favorite color is blue.",
+            "located": "My favorite color is blue; My favorite color is blue.",
+            "method": "exact",
+            "start": 0,
+            "end": 53
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [],
+      "additions": [
+        {
+          "text": "Correction: my favorite color is green, not blue.",
+          "source_id": "new-1",
+          "quote": "Correction: my favorite color is green, not blue.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "duplicate_evidence",
+    "input_origin": "hand-authored synthetic v4/v2-shaped fixture; no model output",
+    "human_expected": {
+      "modifications": 1,
+      "additions": 1,
+      "source_ids": [
+        "new-1",
+        "new-2"
+      ]
+    },
+    "actual": {
+      "modifications": 1,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified"
+      ],
+      "interval_relation": "unknown",
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "synthetic-memory-1",
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "synthetic-memory-1",
+              "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+              "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue; I enjoy hiking.",
+                  "supports": "memory"
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [],
+        "new_evidence": [
+          {
+            "source_id": "new-1",
+            "text": "Correction: my favorite color is green, not blue.",
+            "speaker": "user"
+          },
+          {
+            "source_id": "new-2",
+            "speaker": "user",
+            "text": "Correction: my favorite color is green, not blue."
+          }
+        ],
+        "time_info": null
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic-memory-1",
+            "fact_index": 1,
+            "old_subfact": "My favorite color is blue; I enjoy hiking.",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "My favorite color is blue; I enjoy hiking.",
+              "located": "My favorite color is blue; I enjoy hiking.",
+              "method": "exact",
+              "start": 0,
+              "end": 42
+            },
+            "validation": {
+              "passed": true,
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "synthetic-memory-1",
+          "fact_index": 1,
+          "memory_text": "My favorite color is blue; I enjoy hiking.",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "synthetic-memory-1",
+            "raw_subfact": "My favorite color is blue; I enjoy hiking.",
+            "contextualized_subfact": "My favorite color is blue; I enjoy hiking.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "synthetic-memory-1",
+                "quote": "My favorite color is blue; I enjoy hiking.",
+                "supports": "memory"
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "located_candidate": {
+                "memory_id": "synthetic-memory-1",
+                "fact_index": 1,
+                "old_subfact": "My favorite color is blue; I enjoy hiking.",
+                "relation": "historical_correction",
+                "object": "user",
+                "attribute": "favorite color",
+                "conditions": "",
+                "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+                "old_quote": "My favorite color is blue; I enjoy hiking.",
+                "new_quote": {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue."
+                },
+                "reason": "candidate",
+                "confirmation_questions": []
+              },
+              "fragment_match": {
+                "raw": "My favorite color is blue; I enjoy hiking.",
+                "located": "My favorite color is blue; I enjoy hiking.",
+                "method": "exact",
+                "start": 0,
+                "end": 42
+              },
+              "validation": {
+                "passed": true,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": null,
+            "recorded_times": [],
+            "expressions": [],
+            "period_candidates": {
+              "old": [],
+              "new": []
+            },
+            "errors": [],
+            "interval_relation": "unknown"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "synthetic-memory-1",
+              "fact_index": 1,
+              "old_subfact": "My favorite color is blue; I enjoy hiking.",
+              "relation": "historical_correction",
+              "object": "user",
+              "attribute": "favorite color",
+              "conditions": "",
+              "candidate_impact_fragment": "My favorite color is blue; I enjoy hiking.",
+              "old_quote": "My favorite color is blue; I enjoy hiking.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Correction: my favorite color is green, not blue."
+              },
+              "reason": "candidate",
+              "confirmation_questions": []
+            }
+          },
+          "modifications": [
+            {
+              "kind": "modify_candidate",
+              "status": "needs_review",
+              "span": {
+                "start": 21,
+                "end": 25
+              },
+              "old_text": "blue",
+              "proposed_text": "green",
+              "attribute_candidate": "favorite color",
+              "relation_candidate": "explicit_correction",
+              "semantic_correctness": "not_checked",
+              "time_effect": {
+                "state": "unknown"
+              },
+              "conditions": [
+                "human verifies subject, attribute, polarity, temporal scope and dependent clauses",
+                "original memory hash and source quotes remain unchanged",
+                "candidate is not an authorization to write"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is blue",
+                  "source_type": "memory"
+                },
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "source_type": "new"
+                },
+                {
+                  "source_id": "new-2",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "source_type": "new"
+                }
+              ],
+              "reason": "explicit same-phrase correction; literal evidence does not establish semantic correctness"
+            }
+          ],
+          "protected": [
+            {
+              "text": "My favorite color is ",
+              "span": {
+                "start": 0,
+                "end": 21
+              },
+              "reason": "retain original context around candidate; semantic dependencies require review",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "My favorite color is "
+                }
+              ]
+            },
+            {
+              "text": "; I enjoy hiking.",
+              "span": {
+                "start": 25,
+                "end": 42
+              },
+              "reason": "retain original context around candidate; semantic dependencies require review",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "synthetic-memory-1",
+                  "quote": "; I enjoy hiking."
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            }
+          ],
+          "additions": [
+            {
+              "text": "Correction: my favorite color is green, not blue.",
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "kind": "raw_evidence_candidate"
+                },
+                {
+                  "source_id": "new-2",
+                  "quote": "Correction: my favorite color is green, not blue.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "not_called",
+            "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+          },
+          "fragment_match_rechecked": {
+            "raw": "My favorite color is blue; I enjoy hiking.",
+            "located": "My favorite color is blue; I enjoy hiking.",
+            "method": "exact",
+            "start": 0,
+            "end": 42
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [
+        {
+          "kind": "modify_candidate",
+          "status": "needs_review",
+          "span": {
+            "start": 21,
+            "end": 25
+          },
+          "old_text": "blue",
+          "proposed_text": "green",
+          "attribute_candidate": "favorite color",
+          "relation_candidate": "explicit_correction",
+          "semantic_correctness": "not_checked",
+          "time_effect": {
+            "state": "unknown"
+          },
+          "conditions": [
+            "human verifies subject, attribute, polarity, temporal scope and dependent clauses",
+            "original memory hash and source quotes remain unchanged",
+            "candidate is not an authorization to write"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "synthetic-memory-1",
+              "quote": "My favorite color is blue",
+              "source_type": "memory"
+            },
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "source_type": "new"
+            },
+            {
+              "source_id": "new-2",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "source_type": "new"
+            }
+          ],
+          "reason": "explicit same-phrase correction; literal evidence does not establish semantic correctness",
+          "fact_indices": [
+            1
+          ],
+          "memory_id": "synthetic-memory-1",
+          "memory_sha256": "112503f13751ae8384f0898b06ddf09bc1caff5af1eb591791a8ce487ce22066"
+        }
+      ],
+      "additions": [
+        {
+          "text": "Correction: my favorite color is green, not blue.",
+          "source_id": "new-1",
+          "quote": "Correction: my favorite color is green, not blue.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "new-1",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate"
+            },
+            {
+              "source_id": "new-2",
+              "quote": "Correction: my favorite color is green, not blue.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sourced_interval_overlap",
+    "input_origin": "saved promotion v4/v2 with hand-added synthetic periods",
+    "human_expected": {
+      "modifications": 0,
+      "interval_relation": "overlap",
+      "facttrack_path": "original_overlap_true",
+      "note": "validity interpretation remains unverified"
+    },
+    "actual": {
+      "modifications": 0,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified",
+        "upstream_question_unverified",
+        "upstream_question_unverified"
+      ],
+      "interval_relation": "overlap",
+      "facttrack": {
+        "status": "called",
+        "source_sha256": "a2ffd889e955440af3ef4f39995b3e4a3e06c80b7d8e6d2d59a4212e8282c51f",
+        "block_check_pre_order": [
+          "new",
+          "old"
+        ],
+        "insert_pre_order": [
+          "old",
+          "new"
+        ],
+        "original_pre_overlap": true,
+        "original_post_overlap": false,
+        "role": "original ordering and overlap predicate; no original models, thresholds, state mutation or validity inference",
+        "decision_path": "original_overlap_true"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "memory_text": "Works at Historical Productions Ltd. as a Director",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+              "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director",
+                  "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director.",
+                  "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [
+          {
+            "source_id": "old-context-1",
+            "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+            "text": "I work at Historical Productions Ltd. as a Director. Old period 2024-01-01 through 2024-08-01.",
+            "speaker": "user",
+            "recorded_at": "Sep 05, 2025, 14:42:35"
+          }
+        ],
+        "new_evidence": [
+          {
+            "source_id": "dialogue-0",
+            "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+            "speaker": "user",
+            "recorded_at": "Feb 01, 2026, 18:47:19"
+          }
+        ],
+        "time_info": [
+          {
+            "side": "old",
+            "kind": "valid_period",
+            "start": "2024-01-01",
+            "end": "2024-08-01",
+            "source_id": "old-context-1",
+            "quote": "Old period 2024-01-01 through 2024-08-01."
+          },
+          {
+            "side": "new",
+            "kind": "valid_period",
+            "start": "2024-05-01",
+            "end": "2024-12-01",
+            "source_id": "dialogue-0",
+            "quote": "New period 2024-05-01 through 2024-12-01."
+          }
+        ]
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "located_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "fragment_match": {
+              "raw": "Works at Historical Productions Ltd. as a Director",
+              "located": "Works at Historical Productions Ltd. as a Director",
+              "method": "exact",
+              "start": 0,
+              "end": 50
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "memory_text": "Works at Historical Productions Ltd. as a Director",
+          "memory_sha256": "a58936748e09290112132737c6bc71c18974e24f26031e37db0951793a79374f",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+            "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director",
+                "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director.",
+                "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "fact_index": 1,
+                "old_subfact": "Works at Historical Productions Ltd. as a Director",
+                "relation": "possible_change",
+                "object": "User",
+                "attribute": "position",
+                "conditions": "at Historical Productions Ltd.",
+                "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+                "old_quote": "Works at Historical Productions Ltd. as a Director",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                },
+                "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+                "confirmation_questions": [
+                  "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                  "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+                ]
+              },
+              "located_candidate": {
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "fact_index": 1,
+                "old_subfact": "Works at Historical Productions Ltd. as a Director",
+                "relation": "possible_change",
+                "object": "User",
+                "attribute": "position",
+                "conditions": "at Historical Productions Ltd.",
+                "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+                "old_quote": "Works at Historical Productions Ltd. as a Director",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                },
+                "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+                "confirmation_questions": [
+                  "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                  "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+                ]
+              },
+              "fragment_match": {
+                "raw": "Works at Historical Productions Ltd. as a Director",
+                "located": "Works at Historical Productions Ltd. as a Director",
+                "method": "exact",
+                "start": 0,
+                "end": 50
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": [
+              {
+                "side": "old",
+                "kind": "valid_period",
+                "start": "2024-01-01",
+                "end": "2024-08-01",
+                "source_id": "old-context-1",
+                "quote": "Old period 2024-01-01 through 2024-08-01."
+              },
+              {
+                "side": "new",
+                "kind": "valid_period",
+                "start": "2024-05-01",
+                "end": "2024-12-01",
+                "source_id": "dialogue-0",
+                "quote": "New period 2024-05-01 through 2024-12-01."
+              }
+            ],
+            "recorded_times": [
+              {
+                "kind": "recorded",
+                "source_id": "old-context-1",
+                "value": "Sep 05, 2025, 14:42:35",
+                "validity_effect": "none"
+              },
+              {
+                "kind": "recorded",
+                "source_id": "dialogue-0",
+                "value": "Feb 01, 2026, 18:47:19",
+                "validity_effect": "none"
+              }
+            ],
+            "expressions": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "recently",
+                "resolution": "unresolved",
+                "reason": "no validated event-time anchor"
+              }
+            ],
+            "period_candidates": {
+              "old": [
+                {
+                  "start": "2024-01-01",
+                  "end": "2024-08-01",
+                  "source_id": "old-context-1",
+                  "quote": "Old period 2024-01-01 through 2024-08-01.",
+                  "semantic_correctness": "not_checked"
+                }
+              ],
+              "new": [
+                {
+                  "start": "2024-05-01",
+                  "end": "2024-12-01",
+                  "source_id": "dialogue-0",
+                  "quote": "New period 2024-05-01 through 2024-12-01.",
+                  "semantic_correctness": "not_checked"
+                }
+              ]
+            },
+            "errors": [],
+            "interval_relation": "overlap"
+          },
+          "boundary": {
+            "kind": "unknown",
+            "reason": "no validated explicit validity boundary"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            }
+          },
+          "modifications": [],
+          "protected": [
+            {
+              "text": "Works at Historical Productions Ltd. as a Director",
+              "reason": "scope and semantic impact not verified; protect complete fact",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director",
+                  "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director.",
+                  "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            },
+            {
+              "code": "upstream_question_unverified",
+              "question": "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?"
+            },
+            {
+              "code": "upstream_question_unverified",
+              "question": "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+            }
+          ],
+          "additions": [
+            {
+              "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "called",
+            "source_sha256": "a2ffd889e955440af3ef4f39995b3e4a3e06c80b7d8e6d2d59a4212e8282c51f",
+            "block_check_pre_order": [
+              "new",
+              "old"
+            ],
+            "insert_pre_order": [
+              "old",
+              "new"
+            ],
+            "original_pre_overlap": true,
+            "original_post_overlap": false,
+            "role": "original ordering and overlap predicate; no original models, thresholds, state mutation or validity inference",
+            "decision_path": "original_overlap_true"
+          },
+          "fragment_match_rechecked": {
+            "raw": "Works at Historical Productions Ltd. as a Director",
+            "located": "Works at Historical Productions Ltd. as a Director",
+            "method": "exact",
+            "start": 0,
+            "end": 50
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [],
+      "additions": [
+        {
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2024-05-01 through 2024-12-01.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sourced_interval_sequential",
+    "input_origin": "saved promotion v4/v2 with hand-added synthetic periods",
+    "human_expected": {
+      "modifications": 0,
+      "interval_relation": "before",
+      "boundary": "window_candidate",
+      "facttrack_order": "block_check_pre_order",
+      "note": "window conditional on comparable, mutually exclusive states"
+    },
+    "actual": {
+      "modifications": 0,
+      "additions": 1,
+      "pending": [
+        "semantic_scope_unverified",
+        "upstream_question_unverified",
+        "upstream_question_unverified"
+      ],
+      "interval_relation": "before",
+      "facttrack": {
+        "status": "called",
+        "source_sha256": "a2ffd889e955440af3ef4f39995b3e4a3e06c80b7d8e6d2d59a4212e8282c51f",
+        "block_check_pre_order": [
+          "new",
+          "old"
+        ],
+        "insert_pre_order": [
+          "old",
+          "new"
+        ],
+        "original_pre_overlap": false,
+        "original_post_overlap": false,
+        "role": "original ordering and overlap predicate; no original models, thresholds, state mutation or validity inference",
+        "decision_path": "general_interval_fallback",
+        "boundary_order_used": "block_check_pre_order"
+      }
+    },
+    "complete_output": {
+      "status": "needs_review",
+      "request": {
+        "split_result": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "memory_text": "Works at Historical Productions Ltd. as a Director",
+          "facts": [
+            {
+              "fact_index": 1,
+              "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+              "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+              "evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director",
+                  "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director.",
+                  "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+                }
+              ],
+              "pending_confirmations": []
+            }
+          ]
+        },
+        "source_context": [
+          {
+            "source_id": "old-context-1",
+            "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+            "text": "I work at Historical Productions Ltd. as a Director. Old period 2024-01-01 through 2024-12-31.",
+            "speaker": "user",
+            "recorded_at": "Sep 05, 2025, 14:42:35"
+          }
+        ],
+        "new_evidence": [
+          {
+            "source_id": "dialogue-0",
+            "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+            "speaker": "user",
+            "recorded_at": "Feb 01, 2026, 18:47:19"
+          }
+        ],
+        "time_info": [
+          {
+            "side": "old",
+            "kind": "valid_period",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "source_id": "old-context-1",
+            "quote": "Old period 2024-01-01 through 2024-12-31."
+          },
+          {
+            "side": "new",
+            "kind": "valid_period",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "source_id": "dialogue-0",
+            "quote": "New period 2025-01-01 through 2025-12-31."
+          }
+        ]
+      },
+      "relation_result": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "located_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "fragment_match": {
+              "raw": "Works at Historical Productions Ltd. as a Director",
+              "located": "Works at Historical Productions Ltd. as a Director",
+              "method": "exact",
+              "start": 0,
+              "end": 50
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "results": [
+        {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "memory_text": "Works at Historical Productions Ltd. as a Director",
+          "memory_sha256": "a58936748e09290112132737c6bc71c18974e24f26031e37db0951793a79374f",
+          "old_fact": {
+            "fact_index": 1,
+            "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+            "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director",
+                "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director.",
+                "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "needs_review",
+          "upstream": {
+            "full_row": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "fact_index": 1,
+                "old_subfact": "Works at Historical Productions Ltd. as a Director",
+                "relation": "possible_change",
+                "object": "User",
+                "attribute": "position",
+                "conditions": "at Historical Productions Ltd.",
+                "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+                "old_quote": "Works at Historical Productions Ltd. as a Director",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                },
+                "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+                "confirmation_questions": [
+                  "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                  "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+                ]
+              },
+              "located_candidate": {
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "fact_index": 1,
+                "old_subfact": "Works at Historical Productions Ltd. as a Director",
+                "relation": "possible_change",
+                "object": "User",
+                "attribute": "position",
+                "conditions": "at Historical Productions Ltd.",
+                "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+                "old_quote": "Works at Historical Productions Ltd. as a Director",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                },
+                "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+                "confirmation_questions": [
+                  "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                  "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+                ]
+              },
+              "fragment_match": {
+                "raw": "Works at Historical Productions Ltd. as a Director",
+                "located": "Works at Historical Productions Ltd. as a Director",
+                "method": "exact",
+                "start": 0,
+                "end": 50
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": []
+            },
+            "semantic_correctness": "not_checked",
+            "errors": []
+          },
+          "time": {
+            "valid_start": {
+              "state": "unknown"
+            },
+            "valid_end": {
+              "state": "unknown"
+            },
+            "time_info_raw": [
+              {
+                "side": "old",
+                "kind": "valid_period",
+                "start": "2024-01-01",
+                "end": "2024-12-31",
+                "source_id": "old-context-1",
+                "quote": "Old period 2024-01-01 through 2024-12-31."
+              },
+              {
+                "side": "new",
+                "kind": "valid_period",
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "source_id": "dialogue-0",
+                "quote": "New period 2025-01-01 through 2025-12-31."
+              }
+            ],
+            "recorded_times": [
+              {
+                "kind": "recorded",
+                "source_id": "old-context-1",
+                "value": "Sep 05, 2025, 14:42:35",
+                "validity_effect": "none"
+              },
+              {
+                "kind": "recorded",
+                "source_id": "dialogue-0",
+                "value": "Feb 01, 2026, 18:47:19",
+                "validity_effect": "none"
+              }
+            ],
+            "expressions": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "recently",
+                "resolution": "unresolved",
+                "reason": "no validated event-time anchor"
+              }
+            ],
+            "period_candidates": {
+              "old": [
+                {
+                  "start": "2024-01-01",
+                  "end": "2024-12-31",
+                  "source_id": "old-context-1",
+                  "quote": "Old period 2024-01-01 through 2024-12-31.",
+                  "semantic_correctness": "not_checked"
+                }
+              ],
+              "new": [
+                {
+                  "start": "2025-01-01",
+                  "end": "2025-12-31",
+                  "source_id": "dialogue-0",
+                  "quote": "New period 2025-01-01 through 2025-12-31.",
+                  "semantic_correctness": "not_checked"
+                }
+              ]
+            },
+            "errors": [],
+            "interval_relation": "before"
+          },
+          "boundary": {
+            "kind": "window_candidate",
+            "earliest": "2024-12-31",
+            "latest": "2025-01-01",
+            "evidence": [
+              {
+                "start": "2024-01-01",
+                "end": "2024-12-31",
+                "source_id": "old-context-1",
+                "quote": "Old period 2024-01-01 through 2024-12-31.",
+                "semantic_correctness": "not_checked"
+              },
+              {
+                "start": "2025-01-01",
+                "end": "2025-12-31",
+                "source_id": "dialogue-0",
+                "quote": "New period 2025-01-01 through 2025-12-31.",
+                "semantic_correctness": "not_checked"
+              }
+            ],
+            "conditions": [
+              "time expressions actually denote valid periods",
+              "same object, attribute and conditions",
+              "mutually exclusive states",
+              "a state transition occurred"
+            ],
+            "reason": "conditional window between supplied periods; neither event nor exclusivity is established"
+          },
+          "relation": {
+            "classification": "unknown",
+            "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+            "upstream_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            }
+          },
+          "modifications": [],
+          "protected": [
+            {
+              "text": "Works at Historical Productions Ltd. as a Director",
+              "reason": "scope and semantic impact not verified; protect complete fact",
+              "evidence_refs": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director",
+                  "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director.",
+                  "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+                }
+              ]
+            }
+          ],
+          "pending": [
+            {
+              "code": "semantic_scope_unverified",
+              "reason": "v2 label and fragment are candidates only"
+            },
+            {
+              "code": "upstream_question_unverified",
+              "question": "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?"
+            },
+            {
+              "code": "upstream_question_unverified",
+              "question": "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+            }
+          ],
+          "additions": [
+            {
+              "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+              "kind": "raw_evidence_candidate",
+              "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+              "semantic_correctness": "not_checked",
+              "kinds": [
+                "raw_evidence_candidate"
+              ],
+              "evidence_refs": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+                  "kind": "raw_evidence_candidate"
+                }
+              ]
+            }
+          ],
+          "nli": {
+            "status": "disabled"
+          },
+          "extraction": {
+            "status": "not_called",
+            "reason": "disabled or upstream failure"
+          },
+          "scope_assessment": {
+            "status": "unknown",
+            "semantic_verified": false,
+            "reason": "no independent extraction"
+          },
+          "facttrack": {
+            "status": "called",
+            "source_sha256": "a2ffd889e955440af3ef4f39995b3e4a3e06c80b7d8e6d2d59a4212e8282c51f",
+            "block_check_pre_order": [
+              "new",
+              "old"
+            ],
+            "insert_pre_order": [
+              "old",
+              "new"
+            ],
+            "original_pre_overlap": false,
+            "original_post_overlap": false,
+            "role": "original ordering and overlap predicate; no original models, thresholds, state mutation or validity inference",
+            "decision_path": "general_interval_fallback",
+            "boundary_order_used": "block_check_pre_order"
+          },
+          "fragment_match_rechecked": {
+            "raw": "Works at Historical Productions Ltd. as a Director",
+            "located": "Works at Historical Productions Ltd. as a Director",
+            "method": "exact",
+            "start": 0,
+            "end": 50
+          }
+        }
+      ],
+      "errors": [],
+      "modifications": [],
+      "additions": [
+        {
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+          "kind": "raw_evidence_candidate",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting! New period 2025-01-01 through 2025-12-31.",
+              "kind": "raw_evidence_candidate"
+            }
+          ],
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "fact_indices": [
+            1
+          ]
+        }
+      ]
+    }
+  }
+]

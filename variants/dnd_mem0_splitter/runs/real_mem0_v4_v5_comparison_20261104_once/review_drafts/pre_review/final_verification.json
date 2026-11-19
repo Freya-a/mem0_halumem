@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-11-04T15:11:13.989374+08:00",
+  "protected_existing_files": 487,
+  "protected_unchanged": 487,
+  "protected_changed": [],
+  "new_files_limited_to_two_new_directories": true,
+  "v5_prompt_sha256": "4309af1a3a778cb475b4b69e93134253e011f602fb1bbb446cb7287a5b72c997",
+  "prompt_frozen_before_requests": true,
+  "actual_v5_calls": 5,
+  "actual_new_v4_calls": 0,
+  "retries": 0,
+  "cases": [
+    {
+      "case_id": "case_10_sports_preferences",
+      "v5_calls": 1,
+      "program": "failed",
+      "candidate_facts": 2,
+      "accepted_result_exists": false
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "v5_calls": 1,
+      "program": "passed",
+      "candidate_facts": 3,
+      "accepted_result_exists": true
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "v5_calls": 1,
+      "program": "passed",
+      "candidate_facts": 3,
+      "accepted_result_exists": true
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "v5_calls": 1,
+      "program": "passed",
+      "candidate_facts": 1,
+      "accepted_result_exists": true
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "v5_calls": 1,
+      "program": "passed",
+      "candidate_facts": 3,
+      "accepted_result_exists": true
+    }
+  ],
+  "exact_response_and_input_hashes": {
+    "case_10_sports_preferences": {
+      "input_sha256": "c9c6e86ac5fd86065713b65424a70553340bf252e5ea5561bde7f2203e002a67",
+      "v4_raw_sha256": "72948628f53ac47d9f967df14e0df3ae6072d1e9b664bf96db30dee2cb5c1a1f",
+      "v5_raw_sha256": "e2870a6af1294b72776ee1efe14951ff2fd9db32278a8646186495006af1db64"
+    },
+    "case_11_persian_care": {
+      "input_sha256": "9d7a3cca063a8d181261a227b17fe341f05f09c1953823a0d7a2c1e5922a988a",
+      "v4_raw_sha256": "a54301f759a27e98f33310472bb69b45608cd0c0bc0ef24d8b171dedb2541c1b",
+      "v5_raw_sha256": "7f94a2934b5ebe369d794043ffc01823e8b950f2cbdb3f980ec03e93974404c0"
+    },
+    "case_09_father_profile": {
+      "input_sha256": "1ad8dd0cff7b94f0cdaeb3b7861a4104c13a845c020c9b422c5c8554180d120f",
+      "v4_raw_sha256": "5a1ceccc1ea8cdb6001797f1baeac5e3a581446b620e4813f618f226174463c9",
+      "v5_raw_sha256": "20c2b35c555f06102d913317b8d499e24f56976989c6394c4d81171e25d461ef"
+    },
+    "case_03_assistant_yoga": {
+      "input_sha256": "84eca2d3bf486c4800f5d838e1c2348114d04b1f755dd6825715598dfc45d9bf",
+      "v4_raw_sha256": "af7dff4c0bb22b8661622f75e4a1854d3ee885303bee92161d3a317a3d122215",
+      "v5_raw_sha256": "98b1e699092f87e0a3a5a954df2eaccee723142cf9eb99534e146846755070fc"
+    },
+    "case_08_partner_profile": {
+      "input_sha256": "08b006bbeccbac3a3fbc1faed0ccd84612dc1636c29acfa11be53e90bea41011",
+      "v4_raw_sha256": "92b3cc984ee50fe9287c35e9879a79b7e02ac6501b52fe9e082685dc2821e957",
+      "v5_raw_sha256": "36f6656b938de20e7c75eab363f2552214a804cb198cc4b65f0cdc4e8ba05bcb"
+    }
+  },
+  "reviewed_facts_including_rejected_candidates": 22,
+  "reviewed_supports_including_rejected_candidates": 41,
+  "comparison_preserves_all_actual_fields": true,
+  "offline_existing_unit_tests_passed": 38,
+  "offline_new_invocation_tests_passed": 3,
+  "synthetic_examples_validated": 3,
+  "scope": "No Mem0 import/call or knowledge-base writes; no full development subset execution.",
+  "semantic_status": "AI preliminary review pending human confirmation; literal match is not semantic proof.",
+  "design_protocol_hash_capture": "Final hashes only; these documents were saved before requests, but no separate pre-request hash marker was recorded.",
+  "design_sha256_final": "054bbe6fa82d0c9d5f8c3659aea45af33b64067527ad6543923714ba5a7b5c05",
+  "review_protocol_sha256_final": "70b20c929debfa2dd4d7c576259ba116e5b42d4a298e33482f0f2cc520bb5f7c"
+}

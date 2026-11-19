@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-10T16:19:16.688620+08:00",
+  "record": 5,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+    "memory_text": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "raw_subfact": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.",
+      "contextualized_subfact": "用户有一位名叫 MartinezDaniel（被称为 'Daniel'）的同事，该同事在医疗咨询领域具有专业知识。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+          "quote": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+          "supports": "旧记忆记载存在一位名为 MartinezDaniel 且被称为 'Daniel' 的同事，其具备医疗咨询专业知识；此引文本身未明确拥有该同事的主体。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects",
+          "supports": "来源上下文由标记为 'user' 的说话者陈述，确认了 MartinezDaniel 是其同事且具备医疗咨询专业知识，用于补足旧记忆中省略的主体。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/1/dialogue/6/content",
+        "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 01:02:20"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002 /sessions/6/dialogue/0/content",
+        "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "speaker": "user",
+        "recorded_at": "Feb 05, 2026, 17:13:15"
+      },
+      {
+        "source_id": "dialogue-2",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002 /sessions/6/dialogue/2/content",
+        "text": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+        "speaker": "user",
+        "recorded_at": "Feb 05, 2026, 17:15:18"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

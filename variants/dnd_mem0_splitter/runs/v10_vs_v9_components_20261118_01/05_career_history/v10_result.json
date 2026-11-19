@@ -1,0 +1,59 @@
+{
+  "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+  "memory_text": "Previously worked as a senior developer in Blockchain Tech",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "raw_subfact": "Previously worked as a senior developer in Blockchain Tech",
+      "contextualized_subfact": "The user previously worked as a senior developer at Blockchain Tech.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "quote": "Previously worked as a senior developer in Blockchain Tech",
+          "supports": "Old memory states a past employment relationship: senior developer role at Blockchain Tech."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I work at Blockchain Tech as a senior developer.",
+          "supports": "Current-tense statement by the user confirms the same employer (Blockchain Tech) and title (senior developer), supporting identity and role consistency; however, it does not confirm the *pastness* of the memory's 'previously worked' — only that the role and company are real and currently held. Thus, the past-tense framing remains unverified by this context."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Temporal status of the employment",
+          "reason": "The memory uses 'previously worked', implying the role is no longer current, but the context shows the user *currently* works there in the same role. These conflict on tense/continuity; the memory's 'previously' may be outdated, misremembered, or refer to an earlier stint — but no source confirms whether this was a prior period distinct from current employment."
+        },
+        {
+          "item": "Exact scope of 'in Blockchain Tech'",
+          "reason": "The preposition 'in' (rather than 'at') is atypical for employer reference and could ambiguously suggest department, subsidiary, or affiliation rather than direct employment; the context uses 'at', which is standard for employer location — but neither source clarifies whether 'in Blockchain Tech' was intended as synonymous with 'at Blockchain Tech' or denotes a different relationship."
+        }
+      ]
+    }
+  ],
+  "employment_components": [
+    {
+      "fact_index": 1,
+      "employer": {
+        "status": "located",
+        "source_type": "memory",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "quote": "Blockchain Tech"
+      },
+      "position": {
+        "status": "located",
+        "source_type": "memory",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "quote": "senior developer"
+      },
+      "relationship": {
+        "status": "located",
+        "source_type": "memory",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "quote": "Previously worked as a senior developer in Blockchain Tech"
+      }
+    }
+  ]
+}

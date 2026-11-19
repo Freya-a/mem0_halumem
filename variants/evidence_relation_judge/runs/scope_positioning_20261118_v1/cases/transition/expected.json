@@ -1,0 +1,58 @@
+{
+  "old_statement": "Martin 正寻找更有工作生活平衡的新工作。",
+  "new_statement": "用户称已完成转到新岗位，工作生活平衡更健康。",
+  "modify": [
+    {
+      "scope": "已审核的同次转岗进度可提出旧求职阶段历史化候选；不推出今后不再寻找其他机会。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Looking for a new job with better work-life balance"
+        },
+        {
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role"
+        }
+      ]
+    }
+  ],
+  "preserve": [
+    {
+      "scope": "保留此前寻找更平衡工作的历史与工作生活平衡诉求。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Looking for a new job with better work-life balance"
+        }
+      ]
+    }
+  ],
+  "uncertain": [
+    {
+      "scope": "转岗具体日期、新雇主、新职称、组织性质及是否离开旧公司未知；新旧描述属于同一转岗的映射来自既有审核，具体存储决策待确认。",
+      "evidence": [
+        {
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role"
+        },
+        {
+          "source_id": "old",
+          "quote": "Looking for a new job with better work-life balance"
+        }
+      ]
+    }
+  ],
+  "add": [
+    {
+      "scope": "候选独立新增：用户自述完成新岗位转变，工作生活平衡更健康。",
+      "evidence": [
+        {
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        }
+      ]
+    }
+  ],
+  "status": "助手依据原文和已确认审核边界整理的候选预期，非用户确认金标准",
+  "time_policy": "实际生效/失效边界和条件，如无原文明示均为 unknown；来源 recorded_at 不作为有效日期。"
+}

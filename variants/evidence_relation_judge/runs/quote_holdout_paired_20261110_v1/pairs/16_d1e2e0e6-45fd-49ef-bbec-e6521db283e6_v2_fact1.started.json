@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-11-10T16:21:10.993291+08:00",
+  "record": 16,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+    "memory_text": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+      "raw_subfact": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.",
+      "contextualized_subfact": "用户喜欢古典交响乐，因为其复杂性、历史意义和真实的听觉体验。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+          "quote": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+          "supports": "旧记忆记载了对古典交响乐的喜爱及其三个具体原因：复杂性、历史意义和真实的听觉体验；此引文本身未明确主语。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience.",
+          "supports": "来源中说话者（user）的第一人称陈述与旧记忆内容一致，用于将旧记忆中的省略主语补足为“用户”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/2/dialogue/10/content",
+        "text": "I like classical symphonies, because the complexity and historical significance of classical symphonies resonate with me. They provide an authentic auditory experience. I like jazz from the 1920s, because I am captivated by the rich history and cultural significance of 1920s jazz. It transports me to a different era. I dislike auto-tuned pop music, because I find auto-tuned pop music lacks authenticity and depth, which are qualities I highly value in my musical preferences.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 22:39:05"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/0/content",
+        "text": "I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences.",
+        "speaker": "user",
+        "recorded_at": "Jul 13, 2026, 08:32:16"
+      },
+      {
+        "source_id": "dialogue-2",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/2/content",
+        "text": "The performance inspired me to delve into Baroque symphonies. The historical depth and complexity of the music align with my appreciation for authenticity.",
+        "speaker": "user",
+        "recorded_at": "Jul 13, 2026, 08:37:03"
+      },
+      {
+        "source_id": "dialogue-12",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001 /sessions/10/dialogue/12/content",
+        "text": "I'm focused on Baroque for now, but I'm open to other influences as long as they align with my vision for historical accuracy.",
+        "speaker": "user",
+        "recorded_at": "Jul 13, 2026, 09:04:00"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

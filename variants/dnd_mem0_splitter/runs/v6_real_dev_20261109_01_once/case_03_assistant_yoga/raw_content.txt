@@ -1,0 +1,98 @@
+{
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "raw_subfact": "Practices or is open to yoga",
+      "contextualized_subfact": "The user practices yoga or is open to practicing yoga",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga",
+          "supports": "The memory states that the subject either practices yoga or is open to it."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Practices like yoga could support this transition effectively.",
+          "supports": "The assistant recommends yoga as a supportive practice during the user's career transition, implying relevance and potential openness or engagement by the user."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether the user currently practices yoga or only expresses openness to it",
+          "reason": "The disjunction 'Practices or is open to' is not resolved in the memory or context; neither source confirms current practice nor specifies the nature or timing of openness."
+        },
+        {
+          "item": "The subject of 'Practices or is open to yoga'",
+          "reason": "The memory text lacks an explicit grammatical subject; although context strongly suggests the user (based on first-person narrative in ctx-1 and assistant’s directive 'As you continue...' in ctx-2), the memory itself does not state the subject, and no pronoun or noun phrase anchors it internally."
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "raw_subfact": "Yoga is used for supporting personal health",
+      "contextualized_subfact": "Yoga is used or considered for supporting the user's personal health",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "The memory explicitly links yoga (as practice or potential practice) to the purpose of supporting personal health."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "my current role isn't supporting my well-being as much as I'd like",
+          "supports": "The user identifies a deficit in personal well-being, establishing personal health as a salient concern."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "The assistant explicitly frames yoga as a means to support personal health (via work-life balance) in the context of the user's situation."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether yoga is *currently* used (i.e., actively employed) for supporting personal health",
+          "reason": "The memory uses 'for supporting', which expresses purpose or intention, not confirmed ongoing use; context provides recommendation and rationale but no evidence of actual implementation."
+        }
+      ]
+    },
+    {
+      "fact_index": 3,
+      "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "raw_subfact": "Yoga is used for supporting transition",
+      "contextualized_subfact": "Yoga is used or considered for supporting the user's career transition",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "The memory explicitly links yoga (as practice or potential practice) to the purpose of supporting transition."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being... It's crucial for me to find a new job...",
+          "supports": "The user articulates an active career transition process involving reflection and goal-setting."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "The assistant directly ties yoga to 'this transition', referring to the user's job exploration and career change described in ctx-1."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether yoga is *currently* used (i.e., actively employed) for supporting the transition",
+          "reason": "The memory expresses purpose ('for supporting'), not verified usage; context offers a suggestion, not evidence of application."
+        }
+      ]
+    }
+  ]
+}

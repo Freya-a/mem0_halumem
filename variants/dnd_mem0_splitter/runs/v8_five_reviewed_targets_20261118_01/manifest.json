@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-11-18T10:22:27.888573+08:00",
+  "model_requested": "qwen-plus-2025-12-01",
+  "enable_thinking": false,
+  "prompt_version": "v8_v4_v7_combined",
+  "prompt_sha256": "094d8adf71bbf623d2bdc5f43dd64cebaeb8ad0ba05b77c8d7881a28eb7c2557",
+  "entry": "prompt_versions/v8_v4_v7_combined/v8_splitter.py:split_memory_v8",
+  "backend": "real_backend.OpenAICompatibleBackend",
+  "sdk_max_retries": 0,
+  "per_case_max_calls": 1,
+  "cases": [
+    {
+      "case": "01_susan",
+      "reviewed_main_target": 4,
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "target_session_one_based": 7,
+      "before_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+      "before_snapshot_sha256": "9acc0d4fea92c9361e2489d04ae8a7502192cee876e83d68051343363af37d06",
+      "before_snapshot_index": 57,
+      "source_input_sha256": "c7d151e6f1b2bc661180799483128d119cb26f7ffc8a45cc779b9ae963a087f3",
+      "context_scope": "verbatim excerpt of prior user message; target session not supplied",
+      "input_sha256": "2023e6a2dc20fc268a9ced0cfa2ca3173ce9f55f9e4d219a47f24fa43d84abdc"
+    },
+    {
+      "case": "02_skydiving",
+      "reviewed_main_target": 8,
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "target_session_one_based": 9,
+      "before_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+      "before_snapshot_sha256": "815eeed3870029474b87bbdd4e5f1712acb21cc68784f82134283d2dfd2e274a",
+      "before_snapshot_index": 100,
+      "source_input_sha256": "4e0794fbc3267d701517bff6343ae7fd1e3cb8b9e5dda03a6eecead88bd1c596",
+      "context_scope": "verbatim excerpt of prior user message; target session not supplied",
+      "input_sha256": "aaaaf744cdac8861aa41c54c4423ced1ee76ce7e25b77ff7a9b4d76987f7a98b"
+    },
+    {
+      "case": "03_director",
+      "reviewed_main_target": 10,
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "target_session_one_based": 5,
+      "before_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+      "before_snapshot_sha256": "f5b4a4668ced3f9afbc79d66f17710d66ff7e9d5bc7101f3d9ad45aa11a8bccf",
+      "before_snapshot_index": 61,
+      "source_input_sha256": "b9765ddca684d3e8efa33b3f211192fce03747917eacb8b67683c4829e4c0779",
+      "context_scope": "verbatim excerpt of prior user message; target session not supplied",
+      "input_sha256": "3adde4f6fe734763a287b0456d3afe5036d868f8953561bbfdce36c056a2ef61"
+    },
+    {
+      "case": "04_persian_cat",
+      "reviewed_main_target": 14,
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "target_session_one_based": 7,
+      "before_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/before.json",
+      "before_snapshot_sha256": "af5011293ff1cfe108ffa9bc42df47d8d043d7de0ab3ce801847bdf67df6ad46",
+      "before_snapshot_index": 89,
+      "source_input_sha256": "475e4715dedf407422281d61fd2ba0da019b23e0cca52a650e127194e7f105b6",
+      "context_scope": "verbatim excerpt of prior user message; target session not supplied",
+      "input_sha256": "55adcb3d7e7ff40697e2f24d5f790d6240c7522ce0b742c1afeda117d764d2a9"
+    },
+    {
+      "case": "05_career_history",
+      "reviewed_main_target": 24,
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "target_session_one_based": 8,
+      "before_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+      "before_snapshot_sha256": "998a15655de73fefcc8e4c75dc3b2e4e9481cb2cc6a5e27d6f2455585a83e41a",
+      "before_snapshot_index": 3,
+      "source_input_sha256": "9d3b85eb467398b087c4fd06b2cf6873b885abb4f89db780e0a195754fec41e2",
+      "context_scope": "verbatim excerpt of prior user message; target session not supplied",
+      "input_sha256": "d2c207f2ce89bdb6addd3b373fd746b9280e519becdf0188c75a197162dc05bc"
+    }
+  ],
+  "scope": "read only existing snapshots and prior dialogue; no Mem0 calls or writes; no full dataset run"
+}

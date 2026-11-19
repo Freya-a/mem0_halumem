@@ -1,0 +1,43 @@
+{
+  "promotion": {
+    "baseline_relation": "possible_change",
+    "candidate_attributes": [
+      "title",
+      "employer"
+    ],
+    "comparisons": {
+      "title": "unknown",
+      "employer": "disjoint"
+    },
+    "missing_contains": {
+      "title": [
+        "old.valid.start",
+        "new.valid.start"
+      ]
+    }
+  },
+  "job_transition": {
+    "baseline_relation": "support",
+    "candidate_attributes": [
+      "job_search"
+    ],
+    "comparisons": {
+      "job_search": "unknown"
+    },
+    "missing_contains": {
+      "job_search": [
+        "old.valid.start",
+        "new.valid.start"
+      ]
+    }
+  },
+  "synthetic_wednesday_01": {
+    "baseline_relation": "possible_change",
+    "candidate_attributes": [],
+    "comparisons": {
+      "schedule": "overlap",
+      "monday": "disjoint",
+      "wednesday": "overlap"
+    }
+  }
+}

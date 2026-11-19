@@ -1,0 +1,111 @@
+{
+  "review_method": "本次助手对保存的新旧响应逐项初审；尚未经用户确认，不是自动语义评分，也未向 qwen-plus 提供本文件。",
+  "overall": "本次调整只在部分样本和字段上改善，未解决全部问题。多人物关系保留、前两条补充版本缩短；状态样本出现不确定主体却明确补 user 的矛盾。金毛候选保留旧语义问题并新增缺失 memory 引文的校验失败，不能计为有效拆分结果。",
+  "five_requested_checks": [
+    {"check": "朋友和同事是否保留", "outcome": "多人物样本由旧版遗漏改善为新版 raw 和补充版本均保留，并新增群体关系范围待确认。"},
+    {"check": "是否仍有不必要的上下文扩写", "outcome": "多人物和状态样本的额外评价及来源对照正文已去掉；金毛候选仍扩写地点、评价和目标解释，且第 2 条新增 companionship。"},
+    {"check": "对温顺印象深刻的关系是否保持", "outcome": "金毛新旧 raw 均保持；新旧补充版本均将 impressed 的特征转向 adaptability，因此该问题未解决。新版金毛仅为未通过校验的候选。"},
+    {"check": "supports 是否仍有无依据扩写", "outcome": "仍有。状态样本 memory 引文未明确主体却写成 explicitly states the user；金毛候选仍把开放体验与 wellness goals 对齐，并跨源推导职业功能。post-work recovery 字样消失不代表支持范围已合格。"},
+    {"check": "是否出现新的遗漏或语义变化", "outcome": "状态样本由旧版泛称 speaker 改成待确认却仍断言的 user，且不再列出旧版的 initial/now 时间锚点疑问。金毛第 2 条补充版本增加 companionship，四条候选全部漏掉 memory evidence，是新的程序拒绝原因。"}
+  ],
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "new_result_kind": "validated_result",
+      "summary": "关键关系得到保留，raw 不再从上下文填入用户受益人，补充正文去掉额外评价；supports 的个别明确确认表述仍偏强。",
+      "improvements": [
+        "旧 raw 只留人名，新 raw 与补充版本均保留 friends and colleagues，修复了已观察到的关系漏项。",
+        "新 raw 写 during a career transition，不再在 raw 中增补 the user's；用户归属留在补充版本。",
+        "补充版本去掉 invaluable 和 see things differently 两项原文没有的评价及效果，仅补人物关系和职业转变的归属。",
+        "新增三项模型待确认，包含具体支持形式、职业转变时间范围和朋友/同事这组关系的归属范围。"
+      ],
+      "remaining_or_new_issues": [
+        {"path": "$.facts[0].evidence[1].supports", "detail": "ctx-1 只直接写 my friends and colleagues 与 this transition，没有独立写出支持受益人或职业转变属于谁。supports 用 explicitly identifies themselves as the recipient、confirming the subject of the transition，强于单条引文的字面表达。ctx-2 的 I received/helped me 可以支持整体受益人补足，但不能使 ctx-1 单条引文变成明确确认。"}
+      ],
+      "fidelity_dimensions": {
+        "人物与关系": "三个人名和群体关系保留，未明确分配每个人属于朋友还是同事；模型主动把此范围标为待确认。",
+        "时间、条件、否定和情态": "provided 和 during 的过去行为及时间范围保留，无新日期、条件、否定或完成状态。",
+        "语气": "支持行为仍直接陈述，没有改成用户认为或用户感觉。",
+        "主语依据": "补充版本中的 user 受益人有 ctx-2 的 I received/helped me 以及同一旧生成会话的对应关系支持；raw 保留旧记忆自身范围。"
+      },
+      "pending_human_confirmations": [
+        "是否接受补充版本对职业转变受益人的关联，以及 supports 对 ctx-1 使用明确确认的语气。",
+        "朋友和同事是合并群体还是重叠身份，以及三人各自角色；当前输入不能逐人确认。",
+        "具体支持形式和职业转变时间范围，若下游确实需要这些信息，应继续保留未明。"
+      ]
+    },
+    {
+      "case_id": "case_2_time_state",
+      "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "new_result_kind": "validated_result",
+      "summary": "raw 的来源边界和补充篇幅改善，但上下文版本及 memory supports 明确填入 user，与模型自己的主体待确认项冲突；原始自述归属问题未解决。",
+      "improvements": [
+        "新 raw 保留省略主语，不再像旧版补入 The speaker。",
+        "第 2 条补充版本去掉 consistent with、此前原话和额外乐观态度，只保留核心命题及新增的 user 主语。",
+        "第 2 条 context supports 明确承认该引文没有表达 stress relief 或 now，部分收紧了支持范围。"
+      ],
+      "remaining_or_new_issues": [
+        {"path": "$.facts[0].contextualized_subfact / $.facts[1].contextualized_subfact", "detail": "两条均补 The user，但 pending_confirmations 又明确说主体未定、来源原句未直接覆盖相关命题。应将主体保持未定，而不是在正文先断言。旧版正文保留泛称 speaker，新版在此更肯定。"},
+        {"path": "$.facts[0].evidence[0].supports / $.facts[1].evidence[0].supports", "detail": "两段 memory supports 均称 The memory explicitly states the user...，而旧记忆文本没有写出 user 主语。这是新增的来源归属过度说明。"},
+        {"path": "$.facts[*].pending_confirmations", "detail": "旧版明确提出 initial 阶段和 now 的时间锚点疑问；新版待确认改为人物、偏好含义和 pets 范围，不再提出这两个时间问题。原文字面 initial/now 仍保留，没有新增错误日期，但不确定性覆盖减少。"},
+        {"path": "$.facts[0].pending_confirmations[0].reason", "detail": "将 Expressed... 称为 passive construction 不准确；这里是省略主语，并非被动语态。此项属于诊断措辞问题，不是新增旧事实。"}
+      ],
+      "fidelity_dimensions": {
+        "人物与原始说话人": "旧记忆没有明确主体；允许上下文只有 user 的乐观和情感支持发言，没有直接怀疑自述。模型能指出缺直接原句，却仍在补充版本确定为 user。",
+        "时间与状态": "initial、now、skepticism 和 sees 均保留；未声称怀疑已消失，未补日期，但两个时间锚点仍需人工追踪。",
+        "条件、否定和情态": "未改成已整合偏好或实际养犬。原文的 sees 属于原有态度表述，不算新加的用户认为。",
+        "旧助手回述限制": "已在旧报告发现的助手回述仍只保存在本地来源说明，没有新增到模型输入。因此只能检查模型是否谨慎处理缺少直接自述，不能要求模型识别未提供的那段助手发言。"
+      },
+      "pending_human_confirmations": [
+        "主体未定时补充版本断言 user，以及 memory supports 声称明确 user，是否应判为不可接受的归属变化。",
+        "最初怀疑的真实直接来源：当前允许上下文不能证明用户直接表达；原有助手回述也不单独证明此事。",
+        "initial 阶段与 now 的时间锚点；新版未主动列出，仍需人工保留。",
+        "preference 及 pets 的范围是否需要进一步澄清；不能把新增待确认解释当成已经出现的事实。"
+      ]
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "new_result_kind": "rejected_candidate_from_raw_content_only",
+      "summary": "四条候选 raw 基本覆盖旧文，但补充版本仍改变印象对象、加入 perceive 及额外细节；新增 companionship，并因四条都没有 memory evidence 被程序拒绝。",
+      "program_failure": {
+        "code": "missing_memory_evidence",
+        "path": "$.facts[0].evidence",
+        "all_four_candidate_facts_lack_memory_evidence": true,
+        "result_json_exists": false,
+        "offline_replay_reproduces_same_failure": true,
+        "response_repaired_or_retried": false
+      },
+      "improvements": [
+        "候选 raw 仍基本覆盖四个分号段；没有明显新增的 raw 命题。",
+        "post-work recovery 和 implied by 两个旧字样不再出现，但相应的扩写及推断问题没有因此解决。"
+      ],
+      "remaining_or_new_issues": [
+        {"path": "$.facts[*].evidence", "detail": "四条候选全部只有 context evidence，没有任何 memory evidence。旧版每条都有 memory 依据；本次是新的来源结构缺失。程序正确在第一条拒绝，不能给其余候选补引文后宣布通过。"},
+        {"path": "$.facts[0].contextualized_subfact", "detail": "仍加入朋友家地点，并将 impressed by gentle nature 改成 gentle creature with impressive adaptability。温顺仍被提及，但原来的印象关系没有保留；问题未解决。"},
+        {"path": "$.facts[1].contextualized_subfact", "detail": "原旧记忆只写 emotional support，新候选增加 emotional support and companionship。companionship 虽有旧上下文来源，但不是必要消歧；相比旧版补充版本，这是新的内容扩写。"},
+        {"path": "$.facts[2].contextualized_subfact", "detail": "仍写 because they perceive them as compatible，并添加 via emotional support, companionship, and contributing to life balance 的解释；直接理由主观化和目标推导未解决。"},
+        {"path": "$.facts[2].evidence[0].supports", "detail": "将开放体验、互动与 wellness goals 对齐，当前引文没有明确表达该目标归类，仍是支持范围扩写。"},
+        {"path": "$.facts[3].evidence[1].supports", "detail": "明确借用 memory_text 再把当前 context 引文解释为 occupational demands 的功能性应对，超出单条引文直接表达的内容；没有 memory evidence 也使这层跨源说明不可作为合格证据链。"},
+        {"path": "$.facts[3].contextualized_subfact", "detail": "仍增加 interactions 和背景性描述，而非仅消除 this preference 的指代。"}
+      ],
+      "fidelity_dimensions": {
+        "人物与主语": "The user 对互动行为有 ctx-1 的 I 和同一旧生成会话的关联依据；没有改成用户拥有朋友的狗，也没有加入新姓名。无法据此自动证明每个偏好或目标均有用户直接原话。",
+        "时间与情态": "recently、values、drawn to、optimistic 的主要字面范围仍在；没有增加固定日期、已经养犬或已经达到职业平衡。第 3 条新增的 perceive 仍改变理由的表达方式。",
+        "覆盖与粒度": "raw 未发现明确的新漏项，三个偏好和两个目标仍各自合并，粒度是否合适仍待确认。不能将候选 raw 覆盖视作整个响应合格。",
+        "条件与否定": "本样本没有显式条件或直接否定句，不能据此验证这类范围处理。"
+      },
+      "pending_human_confirmations": [
+        "温顺印象关系、perceive 改写和 wellness 目标推导仍未解决，是否据此认定本次提示词调整在该样本未达目标。",
+        "新增 companionship 及地点、评价、interactions 等有来源细节是否均应排除出最小补充版本。",
+        "supports 的目标归类和职业功能推断，以及直接原始说话人归属，仍需人工审查。"
+      ]
+    }
+  ],
+  "limitations": [
+    "每条仅一对新旧请求，存在未固定的服务端采样及模型版本因素；不能证明某项差异必然由提示词改动造成，也不能据此推断总体质量。",
+    "本轮恰好三个样本不含显式 if/unless 条件句或直接 not 否定句，不能证明这些能力已改善。",
+    "没有继续修改提示词或补发请求来消除本轮失败；所有不确定性均保留为待人工确认。"
+  ]
+}

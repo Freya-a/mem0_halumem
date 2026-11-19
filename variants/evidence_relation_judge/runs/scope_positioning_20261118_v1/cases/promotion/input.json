@@ -1,0 +1,238 @@
+{
+  "case_id": "promotion",
+  "source_kind": "真实原生 Mem0 更新前快照及原用户对话；声明与关系为本次手工整理",
+  "human_review_target_number": 10,
+  "review_record_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s004:m000",
+  "review_decision": "接受",
+  "review_method": "LLM辅助、用户确认",
+  "memory_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+  "snapshot_sha256": "f5b4a4668ced3f9afbc79d66f17710d66ff7e9d5bc7101f3d9ad45aa11a8bccf",
+  "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+  "request": {
+    "split_result": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "Works at Historical Productions Ltd. as a Director",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "字面记录的旧记忆；不代表直接用户原话。"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_002/input.json#/raw_dialogue/2/content [55:107]",
+        "text": "I work at Historical Productions Ltd. as a Director.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 14:42:35"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "new-0",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "speaker": "user",
+        "recorded_at": "Feb 01, 2026, 18:47:19",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content"
+      }
+    ],
+    "time_info": null
+  },
+  "manual_annotations": {
+    "old_units": [
+      {
+        "name": "employer",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I work at Historical Productions Ltd. as a Director."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "employer",
+          "evidence": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Historical Productions Ltd."
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      },
+      {
+        "name": "title",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I work at Historical Productions Ltd. as a Director."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "job_title",
+          "evidence": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director"
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      }
+    ],
+    "new_unit": {
+      "name": "manually_mapped_new",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ]
+      },
+      "attribute": {
+        "value": "job_title",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      }
+    }
+  },
+  "manual_relation_candidate": {
+    "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+    "fact_index": 1,
+    "old_subfact": "Works at Historical Productions Ltd. as a Director",
+    "relation": "possible_change",
+    "object": "user",
+    "attribute": "job_title",
+    "conditions": "unknown",
+    "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+    "old_quote": "Works at Historical Productions Ltd. as a Director",
+    "new_quote": {
+      "source_id": "new-0",
+      "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+    },
+    "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+    "confirmation_questions": []
+  },
+  "manual_relation_result": {
+    "status": "ok",
+    "results": [
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "fact_index": 1,
+        "old_subfact": "Works at Historical Productions Ltd. as a Director",
+        "status": "ok",
+        "raw_output": "{\"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"fact_index\": 1, \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\", \"relation\": \"possible_change\", \"object\": \"user\", \"attribute\": \"job_title\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\", \"old_quote\": \"Works at Historical Productions Ltd. as a Director\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+        "candidate": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "job_title",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "located_candidate": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "job_title",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "fragment_match": {
+          "raw": "Works at Historical Productions Ltd. as a Director",
+          "located": "Works at Historical Productions Ltd. as a Director",
+          "method": "exact",
+          "start": 0,
+          "end": 50
+        },
+        "validation": {
+          "passed": true,
+          "checks": [
+            "schema",
+            "relation",
+            "fact_identity",
+            "old_quote",
+            "new_quote",
+            "candidate_fragment"
+          ],
+          "semantic_correctness": "not_checked"
+        },
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "selection_limit": "此单个旧记忆并非全部旧知识；其他未输入事实不在本案判定范围。"
+}

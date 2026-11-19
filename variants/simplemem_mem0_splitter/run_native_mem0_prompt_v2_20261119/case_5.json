@@ -1,0 +1,136 @@
+{
+  "input": {
+    "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+    "memory_text": "Works at Blockchain Tech as a senior developer",
+    "source_context": null
+  },
+  "source": {
+    "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "before_file": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+    "snapshot_sha256": "db44e9b9a9a924dbd075823e270d0993c66e528663684c442cd4e1cb5b8d7cad",
+    "api_snapshot_pointer": "/api_snapshot/results (id lookup)",
+    "database_payload_cross_check": true,
+    "target_ids": [
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+    ],
+    "session_group_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003"
+  },
+  "request": {
+    "model": "qwen-plus-2025-12-01",
+    "prompt_version": "prompt_v2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a professional information extraction assistant, skilled at extracting structured, unambiguous information from conversations. You must output valid JSON format."
+      },
+      {
+        "role": "user",
+        "content": "Your task is to extract all valuable information from the following old memory and convert it into structured memory entries.\n\n[Old Memory ID]\n\"05afde13-35bd-4d26-bbae-6de427d58db1\"\n[Old Memory]\n\"Works at Blockchain Tech as a senior developer\"\n[Optional source context, only for necessary and supported disambiguation]\nnull\n\n[Requirements]\n1. Complete Coverage: Generate enough memory entries to ensure ALL information in the old memory is captured. Split independently assessable facts while preserving subjects, objects, relationships, conditions, reasons, negation and uncertainty. Do not overstate attributed opinions as objective facts.\n2. Lossless Information: raw_statement must express only what the old memory says; retain unresolved pronouns and relative time when necessary. contextualized_statement may resolve references only when reliably supported by source context; otherwise keep the ambiguity and add it to unresolved. Never use new evidence as a source.\n3. Each memory_quotes entry must be a nonempty exact contiguous verbatim substring of the old memory, with enough quotations to support the unit. Use multiple substrings where needed. If source context was needed for resolution include exact verbatim context_quotes; otherwise use [].\n4. entities include only explicit or reliably disambiguated entities. condition and valid_time are strings or null. Set valid_time to null unless the memory explicitly states a fact's valid time; a recording timestamp is not necessarily a fact's valid time. Never infer or invent an absolute time.\n5. Output a single valid JSON object without markdown or explanations. Every unit has a nonempty unique unit_id. List unresolved issues as strings. If a candidate cannot be supported, record the issue rather than inventing evidence.\n\n[Output Format]\n{\"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\", \"original_text\": \"Works at Blockchain Tech as a senior developer\", \"units\": [{\"unit_id\":\"u1\", \"raw_statement\":\"...\", \"contextualized_statement\":\"...\", \"memory_quotes\":[\"...\"], \"context_quotes\":[], \"entities\":[], \"condition\":null, \"valid_time\":null}], \"unresolved\":[]}\n\n[Additional evidence and scope checks — apply to every unit]\n- Quote directly and verbatim from the corresponding source: each quote must be an exact continuous substring, preserving every character, capitalization and punctuation. Never stitch separate words into one quote. When the subject, relation or antecedent is elsewhere, include multiple exact substrings or a longer exact substring. Before returning, check each quote against its source. If evidence is insufficient, report the issue in unresolved rather than inventing a quote.\n- Preserve attribution in BOTH raw_statement and contextualized_statement. A person's preference, opinion, stated reason, belief or assessment remains that person's stated view; do not convert it into an unattributed objective fact. Keep the source's uncertainty, negation, reasons and relations. Do not add a claim about what a person believes unless the original supports that attribution.\n- Make each unit understandable as an individually assessable relation with its necessary subject, predicate and object, retaining essential qualifiers and attribution. Do not output an isolated fragment without its relation. Avoid duplicate or fully subsumed units that repeat the same proposition with no distinct independently assessable content. Split independently assessable content when supported; do not merge unrelated propositions merely to reduce count, and do not split away required conditions or reasons.\n- condition is ONLY an explicit applicability condition or explicit hypothetical/concessive condition from the memory. A cause, explanation or motivation is not a condition: keep it in the statement and set condition to null if no condition is stated. Preserve hypothetical and concessive wording without turning it into a claim the condition occurred.\n- Resolve a reference only when it is reliably established by the memory or provided source context. If the identity or antecedent is unresolved, retain the ambiguous reference or a non-identifying description in BOTH statements, do not assert a specific identity for that reference in entities, and record the specific uncertainty once in unresolved. Do not assert a resolution and list the same resolution as uncertain. If a resolution needs source_context, quote its exact support in context_quotes; otherwise do not invent context.\n- valid_time is null unless a fact's valid time is explicitly stated. A recording timestamp alone is not its valid time. Check that unresolved contains only actual unresolved issues and is consistent with the units.\n"
+      }
+    ],
+    "temperature": 0.1,
+    "max_tokens": 4096,
+    "automatic_retries": 0
+  },
+  "call": {
+    "status": "response_received",
+    "attempts": 1,
+    "request_transmitted": true,
+    "model_response_received": true,
+    "elapsed_seconds": 6.588,
+    "returned_model": "qwen-plus-2025-12-01",
+    "finish_reason": "stop"
+  },
+  "raw_response": "{\n  \"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n  \"original_text\": \"Works at Blockchain Tech as a senior developer\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"contextualized_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"memory_quotes\": [\"Works at Blockchain Tech as a senior developer\"],\n      \"context_quotes\": [],\n      \"entities\": [\n        {\n          \"type\": \"organization\",\n          \"name\": \"Blockchain Tech\",\n          \"disambiguation_support\": \"explicit name in memory\"\n        },\n        {\n          \"type\": \"job_title\",\n          \"name\": \"senior developer\",\n          \"disambiguation_support\": \"explicit title in memory\"\n        }\n      ],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.\",\n    \"No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact).\"\n  ]\n}",
+  "provider_response": {
+    "id": "chatcmpl-2c01ef8a-2aaa-925a-978f-68c880a97100",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n  \"original_text\": \"Works at Blockchain Tech as a senior developer\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"contextualized_statement\": \"Works at Blockchain Tech as a senior developer\",\n      \"memory_quotes\": [\"Works at Blockchain Tech as a senior developer\"],\n      \"context_quotes\": [],\n      \"entities\": [\n        {\n          \"type\": \"organization\",\n          \"name\": \"Blockchain Tech\",\n          \"disambiguation_support\": \"explicit name in memory\"\n        },\n        {\n          \"type\": \"job_title\",\n          \"name\": \"senior developer\",\n          \"disambiguation_support\": \"explicit title in memory\"\n        }\n      ],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.\",\n    \"No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact).\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1795070585,
+    "model": "qwen-plus-2025-12-01",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "prompt_tokens": 964,
+      "total_tokens": 1249,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    }
+  },
+  "validation": {
+    "status": "failed",
+    "parsed": {
+      "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "original_text": "Works at Blockchain Tech as a senior developer",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Works at Blockchain Tech as a senior developer",
+          "contextualized_statement": "Works at Blockchain Tech as a senior developer",
+          "memory_quotes": [
+            "Works at Blockchain Tech as a senior developer"
+          ],
+          "context_quotes": [],
+          "entities": [
+            {
+              "type": "organization",
+              "name": "Blockchain Tech",
+              "disambiguation_support": "explicit name in memory"
+            },
+            {
+              "type": "job_title",
+              "name": "senior developer",
+              "disambiguation_support": "explicit title in memory"
+            }
+          ],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "The subject (who 'works') is not explicitly named — pronoun or referent is missing; identity of the person is unresolved.",
+        "No temporal scope (e.g., current, past, future) is specified — tense is ambiguous (present habitual vs. present continuous vs. generic fact)."
+      ]
+    },
+    "errors": [
+      "units[0].entities must be a list of nonempty strings"
+    ],
+    "warnings": [
+      "unresolved issues reported by model"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            46
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": []
+  }
+}

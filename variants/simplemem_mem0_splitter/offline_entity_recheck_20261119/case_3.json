@@ -1,0 +1,115 @@
+{
+  "source_file": "variants/simplemem_mem0_splitter/run_native_mem0_prompt_v2_20261119/case_3.json",
+  "source_sha256": "3e5311d3d7ce80dda92c74279ab3119420b4804697f584c5d4c1194d36930293",
+  "input": {
+    "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+    "memory_text": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+    "source_context": null
+  },
+  "raw_response": "{\n  \"memory_id\": \"8602da08-fefc-4875-ad50-dba104642365\",\n  \"original_text\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\",\n      \"contextualized_statement\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\",\n      \"memory_quotes\": [\"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": []\n}",
+  "previous_validation": {
+    "status": "passed",
+    "parsed": {
+      "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+      "original_text": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+          "contextualized_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+          "memory_quotes": [
+            "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": []
+    },
+    "errors": [],
+    "warnings": [],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            100
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        "contextualized_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        "memory_quotes": [
+          "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ]
+  },
+  "rechecked_validation": {
+    "status": "passed",
+    "parsed": {
+      "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+      "original_text": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+          "contextualized_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+          "memory_quotes": [
+            "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": []
+    },
+    "errors": [],
+    "warnings": [],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            100
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        "contextualized_statement": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        "memory_quotes": [
+          "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ],
+    "entity_normalizations": []
+  }
+}

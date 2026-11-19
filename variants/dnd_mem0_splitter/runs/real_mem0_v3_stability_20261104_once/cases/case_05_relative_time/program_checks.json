@@ -1,0 +1,66 @@
+{
+  "case_id": "case_05_relative_time",
+  "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+  "program_status": "passed",
+  "model": "qwen-plus",
+  "returned_model": "qwen-plus",
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2482,
+    "completion_tokens": 355,
+    "total_tokens": 2837
+  },
+  "error": null,
+  "existing_validator_replay_matches": true,
+  "result_json_exists": true,
+  "validated_fact_count": 1,
+  "candidate_fact_count": 1,
+  "input_matches_selected_snapshot": true,
+  "input_bytes_match_frozen_preflight": true,
+  "prompt_matches_frozen_v3": true,
+  "per_fact_evidence_counts": [
+    {
+      "fact_index": 1,
+      "memory_evidence_count": 1,
+      "context_evidence_count": 1
+    }
+  ],
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 0,
+      "source_type": "memory",
+      "source_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "quote": "Recently promoted to lead director at Historical Productions Ltd",
+      "supports": "Old memory states that the user was recently promoted to lead director at Historical Productions Ltd.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        64
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+      "supports": "Confirms the promotion is the user's own, specifies first-person agency ('I got promoted'), and anchors 'recently' to the speaker's perspective; supports interpreting the memory as self-reported.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        92
+      ]
+    }
+  ],
+  "literal_quotes_matched": 2,
+  "literal_quotes_total": 2,
+  "quote_diagnostic_scope": "For an accepted case these are original-validator checks and independent read-only confirmation; for a rejected case these would be diagnostics only, not an override.",
+  "response_repaired_or_source_relabelled": false,
+  "new_real_model_calls_in_replay": 0,
+  "semantic_review": "初步判断，待人工确认；单独记录，不由程序自动判断。"
+}

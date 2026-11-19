@@ -1,0 +1,85 @@
+{
+  "case_id": "job_transition",
+  "origin": "human-reviewed development case; scope annotations manually assembled",
+  "baseline_path": "../runs/dev_scope_review_20261109_v1/job_transition_v2.json",
+  "experiment_path": "../runs/quote_provenance_20261110_v1/job_transition.json",
+  "old_units": [
+    {
+      "name": "job_search",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "old-1",
+            "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "transition_progress",
+        "evidence": [
+          {
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      },
+      "observation": {
+        "source_id": "old-1",
+        "value": "Feb 05, 2026, 17:13:15"
+      }
+    }
+  ],
+  "new_unit": {
+    "name": "new_role",
+    "subject": {
+      "value": "user",
+      "evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        }
+      ]
+    },
+    "attribute": {
+      "value": "transition_progress",
+      "evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        }
+      ]
+    },
+    "weekdays": {
+      "kind": "unknown"
+    },
+    "valid": {
+      "start": {
+        "kind": "unknown"
+      },
+      "end": {
+        "kind": "unknown"
+      }
+    },
+    "observation": {
+      "source_id": "dialogue-0",
+      "value": "Mar 01, 2026, 07:04:00"
+    }
+  },
+  "limits": [
+    "Transition date missing; source observation is not validity start.",
+    "The baseline support label alone does not establish identical phase or authorize a scope change.",
+    "Common issue and phase link are manual annotations requiring semantic review."
+  ]
+}

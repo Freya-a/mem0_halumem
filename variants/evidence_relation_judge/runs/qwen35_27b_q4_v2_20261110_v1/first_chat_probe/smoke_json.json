@@ -1,0 +1,59 @@
+{
+  "request": {
+    "model": "local-qwen35",
+    "messages": [
+      {
+        "role": "system",
+        "content": "只输出一个 JSON 对象，不要 Markdown。"
+      },
+      {
+        "role": "user",
+        "content": "输出一个对象，字段 ok 为 true。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 256,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "raw_http_response": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"<think>\\n\\n</think>\\n\\n{\\\"ok\\\":true}\"}}],\"created\":1794295978,\"model\":\"local-qwen35\",\"system_fingerprint\":\"b1-78ffbaa\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":6,\"prompt_tokens\":37,\"total_tokens\":43,\"prompt_tokens_details\":{\"cached_tokens\":0}},\"id\":\"chatcmpl-Rpt9kZYI0EQ2jOvjMksQov4pH75sVZry\",\"timings\":{\"cache_n\":0,\"prompt_n\":37,\"prompt_ms\":236.516,\"prompt_per_token_ms\":6.392324324324324,\"prompt_per_second\":156.4376194422365,\"predicted_n\":6,\"predicted_ms\":136.343,\"predicted_per_token_ms\":27.2686,\"predicted_per_second\":36.67221639541451}}",
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "<think>\n\n</think>\n\n{\"ok\":true}"
+        }
+      }
+    ],
+    "created": 1794295978,
+    "model": "local-qwen35",
+    "system_fingerprint": "b1-78ffbaa",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 6,
+      "prompt_tokens": 37,
+      "total_tokens": 43,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "id": "chatcmpl-Rpt9kZYI0EQ2jOvjMksQov4pH75sVZry",
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 37,
+      "prompt_ms": 236.516,
+      "prompt_per_token_ms": 6.392324324324324,
+      "prompt_per_second": 156.4376194422365,
+      "predicted_n": 6,
+      "predicted_ms": 136.343,
+      "predicted_per_token_ms": 27.2686,
+      "predicted_per_second": 36.67221639541451
+    }
+  },
+  "elapsed_seconds": 0.432
+}

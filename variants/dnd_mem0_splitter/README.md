@@ -1,5 +1,11 @@
 # 独立旧记忆事实拆分器：模拟初版
 
+## 后续实验固定基线：v9
+
+后续拆分实验使用 [`prompt_versions/v9_local_update/v9_splitter.py`](prompt_versions/v9_local_update/v9_splitter.py) 和同目录的 `prompt.txt`。固定文件的 SHA-256 清单见 [`v9_baseline.sha256`](v9_baseline.sha256)，可在本目录执行 `sha256sum -c v9_baseline.sha256` 检查。基线版本不会自动切换到 v10。
+
+真实模型调用方式、配置范围和语义限制见 [v9 README](prompt_versions/v9_local_update/README.md)。v9 的结果仍是待审核候选，不直接用于自动范围判断或写入 Mem0。下文描述的是保留的**模拟初版**，不是 v9 实验入口；旧的 `run_real.py` 仍使用 `DESIGN.md` 的早期提示词，也不是 v9 入口。
+
 Python 3.10+，仅使用标准库。当前环境验证版本为 Python 3.12.7。没有真实模型客户端、Mem0 客户端或 API 密钥读取逻辑。
 
 本版验证“输入 → 手写候选响应 → 校验 → 输出”的接口流程，**不会自动从任意文本生成事实**。全部示例为手写自拟数据，不是模型运行结果；示例 ID 不是真实 Mem0 ID。

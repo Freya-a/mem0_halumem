@@ -1,0 +1,353 @@
+{
+  "status": "needs_review",
+  "request": {
+    "split_result": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "old-context-1",
+        "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+        "text": "I work at Historical Productions Ltd. as a Director.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 14:42:35"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "speaker": "user",
+        "recorded_at": "Feb 01, 2026, 18:47:19"
+      }
+    ],
+    "time_info": null
+  },
+  "relation_result": {
+    "status": "ok",
+    "results": [
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "fact_index": 1,
+        "old_subfact": "Works at Historical Productions Ltd. as a Director",
+        "status": "ok",
+        "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+        "candidate": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "relation": "possible_change",
+          "object": "User",
+          "attribute": "position",
+          "conditions": "at Historical Productions Ltd.",
+          "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          },
+          "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+          "confirmation_questions": [
+            "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+            "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+          ]
+        },
+        "located_candidate": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "relation": "possible_change",
+          "object": "User",
+          "attribute": "position",
+          "conditions": "at Historical Productions Ltd.",
+          "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          },
+          "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+          "confirmation_questions": [
+            "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+            "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+          ]
+        },
+        "fragment_match": {
+          "raw": "Works at Historical Productions Ltd. as a Director",
+          "located": "Works at Historical Productions Ltd. as a Director",
+          "method": "exact",
+          "start": 0,
+          "end": 50
+        },
+        "validation": {
+          "passed": true,
+          "checks": [
+            "schema",
+            "relation",
+            "fact_identity",
+            "old_quote",
+            "new_quote",
+            "candidate_fragment"
+          ],
+          "semantic_correctness": "not_checked"
+        },
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "results": [
+    {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "fact_index": 1,
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "memory_sha256": "a58936748e09290112132737c6bc71c18974e24f26031e37db0951793a79374f",
+      "old_fact": {
+        "fact_index": 1,
+        "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+        "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "quote": "Works at Historical Productions Ltd. as a Director",
+            "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+          },
+          {
+            "source_type": "context",
+            "source_id": "old-context-1",
+            "quote": "I work at Historical Productions Ltd. as a Director.",
+            "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+          }
+        ],
+        "pending_confirmations": []
+      },
+      "status": "needs_review",
+      "upstream": {
+        "full_row": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "status": "ok",
+          "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+          "candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "User",
+            "attribute": "position",
+            "conditions": "at Historical Productions Ltd.",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+            "confirmation_questions": [
+              "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+              "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+            ]
+          },
+          "located_candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "User",
+            "attribute": "position",
+            "conditions": "at Historical Productions Ltd.",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+            "confirmation_questions": [
+              "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+              "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+            ]
+          },
+          "fragment_match": {
+            "raw": "Works at Historical Productions Ltd. as a Director",
+            "located": "Works at Historical Productions Ltd. as a Director",
+            "method": "exact",
+            "start": 0,
+            "end": 50
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        },
+        "semantic_correctness": "not_checked",
+        "errors": []
+      },
+      "time": {
+        "valid_start": {
+          "state": "unknown"
+        },
+        "valid_end": {
+          "state": "unknown"
+        },
+        "time_info_raw": null,
+        "recorded_times": [
+          {
+            "kind": "recorded",
+            "source_id": "old-context-1",
+            "value": "Sep 05, 2025, 14:42:35",
+            "validity_effect": "none"
+          },
+          {
+            "kind": "recorded",
+            "source_id": "dialogue-0",
+            "value": "Feb 01, 2026, 18:47:19",
+            "validity_effect": "none"
+          }
+        ],
+        "expressions": [
+          {
+            "source_id": "dialogue-0",
+            "quote": "recently",
+            "resolution": "unresolved",
+            "reason": "no validated event-time anchor"
+          }
+        ],
+        "period_candidates": {
+          "old": [],
+          "new": []
+        },
+        "errors": [],
+        "interval_relation": "unknown"
+      },
+      "boundary": {
+        "kind": "unknown",
+        "reason": "no validated explicit validity boundary"
+      },
+      "relation": {
+        "classification": "unknown",
+        "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+        "upstream_candidate": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "relation": "possible_change",
+          "object": "User",
+          "attribute": "position",
+          "conditions": "at Historical Productions Ltd.",
+          "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          },
+          "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+          "confirmation_questions": [
+            "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+            "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+          ]
+        }
+      },
+      "modifications": [],
+      "protected": [
+        {
+          "text": "Works at Historical Productions Ltd. as a Director",
+          "reason": "scope and semantic impact not verified; protect complete fact",
+          "evidence_refs": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ]
+        }
+      ],
+      "pending": [
+        {
+          "code": "semantic_scope_unverified",
+          "reason": "v2 label and fragment are candidates only"
+        },
+        {
+          "code": "upstream_question_unverified",
+          "question": "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?"
+        },
+        {
+          "code": "upstream_question_unverified",
+          "question": "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+        }
+      ],
+      "additions": [
+        {
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "kind": "raw_evidence_candidate",
+          "dedupe": "unchecked",
+          "semantic_correctness": "not_checked"
+        }
+      ],
+      "nli": {
+        "status": "disabled"
+      },
+      "extraction": {
+        "status": "not_called",
+        "reason": "disabled or upstream failure"
+      },
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      },
+      "fragment_match_rechecked": {
+        "raw": "Works at Historical Productions Ltd. as a Director",
+        "located": "Works at Historical Productions Ltd. as a Director",
+        "method": "exact",
+        "start": 0,
+        "end": 50
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-11-05T11:11:44+08:00",
+  "scope_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run",
+  "scope_source_config": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/run_config.json",
+  "scope_source_config_sha256": "27578acacb7d48fd4f15d2284f16c06a6c27a98fb6fd7ed1d161593e1c650c8a",
+  "prior_scope_calls": 6,
+  "new_sdk_attempts": 0,
+  "new_retries": 0,
+  "splitter_prompt": {
+    "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/prompt_versions/v4_boundaries_20261104/prompt.txt",
+    "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+  },
+  "combined_code_sha256": "e0fbd746e0c8e930c85bdec2edd80dc586015c8bc997d5114cc24db2fdee1cb8",
+  "v2_code_sha256": "cf9ab20082b3229c70144355342e28b2991f912319e94f1858e8ffebf4182fcf",
+  "scope_code_sha256": "cffa0e1c3589579b6de5044d7bf6680ad8aae40749c178db84484a64c61ff8d2",
+  "originals": {
+    "promotion": {
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/model_input.json": "5c41404e7820c923eb5074df4f2c1d62bfbdd557d7c84a36218324a749b0ce85",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/split_result.json": "74c200bcf8c1fca50e8d6f3198d3e2cd9b829c81af8bc1e10033f1ff3d4b23cc",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/scope_result.json": "7b557af0189ee896a169eaafa36bd85b4b27e9c64c1d91ec08310ba82d6080de",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/source_provenance.json": "51d43843dc67a679c1f0d75c5949d89dc0fddbf60d3ff2bf6815f1f3b59f8428"
+    },
+    "skydiving": {
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/skydiving/model_input.json": "9d3890d135ded38f45f9ba8bbaf6a336962cb3e7d98c0fc9e8098b2d5083b233",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/skydiving/split_result.json": "d2c0b681fe2be5ae3648d935fd8c2b64c371308adab316e3350ccc3decf5cc2b",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/skydiving/scope_result.json": "8ee33876d11bb5e1d1829db1e6efeaaf51d9bb1e7e6e20a0af093e9de42c59cb",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/skydiving/source_provenance.json": "4a6c497137010b6e8c0685c050e825688d36e3abab525e06856778cb8dab1b5b"
+    },
+    "career_history": {
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/career_history/model_input.json": "2d4c4c1bc91abb23020374f43feb9a7b7c17c4d7281f81102312e3ca88bb62f4",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/career_history/split_result.json": "8289078012bdf51d861e55589b696df64f0e1335ee00228fbeb4a9f5cd372005",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/career_history/scope_result.json": "5df8d6a3c7e18a7b1f2b16d360594b1402afb778103dfe6f6d86806841dce12f",
+      "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/career_history/source_provenance.json": "c6c555a74cac60faf35618fb7df6cb3dae34ad055dc75ee78ae979c012fc8234"
+    }
+  },
+  "case_temporal_status": {
+    "promotion": [
+      "time_missing"
+    ],
+    "skydiving": [
+      "multiple_sources"
+    ],
+    "career_history": [
+      "evidence_insufficient"
+    ]
+  },
+  "time_accounting": {
+    "cases_with_usable_event_time": 0,
+    "cases_without_usable_event_time": 3,
+    "cases_with_judgment_failure": 0
+  },
+  "note": "All three inputs have time_info null. Counts overlap in general; this run has no failures."
+}

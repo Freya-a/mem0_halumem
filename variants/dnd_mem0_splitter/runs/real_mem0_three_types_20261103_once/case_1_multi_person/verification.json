@@ -1,0 +1,75 @@
+{
+  "case_id": "case_1_multi_person",
+  "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+  "execution_exit_code": 0,
+  "model": "qwen-plus",
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1350,
+    "completion_tokens": 473,
+    "total_tokens": 1823
+  },
+  "strict_json_schema_passed": true,
+  "input_matches_preflight": true,
+  "memory_id_and_original_text_preserved": true,
+  "continuous_fact_indices": true,
+  "all_fact_and_memory_evidence_ids_match": true,
+  "all_context_ids_exist": true,
+  "each_fact_has_memory_evidence": true,
+  "literal_quotes_passed": 3,
+  "literal_quotes_total": 3,
+  "fact_count": 1,
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "quote": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+      "supports": "Core proposition: Susan, Daniel, and Joshua provided instrumental support during career transition.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        105
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "Absolutely, my friends and colleagues were instrumental in this transition. Their support was invaluable.",
+      "supports": "Confirms 'instrumental' nature of support and characterizes it as 'invaluable'; establishes 'this transition' refers to the user's career transition.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        105
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index": 2,
+      "source_type": "context",
+      "source_id": "ctx-2",
+      "quote": "The support I received was incredible. Susan, Daniel, and Joshua really helped me see things differently.",
+      "supports": "Names Susan, Daniel, and Joshua as providers of 'incredible' support and specifies a qualitative effect: helping the user 'see things differently'.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        105
+      ]
+    }
+  ],
+  "offline_revalidation_matches_saved_result": true,
+  "offline_backend": "MockBackend only; no real model request",
+  "original_prompt_matches": true,
+  "model_pending_confirmations": [
+    {
+      "fact_index": 1,
+      "items": []
+    }
+  ],
+  "validation_limits": "Checks structure, IDs and literal quote presence; does not prove semantic coverage, correct attribution, entailment, necessity of contextual additions or preservation of tone."
+}

@@ -1,0 +1,1540 @@
+{
+  "promotion": {
+    "structured": {
+      "status": "needs_review",
+      "mode": "structured",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "located_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "fragment_match": {
+              "raw": "Works at Historical Productions Ltd. as a Director",
+              "located": "Works at Historical Productions Ltd. as a Director",
+              "method": "exact",
+              "start": 0,
+              "end": 50
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": "job_title",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "修改条件未满足；暂时保留该旧范围供复核，不把未知端点填成确定日期。",
+          "code": "hold_provisional",
+          "old_fragment": "Director"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": "employer",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "结构化候选范围与新属性或条件不相交；保留该旧范围，语义映射仍需复核。",
+          "code": "disjoint_preserve",
+          "old_fragment": "Historical Productions Ltd."
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": "job_title",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+          "code": "possible_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": "job_title",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "无法确定完整交集或其有效边界，不能生成完整修改范围。",
+          "code": "boundary_unknown",
+          "missing": [
+            "old.weekdays",
+            "new.weekdays",
+            "old.valid.start",
+            "old.valid.end",
+            "new.valid.start",
+            "new.valid.end"
+          ],
+          "overlap_status": "unknown"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": "job_title",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "../runs/controlled_v2_20261106/promotion_run.json"
+    },
+    "baseline_only": {
+      "status": "needs_review",
+      "mode": "baseline_only",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\",\n  \"relation\": \"possible_change\",\n  \"object\": \"User\",\n  \"attribute\": \"position\",\n  \"conditions\": \"at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\",\n  \"old_quote\": \"Works at Historical Productions Ltd. as a Director\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n  },\n  \"reason\": \"The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.\",\n  \"confirmation_questions\": [\n    \"Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?\",\n    \"Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?\"\n  ]\n}",
+            "candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "located_candidate": {
+              "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "fact_index": 1,
+              "old_subfact": "Works at Historical Productions Ltd. as a Director",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "position",
+              "conditions": "at Historical Productions Ltd.",
+              "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+              "old_quote": "Works at Historical Productions Ltd. as a Director",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              },
+              "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+              "confirmation_questions": [
+                "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+                "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+              ]
+            },
+            "fragment_match": {
+              "raw": "Works at Historical Productions Ltd. as a Director",
+              "located": "Works at Historical Productions Ltd. as a Director",
+              "method": "exact",
+              "start": 0,
+              "end": 50
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "未能安全划分范围，暂时保护原文以待复核；不声称原状态无限期有效。",
+          "code": "hold_provisional",
+          "old_fragment": "Works at Historical Productions Ltd. as a Director"
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+          "code": "possible_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "组件一的自由文本属性和候选片段未提供经过验证的属性单元及条件边界。",
+          "code": "attribute_unlocalized",
+          "upstream_attribute": "position",
+          "candidate_fragment": "Works at Historical Productions Ltd. as a Director"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "有效时间和条件范围未由带来源的结构化输入确定；记录时间不得作为生效时间。",
+          "code": "boundary_unknown"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1
+          },
+          "old_quote": "Works at Historical Productions Ltd. as a Director",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "../runs/controlled_v2_20261106/promotion_run.json"
+    }
+  },
+  "synthetic_wednesday_01": {
+    "structured": {
+      "status": "needs_review",
+      "mode": "structured",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1,
+            "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+            "status": "ok",
+            "raw_output": "{\"memory_id\": \"synthetic_wednesday_01\", \"fact_index\": 1, \"old_subfact\": \"From January 1, 2026 onward, I work from home on Mondays and Wednesdays.\", \"relation\": \"possible_change\", \"object\": \"User\", \"attribute\": \"work location\", \"conditions\": \"Wednesdays, starting December 1, 2026\", \"candidate_impact_fragment\": \"Wednesdays\", \"old_quote\": \"From January 1, 2026 onward, I work from home on Mondays and Wednesdays.\", \"new_quote\": {\"source_id\": \"new-1\", \"quote\": \"Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged.\"}, \"reason\": \"The Wednesday work location changes; Monday remains unchanged.\", \"confirmation_questions\": []}",
+            "candidate": {
+              "memory_id": "synthetic_wednesday_01",
+              "fact_index": 1,
+              "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "work location",
+              "conditions": "Wednesdays, starting December 1, 2026",
+              "candidate_impact_fragment": "Wednesdays",
+              "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+              },
+              "reason": "The Wednesday work location changes; Monday remains unchanged.",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic_wednesday_01",
+              "fact_index": 1,
+              "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "work location",
+              "conditions": "Wednesdays, starting December 1, 2026",
+              "candidate_impact_fragment": "Wednesdays",
+              "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+              },
+              "reason": "The Wednesday work location changes; Monday remains unchanged.",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "Wednesdays",
+              "located": "Wednesdays",
+              "method": "exact",
+              "start": 61,
+              "end": 71
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": "work_location",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "known",
+              "days": [
+                0
+              ],
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "Mondays and Wednesdays"
+                }
+              ]
+            },
+            "valid": {
+              "start": {
+                "kind": "known",
+                "value": "2026-01-01",
+                "evidence": [
+                  {
+                    "source_id": "synthetic_wednesday_01",
+                    "quote": "From January 1, 2026 onward"
+                  }
+                ]
+              },
+              "end": {
+                "kind": "unbounded",
+                "value": null,
+                "evidence": [
+                  {
+                    "source_id": "synthetic_wednesday_01",
+                    "quote": "onward"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "从旧范围减去确定的交集后，保留该不相交部分；日期端点按闭区间推导。",
+          "code": "residual_preserve",
+          "old_fragment": "work from home"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": "work_location",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "known",
+              "days": [
+                2
+              ],
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "Mondays and Wednesdays"
+                },
+                {
+                  "source_id": "new-1",
+                  "quote": "Wednesdays only"
+                }
+              ]
+            },
+            "valid": {
+              "start": {
+                "kind": "known",
+                "value": "2026-01-01",
+                "evidence": [
+                  {
+                    "source_id": "synthetic_wednesday_01",
+                    "quote": "From January 1, 2026 onward"
+                  }
+                ]
+              },
+              "end": {
+                "kind": "known",
+                "value": "2026-11-30",
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "Starting December 1, 2026 onward"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "从旧范围减去确定的交集后，保留该不相交部分；日期端点按闭区间推导。",
+          "code": "residual_preserve",
+          "old_fragment": "work from home"
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": "work_location",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "known",
+              "days": [
+                2
+              ],
+              "evidence": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Wednesdays only"
+                }
+              ]
+            },
+            "valid": {
+              "start": {
+                "kind": "known",
+                "value": "2026-12-01",
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "Starting December 1, 2026 onward"
+                  }
+                ]
+              },
+              "end": {
+                "kind": "unbounded",
+                "value": null,
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "onward"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+          "code": "possible_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": "work_location",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+                },
+                {
+                  "source_id": "new-1",
+                  "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "known",
+              "days": [
+                2
+              ],
+              "evidence": [
+                {
+                  "source_id": "synthetic_wednesday_01",
+                  "quote": "Mondays and Wednesdays"
+                },
+                {
+                  "source_id": "new-1",
+                  "quote": "Wednesdays only"
+                }
+              ]
+            },
+            "valid": {
+              "start": {
+                "kind": "known",
+                "value": "2026-12-01",
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "Starting December 1, 2026 onward"
+                  }
+                ]
+              },
+              "end": {
+                "kind": "unbounded",
+                "value": null,
+                "evidence": [
+                  {
+                    "source_id": "synthetic_wednesday_01",
+                    "quote": "onward"
+                  },
+                  {
+                    "source_id": "new-1",
+                    "quote": "onward"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "该相交范围可能受影响，但尚无明确纠正依据，不能修改。",
+          "code": "scope_overlap_unconfirmed"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": "work_location",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "known",
+              "days": [
+                2
+              ],
+              "evidence": [
+                {
+                  "source_id": "new-1",
+                  "quote": "Wednesdays only"
+                }
+              ]
+            },
+            "valid": {
+              "start": {
+                "kind": "known",
+                "value": "2026-12-01",
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "Starting December 1, 2026 onward"
+                  }
+                ]
+              },
+              "end": {
+                "kind": "unbounded",
+                "value": null,
+                "evidence": [
+                  {
+                    "source_id": "new-1",
+                    "quote": "onward"
+                  }
+                ]
+              }
+            }
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged.",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "cases/synthetic_wednesday_01.json:mock_backend"
+    },
+    "baseline_only": {
+      "status": "needs_review",
+      "mode": "baseline_only",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1,
+            "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+            "status": "ok",
+            "raw_output": "{\"memory_id\": \"synthetic_wednesday_01\", \"fact_index\": 1, \"old_subfact\": \"From January 1, 2026 onward, I work from home on Mondays and Wednesdays.\", \"relation\": \"possible_change\", \"object\": \"User\", \"attribute\": \"work location\", \"conditions\": \"Wednesdays, starting December 1, 2026\", \"candidate_impact_fragment\": \"Wednesdays\", \"old_quote\": \"From January 1, 2026 onward, I work from home on Mondays and Wednesdays.\", \"new_quote\": {\"source_id\": \"new-1\", \"quote\": \"Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged.\"}, \"reason\": \"The Wednesday work location changes; Monday remains unchanged.\", \"confirmation_questions\": []}",
+            "candidate": {
+              "memory_id": "synthetic_wednesday_01",
+              "fact_index": 1,
+              "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "work location",
+              "conditions": "Wednesdays, starting December 1, 2026",
+              "candidate_impact_fragment": "Wednesdays",
+              "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+              },
+              "reason": "The Wednesday work location changes; Monday remains unchanged.",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "synthetic_wednesday_01",
+              "fact_index": 1,
+              "old_subfact": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "relation": "possible_change",
+              "object": "User",
+              "attribute": "work location",
+              "conditions": "Wednesdays, starting December 1, 2026",
+              "candidate_impact_fragment": "Wednesdays",
+              "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+              "new_quote": {
+                "source_id": "new-1",
+                "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+              },
+              "reason": "The Wednesday work location changes; Monday remains unchanged.",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "Wednesdays",
+              "located": "Wednesdays",
+              "method": "exact",
+              "start": 61,
+              "end": 71
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "未能安全划分范围，暂时保护原文以待复核；不声称原状态无限期有效。",
+          "code": "hold_provisional",
+          "old_fragment": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays."
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+          "code": "possible_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "组件一的自由文本属性和候选片段未提供经过验证的属性单元及条件边界。",
+          "code": "attribute_unlocalized",
+          "upstream_attribute": "work location",
+          "candidate_fragment": "Wednesdays"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "有效时间和条件范围未由带来源的结构化输入确定；记录时间不得作为生效时间。",
+          "code": "boundary_unknown"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "synthetic_wednesday_01",
+            "fact_index": 1
+          },
+          "old_quote": "From January 1, 2026 onward, I work from home on Mondays and Wednesdays.",
+          "new_evidence": [
+            {
+              "source_id": "new-1",
+              "quote": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "Starting December 1, 2026 onward, I work from the office on Wednesdays only; my Monday arrangement remains unchanged.",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "cases/synthetic_wednesday_01.json:mock_backend"
+    }
+  },
+  "job_transition": {
+    "structured": {
+      "status": "needs_review",
+      "mode": "structured",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1,
+            "old_subfact": "Looking for a new job with better work-life balance",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e6ab178b-c0f9-4adb-bfb7-e4648617a950\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Looking for a new job with better work-life balance\",\n  \"relation\": \"support\",\n  \"object\": \"User\",\n  \"attribute\": \"looking for a new job with better work-life balance\",\n  \"conditions\": \"current role not supporting well-being\",\n  \"candidate_impact_fragment\": \"Looking for a new job with better work-life balance\",\n  \"old_quote\": \"Looking for a new job with better work-life balance\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.\"\n  },\n  \"reason\": \"新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。\",\n  \"confirmation_questions\": []\n}",
+            "candidate": {
+              "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "fact_index": 1,
+              "old_subfact": "Looking for a new job with better work-life balance",
+              "relation": "support",
+              "object": "User",
+              "attribute": "looking for a new job with better work-life balance",
+              "conditions": "current role not supporting well-being",
+              "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+              },
+              "reason": "新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "fact_index": 1,
+              "old_subfact": "Looking for a new job with better work-life balance",
+              "relation": "support",
+              "object": "User",
+              "attribute": "looking for a new job with better work-life balance",
+              "conditions": "current role not supporting well-being",
+              "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+              },
+              "reason": "新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "Looking for a new job with better work-life balance",
+              "located": "Looking for a new job with better work-life balance",
+              "method": "exact",
+              "start": 0,
+              "end": 51
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": "transition_progress",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "old-1",
+                  "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "修改条件未满足；暂时保留该旧范围供复核，不把未知端点填成确定日期。",
+          "code": "hold_provisional",
+          "old_fragment": "Looking for a new job with better work-life balance"
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": "transition_progress",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "support 只表示上游的支持候选，不能证明同一状态持续或触发修改；新旧阶段仍待复核。",
+          "code": "support_not_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": "transition_progress",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "old-1",
+                  "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "无法确定完整交集或其有效边界，不能生成完整修改范围。",
+          "code": "boundary_unknown",
+          "missing": [
+            "old.weekdays",
+            "new.weekdays",
+            "old.valid.start",
+            "old.valid.end",
+            "new.valid.start",
+            "new.valid.end"
+          ],
+          "overlap_status": "unknown"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": "transition_progress",
+          "conditions": {
+            "subject": {
+              "value": "user",
+              "evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                }
+              ]
+            },
+            "weekdays": {
+              "kind": "unknown",
+              "days": [],
+              "evidence": []
+            },
+            "valid": {
+              "start": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              },
+              "end": {
+                "kind": "unknown",
+                "value": null,
+                "evidence": []
+              }
+            }
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "../runs/dev_scope_review_20261109_v1/job_transition_v2.json"
+    },
+    "baseline_only": {
+      "status": "needs_review",
+      "mode": "baseline_only",
+      "upstream_original": {
+        "status": "ok",
+        "results": [
+          {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1,
+            "old_subfact": "Looking for a new job with better work-life balance",
+            "status": "ok",
+            "raw_output": "{\n  \"memory_id\": \"e6ab178b-c0f9-4adb-bfb7-e4648617a950\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Looking for a new job with better work-life balance\",\n  \"relation\": \"support\",\n  \"object\": \"User\",\n  \"attribute\": \"looking for a new job with better work-life balance\",\n  \"conditions\": \"current role not supporting well-being\",\n  \"candidate_impact_fragment\": \"Looking for a new job with better work-life balance\",\n  \"old_quote\": \"Looking for a new job with better work-life balance\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.\"\n  },\n  \"reason\": \"新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。\",\n  \"confirmation_questions\": []\n}",
+            "candidate": {
+              "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "fact_index": 1,
+              "old_subfact": "Looking for a new job with better work-life balance",
+              "relation": "support",
+              "object": "User",
+              "attribute": "looking for a new job with better work-life balance",
+              "conditions": "current role not supporting well-being",
+              "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+              },
+              "reason": "新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。",
+              "confirmation_questions": []
+            },
+            "located_candidate": {
+              "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "fact_index": 1,
+              "old_subfact": "Looking for a new job with better work-life balance",
+              "relation": "support",
+              "object": "User",
+              "attribute": "looking for a new job with better work-life balance",
+              "conditions": "current role not supporting well-being",
+              "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": {
+                "source_id": "dialogue-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+              },
+              "reason": "新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。",
+              "confirmation_questions": []
+            },
+            "fragment_match": {
+              "raw": "Looking for a new job with better work-life balance",
+              "located": "Looking for a new job with better work-life balance",
+              "method": "exact",
+              "start": 0,
+              "end": 51
+            },
+            "validation": {
+              "passed": true,
+              "checks": [
+                "schema",
+                "relation",
+                "fact_identity",
+                "old_quote",
+                "new_quote",
+                "candidate_fragment"
+              ],
+              "semantic_correctness": "not_checked"
+            },
+            "errors": []
+          }
+        ],
+        "errors": []
+      },
+      "modify": [],
+      "preserve": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "未能安全划分范围，暂时保护原文以待复核；不声称原状态无限期有效。",
+          "code": "hold_provisional",
+          "old_fragment": "Looking for a new job with better work-life balance"
+        }
+      ],
+      "uncertain": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "support 只表示上游的支持候选，不能证明同一状态持续或触发修改；新旧阶段仍待复核。",
+          "code": "support_not_change"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "组件一的自由文本属性和候选片段未提供经过验证的属性单元及条件边界。",
+          "code": "attribute_unlocalized",
+          "upstream_attribute": "looking for a new job with better work-life balance",
+          "candidate_fragment": "Looking for a new job with better work-life balance"
+        },
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "有效时间和条件范围未由带来源的结构化输入确定；记录时间不得作为生效时间。",
+          "code": "boundary_unknown"
+        }
+      ],
+      "add": [
+        {
+          "old_fact_id": {
+            "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "fact_index": 1
+          },
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_evidence": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "attribute": null,
+          "conditions": {
+            "status": "unknown"
+          },
+          "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+          "text": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+          "code": "raw_evidence_candidate"
+        }
+      ],
+      "errors": [],
+      "upstream_source": "../runs/dev_scope_review_20261109_v1/job_transition_v2.json"
+    }
+  }
+}

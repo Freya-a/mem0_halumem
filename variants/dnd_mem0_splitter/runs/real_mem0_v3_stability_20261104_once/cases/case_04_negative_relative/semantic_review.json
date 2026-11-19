@@ -1,0 +1,108 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_04_negative_relative",
+    "categories": [
+      "否定偏好",
+      "原因与作用范围",
+      "亲属代词",
+      "上下文额外偏好"
+    ],
+    "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+    "old_memory": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 2,
+    "literal_quotes_total": 2,
+    "review_label": "初步判断，待人工确认",
+    "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 2 条 supports。未发现协议分类中的明确正文忠实度或支持范围错误；否定偏好、because 原因和 while 范围完整保留。亲属具体身份及支持持续范围仍未决，不能把这些不确定计为错误。",
+    "observed_issue_types": [],
+    "has_observed_issue": false,
+    "specific_uncertainty_types": [
+      "MODAL_OR_RELATION_SCOPE",
+      "RELATIVE_OR_OTHER_REFERENT"
+    ],
+    "has_specific_unresolved_item": true,
+    "model_pending_item_count": 2,
+    "pending_human_confirmations": [
+      {
+        "item": "their relative 的具体身份",
+        "reason": "初步判断，待人工确认：输入没有姓名、亲属类别或其他可唯一定位信息；保持原泛称，人工确认前不补具体关系。"
+      },
+      {
+        "item": "支持亲属的持续范围及原 pending 理由的条件措辞",
+        "reason": "初步判断，待人工确认：持续时间和频率确实未知。原输出把 because...while... 概括为 conditionally，措辞需人工校核：because 表原因，while 限定支持期间，不能改成额外 if 条件。正文已经保留原 because 与 while，未观察到条件或时间范围被改写，故不把理由措辞的不精确自动计为正文错误。"
+      }
+    ],
+    "independent_review_file": "reviews/group_02.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_04_negative_relative",
+      "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "uncertain_only",
+      "observed_issue_types": [],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "RELATIVE_OR_OTHER_REFERENT"
+      ],
+      "raw_subfact": "They do not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative.",
+      "contextualized_subfact": "The user does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+          "quote": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "supports": "Old memory states a dislike of alcoholic drinks grounded in the need to remain clear-headed and responsible during support of their relative."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative.",
+          "supports": "Confirms the speaker is the user (first-person 'I'), specifies the attitude ('don't like' / 'avoid'), and matches the causal reasoning and referent ('my relative')."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "The identity of 'their relative'",
+          "reason": "The memory and source context both use 'my relative' / 'their relative' without naming or specifying the relationship (e.g., parent, sibling, child) or identifying information."
+        },
+        {
+          "item": "Whether 'supporting their relative' refers to ongoing, current, or situational support",
+          "reason": "The memory and context state the reason conditionally ('because they need to stay... while supporting...') but provide no temporal scope (e.g., duration, frequency, or triggering circumstance) for the support role."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：保留不喜欢饮用 alcoholic drinks 的否定偏好，未改写为从不饮用、完全禁酒或从未饮酒；保留 because they need to stay clear-headed and responsible 的因果关系及 while supporting their relative 的作用范围。raw 的 They 可从同一旧记忆内部 they need/their relative 恢复，符合内部共享主语规则。contextualized 的 The user 有同主题 user 第一人称来源，未推定姓名、具体亲属关系、支持方式或持续时间。能量饮料、绿茶、汽水等额外偏好未扩入正文；也未把记录时间当事件时间。",
+      "semantic_findings": [],
+      "uncertainties": [
+        {
+          "type": "RELATIVE_OR_OTHER_REFERENT",
+          "reason": "初步判断，待人工确认：原 memory 的 their relative 与 user 原话的 my relative 仅能支持该主体的一位亲属，不能确定姓名或属于父母、兄弟姐妹、子女等哪种关系。输出保持泛称并记录待确认，没有补造亲属身份。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：while supporting 明确保留支持亲属时需清醒负责的范围，但没有给出支持的持续时间、频率或当前是否持续。此处是 because 因果和 while 范围，不是已明示的 if/unless 逻辑条件。输出正文未扩展为永久戒酒或无条件的支持状态。"
+        }
+      ],
+      "speaker_review": "初步判断，待人工确认：ctx-1 明确标记 speaker=user，且同一饮酒内容使用 I/my relative，可靠同主题第一人称关联支持 contextualized 将省略主体补为用户。memory 引文本身仅证明旧记忆记载；context supports 才说明用户来源。该例不是助手建议，也没有原始说话人越界；亲属本人并非饮酒偏好的主体。",
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：supports 准确说明旧记忆记载 dislike、清醒和负责的必要性及 supporting relative 时的理由范围；没有把否定偏好强化为永不饮用，也没有声称单凭 memory 确认用户原话或现实真实性。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：所引连续两句逐字包含 I don't like alcoholic drinks、I avoid、because I need to stay clear-headed and responsible、while supporting my relative；speaker=user 元数据与第一人称同主题内容共同支持用户来源、态度、原因和泛称亲属。avoid 虽未出现在旧记忆正文中，但直接在此 quote 内且仅在 supports 描述来源，不是正文新增戒酒事实。该项未确定亲属身份或支持时长。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    }
+  ]
+}

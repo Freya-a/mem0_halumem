@@ -1,0 +1,62 @@
+{
+  "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+  "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "raw_subfact": "Father was born on 1963-08-02",
+      "contextualized_subfact": "Father was born on 1963-08-02",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "Father was born on 1963-08-02",
+          "supports": "Old memory explicitly states Father's date of birth."
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "raw_subfact": "Father was a retired doctor",
+      "contextualized_subfact": "Father was a retired doctor",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "retired doctor",
+          "supports": "Old memory identifies Father's occupational status and profession."
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 3,
+      "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "raw_subfact": "Father inspired interest in health",
+      "contextualized_subfact": "Father inspired Martin's interest in health",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "retired doctor who inspired interest in health",
+          "supports": "Old memory states Father inspired 'interest in health', but does not specify whose interest."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "Retired doctor who inspired Martin's interest in health.",
+          "supports": "Context specifies 'Martin's interest' — this disambiguates the object of 'inspired interest in health' in the memory text."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Semantic subject of 'inspired interest in health' in the memory text",
+          "reason": "The memory text says 'inspired interest in health' without specifying whose interest; the context clarifies it was Martin's, but the memory itself leaves this unspecified."
+        }
+      ]
+    }
+  ]
+}

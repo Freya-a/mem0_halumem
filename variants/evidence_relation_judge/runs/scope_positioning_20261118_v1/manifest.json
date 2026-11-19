@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-11-18T10:57:53.247910",
+  "source_review": "diagnosis/medium_dev/human_review.csv",
+  "source_review_sha256": "3b882a112682b59bf6b1800e0ae88f6257221809a883641109694b77faf4066b",
+  "planner_sha256_before": "935a34a93848b60f5304105028c23c13ba575d42d164a54f36c2e6a1274d7ec3",
+  "description": "五个真实案例，所有输入中的声明切分、属性映射及关系标签由助手手工整理；非模型输出，非用户确认金标准。",
+  "cases": [
+    {
+      "case": "susan",
+      "target": 4,
+      "input": "cases/susan/input.json",
+      "output_before": "cases/susan/output_before.json",
+      "old_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "new_sources": [
+        "new-0",
+        "new-2"
+      ],
+      "relation": "supplement",
+      "modify": 0,
+      "preserve": 2,
+      "uncertain": 1,
+      "add": 1
+    },
+    {
+      "case": "promotion",
+      "target": 10,
+      "input": "cases/promotion/input.json",
+      "output_before": "cases/promotion/output_before.json",
+      "old_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "new_sources": [
+        "new-0"
+      ],
+      "relation": "possible_change",
+      "modify": 0,
+      "preserve": 2,
+      "uncertain": 2,
+      "add": 1
+    },
+    {
+      "case": "career_history",
+      "target": 24,
+      "input": "cases/career_history/input.json",
+      "output_before": "cases/career_history/output_before.json",
+      "old_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "new_sources": [
+        "new-0",
+        "new-2"
+      ],
+      "relation": "no_clear_impact",
+      "modify": 0,
+      "preserve": 2,
+      "uncertain": 1,
+      "add": 1
+    },
+    {
+      "case": "transition",
+      "target": 7,
+      "input": "cases/transition/input.json",
+      "output_before": "cases/transition/output_before.json",
+      "old_memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+      "new_sources": [
+        "new-0"
+      ],
+      "relation": "possible_change",
+      "modify": 0,
+      "preserve": 1,
+      "uncertain": 2,
+      "add": 1
+    },
+    {
+      "case": "skydiving",
+      "target": 8,
+      "input": "cases/skydiving/input.json",
+      "output_before": "cases/skydiving/output_before.json",
+      "old_memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "new_sources": [
+        "new-0",
+        "new-2",
+        "new-8"
+      ],
+      "relation": "possible_change",
+      "modify": 0,
+      "preserve": 3,
+      "uncertain": 1,
+      "add": 1
+    }
+  ]
+}

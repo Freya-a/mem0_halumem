@@ -1,0 +1,73 @@
+{
+  "started_at": "2026-11-10T16:18:42.954159+08:00",
+  "record": 3,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+    "memory_text": "Primary career motivation is improving healthcare access for underserved communities",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "raw_subfact": "Primary career motivation is improving healthcare access for underserved communities.",
+      "contextualized_subfact": "用户的主要职业动机是改善弱势社区的医疗可及性。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+          "quote": "Primary career motivation is improving healthcare access for underserved communities",
+          "supports": "旧记忆记载主要职业动机是改善弱势社区的医疗可及性；此引文本身未明确主体。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I want to ensure that my work supports my aspiration to improve healthcare access for underserved communities.",
+          "supports": "来源中说话者（user）以第一人称陈述该愿望，用于将旧记忆中的动机主体补足为“用户”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/3/dialogue/2/content",
+        "text": "Absolutely, I'm looking for a position that better aligns with my life goals and promotes personal well-being. I want to ensure that my work supports my aspiration to improve healthcare access for underserved communities.",
+        "speaker": "user",
+        "recorded_at": "Dec 15, 2025, 06:28:15"
+      },
+      {
+        "source_id": "ctx-2",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/3/dialogue/24/content",
+        "text": "Yes, discussing work-life balance during interviews is important to me. I want to ensure the role supports my health and goals.",
+        "speaker": "user",
+        "recorded_at": "Dec 15, 2025, 07:27:31"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-4",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/4/content",
+        "text": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.",
+        "speaker": "user",
+        "recorded_at": "Jan 10, 2026, 07:28:06"
+      },
+      {
+        "source_id": "dialogue-6",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/6/content",
+        "text": "I think a job that offers flexibility would help me manage both my professional responsibilities and personal well-being. Pets can definitely provide emotional support, which is valuable.",
+        "speaker": "user",
+        "recorded_at": "Jan 10, 2026, 07:30:21"
+      },
+      {
+        "source_id": "dialogue-12",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004 /sessions/5/dialogue/12/content",
+        "text": "I'm planning to network with professionals in the non-profit sector and explore opportunities that align with my goals. It's a step towards finding the right fit.",
+        "speaker": "user",
+        "recorded_at": "Jan 10, 2026, 07:43:11"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

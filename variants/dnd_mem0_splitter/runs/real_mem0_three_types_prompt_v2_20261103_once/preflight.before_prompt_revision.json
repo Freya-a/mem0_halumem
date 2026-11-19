@@ -1,0 +1,73 @@
+{
+  "baseline_run": "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once",
+  "old_prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f",
+  "max_real_calls_per_case": 1,
+  "max_real_calls_this_batch": 3,
+  "real_model_calls_so_far": 0,
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+      "input_sha256": "9b18d99b62cd95a079d85f4012215ea761de6a4a3d94220f74bd84162e48abac",
+      "prior_attempt": {
+        "model": "qwen-plus",
+        "generation_parameters": {},
+        "timeout_seconds": 180.0,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f"
+      },
+      "explicit_parameters_match_before_revision": true
+    },
+    {
+      "case_id": "case_2_time_state",
+      "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "input_sha256": "6b5b421a2b5467cd574d0ef2f389d35ab2b77aa1330ba84966d1ad514a4182a1",
+      "prior_attempt": {
+        "model": "qwen-plus",
+        "generation_parameters": {},
+        "timeout_seconds": 180.0,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f"
+      },
+      "explicit_parameters_match_before_revision": true
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "input_sha256": "11acd12a66f2af62f0bcb2ec586de7bb812ccbbcdd1b5f044c715a76e350c2a3",
+      "prior_attempt": {
+        "model": "qwen-plus",
+        "generation_parameters": {},
+        "timeout_seconds": 180.0,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f"
+      },
+      "explicit_parameters_match_before_revision": true
+    }
+  ],
+  "current_model": "qwen-plus",
+  "current_generation_parameters": {},
+  "current_timeout_seconds": 180.0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "same_user_input_bytes_and_source_context": true,
+  "recorded_versions_this_run": {
+    "openai": "1.100.2",
+    "httpx": "0.27.0"
+  },
+  "unconfirmed_controls": [
+    "Provider sampling defaults and concrete model revision were not recorded in the prior run.",
+    "Prior run did not record an endpoint fingerprint; configuration source path can be matched but historical endpoint equality cannot be independently proved.",
+    "Prior run did not save package-version locks."
+  ],
+  "allowed_existing_file_modifications": [
+    "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/DESIGN.md"
+  ],
+  "tracked_existing_files": 104
+}

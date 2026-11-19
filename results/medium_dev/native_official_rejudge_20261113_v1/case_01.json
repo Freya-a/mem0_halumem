@@ -1,0 +1,77 @@
+{
+  "case": {
+    "number": 1,
+    "kind": "accuracy",
+    "section": "memory_accuracy_records",
+    "record_index": 2,
+    "uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session_index": 0,
+    "input_index": 9,
+    "args": [
+      "[Sep 04, 2025, 13:58:59]user: Hello! I'd like to share my basic personal information with you so you can better understand me and provide more thoughtful help in future conversations.\n[Sep 04, 2025, 13:58:59]assistant: Hello! Nice to meet you. Please tell me your basic information.\n\n[Sep 04, 2025, 14:09:28]user: My name is Donald Smith, and I am a Male. I was born on 1980-08-12, and I am now 45 years old. I currently live in Chicago.\n[Sep 04, 2025, 14:09:28]assistant: Can you tell me about your educational background?\n\n[Sep 04, 2025, 14:37:25]user: Of course. My highest education level is Master, and my major is Political Science.\n[Sep 04, 2025, 14:37:25]assistant: What kind of personality do you have?\n\n[Sep 04, 2025, 14:49:55]user: According to the MBTI test, my personality type is ENTP. Friends usually describe me with these words: Innovative Spirit, Active Thinking, Loyal, Supportive.\n[Sep 04, 2025, 14:49:55]assistant: Can you introduce your family life?\n\n[Sep 04, 2025, 16:17:16]user: Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions.\n[Sep 04, 2025, 16:17:16]assistant: What are your life goals?\n\n[Sep 04, 2025, 16:28:59]user: Specifically, Support the political career of a close relative, ensuring their legacy and impact on society. The motivation for this goal is Growing up in a family that values political engagement and having a close relative in politics. I hope to Ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy.\n[Sep 04, 2025, 16:28:59]assistant: Thank you for your detailed introduction. I have a comprehensive understanding of your basic information. I will remember this information and provide more thoughtful help in future conversations.\n",
+      "User's name is Donald Smith\nDonald Smith's gender is Male\nDonald Smith's birth date is 1980-08-12\nDonald Smith lives in Chicago\nDonald Smith's age in January 2025 is 45 years old\nDonald Smith's highest education level is Master\nDonald Smith's major is Political Science\nDonald Smith's MBTI personality type is ENTP\nDonald Smith's personality tags include: Innovative Spirit, Active Thinking, Loyal, Supportive\nDonald Smith's parent status: Both parents are alive\nDonald Smith's partner status: Married\nDonald Smith's child status: Two children\nDonald Smith's life goal statement: Support the political career of a close relative, ensuring their legacy and impact on society.\nDonald Smith's motivation for pursuing goals: Growing up in a family that values political engagement and having a close relative in politics.\nDonald Smith's target metrics: Ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy.",
+      "Both parents are alive"
+    ]
+  },
+  "status": "invalid",
+  "started_utc": "2026-11-13T08:21:11.102217+00:00",
+  "request": {
+    "model": "qwen-plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are a **Dialogue Memory Accuracy Evaluator.** Your task is to evaluate the **accuracy** of a memory extracted by an AI memory system, based on three given inputs: the dialogue content, the *target (gold)* memory points (the correct annotated memories), and the *candidate* memory to be evaluated. The goal is to output a **structured evaluation result**.\n\n# Input Content\n\n* **Dialogue:**\n  [Sep 04, 2025, 13:58:59]user: Hello! I'd like to share my basic personal information with you so you can better understand me and provide more thoughtful help in future conversations.\n[Sep 04, 2025, 13:58:59]assistant: Hello! Nice to meet you. Please tell me your basic information.\n\n[Sep 04, 2025, 14:09:28]user: My name is Donald Smith, and I am a Male. I was born on 1980-08-12, and I am now 45 years old. I currently live in Chicago.\n[Sep 04, 2025, 14:09:28]assistant: Can you tell me about your educational background?\n\n[Sep 04, 2025, 14:37:25]user: Of course. My highest education level is Master, and my major is Political Science.\n[Sep 04, 2025, 14:37:25]assistant: What kind of personality do you have?\n\n[Sep 04, 2025, 14:49:55]user: According to the MBTI test, my personality type is ENTP. Friends usually describe me with these words: Innovative Spirit, Active Thinking, Loyal, Supportive.\n[Sep 04, 2025, 14:49:55]assistant: Can you introduce your family life?\n\n[Sep 04, 2025, 16:17:16]user: Good, let me introduce my family. Both parents are alive, Married, Two children. My Father was born on 1950-08-12, A retired professor who instilled strong values of loyalty and support in his children. My Mother was born on 1952-08-12, A homemaker known for her unwavering support of family endeavors. My Partner was born on 1978-08-12, A supportive partner who shares similar values of family loyalty. My Child1 was born on 2005-08-12, A high school student with an interest in political science. My Child2 was born on 2007-08-12, An aspiring artist who enjoys engaging in family discussions on current events. Overall, A close-knit family with strong values of loyalty and support, actively engaged in political discussions.\n[Sep 04, 2025, 16:17:16]assistant: What are your life goals?\n\n[Sep 04, 2025, 16:28:59]user: Specifically, Support the political career of a close relative, ensuring their legacy and impact on society. The motivation for this goal is Growing up in a family that values political engagement and having a close relative in politics. I hope to Ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy.\n[Sep 04, 2025, 16:28:59]assistant: Thank you for your detailed introduction. I have a comprehensive understanding of your basic information. I will remember this information and provide more thoughtful help in future conversations.\n\n\n* **Golden Memories (Target Memory Points):**\n  The correct memory points pre-annotated for this dialogue in the evaluation dataset.\n  User's name is Donald Smith\nDonald Smith's gender is Male\nDonald Smith's birth date is 1980-08-12\nDonald Smith lives in Chicago\nDonald Smith's age in January 2025 is 45 years old\nDonald Smith's highest education level is Master\nDonald Smith's major is Political Science\nDonald Smith's MBTI personality type is ENTP\nDonald Smith's personality tags include: Innovative Spirit, Active Thinking, Loyal, Supportive\nDonald Smith's parent status: Both parents are alive\nDonald Smith's partner status: Married\nDonald Smith's child status: Two children\nDonald Smith's life goal statement: Support the political career of a close relative, ensuring their legacy and impact on society.\nDonald Smith's motivation for pursuing goals: Growing up in a family that values political engagement and having a close relative in politics.\nDonald Smith's target metrics: Ensure the relative wins at least three electoral campaigns and establishes a significant legislative legacy.\n\n* **Candidate Memory:**\n  The memory extracted by the system to be evaluated.\n  Both parents are alive\n\n# Evaluation Principles and Definitions\n\n### 1) Support / Entailment\n\n* An **information point** (atomic fact) in the candidate memory is considered *supported* if it can be directly stated or semantically entailed (via synonym, paraphrase, or equivalent expression) by the *Dialogue* or *Golden Memories*.\n* Only the given dialogue and golden memories can be used for judgment — **no external knowledge** or assumptions are allowed.\n  Any information not appearing in or inferable from these two sources is considered *unsupported*.\n* Pay careful attention to **negation**, **quantities**, **time**, and **subjects**.\n  If the candidate statement contradicts the dialogue or golden memories, it is considered a **conflict**.\n\n### 2) Memory Accuracy Score (integer: 0 / 1 / 2)\n\n* **2 points:** Every information point in the candidate memory is supported by the dialogue or golden memories, with **no contradictions or hallucinations**.\n* **1 point:** The candidate memory is *partially correct* (at least one supported information point) but also includes *unsupported* or *contradictory* content.\n* **0 points:** The candidate memory is **entirely unsupported or contradictory** to the sources (i.e., a “hallucinated memory”).\n\n> Note:\n>\n> * If a candidate memory contains multiple information points, **any unsupported or contradictory element** prevents a full score (2).\n> * If both supported and unsupported/conflicting content appear, assign a score of **1**.\n\n### 3) Inclusion in Golden Memories (Boolean field-level judgment)\n\n**Definition:**\n\n* **Atomic information point:** the smallest factual unit in the candidate memory (e.g., *name = Li Si*, *age = 25*, *location = Beijing*, *preference = coffee*, *budget ≤ 2000*, *meeting_time = Wednesday 10:00*, *tool = Zoom*, etc.).\n* **Field / Slot:** the semantic dimension of an information point (e.g., *name*, *age*, *residence*, *food preference*, *budget*, *meeting time*, *meeting tool*, etc.).\n\n**Judgment Rules (independent of correctness):**\n\n* **true:**\n  Every atomic information point in the candidate memory has a corresponding **field** in the golden memories (allowing for synonyms, paraphrases, or equivalent expressions; ignore value, polarity, or quantity differences).\n\n  * Note: A single field in the gold list may match multiple candidate points (e.g., multiple “drink preference” facts can be covered by one “drink preference” field in gold).\n* **false:**\n  If **any** atomic information point’s field in the candidate memory cannot be found in the golden memories, mark as *false*.\n\n**Important Notes:**\n\n* Field matching is restricted to fields that are **explicitly present or semantically recognizable** in the golden memories — no external knowledge may be used to expand the field set.\n* Differences in **values** (e.g., “Zhang San” vs. “Li Si”), **polarity** (like/dislike), or **exact number/time** do **not** affect this Boolean judgment.\n\n# Evaluation Procedure\n\nFor each candidate memory:\n\n1. **Decompose** it into atomic information points (e.g., name, number, location, preference).\n2. For each information point, **search** the dialogue and golden memories for supporting or contradictory evidence.\n3. Assign the **accuracy_score** (0 / 1 / 2) according to the rules above.\n4. Determine **is_included_in_golden_memories (true/false)**:\n\n   * Identify each information point’s field;\n   * If *all* fields exist in the golden memories, mark as *true*; otherwise, *false*.\n5. Provide a **concise Chinese explanation** in `\"reason\"`, citing key evidence (short excerpts allowed), and clearly state any unsupported or contradictory parts if applicable.\n\n# Output Format (strictly required)\n\nOutput **only one JSON object**, with the following three fields:\n\n* `\"accuracy_score\"`: `\"0\"` or `\"1\"` or `\"2\"`\n* `\"is_included_in_golden_memories\"`: `\"true\"` or `\"false\"`\n* `\"reason\"`: `\"brief explanation in Chinese\"`\n\nDo **not** include any other text, explanation, or fields.\nDo **not** include the candidate memory text inside the JSON.\n\nPlease output **only** the following JSON (in a code block):\n\n```json\n{\n  \"accuracy_score\": \"2 | 1 | 0\",\n  \"is_included_in_golden_memories\": \"true | false\",\n  \"reason\": \"Brief explanation in Chinese\"\n}\n```\n"
+      }
+    ],
+    "max_tokens": 16384,
+    "temperature": 0.0,
+    "timeout": 180
+  },
+  "raw_response": {
+    "id": "chatcmpl-d44827a2-9cf8-98d4-bb48-79a1d7f12838",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"accuracy_score\": \"2\",\n  \"is_included_in_golden_memories\": \"true\",\n  \"reason\": \"候选记忆‘Both parents are alive’是原子信息点，对应字段为‘parent status’，在黄金记忆中明确列出‘Donald Smith\\'s parent status: Both parents are alive’；该陈述在对话中亦被直接陈述（‘Both parents are alive’），完全支持且无矛盾或幻觉。\"\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1794558071,
+    "model": "qwen-plus",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "prompt_tokens": 2071,
+      "total_tokens": 2172,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      }
+    }
+  },
+  "parsed": null,
+  "normalized": null,
+  "exception": {
+    "type": "JSONDecodeError",
+    "message": "Invalid \\escape: line 4 column 93 (char 163)",
+    "status_code": null,
+    "request_id": null,
+    "cause_type": null
+  },
+  "request_id": "d44827a2-9cf8-98d4-bb48-79a1d7f12838",
+  "elapsed_seconds": 2.986,
+  "finished_utc": "2026-11-13T08:21:14.415461+00:00"
+}

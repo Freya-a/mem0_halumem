@@ -1,0 +1,919 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_01_multi_person",
+      "categories": [
+        "多个人物",
+        "身份关系",
+        "混合说话人"
+      ],
+      "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "old_memory": "Grateful towards colleagues like Steven and friends like Mary",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 1,
+      "literal_quotes_total": 1,
+      "review_label": "初步判断，待人工确认",
+      "summary": "初步判断，待人工确认：格式检查 passed；1 条事实覆盖感谢态度、Steven/colleagues、Mary/friends 及 like 的举例表述，未见关键命题遗漏。观察到 raw 用上下文补出 The user 的来源边界问题，以及肯定用户主体与将主体列为待确认之间的表述冲突；不据此认定用户主体虚构。原始说话人和具体人物身份仍有局部未决项。",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [
+        "ORIGINAL_SPEAKER",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "has_specific_unresolved_item": true,
+      "model_pending_item_count": 2,
+      "pending_human_confirmations": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：请人工区分“描述用户的命题”与“用户直接自述”；当前片段不能确认 Steven/Mary 的具名关系概括由用户亲口说出。"
+        },
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：具体人物身份及 like 是否泛指在现有片段内无法进一步核实；不应把这种现实身份未知自动算成拆分错误，也不应要求用补写事实来消除未知。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "reason": "初步判断，待人工确认：请人工确认输出待决状态是否应收窄为原始说话人归属；本报告所标冲突限于正文与 pending 同时对语义主体给出不同确定程度。"
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "categories": [
+        "缺失主语",
+        "姓名与别称",
+        "上下文额外人物"
+      ],
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 2,
+      "literal_quotes_total": 2,
+      "review_label": "初步判断，待人工确认",
+      "summary": "初步判断，待人工确认：格式检查 passed；1 条事实保留朋友关系、ThomasSusan/Susan 名称关联及支持鼓励。观察到 raw 主体来自上下文、contextualized 增加有源但非必要的 well-being 效果，以及 context supports 将名称 token 升格为已验证 full name 的越界与待决状态冲突。未把其他同事名单带入正文。",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK",
+        "SUPPORTED_UNNECESSARY_ADDITION",
+        "SUPPORTS_OVERREACH"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "has_specific_unresolved_item": true,
+      "model_pending_item_count": 2,
+      "pending_human_confirmations": [
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：ThomasSusan 是完整姓名、复合名字还是串接/笔误仍无法确认；当前只能忠实保留 token 和 Susan 称呼，不能自动纠正。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：具体支持方式/频率在片段内未知，但不属于原记忆必须补全的内容，也不单独计为错误。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "reason": "初步判断，待人工确认：请人工确认 full name 已验证与姓名结构 pending 的确定程度冲突；这不否定源文本确实使用了 ThomasSusan 和 Susan。"
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "categories": [
+        "助手来源",
+        "说话人归属",
+        "析取与状态"
+      ],
+      "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "old_memory": "Practices or is open to yoga for supporting personal health and transition",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 3,
+      "literal_quotes_total": 3,
+      "review_label": "初步判断，待人工确认",
+      "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 3 条 supports。旧记忆的 practices OR is open to、瑜伽对象及 personal health/transition 用途均保留，未被助手 could 建议覆盖。观察到 1 项 raw 来源边界问题：raw 新补 The user，违反本批次 frozen_prompt.txt 第2条；这与主体是否可由上下文合理关联是两件事，不判为凭空人物，也不判用户直接自述。原始发言归属、析取哪一支成立及具体实践状态仍未决。",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "ORIGINAL_SPEAKER"
+      ],
+      "has_specific_unresolved_item": true,
+      "model_pending_item_count": 3,
+      "pending_human_confirmations": [
+        {
+          "item": "旧记忆中 practices OR is open to 的实际分支与来源",
+          "reason": "初步判断，待人工确认：需核实用户是否实践、是否开放，以及旧记忆形成于用户自述、助手建议提取或其他过程。不能把助手建议直接当用户同意，也不能据此删改旧记忆的析取。"
+        },
+        {
+          "item": "supports[2] 中 consistent 的解释范围",
+          "reason": "初步判断，待人工确认：建议与旧记忆可以相容，但相容不构成对用户 openness/practice 的证实；当前列为部分支持而非已观察错误。"
+        },
+        {
+          "item": "原输出关于 practices 的时间待确认理由",
+          "reason": "初步判断，待人工确认：practices 是一般现在时的第三人称单数形式，并非原 pending 理由所称的无显式时态 bare verb。具体持续时间、频率或开始日期确实未给出；这项理由措辞不准确，但正文没有改时态或推定事件日期，因此不据此另计 TIME_SCOPE_CHANGE。"
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "categories": [
+        "否定偏好",
+        "原因与作用范围",
+        "亲属代词",
+        "上下文额外偏好"
+      ],
+      "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "old_memory": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 2,
+      "literal_quotes_total": 2,
+      "review_label": "初步判断，待人工确认",
+      "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 2 条 supports。未发现协议分类中的明确正文忠实度或支持范围错误；否定偏好、because 原因和 while 范围完整保留。亲属具体身份及支持持续范围仍未决，不能把这些不确定计为错误。",
+      "observed_issue_types": [],
+      "has_observed_issue": false,
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "RELATIVE_OR_OTHER_REFERENT"
+      ],
+      "has_specific_unresolved_item": true,
+      "model_pending_item_count": 2,
+      "pending_human_confirmations": [
+        {
+          "item": "their relative 的具体身份",
+          "reason": "初步判断，待人工确认：输入没有姓名、亲属类别或其他可唯一定位信息；保持原泛称，人工确认前不补具体关系。"
+        },
+        {
+          "item": "支持亲属的持续范围及原 pending 理由的条件措辞",
+          "reason": "初步判断，待人工确认：持续时间和频率确实未知。原输出把 because...while... 概括为 conditionally，措辞需人工校核：because 表原因，while 限定支持期间，不能改成额外 if 条件。正文已经保留原 because 与 while，未观察到条件或时间范围被改写，故不把理由措辞的不精确自动计为正文错误。"
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "categories": [
+        "相对时间",
+        "职位状态变化",
+        "上下文额外感受"
+      ],
+      "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "old_memory": "Recently promoted to lead director at Historical Productions Ltd",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 2,
+      "literal_quotes_total": 2,
+      "review_label": "初步判断，待人工确认",
+      "summary": "格式检查通过，1条返回事实。职位晋升、lead director、机构和 recently 均保留；未把发言日期等同晋升日期。观察到 raw 补入 memory 未表达的用户主语，属于来源边界问题；该主体在 contextualized 中有 ctx-1 第一人称依据，不判为主体完全无依据。",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [],
+      "has_specific_unresolved_item": false,
+      "model_pending_item_count": 0,
+      "pending_human_confirmations": [],
+      "independent_review_file": "reviews/group_03.json"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "categories": [
+        "计划",
+        "可能性",
+        "助手问句",
+        "缺失主语"
+      ],
+      "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "old_memory": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 3,
+      "literal_quotes_total": 3,
+      "review_label": "初步判断，待人工确认",
+      "summary": "格式检查通过，1条返回事实。raw 保留未定主体，contextualized 的用户语义主体可由 assistant 的 you plan 指向；plans 与仅作用于 science fiction dramas 的 possibly 均保留。观察到 ctx-2 supports 将泛化的创作控制/真实性回应当作具体剧类计划的本人意图依据；原计划是否有用户明确原话仍未决。",
+      "observed_issue_types": [
+        "SUPPORTS_OVERREACH"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "ORIGINAL_SPEAKER"
+      ],
+      "has_specific_unresolved_item": true,
+      "model_pending_item_count": 3,
+      "pending_human_confirmations": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "请人工确认具体剧类计划是否有 user 明确表达的来源；目前 assistant 问句中的预设加 user 泛化回应不能完成该确认。现有 pending 只对描述词是否自述提出疑问，尚不足以覆盖整个具体计划的原始证言边界。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "返回 pending 已保留 concrete/committed 与 aspirational/contingent 的区分；现有输入无法判定承诺程度。协作方、正式立项、资金等均未见于事实正文，也不作为本文新增事实或错误统计。"
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    },
+    {
+      "case_id": "case_07_no_children",
+      "categories": [
+        "明确否定状态",
+        "缺失主语",
+        "上下文家庭细节"
+      ],
+      "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "old_memory": "No children",
+      "program_status": "passed",
+      "fact_count": 1,
+      "literal_quotes_passed": 2,
+      "literal_quotes_total": 2,
+      "review_label": "初步判断，待人工确认",
+      "summary": "格式检查通过，1条返回事实。No children 的否定状态保留，未扩写为不想要孩子或从未有过孩子。观察到 raw 从上下文补入用户主语；用户家庭自我介绍足以支持 contextualized，但不能突破 raw 仅恢复 memory 内部成分的边界。",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "has_observed_issue": true,
+      "specific_uncertainty_types": [],
+      "has_specific_unresolved_item": false,
+      "model_pending_item_count": 0,
+      "pending_human_confirmations": [],
+      "independent_review_file": "reviews/group_03.json"
+    }
+  ],
+  "facts": [
+    {
+      "case_id": "case_01_multi_person",
+      "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [
+        "ORIGINAL_SPEAKER",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "raw_subfact": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "contextualized_subfact": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+          "quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "supports": "Old memory states the user is grateful towards colleagues like Steven and friends like Mary."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "The subject of 'Grateful' (i.e., who holds this attitude)",
+          "reason": "The memory text is a fragment without explicit subject; it does not grammatically specify whether 'Grateful' is self-attributed by the user, reported by the assistant, or ascribed to another person. Although context-2 quotes the assistant paraphrasing this sentiment, and context-1 shows the user speaking about maintaining relationships and expressing gratitude, neither confirms the original memory fragment was uttered by the user nor that it reflects their direct self-report — it could be an extracted summary, assistant rephrasing, or third-party observation."
+        },
+        {
+          "item": "Whether 'Steven' and 'Mary' are actual named individuals in the user's life vs. generic examples",
+          "reason": "The phrases 'colleagues like Steven' and 'friends like Mary' use 'like', indicating Steven and Mary serve as exemplars — but the memory text does not clarify whether they are real, specific people known to the user or merely illustrative placeholders. No source context affirms their concrete identity or relationship status to the user."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：raw/contextualized 均保留 grateful、colleagues like Steven、friends like Mary，未改人物、关系或 like 的范围。输入没有明确否定、事件日期、条件或计划/可能性成分，输出也未新增这些成分。contextualized 的用户主体可由同一事件的 ctx-1 第一人称感谢及 ctx-2 的 Your gratitude 合理关联；但冻结 v3 的 raw-only 规则不允许为省略主语补用户，因此 raw 的 The user 仍越过来源边界。正文未带入 ctx-1 的定期联系计划或 ctx-2 的 strong support network 等额外内容。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+          "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 未给出主体，也没有可在 memory 内部恢复的共享用户主体；raw 新增 The user，依赖 source_context 才能补足。依据主代理提供的冻结 v3 第2条，补足应放在 contextualized。此判断是字段来源边界问题，不是认定用户这一语义主体无依据或已被证伪。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "certainty": "observed",
+          "input_quote": "The subject of 'Grateful' (i.e., who holds this attitude)",
+          "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+          "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item，而非原始 memory。正文直接固定为用户持有此态度，pending 又将谁持有该态度本身列为待确认，存在明确的断言/待决状态不一致。pending 理由还把语义主体与是否由用户原话表达混在一起；上下文可支持用户主体，但不能证明此记忆概括是用户原话。此项不等同于主语虚构。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：ctx-1 是 user 的第一人称联系/表达感谢意向；具名的 Steven/colleagues 与 Mary/friends 在提供的片段中只由 ctx-2 assistant 表述。旧 memory 是提取概括，其原始说话人不能仅从 memory 引文认定为 user。"
+        },
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：现有文本足以保留 like Steven / like Mary 的记忆命题，但不能验证两人的真实身份或 like 在完整历史中是否只是泛指例示；这不是因此改写或否定旧记忆的依据。待决项关于“没有任何来源肯定关系”的说法过宽，ctx-2 实际给出了这些关系标签；它仍不是独立的现实核验。"
+        }
+      ],
+      "speaker_review": {
+        "semantic_subject": "初步判断，待人工确认：用户主体有上下文的同事件关联：ctx-1 用户说 I'll ... express my gratitude；ctx-2 assistant 用 Your gratitude 描述具名关系。可作为 contextualized 的主体解释，不自动构成捏造。",
+        "original_utterance_attribution": "初步判断，待人工确认：用户直接发言支持其表达感谢的意向；具体姓名与关系的可见原始发言是 assistant。模型正文及 supports 未明说“用户亲口说过完整具名命题”，故不另标 SPEAKER_ATTRIBUTION_OVERCLAIM。",
+        "pending_review": "初步判断，待人工确认：模型的第一个 pending 把主体和原始说话人混写，已记录断言/待决冲突。第二个 pending 的实际身份疑问可保留为有限未知，但维持旧记忆不要求证明人物现实身份。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：memory 引文直接支持感谢、两个人名及关系/like 范围，但字面上没有 user 主语；必要上下文为用户主体提供合理关联。因此支持主体属于上下文补足，不能说 memory 本身显式写了 user，更不能由此推出完整概括是用户原话。supports 的 Old memory states 未明确声称用户直接说过，未单独判来源归属错误；partial 不自动计为错误。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK",
+        "SUPPORTED_UNNECESSARY_ADDITION",
+        "SUPPORTS_OVERREACH"
+      ],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "raw_subfact": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+      "contextualized_subfact": "The user has a friend named ThomasSusan (referred to as 'Susan'), and Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "supports": "Old memory states the user has a friend named ThomasSusan (called 'Susan') who provides support and encouragement."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "supports": "Confirms speaker is the user (first-person 'my', 'me'); specifies that Susan's support and encouragement inspire the user's focus on well-being across domains; validates 'ThomasSusan' as the full name and 'Susan' as the used reference; supports contextualizing 'provides support and encouragement' as having an inspiring effect tied to well-being goals."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+          "reason": "The memory text and source context both present 'ThomasSusan' as a single token without internal punctuation or clarification; no disambiguating evidence (e.g., usage elsewhere, correction, or syntactic separation) is provided."
+        },
+        {
+          "item": "The specific nature or mode of Susan's support and encouragement (e.g., verbal, practical, emotional, frequency, context)",
+          "reason": "Both memory and context describe the support and encouragement only at the level of effect ('inspire me to maintain focus...') and domain ('personal and professional life'), without specifying actions, occasions, or forms."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：raw 完整保留 Has a friend、ThomasSusan、referred to as Susan、provides support and encouragement；contextualized 也保留朋友及别称关联，并改用有源的支持鼓励效果表述。没有遗漏关键名字/关系，没有否定、时间、条件或情态变化。user 主体由 source_context 的 user 角色及 I/my/me 直接支持；raw 增加该主体仍违反仅从 memory 内恢复内容的边界。contextualized 正文确实新增了支持鼓励激励其维持个人和职业生活 well-being 关注的命题；它有 user 来源，但不是消歧或保留旧记忆所必需。引文中的其他细节本身不计新增，MartinezDaniel/WilliamsJoshua 及工作细节也没有进入事实正文。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "output_quote": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+          "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 省略拥有朋友的主体；source_context 的 user 第一人称可以支持用户主体，但冻结 v3 第2条要求此类上下文补足留在 contextualized，raw 不应填 The user。这是字段边界问题，不是将有来源的用户主体判为虚构。"
+        },
+        {
+          "type": "SUPPORTED_UNNECESSARY_ADDITION",
+          "certainty": "observed",
+          "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "output_quote": "Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+          "reason": "初步判断，待人工确认：output_quote 是 contextualized_subfact 的实质内容片段。旧 memory 只有支持和鼓励，并无激励保持 well-being 关注及个人/职业领域的效果；该效果虽被 ctx-1 用户原文直接支持，但超出补主体或解释别称所需。它已进入事实正文，故属于有源但非必要扩写，不是仅因证据引文含更多细节而判错。"
+        },
+        {
+          "type": "SUPPORTS_OVERREACH",
+          "certainty": "observed",
+          "input_quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+          "reason": "初步判断，待人工确认：两处输入确实使用 ThomasSusan token，并将其与 Susan 关联，足以保留原命名/别称命题；它们不能验证 ThomasSusan 是完整真实姓名而非串接、数据形式或笔误。supports 的 full name 验证结论超出所引文本。此判断只针对 supports 新加强度，不将 raw 沿用原 memory 的 named ThomasSusan 另判无依据。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "certainty": "observed",
+          "input_quote": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+          "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+          "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item。supports 声称已验证 full name，同时 pending 明确保留名称是否为串接/笔误的疑问，确定程度冲突。仅保留文本 token 和已使用的 Susan 称呼可以与未知并存，但 full name 已验证这一更强断言不能由现有证据消除该未知。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：ThomasSusan 的 token 结构、完整姓名性质、是否为串接/笔误无法在本输入中确定；应保持原记忆命名而不擅自改名或合并拆分人物。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：支持鼓励的具体方式、频率、场景没有给出。模型将它列为待确认属于额外细节未知，本身不是拆分错误，也不是完成原命题所需补全的缺口。"
+        }
+      ],
+      "speaker_review": {
+        "semantic_subject": "初步判断，待人工确认：ctx-1 的元数据 speaker=user，正文 I have / my Friend / inspire me 足以直接支持拥有朋友、接受支持者是用户；不应将省略主语的 memory 一律判为主体虚构。",
+        "original_utterance_attribution": "初步判断，待人工确认：朋友、姓名 token、Susan 称呼及 well-being 效果均出现在该 user 原始片段中。context supports 关于 speaker=user 可结合角色元数据支持；第一人称词本身并不能单独确定系统角色，但这里元数据已明确。",
+        "pending_review": "初步判断，待人工确认：姓名结构 pending 与 full name 验证冲突已单列；具体支持方式 pending 不应转化为错误计数或要求新增事实。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：memory 引文直接支持朋友关系、ThomasSusan/Susan 名称关联及支持鼓励；user 主体不在该引文字面内，但同事件 user 第一人称来源足以补足。因此主体有依据，supports 作为纯 memory 来源描述并非全为字面支持；未声称其是用户原话，也未把 ThomasSusan 说成已核验 full name，此处不单独计错误。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "overreach",
+          "reason": "初步判断，待人工确认：quote 与 source 的 user 元数据共同支持用户角色、朋友关系、Susan 的使用以及激励关注 well-being 的效果；后者虽为非必要正文扩写，但确实有源。越界部分是将 ThomasSusan token 验证为 full name；输入只显示其使用形式，且模型自己保留串接/笔误 pending。不能由该 evidence 验证真实完整姓名。",
+          "issue_types": [
+            "SUPPORTS_OVERREACH",
+            "ASSERTION_PENDING_CONFLICT"
+          ]
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "ORIGINAL_SPEAKER"
+      ],
+      "raw_subfact": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+      "contextualized_subfact": "The user practices yoga or is open to practicing yoga to support personal health and career transition.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "Old memory states the user practices or is open to yoga for supporting personal health and transition."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "supports": "Provides contextual grounding: 'transition' refers to career transition, and 'personal health' includes well-being in the context of work-life balance."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "Confirms that 'yoga' was suggested by the assistant as a supportive practice for the user’s transition and personal health — consistent with the memory’s framing of openness or practice, but does not confirm the user’s actual practice status."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "Whether the user actually practices yoga or only expresses openness to it",
+          "reason": "The memory uses the disjunctive 'or' without specifying which disjunct holds; neither source_context confirms current practice nor clarifies intent level (e.g., intention vs. exploration)."
+        },
+        {
+          "item": "The speaker of the memory statement",
+          "reason": "The memory text is third-person ('Practices or is open...'), but input source_context shows the user self-reports career concerns (ctx-1) and the assistant recommends yoga (ctx-2); it is not stated whether this memory reflects user self-report, assistant summary, or system inference."
+        },
+        {
+          "item": "Temporal scope of 'practices' (e.g., current, past, habitual)",
+          "reason": "The memory lacks tense markers or time anchors; 'Practices' is bare verb form without explicit present/habitual/ongoing marking, and no recorded_at from memory itself is provided."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：完整保留 practices or is open to 的单一析取，不拆成已实践与已开放两个肯定事实；保留 yoga、personal health、transition 及支持用途。contextualized 中 career 可由 ctx-1 的职业困境、找新工作和 ctx-2 的 job opportunities/this transition 共同消歧，属于有源且必要的语境说明。没有将 could 升格为用户实践事实，没有借来源纠正旧记忆，没有扩入职业目标、工作生活平衡等独立命题；这些额外细节仅在引文中出现。未添加日期、持续时间、姓名或关系。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Practices or is open to yoga for supporting personal health and transition",
+          "output_quote": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+          "reason": "初步判断，待人工确认：旧 memory_text 没有 user、说话人身份或可在文本内部恢复为 user 的共享主语；raw_subfact 新增 The user。已读取本批次 frozen_prompt.txt，第2条明确禁止为语法完整把省略主语补成用户，且上下文支持的身份只能必要时用于 contextualized_subfact。ctx-1 的第一人称职业经历和 ctx-2 面向 you 的建议能合理关联语义主体，但不能使 raw 越过来源边界；因此只记录 RAW_CONTEXT_LEAK，不追加 UNSUPPORTED_ADDITION 或人物虚构标签。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：ctx-1 是 user 的职业自述，但没有瑜伽；ctx-2 明确为 assistant 的 could 建议。尚无 user 直接自述实践或开放瑜伽的引文，旧记忆的上游形成方式也无法仅凭输入确定。输出 evidence[2] 明示 assistant，pending 也记录来源未决，未观察到将助手原话写成用户原话的明确断言。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：旧记忆只记 practices OR is open to，未确定哪一支成立；assistant 的 could 建议既不证实际实践，也不证用户接受或表达开放。正文保留旧析取，符合不纠正旧记忆的要求；用户实际状态、意向强弱与具体实践持续范围仍待核实，而非据此把正文认定为错误。"
+        }
+      ],
+      "speaker_review": "初步判断，待人工确认：语义主体与原始说话人分开审查。ctx-1 的 I 与 ctx-2 的 you/this transition 可把职业过渡语境合理关联到用户，因此 contextualized 的 The user 不一概判为虚构。证据未表明用户说过瑜伽实践或开放；memory supports 使用 Old memory states，assistant supports 明确说明建议来自助手，且 pending 留下原始来源疑问，所以不另记 SPEAKER_ATTRIBUTION_OVERCLAIM。raw 新补身份的边界问题已单独记录。",
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：该 memory 引文直接支持旧记忆如此记载 practices OR open、瑜伽及 health/transition 用途，不能证明现实状态或用户直接说过。supports 的 The user 并非引文明示主体，需要 ctx-1/ctx-2 的共享过渡语境关联；这是可合理关联的主体补足，不是用户原始发言归属证明。本项未明确声称 user said，故不自动记支持越界或说话人错误。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：ctx-1 明示 career、current role、new job、well-being 与 work-life balance；结合紧邻 ctx-2 的 job opportunities 和 this transition，足以把 transition 消歧为 career transition，并为 personal health 的健康福祉语境提供依据。supports 未声称这段用户引文证明瑜伽实践或开放，也未把 humanitarian goals 等引文额外细节加入正文。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 2,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：ctx-2 的 speaker=assistant 且原话为 yoga could support this transition，直接支持助手提出可能有帮助的瑜伽建议及职业过渡/个人健康语境。它不能证实用户实践，也不能证实用户开放。supports 把建议称为与旧析取表述 consistent，并明确不确认 actual practice；按兼容性表述理解，未见把 could 明确变成任一用户状态的断言，因此列为部分支持和范围未决，不自动记 observed 错误。人工仍应核对 consistent 是否会被误读为对 openness 的确认。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "uncertain_only",
+      "observed_issue_types": [],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "RELATIVE_OR_OTHER_REFERENT"
+      ],
+      "raw_subfact": "They do not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative.",
+      "contextualized_subfact": "The user does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+          "quote": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "supports": "Old memory states a dislike of alcoholic drinks grounded in the need to remain clear-headed and responsible during support of their relative."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative.",
+          "supports": "Confirms the speaker is the user (first-person 'I'), specifies the attitude ('don't like' / 'avoid'), and matches the causal reasoning and referent ('my relative')."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "The identity of 'their relative'",
+          "reason": "The memory and source context both use 'my relative' / 'their relative' without naming or specifying the relationship (e.g., parent, sibling, child) or identifying information."
+        },
+        {
+          "item": "Whether 'supporting their relative' refers to ongoing, current, or situational support",
+          "reason": "The memory and context state the reason conditionally ('because they need to stay... while supporting...') but provide no temporal scope (e.g., duration, frequency, or triggering circumstance) for the support role."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：保留不喜欢饮用 alcoholic drinks 的否定偏好，未改写为从不饮用、完全禁酒或从未饮酒；保留 because they need to stay clear-headed and responsible 的因果关系及 while supporting their relative 的作用范围。raw 的 They 可从同一旧记忆内部 they need/their relative 恢复，符合内部共享主语规则。contextualized 的 The user 有同主题 user 第一人称来源，未推定姓名、具体亲属关系、支持方式或持续时间。能量饮料、绿茶、汽水等额外偏好未扩入正文；也未把记录时间当事件时间。",
+      "semantic_findings": [],
+      "uncertainties": [
+        {
+          "type": "RELATIVE_OR_OTHER_REFERENT",
+          "reason": "初步判断，待人工确认：原 memory 的 their relative 与 user 原话的 my relative 仅能支持该主体的一位亲属，不能确定姓名或属于父母、兄弟姐妹、子女等哪种关系。输出保持泛称并记录待确认，没有补造亲属身份。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：while supporting 明确保留支持亲属时需清醒负责的范围，但没有给出支持的持续时间、频率或当前是否持续。此处是 because 因果和 while 范围，不是已明示的 if/unless 逻辑条件。输出正文未扩展为永久戒酒或无条件的支持状态。"
+        }
+      ],
+      "speaker_review": "初步判断，待人工确认：ctx-1 明确标记 speaker=user，且同一饮酒内容使用 I/my relative，可靠同主题第一人称关联支持 contextualized 将省略主体补为用户。memory 引文本身仅证明旧记忆记载；context supports 才说明用户来源。该例不是助手建议，也没有原始说话人越界；亲属本人并非饮酒偏好的主体。",
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：supports 准确说明旧记忆记载 dislike、清醒和负责的必要性及 supporting relative 时的理由范围；没有把否定偏好强化为永不饮用，也没有声称单凭 memory 确认用户原话或现实真实性。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：所引连续两句逐字包含 I don't like alcoholic drinks、I avoid、because I need to stay clear-headed and responsible、while supporting my relative；speaker=user 元数据与第一人称同主题内容共同支持用户来源、态度、原因和泛称亲属。avoid 虽未出现在旧记忆正文中，但直接在此 quote 内且仅在 supports 描述来源，不是正文新增戒酒事实。该项未确定亲属身份或支持时长。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [],
+      "raw_subfact": "The user was recently promoted to lead director at Historical Productions Ltd.",
+      "contextualized_subfact": "The user was recently promoted to lead director at Historical Productions Ltd.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+          "quote": "Recently promoted to lead director at Historical Productions Ltd",
+          "supports": "Old memory states that the user was recently promoted to lead director at Historical Productions Ltd."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "supports": "Confirms the promotion is the user's own, specifies first-person agency ('I got promoted'), and anchors 'recently' to the speaker's perspective; supports interpreting the memory as self-reported."
+        }
+      ],
+      "model_pending_confirmations": [],
+      "coverage_summary": "覆盖原记忆的近期晋升、职位 lead director 和机构 Historical Productions Ltd。recently 仍为相对时间，未增添具体晋升日期或把 Feb 01, 2026 当作事件日；记录时间是发言记录而非事件发生日。上下文的 exciting 仅保留在引文中，没有成为 raw/contextualized 的额外感受事实。无否定、条件或析取命题需要另行恢复。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Recently promoted to lead director at Historical Productions Ltd",
+          "output_quote": "The user was recently promoted to lead director at Historical Productions Ltd.",
+          "reason": "memory 省略晋升主体，内部没有可恢复的 The user 共享成分；raw 新增用户主语，超出仅恢复 memory 内部共享成分的边界。ctx-1 的 I recently got promoted 足以支持 contextualized 的用户主体，故此处只记 raw 来源边界问题，不记 UNSUPPORTED_ADDITION 或主体身份错误。"
+        }
+      ],
+      "uncertainties": [],
+      "speaker_review": {
+        "semantic_subject": "user；由同一晋升事件的 ctx-1 第一人称可靠支持。",
+        "original_speaker": "ctx-1 明确标记为 user。",
+        "assessment": "contextualized 的语义主体和 self-reported 归属有依据；raw 不能因此自动补主语。没有把 assistant 的表述冒充 user 原话。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "声明的 memory 引文直接支持 recently、晋升、职位及机构；引文本身未明说 the user。用户主体需结合 ctx-1 的同一事件第一人称确定，故不能把该引文视为独立包含显式用户主语；全输入范围内该主体有依据，不另判 supports 越界。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "ctx-1 是 user 的 I recently got promoted，同一职位与机构使事件关联可靠；支持用户自述和相对时间依说话视角理解。supports 没有把发言记录时间写成晋升发生日，也没有把 exciting 写为新增事实。此处 agency 依其括号例子理解为第一人称事件主体，并非推断用户主动促成晋升。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "SUPPORTS_OVERREACH"
+      ],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "ORIGINAL_SPEAKER"
+      ],
+      "raw_subfact": "There are plans to initiate groundbreaking historical dramas and possibly science fiction dramas.",
+      "contextualized_subfact": "The user has plans to initiate groundbreaking historical dramas and possibly science fiction dramas.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+          "quote": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+          "supports": "Old memory states there are plans to initiate groundbreaking historical dramas and possibly science fiction dramas."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas.",
+          "supports": "The assistant's question frames the plans as belonging to the user ('how you plan'), supporting attribution of the plans to the user."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+          "supports": "The user expresses agency and intent regarding creative control and authenticity in their work, consistent with initiating original drama projects; supports that the plans reflect the user's own intentions."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "Whether 'plans' refers to concrete, committed intentions versus aspirational or contingent proposals",
+          "reason": "The memory uses 'Plans' without specifying level of commitment, timing, approval status, or resource backing; context shows the assistant frames it as a future opportunity and the user responds with enthusiasm about creative control, but neither confirms formal立项, funding, or greenlight."
+        },
+        {
+          "item": "The identity of 'groundbreaking' and 'science fiction' as descriptors — whether they are self-applied by the user or externally attributed",
+          "reason": "The memory text presents the adjectives as given; context shows the assistant used nearly identical phrasing ('groundbreaking historical dramas and perhaps even science fiction dramas'), suggesting possible origin in the assistant's prompt rather than direct user self-characterization — no verbatim user utterance containing 'groundbreaking' or 'science fiction' appears in provided context."
+        },
+        {
+          "item": "Whether the plans are solely the user's own initiative or involve collaboration, institutional support, or production partners",
+          "reason": "Memory text and context provide no information about collaborators, studios, producers, or enabling conditions — only individual-level agency ('I can push') is indicated."
+        }
+      ],
+      "coverage_summary": "完整保留计划发起 groundbreaking historical dramas，以及可能发起 science fiction dramas 的不同情态作用范围；未将 possibly 丢失或把两个剧类都改为确定行动，也未宣称项目已开始、已获批或已融资。There are plans 没有给 raw 补入 user 主体。contextualized 的用户主体符合 ctx-1 的被问对象，但不能据此声称用户已明确确认这些具体项目。",
+      "semantic_findings": [
+        {
+          "type": "SUPPORTS_OVERREACH",
+          "certainty": "observed",
+          "input_quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+          "output_quote": "The user expresses agency and intent regarding creative control and authenticity in their work, consistent with initiating original drama projects; supports that the plans reflect the user's own intentions.",
+          "reason": "用户原话只说明对更多创作控制的兴奋、可追求作品真实性和长期愿望，未表达发起历史剧或科幻剧项目的具体计划。supports 中 consistent with 至多表示相容；其后 supports that the plans reflect the user's own intentions 把相容性升级为具体计划的本人意图证据，越出该引文及必要上下文可支持的范围。此问题发生于 supports；不因旧 memory 的计划可能源于 assistant 而改写或否认拆分目标。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "给定上下文中具体 historical dramas / science fiction dramas 计划措辞出自 assistant 问句；user 没有逐项确认。可以确定该引文原始角色为 assistant，但不能确认旧 memory 的具体计划另有可核验的 user 原话来源。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "原文只给 Plans/possibly，未说明计划承诺程度、正式立项或资源条件；返回文本保持这种情态，已有 pending 对此保留疑问。不将未提供的项目细节本身计作错误。"
+        }
+      ],
+      "speaker_review": {
+        "semantic_subject": "assistant 的 how you plan 可支持其谈论的是 user 的计划；不因 memory 缺主语而一概判 contextualized 补 user 错误。",
+        "original_speaker": "具体剧类计划措辞见 ctx-1 assistant 问句；ctx-2 user 仅回应创作控制和真实性。",
+        "assessment": "输出正确标出两条上下文角色，未直接把 ctx-1 标成 user。具体计划是否得到 user 明确表达仍不能从 ctx-2 推得；该证据结论的越界记为 SUPPORTS_OVERREACH，不额外将明确角色标签判成错误。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "directly_supported",
+          "reason": "memory 引文直接包含 plans、groundbreaking historical dramas、possibly science fiction dramas；supports 只复述存在这些计划，未新指定主体或承诺程度。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "supports 明确说 assistant's question frames，how you plan 确实把问句所指计划的语义主体指向 user。按语义主体归属理解有支持；这一判断不等于用户确曾明确承诺这些计划，不能作为直接用户证言。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 2,
+          "assessment": "overreach",
+          "reason": "引文支持 user 对创作控制/真实性有愿望及行动空间；没有支持发起所列具体历史剧、科幻剧的本人计划。consistent with 只表示相容，不能推出这些计划 reflect the user's own intentions。",
+          "issue_types": [
+            "SUPPORTS_OVERREACH"
+          ]
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    },
+    {
+      "case_id": "case_07_no_children",
+      "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [],
+      "raw_subfact": "The user has no children.",
+      "contextualized_subfact": "The user has no children.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+          "quote": "No children",
+          "supports": "Old memory states 'No children', expressing the absence of children in the user's family."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children.",
+          "supports": "Confirms the phrase 'No children' is part of the user's self-introduction about their family; speaker is explicitly labeled as 'user'."
+        }
+      ],
+      "model_pending_confirmations": [],
+      "coverage_summary": "覆盖无子女状态，has no children 保留否定范围；未引申为不愿生育、永久无子女、终身从未有过孩子或无亲属。Both parents are alive 和 no_relationship 仅在逐字引文中出现，没有变成 raw/contextualized 的额外家庭事实。未增加日期、条件或其他情态。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "No children",
+          "output_quote": "The user has no children.",
+          "reason": "memory 只有 No children，内部没有可恢复的 The user 主语。raw 中新增 The user 属于借上下文补主体；该补足应留在 contextualized。ctx-1 的 let me introduce my family 为语义主体提供可靠依据，所以不将其认定为无依据的身份添加。"
+        }
+      ],
+      "uncertainties": [],
+      "speaker_review": {
+        "semantic_subject": "user；由 let me introduce my family 的自我家庭介绍可靠支持。",
+        "original_speaker": "ctx-1 明确标记为 user，且包含 No children。",
+        "assessment": "contextualized 的主体与来源归属无明显问题；raw 的用户补足违反来源边界。未将家庭介绍中的其他人物/关系细节写成新事实。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "No children 直接支持无子女的否定状态，但该 memory 引文本身不包含用户或家庭所属的显式主语；用户主体需结合 ctx-1 的家庭自我介绍。全输入有支持，故不另记无依据新增或 supports 越界。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "原引文含 let me introduce my family 与 No children，且 speaker=user；支持这是用户关于自身家庭的陈述。supports 不推导生育意愿、既往终身史或父母/伴侣新事实。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    }
+  ],
+  "observed_findings": [
+    {
+      "case_id": "case_01_multi_person",
+      "fact_index": 1,
+      "type": "RAW_CONTEXT_LEAK",
+      "certainty": "observed",
+      "input_quote": "Grateful towards colleagues like Steven and friends like Mary",
+      "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 未给出主体，也没有可在 memory 内部恢复的共享用户主体；raw 新增 The user，依赖 source_context 才能补足。依据主代理提供的冻结 v3 第2条，补足应放在 contextualized。此判断是字段来源边界问题，不是认定用户这一语义主体无依据或已被证伪。"
+    },
+    {
+      "case_id": "case_01_multi_person",
+      "fact_index": 1,
+      "type": "ASSERTION_PENDING_CONFLICT",
+      "certainty": "observed",
+      "input_quote": "The subject of 'Grateful' (i.e., who holds this attitude)",
+      "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item，而非原始 memory。正文直接固定为用户持有此态度，pending 又将谁持有该态度本身列为待确认，存在明确的断言/待决状态不一致。pending 理由还把语义主体与是否由用户原话表达混在一起；上下文可支持用户主体，但不能证明此记忆概括是用户原话。此项不等同于主语虚构。"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "fact_index": 1,
+      "type": "RAW_CONTEXT_LEAK",
+      "certainty": "observed",
+      "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "output_quote": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+      "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 省略拥有朋友的主体；source_context 的 user 第一人称可以支持用户主体，但冻结 v3 第2条要求此类上下文补足留在 contextualized，raw 不应填 The user。这是字段边界问题，不是将有来源的用户主体判为虚构。"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "fact_index": 1,
+      "type": "SUPPORTED_UNNECESSARY_ADDITION",
+      "certainty": "observed",
+      "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "output_quote": "Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+      "reason": "初步判断，待人工确认：output_quote 是 contextualized_subfact 的实质内容片段。旧 memory 只有支持和鼓励，并无激励保持 well-being 关注及个人/职业领域的效果；该效果虽被 ctx-1 用户原文直接支持，但超出补主体或解释别称所需。它已进入事实正文，故属于有源但非必要扩写，不是仅因证据引文含更多细节而判错。"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "fact_index": 1,
+      "type": "SUPPORTS_OVERREACH",
+      "certainty": "observed",
+      "input_quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+      "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+      "reason": "初步判断，待人工确认：两处输入确实使用 ThomasSusan token，并将其与 Susan 关联，足以保留原命名/别称命题；它们不能验证 ThomasSusan 是完整真实姓名而非串接、数据形式或笔误。supports 的 full name 验证结论超出所引文本。此判断只针对 supports 新加强度，不将 raw 沿用原 memory 的 named ThomasSusan 另判无依据。"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "fact_index": 1,
+      "type": "ASSERTION_PENDING_CONFLICT",
+      "certainty": "observed",
+      "input_quote": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+      "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+      "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item。supports 声称已验证 full name，同时 pending 明确保留名称是否为串接/笔误的疑问，确定程度冲突。仅保留文本 token 和已使用的 Susan 称呼可以与未知并存，但 full name 已验证这一更强断言不能由现有证据消除该未知。"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "fact_index": 1,
+      "type": "RAW_CONTEXT_LEAK",
+      "certainty": "observed",
+      "input_quote": "Practices or is open to yoga for supporting personal health and transition",
+      "output_quote": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+      "reason": "初步判断，待人工确认：旧 memory_text 没有 user、说话人身份或可在文本内部恢复为 user 的共享主语；raw_subfact 新增 The user。已读取本批次 frozen_prompt.txt，第2条明确禁止为语法完整把省略主语补成用户，且上下文支持的身份只能必要时用于 contextualized_subfact。ctx-1 的第一人称职业经历和 ctx-2 面向 you 的建议能合理关联语义主体，但不能使 raw 越过来源边界；因此只记录 RAW_CONTEXT_LEAK，不追加 UNSUPPORTED_ADDITION 或人物虚构标签。"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "fact_index": 1,
+      "type": "RAW_CONTEXT_LEAK",
+      "certainty": "observed",
+      "input_quote": "Recently promoted to lead director at Historical Productions Ltd",
+      "output_quote": "The user was recently promoted to lead director at Historical Productions Ltd.",
+      "reason": "memory 省略晋升主体，内部没有可恢复的 The user 共享成分；raw 新增用户主语，超出仅恢复 memory 内部共享成分的边界。ctx-1 的 I recently got promoted 足以支持 contextualized 的用户主体，故此处只记 raw 来源边界问题，不记 UNSUPPORTED_ADDITION 或主体身份错误。"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "fact_index": 1,
+      "type": "SUPPORTS_OVERREACH",
+      "certainty": "observed",
+      "input_quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+      "output_quote": "The user expresses agency and intent regarding creative control and authenticity in their work, consistent with initiating original drama projects; supports that the plans reflect the user's own intentions.",
+      "reason": "用户原话只说明对更多创作控制的兴奋、可追求作品真实性和长期愿望，未表达发起历史剧或科幻剧项目的具体计划。supports 中 consistent with 至多表示相容；其后 supports that the plans reflect the user's own intentions 把相容性升级为具体计划的本人意图证据，越出该引文及必要上下文可支持的范围。此问题发生于 supports；不因旧 memory 的计划可能源于 assistant 而改写或否认拆分目标。"
+    },
+    {
+      "case_id": "case_07_no_children",
+      "fact_index": 1,
+      "type": "RAW_CONTEXT_LEAK",
+      "certainty": "observed",
+      "input_quote": "No children",
+      "output_quote": "The user has no children.",
+      "reason": "memory 只有 No children，内部没有可恢复的 The user 主语。raw 中新增 The user 属于借上下文补主体；该补足应留在 contextualized。ctx-1 的 let me introduce my family 为语义主体提供可靠依据，所以不将其认定为无依据的身份添加。"
+    }
+  ],
+  "independent_audit_files": [
+    "reviews/group_01.json",
+    "reviews/group_02.json",
+    "reviews/group_03.json"
+  ]
+}

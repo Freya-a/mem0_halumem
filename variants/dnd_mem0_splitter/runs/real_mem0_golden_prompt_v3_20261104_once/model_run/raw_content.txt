@@ -1,0 +1,113 @@
+{
+  "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+  "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "raw_subfact": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature.",
+      "contextualized_subfact": "The user recently spent time at a friend's house and interacted with their Golden Retriever, and was impressed by its gentle nature.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+          "quote": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature",
+          "supports": "Old memory states the user recently interacted with a friend's Golden Retriever and was impressed by its gentle nature."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.",
+          "supports": "Confirms the interaction occurred at a friend's house and that the user perceived the dog’s gentleness; 'gentle creature' directly supports 'gentle nature'."
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "raw_subfact": "Values adaptability, calm demeanor, and emotional support in pets.",
+      "contextualized_subfact": "The user values adaptability, calm demeanor, and emotional support in pets.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+          "quote": "values adaptability, calm demeanor, and emotional support in pets",
+          "supports": "Old memory explicitly states the user values these three attributes in pets."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I found its adaptability really impressive.",
+          "supports": "Supports that adaptability is valued, observed in the friend's Golden Retriever."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Yes, the emotional support and companionship they offer are invaluable.",
+          "supports": "Confirms emotional support is valued (‘invaluable’)."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-3",
+          "quote": "I find their calm demeanor crucial for my active lifestyle, especially after a long day.",
+          "supports": "Confirms calm demeanor is valued (‘crucial’)."
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 3,
+      "source_memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "raw_subfact": "Drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals.",
+      "contextualized_subfact": "The user is drawn to Golden Retrievers because they are compatible with the user's active lifestyle and wellness goals.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+          "quote": "drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals",
+          "supports": "Old memory states the user is drawn to Golden Retrievers specifically for compatibility with active lifestyle and wellness goals."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-3",
+          "quote": "I find their calm demeanor crucial for my active lifestyle, especially after a long day.",
+          "supports": "Links Golden Retrievers (‘their’) and active lifestyle; confirms ‘active lifestyle’ is the user’s own."
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 4,
+      "source_memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+      "raw_subfact": "Optimistic about integrating this preference as a step toward new experiences and balancing demanding career.",
+      "contextualized_subfact": "The user is optimistic about integrating a preference for Golden Retrievers as a step toward new experiences and balancing a demanding career.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+          "quote": "optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+          "supports": "Old memory states the user is optimistic about integrating ‘this preference’ (i.e., preference for Golden Retrievers) as a step toward new experiences and balancing a demanding career."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions.",
+          "supports": "Confirms the user frames pet-related change as reflecting openness to new experiences; ‘this change’ aligns with integrating the preference."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-3",
+          "quote": "Absolutely, pets do offer that balance.",
+          "supports": "Confirms pets are seen as offering balance — consistent with ‘balancing demanding career’."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether 'this preference' unambiguously refers only to Golden Retrievers (and not broader pet preference)",
+          "reason": "The memory uses 'this preference' without explicit antecedent noun phrase in the same sentence; while context strongly implies Golden Retrievers (via prior clauses and contextual utterances), the anaphor is not syntactically bound within the memory_text alone."
+        }
+      ]
+    }
+  ]
+}

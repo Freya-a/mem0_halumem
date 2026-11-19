@@ -1,0 +1,85 @@
+{
+  "skydiving": {
+    "component_status": "error",
+    "component_validation": {
+      "passed": false,
+      "semantic_correctness": "not_checked"
+    },
+    "component_errors": [
+      {
+        "stage": "validation",
+        "type": "ValueError",
+        "message": "candidate fragment not found in this fact memory evidence"
+      }
+    ],
+    "literal_diagnostics": {
+      "json_parsed_object": true,
+      "exact_fields": true,
+      "memory_id": true,
+      "fact_index": true,
+      "old_subfact": true,
+      "relation_label": true,
+      "old_quote": true,
+      "candidate_fragment": false,
+      "new_quote": true,
+      "uncertain_question": true
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "promotion": {
+    "component_status": "ok",
+    "component_validation": {
+      "passed": true,
+      "checks": [
+        "schema",
+        "relation",
+        "fact_identity",
+        "old_quote",
+        "new_quote",
+        "candidate_fragment"
+      ],
+      "semantic_correctness": "not_checked"
+    },
+    "component_errors": [],
+    "literal_diagnostics": {
+      "json_parsed_object": true,
+      "exact_fields": true,
+      "memory_id": true,
+      "fact_index": true,
+      "old_subfact": true,
+      "relation_label": true,
+      "old_quote": true,
+      "candidate_fragment": true,
+      "new_quote": true,
+      "uncertain_question": true
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "career_history": {
+    "component_status": "error",
+    "component_validation": {
+      "passed": false,
+      "semantic_correctness": "not_checked"
+    },
+    "component_errors": [
+      {
+        "stage": "validation",
+        "type": "ValueError",
+        "message": "candidate fragment not found in this fact memory evidence"
+      }
+    ],
+    "literal_diagnostics": {
+      "json_parsed_object": true,
+      "exact_fields": true,
+      "memory_id": true,
+      "fact_index": true,
+      "old_subfact": true,
+      "relation_label": true,
+      "old_quote": true,
+      "candidate_fragment": false,
+      "new_quote": true,
+      "uncertain_question": true
+    },
+    "semantic_correctness": "not_checked"
+  }
+}

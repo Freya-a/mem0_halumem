@@ -1,0 +1,62 @@
+{
+  "old_statement": "Martin 有 ThomasSusan（称 Susan）这一朋友，提供支持和鼓励。",
+  "new_statement": "Martin 正寻找更平衡的工作；同一会话称 Susan 的支持与鼓励帮助其保持目标专注。两句话的求职情境关联沿用已审核目标，但不归因 Daniel 的贡献。",
+  "modify": [
+    {
+      "scope": "无证据要求删除或替换旧朋友关系／旧支持；如表达新的求职情境，可在原支持上补充，具体存储方式待确认。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+        },
+        {
+          "source_id": "new-2",
+          "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+        }
+      ]
+    }
+  ],
+  "preserve": [
+    {
+      "scope": "保留朋友身份、Susan 的支持与鼓励，不改写为仅在本次求职中存在。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+        }
+      ]
+    }
+  ],
+  "uncertain": [
+    {
+      "scope": "旧支持开始/结束时间、是否专属求职、ThomasSusan 名字的真实构成均未知；不能确定接受 offer 或完成转岗。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+        },
+        {
+          "source_id": "new-0",
+          "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+        }
+      ]
+    }
+  ],
+  "add": [
+    {
+      "scope": "候选独立新增：Susan 的支持、鼓励帮助用户保持目标专注的求职情境；原关系与新增情境可合并或分开，不自动判定必须写一条。",
+      "evidence": [
+        {
+          "source_id": "new-0",
+          "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+        },
+        {
+          "source_id": "new-2",
+          "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+        }
+      ]
+    }
+  ],
+  "status": "助手依据原文和已确认审核边界整理的候选预期，非用户确认金标准",
+  "time_policy": "实际生效/失效边界和条件，如无原文明示均为 unknown；来源 recorded_at 不作为有效日期。"
+}

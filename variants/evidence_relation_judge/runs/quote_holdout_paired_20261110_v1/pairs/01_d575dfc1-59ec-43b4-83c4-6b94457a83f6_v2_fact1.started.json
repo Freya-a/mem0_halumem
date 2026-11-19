@@ -1,0 +1,73 @@
+{
+  "started_at": "2026-11-10T16:18:15.547419+08:00",
+  "record": 1,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+    "memory_text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "raw_subfact": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.",
+      "contextualized_subfact": "用户喜欢狗，尤其是拉布拉多犬，因为它们友好、忠诚，并且是像慢跑这样的户外活动的绝佳伴侣。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+          "quote": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "supports": "旧记忆记载了对狗的喜爱，特别指出拉布拉多犬，并列出了友好、忠诚以及适合慢跑等户外活动作为原因。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "supports": "来源上下文中的第一人称陈述与旧记忆内容一致，且标记说话者为 user，用于将旧记忆中省略的主语补足为“用户”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=2f1f897e-d67f-dbc5-6a7b-b7634a9e294f /sessions/2/dialogue/2/content",
+        "text": "I like dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging, which helps me stay fit. I dislike reptiles, like snakes, because I find snakes unsettling due to their unpredictable movements and the fact that they don't exhibit the social behaviors in pets. I like cats, because cats are independent and affectionate, and their purring is soothing, which I find relaxing after a long day at work. I like parrots because they are intelligent and can be taught to mimic speech, which makes interactions fun and engaging.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 22:44:54"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/0/content",
+        "text": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 17:48:59"
+      },
+      {
+        "source_id": "dialogue-2",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/2/content",
+        "text": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 17:55:15"
+      },
+      {
+        "source_id": "dialogue-6",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/6/content",
+        "text": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 18:02:45"
+      },
+      {
+        "source_id": "dialogue-12",
+        "source_ref": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000 /sessions/4/dialogue/12/content",
+        "text": "I'm optimistic about how this new preference will fit into my life.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 18:17:19"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

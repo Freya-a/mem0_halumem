@@ -1,0 +1,3058 @@
+[
+  {
+    "number": 1,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 4,
+    "point": 0,
+    "review_class": "修订后接受",
+    "old_proposition": "Martin likes dogs, especially Labradors.",
+    "old_evidence": [
+      [
+        2,
+        2
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      6,
+      12
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I recently spent some time at a friend's house and interacted with their Golden Retriever. It was such a gentle creature, and I found its adaptability really impressive.",
+        "timestamp": "Jan 06, 2026, 17:48:59",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "Yes, the emotional support and companionship they offer are invaluable. I think this change reflects my openness to new experiences and interactions.",
+        "timestamp": "Jan 06, 2026, 17:55:15",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 6,
+        "role": "user",
+        "content": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well.",
+        "timestamp": "Jan 06, 2026, 18:02:45",
+        "dialogue_turn": 3
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "I'm optimistic about how this new preference will fit into my life.",
+        "timestamp": "Jan 06, 2026, 18:17:19",
+        "dialogue_turn": 6
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+    "snapshot_count": 83,
+    "saved_split_memories": [
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.267,
+        "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+        "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        0
+      ],
+      [
+        0.091,
+        "1c01de7e-7ef0-429d-92df-e09ebd442027",
+        "Likes jazz for its improvisational style and ability to stimulate creativity",
+        0
+      ],
+      [
+        0.083,
+        "aaf723e0-370d-4166-ae24-c8fb7ac20973",
+        "Likes classical music for relaxation and focus, as it creates a peaceful atmosphere",
+        0
+      ],
+      [
+        0.083,
+        "55a03720-e0c8-4d30-931e-ce52b8cbe732",
+        "Likes casual business attire for work as it balances professionalism and comfort",
+        0
+      ],
+      [
+        0.077,
+        "bd52b893-fb10-4022-a5e2-812302934c8d",
+        "Likes comfortable athletic wear for its comfort and flexibility, ideal for active lifestyle",
+        0
+      ],
+      [
+        0.071,
+        "dbde186e-ddd7-4940-9707-5f62c2e04163",
+        "Likes eco-friendly fabrics because they align with values of sustainability and environmental consciousness",
+        0
+      ],
+      [
+        0.071,
+        "9c93e91b-e131-4f02-9363-fe2b78a38ac6",
+        "Likes fresh smoothies because they are nutritious and energizing, perfect for active lifestyle",
+        0
+      ],
+      [
+        0.071,
+        "33235351-ece6-4365-82d8-0503d3c8c534",
+        "Likes ambient music for unwinding after a busy day, as it helps relax and recharge",
+        0
+      ],
+      [
+        0.067,
+        "ac2dea9b-830b-450d-b0dc-0ad5a5075e22",
+        "Likes green tea for its antioxidant properties and subtle flavor, finding it refreshing and beneficial",
+        0
+      ],
+      [
+        0.067,
+        "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+        "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+        0
+      ],
+      [
+        0.067,
+        "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+        "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+        0
+      ],
+      [
+        0.062,
+        "f936f9b5-1dd7-4761-a22f-a3f0bdfd3678",
+        "Likes cats because they are independent and affectionate, and their purring is soothing and relaxing after work",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 2,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 5,
+    "point": 1,
+    "review_class": "重复确认",
+    "old_proposition": "Martin is considering a career change because his current director role affects his mental health.",
+    "old_evidence": [
+      [
+        3,
+        0
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      4
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "Lately, I've been feeling the weight of my role as director at Huaxin Consulting. The mental strain is starting to affect me, and I'm considering a career change to improve my mental health.",
+        "timestamp": "Jan 10, 2026, 07:21:20",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "I believe finding a role that aligns with my personal and professional goals could offer a healthier work-life balance. I'm optimistic about integrating new experiences, like my preference for Golden Retrievers, to help manage stress.",
+        "timestamp": "Jan 10, 2026, 07:23:11",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.",
+        "timestamp": "Jan 10, 2026, 07:28:06",
+        "dialogue_turn": 2
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/before.json",
+    "snapshot_count": 84,
+    "saved_split_memories": [
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_golden_prompt_v3_20261104_once/model_run/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_3_compound_preferences/result.json"
+        ],
+        "facts_count": [
+          4,
+          4
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.267,
+        "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+        "Career change is being considered due to impact on mental health",
+        0
+      ],
+      [
+        0.231,
+        "13a9a169-1fbc-4b0c-976d-b0d21209526d",
+        "Current role is Director at Huaxin Consulting",
+        0
+      ],
+      [
+        0.15,
+        "d8b24dc3-73e3-4015-933e-67b2bde2afe7",
+        "Dislikes gambling games because they can lead to addiction and financial stress, detrimental to mental health",
+        0
+      ],
+      [
+        0.133,
+        "057b5a64-9907-43b0-87d3-17542aba7e36",
+        "Mental health is mildly abnormal, no diagnosed mental health issues",
+        0
+      ],
+      [
+        0.1,
+        "85ae1801-fb3b-4b2a-88cf-68002f519e39",
+        "Likes wellness retreats because they offer relaxation and health-promoting activities, aligning with lifestyle",
+        0
+      ],
+      [
+        0.091,
+        "58589cd3-36bc-439f-8003-d6416735b820",
+        "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+        0
+      ],
+      [
+        0.083,
+        "7fc8a288-6b52-4261-8f5b-0174d5f2d5a3",
+        "Major is Public Health",
+        0
+      ],
+      [
+        0.071,
+        "bae3551e-596c-4ae8-8b5e-859ac4ebfd28",
+        "Passionate about improving health outcomes",
+        0
+      ],
+      [
+        0.071,
+        "04d538a9-5ea1-4364-a5f0-47a108ead2a6",
+        "Practices yoga for mental clarity and flexibility",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 3,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 5,
+    "point": 4,
+    "review_class": "修订后接受",
+    "old_proposition": "Martin wants a job aligned with well-being and healthcare access for underserved communities.",
+    "old_evidence": [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        24
+      ]
+    ],
+    "new_evidence": [
+      4,
+      6,
+      12
+    ],
+    "new_messages": [
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.",
+        "timestamp": "Jan 10, 2026, 07:28:06",
+        "dialogue_turn": 2
+      },
+      {
+        "idx": 6,
+        "role": "user",
+        "content": "I think a job that offers flexibility would help me manage both my professional responsibilities and personal well-being. Pets can definitely provide emotional support, which is valuable.",
+        "timestamp": "Jan 10, 2026, 07:30:21",
+        "dialogue_turn": 3
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "I'm planning to network with professionals in the non-profit sector and explore opportunities that align with my goals. It's a step towards finding the right fit.",
+        "timestamp": "Jan 10, 2026, 07:43:11",
+        "dialogue_turn": 6
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_006/before.json",
+    "snapshot_count": 84,
+    "saved_split_memories": [
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_golden_prompt_v3_20261104_once/model_run/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_3_compound_preferences/result.json"
+        ],
+        "facts_count": [
+          4,
+          4
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.308,
+        "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+        "Primary career motivation is improving healthcare access for underserved communities",
+        0
+      ],
+      [
+        0.214,
+        "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402",
+        "Leads initiatives to enhance healthcare services and promote well-being",
+        0
+      ],
+      [
+        0.2,
+        "5bf042d6-3f1b-4e97-8a3e-4d9a67a22bf8",
+        "Hope to provide healthcare access to 1 million people in underserved areas",
+        0
+      ],
+      [
+        0.133,
+        "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+        "Financial stability is secondary to humanitarian goals and personal well-being",
+        0
+      ],
+      [
+        0.118,
+        "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+        "Measures success by impact on healthcare access, personal health, and creativity",
+        0
+      ],
+      [
+        0.111,
+        "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+        "Motivated by family's medical background and desire to promote well-being globally",
+        0
+      ],
+      [
+        0.105,
+        "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+        "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+        0
+      ],
+      [
+        0.1,
+        "18d6e235-3713-4f55-8a5f-17c4c0d691b9",
+        "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+        0
+      ],
+      [
+        0.095,
+        "58589cd3-36bc-439f-8003-d6416735b820",
+        "Mental health occasionally feels strained due to job demands and pressure to deliver high-quality healthcare solutions",
+        0
+      ],
+      [
+        0.091,
+        "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+        "Employed in the healthcare industry",
+        0
+      ],
+      [
+        0.091,
+        "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        34
+      ],
+      [
+        0.071,
+        "20891999-4762-4706-b3f5-01d9a496f572",
+        "Has led projects resulting in innovative healthcare solutions",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 4,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 6,
+    "point": 1,
+    "review_class": "修订后接受",
+    "old_proposition": "Susan is a supportive friend who encourages Martin to focus on personal and professional well-being.",
+    "old_evidence": [
+      [
+        1,
+        6
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      12
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "timestamp": "Feb 05, 2026, 17:13:15",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+        "timestamp": "Feb 05, 2026, 17:15:18",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "I'm grateful for the support I've received. It's made a huge difference in my ability to navigate this transition and stay true to my values.",
+        "timestamp": "Feb 05, 2026, 17:46:26",
+        "dialogue_turn": 6
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+    "snapshot_count": 94,
+    "saved_split_memories": [
+      {
+        "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "memory_text": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_prompt_v2_20261103_once/case_2_time_state/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_2_time_state/result.json"
+        ],
+        "facts_count": [
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_golden_prompt_v3_20261104_once/model_run/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_3_compound_preferences/result.json"
+        ],
+        "facts_count": [
+          4,
+          4
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.235,
+        "eb152c7d-17df-4b3a-8a99-9f6211614e2a",
+        "Believes flexibility in job is crucial for managing professional responsibilities and personal well-being",
+        0
+      ],
+      [
+        0.188,
+        "06075b1c-6c8f-4dae-ac38-2a1333dc5a3a",
+        "Financial stability is secondary to humanitarian goals and personal well-being",
+        0
+      ],
+      [
+        0.176,
+        "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        3
+      ],
+      [
+        0.118,
+        "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402",
+        "Leads initiatives to enhance healthcare services and promote well-being",
+        0
+      ],
+      [
+        0.111,
+        "ecc0de53-fe20-4875-bfb5-e1b5ea7d6470",
+        "Career change is being considered due to impact on mental health",
+        0
+      ],
+      [
+        0.105,
+        "1b88d72f-28fa-46e5-9628-a0831e1e046e",
+        "Measures success by impact on healthcare access, personal health, and creativity",
+        0
+      ],
+      [
+        0.1,
+        "df53cffd-d550-4e8d-80ec-3ae11f7ea026",
+        "Motivated by family's medical background and desire to promote well-being globally",
+        0
+      ],
+      [
+        0.095,
+        "84e79711-4a5d-405a-8ea4-2ee2cafb5ca5",
+        "Likes herbal teas for their calming properties and health benefits, supporting overall well-being",
+        0
+      ],
+      [
+        0.091,
+        "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        8
+      ],
+      [
+        0.091,
+        "3b4b2f35-b54b-4a60-b1ae-f17f9d6421c0",
+        "Dislikes boxing due to its aggressive nature and potential for physical harm, contradicting focus on health",
+        0
+      ],
+      [
+        0.091,
+        "18d6e235-3713-4f55-8a5f-17c4c0d691b9",
+        "Dislikes violent video games because they promote aggression, contrary to values of peace and well-being",
+        0
+      ],
+      [
+        0.083,
+        "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        34
+      ]
+    ]
+  },
+  {
+    "number": 5,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 6,
+    "point": 2,
+    "review_class": "重复确认",
+    "old_proposition": "Colleague Daniel provides healthcare insights that challenge Martin and aid career growth.",
+    "old_evidence": [
+      [
+        1,
+        6
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "timestamp": "Feb 05, 2026, 17:13:15",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+        "timestamp": "Feb 05, 2026, 17:15:18",
+        "dialogue_turn": 1
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+    "snapshot_count": 94,
+    "saved_split_memories": [
+      {
+        "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "memory_text": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_prompt_v2_20261103_once/case_2_time_state/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_2_time_state/result.json"
+        ],
+        "facts_count": [
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_golden_prompt_v3_20261104_once/model_run/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_3_compound_preferences/result.json"
+        ],
+        "facts_count": [
+          4,
+          4
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.176,
+        "a90e498c-4586-4237-8a4b-c830847f8819",
+        "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+        0
+      ],
+      [
+        0.143,
+        "0da9428c-2fe6-4254-b818-58991562b49d",
+        "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+        0
+      ],
+      [
+        0.133,
+        "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+        "Primary career motivation is improving healthcare access for underserved communities",
+        0
+      ],
+      [
+        0.091,
+        "e9823d6d-9441-4fc8-b19c-95a76a730dde",
+        "Employed in the healthcare industry",
+        0
+      ],
+      [
+        0.071,
+        "20891999-4762-4706-b3f5-01d9a496f572",
+        "Has led projects resulting in innovative healthcare solutions",
+        0
+      ],
+      [
+        0.067,
+        "ccbc5b91-8451-42b2-b294-d821569e0cb4",
+        "Has empathetic nature that helps understand diverse perspectives",
+        0
+      ],
+      [
+        0.062,
+        "9b09e9d4-9d90-4330-bc6d-81fca4766952",
+        "Aims to refine skills through mentorship to increase impact in healthcare",
+        0
+      ],
+      [
+        0.062,
+        "61cef1b4-a449-4e7f-a16a-3e0fb99a0401",
+        "Interested in non-profit organizations focused on healthcare access",
+        0
+      ],
+      [
+        0.062,
+        "17c8fbb0-ed2f-44a7-bcec-1c0b7017e402",
+        "Leads initiatives to enhance healthcare services and promote well-being",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 6,
+    "uid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "session": 6,
+    "point": 3,
+    "review_class": "重复确认",
+    "old_proposition": "Joshua’s collaborative approach positively influences Martin’s work and leadership.",
+    "old_evidence": [
+      [
+        1,
+        6
+      ]
+    ],
+    "new_evidence": [
+      0,
+      4
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "timestamp": "Feb 05, 2026, 17:13:15",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "Joshua's approach has definitely influenced my leadership style positively. I'm trying to integrate all these insights as I look for roles that align with my values and offer the balance I need.",
+        "timestamp": "Feb 05, 2026, 17:23:32",
+        "dialogue_turn": 2
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+    "snapshot_count": 94,
+    "saved_split_memories": [
+      {
+        "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "memory_text": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_prompt_v2_20261103_once/case_2_time_state/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_2_time_state/result.json"
+        ],
+        "facts_count": [
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory_text": "No children",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_07_no_children/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_07_no_children/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_10_sports_preferences/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_10_sports_preferences/result.json"
+        ],
+        "facts_count": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_02_subject_and_roster/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "aa764342-2fe6-4632-9efd-e5e0cc032185",
+        "memory_text": "Recently interacted with a friend's Golden Retriever and impressed by its gentle nature; values adaptability, calm demeanor, and emotional support in pets; drawn to Golden Retrievers for their compatibility with active lifestyle and wellness goals; optimistic about integrating this preference as a step toward new experiences and balancing demanding career",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_golden_prompt_v3_20261104_once/model_run/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_three_types_20261103_once/case_3_compound_preferences/result.json"
+        ],
+        "facts_count": [
+          4,
+          4
+        ]
+      },
+      {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_09_father_profile/v5/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/baseline_v4/case_09_father_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/review_drafts/pre_review/comparison_data.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_skydiving_20261103_once/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/skydiving/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/skydiving_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/skydiving.started.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json"
+        ],
+        "facts_count": [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.188,
+        "a90e498c-4586-4237-8a4b-c830847f8819",
+        "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+        0
+      ],
+      [
+        0.1,
+        "eecfc4f9-d154-4d56-af70-668c4f252d5b",
+        "Thrives in collaborative environments",
+        0
+      ],
+      [
+        0.091,
+        "4bae5ada-124c-4cc5-9eaf-739039542dd3",
+        "Values alignment of work with personal values",
+        0
+      ],
+      [
+        0.077,
+        "f982f0d7-e0a1-48fb-bc16-e31397945c99",
+        "Shares knowledge through workshops and collaborative projects",
+        0
+      ],
+      [
+        0.067,
+        "369ba144-28ab-4a62-9029-130aed19cf89",
+        "Adapts leadership style through active listening and openness to feedback",
+        0
+      ],
+      [
+        0.062,
+        "713ab38a-b45a-4867-ad13-17faebeb266f",
+        "Aims to enhance leadership skills and deepen understanding of global health initiatives",
+        0
+      ],
+      [
+        0.062,
+        "55a03720-e0c8-4d30-931e-ce52b8cbe732",
+        "Likes casual business attire for work as it balances professionalism and comfort",
+        0
+      ],
+      [
+        0.062,
+        "0db431ab-6638-42b8-b509-d715dbb286bc",
+        "Considers work-life balance a key factor in evaluating new roles",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 9,
+    "uid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session": 3,
+    "point": 1,
+    "review_class": "接受",
+    "old_proposition": "Williams likes Earl Grey tea for history, bergamot aroma and nostalgia.",
+    "old_evidence": [
+      [
+        2,
+        2
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I recently visited a historic tea house and it was quite an enlightening experience. The ambiance transported me to a different era.",
+        "timestamp": "Jan 06, 2026, 06:49:58",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity.",
+        "timestamp": "Jan 06, 2026, 06:54:08",
+        "dialogue_turn": 1
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_004/before.json",
+    "snapshot_count": 64,
+    "saved_split_memories": [
+      {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_08_partner_profile/v5/result.json"
+        ],
+        "facts_count": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_text": "Works at Historical Productions Ltd. as a Director",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/promotion_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "paths": [
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.started.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.571,
+        "8602da08-fefc-4875-ad50-dba104642365",
+        "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+        0
+      ],
+      [
+        0.118,
+        "670899d2-6dbe-440e-8fa4-a267370456eb",
+        "Likes tortoises because their slow, deliberate movements symbolize the passage of time and history",
+        0
+      ],
+      [
+        0.118,
+        "308d8dcb-59c6-4f41-824b-7454c648c32e",
+        "Likes greyhounds because of their noble history and gentle demeanor, fitting for a soothing lifestyle",
+        0
+      ],
+      [
+        0.105,
+        "38d07cc6-7e8e-4e05-a5aa-646dc7b7aa19",
+        "Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era",
+        0
+      ],
+      [
+        0.083,
+        "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "Family shares a passion for history and detail",
+        0
+      ],
+      [
+        0.071,
+        "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "Motivated by family background in history and passion for storytelling",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 12,
+    "uid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session": 5,
+    "point": 0,
+    "review_class": "修订后接受",
+    "old_proposition": "Williams describes his mental health as stressed by film-detail demands and tight schedules.",
+    "old_evidence": [
+      [
+        1,
+        4
+      ]
+    ],
+    "new_evidence": [
+      0,
+      14
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.",
+        "timestamp": "Mar 15, 2026, 13:53:58",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 14,
+        "role": "user",
+        "content": "Delegating tasks has been key to reducing stress and improving my mental health. It's been a significant change since becoming lead director.",
+        "timestamp": "Mar 15, 2026, 14:31:44",
+        "dialogue_turn": 7
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+    "snapshot_count": 84,
+    "saved_split_memories": [
+      {
+        "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+        "memory_text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_06_plan_possibility/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "memory_text": "Recently promoted to lead director at Historical Productions Ltd",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_05_relative_time/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_05_relative_time/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_05_relative_time/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_08_partner_profile/v5/result.json"
+        ],
+        "facts_count": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_text": "Works at Historical Productions Ltd. as a Director",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/promotion_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "paths": [
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.started.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.188,
+        "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "Experiences stress due to historical accuracy demands and tight production schedules",
+        0
+      ],
+      [
+        0.154,
+        "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+        "No diagnosed mental health issues",
+        0
+      ],
+      [
+        0.083,
+        "7a85fc34-7cea-4f18-9a00-c03c7ec689c4",
+        "Major is Film Studies",
+        0
+      ],
+      [
+        0.071,
+        "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "Family shares a passion for history and detail",
+        0
+      ],
+      [
+        0.062,
+        "676be8c0-c989-4581-9251-e21c493a318a",
+        "Described as Strategic Thinking, Independent, Perfectionist, Detail-Oriented",
+        0
+      ],
+      [
+        0.062,
+        "312d9c2f-ace3-4dd0-87a6-38cd951fe812",
+        "Motivated by family background in history and passion for storytelling",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 13,
+    "uid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session": 5,
+    "point": 1,
+    "review_class": "修订后接受",
+    "old_proposition": "Williams’s mental health suffers from detail and production-schedule stress; physical health is generally good.",
+    "old_evidence": [
+      [
+        1,
+        4
+      ]
+    ],
+    "new_evidence": [
+      0,
+      4
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.",
+        "timestamp": "Mar 15, 2026, 13:53:58",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "I haven't had to balance a demanding family life, but I do focus on my career goals. My recent role change has definitely helped me achieve a better work-life balance.",
+        "timestamp": "Mar 15, 2026, 14:00:38",
+        "dialogue_turn": 2
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+    "snapshot_count": 84,
+    "saved_split_memories": [
+      {
+        "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+        "memory_text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_06_plan_possibility/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "memory_text": "Recently promoted to lead director at Historical Productions Ltd",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_05_relative_time/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_05_relative_time/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_05_relative_time/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_05_relative_time/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_08_partner_profile/v5/result.json"
+        ],
+        "facts_count": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_text": "Works at Historical Productions Ltd. as a Director",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/promotion_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "paths": [
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/persian_cats.started.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.133,
+        "a1f9be6a-4453-4764-bddb-e6d0a9068b35",
+        "No diagnosed mental health issues",
+        0
+      ],
+      [
+        0.105,
+        "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+        "Experiences stress due to historical accuracy demands and tight production schedules",
+        0
+      ],
+      [
+        0.1,
+        "bba09e85-d53e-4636-b39e-c77308301d33",
+        "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        0
+      ],
+      [
+        0.062,
+        "743dea40-a5ac-4533-ad7d-e1ae15d417c3",
+        "Family shares a passion for history and detail",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 15,
+    "uid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session": 7,
+    "point": 6,
+    "review_class": "重复确认",
+    "old_proposition": "Williams is grateful for support from colleagues and friends after promotion.",
+    "old_evidence": [
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "new_evidence": [
+      4,
+      6
+    ],
+    "new_messages": [
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "I focus on balancing both, as each type of relationship offers different support and opportunities. My existing friends have been a great source of encouragement, and the new connections are inspiring my work.",
+        "timestamp": "Apr 30, 2026, 06:31:17",
+        "dialogue_turn": 2
+      },
+      {
+        "idx": 6,
+        "role": "user",
+        "content": "They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas.",
+        "timestamp": "Apr 30, 2026, 06:33:29",
+        "dialogue_turn": 3
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/before.json",
+    "snapshot_count": 109,
+    "saved_split_memories": [
+      {
+        "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+        "memory_text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_06_plan_possibility/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_08_partner_profile/v5/result.json"
+        ],
+        "facts_count": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_text": "Works at Historical Productions Ltd. as a Director",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/promotion_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_11_persian_care/v5/result.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          5,
+          3
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.308,
+        "bba09e85-d53e-4636-b39e-c77308301d33",
+        "Prioritizes self-care and seeks support from friends and colleagues to manage stress",
+        0
+      ],
+      [
+        0.3,
+        "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+        "Friends and colleagues are main support system",
+        0
+      ],
+      [
+        0.091,
+        "317d0abd-09eb-461b-aec9-72c31c5fc989",
+        "Improved mental health since promotion",
+        0
+      ],
+      [
+        0.083,
+        "d7d27de9-fc3f-4dfc-9cc5-32bb46446d21",
+        "Colleagues Steven and Mary are key supporters",
+        0
+      ],
+      [
+        0.077,
+        "924d86c9-298a-4566-8e2a-d5d83f7874ae",
+        "Friend: WilliamsMary (provides emotional support and encourages breaks)",
+        0
+      ],
+      [
+        0.071,
+        "911de0b3-2dbe-423c-abb6-85f569c657bb",
+        "Plans to revisit the tea house with colleagues interested in modern architecture",
+        0
+      ],
+      [
+        0.062,
+        "7ad28253-8ba5-4531-b52c-208430e589b2",
+        "Plans to revisit the tea house with friends who share passion for historical exploration",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 16,
+    "uid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+    "session": 10,
+    "point": 1,
+    "review_class": "修订后接受",
+    "old_proposition": "Williams likes classical symphonies for complexity and historical significance.",
+    "old_evidence": [
+      [
+        2,
+        10
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      12
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences.",
+        "timestamp": "Jul 13, 2026, 08:32:16",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "The performance inspired me to delve into Baroque symphonies. The historical depth and complexity of the music align with my appreciation for authenticity.",
+        "timestamp": "Jul 13, 2026, 08:37:03",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "I'm focused on Baroque for now, but I'm open to other influences as long as they align with my vision for historical accuracy.",
+        "timestamp": "Jul 13, 2026, 09:04:00",
+        "dialogue_turn": 6
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_011/before.json",
+    "snapshot_count": 137,
+    "saved_split_memories": [
+      {
+        "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+        "memory_text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_06_plan_possibility/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_06_plan_possibility/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_06_plan_possibility/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+        "memory_text": "Grateful towards colleagues like Steven and friends like Mary",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_01_multi_person/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_01_multi_person/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_01_multi_person/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_01_multi_person/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_01_multi_person/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_01_multi_person/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_08_partner_profile/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_08_partner_profile/v5/result.json"
+        ],
+        "facts_count": [
+          2,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_text": "Works at Historical Productions Ltd. as a Director",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/promotion/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/promotion_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/promotion.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/comparison_data.json",
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_11_persian_care/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v4_v5_comparison_20261104_once/runs/case_11_persian_care/v5/result.json"
+        ],
+        "facts_count": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          5,
+          3
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.545,
+        "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+        "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+        0
+      ],
+      [
+        0.143,
+        "f9c438a0-c2df-4359-90e1-6f33f1f199a9",
+        "Likes Victorian literature because of its intricate storytelling and rich historical context",
+        0
+      ],
+      [
+        0.143,
+        "b5fbe40c-9778-4646-abe1-9921c85da36c",
+        "Likes historical biographies because they vividly capture the lives and impact of historical figures",
+        0
+      ],
+      [
+        0.133,
+        "df3aa4e3-8aa7-48a3-8fae-78bf0f3e566b",
+        "Likes vintage suits because they connect him to the past, elegance, and historical accuracy",
+        0
+      ],
+      [
+        0.133,
+        "a8611a3d-c6dd-48ac-8805-8a35ab5894b0",
+        "Likes British Shorthair cats because of their calm, collected nature and historical charm",
+        0
+      ],
+      [
+        0.133,
+        "251a7c03-38f9-4be3-bb6b-bf041bee2222",
+        "Likes historical dramas because of their attention to detail and accurate portrayal of past events",
+        0
+      ],
+      [
+        0.125,
+        "bf54f3d3-d427-4898-a1cb-37c1f63a3954",
+        "Draws professional inspiration from personal interests, especially the historical significance of Persian and Siamese cats",
+        0
+      ],
+      [
+        0.125,
+        "9a30fc9e-41a5-40a4-a9ec-05d53133cdb0",
+        "Engages with historical documentaries",
+        0
+      ],
+      [
+        0.118,
+        "38d07cc6-7e8e-4e05-a5aa-646dc7b7aa19",
+        "Likes 1920s jazz because of its rich history, cultural significance, and ability to evoke a different era",
+        0
+      ],
+      [
+        0.111,
+        "9315a8c1-7611-443b-a5b5-f92b52ea1a11",
+        "Interested in exploring historical beverages",
+        0
+      ],
+      [
+        0.111,
+        "6a80e8a5-7007-4694-ab27-0f1581980a3a",
+        "Hobby is reading historical biographies",
+        0
+      ],
+      [
+        0.105,
+        "1cc86bcf-f1b7-48e2-901a-2d50214975f0",
+        "Also has a deep admiration for Siamese cats, especially after watching a documentary highlighting their historical significance and royal connections",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 17,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 3,
+    "point": 1,
+    "review_class": "修订后接受",
+    "old_proposition": "Donald works in the technology industry.",
+    "old_evidence": [
+      [
+        1,
+        2
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+        "timestamp": "Nov 10, 2025, 18:05:35",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+        "timestamp": "Nov 10, 2025, 18:10:01",
+        "dialogue_turn": 1
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+    "snapshot_count": 70,
+    "saved_split_memories": [
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.5,
+        "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "Employed in the technology industry",
+        0
+      ],
+      [
+        0.125,
+        "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "Works at Blockchain Tech as a senior developer",
+        0
+      ],
+      [
+        0.083,
+        "2b65ace7-5f31-4cb5-9582-8b8a1d99dd2b",
+        "Role involves innovating new solutions and ensuring technology remains cutting-edge",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 18,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 3,
+    "point": 3,
+    "review_class": "修订后接受",
+    "old_proposition": "Donald is a senior developer at Blockchain Tech.",
+    "old_evidence": [
+      [
+        1,
+        2
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      12
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+        "timestamp": "Nov 10, 2025, 18:05:35",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+        "timestamp": "Nov 10, 2025, 18:10:01",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies.",
+        "timestamp": "Nov 10, 2025, 18:26:34",
+        "dialogue_turn": 6
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+    "snapshot_count": 70,
+    "saved_split_memories": [
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.833,
+        "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "Works at Blockchain Tech as a senior developer",
+        0
+      ],
+      [
+        0.214,
+        "97b23dbc-01c7-4472-afb2-bb70973427aa",
+        "BrownMichelle is a colleague at Blockchain Tech who helps balance professional responsibilities with political interests",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 19,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 3,
+    "point": 4,
+    "review_class": "修订后接受",
+    "old_proposition": "Donald’s monthly income is 17000 USD.",
+    "old_evidence": [
+      [
+        1,
+        2
+      ]
+    ],
+    "new_evidence": [
+      4,
+      6
+    ],
+    "new_messages": [
+      {
+        "idx": 4,
+        "role": "user",
+        "content": "One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting.",
+        "timestamp": "Nov 10, 2025, 18:15:17",
+        "dialogue_turn": 2
+      },
+      {
+        "idx": 6,
+        "role": "user",
+        "content": "I plan to rely on my savings and cut down on unnecessary expenses. I believe my contributions to political campaigns are investments towards my relative's success.",
+        "timestamp": "Nov 10, 2025, 18:17:51",
+        "dialogue_turn": 3
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+    "snapshot_count": 70,
+    "saved_split_memories": [
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.8,
+        "46374680-0009-4625-a3a7-f2b4e329a7b5",
+        "Monthly income is 17000 USD",
+        0
+      ],
+      [
+        0.143,
+        "31884358-05ca-4517-bc84-2a7f5fdad0c8",
+        "Has 16800 USD in savings",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 20,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 3,
+    "point": 5,
+    "review_class": "归并",
+    "old_proposition": "Donald innovates technology as a senior developer and supports political causes financially.",
+    "old_evidence": [
+      [
+        1,
+        2
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      12,
+      14
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+        "timestamp": "Nov 10, 2025, 18:05:35",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+        "timestamp": "Nov 10, 2025, 18:10:01",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 12,
+        "role": "user",
+        "content": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies.",
+        "timestamp": "Nov 10, 2025, 18:26:34",
+        "dialogue_turn": 6
+      },
+      {
+        "idx": 14,
+        "role": "user",
+        "content": "I plan to use data analytics to understand voter patterns and tailor strategies that resonate with them. It's all about making informed decisions.",
+        "timestamp": "Nov 10, 2025, 18:28:52",
+        "dialogue_turn": 7
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+    "snapshot_count": 70,
+    "saved_split_memories": [
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.214,
+        "58c2e1c2-74b6-4c5b-ab38-433b8e2b7cf2",
+        "Frequently contributes financially to political campaigns and causes supporting a specific politician",
+        0
+      ],
+      [
+        0.167,
+        "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "Works at Blockchain Tech as a senior developer",
+        0
+      ],
+      [
+        0.133,
+        "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+        "MooreSandra is a friend who shares political views and supports the same politician",
+        0
+      ],
+      [
+        0.1,
+        "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "Employed in the technology industry",
+        0
+      ],
+      [
+        0.1,
+        "2e1a8728-9860-48c4-86fa-e9baca154aba",
+        "Major is Political Science",
+        0
+      ],
+      [
+        0.091,
+        "282c758f-e845-4896-942b-18d70892c22e",
+        "Actively engaged in political discussions",
+        0
+      ],
+      [
+        0.071,
+        "9e9c1f02-f357-4ebb-abfc-0ea565ffe5d6",
+        "Child1 is a high school student with interest in political science",
+        0
+      ],
+      [
+        0.071,
+        "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "GonzalezMary is a close friend who discusses political strategies",
+        0
+      ],
+      [
+        0.071,
+        "913bef92-248b-416b-ba35-052af3a4e960",
+        "Life goal is to support the political career of a close relative",
+        0
+      ],
+      [
+        0.062,
+        "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "Maintains physical and mental health through activity, work, and political engagement",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 21,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 4,
+    "point": 0,
+    "review_class": "修订后接受",
+    "old_proposition": "Donald describes his mental health as stable and normal.",
+    "old_evidence": [
+      [
+        1,
+        4
+      ]
+    ],
+    "new_evidence": [
+      0,
+      2,
+      10
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I've been feeling quite stressed lately with this career transition into political consulting. Leaving my stable tech job has been more challenging than I anticipated.",
+        "timestamp": "Nov 25, 2025, 14:15:47",
+        "dialogue_turn": 0
+      },
+      {
+        "idx": 2,
+        "role": "user",
+        "content": "The uncertainty of income is definitely a big concern. I used to feel secure and financially stable, but now everything seems unpredictable.",
+        "timestamp": "Nov 25, 2025, 14:22:20",
+        "dialogue_turn": 1
+      },
+      {
+        "idx": 10,
+        "role": "user",
+        "content": "I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now.",
+        "timestamp": "Nov 25, 2025, 14:46:47",
+        "dialogue_turn": 5
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_005/before.json",
+    "snapshot_count": 77,
+    "saved_split_memories": [
+      {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_text": "Previously worked as a senior developer in Blockchain Tech",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/career_history_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.571,
+        "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+        "Mental health is stable and normal with no mental health issues",
+        0
+      ],
+      [
+        0.167,
+        "fe76478b-2e5c-4d34-9e9c-bf81870bd39b",
+        "Maintains physical and mental health through activity, work, and political engagement",
+        0
+      ],
+      [
+        0.1,
+        "03f69bc2-a92b-454a-a034-1cd7984b0419",
+        "Physical condition is normal with no chronic diseases",
+        0
+      ],
+      [
+        0.067,
+        "7b3ca3fe-056b-45ae-9e33-37b656b130ac",
+        "Likes playing puzzle games for their mental stimulation and the satisfaction of solving complex problems",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 22,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 5,
+    "point": 4,
+    "review_class": "接受",
+    "old_proposition": "Friends Sandra and Mary provide encouragement and political-strategy support.",
+    "old_evidence": [
+      [
+        1,
+        6
+      ]
+    ],
+    "new_evidence": [
+      10
+    ],
+    "new_messages": [
+      {
+        "idx": 10,
+        "role": "user",
+        "content": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+        "timestamp": "Dec 10, 2025, 18:27:24",
+        "dialogue_turn": 5
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_006/before.json",
+    "snapshot_count": 85,
+    "saved_split_memories": [
+      {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_text": "Previously worked as a senior developer in Blockchain Tech",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/career_history_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.154,
+        "913bef92-248b-416b-ba35-052af3a4e960",
+        "Life goal is to support the political career of a close relative",
+        0
+      ],
+      [
+        0.143,
+        "da585aa4-285c-49a2-a70f-69aab048b277",
+        "Has friends in the political field whom they plan to consult for advice",
+        0
+      ],
+      [
+        0.1,
+        "2e1a8728-9860-48c4-86fa-e9baca154aba",
+        "Major is Political Science",
+        0
+      ],
+      [
+        0.091,
+        "282c758f-e845-4896-942b-18d70892c22e",
+        "Actively engaged in political discussions",
+        0
+      ],
+      [
+        0.077,
+        "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "Is transitioning from a tech job to political consulting",
+        0
+      ],
+      [
+        0.077,
+        "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "Aims to be a key advisor in political campaigns",
+        0
+      ],
+      [
+        0.071,
+        "a299b9ea-6966-4a0d-bb29-be91ed29295c",
+        "Also motivated to establish their own political career",
+        0
+      ],
+      [
+        0.071,
+        "9e9c1f02-f357-4ebb-abfc-0ea565ffe5d6",
+        "Child1 is a high school student with interest in political science",
+        0
+      ],
+      [
+        0.071,
+        "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "GonzalezMary is a close friend who discusses political strategies",
+        0
+      ],
+      [
+        0.071,
+        "41398a5f-6975-482f-a016-b6b7e692d81f",
+        "Mother is a homemaker known for unwavering support of family endeavors",
+        0
+      ],
+      [
+        0.071,
+        "346dc7f8-02ed-455b-8ae4-ad0e578c3ea4",
+        "Committed to making a meaningful impact through political work",
+        0
+      ],
+      [
+        0.071,
+        "0ca433b1-1aaf-4347-b14d-9d8a15d4d6e1",
+        "Family is close-knit with strong values of loyalty and support",
+        0
+      ]
+    ]
+  },
+  {
+    "number": 23,
+    "uid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+    "session": 6,
+    "point": 1,
+    "review_class": "接受",
+    "old_proposition": "Sandra and Mary provide encouragement and political-strategy support to Donald.",
+    "old_evidence": [
+      [
+        1,
+        6
+      ],
+      [
+        5,
+        10
+      ]
+    ],
+    "new_evidence": [
+      0
+    ],
+    "new_messages": [
+      {
+        "idx": 0,
+        "role": "user",
+        "content": "I'm really excited about finally launching my political consulting firm. It's been a long journey, but it's fulfilling to see it come to fruition. I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.",
+        "timestamp": "Dec 20, 2025, 07:13:08",
+        "dialogue_turn": 0
+      }
+    ],
+    "snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_007/before.json",
+    "snapshot_count": 102,
+    "saved_split_memories": [
+      {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_text": "Previously worked as a senior developer in Blockchain Tech",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v8/result.json",
+          "variants/dnd_mem0_splitter/runs/v8_v4_unseen_cases_20261109_01_once/career_history/v4/result.json",
+          "variants/evidence_relation_judge/runs/part1_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/scope_v1_20261109/career_history_scope.json",
+          "variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/inputs.json",
+          "variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/career_history.started.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "paths": [
+          "variants/dnd_mem0_splitter/runs/v8_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/cases/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v3/result.json",
+          "variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_04_negative_relative/v4/result.json",
+          "variants/dnd_mem0_splitter/runs/v7_real_dev_20261109_01_once/case_04_negative_relative/result.json",
+          "variants/dnd_mem0_splitter/runs/v6_real_dev_20261109_01_once/case_04_negative_relative/result.json"
+        ],
+        "facts_count": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    ],
+    "top_memory_matches": [
+      [
+        0.167,
+        "913bef92-248b-416b-ba35-052af3a4e960",
+        "Life goal is to support the political career of a close relative",
+        0
+      ],
+      [
+        0.111,
+        "2e1a8728-9860-48c4-86fa-e9baca154aba",
+        "Major is Political Science",
+        0
+      ],
+      [
+        0.1,
+        "ef2971c8-a4f6-4496-beef-867ba169759f",
+        "Attended political events in Chicago",
+        0
+      ],
+      [
+        0.1,
+        "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+        "Is transitioning into political consulting",
+        0
+      ],
+      [
+        0.1,
+        "6e6df2dc-1469-4871-9565-b6d5a25e7420",
+        "Has a relative running a political campaign",
+        0
+      ],
+      [
+        0.1,
+        "282c758f-e845-4896-942b-18d70892c22e",
+        "Actively engaged in political discussions",
+        0
+      ],
+      [
+        0.083,
+        "d740c750-1802-4c13-beaa-80da0950a61f",
+        "Met John, a political strategist, at political events",
+        0
+      ],
+      [
+        0.083,
+        "6b30b758-5eeb-4b32-8ead-dca740a3f60b",
+        "Is forming a clearer vision for a career in political consulting",
+        0
+      ],
+      [
+        0.083,
+        "4f0c0c15-9a4b-43ab-b97e-f65ff01ed50f",
+        "Aims to be a key advisor in political campaigns",
+        0
+      ],
+      [
+        0.077,
+        "a299b9ea-6966-4a0d-bb29-be91ed29295c",
+        "Also motivated to establish their own political career",
+        0
+      ],
+      [
+        0.077,
+        "9e9c1f02-f357-4ebb-abfc-0ea565ffe5d6",
+        "Child1 is a high school student with interest in political science",
+        0
+      ],
+      [
+        0.077,
+        "98c6916c-8aa9-4560-94ce-5697f39ac818",
+        "GonzalezMary is a close friend who discusses political strategies",
+        0
+      ]
+    ]
+  }
+]

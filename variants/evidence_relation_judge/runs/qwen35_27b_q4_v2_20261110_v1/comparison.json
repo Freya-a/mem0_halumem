@@ -1,0 +1,406 @@
+{
+  "job_transition": {
+    "qwen3_8b": {
+      "status": "ok",
+      "relation": "support",
+      "fragment": "Looking for a new job with better work-life balance",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+      },
+      "reason": "新证据表明用户已经找到了新的工作，并且工作与生活平衡得到了改善，这支持了旧事实中用户正在寻找更好工作与生活平衡的陈述。",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2/job_transition.json"
+    },
+    "qwen_plus": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "Looking for a new job with better work-life balance",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+      },
+      "reason": "Old evidence states user is *looking for* a new job with better work-life balance; new evidence confirms they *have transitioned* to a new role where balance is *now much healthier*. This indicates the prior search has concluded successfully, so the 'looking for' state no longer holds — a possible change in status, not correction or mere support.",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/job_transition.json"
+    },
+    "qwen35_27b_q4": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "Looking for a new job with better work-life balance",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+      },
+      "reason": "New evidence indicates the user has transitioned to a new role with better balance, suggesting the previous state of 'looking for a job' may have changed, but without explicit confirmation that the search is terminated, it is classified as a possible change rather than a definitive correction.",
+      "confirmation_questions": [
+        "Has the user officially stopped looking for a new job since transitioning to the new role?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1/job_transition.json"
+    }
+  },
+  "persian_cats": {
+    "qwen3_8b": {
+      "status": "ok",
+      "relation": "support",
+      "fragment": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+      },
+      "reason": "新证据表明用户对波斯猫的历史渊源和与皇室的联系更加钦佩，这与旧事实中提到的用户喜欢波斯猫因其高贵、冷静的天性、优雅和历史魅力是一致的，因此新证据支持旧事实。",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2/persian_cats.json"
+    },
+    "qwen_plus": {
+      "status": "ok",
+      "relation": "supplement",
+      "fragment": "because of their regal and calm nature, elegance, and historical charm",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+      },
+      "reason": "新证据未否定或修正旧原因，而是新增‘历史血统与皇室关联’这一具体维度，强化并细化‘historical charm’，属相容性补充；第二条新证据提及‘practical challenges’但未改变喜好本身或核心原因。",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/persian_cats.json"
+    },
+    "qwen35_27b_q4": {
+      "status": "ok",
+      "relation": "supplement",
+      "fragment": "historical charm",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+      },
+      "reason": "New evidence confirms and deepens the existing reason (historical lineage/royalty) without contradicting the original statement, while adding new information about practical challenges in dialogue-2.",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1/persian_cats.json"
+    }
+  },
+  "skydiving": {
+    "qwen3_8b": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+      },
+      "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+      "confirmation_questions": [
+        "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+        "Is the user's commitment to safety and well-being still intact despite the new experience?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2/skydiving.json"
+    },
+    "qwen_plus": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+      },
+      "reason": "New evidence describes trying 'simulated skydiving' in a team-building context and finding it thrilling—distinct from real skydiving, which carries higher injury risk; the user still affirms prioritizing safety, suggesting the original risk-based dislike may not extend to low-risk simulations, indicating possible contextual change rather than historical correction or outright contradiction.",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/skydiving.json"
+    },
+    "qwen35_27b_q4": {
+      "status": "ok",
+      "relation": "uncertain",
+      "fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+      },
+      "reason": "New evidence describes enjoyment of 'simulated skydiving', while the old fact concerns 'extreme sports (e.g., skydiving)' due to 'high injury risk'. It is unclear if the user's dislike of real skydiving (due to risk) has changed or if the enjoyment is limited to the simulation, as the user explicitly states they still prioritize safety.",
+      "confirmation_questions": [
+        "Does the user's enjoyment of simulated skydiving indicate a change in their dislike of real skydiving?",
+        "Is the user willing to try real skydiving now, or is the enjoyment strictly limited to the simulated experience?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1/skydiving.json"
+    }
+  },
+  "career_history": {
+    "qwen3_8b": {
+      "status": "ok",
+      "relation": "uncertain",
+      "fragment": "previously worked as a senior developer in Blockchain Tech",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+      },
+      "reason": "The new evidence mentions the user's current employment at a consulting firm, but it does not provide any direct information about their previous role as a senior developer in Blockchain Tech. The temporal relationship between the past employment and the current consulting role is unclear.",
+      "confirmation_questions": [
+        "Is the user's current employment at a consulting firm related to their previous role as a senior developer in Blockchain Tech?",
+        "Does the new evidence provide any information about the user's employment history prior to their current role at the consulting firm?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2/career_history.json"
+    },
+    "qwen_plus": {
+      "status": "ok",
+      "relation": "uncertain",
+      "fragment": "Previously worked as a senior developer in Blockchain Tech",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+      },
+      "reason": "New evidence mentions a consulting firm and client acquisition but does not name Blockchain Tech, state current or past employment there, or clarify temporal relationship to the 'previously worked' claim; no object, attribute, or condition overlap is established.",
+      "confirmation_questions": [
+        "Does the consulting firm referenced in dialogue-0 replace or coexist with the Blockchain Tech role?",
+        "Is the user still employed at Blockchain Tech, or has that role ended?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/career_history.json"
+    },
+    "qwen35_27b_q4": {
+      "status": "ok",
+      "relation": "uncertain",
+      "fragment": "Previously worked as a senior developer in Blockchain Tech",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+      },
+      "reason": "New evidence mentions a 'consulting firm' but does not explicitly state the user's current employer or confirm if the previous role at 'Blockchain Tech' has ended or changed. It is unclear if the consulting firm is the same entity, a new venture, or if the user still works at Blockchain Tech while consulting.",
+      "confirmation_questions": [
+        "Is the 'consulting firm' mentioned in the new evidence the same entity as 'Blockchain Tech'?",
+        "Does the user still work as a senior developer at Blockchain Tech, or has that role ended?",
+        "Is the user currently employed by the consulting firm mentioned, or is it a separate side project?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1/career_history.json"
+    }
+  },
+  "promotion": {
+    "qwen3_8b": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "Works at Historical Productions Ltd. as a Director",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+      },
+      "reason": "The new evidence indicates a change in the user's position from 'Director' to 'lead director' at the same company, suggesting a possible change in the role.",
+      "confirmation_questions": [
+        "Is the promotion to 'lead director' a new role or an advancement within the 'Director' role?",
+        "Does the term 'lead director' imply a different level of responsibility or authority compared to 'Director'?"
+      ],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2/promotion.json"
+    },
+    "qwen_plus": {
+      "status": "ok",
+      "relation": "possible_change",
+      "fragment": "as a Director",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+      },
+      "reason": "New evidence states user was 'promoted to lead director', implying a change in job title from 'Director' to 'lead director'; same employer, but title upgraded. 'Lead director' is a distinct, likely senior, title—suggesting possible evolution rather than contradiction or correction.",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/promotion.json"
+    },
+    "qwen35_27b_q4": {
+      "status": "error",
+      "relation": "possible_change",
+      "fragment": "as a Director",
+      "new_quote": {
+        "source_id": "dialogue-0",
+        "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+      },
+      "reason": "New evidence indicates a promotion to 'lead director', suggesting a change in the specific job title attribute from 'Director' to 'lead director' at the same company.",
+      "confirmation_questions": [],
+      "validation": {
+        "passed": false,
+        "semantic_correctness": "not_checked"
+      },
+      "errors": [
+        {
+          "stage": "validation",
+          "type": "ValueError",
+          "message": "old_quote not found in this fact memory evidence"
+        }
+      ],
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1/promotion.json"
+    }
+  }
+}

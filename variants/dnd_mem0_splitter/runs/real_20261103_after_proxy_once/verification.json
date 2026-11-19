@@ -1,0 +1,42 @@
+{
+  "automatic_verification": {
+    "existing_files_checked": 24,
+    "existing_files_changed": [],
+    "input_is_existing_synthetic_example": true,
+    "input_id_and_text_preserved": true,
+    "saved_prompt_matches_design": true,
+    "saved_raw_response_revalidates_to_saved_result": true,
+    "model_call_attempts_this_task": 1,
+    "sdk_max_retries": 0,
+    "requested_model": "qwen-plus",
+    "returned_model": "qwen-plus",
+    "fact_count": 2,
+    "evidence_count": 3,
+    "quote_checks": [
+      {
+        "fact_index": 1,
+        "evidence_index": 0,
+        "source_type": "memory",
+        "literal_quote_matched": true
+      },
+      {
+        "fact_index": 2,
+        "evidence_index": 0,
+        "source_type": "memory",
+        "literal_quote_matched": true
+      },
+      {
+        "fact_index": 2,
+        "evidence_index": 1,
+        "source_type": "context",
+        "literal_quote_matched": true
+      }
+    ],
+    "offline_module_tests": {
+      "total": 38,
+      "passed": 38
+    },
+    "credential_scan": "passed"
+  },
+  "semantic_judgment": "See SEMANTIC_REVIEW.md; author review, not program proof."
+}\n

@@ -1,0 +1,69 @@
+{
+  "review_method": "本次助手对旧记忆、允许的旧上下文及保存的 v2/v3 响应逐项初审；未经用户确认，不是程序自动语义评分，也未向真实模型提供本文件。",
+  "summary": "v3 四条均补回 memory evidence 并通过程序检查；raw 和补充正文均保留对温顺印象深刻的关系，正文不再加入 perceive 或 companionship。仍有朋友家地点扩写、单条 supports 的人物或指代归属过强、一般佐证以及原始自述来源未确认的问题。",
+  "requested_checks": {
+    "memory_evidence": "已从原始响应确认四条各有 1 项 memory，source_id 对应输入 memory_id，quote 均为旧文本非空逐字片段；不是程序补写或从 context 改标。",
+    "gentle_vs_adaptability": "v3 第 1 条 raw 和 contextualized 都是 impressed by its gentle nature。适应性仍在第 2 条作为原文列举的宠物偏好，而没有替换第 1 条的印象对象。ctx-1 原话仍把 really impressive 连到 adaptability；这是旧记忆与旧来源表述的差别，不能据引文匹配认定两者完全等价。",
+    "perceive": "raw 和 contextualized 中没有 perceive 式兼容性改写，第 3 条直接保留兼容性理由。第 1 条 context supports 仍出现 perceived，用于描述来源中的温顺感知；不能声称这个词从所有字段消失。",
+    "companionship": "raw 和 contextualized 都没有加入 companionship；该词仍在按原样引用的 ctx-2 中出现，不能因此算新增了一个偏好事实。",
+    "unnecessary_expansion": "第 1 条仍加入 at a friend's house，虽然旧上下文有这段地点，但不是理解原子事实所需。其余三条正文相较 v2 明显收短，去掉括号评价、目标推导和 interactions。部分 context evidence 仍用于一般佐证，而非必要消歧。",
+    "original_speaker": "互动行为可由同一旧生成会话的 ctx-1 中 I 与记忆事件对应到 user；这为补充主语提供实际依据。不能据此证明每项 Mem0 概括都由用户直接说过，尤其 wellness goals、乐观整合偏好及 demanding career 在允许节选中没有完整直接自述，原始发言归属仍需确认。",
+    "new_omissions_or_errors": "未发现 raw 对旧记忆四个分号段的明显新增漏项，也未新增日期或已完成状态。但 memory supports 仍把原文未显式写出的主体称为 user，部分 context supports 继续超出当前引文；模型的第 4 条待确认理由偏重同句语法绑定，上文已有的偏好线索仍需纳入判断。"
+  },
+  "per_fact": [
+    {
+      "fact_index": 1,
+      "coverage": "互动、朋友的 Golden Retriever、最近及对温顺印象深刻均保留。",
+      "improvement_over_v2": "补充正文不再把印象对象替换为 adaptability。",
+      "remaining_issues": [
+        {"path": "$.facts[0].contextualized_subfact", "detail": "保留 at a friend's house 这一有来源但非必要的地点扩写。"},
+        {"path": "$.facts[0].evidence[0].supports", "detail": "单条 memory quote 没有显式 user 主语；该 supports 却说 Old memory states the user...。整体主语可借助旧上下文关联，但不能称是这条引文单独明示。"},
+        {"path": "$.facts[0].evidence[1]", "detail": "引文明确描述 gentle creature，并把 really impressive 连到 adaptability。它可支持互动和温顺特征，不能单独确认用户直接说过 impressed by gentle nature；原关系由 memory quote 保留。"}
+      ]
+    },
+    {
+      "fact_index": 2,
+      "coverage": "adaptability、calm demeanor、emotional support 三个受重视属性均保留，仍合为一条。",
+      "improvement_over_v2": "正文不再加入 companionship，也没有 crucial/invaluable 等括号扩写。",
+      "remaining_issues": [
+        {"path": "$.facts[1].evidence[0].supports", "detail": "Old memory explicitly states the user... 对 user 的明确归属强于当前 memory quote 的字面内容。"},
+        {"path": "$.facts[1].evidence", "detail": "三条 context 引文主要用于确认这些属性受重视；其作为必要消歧的用途未完全说明，证据补充是否过量仍需确认。"}
+      ]
+    },
+    {
+      "fact_index": 3,
+      "coverage": "受 Golden Retrievers 吸引、active lifestyle 与 wellness goals 两项兼容性理由均保留。",
+      "improvement_over_v2": "删除 perceive 和 wellness goals 的额外机制推导。",
+      "remaining_issues": [
+        {"path": "$.facts[2].evidence[0].supports", "detail": "memory quote 未显式写 user；人物归属不应只靠这条引文宣称。"},
+        {"path": "$.facts[2].evidence[1].supports", "detail": "将 their 直接称为 Golden Retrievers 的指代偏强。该来源完整文本先写 pets，当前引文自身也没有明示品种；跨来源的关联需要区分于单条引文明确表达的范围。"}
+      ]
+    },
+    {
+      "fact_index": 4,
+      "coverage": "optimistic、整合偏好、新体验和繁忙职业的平衡目标保留，没有写成已经实现。",
+      "improvement_over_v2": "正文不再加入 interactions 或额外背景描写。",
+      "remaining_issues": [
+        {"path": "$.facts[3].evidence[0].supports", "detail": "对 user 以及 this preference 的具体解释借用了单条引文之外的信息；若作为补足，应和 memory quote 单独直接支持的部分区分。"},
+        {"path": "$.facts[3].evidence[2].supports", "detail": "pets offer balance 并不直接说明职业平衡；consistent with balancing demanding career 仍是跨来源的一般佐证，当前 context quote 没有 career。"},
+        {"path": "$.facts[3].pending_confirmations[0]", "detail": "正文确定补为 Golden Retrievers，同时模型又标其范围不确定。该指代有旧记忆上文的实际线索，要求同句显式名词前项作为唯一依据偏严；最终是否保留确定表述或限定范围需人工确认。"}
+      ]
+    }
+  ],
+  "fidelity_dimensions": {
+    "人物与关系": "朋友仍是犬的主人，没有改成用户拥有犬；未加入姓名。The user 的事件主语补足有旧第一人称来源依据，但所有原始发言是否都是用户直接自述仍未确认。",
+    "时间": "recently 保留，未换成当前日期、发言日期或 Mem0 处理日期；具体事件日期仍不明。",
+    "条件与否定": "原文无显式条件或直接否定句，不能据本样本判断这类范围处理已经可靠。",
+    "情态与态度": "values、drawn to 和 optimistic 保留；没有推出实际养犬、已整合偏好或已实现职业平衡。",
+    "粒度": "四个原文段落基本覆盖，三个偏好和两个目标仍各自合并，不是最细原子粒度的证明。"
+  },
+  "model_pending_confirmations": "仅第 4 条返回 1 项关于 this preference 范围的待确认；未主动标记这里列出的其他来源或 supports 问题。",
+  "pending_human_confirmations": [
+    "原记忆的温顺印象关系与 ctx-1 的适应性印象表述之间，原始发言究竟如何表达；本次只忠实保留旧记忆，并未核实其现实真实性。",
+    "是否应去掉第 1 条额外地点，以及不服务于消歧的一般 context 佐证。",
+    "原始说话人或直接自述来源：互动可对到 user，但不能把每个 Mem0 概括都确认成用户原话；memory supports 中明确 user 的用语应进一步审查。",
+    "their 的品种范围、this preference 的指代范围，以及 supports 对职业平衡的跨来源解释。",
+    "若下游需要绝对事件时间或更细粒度事实，当前结果仍需补充可靠来源或另行确定粒度。"
+  ],
+  "limitations": "仅一次相同输入的复测；程序检查通过不能证明语义完全正确，也不能证明 v3 必然优于 v2 或普遍可靠。"
+}

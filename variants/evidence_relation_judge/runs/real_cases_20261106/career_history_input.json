@@ -1,0 +1,52 @@
+{
+  "split_result": {
+    "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+    "memory_text": "Previously worked as a senior developer in Blockchain Tech",
+    "facts": [
+      {
+        "fact_index": 1,
+        "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "raw_subfact": "Previously worked as a senior developer in Blockchain Tech",
+        "contextualized_subfact": "User previously worked as a senior developer in Blockchain Tech",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "quote": "Previously worked as a senior developer in Blockchain Tech",
+            "supports": "Old memory states prior employment as a senior developer at Blockchain Tech."
+          },
+          {
+            "source_type": "context",
+            "source_id": "old-context-1",
+            "quote": "I work at Blockchain Tech as a senior developer.",
+            "supports": "The context uses first-person 'I' and is attributed to speaker 'user', supporting that the subject of the memory is the user; however, this context describes current (not past) employment, so it does not confirm the tense or timing of the memory's 'previously worked'."
+          }
+        ],
+        "pending_confirmations": [
+          {
+            "item": "Temporal alignment between 'previously worked' (memory) and 'I work...' (context)",
+            "reason": "The memory asserts past employment ('previously worked'), while the context states present employment ('I work...'). No explicit time anchor (e.g., start/end dates, duration, or event-based transition) is provided in either to confirm whether the past role preceded, overlapped with, or was superseded by the present one. Thus, the factual relationship between the two statements — including whether the 'previous' role ended before Sep 05, 2025 — remains unresolved."
+          }
+        ]
+      }
+    ]
+  },
+  "source_context": [
+    {
+      "source_id": "old-context-1",
+      "source_ref": "dataset line 17, /sessions/1/dialogue/2/content",
+      "text": "I work at Blockchain Tech as a senior developer.",
+      "speaker": "user",
+      "recorded_at": "Sep 05, 2025, 09:10:09"
+    }
+  ],
+  "new_evidence": [
+    {
+      "source_id": "dialogue-0",
+      "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+      "speaker": "user",
+      "recorded_at": "Jan 05, 2026, 07:43:42"
+    }
+  ],
+  "time_info": null
+}

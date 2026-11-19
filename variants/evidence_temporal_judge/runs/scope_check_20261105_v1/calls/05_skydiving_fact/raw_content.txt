@@ -1,0 +1,27 @@
+{
+  "erase_label": "Make False",
+  "applicability": "involved",
+  "temporal_relation": "before_after",
+  "temporal_reason": "The new evidence quotes ('simulated skydiving' on 'Apr 10, 2026') occur after the old memory and context ('Sep 06, 2025'), establishing a before/after sequence where the user's reported action (trying simulated skydiving) postdates the original claim of disliking extreme sports due to injury risk and safety conflict.",
+  "components": [
+    {
+      "fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "action": "modify",
+      "reason": "The new evidence directly contradicts the universal present-tense claim 'dislikes' by reporting active, voluntary participation in simulated skydiving — an extreme sport — with positive affect ('thrilling', 'adrenaline rush', 'enjoy', 'open to trying new things'), while still affirming safety priority. This undermines the static 'dislikes... due to high injury risk' causal attribution and the framing of inherent conflict.",
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        },
+        {
+          "source_id": "dialogue-2",
+          "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+        },
+        {
+          "source_id": "dialogue-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ]
+    }
+  ]
+}

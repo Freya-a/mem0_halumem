@@ -1,0 +1,255 @@
+{
+  "source_file": "variants/simplemem_mem0_splitter/run_native_mem0_prompt_v2_20261119/case_2.json",
+  "source_sha256": "6dad7638fd03b3f4405d302c41598f9c03f470257c1478fa4b65448a0951f54e",
+  "input": {
+    "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+    "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "source_context": null
+  },
+  "raw_response": "{\n  \"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\",\n  \"original_text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"contextualized_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving)\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u2\",\n      \"raw_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"contextualized_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving) due to high injury risk\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u3\",\n      \"raw_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"contextualized_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"memory_quotes\": [\"conflicting with commitment to safety and well-being\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": []\n}",
+  "previous_validation": {
+    "status": "passed",
+    "parsed": {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "original_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving)"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u2",
+          "raw_statement": "Dislikes extreme sports due to high injury risk",
+          "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u3",
+          "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "memory_quotes": [
+            "conflicting with commitment to safety and well-being"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": []
+    },
+    "errors": [],
+    "warnings": [],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            41
+          ]
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            65
+          ]
+        ]
+      },
+      {
+        "unit_id": "u3",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            67,
+            119
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving)"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u2",
+        "raw_statement": "Dislikes extreme sports due to high injury risk",
+        "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u3",
+        "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "memory_quotes": [
+          "conflicting with commitment to safety and well-being"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ]
+  },
+  "rechecked_validation": {
+    "status": "passed",
+    "parsed": {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "original_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving)"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u2",
+          "raw_statement": "Dislikes extreme sports due to high injury risk",
+          "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u3",
+          "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "memory_quotes": [
+            "conflicting with commitment to safety and well-being"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": []
+    },
+    "errors": [],
+    "warnings": [],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            41
+          ]
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            65
+          ]
+        ]
+      },
+      {
+        "unit_id": "u3",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            67,
+            119
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving)"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u2",
+        "raw_statement": "Dislikes extreme sports due to high injury risk",
+        "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u3",
+        "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "memory_quotes": [
+          "conflicting with commitment to safety and well-being"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ],
+    "entity_normalizations": []
+  }
+}

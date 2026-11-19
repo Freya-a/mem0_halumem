@@ -1,0 +1,36 @@
+{
+  "started_at": "2026-11-10T15:56:55.902660+08:00",
+  "model_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3.5-27B-Q4_K_M/Qwen3.5-27B-Q4_K_M.gguf",
+  "model_sha256": "84b5f7f112156d63836a01a69dc3f11a6ba63b10a23b8ca7a7efaf52d5a2d806",
+  "server_build": "b1-78ffbaa",
+  "context": 4096,
+  "base_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen35_27b_q4_v2_20261110_v1",
+  "base_case_sha256": {
+    "job_transition": "67e15e21c8ea9aa67311ea96d5f76a627d2ebf9ecf2b1e213980d51e7ef0c907",
+    "persian_cats": "f1e09ce6a1c5531d496413aa9e1feaaf66c0959deb750d941836502b137e53af",
+    "skydiving": "0138002cadd982f702ee681a8888416ef31d747f404414a659aec03f8e88ebd6",
+    "career_history": "4639b3eea300c7c66a104fb70bcb74263ef4fdc986a93dffb4e6b199bd736baf",
+    "promotion": "b77131f19bb0576065f5b759254c16e5e6a8fcbb0eb67710b8ce0625512033ec"
+  },
+  "source_sha256": {
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/relation_judge.py": "8542d0a90bf379a5c34c4de26f5f7d56fad2de1305e01aa5b115185a17300300",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/relation_judge_v2.py": "5b6a607c4c709041f45d436b3c28b6027ebc300a84a9bea2473e7c7ad11c23e3",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/experimental_judge.py": "4796906ede3188c48d6af49d1ddee6bf2f2ecfd4983ef515e4a37b75a7512d25",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_provenance_20261110_v1/experimental_backend.py": "d566eeb010c3feecba8b895963126f940d616159a5fea294a03fcf6a1251f619"
+  },
+  "input_sha256": "f5586ed8c85558dc48749387cd8309308f7668c0add3c7d622794ee1663b95de",
+  "v2_system_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555",
+  "experimental_system_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a",
+  "added_instruction": "\n旧引文来源核对：old_quote 只能逐字复制当前 fact.evidence 中 source_type 为 \"memory\" 且 source_id 等于 memory_id 的 quote 的非空连续原文，并且该引文属于 memory_text。先检查 source_type，再复制；不能从 source_type 为 \"context\" 的 quote、source_context 或 contextualized_subfact 复制 old_quote，即使上下文与旧记忆含义相同也不行。不得改写人称、大小写或标点，不得拼接不同来源。旧上下文可用于理解主体与条件，但不能当作旧记忆原文引用。\n如果旧记忆不能支持某项所需表述，要在理由或待确认问题中如实说明，不能借用旧上下文伪造旧记忆支持；若没有合法的旧记忆引文，不能编造或替换引文，应保留无法通过校验的结果。",
+  "request_parameters": {
+    "temperature": 0,
+    "n_predict": 768,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "no_retry": true,
+  "semantic_correctness": "not_checked",
+  "notes": "Same v2 judge and validator; experimental prompt extension only. /apply-template does not generate; one /completion per fact. GPU peak sampled every 0.2 sec, device-wide including other processes."
+}

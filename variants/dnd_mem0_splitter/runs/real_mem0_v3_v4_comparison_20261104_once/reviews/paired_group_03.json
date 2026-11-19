@@ -1,0 +1,1004 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_09_father_profile",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "3条事实覆盖出生日期、退休医生和激发健康兴趣；raw 未补 Martin，补充版仅对缺失受益人消歧。未观察到确定文本错误。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "保留 Father 这一关系称谓和出生日期 1963-08-02，未把来源记录日期当出生日期。raw 未补用户、Martin 或孩子，contextualized 也未添加无必要身份。无否定、条件或情态变化；pending=[] 不表示现实出生日期已验证。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "Father was born on 1963-08-02",
+                  "original_supports": "Old memory states Father's birth date as 1963-08-02.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接记载 Father 的出生日期；supports 只作旧记忆记载的说明，没有宣称用户直接证言或现实真实性。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "保留 Father 为 retired doctor 的职业及退休状态。v3 的 is 是同位职业状态的通常语法展开，没有加入退休日期或推断仍在执业；raw 的 Father 是旧记忆内部共享主语，不是上下文新增人物。无否定、条件或情态改写。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "retired doctor",
+                  "original_supports": "Old memory identifies Father as a retired doctor.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "引文 retired doctor 直接记载退休状态和医生职业；Father 是同一 memory 句内明确共享主体，可内部恢复。supports 未称引文本身说明退休时间或现实真假。"
+                }
+              ]
+            },
+            {
+              "fact_index": 3,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                {
+                  "type": "IDENTITY_OR_RELATION",
+                  "reason": "Martin 作为被激发兴趣者有明确 context 文字；其真实身份以及与用户/Father 的关系未给出。补充版没有声称这些额外身份，未知不自动计错。"
+                }
+              ],
+              "fidelity_review": "raw 保留 Father inspired interest in health，不从上下文补受益人。contextualized 仅按同一父亲/医生/激发兴趣事件补 Martin，未称 Martin=用户、用户的孩子或 Father 的孩子。激发者和健康兴趣关系保留，无额外原因、时间、否定、条件或情态。pending 的理由承认 context 已说明 Martin；旧 memory 缺受益人本身与补充版使用 context 解答不构成确定程度冲突。 v3 另提 Martin 的身份/亲属关系未知，属于尚未声称的额外身份限制。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "retired doctor who inspired interest in health",
+                  "original_supports": "Old memory states Father inspired interest in health, but does not specify whose interest.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文在 retired doctor who... 的结构中支持 Father 激发健康兴趣，且确实未写 whose interest；supports 如实说明该局部缺项，没有从 memory 单独推出 Martin。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "Retired doctor who inspired Martin's interest in health.",
+                  "original_supports": "Context specifies that the interest in health inspired by Father belongs to Martin.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "context 引文直接含 Martin's interest in health；其 retired doctor who 与完整 ctx-1 的 My Father 同一事件关联可靠，可为缺失受益人补 Martin。只支持该名字作为受益人，不验证其真实身份或等同用户。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "Father 的出生日期",
+              "input_span": "Father was born on 1963-08-02",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文均含 Father 与完整日期，不仅是 evidence 引文出现。"
+            },
+            {
+              "unit": "Father 的退休医生身份",
+              "input_span": "retired doctor",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "两版事实2正文保留退休状态及医生职业；v4 过去式的时间解释另列未决，不据此判职业信息遗漏。"
+            },
+            {
+              "unit": "Father 激发健康兴趣的关系",
+              "input_span": "who inspired interest in health",
+              "raw_fact_indices": [
+                3
+              ],
+              "contextualized_fact_indices": [
+                3
+              ],
+              "status": "preserved",
+              "reason": "两版事实3正文都以 Father 为激发者；raw 保留受益人省略，补充版按 context 写 Martin，没有把 Martin 自动等同用户。"
+            }
+          ],
+          "granularity_observation": "按出生、职业状态、激发兴趣分成3个可独立判断的命题；关键人物关系仍保留。",
+          "uncertainties": [
+            {
+              "type": "IDENTITY_OR_RELATION",
+              "reason": "Martin 的具体身份/亲属关系未知；context 已解答健康兴趣的受益人为 Martin，不能把旧 memory 缺项误说成全文仍不知受益人。"
+            }
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "同样3条事实覆盖全部核心点并保持 raw 来源边界；第2条 was 的时间定位单列待确认，未判明确时间错误。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "保留 Father 这一关系称谓和出生日期 1963-08-02，未把来源记录日期当出生日期。raw 未补用户、Martin 或孩子，contextualized 也未添加无必要身份。无否定、条件或情态变化；pending=[] 不表示现实出生日期已验证。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "Father was born on 1963-08-02",
+                  "original_supports": "Old memory explicitly states Father's date of birth.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接记载 Father 的出生日期；supports 只作旧记忆记载的说明，没有宣称用户直接证言或现实真实性。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                {
+                  "type": "TEMPORAL_SCOPE",
+                  "reason": "旧记忆 retired doctor 为无时态同位描述，v4 用 was a retired doctor 添加过去式定位。是否仅是沿用出生叙述时态、或将退休身份限定于过去，输入不能唯一确定；不足以确定判 TEMPORAL_CHANGE，也不能推断已故或不再退休。"
+                }
+              ],
+              "fidelity_review": "保留 Father 为 retired doctor 的职业及退休状态，raw 的 Father 可从旧记忆内部恢复。was 给无时态的 retired doctor 添加过去式表述，其具体时间含义待确认；不从 was 推断已故、已不再退休或职业状态结束。未增加退休日期、否定、条件或情态。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "retired doctor",
+                  "original_supports": "Old memory identifies Father's occupational status and profession.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "引文 retired doctor 直接记载退休状态和医生职业；Father 是同一 memory 句内明确共享主体，可内部恢复。supports 未称引文本身说明退休时间或现实真假。"
+                }
+              ]
+            },
+            {
+              "fact_index": 3,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                {
+                  "type": "IDENTITY_OR_RELATION",
+                  "reason": "Martin 作为被激发兴趣者有明确 context 文字；其真实身份以及与用户/Father 的关系未给出。补充版没有声称这些额外身份，未知不自动计错。"
+                }
+              ],
+              "fidelity_review": "raw 保留 Father inspired interest in health，不从上下文补受益人。contextualized 仅按同一父亲/医生/激发兴趣事件补 Martin，未称 Martin=用户、用户的孩子或 Father 的孩子。激发者和健康兴趣关系保留，无额外原因、时间、否定、条件或情态。pending 的理由承认 context 已说明 Martin；旧 memory 缺受益人本身与补充版使用 context 解答不构成确定程度冲突。 v4 pending 标题把受益人称作 semantic subject，术语不精确，但理由明确讨论 whose interest，不能据此判所有主体未知或断言/待确认冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                  "quote": "retired doctor who inspired interest in health",
+                  "original_supports": "Old memory states Father inspired 'interest in health', but does not specify whose interest.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文在 retired doctor who... 的结构中支持 Father 激发健康兴趣，且确实未写 whose interest；supports 如实说明该局部缺项，没有从 memory 单独推出 Martin。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "Retired doctor who inspired Martin's interest in health.",
+                  "original_supports": "Context specifies 'Martin's interest' — this disambiguates the object of 'inspired interest in health' in the memory text.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "context 引文直接含 Martin's interest in health；其 retired doctor who 与完整 ctx-1 的 My Father 同一事件关联可靠，可为缺失受益人补 Martin。只支持该名字作为受益人，不验证其真实身份或等同用户。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "Father 的出生日期",
+              "input_span": "Father was born on 1963-08-02",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文均含 Father 与完整日期，不仅是 evidence 引文出现。"
+            },
+            {
+              "unit": "Father 的退休医生身份",
+              "input_span": "retired doctor",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "两版事实2正文保留退休状态及医生职业；v4 过去式的时间解释另列未决，不据此判职业信息遗漏。"
+            },
+            {
+              "unit": "Father 激发健康兴趣的关系",
+              "input_span": "who inspired interest in health",
+              "raw_fact_indices": [
+                3
+              ],
+              "contextualized_fact_indices": [
+                3
+              ],
+              "status": "preserved",
+              "reason": "两版事实3正文都以 Father 为激发者；raw 保留受益人省略，补充版按 context 写 Martin，没有把 Martin 自动等同用户。"
+            }
+          ],
+          "granularity_observation": "同样3条命题，粒度没有实质变化；不能因 pending 继续描述旧 memory 省略，就判补充版使用已给 context 与其冲突。",
+          "uncertainties": [
+            {
+              "type": "TEMPORAL_SCOPE",
+              "reason": "was a retired doctor 相对无时态 retired doctor 的过去式定位有歧义；不推断状态结束或已故。"
+            },
+            {
+              "type": "IDENTITY_OR_RELATION",
+              "reason": "Martin 的受益人角色已由 context 给出，真实身份/额外亲属关系仍未知且未在正文声称。"
+            }
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [],
+        "persistent": [
+          "两版均在事实正文覆盖出生、退休职业和激发健康兴趣，raw 保持受益人省略，contextualized 只补有源 Martin。",
+          "两版均未将 Martin 等同用户；memory 缺项与 context 已解答的分工不构成 ASSERTION_PENDING_CONFLICT。"
+        ],
+        "regressions": [],
+        "uncertainties": [
+          "v4 将职业同位描述写为 was，时间表述需人工确认，尚不作确定 TEMPORAL_CHANGE。",
+          "Martin 的真实身份/亲属关系在两版输入中均未知。"
+        ]
+      }
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "2条分别保留明确因果态度和运动偏好，主体/主观看法/关键特征均覆盖。and prefers 的附加因果作用范围只列未决；未观察到确定正文错误。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                {
+                  "type": "CAUSE_SCOPE",
+                  "reason": "and prefers 可以与 dislikes 作更高层并列，也可与 finds 一同处于 because 下。输入不能排除两种附加作用范围；明确的“不喜欢←觉得太对抗”因果在两版都保留，不能把歧义本身计成因果遗漏。"
+                }
+              ],
+              "fidelity_review": "保留不喜欢 wrestling 的负面态度，以及 because 连接的理由；finds 仍把 too confrontational 限定为主体看法，没有改成摔跤客观上太对抗。raw 未填用户；contextualized 的 user 和 they 来自同一偏好的第一人称来源，不能仅凭 speaker 元数据而定主体，但此处 I dislike/I find 足以关联。无时间、条件或额外行动。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                  "quote": "Dislikes wrestling because finds it too confrontational",
+                  "original_supports": "Old memory states a dislike of wrestling grounded in finding it too confrontational.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "声明的 memory 引文直接含不喜欢、because 因果和 finds 主观看法；supports 只复述这部分，不宣称来源是用户亲口陈述。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+                  "original_supports": "Confirms the subject is the user (first-person speaker), and that 'finds it too confrontational' refers to the user's own judgment; also provides syntactic clarity for pronoun and verb agreement in contextualized version.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "ctx-1 的 I dislike/I find 与同一 wrestling 态度直接相连，结合 user 角色可支持用户主体和其主观判断；语法补全未增添实际参与运动或其他行动。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                {
+                  "type": "CAUSE_SCOPE",
+                  "reason": "and prefers 可以与 dislikes 作更高层并列，也可与 finds 一同处于 because 下。输入不能排除两种附加作用范围；明确的“不喜欢←觉得太对抗”因果在两版都保留，不能把歧义本身计成因果遗漏。"
+                }
+              ],
+              "fidelity_review": "保留偏好的对象为强调 teamwork 和 personal growth 的运动，两项特征均进入正文。raw 仍省略主体，补充版用户主体有 I ... prefer 依据；没有把偏好说成实际参与、擅长或职业。与 fact1 分条后仍保留明确的对抗性 because 理由；偏好本身是否也是 because 并列理由仅列歧义。无否定、日期、条件或情态新增。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                  "quote": "prefers sports emphasizing teamwork and personal growth",
+                  "original_supports": "Old memory states a preference for sports with those characteristics.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接含偏好运动和 teamwork/personal growth 两特征，supports 未添加个人体育行为或用户直接自述归属。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+                  "original_supports": "Confirms the subject is the user and that the preference is active and self-attributed; 'that emphasize' clarifies the grammatical head of the noun phrase, supporting the relative clause interpretation in contextualized version.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "context 的第一人称 prefer 直接支持用户自我归属的当前偏好及 that emphasize 的特征结构；active 按偏好状态理解，不据此推出实际参加运动。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "不喜欢摔跤",
+              "input_span": "Dislikes wrestling",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "正文明确保留 dislike 的负面态度及 wrestling 对象。"
+            },
+            {
+              "unit": "太对抗为主体看法",
+              "input_span": "finds it too confrontational",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "正文均保留 finds，没有把个人看法提升为类别客观断言。"
+            },
+            {
+              "unit": "不喜欢与对抗性看法的 because 理由关系",
+              "input_span": "Dislikes wrestling because finds it too confrontational",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版正文均原样/近义保留 because；不能因事实条数不同而判该明确关系丢失。"
+            },
+            {
+              "unit": "偏好强调团队合作的运动",
+              "input_span": "prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "偏好与 teamwork 的对象特征联系均在正文，而非仅在引文。"
+            },
+            {
+              "unit": "偏好强调个人成长的运动",
+              "input_span": "prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "personal growth 与 teamwork 并列作为所偏好运动的特征保留。"
+            },
+            {
+              "unit": "and prefers 是否也在 because 的作用范围内",
+              "input_span": "because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                1,
+                2
+              ],
+              "contextualized_fact_indices": [
+                1,
+                2
+              ],
+              "status": "uncertain",
+              "reason": "v3 分成对抗性理由与独立偏好；若原句将偏好也纳入 because，该附加联系会变弱，但原句也容许高层并列偏好，故列 uncertain 而不计确定错误。"
+            }
+          ],
+          "granularity_observation": "两条有助于独立判断偏好，fact1 仍整体保留不喜欢与对抗性理由；不是只拆出理由。是否需把并列偏好连回 because 依赖语法作用范围，不能自动按遗漏计错。",
+          "uncertainties": [
+            {
+              "type": "CAUSE_SCOPE",
+              "reason": "and prefers 可以与 dislikes 作更高层并列，也可与 finds 一同处于 because 下。输入不能排除两种附加作用范围；明确的“不喜欢←觉得太对抗”因果在两版都保留，不能把歧义本身计成因果遗漏。"
+            }
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "1条保留原复合句和全部明确信息点，粗粒度不构成遗漏。一个 supports 的 for emphasis 修辞解释超出引文直接表达。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [
+                "SUPPORTS_OVERREACH"
+              ],
+              "findings": [
+                {
+                  "type": "SUPPORTS_OVERREACH",
+                  "input_span": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+                  "output_span": "Confirms the subject is the user (first-person 'I'), validates the causal structure ('because'), and matches the core attitudes and reasons; 'wrestling' is repeated for emphasis but does not alter the proposition's scope or object.",
+                  "reason": "supports 说 wrestling is repeated for emphasis；来源只显示名词重复，没有说明重复是为了强调。前面的主体/因果等结论有源，但这一修辞目的超过引文直接表达。"
+                }
+              ],
+              "uncertainties": [
+                {
+                  "type": "CAUSE_SCOPE",
+                  "reason": "and prefers 可以与 dislikes 作更高层并列，也可与 finds 一同处于 because 下。输入不能排除两种附加作用范围；明确的“不喜欢←觉得太对抗”因果在两版都保留，不能把歧义本身计成因果遗漏。"
+                }
+              ],
+              "fidelity_review": "一条正文保留 dislikes wrestling、because finds it too confrontational 和偏好强调 teamwork/personal growth 的运动；finds 的主观视角未被客观化。raw 原样保留省略主体，contextualized 的 User 可由同一段第一人称关联。没有添加实际运动行为、时间、条件或否定变化，and prefers 的语法附着歧义原样保留。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                  "quote": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+                  "original_supports": "Old memory records a dislike of wrestling grounded in its perceived confrontational nature, and a preference for sports highlighting teamwork and personal growth.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接覆盖态度、主观看法、明确 because 因果和偏好特征；supports 的 perceived 保持原 finds 的主体判断，没有现实真实性或原始用户发言归属的过度声明。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+                  "original_supports": "Confirms the subject is the user (first-person 'I'), validates the causal structure ('because'), and matches the core attitudes and reasons; 'wrestling' is repeated for emphasis but does not alter the proposition's scope or object.",
+                  "assessment": "overreach",
+                  "issue_types": [
+                    "SUPPORTS_OVERREACH"
+                  ],
+                  "reason": "主语、because 结构、态度和对象均有引文直接支持；但尾句把 wrestling 的重复归因为 for emphasis。重复本身可见，修辞目的未由引文明说，属于 supports 的局部额外解释；不把这一局部问题算作正文因果遗漏。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "不喜欢摔跤",
+              "input_span": "Dislikes wrestling",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "正文明确保留 dislike 的负面态度及 wrestling 对象。"
+            },
+            {
+              "unit": "太对抗为主体看法",
+              "input_span": "finds it too confrontational",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "正文均保留 finds，没有把个人看法提升为类别客观断言。"
+            },
+            {
+              "unit": "不喜欢与对抗性看法的 because 理由关系",
+              "input_span": "Dislikes wrestling because finds it too confrontational",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版正文均原样/近义保留 because；不能因事实条数不同而判该明确关系丢失。"
+            },
+            {
+              "unit": "偏好强调团队合作的运动",
+              "input_span": "prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "偏好与 teamwork 的对象特征联系均在正文，而非仅在引文。"
+            },
+            {
+              "unit": "偏好强调个人成长的运动",
+              "input_span": "prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "personal growth 与 teamwork 并列作为所偏好运动的特征保留。"
+            },
+            {
+              "unit": "and prefers 是否也在 because 的作用范围内",
+              "input_span": "because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "v4 一条保留完整表达及原有附着歧义，覆盖 preserved 不代表已消除歧义。"
+            }
+          ],
+          "granularity_observation": "一条同时包含态度、理由和偏好；较粗但完整保留原句关系与歧义，不能因数量少于 v3 直接算语义退步。",
+          "uncertainties": [
+            {
+              "type": "CAUSE_SCOPE",
+              "reason": "and prefers 可以与 dislikes 作更高层并列，也可与 finds 一同处于 because 下。输入不能排除两种附加作用范围；明确的“不喜欢←觉得太对抗”因果在两版都保留，不能把歧义本身计成因果遗漏。"
+            }
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [
+          "v4 整体保留原句，避免分条时对 and prefers 另作句法选择；这属于对原歧义的保留，不证明 v3 明确丢失因果。"
+        ],
+        "persistent": [
+          "明确的“不喜欢摔跤，因为觉得太对抗”关系、finds 的主观视角以及 teamwork/personal growth 偏好在两版正文都保留。",
+          "两版 raw 均未从上下文补用户主体，contextualized 的用户归属有同一偏好第一人称依据。"
+        ],
+        "regressions": [
+          "v4 的 context supports 新增 for emphasis 这一引文未说明的修辞目的，属于局部 SUPPORTS_OVERREACH；正文未受影响。"
+        ],
+        "uncertainties": [
+          "and prefers 是否也受 because 管辖仍有语法歧义；v3 的作用范围风险与确定因果遗漏分开，v4 保留原歧义。"
+        ]
+      }
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "3条事实保留欣赏、反思和平衡信息点；raw 未从 context 填用户，也未新增拥有/实际照料。拆分后丢失 while 联接，记 RELATION_SCOPE_CHANGE；来源限制在 pending 中具体保留。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "保留深度欣赏 Persian cats、其 historical lineage 和 association with royalty 三个态度对象/特征。raw 主体仍省略，补充版 user 有 ctx-1 的 my admiration 第一人称依据。没有把欣赏改为拥有或实际照料，没有新增电影节、纪录片经历；这些仅在 evidence quote 中。无日期、条件、否定或情态变化。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+                  "original_supports": "Old memory states that the subject has a deep admiration for Persian cats and their historical lineage and association with royalty.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接含深度欣赏及猫、历史血统、王室关联；supports 使用 the subject，没有以 memory 单独证明是用户直接自述。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+                  "original_supports": "Confirms the user is the subject of the admiration; provides context for origin (documentary) but not required for core proposition; supports attribution to user.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "同一欣赏对象与 my admiration 可靠关联 user 主体。supports 提及 documentary origin 属引文直接说明的背景，没有把该背景写入事实正文；不因 quote 含电影节/纪录片而计正文扩写。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "保留 reflects 的思考态度以及实际挑战的对象：维持 Persian cats 的 regal appearance。raw 把 their 替换为旧记忆内部明确的 Persian cats，属于可恢复共享指代，不是上下文泄漏。补充版 user 由 I do reflect 支持。未写为已拥有猫、实际护理、需要特定 grooming 或具备 traits。无否定、日期或条件变化；与平衡的 while 联系由 fact3 的关系问题单列。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "reflects on the practical challenges of maintaining their regal appearance",
+                  "original_supports": "Old memory states that the subject reflects on the practical challenges of maintaining their regal appearance.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 片段直接含 reflects、practical challenges 和 regal appearance；their 可由同一 memory 先行项 Persian cats 恢复，supports 未增添行动或身份。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-2",
+                  "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                  "original_supports": "Confirms the user is the subject of the reflection.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "context quote 的 I do reflect 直接支持反思的第一人称主体，结合来源 user 可作主体消歧；supports 没有宣称该局部引文独立验证猫拥有或实际照料。"
+                }
+              ]
+            },
+            {
+              "fact_index": 3,
+              "observed_issue_types": [
+                "RELATION_SCOPE_CHANGE"
+              ],
+              "findings": [
+                {
+                  "type": "RELATION_SCOPE_CHANGE",
+                  "input_span": "reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+                  "output_span": "Balances historical admiration for Persian cats with practical care requirements.",
+                  "reason": "旧记忆以 while 将反思维持外观的实际挑战与平衡历史欣赏/照料需求相连；fact2/fact3 改成独立反思与平衡，正文不再明示该联接。三个端点信息均出现不等于 while 关系保留；这是拆分目标的关系保真问题，不据 assistant 原始回述把旧命题修正掉。"
+                }
+              ],
+              "uncertainties": [
+                {
+                  "type": "ORIGINAL_SPEAKER_OR_ATTRIBUTION",
+                  "reason": "具体 balancing 回述见 assistant 的 ctx-3；user 的 ctx-1/ctx-2 直接表达欣赏和反思，未直接自述 balancing。可以支持语义主体为 user、同时保留其本人是否明确作该表述的来源限制；不以来源差异改写或否定旧记忆命题。"
+                }
+              ],
+              "fidelity_review": "历史欣赏与实际照料需求之间的 balancing 命题仍在正文，raw 的 for Persian cats 可从旧记忆内部共享对象恢复，未补 user。补充版 user 可由 assistant 对 you 的归因连到语义主体，不能当用户直接证言。独立 Balances 丢失旧记忆与 reflects 的 while 联接，见关系 finding。balances 不自动意味着拥有猫或实际照料。pending 区分本人活动与 assistant 解读；因其保留的是原记忆命题和来源限制，不仅凭该来源未决判 ASSERTION_PENDING_CONFLICT。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "balancing historical admiration with practical care requirements",
+                  "original_supports": "Old memory states that the subject balances historical admiration with practical care requirements.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接表达 balancing 历史欣赏与实际照料需求这一局部命题；其引文局部没有 while，不代表全文 while 关系无需在正文保留。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-3",
+                  "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+                  "original_supports": "Confirms the phrase 'balancing historical admiration with practical care requirements' is used by the assistant to describe the user’s approach, supporting attribution to the user.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "supports 明确说明 assistant 用该短语描述用户 approach，符合 you 的语义主体；没有称其为用户直接自述。dog preferences 的类比范围和真实行为不能仅凭此引文验证。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "深度欣赏波斯猫",
+              "input_span": "Has a deep admiration for Persian cats",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文保留深度欣赏猫的态度，没有改为拥有。"
+            },
+            {
+              "unit": "欣赏历史血统",
+              "input_span": "their historical lineage",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文将 historical lineage 保持为欣赏对象/特征。"
+            },
+            {
+              "unit": "欣赏王室关联",
+              "input_span": "association with royalty",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文保留王室关联与欣赏对象的联系，没有只在 quote 出现。"
+            },
+            {
+              "unit": "反思维持高贵外观的实际挑战",
+              "input_span": "reflects on the practical challenges of maintaining their regal appearance",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "两版事实2正文保留反思态度、挑战和维持外观的对象关系；不等于实际实施护理。"
+            },
+            {
+              "unit": "平衡历史欣赏与实际照料需求",
+              "input_span": "balancing historical admiration with practical care requirements",
+              "raw_fact_indices": [
+                3
+              ],
+              "contextualized_fact_indices": [
+                3
+              ],
+              "status": "preserved",
+              "reason": "两版事实3正文均保留两个平衡项及其 balancing 联系；来源强度另列未决，不删旧命题。"
+            },
+            {
+              "unit": "反思与平衡之间的 while 联接",
+              "input_span": "reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+              "raw_fact_indices": [],
+              "contextualized_fact_indices": [],
+              "status": "omitted",
+              "reason": "两版虽然分别在事实2/3写出端点，却没有任何一条 raw/contextualized 正文明示 while 连接；引文保留相关词不能代替正文关系覆盖。"
+            }
+          ],
+          "granularity_observation": "三条命题本身不构成错误；问题是反思和平衡被独立断言时未保留 while 联接。可以细拆但需保留该关系，不以事实数量判好坏。",
+          "uncertainties": [
+            {
+              "type": "ORIGINAL_SPEAKER_OR_ATTRIBUTION",
+              "reason": "具体 balancing 回述见 assistant 的 ctx-3；user 的 ctx-1/ctx-2 直接表达欣赏和反思，未直接自述 balancing。可以支持语义主体为 user、同时保留其本人是否明确作该表述的来源限制；不以来源差异改写或否定旧记忆命题。"
+            }
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "同样3条保留各信息点，持续丢失 while 联接。fact3 的 ctx-2 supports 另将用户反思升级成平衡活动证据，记 SUPPORTS_OVERREACH；ctx-3 的语义主体与直接用户证言分开。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "同样完整保留 deep admiration、Persian cats、historical lineage 与 royalty association。raw 省略主体，contextualized 的 user 有 ctx-1 第一人称同一态度依据；未添加电影节、纪录片、拥有或实际照料等事实。无否定、时间、条件或情态变化。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+                  "original_supports": "Old memory states the subject has a deep admiration for Persian cats and their historical lineage and association with royalty; the subject is not explicitly named in the memory text.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接记载各欣赏对象，且 supports 明示原 memory 未点名主体，未从 memory 单独推出用户直接自述。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-1",
+                  "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+                  "original_supports": "The user (speaker = 'user') uses first-person 'my admiration' for Persian cats' historical lineage and royal association; this directly grounds the subject of the admiration as the user.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "my admiration 与同一 Persian cats/血统/王室对象关联，可支持用户语义主体；并非仅以 speaker=user 自动确定主语。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "raw 保留原 their，contextualized 将其解为 Persian cats 并补 user；同一 memory 和完整 ctx-2 首句均给猫的先行项，I do reflect 支持用户主体。保留反思实际挑战的态度，没有改为实际照料、拥有或做 grooming。无时间、否定、条件或情态改写；while 关系另在 fact3 列出。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "reflects on the practical challenges of maintaining their regal appearance",
+                  "original_supports": "Old memory states the subject reflects on the practical challenges of maintaining Persian cats' regal appearance; the subject and referent of 'their' are not explicitly named in the memory text.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "引文直接支持反思维持 regal appearance 的实际挑战；Persian cats 可从同一 memory 的先行项恢复。supports 称 referent not explicitly named 可按本局部片段理解，全文已有猫先行项，不据此另判指代完全未知。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-2",
+                  "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                  "original_supports": "The user (speaker = 'user') explicitly states 'I do reflect on the practical challenges of maintaining their regal appearance', confirming both the subject ('I' = user) and the referent ('their' = Persian cats, consistent with prior context).",
+                  "assessment": "partially_supported",
+                  "issue_types": [],
+                  "reason": "所声明 quote 自身直接有 I do reflect，但未点名 their 的先行项；完整 ctx-2 首句已写 The history of Persian cats，同一 memory 也有猫先行项。supports 自己注明 consistent with prior context，属于必要的跨句指代消歧，不是当前局部引文独立验证全部对象，也不计确定越界。"
+                }
+              ]
+            },
+            {
+              "fact_index": 3,
+              "observed_issue_types": [
+                "RELATION_SCOPE_CHANGE",
+                "SUPPORTS_OVERREACH"
+              ],
+              "findings": [
+                {
+                  "type": "RELATION_SCOPE_CHANGE",
+                  "input_span": "reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+                  "output_span": "Balancing historical admiration with practical care requirements",
+                  "reason": "旧记忆以 while 将反思维持外观的实际挑战与平衡历史欣赏/照料需求相连；fact2/fact3 改成独立反思与平衡，正文不再明示该联接。三个端点信息均出现不等于 while 关系保留；这是拆分目标的关系保真问题，不据 assistant 原始回述把旧命题修正掉。"
+                },
+                {
+                  "type": "SUPPORTS_OVERREACH",
+                  "input_span": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                  "output_span": "Confirms user's historical admiration (via 'my interest in historical authenticity' aligned with Persian cat history) and reflection on practical challenges — together grounding 'balancing' as an activity undertaken by the user.",
+                  "reason": "用户关于真实性兴趣/反思挑战的表述未直接陈述 balancing；together grounding balancing as an activity 把相容态度升级为活动证据。assistant 的另外一条归因不能把 ctx-2 变成用户本人直接确认。"
+                }
+              ],
+              "uncertainties": [
+                {
+                  "type": "ORIGINAL_SPEAKER_OR_ATTRIBUTION",
+                  "reason": "具体 balancing 回述见 assistant 的 ctx-3；user 的 ctx-1/ctx-2 直接表达欣赏和反思，未直接自述 balancing。可以支持语义主体为 user、同时保留其本人是否明确作该表述的来源限制；不以来源差异改写或否定旧记忆命题。"
+                },
+                {
+                  "type": "REFERENCE_SCOPE",
+                  "reason": "ctx-3 使用 dog preferences 作类比；其对用户 approach 的归因可见，但不能据此确认用户自己将同一 balancing 作为具体猫照料行为，或验证其跨宠物的实际适用范围。"
+                }
+              ],
+              "fidelity_review": "raw 保留 gerund Balancing 和原有两个平衡项，未补用户；contextualized 补 user/for Persian cats 可由旧记忆共享主题及 assistant 的 you 归因理解，但不等于用户本人明确确认。正文不含猫拥有、实际照料、grooming、traits 或狗的新事实。与反思的 while 关系仍缺失；ctx-2 supports 另把反思升级为平衡活动的确认依据。pending=[] 不能证明本人确认或外部行为真实，也不能单因数组为空认定已产生同项断言冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "source_type": "memory",
+                  "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                  "quote": "balancing historical admiration with practical care requirements",
+                  "original_supports": "Old memory states the subject engages in balancing historical admiration with practical care requirements; neither subject nor object is explicit in this clause alone.",
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "memory 引文直接给 balancing 与两平衡项；supports 的 this clause alone 限定其主体/对象未显式点名的局部范围，未宣称可验证用户本人承诺或现实行为。"
+                },
+                {
+                  "evidence_index": 1,
+                  "source_type": "context",
+                  "source_id": "ctx-2",
+                  "quote": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                  "original_supports": "Confirms user's historical admiration (via 'my interest in historical authenticity' aligned with Persian cat history) and reflection on practical challenges — together grounding 'balancing' as an activity undertaken by the user.",
+                  "assessment": "overreach",
+                  "issue_types": [
+                    "SUPPORTS_OVERREACH"
+                  ],
+                  "reason": "ctx-2 直接表达历史真实性兴趣和反思挑战，可与 balancing 相容；但没有直接表达 balancing as an activity undertaken by the user。supports 把两个态度端点合成并确认平衡活动，超过该引文及必要上下文能直接支持的范围。"
+                },
+                {
+                  "evidence_index": 2,
+                  "source_type": "context",
+                  "source_id": "ctx-3",
+                  "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+                  "original_supports": "Assistant attributes the balancing act directly to 'you' (i.e., the user), using identical phrasing — confirming the user is the agent performing the balance. Note: this quote references 'dog preferences' analogically; it does not assert the user has dogs or that the balancing applies to dogs in this instance — only that the *structure* of balancing is recognized by the assistant as characteristic of the user.",
+                  "assessment": "partially_supported",
+                  "issue_types": [],
+                  "reason": "assistant 的 you 确实把该 approach 归给用户，可支持语义主体；这是助手归因而非用户直接自述，也不能单凭它验证活动实际执行。supports 开头标明 Assistant attributes，故不因 confirming agent 自动判 SOURCE_ATTRIBUTION_OVERCLAIM。关于 dog preferences 的说明只可按类比结构理解，具体跨宠物适用范围仍未完全确定。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "深度欣赏波斯猫",
+              "input_span": "Has a deep admiration for Persian cats",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文保留深度欣赏猫的态度，没有改为拥有。"
+            },
+            {
+              "unit": "欣赏历史血统",
+              "input_span": "their historical lineage",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文将 historical lineage 保持为欣赏对象/特征。"
+            },
+            {
+              "unit": "欣赏王室关联",
+              "input_span": "association with royalty",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "两版事实1正文保留王室关联与欣赏对象的联系，没有只在 quote 出现。"
+            },
+            {
+              "unit": "反思维持高贵外观的实际挑战",
+              "input_span": "reflects on the practical challenges of maintaining their regal appearance",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "两版事实2正文保留反思态度、挑战和维持外观的对象关系；不等于实际实施护理。"
+            },
+            {
+              "unit": "平衡历史欣赏与实际照料需求",
+              "input_span": "balancing historical admiration with practical care requirements",
+              "raw_fact_indices": [
+                3
+              ],
+              "contextualized_fact_indices": [
+                3
+              ],
+              "status": "preserved",
+              "reason": "两版事实3正文均保留两个平衡项及其 balancing 联系；来源强度另列未决，不删旧命题。"
+            },
+            {
+              "unit": "反思与平衡之间的 while 联接",
+              "input_span": "reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+              "raw_fact_indices": [],
+              "contextualized_fact_indices": [],
+              "status": "omitted",
+              "reason": "两版虽然分别在事实2/3写出端点，却没有任何一条 raw/contextualized 正文明示 while 连接；引文保留相关词不能代替正文关系覆盖。"
+            }
+          ],
+          "granularity_observation": "与 v3 同为三条，while 关系问题持续存在。raw 更接近省略原句不自动意味着覆盖更好，三个信息点出现仍不能替代关系保留。",
+          "uncertainties": [
+            {
+              "type": "ORIGINAL_SPEAKER_OR_ATTRIBUTION",
+              "reason": "具体 balancing 回述见 assistant 的 ctx-3；user 的 ctx-1/ctx-2 直接表达欣赏和反思，未直接自述 balancing。可以支持语义主体为 user、同时保留其本人是否明确作该表述的来源限制；不以来源差异改写或否定旧记忆命题。"
+            },
+            {
+              "type": "REFERENCE_SCOPE",
+              "reason": "assistant 的 dog 类比可连到用户 approach，但本人是否将此平衡作为具体猫照料活动及类比适用范围未直接确认；pending=[] 不能消除该限制。"
+            }
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [
+          "v4 第1条 memory supports 更明确说明原 memory 未点名主体；第2条保留 their 后在补充版消歧。这些表述更明示来源分工，但两版都没有 raw 用户泄漏。"
+        ],
+        "persistent": [
+          "欣赏猫/血统/王室关联、反思维持外观的挑战以及平衡历史欣赏/实际需求都进入两版正文；没有因粗细粒度将它们误判遗漏。",
+          "两版均未在正文保留 reflects ... while balancing 的联接，持续 RELATION_SCOPE_CHANGE。",
+          "两版正文没有新增纪录片/电影节、grooming、traits、狗、拥有猫或实际实施照料事实；额外内容仅在 quote 出现不算扩写。"
+        ],
+        "regressions": [
+          "v4 新增 ctx-2 supports，将历史真实性兴趣与反思合成为 grounding balancing as an activity；v3 未作这一直接用户活动确认，属于新增 SUPPORTS_OVERREACH。",
+          "v3 对 balancing 的本人活动/助手解读限制有具体 pending，v4 清空该 pending 而输入仍只含 assistant 的具体 balancing 回述；这是未决项说明变弱，不自动另算 ASSERTION_PENDING_CONFLICT。"
+        ],
+        "uncertainties": [
+          "user 的欣赏、反思有直接第一人称来源；balancing 有 assistant 归因，语义主体可为 user 与本人是否明确自述未确认可以同时成立。",
+          "不以 assistant 源回述替换或删去旧记忆的 balancing/while 命题，也不从 practical care requirements 推断拥有猫或正在照料。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "finished_at": "2026-11-09T15:49:52.697328+08:00",
+  "records": [
+    {
+      "case": "job_transition",
+      "status": "needs_review",
+      "v4_facts": 1,
+      "v2_status": "ok",
+      "row_statuses": [
+        "needs_review"
+      ],
+      "scope_extraction_calls": 1
+    },
+    {
+      "case": "persian_cats",
+      "status": "needs_review",
+      "v4_facts": 1,
+      "v2_status": "ok",
+      "row_statuses": [
+        "needs_review"
+      ],
+      "scope_extraction_calls": 1
+    }
+  ],
+  "frozen_files_changed": [],
+  "v2_model_calls_new": 2,
+  "v4_calls_new": 2,
+  "scope_model_calls_new": 2,
+  "qwen_versions": {
+    "model_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B",
+    "load_method": "AutoTokenizer/AutoModelForCausalLM.from_pretrained(local_files_only=True, torch_dtype=bfloat16), cuda:0",
+    "bf16_loaded": true,
+    "load_seconds": 6.627,
+    "model_calls": 2,
+    "generations": [
+      {
+        "seconds": 9.28,
+        "peak_allocated_bytes": 16758833152,
+        "peak_reserved_bytes": 17548967936,
+        "output_tokens": 242,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18270846976
+      },
+      {
+        "seconds": 10.353,
+        "peak_allocated_bytes": 17487156224,
+        "peak_reserved_bytes": 18184404992,
+        "output_tokens": 285,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18906284032
+      }
+    ],
+    "load_error": null,
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.3",
+    "gpu": "NVIDIA GeForce RTX 3090 Ti",
+    "gpu_free_bytes_before_load": 24763629568,
+    "gpu_total_bytes": 25422594048,
+    "cuda_allocated_after_load_bytes": 16383586816,
+    "cuda_reserved_after_load_bytes": 16536043520
+  },
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "no_mem0_write": true
+}

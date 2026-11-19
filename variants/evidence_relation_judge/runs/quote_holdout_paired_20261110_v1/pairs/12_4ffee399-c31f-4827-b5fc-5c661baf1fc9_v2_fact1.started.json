@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-10T16:20:00.671928+08:00",
+  "record": 12,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+    "memory_text": "Experiences stress due to historical accuracy demands and tight production schedules",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "raw_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+      "contextualized_subfact": "用户因确保电影细节的历史准确性要求以及紧凑的制作日程而感到压力。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+          "quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+          "supports": "旧记忆记载了因历史准确性要求和紧凑制作日程而产生压力的事实，但未明确主体及具体领域。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules",
+          "supports": "来源上下文由用户（speaker: user）陈述，明确了压力主体为“用户”，并将“historical accuracy demands”具体化为“确保电影细节的历史准确性”，将“tight production schedules”具体化为“管理紧凑的制作日程”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/1/dialogue/4/content",
+        "text": "My physical condition is Healthy. No chronic diseases. In terms of mental health, I am Stressed. No mental health issues. My physical health is generally good, thanks to regular exercise and a balanced diet. However, my mental health occasionally suffers due to the stress of ensuring every detail in my films is historically accurate and managing tight production schedules.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 14:55:40"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000 /sessions/5/dialogue/0/content",
+        "text": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.",
+        "speaker": "user",
+        "recorded_at": "Mar 15, 2026, 13:53:58"
+      },
+      {
+        "source_id": "dialogue-14",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000 /sessions/5/dialogue/14/content",
+        "text": "Delegating tasks has been key to reducing stress and improving my mental health. It's been a significant change since becoming lead director.",
+        "speaker": "user",
+        "recorded_at": "Mar 15, 2026, 14:31:44"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

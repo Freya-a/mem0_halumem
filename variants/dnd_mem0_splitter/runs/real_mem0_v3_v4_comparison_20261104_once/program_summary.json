@@ -1,0 +1,1313 @@
+{
+  "versions": {
+    "v3": {
+      "case_count": 11,
+      "program_passed": 11,
+      "candidate_facts": 17,
+      "accepted_facts": 17,
+      "memory_evidence": 17,
+      "context_evidence": 14,
+      "literal_quotes_total": 31,
+      "literal_quotes_passed": 31,
+      "facts_with_memory_passed": 17
+    },
+    "v4": {
+      "case_count": 11,
+      "program_passed": 11,
+      "candidate_facts": 16,
+      "accepted_facts": 16,
+      "memory_evidence": 16,
+      "context_evidence": 15,
+      "literal_quotes_total": 31,
+      "literal_quotes_passed": 31,
+      "facts_with_memory_passed": 16
+    }
+  },
+  "runs": [
+    {
+      "case_id": "case_01_multi_person",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+              "quote": "Grateful towards colleagues like Steven and friends like Mary",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_01_multi_person",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+              "quote": "Grateful towards colleagues like Steven and friends like Mary",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "Your gratitude towards colleagues like Steven and friends like Mary highlights the importance of having a strong support network.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+              "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+              "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+              "quote": "Practices or is open to yoga for supporting personal health and transition",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 2,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+              "quote": "Practices or is open to yoga for supporting personal health and transition",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 2,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+              "quote": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+              "quote": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+              "quote": "Recently promoted to lead director at Historical Productions Ltd",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+              "quote": "Recently promoted to lead director at Historical Productions Ltd",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+              "quote": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 2,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+              "quote": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 2,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_07_no_children",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+              "quote": "No children",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_07_no_children",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+              "quote": "No children",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 2,
+      "accepted_fact_count": 2,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+              "quote": "Partner was born on 1980-06-16",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+              "quote": "art curator specializing in historical artifacts",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 2,
+      "accepted_fact_count": 2,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+              "quote": "Partner was born on 1980-06-16",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+              "quote": "art curator specializing in historical artifacts",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 3,
+      "accepted_fact_count": 3,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "Father was born on 1963-08-02",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "retired doctor",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "retired doctor who inspired interest in health",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "Retired doctor who inspired Martin's interest in health.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 3,
+      "accepted_fact_count": 3,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "Father was born on 1963-08-02",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "retired doctor",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+              "quote": "retired doctor who inspired interest in health",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "Retired doctor who inspired Martin's interest in health.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 1,
+      "accepted_fact_count": 1,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+              "quote": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 2,
+      "accepted_fact_count": 2,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+              "quote": "Dislikes wrestling because finds it too confrontational",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+              "quote": "prefers sports emphasizing teamwork and personal growth",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "version": "v3",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 3,
+      "accepted_fact_count": 3,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "reflects on the practical challenges of maintaining their regal appearance",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "balancing historical admiration with practical care requirements",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-3",
+              "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "version": "v4",
+      "program_status": "passed",
+      "strict_JSON_and_existing_validator_replay": true,
+      "replay_error": null,
+      "saved_result_equals_replay": true,
+      "candidate_fact_count": 3,
+      "accepted_fact_count": 3,
+      "raw_response_preserved": true,
+      "memory_id_echo_matches_if_present": true,
+      "memory_text_echo_matches_if_present": true,
+      "facts": [
+        {
+          "fact_index": 1,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-1",
+              "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 2,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "reflects on the practical challenges of maintaining their regal appearance",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        },
+        {
+          "fact_index": 3,
+          "consecutive_index": true,
+          "source_memory_id_match": true,
+          "memory_evidence_count": 1,
+          "memory_id_and_quote_check": true,
+          "all_quotes_match": true,
+          "evidence_checks": [
+            {
+              "evidence_index": 0,
+              "source_type": "memory",
+              "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+              "quote": "balancing historical admiration with practical care requirements",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 1,
+              "source_type": "context",
+              "source_id": "ctx-2",
+              "quote": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            },
+            {
+              "evidence_index": 2,
+              "source_type": "context",
+              "source_id": "ctx-3",
+              "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+              "nonempty": true,
+              "source_declared": true,
+              "exact_substring": true
+            }
+          ]
+        }
+      ],
+      "semantic_correctness": "not determined by this audit",
+      "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+      "additional_real_model_calls": 0
+    }
+  ],
+  "additional_real_calls": 0
+}

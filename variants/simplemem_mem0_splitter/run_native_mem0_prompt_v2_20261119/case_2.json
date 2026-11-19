@@ -1,0 +1,198 @@
+{
+  "input": {
+    "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+    "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "source_context": null
+  },
+  "source": {
+    "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "before_file": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+    "snapshot_sha256": "815eeed3870029474b87bbdd4e5f1712acb21cc68784f82134283d2dfd2e274a",
+    "api_snapshot_pointer": "/api_snapshot/results (id lookup)",
+    "database_payload_cross_check": true,
+    "target_ids": [
+      "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008:m000"
+    ],
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008"
+  },
+  "request": {
+    "model": "qwen-plus-2025-12-01",
+    "prompt_version": "prompt_v2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a professional information extraction assistant, skilled at extracting structured, unambiguous information from conversations. You must output valid JSON format."
+      },
+      {
+        "role": "user",
+        "content": "Your task is to extract all valuable information from the following old memory and convert it into structured memory entries.\n\n[Old Memory ID]\n\"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\"\n[Old Memory]\n\"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\"\n[Optional source context, only for necessary and supported disambiguation]\nnull\n\n[Requirements]\n1. Complete Coverage: Generate enough memory entries to ensure ALL information in the old memory is captured. Split independently assessable facts while preserving subjects, objects, relationships, conditions, reasons, negation and uncertainty. Do not overstate attributed opinions as objective facts.\n2. Lossless Information: raw_statement must express only what the old memory says; retain unresolved pronouns and relative time when necessary. contextualized_statement may resolve references only when reliably supported by source context; otherwise keep the ambiguity and add it to unresolved. Never use new evidence as a source.\n3. Each memory_quotes entry must be a nonempty exact contiguous verbatim substring of the old memory, with enough quotations to support the unit. Use multiple substrings where needed. If source context was needed for resolution include exact verbatim context_quotes; otherwise use [].\n4. entities include only explicit or reliably disambiguated entities. condition and valid_time are strings or null. Set valid_time to null unless the memory explicitly states a fact's valid time; a recording timestamp is not necessarily a fact's valid time. Never infer or invent an absolute time.\n5. Output a single valid JSON object without markdown or explanations. Every unit has a nonempty unique unit_id. List unresolved issues as strings. If a candidate cannot be supported, record the issue rather than inventing evidence.\n\n[Output Format]\n{\"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\", \"original_text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\", \"units\": [{\"unit_id\":\"u1\", \"raw_statement\":\"...\", \"contextualized_statement\":\"...\", \"memory_quotes\":[\"...\"], \"context_quotes\":[], \"entities\":[], \"condition\":null, \"valid_time\":null}], \"unresolved\":[]}\n\n[Additional evidence and scope checks — apply to every unit]\n- Quote directly and verbatim from the corresponding source: each quote must be an exact continuous substring, preserving every character, capitalization and punctuation. Never stitch separate words into one quote. When the subject, relation or antecedent is elsewhere, include multiple exact substrings or a longer exact substring. Before returning, check each quote against its source. If evidence is insufficient, report the issue in unresolved rather than inventing a quote.\n- Preserve attribution in BOTH raw_statement and contextualized_statement. A person's preference, opinion, stated reason, belief or assessment remains that person's stated view; do not convert it into an unattributed objective fact. Keep the source's uncertainty, negation, reasons and relations. Do not add a claim about what a person believes unless the original supports that attribution.\n- Make each unit understandable as an individually assessable relation with its necessary subject, predicate and object, retaining essential qualifiers and attribution. Do not output an isolated fragment without its relation. Avoid duplicate or fully subsumed units that repeat the same proposition with no distinct independently assessable content. Split independently assessable content when supported; do not merge unrelated propositions merely to reduce count, and do not split away required conditions or reasons.\n- condition is ONLY an explicit applicability condition or explicit hypothetical/concessive condition from the memory. A cause, explanation or motivation is not a condition: keep it in the statement and set condition to null if no condition is stated. Preserve hypothetical and concessive wording without turning it into a claim the condition occurred.\n- Resolve a reference only when it is reliably established by the memory or provided source context. If the identity or antecedent is unresolved, retain the ambiguous reference or a non-identifying description in BOTH statements, do not assert a specific identity for that reference in entities, and record the specific uncertainty once in unresolved. Do not assert a resolution and list the same resolution as uncertain. If a resolution needs source_context, quote its exact support in context_quotes; otherwise do not invent context.\n- valid_time is null unless a fact's valid time is explicitly stated. A recording timestamp alone is not its valid time. Check that unresolved contains only actual unresolved issues and is consistent with the units.\n"
+      }
+    ],
+    "temperature": 0.1,
+    "max_tokens": 4096,
+    "automatic_retries": 0
+  },
+  "call": {
+    "status": "response_received",
+    "attempts": 1,
+    "request_transmitted": true,
+    "model_response_received": true,
+    "elapsed_seconds": 8.502,
+    "returned_model": "qwen-plus-2025-12-01",
+    "finish_reason": "stop"
+  },
+  "raw_response": "{\n  \"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\",\n  \"original_text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"contextualized_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving)\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u2\",\n      \"raw_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"contextualized_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving) due to high injury risk\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u3\",\n      \"raw_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"contextualized_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"memory_quotes\": [\"conflicting with commitment to safety and well-being\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": []\n}",
+  "provider_response": {
+    "id": "chatcmpl-4eb53e68-227c-99b0-a568-9178725ca2e6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\",\n  \"original_text\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"contextualized_statement\": \"Dislikes extreme sports (e.g., skydiving)\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving)\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u2\",\n      \"raw_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"contextualized_statement\": \"Dislikes extreme sports due to high injury risk\",\n      \"memory_quotes\": [\"Dislikes extreme sports (e.g., skydiving) due to high injury risk\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u3\",\n      \"raw_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"contextualized_statement\": \"Dislikes extreme sports because it conflicts with commitment to safety and well-being\",\n      \"memory_quotes\": [\"conflicting with commitment to safety and well-being\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": []\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1795070565,
+    "model": "qwen-plus-2025-12-01",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 373,
+      "prompt_tokens": 1006,
+      "total_tokens": 1379,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "parsed": {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "original_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving)"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u2",
+          "raw_statement": "Dislikes extreme sports due to high injury risk",
+          "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+          "memory_quotes": [
+            "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u3",
+          "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+          "memory_quotes": [
+            "conflicting with commitment to safety and well-being"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": []
+    },
+    "errors": [],
+    "warnings": [],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            41
+          ]
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            65
+          ]
+        ]
+      },
+      {
+        "unit_id": "u3",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            67,
+            119
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "contextualized_statement": "Dislikes extreme sports (e.g., skydiving)",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving)"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u2",
+        "raw_statement": "Dislikes extreme sports due to high injury risk",
+        "contextualized_statement": "Dislikes extreme sports due to high injury risk",
+        "memory_quotes": [
+          "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u3",
+        "raw_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "contextualized_statement": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "memory_quotes": [
+          "conflicting with commitment to safety and well-being"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ]
+  }
+}

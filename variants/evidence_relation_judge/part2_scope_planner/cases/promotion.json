@@ -1,0 +1,120 @@
+{
+  "case_id": "promotion",
+  "origin": "human-reviewed development case; scope annotations manually assembled",
+  "baseline_path": "../runs/controlled_v2_20261106/promotion_run.json",
+  "experiment_path": "../runs/quote_provenance_20261110_v1/promotion.json",
+  "old_units": [
+    {
+      "name": "title",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "old-context-1",
+            "quote": "I work at Historical Productions Ltd. as a Director."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "job_title",
+        "evidence": [
+          {
+            "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "quote": "Director"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      },
+      "observation": {
+        "source_id": "old-context-1",
+        "value": "Sep 05, 2025, 14:42:35"
+      }
+    },
+    {
+      "name": "employer",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "old-context-1",
+            "quote": "I work at Historical Productions Ltd. as a Director."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "employer",
+        "evidence": [
+          {
+            "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "quote": "Historical Productions Ltd."
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      },
+      "observation": {
+        "source_id": "old-context-1",
+        "value": "Sep 05, 2025, 14:42:35"
+      }
+    }
+  ],
+  "new_unit": {
+    "name": "new_title",
+    "subject": {
+      "value": "user",
+      "evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        }
+      ]
+    },
+    "attribute": {
+      "value": "job_title",
+      "evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        }
+      ]
+    },
+    "weekdays": {
+      "kind": "unknown"
+    },
+    "valid": {
+      "start": {
+        "kind": "unknown"
+      },
+      "end": {
+        "kind": "unknown"
+      }
+    },
+    "observation": {
+      "source_id": "dialogue-0",
+      "value": "Feb 01, 2026, 18:47:19"
+    }
+  },
+  "limits": [
+    "Promotion date unknown; employment and job-title semantics require review.",
+    "Candidate text spans both employer and title; this is not an instruction to change both."
+  ]
+}

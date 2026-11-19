@@ -1,0 +1,106 @@
+{
+  "case_id": "case_2_time_state",
+  "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+  "execution_exit_code": 0,
+  "model": "qwen-plus",
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1375,
+    "completion_tokens": 931,
+    "total_tokens": 2306
+  },
+  "strict_json_schema_passed": true,
+  "input_matches_preflight": true,
+  "memory_id_and_original_text_preserved": true,
+  "continuous_fact_indices": true,
+  "all_fact_and_memory_evidence_ids_match": true,
+  "all_context_ids_exist": true,
+  "each_fact_has_memory_evidence": true,
+  "literal_quotes_passed": 4,
+  "literal_quotes_total": 4,
+  "fact_count": 2,
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "quote": "Expressed initial skepticism about integrating Golden Retriever preference into daily life",
+      "supports": "Direct statement of past skepticism regarding integration of Golden Retriever preference into daily life",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        90
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+      "quote": "but now sees pets as sources of emotional support and stress relief",
+      "supports": "Direct assertion of current view about pets’ functional role",
+      "exact_substring": true,
+      "character_range": [
+        92,
+        159
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "I'm optimistic about integrating new experiences, like my preference for Golden Retrievers, to help manage stress.",
+      "supports": "Confirms the speaker associates Golden Retriever preference with stress management, aligning with 'stress relief' in the memory",
+      "exact_substring": true,
+      "character_range": [
+        120,
+        234
+      ]
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 2,
+      "source_type": "context",
+      "source_id": "ctx-2",
+      "quote": "Pets can definitely provide emotional support, which is valuable.",
+      "supports": "Confirms the speaker affirms pets’ capacity for emotional support, aligning with 'sources of emotional support' in the memory",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        65
+      ]
+    }
+  ],
+  "offline_revalidation_matches_saved_result": true,
+  "offline_backend": "MockBackend only; no real model request",
+  "original_prompt_matches": true,
+  "model_pending_confirmations": [
+    {
+      "fact_index": 1,
+      "items": [
+        {
+          "item": "The identity of 'the speaker'",
+          "reason": "The memory text uses third-person phrasing ('Expressed...'), but the source_context attributes both quoted texts to 'speaker': 'user'. However, the memory itself does not explicitly identify the speaker as the user or confirm deictic alignment (e.g., whether 'their' refers to the user); this relies on inference from source_context, which is not part of the memory_text."
+        },
+        {
+          "item": "Temporal scope of 'initial skepticism'",
+          "reason": "The memory states 'initial skepticism' but provides no anchor for when that initial phase occurred (e.g., relative to what event or time); source_context gives timestamps for two later utterances (Jan 10, 2026), but none describe the skeptical period — so the timing of the skepticism remains unspecified."
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "items": [
+        {
+          "item": "Whether 'now' refers to the time of the memory or a later point",
+          "reason": "The memory uses 'now' without temporal anchoring; source_context timestamps are from Jan 10, 2026, but it is unclear if the memory was recorded on that date or later — no timestamp is provided for the memory itself."
+        }
+      ]
+    }
+  ],
+  "validation_limits": "Checks structure, IDs and literal quote presence; does not prove semantic coverage, correct attribution, entailment, necessity of contextual additions or preservation of tone."
+}

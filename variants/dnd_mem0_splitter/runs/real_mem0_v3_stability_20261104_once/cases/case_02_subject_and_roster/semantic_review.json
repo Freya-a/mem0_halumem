@@ -1,0 +1,157 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_02_subject_and_roster",
+    "categories": [
+      "缺失主语",
+      "姓名与别称",
+      "上下文额外人物"
+    ],
+    "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 2,
+    "literal_quotes_total": 2,
+    "review_label": "初步判断，待人工确认",
+    "summary": "初步判断，待人工确认：格式检查 passed；1 条事实保留朋友关系、ThomasSusan/Susan 名称关联及支持鼓励。观察到 raw 主体来自上下文、contextualized 增加有源但非必要的 well-being 效果，以及 context supports 将名称 token 升格为已验证 full name 的越界与待决状态冲突。未把其他同事名单带入正文。",
+    "observed_issue_types": [
+      "ASSERTION_PENDING_CONFLICT",
+      "RAW_CONTEXT_LEAK",
+      "SUPPORTED_UNNECESSARY_ADDITION",
+      "SUPPORTS_OVERREACH"
+    ],
+    "has_observed_issue": true,
+    "specific_uncertainty_types": [
+      "MODAL_OR_RELATION_SCOPE",
+      "SUBJECT_OR_IDENTITY"
+    ],
+    "has_specific_unresolved_item": true,
+    "model_pending_item_count": 2,
+    "pending_human_confirmations": [
+      {
+        "type": "SUBJECT_OR_IDENTITY",
+        "reason": "初步判断，待人工确认：ThomasSusan 是完整姓名、复合名字还是串接/笔误仍无法确认；当前只能忠实保留 token 和 Susan 称呼，不能自动纠正。"
+      },
+      {
+        "type": "MODAL_OR_RELATION_SCOPE",
+        "reason": "初步判断，待人工确认：具体支持方式/频率在片段内未知，但不属于原记忆必须补全的内容，也不单独计为错误。"
+      },
+      {
+        "type": "ASSERTION_PENDING_CONFLICT",
+        "reason": "初步判断，待人工确认：请人工确认 full name 已验证与姓名结构 pending 的确定程度冲突；这不否定源文本确实使用了 ThomasSusan 和 Susan。"
+      }
+    ],
+    "independent_review_file": "reviews/group_01.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_02_subject_and_roster",
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK",
+        "SUPPORTED_UNNECESSARY_ADDITION",
+        "SUPPORTS_OVERREACH"
+      ],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "raw_subfact": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+      "contextualized_subfact": "The user has a friend named ThomasSusan (referred to as 'Susan'), and Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "supports": "Old memory states the user has a friend named ThomasSusan (called 'Susan') who provides support and encouragement."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "supports": "Confirms speaker is the user (first-person 'my', 'me'); specifies that Susan's support and encouragement inspire the user's focus on well-being across domains; validates 'ThomasSusan' as the full name and 'Susan' as the used reference; supports contextualizing 'provides support and encouragement' as having an inspiring effect tied to well-being goals."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+          "reason": "The memory text and source context both present 'ThomasSusan' as a single token without internal punctuation or clarification; no disambiguating evidence (e.g., usage elsewhere, correction, or syntactic separation) is provided."
+        },
+        {
+          "item": "The specific nature or mode of Susan's support and encouragement (e.g., verbal, practical, emotional, frequency, context)",
+          "reason": "Both memory and context describe the support and encouragement only at the level of effect ('inspire me to maintain focus...') and domain ('personal and professional life'), without specifying actions, occasions, or forms."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：raw 完整保留 Has a friend、ThomasSusan、referred to as Susan、provides support and encouragement；contextualized 也保留朋友及别称关联，并改用有源的支持鼓励效果表述。没有遗漏关键名字/关系，没有否定、时间、条件或情态变化。user 主体由 source_context 的 user 角色及 I/my/me 直接支持；raw 增加该主体仍违反仅从 memory 内恢复内容的边界。contextualized 正文确实新增了支持鼓励激励其维持个人和职业生活 well-being 关注的命题；它有 user 来源，但不是消歧或保留旧记忆所必需。引文中的其他细节本身不计新增，MartinezDaniel/WilliamsJoshua 及工作细节也没有进入事实正文。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "output_quote": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+          "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 省略拥有朋友的主体；source_context 的 user 第一人称可以支持用户主体，但冻结 v3 第2条要求此类上下文补足留在 contextualized，raw 不应填 The user。这是字段边界问题，不是将有来源的用户主体判为虚构。"
+        },
+        {
+          "type": "SUPPORTED_UNNECESSARY_ADDITION",
+          "certainty": "observed",
+          "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "output_quote": "Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+          "reason": "初步判断，待人工确认：output_quote 是 contextualized_subfact 的实质内容片段。旧 memory 只有支持和鼓励，并无激励保持 well-being 关注及个人/职业领域的效果；该效果虽被 ctx-1 用户原文直接支持，但超出补主体或解释别称所需。它已进入事实正文，故属于有源但非必要扩写，不是仅因证据引文含更多细节而判错。"
+        },
+        {
+          "type": "SUPPORTS_OVERREACH",
+          "certainty": "observed",
+          "input_quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+          "reason": "初步判断，待人工确认：两处输入确实使用 ThomasSusan token，并将其与 Susan 关联，足以保留原命名/别称命题；它们不能验证 ThomasSusan 是完整真实姓名而非串接、数据形式或笔误。supports 的 full name 验证结论超出所引文本。此判断只针对 supports 新加强度，不将 raw 沿用原 memory 的 named ThomasSusan 另判无依据。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "certainty": "observed",
+          "input_quote": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+          "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+          "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item。supports 声称已验证 full name，同时 pending 明确保留名称是否为串接/笔误的疑问，确定程度冲突。仅保留文本 token 和已使用的 Susan 称呼可以与未知并存，但 full name 已验证这一更强断言不能由现有证据消除该未知。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：ThomasSusan 的 token 结构、完整姓名性质、是否为串接/笔误无法在本输入中确定；应保持原记忆命名而不擅自改名或合并拆分人物。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：支持鼓励的具体方式、频率、场景没有给出。模型将它列为待确认属于额外细节未知，本身不是拆分错误，也不是完成原命题所需补全的缺口。"
+        }
+      ],
+      "speaker_review": {
+        "semantic_subject": "初步判断，待人工确认：ctx-1 的元数据 speaker=user，正文 I have / my Friend / inspire me 足以直接支持拥有朋友、接受支持者是用户；不应将省略主语的 memory 一律判为主体虚构。",
+        "original_utterance_attribution": "初步判断，待人工确认：朋友、姓名 token、Susan 称呼及 well-being 效果均出现在该 user 原始片段中。context supports 关于 speaker=user 可结合角色元数据支持；第一人称词本身并不能单独确定系统角色，但这里元数据已明确。",
+        "pending_review": "初步判断，待人工确认：姓名结构 pending 与 full name 验证冲突已单列；具体支持方式 pending 不应转化为错误计数或要求新增事实。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：memory 引文直接支持朋友关系、ThomasSusan/Susan 名称关联及支持鼓励；user 主体不在该引文字面内，但同事件 user 第一人称来源足以补足。因此主体有依据，supports 作为纯 memory 来源描述并非全为字面支持；未声称其是用户原话，也未把 ThomasSusan 说成已核验 full name，此处不单独计错误。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "overreach",
+          "reason": "初步判断，待人工确认：quote 与 source 的 user 元数据共同支持用户角色、朋友关系、Susan 的使用以及激励关注 well-being 的效果；后者虽为非必要正文扩写，但确实有源。越界部分是将 ThomasSusan token 验证为 full name；输入只显示其使用形式，且模型自己保留串接/笔误 pending。不能由该 evidence 验证真实完整姓名。",
+          "issue_types": [
+            "SUPPORTS_OVERREACH",
+            "ASSERTION_PENDING_CONFLICT"
+          ]
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    }
+  ]
+}

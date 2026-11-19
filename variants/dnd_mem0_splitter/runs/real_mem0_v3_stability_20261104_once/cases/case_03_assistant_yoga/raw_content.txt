@@ -1,0 +1,46 @@
+{
+  "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+  "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "raw_subfact": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+      "contextualized_subfact": "The user practices yoga or is open to practicing yoga to support personal health and career transition.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "Old memory states the user practices or is open to yoga for supporting personal health and transition."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "supports": "Provides contextual grounding: 'transition' refers to career transition, and 'personal health' includes well-being in the context of work-life balance."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "Confirms that 'yoga' was suggested by the assistant as a supportive practice for the user’s transition and personal health — consistent with the memory’s framing of openness or practice, but does not confirm the user’s actual practice status."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether the user actually practices yoga or only expresses openness to it",
+          "reason": "The memory uses the disjunctive 'or' without specifying which disjunct holds; neither source_context confirms current practice nor clarifies intent level (e.g., intention vs. exploration)."
+        },
+        {
+          "item": "The speaker of the memory statement",
+          "reason": "The memory text is third-person ('Practices or is open...'), but input source_context shows the user self-reports career concerns (ctx-1) and the assistant recommends yoga (ctx-2); it is not stated whether this memory reflects user self-report, assistant summary, or system inference."
+        },
+        {
+          "item": "Temporal scope of 'practices' (e.g., current, past, habitual)",
+          "reason": "The memory lacks tense markers or time anchors; 'Practices' is bare verb form without explicit present/habitual/ongoing marking, and no recorded_at from memory itself is provided."
+        }
+      ]
+    }
+  ]
+}

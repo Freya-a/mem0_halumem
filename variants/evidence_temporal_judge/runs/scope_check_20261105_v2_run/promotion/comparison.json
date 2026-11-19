@@ -1,0 +1,127 @@
+{
+  "case": "promotion",
+  "human_review_source_for_comparison_only": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/REPORT.md",
+  "v1": {
+    "fact_judgments": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "status": "involved",
+        "erase_label": "Reinforce",
+        "applicability": "involved",
+        "temporal_relation": "before_after",
+        "temporal_reason": "The new evidence states 'I recently got promoted to lead director at Historical Productions Ltd.' and is recorded on 'Feb 01, 2026, 18:47:19'; the old evidence ('I work at Historical Productions Ltd. as a Director') is recorded on 'Sep 05, 2025, 14:42:35'. 'Recently got promoted' implies the prior role (Director) was held before the promotion; thus the old fact temporally precedes and is reinforced by the new evidence as a prior state.",
+        "components": [
+          {
+            "fragment": "Works at Historical Productions Ltd. as a Director",
+            "action": "confirm",
+            "reason": "The new evidence confirms continuation and evolution of the same employment relationship — 'lead director' is a promotion from 'Director', presupposing prior incumbency in the Director role at the same company.",
+            "new_evidence": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "reason": "The quote introduces a new role ('lead director') and indicates a promotion, which implies a change from the previously known role of 'Director'; 'lead director' is a more specific and senior title not present in the old fact."
+        }
+      ]
+    }
+  },
+  "scope_v2": {
+    "fact_judgments": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "semantic_support": "not_verified",
+        "status": "involved",
+        "applicability": "involved",
+        "components": [
+          {
+            "fragment": "Works at Historical Productions Ltd. as a Director",
+            "contextualized": "User works at Historical Productions Ltd. as a Director.",
+            "action": "modify",
+            "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+            "old_evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director"
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ],
+            "new_evidence": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd.",
+          "reason": "The quote states a recent promotion to 'lead director' at Historical Productions Ltd., which introduces a new role ('lead director') and the modality 'recently got promoted', distinct from the previously known role of 'Director'."
+        }
+      ],
+      "semantic_support": "not_verified"
+    }
+  },
+  "semantic_review": "pending_user_review"
+}

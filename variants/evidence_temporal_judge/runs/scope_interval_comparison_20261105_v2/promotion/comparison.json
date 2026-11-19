@@ -1,0 +1,486 @@
+{
+  "A_scope_only": {
+    "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+    "memory_text": "Works at Historical Productions Ltd. as a Director",
+    "source_context": [
+      {
+        "source_id": "old-context-1",
+        "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+        "text": "I work at Historical Productions Ltd. as a Director.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 14:42:35"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "speaker": "user",
+        "recorded_at": "Feb 01, 2026, 18:47:19"
+      }
+    ],
+    "time_info": null,
+    "prompt_version": "scope_judge_20261105_v2",
+    "facts": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "semantic_support": "not_verified",
+        "status": "involved",
+        "applicability": "involved",
+        "components": [
+          {
+            "fragment": "Works at Historical Productions Ltd. as a Director",
+            "contextualized": "User works at Historical Productions Ltd. as a Director.",
+            "action": "modify",
+            "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+            "old_evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director"
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ],
+            "new_evidence": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd.",
+          "reason": "The quote states a recent promotion to 'lead director' at Historical Productions Ltd., which introduces a new role ('lead director') and the modality 'recently got promoted', distinct from the previously known role of 'Director'."
+        }
+      ],
+      "semantic_support": "not_verified"
+    },
+    "summary": {
+      "fact_status_counts": {
+        "involved": 1,
+        "uninvolved": 0,
+        "insufficient": 0,
+        "model_failed": 0,
+        "parse_failed": 0
+      },
+      "confirmed_valid": 0,
+      "confirmed_valid_note": "This pipeline does not confirm factual validity.",
+      "candidate_status": "ok"
+    }
+  },
+  "B_combined": {
+    "request": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "source_context": [
+        {
+          "source_id": "old-context-1",
+          "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+          "text": "I work at Historical Productions Ltd. as a Director.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 14:42:35"
+        }
+      ]
+    },
+    "split_result": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "speaker": "user",
+        "recorded_at": "Feb 01, 2026, 18:47:19"
+      }
+    ],
+    "time_info": null,
+    "scope_result": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "source_context": [
+        {
+          "source_id": "old-context-1",
+          "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+          "text": "I work at Historical Productions Ltd. as a Director.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 14:42:35"
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "speaker": "user",
+          "recorded_at": "Feb 01, 2026, 18:47:19"
+        }
+      ],
+      "time_info": null,
+      "prompt_version": "scope_judge_20261105_v2",
+      "facts": [
+        {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+            "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director",
+                "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director.",
+                "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "semantic_support": "not_verified",
+          "status": "involved",
+          "applicability": "involved",
+          "components": [
+            {
+              "fragment": "Works at Historical Productions Ltd. as a Director",
+              "contextualized": "User works at Historical Productions Ltd. as a Director.",
+              "action": "modify",
+              "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director"
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "new_candidates": {
+        "status": "ok",
+        "candidates": [
+          {
+            "source_id": "dialogue-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd.",
+            "reason": "The quote states a recent promotion to 'lead director' at Historical Productions Ltd., which introduces a new role ('lead director') and the modality 'recently got promoted', distinct from the previously known role of 'Director'."
+          }
+        ],
+        "semantic_support": "not_verified"
+      },
+      "summary": {
+        "fact_status_counts": {
+          "involved": 1,
+          "uninvolved": 0,
+          "insufficient": 0,
+          "model_failed": 0,
+          "parse_failed": 0
+        },
+        "confirmed_valid": 0,
+        "confirmed_valid_note": "This pipeline does not confirm factual validity.",
+        "candidate_status": "ok"
+      }
+    },
+    "facts": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        },
+        "scope": {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+            "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director",
+                "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director.",
+                "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "semantic_support": "not_verified",
+          "status": "involved",
+          "applicability": "involved",
+          "components": [
+            {
+              "fragment": "Works at Historical Productions Ltd. as a Director",
+              "contextualized": "User works at Historical Productions Ltd. as a Director.",
+              "action": "modify",
+              "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director"
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            }
+          ]
+        },
+        "temporal": {
+          "fact": {
+            "fact_index": 1,
+            "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+            "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Works at Historical Productions Ltd. as a Director",
+                "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Historical Productions Ltd. as a Director.",
+                "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          "status": "involved",
+          "applicability": "involved",
+          "erase_label": "No Change",
+          "temporal_relation": "unclear",
+          "temporal_reason": "证据影响、实际活动性质或事实对冲突尚不足以支持时间结论",
+          "components": [
+            {
+              "fragment": "Works at Historical Productions Ltd. as a Director",
+              "action": "confirm",
+              "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.；时间或冲突依据尚需确认",
+              "new_evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            }
+          ],
+          "path": [
+            "determine_interval",
+            "block_check",
+            "contradiction_check"
+          ],
+          "interval_relation": "unknown",
+          "intervals": {
+            "old": {
+              "start": null,
+              "end": null,
+              "basis": null
+            },
+            "new": {
+              "start": null,
+              "end": null,
+              "basis": null,
+              "kind": "unknown"
+            }
+          },
+          "nli": {
+            "relation": "uncertain"
+          },
+          "interval_adjustments": [],
+          "time_checks": [],
+          "impact_judgment": {
+            "erase_label": "No Change",
+            "applicability": "involved",
+            "temporal_relation": "unclear",
+            "temporal_reason": "未提供独立事实对方向判断",
+            "components": [
+              {
+                "fragment": "Works at Historical Productions Ltd. as a Director",
+                "action": "modify",
+                "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+                "new_evidence": [
+                  {
+                    "source_id": "dialogue-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "temporal_status": "time_missing",
+        "final": {
+          "scope_components": [
+            {
+              "fragment": "Works at Historical Productions Ltd. as a Director",
+              "contextualized": "User works at Historical Productions Ltd. as a Director.",
+              "action": "modify",
+              "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+              "old_evidence": [
+                {
+                  "source_type": "memory",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Works at Historical Productions Ltd. as a Director"
+                },
+                {
+                  "source_type": "context",
+                  "source_id": "old-context-1",
+                  "quote": "I work at Historical Productions Ltd. as a Director."
+                }
+              ],
+              "new_evidence": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ]
+            }
+          ],
+          "scope_status": "involved",
+          "temporal_candidates": [],
+          "semantic_support": "not_verified",
+          "temporal_relation_candidate": "unclear",
+          "temporal_dependent_conclusions": "needs_confirmation"
+        },
+        "pair_assessment": {
+          "erase_label": "No Change",
+          "temporal_relation": "unclear",
+          "reason": "未提供独立事实对方向判断",
+          "provenance": "not_provided"
+        }
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd.",
+          "reason": "The quote states a recent promotion to 'lead director' at Historical Productions Ltd., which introduces a new role ('lead director') and the modality 'recently got promoted', distinct from the previously known role of 'Director'."
+        }
+      ],
+      "semantic_support": "not_verified"
+    },
+    "confirmed_valid": 0,
+    "evaluator_calls": [],
+    "splitter_prompt": {
+      "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/prompt_versions/v4_boundaries_20261104/prompt.txt",
+      "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+    },
+    "provenance": {
+      "scope_result": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/scope_result.json",
+      "scope_result_sha256": "7b557af0189ee896a169eaafa36bd85b4b27e9c64c1d91ec08310ba82d6080de",
+      "split_result": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/split_result.json",
+      "split_result_sha256": "74c200bcf8c1fca50e8d6f3198d3e2cd9b829c81af8bc1e10033f1ff3d4b23cc",
+      "model_input": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/model_input.json",
+      "model_input_sha256": "5c41404e7820c923eb5074df4f2c1d62bfbdd557d7c84a36218324a749b0ce85",
+      "source_provenance": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/promotion/source_provenance.json",
+      "source_provenance_sha256": "51d43843dc67a679c1f0d75c5949d89dc0fddbf60d3ff2bf6815f1f3b59f8428",
+      "scope_model_and_calls": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v2_run/run_config.json",
+      "new_model_calls": 0,
+      "time_verifier": "not provided",
+      "pair_assessment": "not provided",
+      "nli": "no model; v2 receives a deterministic uncertain placeholder only if reached"
+    }
+  }
+}

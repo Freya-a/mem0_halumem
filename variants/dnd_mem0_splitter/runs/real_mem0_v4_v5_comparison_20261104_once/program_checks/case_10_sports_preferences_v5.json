@@ -1,0 +1,77 @@
+{
+  "case_id": "case_10_sports_preferences",
+  "version": "v5",
+  "program_status": "failed",
+  "strict_JSON_and_existing_validator_replay": false,
+  "replay_error": {
+    "code": "quote_not_found",
+    "path": "$.facts[1].evidence[1].quote",
+    "message": "Quote is not an exact substring of the declared input source."
+  },
+  "candidate_fact_count": 2,
+  "accepted_fact_count": 0,
+  "saved_result_equals_replay": false,
+  "raw_response_exists": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_passed": true,
+      "all_literal_quotes_passed": true,
+      "evidence_checks": [
+        {
+          "case_id": "case_10_sports_preferences",
+          "version": "v5",
+          "fact_index": 1,
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+          "quote": "Dislikes wrestling because finds it too confrontational",
+          "exact_substring": true
+        },
+        {
+          "case_id": "case_10_sports_preferences",
+          "version": "v5",
+          "fact_index": 1,
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I dislike wrestling, because I find wrestling too confrontational",
+          "exact_substring": true
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_passed": true,
+      "all_literal_quotes_passed": false,
+      "evidence_checks": [
+        {
+          "case_id": "case_10_sports_preferences",
+          "version": "v5",
+          "fact_index": 2,
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+          "quote": "prefers sports emphasizing teamwork and personal growth",
+          "exact_substring": true
+        },
+        {
+          "case_id": "case_10_sports_preferences",
+          "version": "v5",
+          "fact_index": 2,
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I ... prefer sports that emphasize teamwork and personal growth.",
+          "exact_substring": false
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined; separate AI preliminary review pending human confirmation",
+  "additional_real_model_calls": 0
+}

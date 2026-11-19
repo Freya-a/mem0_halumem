@@ -1,0 +1,105 @@
+{
+  "case_id": "case_2_time_state",
+  "memory_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+  "observed_cli_exit_code": 0,
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "returned_model": "qwen-plus",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2151,
+    "completion_tokens": 951,
+    "total_tokens": 3102
+  },
+  "existing_validator_status": "passed",
+  "replayed_validator_error": null,
+  "offline_replay_matches_recorded_outcome": true,
+  "result_json_exists": true,
+  "validated_fact_count": 2,
+  "candidate_fact_count": 2,
+  "input_bytes_and_context_equal_to_prior": true,
+  "explicit_request_parameters_equal_to_prior": true,
+  "prompt_sha256": "164d44fb35488f0460a4c7f5ad39b490b577c6ad9a0dee676d0aecda227b51bd",
+  "candidate_ids_and_echo_text_match": true,
+  "candidate_fact_indices": [
+    1,
+    2
+  ],
+  "facts_missing_required_memory_evidence": [],
+  "separate_read_only_quote_diagnostics": {
+    "scope": "Literal substring checks of the saved candidate only; this does not override or repair validator failure.",
+    "matched": 3,
+    "total": 3,
+    "quotes": [
+      {
+        "fact_index": 1,
+        "evidence_index": 0,
+        "source_type": "memory",
+        "source_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "quote": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "supports": "The memory explicitly states the user expressed initial skepticism about integrating Golden Retriever preference into daily life",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          159
+        ]
+      },
+      {
+        "fact_index": 2,
+        "evidence_index": 0,
+        "source_type": "memory",
+        "source_id": "05b23c45-294e-402c-bcb9-d66ccbac6371",
+        "quote": "Expressed initial skepticism about integrating Golden Retriever preference into daily life, but now sees pets as sources of emotional support and stress relief",
+        "supports": "The memory explicitly states the user now sees pets as sources of emotional support and stress relief",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          159
+        ]
+      },
+      {
+        "fact_index": 2,
+        "evidence_index": 1,
+        "source_type": "context",
+        "source_id": "ctx-2",
+        "quote": "Pets can definitely provide emotional support, which is valuable.",
+        "supports": "This quote from the user corroborates the view that pets provide emotional support, though it does not specify 'stress relief' or use 'now' to indicate a change in perspective",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          65
+        ]
+      }
+    ]
+  },
+  "model_pending_confirmations": [
+    {
+      "fact_index": 1,
+      "items": [
+        {
+          "item": "The identity of 'who expressed initial skepticism'",
+          "reason": "The memory text uses a passive construction ('Expressed...') without an explicit subject; although source_context identifies the speaker of related utterances as 'user', the memory itself does not name the subject, and no source quote directly contains the phrase 'initial skepticism'"
+        },
+        {
+          "item": "Whether 'Golden Retriever preference' refers to liking Golden Retrievers as pets, wanting to own one, or another interpretation (e.g., aesthetic, symbolic, or hypothetical)",
+          "reason": "The term 'preference' is underspecified in the memory text; source_context mentions 'my preference for Golden Retrievers' in context of stress management, but does not define the nature or scope of that preference"
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "items": [
+        {
+          "item": "The identity of 'who now sees pets as sources of emotional support and stress relief'",
+          "reason": "The memory text uses a clause without an explicit subject ('now sees...'); while source_context shows the user affirmed pets provide emotional support, the memory does not grammatically bind 'now sees' to 'user', and no source quote contains the full phrase 'now sees pets as sources of emotional support and stress relief'"
+        },
+        {
+          "item": "Whether 'pets' in this clause refers specifically to Golden Retrievers or to pets generally",
+          "reason": "The memory shifts from 'Golden Retriever preference' to 'pets' without clarifying scope; source_context uses both 'my preference for Golden Retrievers' and the general statement 'Pets can definitely provide emotional support', but does not explicitly link the latter to Golden Retrievers or confirm generalization was intended"
+        }
+      ]
+    }
+  ],
+  "response_or_evidence_repaired": false,
+  "new_real_model_calls_during_offline_replay": 0
+}

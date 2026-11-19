@@ -1,0 +1,247 @@
+{
+  "model_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/DeBERTa-v3-base-mnli-fever-anli",
+  "revision": "6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+  "config_id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "config_label2id": {
+    "contradiction": 2,
+    "entailment": 0,
+    "neutral": 1
+  },
+  "cases": [
+    {
+      "id": "support_1",
+      "category": "明确支持",
+      "premise": "Alice owns a red bicycle.",
+      "hypothesis": "Alice owns a bicycle.",
+      "expected": "entailment",
+      "reason": "拥有红色自行车蕴含拥有自行车。",
+      "logits": {
+        "entailment": 4.825849533081055,
+        "neutral": -1.4977596998214722,
+        "contradiction": -3.0876717567443848
+      },
+      "softmax_scores": {
+        "entailment": 0.9978454113006592,
+        "neutral": 0.0017895944183692336,
+        "contradiction": 0.000364976265700534
+      },
+      "predicted_id": 0,
+      "predicted_label": "entailment",
+      "forward_seconds": 0.5719826899585314,
+      "matches_expected": true,
+      "manual_review_required": false,
+      "token_count": 14
+    },
+    {
+      "id": "support_2",
+      "category": "明确支持",
+      "premise": "The package was delivered on Monday.",
+      "hypothesis": "The package has been delivered.",
+      "expected": "entailment",
+      "reason": "周一送达蕴含已经送达。",
+      "logits": {
+        "entailment": 4.510026931762695,
+        "neutral": -1.18120539188385,
+        "contradiction": -3.104041814804077
+      },
+      "softmax_scores": {
+        "entailment": 0.9961460828781128,
+        "neutral": 0.0033624223433434963,
+        "contradiction": 0.0004915581666864455
+      },
+      "predicted_id": 0,
+      "predicted_label": "entailment",
+      "forward_seconds": 0.17021985002793372,
+      "matches_expected": true,
+      "manual_review_required": false,
+      "token_count": 16
+    },
+    {
+      "id": "contradiction_1",
+      "category": "明确矛盾",
+      "premise": "The light is on.",
+      "hypothesis": "The light is not on.",
+      "expected": "contradiction",
+      "reason": "同一状态的肯定和否定不能同时成立。",
+      "logits": {
+        "entailment": -2.3889355659484863,
+        "neutral": -2.3613669872283936,
+        "contradiction": 4.6265997886657715
+      },
+      "softmax_scores": {
+        "entailment": 0.0008961932617239654,
+        "neutral": 0.0009212439181283116,
+        "contradiction": 0.9981825351715088
+      },
+      "predicted_id": 2,
+      "predicted_label": "contradiction",
+      "forward_seconds": 0.016535201983060688,
+      "matches_expected": true,
+      "manual_review_required": false,
+      "token_count": 14
+    },
+    {
+      "id": "contradiction_2",
+      "category": "明确矛盾",
+      "premise": "No dogs are allowed inside the museum.",
+      "hypothesis": "Dogs are allowed inside the museum.",
+      "expected": "contradiction",
+      "reason": "明确禁止与允许的表述相矛盾。",
+      "logits": {
+        "entailment": -1.8948014974594116,
+        "neutral": -2.565324306488037,
+        "contradiction": 4.274367809295654
+      },
+      "softmax_scores": {
+        "entailment": 0.0020863739773631096,
+        "neutral": 0.0010670574847608805,
+        "contradiction": 0.996846616268158
+      },
+      "predicted_id": 2,
+      "predicted_label": "contradiction",
+      "forward_seconds": 0.10879350296454504,
+      "matches_expected": true,
+      "manual_review_required": false,
+      "token_count": 18
+    },
+    {
+      "id": "unrelated_1",
+      "category": "无明显关系",
+      "premise": "The chef is cooking dinner.",
+      "hypothesis": "The train arrives at noon.",
+      "expected": "neutral",
+      "reason": "烹饪晚餐不能确定火车何时到站。",
+      "logits": {
+        "entailment": -2.6995291709899902,
+        "neutral": 0.24237892031669617,
+        "contradiction": 2.3704559803009033
+      },
+      "softmax_scores": {
+        "entailment": 0.005582725163549185,
+        "neutral": 0.10580369085073471,
+        "contradiction": 0.8886135816574097
+      },
+      "predicted_id": 2,
+      "predicted_label": "contradiction",
+      "forward_seconds": 0.271726610022597,
+      "matches_expected": false,
+      "manual_review_required": true,
+      "token_count": 15
+    },
+    {
+      "id": "unrelated_2",
+      "category": "无明显关系",
+      "premise": "Sarah bought a blue notebook.",
+      "hypothesis": "The weather will be rainy tomorrow.",
+      "expected": "neutral",
+      "reason": "购买笔记本与明日天气没有给出可推导的关系。",
+      "logits": {
+        "entailment": -1.5616151094436646,
+        "neutral": 4.363954544067383,
+        "contradiction": -3.0830588340759277
+      },
+      "softmax_scores": {
+        "entailment": 0.0026616270188242197,
+        "neutral": 0.9967570900917053,
+        "contradiction": 0.0005812895251438022
+      },
+      "predicted_id": 1,
+      "predicted_label": "neutral",
+      "forward_seconds": 0.015646624960936606,
+      "matches_expected": true,
+      "manual_review_required": false,
+      "token_count": 16
+    },
+    {
+      "id": "temporal_1",
+      "category": "过去和现在状态变化",
+      "premise": "In 2020, Maya lived in Boston.",
+      "hypothesis": "In 2024, Maya lived in Seattle.",
+      "expected": "neutral",
+      "reason": "2020 年居住地不能确定 2024 年居住地，两条可在不同时间同时为真；需要时间信息才能判断记忆状态。",
+      "logits": {
+        "entailment": -4.2747907638549805,
+        "neutral": 2.307058095932007,
+        "contradiction": 2.4822449684143066
+      },
+      "softmax_scores": {
+        "entailment": 0.0006317272200249135,
+        "neutral": 0.45602670311927795,
+        "contradiction": 0.5433415770530701
+      },
+      "predicted_id": 2,
+      "predicted_label": "contradiction",
+      "forward_seconds": 0.01585328596411273,
+      "matches_expected": false,
+      "manual_review_required": true,
+      "token_count": 19
+    },
+    {
+      "id": "temporal_2",
+      "category": "过去和现在状态变化",
+      "premise": "In 2020, Daniel was single.",
+      "hypothesis": "Daniel is married now.",
+      "expected": "neutral",
+      "reason": "过去单身与现在结婚可以先后成立，过去的状态不确定当前状态；不能据 NLI 判定旧记忆失效。",
+      "logits": {
+        "entailment": -2.6694998741149902,
+        "neutral": 3.2724413871765137,
+        "contradiction": -0.4274292290210724
+      },
+      "softmax_scores": {
+        "entailment": 0.0025569824501872063,
+        "neutral": 0.9733746647834778,
+        "contradiction": 0.02406836859881878
+      },
+      "predicted_id": 1,
+      "predicted_label": "neutral",
+      "forward_seconds": 0.017196041997522116,
+      "matches_expected": true,
+      "manual_review_required": true,
+      "token_count": 15
+    }
+  ],
+  "status": "completed",
+  "attempted_forward_passes": 8,
+  "completed_forward_passes": 8,
+  "offline": true,
+  "started_at": "2026-11-06T10:38:28.427765+08:00",
+  "versions": {
+    "python": "3.11.18",
+    "torch": "2.9.1+cu128",
+    "transformers": "4.57.3",
+    "tokenizers": "0.22.2",
+    "sentencepiece": "0.2.2",
+    "safetensors": "0.8.0"
+  },
+  "device": "cuda:0",
+  "dtype": "float32",
+  "device_name": "NVIDIA GeForce RTX 3090 Ti",
+  "gpu_before": {
+    "free_bytes": 22153527296,
+    "total_bytes": 25422594048,
+    "allocated_bytes": 0,
+    "reserved_bytes": 0
+  },
+  "load_seconds": 1.0817998709972017,
+  "gpu_after_load": {
+    "free_bytes": 21358706688,
+    "total_bytes": 25422594048,
+    "allocated_bytes": 738968064,
+    "reserved_bytes": 794820608
+  },
+  "gpu_end": {
+    "free_bytes": 21299986432,
+    "total_bytes": 25422594048,
+    "allocated_bytes": 748538880,
+    "reserved_bytes": 796917760,
+    "peak_allocated_bytes": 757826560,
+    "peak_reserved_bytes": 796917760
+  },
+  "total_seconds": 5.669752840010915,
+  "finished_at": "2026-11-06T10:38:34.097747+08:00"
+}

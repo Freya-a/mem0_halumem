@@ -1,0 +1,124 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_01_multi_person",
+    "categories": [
+      "多个人物",
+      "身份关系",
+      "混合说话人"
+    ],
+    "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+    "old_memory": "Grateful towards colleagues like Steven and friends like Mary",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 1,
+    "literal_quotes_total": 1,
+    "review_label": "初步判断，待人工确认",
+    "summary": "初步判断，待人工确认：格式检查 passed；1 条事实覆盖感谢态度、Steven/colleagues、Mary/friends 及 like 的举例表述，未见关键命题遗漏。观察到 raw 用上下文补出 The user 的来源边界问题，以及肯定用户主体与将主体列为待确认之间的表述冲突；不据此认定用户主体虚构。原始说话人和具体人物身份仍有局部未决项。",
+    "observed_issue_types": [
+      "ASSERTION_PENDING_CONFLICT",
+      "RAW_CONTEXT_LEAK"
+    ],
+    "has_observed_issue": true,
+    "specific_uncertainty_types": [
+      "ORIGINAL_SPEAKER",
+      "SUBJECT_OR_IDENTITY"
+    ],
+    "has_specific_unresolved_item": true,
+    "model_pending_item_count": 2,
+    "pending_human_confirmations": [
+      {
+        "type": "ORIGINAL_SPEAKER",
+        "reason": "初步判断，待人工确认：请人工区分“描述用户的命题”与“用户直接自述”；当前片段不能确认 Steven/Mary 的具名关系概括由用户亲口说出。"
+      },
+      {
+        "type": "SUBJECT_OR_IDENTITY",
+        "reason": "初步判断，待人工确认：具体人物身份及 like 是否泛指在现有片段内无法进一步核实；不应把这种现实身份未知自动算成拆分错误，也不应要求用补写事实来消除未知。"
+      },
+      {
+        "type": "ASSERTION_PENDING_CONFLICT",
+        "reason": "初步判断，待人工确认：请人工确认输出待决状态是否应收窄为原始说话人归属；本报告所标冲突限于正文与 pending 同时对语义主体给出不同确定程度。"
+      }
+    ],
+    "independent_review_file": "reviews/group_01.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_01_multi_person",
+      "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "ASSERTION_PENDING_CONFLICT",
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [
+        "ORIGINAL_SPEAKER",
+        "SUBJECT_OR_IDENTITY"
+      ],
+      "raw_subfact": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "contextualized_subfact": "The user is grateful towards colleagues like Steven and friends like Mary.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+          "quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "supports": "Old memory states the user is grateful towards colleagues like Steven and friends like Mary."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "The subject of 'Grateful' (i.e., who holds this attitude)",
+          "reason": "The memory text is a fragment without explicit subject; it does not grammatically specify whether 'Grateful' is self-attributed by the user, reported by the assistant, or ascribed to another person. Although context-2 quotes the assistant paraphrasing this sentiment, and context-1 shows the user speaking about maintaining relationships and expressing gratitude, neither confirms the original memory fragment was uttered by the user nor that it reflects their direct self-report — it could be an extracted summary, assistant rephrasing, or third-party observation."
+        },
+        {
+          "item": "Whether 'Steven' and 'Mary' are actual named individuals in the user's life vs. generic examples",
+          "reason": "The phrases 'colleagues like Steven' and 'friends like Mary' use 'like', indicating Steven and Mary serve as exemplars — but the memory text does not clarify whether they are real, specific people known to the user or merely illustrative placeholders. No source context affirms their concrete identity or relationship status to the user."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：raw/contextualized 均保留 grateful、colleagues like Steven、friends like Mary，未改人物、关系或 like 的范围。输入没有明确否定、事件日期、条件或计划/可能性成分，输出也未新增这些成分。contextualized 的用户主体可由同一事件的 ctx-1 第一人称感谢及 ctx-2 的 Your gratitude 合理关联；但冻结 v3 的 raw-only 规则不允许为省略主语补用户，因此 raw 的 The user 仍越过来源边界。正文未带入 ctx-1 的定期联系计划或 ctx-2 的 strong support network 等额外内容。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+          "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 未给出主体，也没有可在 memory 内部恢复的共享用户主体；raw 新增 The user，依赖 source_context 才能补足。依据主代理提供的冻结 v3 第2条，补足应放在 contextualized。此判断是字段来源边界问题，不是认定用户这一语义主体无依据或已被证伪。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "certainty": "observed",
+          "input_quote": "The subject of 'Grateful' (i.e., who holds this attitude)",
+          "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+          "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item，而非原始 memory。正文直接固定为用户持有此态度，pending 又将谁持有该态度本身列为待确认，存在明确的断言/待决状态不一致。pending 理由还把语义主体与是否由用户原话表达混在一起；上下文可支持用户主体，但不能证明此记忆概括是用户原话。此项不等同于主语虚构。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：ctx-1 是 user 的第一人称联系/表达感谢意向；具名的 Steven/colleagues 与 Mary/friends 在提供的片段中只由 ctx-2 assistant 表述。旧 memory 是提取概括，其原始说话人不能仅从 memory 引文认定为 user。"
+        },
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：现有文本足以保留 like Steven / like Mary 的记忆命题，但不能验证两人的真实身份或 like 在完整历史中是否只是泛指例示；这不是因此改写或否定旧记忆的依据。待决项关于“没有任何来源肯定关系”的说法过宽，ctx-2 实际给出了这些关系标签；它仍不是独立的现实核验。"
+        }
+      ],
+      "speaker_review": {
+        "semantic_subject": "初步判断，待人工确认：用户主体有上下文的同事件关联：ctx-1 用户说 I'll ... express my gratitude；ctx-2 assistant 用 Your gratitude 描述具名关系。可作为 contextualized 的主体解释，不自动构成捏造。",
+        "original_utterance_attribution": "初步判断，待人工确认：用户直接发言支持其表达感谢的意向；具体姓名与关系的可见原始发言是 assistant。模型正文及 supports 未明说“用户亲口说过完整具名命题”，故不另标 SPEAKER_ATTRIBUTION_OVERCLAIM。",
+        "pending_review": "初步判断，待人工确认：模型的第一个 pending 把主体和原始说话人混写，已记录断言/待决冲突。第二个 pending 的实际身份疑问可保留为有限未知，但维持旧记忆不要求证明人物现实身份。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：memory 引文直接支持感谢、两个人名及关系/like 范围，但字面上没有 user 主语；必要上下文为用户主体提供合理关联。因此支持主体属于上下文补足，不能说 memory 本身显式写了 user，更不能由此推出完整概括是用户原话。supports 的 Old memory states 未明确声称用户直接说过，未单独判来源归属错误；partial 不自动计为错误。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_01.json"
+    }
+  ]
+}

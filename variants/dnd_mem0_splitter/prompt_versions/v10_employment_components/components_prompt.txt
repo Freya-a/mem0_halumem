@@ -1,0 +1,6 @@
+附加输出要求（本段只扩展上述输出顶层字段，其余原有字段和规则不变）：
+除原有 facts 外，顶层必须增加 employment_components 数组。对于 facts 中包含具体雇佣或工作关系的子事实，按其 fact_index 输出一项；没有此类子事实时输出空数组。不要为增加成分改变或删减原事实，不要新增额外事实。
+每项格式严格为：
+{"fact_index": 1, "employer": {"status":"located", "source_type":"memory", "source_id":"原样复制 memory_id", "quote":"雇主名称逐字引文"}, "position": {"status":"located", "source_type":"memory", "source_id":"原样复制 memory_id", "quote":"职位名称逐字引文"}, "relationship": {"status":"located", "source_type":"memory", "source_id":"原样复制 memory_id", "quote":"同时表达该雇主、职位及两者关系的连续原文"}}
+引文必须是 memory_text 或 source_context 对应来源中的连续逐字文本；source_type 只能是 memory 或 context，source_id 必须对应输入。优先用旧记忆；用旧来源时不得把来源补充当作旧记忆直接表达。relationship 表示该职位属于所定位的这段雇佣关系，不是另一个独立事实；应保留其条件和时间，不推断起止时间或是否目前有效。
+雇主、职位或两者的关系任何一项无法从输入明确确认时，该项一律写 {"status":"pending", "source_type":null, "source_id":null, "quote":null}，不得猜测；只有两项均已定位且有直接关系引文时 relationship 才能为 located。仍按上述原规则在原 facts 中保留所有时间、条件、否定和待确认事项。此附加数组仅作内部定位，不能将片段理解成无条件独立命题或证明可修改范围。

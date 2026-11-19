@@ -1,0 +1,17 @@
+{
+  "promotion": {
+    "target_change": "将旧 Director 限定为历史并记录 lead director；保留雇主，准确晋升日未知。",
+    "structured": {"required_codes": ["possible_change", "boundary_unknown", "disjoint_preserve", "raw_evidence_candidate"], "max_modify": 0},
+    "baseline_only": {"required_codes": ["possible_change", "attribute_unlocalized", "boundary_unknown", "hold_provisional"], "max_modify": 0}
+  },
+  "synthetic_wednesday_01": {
+    "target_change": "从 2026-12-01 起只调整周三，保留周一与此前周三；现有模拟关系仍为 possible_change。",
+    "structured": {"required_codes": ["possible_change", "scope_overlap_unconfirmed", "residual_preserve"], "max_modify": 0, "residual_weekdays": [0, 2]},
+    "baseline_only": {"required_codes": ["possible_change", "attribute_unlocalized", "boundary_unknown", "hold_provisional"], "max_modify": 0}
+  },
+  "job_transition": {
+    "target_change": "所讨论的转岗已完成，旧求职阶段应保留为历史；准确转岗日未知，不推断以后不再求职。",
+    "structured": {"required_codes": ["support_not_change", "boundary_unknown", "hold_provisional", "raw_evidence_candidate"], "max_modify": 0},
+    "baseline_only": {"required_codes": ["support_not_change", "attribute_unlocalized", "boundary_unknown", "hold_provisional"], "max_modify": 0}
+  }
+}

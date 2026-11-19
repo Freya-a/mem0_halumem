@@ -1,0 +1,488 @@
+{
+  "structured": {
+    "status": "needs_review",
+    "mode": "structured",
+    "upstream_original": {
+      "status": "ok",
+      "results": [
+        {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1,
+          "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+          "status": "ok",
+          "raw_output": "{\"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\", \"fact_index\": 1, \"old_subfact\": \"Previously worked as a senior developer in Blockchain Tech\", \"relation\": \"no_clear_impact\", \"object\": \"user\", \"attribute\": \"client_milestone\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Previously worked as a senior developer in Blockchain Tech\", \"old_quote\": \"Previously worked as a senior developer in Blockchain Tech\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+          "candidate": {
+            "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "fact_index": 1,
+            "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+            "relation": "no_clear_impact",
+            "object": "user",
+            "attribute": "client_milestone",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "located_candidate": {
+            "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "fact_index": 1,
+            "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+            "relation": "no_clear_impact",
+            "object": "user",
+            "attribute": "client_milestone",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "fragment_match": {
+            "raw": "Previously worked as a senior developer in Blockchain Tech",
+            "located": "Previously worked as a senior developer in Blockchain Tech",
+            "method": "exact",
+            "start": 0,
+            "end": 58
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        }
+      ],
+      "errors": []
+    },
+    "modify": [],
+    "preserve": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": "historical_employer",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Blockchain Tech as a senior developer."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "结构化候选范围与新属性或条件不相交；保留该旧范围，语义映射仍需复核。",
+        "code": "disjoint_preserve",
+        "old_fragment": "Blockchain Tech"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": "historical_title",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Blockchain Tech as a senior developer."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "结构化候选范围与新属性或条件不相交；保留该旧范围，语义映射仍需复核。",
+        "code": "disjoint_preserve",
+        "old_fragment": "senior developer"
+      }
+    ],
+    "uncertain": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": "client_milestone",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "关系标签本身不足以证明明确纠正及修改范围。",
+        "code": "relation_not_correction",
+        "relation": "no_clear_impact"
+      }
+    ],
+    "add": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": "client_milestone",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+        "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "code": "raw_evidence_candidate"
+      }
+    ],
+    "errors": [],
+    "new_evidence_inventory": [
+      {
+        "source_id": "new-0",
+        "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "speaker": "user",
+        "recorded_at": "Jan 05, 2026, 07:43:42",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "referenced_by_upstream": true,
+        "referenced_by_validated_upstream": true,
+        "independent_fact_verified": false,
+        "old_fact_relation_verified": false
+      },
+      {
+        "source_id": "new-2",
+        "text": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "speaker": "user",
+        "recorded_at": "Jan 05, 2026, 07:44:55",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+        "referenced_by_upstream": false,
+        "referenced_by_validated_upstream": false,
+        "independent_fact_verified": false,
+        "old_fact_relation_verified": false
+      }
+    ]
+  },
+  "baseline_only": {
+    "status": "needs_review",
+    "mode": "baseline_only",
+    "upstream_original": {
+      "status": "ok",
+      "results": [
+        {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1,
+          "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+          "status": "ok",
+          "raw_output": "{\"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\", \"fact_index\": 1, \"old_subfact\": \"Previously worked as a senior developer in Blockchain Tech\", \"relation\": \"no_clear_impact\", \"object\": \"user\", \"attribute\": \"client_milestone\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Previously worked as a senior developer in Blockchain Tech\", \"old_quote\": \"Previously worked as a senior developer in Blockchain Tech\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+          "candidate": {
+            "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "fact_index": 1,
+            "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+            "relation": "no_clear_impact",
+            "object": "user",
+            "attribute": "client_milestone",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "located_candidate": {
+            "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+            "fact_index": 1,
+            "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+            "relation": "no_clear_impact",
+            "object": "user",
+            "attribute": "client_milestone",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "fragment_match": {
+            "raw": "Previously worked as a senior developer in Blockchain Tech",
+            "located": "Previously worked as a senior developer in Blockchain Tech",
+            "method": "exact",
+            "start": 0,
+            "end": 58
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        }
+      ],
+      "errors": []
+    },
+    "modify": [],
+    "preserve": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "未能安全划分范围，暂时保护原文以待复核；不声称原状态无限期有效。",
+        "code": "hold_provisional",
+        "old_fragment": "Previously worked as a senior developer in Blockchain Tech"
+      }
+    ],
+    "uncertain": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "关系标签本身不足以证明明确纠正及修改范围。",
+        "code": "relation_not_correction",
+        "relation": "no_clear_impact"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "组件一的自由文本属性和候选片段未提供经过验证的属性单元及条件边界。",
+        "code": "attribute_unlocalized",
+        "upstream_attribute": "client_milestone",
+        "candidate_fragment": "Previously worked as a senior developer in Blockchain Tech"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "有效时间和条件范围未由带来源的结构化输入确定；记录时间不得作为生效时间。",
+        "code": "boundary_unknown"
+      }
+    ],
+    "add": [
+      {
+        "old_fact_id": {
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "fact_index": 1
+        },
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+        "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "code": "raw_evidence_candidate"
+      }
+    ],
+    "errors": [],
+    "new_evidence_inventory": [
+      {
+        "source_id": "new-0",
+        "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "speaker": "user",
+        "recorded_at": "Jan 05, 2026, 07:43:42",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "referenced_by_upstream": true,
+        "referenced_by_validated_upstream": true,
+        "independent_fact_verified": false,
+        "old_fact_relation_verified": false
+      },
+      {
+        "source_id": "new-2",
+        "text": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "speaker": "user",
+        "recorded_at": "Jan 05, 2026, 07:44:55",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+        "referenced_by_upstream": false,
+        "referenced_by_validated_upstream": false,
+        "independent_fact_verified": false,
+        "old_fact_relation_verified": false
+      }
+    ]
+  }
+}

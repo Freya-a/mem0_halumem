@@ -1,0 +1,513 @@
+{
+  "cases": [
+    {
+      "case_id": "case_10_sports_preferences",
+      "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+      "input_sha256": "c9c6e86ac5fd86065713b65424a70553340bf252e5ea5561bde7f2203e002a67",
+      "historical_selection": {
+        "case_id": "case_10_sports_preferences",
+        "cohort": "new_compound_4",
+        "categories": [
+          "复合旧记忆",
+          "否定偏好与原因",
+          "并列正面偏好"
+        ],
+        "selection_reason": "同一句含不喜欢、态度理由及另一类运动偏好，适合区分覆盖与细分粒度。",
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+        "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+        "snapshot_json_pointer": "/api_snapshot/results/25",
+        "database_json_pointer": "/database_points_with_vectors/25/payload/data",
+        "selected_snapshot_entry": {
+          "id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+          "memory": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+          "hash": "76caa76ecf960a2d99110e23d83703cd",
+          "metadata": null,
+          "created_at": "2026-10-28T00:09:28.625787-07:00",
+          "updated_at": null,
+          "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+        },
+        "origin_session_ordinal": 3,
+        "target_session_ordinal": 5,
+        "current_text_write_session_ordinal": 3,
+        "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/add_return.json",
+        "origin_ADD_pointer": "/return_value/results/6",
+        "current_text_write_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/actual_operations.json",
+        "current_text_write_pointer": "/6",
+        "current_text_write_event": "ADD",
+        "source_context_audit": [
+          {
+            "source_id": "ctx-1",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/input.json#/raw_dialogue/6/content",
+            "character_range": [
+              294,
+              422
+            ],
+            "role": "user",
+            "original_timestamp": "Sep 06, 2025, 22:52:30",
+            "text": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth."
+          }
+        ],
+        "source_checks": {
+          "API_and_database_match": true,
+          "target_before_not_truncated": true,
+          "previous_after_matches_target_before": true,
+          "real_ADD_id_recorded": true,
+          "current_text_real_write_and_after_match": true,
+          "checkpoint_hashes_match": true,
+          "all_context_verbatim_and_before_target": true,
+          "not_in_prior_splitter_real_inputs": true
+        },
+        "input_sha256": "c9c6e86ac5fd86065713b65424a70553340bf252e5ea5561bde7f2203e002a67"
+      },
+      "v4_artifacts": {
+        "input.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/input.json",
+          "sha256": "c9c6e86ac5fd86065713b65424a70553340bf252e5ea5561bde7f2203e002a67"
+        },
+        "prompt.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/prompt.txt",
+          "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+        },
+        "raw_content.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/raw_content.txt",
+          "sha256": "72948628f53ac47d9f967df14e0df3ae6072d1e9b664bf96db30dee2cb5c1a1f"
+        },
+        "result.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/result.json",
+          "sha256": "2db3c59510c76286c03a77124a7c62a259217586f0629035c943b614859ed4e1"
+        },
+        "program_checks.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/program_checks.json",
+          "sha256": "d268584554732fdae80a922e334b905ef8cbd44c4e0238fffc498bf39efaade5"
+        },
+        "report.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/report.json",
+          "sha256": "7850e265966c23407a790d9b5fea74de499415eaaed484ba03a3ec2071ce35b5"
+        },
+        "response_metadata.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_10_sports_preferences/v4/response_metadata.json",
+          "sha256": "13ec4d36b5bb31be82e27c46740921ff5a7ab75d30ca6ad48337b8b87f5f9249"
+        }
+      },
+      "new_v4_calls": 0
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+      "input_sha256": "9d7a3cca063a8d181261a227b17fe341f05f09c1953823a0d7a2c1e5922a988a",
+      "historical_selection": {
+        "case_id": "case_11_persian_care",
+        "cohort": "new_compound_4",
+        "categories": [
+          "复合旧记忆",
+          "欣赏对象及历史关联",
+          "实际照料考虑",
+          "混合来源角色"
+        ],
+        "selection_reason": "较长旧记忆并列欣赏、历史关联、实际照料挑战及平衡考虑；已找到对应旧 UPDATE 和当时会话。",
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_008/before.json",
+        "snapshot_json_pointer": "/api_snapshot/results/102",
+        "database_json_pointer": "/database_points_with_vectors/102/payload/data",
+        "selected_snapshot_entry": {
+          "id": "eef34a57-c82a-4995-877d-66b54b9589da",
+          "memory": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+          "hash": "1b04e3802d5bce684ce8c50e0a044a2e",
+          "metadata": null,
+          "created_at": "2026-10-27T23:40:21.765216-07:00",
+          "updated_at": "2026-10-28T00:02:43.571238-07:00",
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+        },
+        "origin_session_ordinal": 3,
+        "target_session_ordinal": 8,
+        "current_text_write_session_ordinal": 7,
+        "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_003/add_return.json",
+        "origin_ADD_pointer": "/return_value/results/3",
+        "current_text_write_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/actual_operations.json",
+        "current_text_write_pointer": "/0",
+        "current_text_write_event": "UPDATE",
+        "source_context_audit": [
+          {
+            "source_id": "ctx-1",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/0/content",
+            "character_range": [
+              0,
+              185
+            ],
+            "role": "user",
+            "original_timestamp": "Apr 10, 2026, 11:06:07",
+            "text": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+          },
+          {
+            "source_id": "ctx-2",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/2/content",
+            "character_range": [
+              0,
+              178
+            ],
+            "role": "user",
+            "original_timestamp": "Apr 10, 2026, 11:15:58",
+            "text": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance."
+          },
+          {
+            "source_id": "ctx-3",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/3/content",
+            "character_range": [
+              0,
+              434
+            ],
+            "role": "assistant",
+            "original_timestamp": "Apr 10, 2026, 11:15:58",
+            "text": "Maintaining the regal appearance of Persian cats can indeed be a challenge, requiring regular grooming and care. Your strategic thinking and perfectionist traits likely help you navigate these responsibilities effectively. It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements. How do these traits influence your approach to integrating pet preferences into your lifestyle?"
+          }
+        ],
+        "source_checks": {
+          "API_and_database_match": true,
+          "target_before_not_truncated": true,
+          "previous_after_matches_target_before": true,
+          "real_ADD_id_recorded": true,
+          "current_text_real_write_and_after_match": true,
+          "checkpoint_hashes_match": true,
+          "all_context_verbatim_and_before_target": true,
+          "not_in_prior_splitter_real_inputs": true
+        },
+        "input_sha256": "9d7a3cca063a8d181261a227b17fe341f05f09c1953823a0d7a2c1e5922a988a"
+      },
+      "v4_artifacts": {
+        "input.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/input.json",
+          "sha256": "9d7a3cca063a8d181261a227b17fe341f05f09c1953823a0d7a2c1e5922a988a"
+        },
+        "prompt.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/prompt.txt",
+          "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+        },
+        "raw_content.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/raw_content.txt",
+          "sha256": "a54301f759a27e98f33310472bb69b45608cd0c0bc0ef24d8b171dedb2541c1b"
+        },
+        "result.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/result.json",
+          "sha256": "ec3a61912948559517b17460ebaee3a546ba6d0f5a21a34dcc4004f448191cc6"
+        },
+        "program_checks.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/program_checks.json",
+          "sha256": "e81ab291f3e0b1ba63aa97ac1a4602864be0e765a9c937516e7a8fb2a89209a0"
+        },
+        "report.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/report.json",
+          "sha256": "b5d59736960da05d30032c7e63bcab664fc124b8c5d9e1f8ac9f723ac9f46d7b"
+        },
+        "response_metadata.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_11_persian_care/v4/response_metadata.json",
+          "sha256": "5dd9a3d5fa05477fdb78f4559396cbd6108f51116075bf78d2bc4979610b98a3"
+        }
+      },
+      "new_v4_calls": 0
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+      "input_sha256": "1ad8dd0cff7b94f0cdaeb3b7861a4104c13a845c020c9b422c5c8554180d120f",
+      "historical_selection": {
+        "case_id": "case_09_father_profile",
+        "cohort": "new_compound_4",
+        "categories": [
+          "复合旧记忆",
+          "关系与出生日期",
+          "退休职业状态",
+          "影响关系"
+        ],
+        "selection_reason": "同一人物含出生日期、退休职业状态及对健康兴趣的影响，需保留各自关系与主体。",
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+        "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+        "snapshot_json_pointer": "/api_snapshot/results/62",
+        "database_json_pointer": "/database_points_with_vectors/62/payload/data",
+        "selected_snapshot_entry": {
+          "id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "memory": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+          "hash": "fe1246a2ccdd6d81b81ad290ff2f91a0",
+          "metadata": null,
+          "created_at": "2026-10-28T00:07:46.457874-07:00",
+          "updated_at": null,
+          "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+        },
+        "origin_session_ordinal": 1,
+        "target_session_ordinal": 5,
+        "current_text_write_session_ordinal": 1,
+        "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/add_return.json",
+        "origin_ADD_pointer": "/return_value/results/11",
+        "current_text_write_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/actual_operations.json",
+        "current_text_write_pointer": "/11",
+        "current_text_write_event": "ADD",
+        "source_context_audit": [
+          {
+            "source_id": "ctx-1",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/input.json#/raw_dialogue/8/content",
+            "character_range": [
+              88,
+              178
+            ],
+            "role": "user",
+            "original_timestamp": "Sep 04, 2025, 19:38:09",
+            "text": "My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health."
+          }
+        ],
+        "source_checks": {
+          "API_and_database_match": true,
+          "target_before_not_truncated": true,
+          "previous_after_matches_target_before": true,
+          "real_ADD_id_recorded": true,
+          "current_text_real_write_and_after_match": true,
+          "checkpoint_hashes_match": true,
+          "all_context_verbatim_and_before_target": true,
+          "not_in_prior_splitter_real_inputs": true
+        },
+        "input_sha256": "1ad8dd0cff7b94f0cdaeb3b7861a4104c13a845c020c9b422c5c8554180d120f"
+      },
+      "v4_artifacts": {
+        "input.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/input.json",
+          "sha256": "1ad8dd0cff7b94f0cdaeb3b7861a4104c13a845c020c9b422c5c8554180d120f"
+        },
+        "prompt.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/prompt.txt",
+          "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+        },
+        "raw_content.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/raw_content.txt",
+          "sha256": "5a1ceccc1ea8cdb6001797f1baeac5e3a581446b620e4813f618f226174463c9"
+        },
+        "result.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/result.json",
+          "sha256": "3d84608e67fc274d2863b686815000c699f25359b48cb34d8e134fcbd9f8b5be"
+        },
+        "program_checks.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/program_checks.json",
+          "sha256": "abda0ae8f5760ab195dfa9b988d5983eee2d3d57a0cd3c2e1b840f6bb9a43cb0"
+        },
+        "report.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/report.json",
+          "sha256": "9a4f15e877c09e0ed49bac750802d334cd8b608f12e99195a5bfa0a12c72c20e"
+        },
+        "response_metadata.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_09_father_profile/v4/response_metadata.json",
+          "sha256": "b5130792b5d10f8465fc60a98965ce209b344c9b9250ee45de872f8aa7ace8a9"
+        }
+      },
+      "new_v4_calls": 0
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "input_sha256": "84eca2d3bf486c4800f5d838e1c2348114d04b1f755dd6825715598dfc45d9bf",
+      "historical_selection": {
+        "case_id": "case_03_assistant_yoga",
+        "categories": [
+          "助手来源",
+          "说话人归属",
+          "析取与状态"
+        ],
+        "selection_reason": "旧记忆含 practices or is open to；生成会话中有 assistant 的 yoga 表述，需检查来源角色和命题范围。",
+        "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+        "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+        "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+        "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "snapshot_json_pointer": "/api_snapshot/results/58",
+        "database_json_pointer": "/database_points_with_vectors/58/payload/data",
+        "selected_snapshot_entry": {
+          "id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "memory": "Practices or is open to yoga for supporting personal health and transition",
+          "hash": "98a086410a77a942b568da625931a392",
+          "metadata": null,
+          "created_at": "2026-10-28T00:13:15.445697-07:00",
+          "updated_at": null,
+          "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+        },
+        "origin_session_ordinal": 7,
+        "target_session_ordinal": 8,
+        "target_ids_for_local_trace_only": [
+          "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000"
+        ],
+        "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/add_return.json",
+        "origin_ADD_pointer": "/return_value/results/46",
+        "origin_actual_operation_pointer": "/46",
+        "source_context_audit": [
+          {
+            "source_id": "ctx-1",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content",
+            "character_range": [
+              0,
+              255
+            ],
+            "role": "user",
+            "original_timestamp": "Feb 05, 2026, 17:13:15",
+            "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+          },
+          {
+            "source_id": "ctx-2",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/3/content",
+            "character_range": [
+              327,
+              523
+            ],
+            "role": "assistant",
+            "original_timestamp": "Feb 05, 2026, 17:15:18",
+            "text": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively."
+          }
+        ],
+        "source_checks": {
+          "API_and_database_id_text_user_match": true,
+          "before_snapshot_not_truncated": true,
+          "previous_after_entry_matches_before": true,
+          "origin_before_id_absent": true,
+          "real_ADD_id_and_text_match": true,
+          "origin_after_text_matches": true,
+          "historical_checkpoint_hashes_match": true,
+          "context_is_verbatim_old_excerpt": true,
+          "context_roles_preserved": true,
+          "all_context_precedes_target": true,
+          "not_in_previous_real_model_inputs": true
+        },
+        "cohort": "regression_7",
+        "input_sha256": "84eca2d3bf486c4800f5d838e1c2348114d04b1f755dd6825715598dfc45d9bf",
+        "prior_input_source": "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_stability_20261104_once/inputs/case_03_assistant_yoga.json",
+        "same_input_as_previous_batch": true
+      },
+      "v4_artifacts": {
+        "input.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/input.json",
+          "sha256": "84eca2d3bf486c4800f5d838e1c2348114d04b1f755dd6825715598dfc45d9bf"
+        },
+        "prompt.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/prompt.txt",
+          "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+        },
+        "raw_content.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/raw_content.txt",
+          "sha256": "af7dff4c0bb22b8661622f75e4a1854d3ee885303bee92161d3a317a3d122215"
+        },
+        "result.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/result.json",
+          "sha256": "f1fe57566b9a596ec090c04faf018c54a95cdb31eadc0caf04130699c543c4ea"
+        },
+        "program_checks.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/program_checks.json",
+          "sha256": "4c5ff44dd4ca48518b43c758f8dbc226acc6da7b402c4d5de67616ada77ee55c"
+        },
+        "report.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/report.json",
+          "sha256": "4eff756a4618a41fbd7dd239b82dd7acfbbfc9cf9d0eba291954320786a6c13f"
+        },
+        "response_metadata.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_03_assistant_yoga/v4/response_metadata.json",
+          "sha256": "dea563fc3cfb1106e42c317f233d43527581f2fda0f634fb454cd88631e68610"
+        }
+      },
+      "new_v4_calls": 0
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+      "input_sha256": "08b006bbeccbac3a3fbc1faed0ccd84612dc1636c29acfa11be53e90bea41011",
+      "historical_selection": {
+        "case_id": "case_08_partner_profile",
+        "cohort": "new_compound_4",
+        "categories": [
+          "复合旧记忆",
+          "关系与出生日期",
+          "职业与专长"
+        ],
+        "selection_reason": "同一关系对象同时含出生日期、职业和专长等可分别核查的信息。",
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+        "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_004/before.json",
+        "snapshot_json_pointer": "/api_snapshot/results/40",
+        "database_json_pointer": "/database_points_with_vectors/40/payload/data",
+        "selected_snapshot_entry": {
+          "id": "a0890e00-0564-4490-8e5b-15b02025e910",
+          "memory": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+          "hash": "69eb37ac6b782038045724410086d12b",
+          "metadata": null,
+          "created_at": "2026-10-27T23:37:45.818215-07:00",
+          "updated_at": null,
+          "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+        },
+        "origin_session_ordinal": 1,
+        "target_session_ordinal": 4,
+        "current_text_write_session_ordinal": 1,
+        "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_001/add_return.json",
+        "origin_ADD_pointer": "/return_value/results/12",
+        "current_text_write_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_001/actual_operations.json",
+        "current_text_write_pointer": "/12",
+        "current_text_write_event": "ADD",
+        "source_context_audit": [
+          {
+            "source_id": "ctx-1",
+            "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_001/input.json#/raw_dialogue/8/content",
+            "character_range": [
+              280,
+              398
+            ],
+            "role": "user",
+            "original_timestamp": "Sep 04, 2025, 10:49:29",
+            "text": "My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history."
+          }
+        ],
+        "source_checks": {
+          "API_and_database_match": true,
+          "target_before_not_truncated": true,
+          "previous_after_matches_target_before": true,
+          "real_ADD_id_recorded": true,
+          "current_text_real_write_and_after_match": true,
+          "checkpoint_hashes_match": true,
+          "all_context_verbatim_and_before_target": true,
+          "not_in_prior_splitter_real_inputs": true
+        },
+        "input_sha256": "08b006bbeccbac3a3fbc1faed0ccd84612dc1636c29acfa11be53e90bea41011"
+      },
+      "v4_artifacts": {
+        "input.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/input.json",
+          "sha256": "08b006bbeccbac3a3fbc1faed0ccd84612dc1636c29acfa11be53e90bea41011"
+        },
+        "prompt.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/prompt.txt",
+          "sha256": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+        },
+        "raw_content.txt": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/raw_content.txt",
+          "sha256": "92b3cc984ee50fe9287c35e9879a79b7e02ac6501b52fe9e082685dc2821e957"
+        },
+        "result.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/result.json",
+          "sha256": "152d7ef41e5bda9a0496b379465ba44f7fd2378cdbfbcf424a2469e32aa42924"
+        },
+        "program_checks.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/program_checks.json",
+          "sha256": "652d1eeca3d9801970d89731bc56ca6e291977765e681c1ad5ddbad3762d6edc"
+        },
+        "report.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/report.json",
+          "sha256": "4e8898374b187bdd9fdb00b6f750c5efe103ea51a600b1af2aeb55f26d623ed5"
+        },
+        "response_metadata.json": {
+          "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_08_partner_profile/v4/response_metadata.json",
+          "sha256": "1da67048764c15ec144daa4017e2ef93da3eacd9e78a96caf54a0d1445c7969c"
+        }
+      },
+      "new_v4_calls": 0
+    }
+  ],
+  "source_run": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once",
+  "max_v5_calls": 5,
+  "max_each": 1,
+  "new_v4_calls": 0
+}

@@ -1,0 +1,46 @@
+{
+  "status": "reused_v4",
+  "calls_attempted": 0,
+  "input": {
+    "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/input.json#/raw_dialogue/6/content [characters 0:590, zero-based, end exclusive]",
+        "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 01:02:20"
+      }
+    ]
+  },
+  "result": {
+    "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+    "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+    "facts": [
+      {
+        "fact_index": 1,
+        "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "raw_subfact": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "contextualized_subfact": "The user has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement.",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+            "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+            "supports": "Old memory states the user has a friend named ThomasSusan, referred to as 'Susan', who provides support and encouragement."
+          },
+          {
+            "source_type": "context",
+            "source_id": "ctx-1",
+            "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+            "supports": "Confirms the user explicitly identifies ThomasSusan as 'my Friend' and attributes support and encouragement to 'Susan'; speaker metadata ('speaker': 'user') supports that this is the user's self-report."
+          }
+        ],
+        "pending_confirmations": []
+      }
+    ]
+  },
+  "source_path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/runs/real_mem0_v3_v4_comparison_20261104_once/runs/case_02_subject_and_roster/v4/result.json",
+  "source_sha256": "d4b129d51acb1f8bd2b9ed7c114e6df039eb2c3228bac4d84eba14002d7b71c1"
+}

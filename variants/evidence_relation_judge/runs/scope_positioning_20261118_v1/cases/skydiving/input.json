@@ -1,0 +1,284 @@
+{
+  "case_id": "skydiving",
+  "source_kind": "真实原生 Mem0 更新前快照及原用户对话；声明与关系为本次手工整理",
+  "human_review_target_number": 8,
+  "review_record_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s008:m000",
+  "review_decision": "修订后接受",
+  "review_method": "LLM辅助、用户确认",
+  "memory_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+  "snapshot_sha256": "815eeed3870029474b87bbdd4e5f1712acb21cc68784f82134283d2dfd2e274a",
+  "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+  "request": {
+    "split_result": {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "raw_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "contextualized_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+              "supports": "字面记录的旧记忆；不代表直接用户原话。"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/input.json#/raw_dialogue/6/content [0:169]",
+        "text": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 22:52:30"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "new-0",
+        "text": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:40:32",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content"
+      },
+      {
+        "source_id": "new-2",
+        "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:48:20",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content"
+      },
+      {
+        "source_id": "new-8",
+        "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:57:54",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content"
+      }
+    ],
+    "time_info": null
+  },
+  "manual_annotations": {
+    "old_units": [
+      {
+        "name": "attitude",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "extreme_sport_attitude",
+          "evidence": [
+            {
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "Dislikes extreme sports"
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      },
+      {
+        "name": "risk",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "injury_risk_reason",
+          "evidence": [
+            {
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "high injury risk"
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      },
+      {
+        "name": "safety",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "safety_commitment",
+          "evidence": [
+            {
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "commitment to safety and well-being"
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      }
+    ],
+    "new_unit": {
+      "name": "manually_mapped_new",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ]
+      },
+      "attribute": {
+        "value": "simulated_skydiving_experience",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      }
+    }
+  },
+  "manual_relation_candidate": {
+    "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+    "fact_index": 1,
+    "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "relation": "possible_change",
+    "object": "user",
+    "attribute": "simulated_skydiving_experience",
+    "conditions": "unknown",
+    "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+    "new_quote": {
+      "source_id": "new-0",
+      "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+    },
+    "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+    "confirmation_questions": []
+  },
+  "manual_relation_result": {
+    "status": "ok",
+    "results": [
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "fact_index": 1,
+        "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "status": "ok",
+        "raw_output": "{\"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\", \"fact_index\": 1, \"old_subfact\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\", \"relation\": \"possible_change\", \"object\": \"user\", \"attribute\": \"simulated_skydiving_experience\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\", \"old_quote\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+        "candidate": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "simulated_skydiving_experience",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "located_candidate": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "simulated_skydiving_experience",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "fragment_match": {
+          "raw": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "located": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "method": "exact",
+          "start": 0,
+          "end": 119
+        },
+        "validation": {
+          "passed": true,
+          "checks": [
+            "schema",
+            "relation",
+            "fact_identity",
+            "old_quote",
+            "new_quote",
+            "candidate_fragment"
+          ],
+          "semantic_correctness": "not_checked"
+        },
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "selection_limit": "此单个旧记忆并非全部旧知识；其他未输入事实不在本案判定范围。"
+}

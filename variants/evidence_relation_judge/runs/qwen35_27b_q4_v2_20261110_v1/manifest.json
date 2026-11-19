@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-11-10T15:35:16.748880+08:00",
+  "inputs_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1/inputs.json",
+  "baseline_local": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1/A_v2",
+  "baseline_cloud": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/qwen_plus_v2_diagnosis_20261110_v1",
+  "input_sha256": "f5586ed8c85558dc48749387cd8309308f7668c0add3c7d622794ee1663b95de",
+  "local_case_sha256": {
+    "job_transition": "14ebe6e37c5d3c57b0d74169bb020198c4282b2339b0b328fac5a6deb804662c",
+    "persian_cats": "2b8328e74b2365946063bc68ee0d0560d826bac3ec33c6d813b0e08336b3c10c",
+    "skydiving": "09af0fcf0c96bd1280e74b1bd3bb9b5a40d2ee93b9e63671b39fd2be614eb842",
+    "career_history": "9c41eed953368cd61ce948db544b14c4d428c085f63056049d71e09044cff64b",
+    "promotion": "5b84c97e953522b67367c2fda229da5f6aeee2101fa2c1fb5eb781881e8ec713"
+  },
+  "cloud_case_sha256": {
+    "job_transition": "94b46587172373ea10e475b0c5d387a3fba108e68c9866271ab277fe4304e4e0",
+    "persian_cats": "af586fabe31f82ec1f5d4db040a18fbc67626d56ddf073816398c393dfbd6790",
+    "skydiving": "addf58307d3f969c52d24f8dee1dc567e3c6863d613326223df9332ce01a6a46",
+    "career_history": "ea5e9cedb8153a56daeb9433f95b911bab65cbd1aba1618bbf1976f8856edb7a",
+    "promotion": "bf37eca8d9ecb39ea9cd72ee2671fa82ec5f2fd4f4d29ccfd9ae61c85144c80e"
+  },
+  "judge_sha256": {
+    "relation_judge.py": "8542d0a90bf379a5c34c4de26f5f7d56fad2de1305e01aa5b115185a17300300",
+    "relation_judge_v2.py": "5b6a607c4c709041f45d436b3c28b6027ebc300a84a9bea2473e7c7ad11c23e3",
+    "run_llama_server_v2.py": "0e2b1821387649f7e9e112c030c759f75bfb86ef94d3aeca0b17151bfad139e2"
+  },
+  "parameters": {
+    "temperature": 0,
+    "n_predict": 768,
+    "stream": false,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "transport": "/apply-template renders messages without generation; /completion returns unparsed generated text; one completion per fact",
+  "sampling": "temperature zero; other llama.cpp defaults; no client retries",
+  "gpu_peak": "nvidia-smi GPU 0 device-wide sampled at 0.2 second intervals; includes other processes and can miss brief peaks",
+  "comparison_limits": "Qwen3-8B uses BF16 transformers greedy enable_thinking=False; qwen-plus remote API temperature=0 with provider defaults and unpinned alias; Qwen3.5 uses GGUF Q4_K_M llama.cpp template and sampling implementation. Identical message text does not imply identical tokenizer or internal template."
+}

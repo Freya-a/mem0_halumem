@@ -1,0 +1,206 @@
+{
+  "case_id": "transition",
+  "source_kind": "真实原生 Mem0 更新前快照及原用户对话；声明与关系为本次手工整理",
+  "human_review_target_number": 7,
+  "review_record_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+  "review_decision": "修订后接受",
+  "review_method": "LLM辅助、用户确认",
+  "memory_snapshot": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+  "snapshot_sha256": "1c6165457486dc88cec360beb97c464061b88b6a1c29e7bd776d0a0ac50df3b2",
+  "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+  "request": {
+    "split_result": {
+      "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+      "memory_text": "Looking for a new job with better work-life balance",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "raw_subfact": "Looking for a new job with better work-life balance",
+          "contextualized_subfact": "Looking for a new job with better work-life balance",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job with better work-life balance",
+              "supports": "字面记录的旧记忆；不代表直接用户原话。"
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "speaker": "user",
+        "recorded_at": "Feb 05, 2026, 17:13:15",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "new-0",
+        "text": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "speaker": "user",
+        "recorded_at": "Mar 01, 2026, 07:04:00",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content"
+      }
+    ],
+    "time_info": null
+  },
+  "manual_annotations": {
+    "old_units": [
+      {
+        "name": "job_search",
+        "subject": {
+          "value": "user",
+          "evidence": [
+            {
+              "source_id": "ctx-1",
+              "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+            }
+          ]
+        },
+        "attribute": {
+          "value": "transition_progress",
+          "evidence": [
+            {
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job with better work-life balance"
+            }
+          ]
+        },
+        "weekdays": {
+          "kind": "unknown"
+        },
+        "valid": {
+          "start": {
+            "kind": "unknown"
+          },
+          "end": {
+            "kind": "unknown"
+          }
+        }
+      }
+    ],
+    "new_unit": {
+      "name": "manually_mapped_new",
+      "subject": {
+        "value": "user",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ]
+      },
+      "attribute": {
+        "value": "transition_progress",
+        "evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ]
+      },
+      "weekdays": {
+        "kind": "unknown"
+      },
+      "valid": {
+        "start": {
+          "kind": "unknown"
+        },
+        "end": {
+          "kind": "unknown"
+        }
+      }
+    }
+  },
+  "manual_relation_candidate": {
+    "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+    "fact_index": 1,
+    "old_subfact": "Looking for a new job with better work-life balance",
+    "relation": "possible_change",
+    "object": "user",
+    "attribute": "transition_progress",
+    "conditions": "unknown",
+    "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+    "old_quote": "Looking for a new job with better work-life balance",
+    "new_quote": {
+      "source_id": "new-0",
+      "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+    },
+    "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+    "confirmation_questions": []
+  },
+  "manual_relation_result": {
+    "status": "ok",
+    "results": [
+      {
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "fact_index": 1,
+        "old_subfact": "Looking for a new job with better work-life balance",
+        "status": "ok",
+        "raw_output": "{\"memory_id\": \"e6ab178b-c0f9-4adb-bfb7-e4648617a950\", \"fact_index\": 1, \"old_subfact\": \"Looking for a new job with better work-life balance\", \"relation\": \"possible_change\", \"object\": \"user\", \"attribute\": \"transition_progress\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Looking for a new job with better work-life balance\", \"old_quote\": \"Looking for a new job with better work-life balance\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+        "candidate": {
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "fact_index": 1,
+          "old_subfact": "Looking for a new job with better work-life balance",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "transition_progress",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "located_candidate": {
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "fact_index": 1,
+          "old_subfact": "Looking for a new job with better work-life balance",
+          "relation": "possible_change",
+          "object": "user",
+          "attribute": "transition_progress",
+          "conditions": "unknown",
+          "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+          "old_quote": "Looking for a new job with better work-life balance",
+          "new_quote": {
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          },
+          "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+          "confirmation_questions": []
+        },
+        "fragment_match": {
+          "raw": "Looking for a new job with better work-life balance",
+          "located": "Looking for a new job with better work-life balance",
+          "method": "exact",
+          "start": 0,
+          "end": 51
+        },
+        "validation": {
+          "passed": true,
+          "checks": [
+            "schema",
+            "relation",
+            "fact_identity",
+            "old_quote",
+            "new_quote",
+            "candidate_fragment"
+          ],
+          "semantic_correctness": "not_checked"
+        },
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "selection_limit": "此单个旧记忆并非全部旧知识；其他未输入事实不在本案判定范围。"
+}

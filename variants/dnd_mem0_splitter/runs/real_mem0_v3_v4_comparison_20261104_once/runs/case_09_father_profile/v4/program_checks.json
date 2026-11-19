@@ -1,0 +1,84 @@
+{
+  "case_id": "case_09_father_profile",
+  "version": "v4",
+  "program_status": "passed",
+  "strict_JSON_and_existing_validator_replay": true,
+  "replay_error": null,
+  "saved_result_equals_replay": true,
+  "candidate_fact_count": 3,
+  "accepted_fact_count": 3,
+  "raw_response_preserved": true,
+  "memory_id_echo_matches_if_present": true,
+  "memory_text_echo_matches_if_present": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "Father was born on 1963-08-02",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "retired doctor",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    },
+    {
+      "fact_index": 3,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+          "quote": "retired doctor who inspired interest in health",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        },
+        {
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "Retired doctor who inspired Martin's interest in health.",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined by this audit",
+  "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+  "additional_real_model_calls": 0
+}

@@ -1,0 +1,463 @@
+{
+  "selection_method": "Purposive small-scale sampling of real archived before snapshots, not a representative benchmark. All prior real splitter input IDs excluded.",
+  "cases": [
+    {
+      "case_id": "case_01_multi_person",
+      "categories": [
+        "多个人物",
+        "身份关系",
+        "混合说话人"
+      ],
+      "selection_reason": "两名具名人物与不同关系标签；对应旧来源包含 user 发言和 assistant 对人物关系的描述。",
+      "memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "memory_text": "Grateful towards colleagues like Steven and friends like Mary",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_011/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/13",
+      "database_json_pointer": "/database_points_with_vectors/13/payload/data",
+      "selected_snapshot_entry": {
+        "id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+        "memory": "Grateful towards colleagues like Steven and friends like Mary",
+        "hash": "5e8bc40d5a14cd418676ac6469fba2a1",
+        "metadata": null,
+        "created_at": "2026-10-28T00:04:44.719134-07:00",
+        "updated_at": "2026-10-28T00:05:50.196904-07:00",
+        "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+      },
+      "origin_session_ordinal": 9,
+      "target_session_ordinal": 11,
+      "target_ids_for_local_trace_only": [
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_009/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/18",
+      "origin_actual_operation_pointer": "/18",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_009/input.json#/raw_dialogue/8/content",
+          "character_range": [
+            0,
+            108
+          ],
+          "role": "user",
+          "original_timestamp": "May 20, 2026, 09:04:14",
+          "text": "Maintaining these relationships is crucial. I'll ensure to keep in touch and express my gratitude regularly."
+        },
+        {
+          "source_id": "ctx-2",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_009/input.json#/raw_dialogue/9/content",
+          "character_range": [
+            160,
+            289
+          ],
+          "role": "assistant",
+          "original_timestamp": "May 20, 2026, 09:04:14",
+          "text": "Your gratitude towards colleagues like Steven and friends like Mary highlights the importance of having a strong support network."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "categories": [
+        "缺失主语",
+        "姓名与别称",
+        "上下文额外人物"
+      ],
+      "selection_reason": "旧记忆省略拥有朋友的主体并保留姓名和别称；实际对应的同一条旧 user 发言还包含其他人物及工作细节。",
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/51",
+      "database_json_pointer": "/database_points_with_vectors/51/payload/data",
+      "selected_snapshot_entry": {
+        "id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+        "hash": "ddc67118d2a18e3923c532500e71d8c4",
+        "metadata": null,
+        "created_at": "2026-10-28T00:08:17.229415-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "origin_session_ordinal": 2,
+      "target_session_ordinal": 5,
+      "target_ids_for_local_trace_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/9",
+      "origin_actual_operation_pointer": "/9",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_002/input.json#/raw_dialogue/6/content",
+          "character_range": [
+            0,
+            590
+          ],
+          "role": "user",
+          "original_timestamp": "Sep 06, 2025, 01:02:20",
+          "text": "Of course. I have several important friends and colleagues: ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life. MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects, significantly impacting my career growth. WilliamsJoshua is my Colleague, Joshua's collaborative approach and insights into healthcare management enhance our team's effectiveness, positively influencing my work and leadership style."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "categories": [
+        "助手来源",
+        "说话人归属",
+        "析取与状态"
+      ],
+      "selection_reason": "旧记忆含 practices or is open to；生成会话中有 assistant 的 yoga 表述，需检查来源角色和命题范围。",
+      "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/58",
+      "database_json_pointer": "/database_points_with_vectors/58/payload/data",
+      "selected_snapshot_entry": {
+        "id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+        "memory": "Practices or is open to yoga for supporting personal health and transition",
+        "hash": "98a086410a77a942b568da625931a392",
+        "metadata": null,
+        "created_at": "2026-10-28T00:13:15.445697-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "origin_session_ordinal": 7,
+      "target_session_ordinal": 8,
+      "target_ids_for_local_trace_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/46",
+      "origin_actual_operation_pointer": "/46",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content",
+          "character_range": [
+            0,
+            255
+          ],
+          "role": "user",
+          "original_timestamp": "Feb 05, 2026, 17:13:15",
+          "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+        },
+        {
+          "source_id": "ctx-2",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/3/content",
+          "character_range": [
+            327,
+            523
+          ],
+          "role": "assistant",
+          "original_timestamp": "Feb 05, 2026, 17:15:18",
+          "text": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "categories": [
+        "否定偏好",
+        "原因与作用范围",
+        "亲属代词",
+        "上下文额外偏好"
+      ],
+      "selection_reason": "否定偏好与清醒负责的理由，包含 relative；原始饮料偏好发言还提到能量饮料、绿茶和汽水。",
+      "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+      "user_uuid": "348492a7-cfe4-ee1d-73c3-c276d6ba8277",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_004/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/17",
+      "database_json_pointer": "/database_points_with_vectors/17/payload/data",
+      "selected_snapshot_entry": {
+        "id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+        "memory": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+        "hash": "c3bb9c970b2c6929a7a88e0f98ca9868",
+        "metadata": null,
+        "created_at": "2026-10-28T00:17:13.680639-07:00",
+        "updated_at": null,
+        "user_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277"
+      },
+      "origin_session_ordinal": 3,
+      "target_session_ordinal": 4,
+      "target_ids_for_local_trace_only": [
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+        "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m005"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_003/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/13",
+      "origin_actual_operation_pointer": "/13",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_003/input.json#/raw_dialogue/10/content",
+          "character_range": [
+            0,
+            548
+          ],
+          "role": "user",
+          "original_timestamp": "Sep 06, 2025, 14:02:33",
+          "text": "I don't like to drink energy drinks. I avoid energy drinks because they make me jittery and unable to concentrate on supporting my relative. I like to drink green tea for its calming effect, helping me stay focused and composed during stressful situations. I don't like to drink soda due to its excessive sweetness and lack of nutritional value, which doesn't align with my health-conscious lifestyle. I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "categories": [
+        "相对时间",
+        "职位状态变化",
+        "上下文额外感受"
+      ],
+      "selection_reason": "recently 与职位变化及机构；原始 user 发言带记录时间和额外感受，可检查时间解释及补充范围。",
+      "memory_id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+      "memory_text": "Recently promoted to lead director at Historical Productions Ltd",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/11",
+      "database_json_pointer": "/database_points_with_vectors/11/payload/data",
+      "selected_snapshot_entry": {
+        "id": "2570a550-4b52-43fc-b5c4-079261785a1a",
+        "memory": "Recently promoted to lead director at Historical Productions Ltd",
+        "hash": "dd0d8d115d8c65e7f4aa9444fde7a9cc",
+        "metadata": null,
+        "created_at": "2026-10-27T23:41:45.187008-07:00",
+        "updated_at": null,
+        "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+      },
+      "origin_session_ordinal": 5,
+      "target_session_ordinal": 6,
+      "target_ids_for_local_trace_only": [
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/14",
+      "origin_actual_operation_pointer": "/14",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "character_range": [
+            0,
+            92
+          ],
+          "role": "user",
+          "original_timestamp": "Feb 01, 2026, 18:47:19",
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "categories": [
+        "计划",
+        "可能性",
+        "助手问句",
+        "缺失主语"
+      ],
+      "selection_reason": "包含计划及 possibly 的不同作用范围；对应旧会话含 assistant 问句和 user 对创作控制的回应。",
+      "memory_id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+      "memory_text": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+      "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_006/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/1",
+      "database_json_pointer": "/database_points_with_vectors/1/payload/data",
+      "selected_snapshot_entry": {
+        "id": "0618a2ca-e7d0-483f-b80a-335124dbb075",
+        "memory": "Plans to initiate groundbreaking historical dramas and possibly science fiction dramas",
+        "hash": "ddf97b05cf8385ad4a321b721260454f",
+        "metadata": null,
+        "created_at": "2026-10-27T23:41:45.195765-07:00",
+        "updated_at": null,
+        "user_id": "1b846c59-456e-9550-dffd-4d23f1eca81f"
+      },
+      "origin_session_ordinal": 5,
+      "target_session_ordinal": 6,
+      "target_ids_for_local_trace_only": [
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+        "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/15",
+      "origin_actual_operation_pointer": "/15",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/1/content",
+          "character_range": [
+            350,
+            536
+          ],
+          "role": "assistant",
+          "original_timestamp": "Feb 01, 2026, 18:47:19",
+          "text": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas. How do you feel about the increased responsibility?"
+        },
+        {
+          "source_id": "ctx-2",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/2/content",
+          "character_range": [
+            0,
+            135
+          ],
+          "role": "user",
+          "original_timestamp": "Feb 01, 2026, 18:48:19",
+          "text": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    },
+    {
+      "case_id": "case_07_no_children",
+      "categories": [
+        "明确否定状态",
+        "缺失主语",
+        "上下文家庭细节"
+      ],
+      "selection_reason": "简短否定状态；旧 user 家庭介绍可提供主体线索，同时含父母和关系状态等额外内容。",
+      "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "memory_text": "No children",
+      "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+      "snapshot_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+      "snapshot_json_pointer": "/api_snapshot/results/20",
+      "database_json_pointer": "/database_points_with_vectors/20/payload/data",
+      "selected_snapshot_entry": {
+        "id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+        "memory": "No children",
+        "hash": "3eb670431e93cec61e8c22861684110a",
+        "metadata": null,
+        "created_at": "2026-10-28T00:07:46.449330-07:00",
+        "updated_at": null,
+        "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f"
+      },
+      "origin_session_ordinal": 1,
+      "target_session_ordinal": 5,
+      "target_ids_for_local_trace_only": [
+        "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000"
+      ],
+      "origin_ADD_source": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/add_return.json",
+      "origin_ADD_pointer": "/return_value/results/10",
+      "origin_actual_operation_pointer": "/10",
+      "source_context_audit": [
+        {
+          "source_id": "ctx-1",
+          "original_source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/input.json#/raw_dialogue/8/content",
+          "character_range": [
+            0,
+            87
+          ],
+          "role": "user",
+          "original_timestamp": "Sep 04, 2025, 19:38:09",
+          "text": "Good, let me introduce my family. Both parents are alive, no_relationship, No children."
+        }
+      ],
+      "source_checks": {
+        "API_and_database_id_text_user_match": true,
+        "before_snapshot_not_truncated": true,
+        "previous_after_entry_matches_before": true,
+        "origin_before_id_absent": true,
+        "real_ADD_id_and_text_match": true,
+        "origin_after_text_matches": true,
+        "historical_checkpoint_hashes_match": true,
+        "context_is_verbatim_old_excerpt": true,
+        "context_roles_preserved": true,
+        "all_context_precedes_target": true,
+        "not_in_previous_real_model_inputs": true
+      }
+    }
+  ],
+  "previous_input_ids_excluded": [
+    "05b23c45-294e-402c-bcb9-d66ccbac6371",
+    "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+    "EXAMPLE_ONLY_NOT_A_REAL_MEM0_ID",
+    "aa764342-2fe6-4632-9efd-e5e0cc032185",
+    "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03"
+  ],
+  "coverage_gaps": [
+    "No reliable explicit if/unless conditional memory was found in the inspected target-before snapshot inventory; no conditional case was invented."
+  ],
+  "source_timestamp_policy": "Original utterance timestamp strings retained without inferred timezone; Mem0 processing timestamps are not treated as utterance dates.",
+  "model_input_policy": "Only the frozen v3 system prompt and the per-case validated input object are sent; selection reasons, review annotations, expected answers, target evidence and previous model outputs are not sent."
+}

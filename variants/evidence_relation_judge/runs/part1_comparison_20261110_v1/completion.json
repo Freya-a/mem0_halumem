@@ -1,0 +1,305 @@
+{
+  "finished_at": "2026-11-10T10:57:52.179041+08:00",
+  "elapsed_seconds": 136.17,
+  "runtime": {
+    "model_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B",
+    "load_method": "AutoTokenizer/AutoModelForCausalLM.from_pretrained(local_files_only=True, torch_dtype=bfloat16), cuda:0",
+    "bf16_loaded": true,
+    "load_seconds": 16.429,
+    "model_calls": 10,
+    "generations": [
+      {
+        "seconds": 10.754,
+        "peak_allocated_bytes": 16760761344,
+        "peak_reserved_bytes": 16863199232,
+        "output_tokens": 242,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18450874368
+      },
+      {
+        "seconds": 11.044,
+        "peak_allocated_bytes": 16889733120,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 269,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18595577856
+      },
+      {
+        "seconds": 11.519,
+        "peak_allocated_bytes": 16741787648,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 285,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18595577856
+      },
+      {
+        "seconds": 12.708,
+        "peak_allocated_bytes": 16873548800,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 313,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18595577856
+      },
+      {
+        "seconds": 14.329,
+        "peak_allocated_bytes": 16756742144,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 356,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18693226496
+      },
+      {
+        "seconds": 14.377,
+        "peak_allocated_bytes": 16880882688,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 356,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18693226496
+      },
+      {
+        "seconds": 11.71,
+        "peak_allocated_bytes": 16708079616,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 292,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18693226496
+      },
+      {
+        "seconds": 11.532,
+        "peak_allocated_bytes": 16855858176,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 285,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18693226496
+      },
+      {
+        "seconds": 10.767,
+        "peak_allocated_bytes": 16677002240,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 268,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18695323648
+      },
+      {
+        "seconds": 10.923,
+        "peak_allocated_bytes": 16827035648,
+        "peak_reserved_bytes": 17007902720,
+        "output_tokens": 270,
+        "error": null,
+        "terminated_at_eos": true,
+        "device_used_bytes_at_end": 18695323648
+      }
+    ],
+    "load_error": null,
+    "torch_version": "2.6.0+cu124",
+    "transformers_version": "5.6.2",
+    "gpu": "NVIDIA GeForce RTX 3090 Ti",
+    "gpu_free_bytes_before_load": 23897833472,
+    "gpu_total_bytes": 25422594048,
+    "cuda_allocated_after_load_bytes": 16383587328,
+    "cuda_reserved_after_load_bytes": 16536043520
+  },
+  "cases": [
+    {
+      "case": "job_transition",
+      "version": "v2",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 10.754,
+          "peak_allocated_bytes": 16760761344,
+          "peak_reserved_bytes": 16863199232,
+          "output_tokens": 242,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18450874368,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 27.214
+    },
+    {
+      "case": "job_transition",
+      "version": "v4",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 11.044,
+          "peak_allocated_bytes": 16889733120,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 269,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18595577856,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 11.05
+    },
+    {
+      "case": "persian_cats",
+      "version": "v2",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 11.519,
+          "peak_allocated_bytes": 16741787648,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 285,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18595577856,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 11.523
+    },
+    {
+      "case": "persian_cats",
+      "version": "v4",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 12.708,
+          "peak_allocated_bytes": 16873548800,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 313,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18595577856,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 12.713
+    },
+    {
+      "case": "skydiving",
+      "version": "v2",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 14.329,
+          "peak_allocated_bytes": 16756742144,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 356,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18693226496,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 14.334
+    },
+    {
+      "case": "skydiving",
+      "version": "v4",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 14.377,
+          "peak_allocated_bytes": 16880882688,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 356,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18693226496,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 14.382
+    },
+    {
+      "case": "career_history",
+      "version": "v2",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 11.71,
+          "peak_allocated_bytes": 16708079616,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 292,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18693226496,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 11.714
+    },
+    {
+      "case": "career_history",
+      "version": "v4",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 11.532,
+          "peak_allocated_bytes": 16855858176,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 285,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18693226496,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 11.537
+    },
+    {
+      "case": "promotion",
+      "version": "v2",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 10.767,
+          "peak_allocated_bytes": 16677002240,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 268,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18695323648,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 10.77
+    },
+    {
+      "case": "promotion",
+      "version": "v4",
+      "status": "ok",
+      "calls": 1,
+      "generations": [
+        {
+          "seconds": 10.923,
+          "peak_allocated_bytes": 16827035648,
+          "peak_reserved_bytes": 17007902720,
+          "output_tokens": 270,
+          "error": null,
+          "terminated_at_eos": true,
+          "device_used_bytes_at_end": 18695323648,
+          "length_limit_reached_without_eos": false
+        }
+      ],
+      "case_wall_seconds": 10.927
+    }
+  ],
+  "no_retry": true,
+  "no_mem0_write": true
+}

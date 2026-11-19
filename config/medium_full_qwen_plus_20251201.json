@@ -1,0 +1,30 @@
+{
+  "mem0ai_version": "0.1.118",
+  "dataset": "HaluMem/data/HaluMem-Medium.jsonl",
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "llm": {
+    "provider": "openai",
+    "config": {
+      "model": "qwen-plus-2025-12-01",
+      "openai_base_url": "https://{DASHSCOPE_WORKSPACE_ID}.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+      "max_tokens": 16384,
+      "temperature": 0.5
+    }
+  },
+  "embedder": {
+    "provider": "openai",
+    "config": {
+      "model": "text-embedding-v4",
+      "openai_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "embedding_dims": 1024
+    }
+  },
+  "qa_and_judge": {
+    "temperature": 0,
+    "max_tokens": 16384,
+    "timeout_seconds": 180,
+    "retry_times": 3,
+    "wait_time_lower": 10,
+    "wait_time_upper": 30
+  }
+}

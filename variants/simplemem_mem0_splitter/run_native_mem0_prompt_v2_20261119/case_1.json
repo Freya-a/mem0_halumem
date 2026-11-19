@@ -1,0 +1,293 @@
+{
+  "input": {
+    "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+    "memory_text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+    "source_context": null
+  },
+  "source": {
+    "user_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+    "before_file": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_005/before.json",
+    "snapshot_sha256": "157f0939a378c34e27ef65e255c1cefc58d2e560a5c993aeb7e7d6618d1238fe",
+    "api_snapshot_pointer": "/api_snapshot/results (id lookup)",
+    "database_payload_cross_check": true,
+    "target_ids": [
+      "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000"
+    ],
+    "session_group_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004"
+  },
+  "request": {
+    "model": "qwen-plus-2025-12-01",
+    "prompt_version": "prompt_v2",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a professional information extraction assistant, skilled at extracting structured, unambiguous information from conversations. You must output valid JSON format."
+      },
+      {
+        "role": "user",
+        "content": "Your task is to extract all valuable information from the following old memory and convert it into structured memory entries.\n\n[Old Memory ID]\n\"d575dfc1-59ec-43b4-83c4-6b94457a83f6\"\n[Old Memory]\n\"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\"\n[Optional source context, only for necessary and supported disambiguation]\nnull\n\n[Requirements]\n1. Complete Coverage: Generate enough memory entries to ensure ALL information in the old memory is captured. Split independently assessable facts while preserving subjects, objects, relationships, conditions, reasons, negation and uncertainty. Do not overstate attributed opinions as objective facts.\n2. Lossless Information: raw_statement must express only what the old memory says; retain unresolved pronouns and relative time when necessary. contextualized_statement may resolve references only when reliably supported by source context; otherwise keep the ambiguity and add it to unresolved. Never use new evidence as a source.\n3. Each memory_quotes entry must be a nonempty exact contiguous verbatim substring of the old memory, with enough quotations to support the unit. Use multiple substrings where needed. If source context was needed for resolution include exact verbatim context_quotes; otherwise use [].\n4. entities include only explicit or reliably disambiguated entities. condition and valid_time are strings or null. Set valid_time to null unless the memory explicitly states a fact's valid time; a recording timestamp is not necessarily a fact's valid time. Never infer or invent an absolute time.\n5. Output a single valid JSON object without markdown or explanations. Every unit has a nonempty unique unit_id. List unresolved issues as strings. If a candidate cannot be supported, record the issue rather than inventing evidence.\n\n[Output Format]\n{\"memory_id\": \"d575dfc1-59ec-43b4-83c4-6b94457a83f6\", \"original_text\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\", \"units\": [{\"unit_id\":\"u1\", \"raw_statement\":\"...\", \"contextualized_statement\":\"...\", \"memory_quotes\":[\"...\"], \"context_quotes\":[], \"entities\":[], \"condition\":null, \"valid_time\":null}], \"unresolved\":[]}\n\n[Additional evidence and scope checks — apply to every unit]\n- Quote directly and verbatim from the corresponding source: each quote must be an exact continuous substring, preserving every character, capitalization and punctuation. Never stitch separate words into one quote. When the subject, relation or antecedent is elsewhere, include multiple exact substrings or a longer exact substring. Before returning, check each quote against its source. If evidence is insufficient, report the issue in unresolved rather than inventing a quote.\n- Preserve attribution in BOTH raw_statement and contextualized_statement. A person's preference, opinion, stated reason, belief or assessment remains that person's stated view; do not convert it into an unattributed objective fact. Keep the source's uncertainty, negation, reasons and relations. Do not add a claim about what a person believes unless the original supports that attribution.\n- Make each unit understandable as an individually assessable relation with its necessary subject, predicate and object, retaining essential qualifiers and attribution. Do not output an isolated fragment without its relation. Avoid duplicate or fully subsumed units that repeat the same proposition with no distinct independently assessable content. Split independently assessable content when supported; do not merge unrelated propositions merely to reduce count, and do not split away required conditions or reasons.\n- condition is ONLY an explicit applicability condition or explicit hypothetical/concessive condition from the memory. A cause, explanation or motivation is not a condition: keep it in the statement and set condition to null if no condition is stated. Preserve hypothetical and concessive wording without turning it into a claim the condition occurred.\n- Resolve a reference only when it is reliably established by the memory or provided source context. If the identity or antecedent is unresolved, retain the ambiguous reference or a non-identifying description in BOTH statements, do not assert a specific identity for that reference in entities, and record the specific uncertainty once in unresolved. Do not assert a resolution and list the same resolution as uncertain. If a resolution needs source_context, quote its exact support in context_quotes; otherwise do not invent context.\n- valid_time is null unless a fact's valid time is explicitly stated. A recording timestamp alone is not its valid time. Check that unresolved contains only actual unresolved issues and is consistent with the units.\n"
+      }
+    ],
+    "temperature": 0.1,
+    "max_tokens": 4096,
+    "automatic_retries": 0
+  },
+  "call": {
+    "status": "response_received",
+    "attempts": 1,
+    "request_transmitted": true,
+    "model_response_received": true,
+    "elapsed_seconds": 16.238,
+    "returned_model": "qwen-plus-2025-12-01",
+    "finish_reason": "stop"
+  },
+  "raw_response": "{\n  \"memory_id\": \"d575dfc1-59ec-43b4-83c4-6b94457a83f6\",\n  \"original_text\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Likes dogs\",\n      \"contextualized_statement\": \"Likes dogs\",\n      \"memory_quotes\": [\"Likes dogs\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u2\",\n      \"raw_statement\": \"Likes dogs, especially Labradors\",\n      \"contextualized_statement\": \"Likes dogs, especially Labradors\",\n      \"memory_quotes\": [\"Likes dogs, especially Labradors\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u3\",\n      \"raw_statement\": \"Labradors are friendly\",\n      \"contextualized_statement\": \"Labradors are friendly\",\n      \"memory_quotes\": [\"they are friendly\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u4\",\n      \"raw_statement\": \"Labradors are loyal\",\n      \"contextualized_statement\": \"Labradors are loyal\",\n      \"memory_quotes\": [\"they are loyal\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u5\",\n      \"raw_statement\": \"Labradors are great companions for outdoor activities like jogging\",\n      \"contextualized_statement\": \"Labradors are great companions for outdoor activities like jogging\",\n      \"memory_quotes\": [\"they are friendly, loyal, and great companions for outdoor activities like jogging\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u6\",\n      \"raw_statement\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n      \"contextualized_statement\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n      \"memory_quotes\": [\"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"The pronoun 'they' in 'they are friendly, loyal, and great companions...' is ambiguous: it could refer to dogs generally or specifically to Labradors; the original text does not explicitly resolve this reference.\",\n    \"No subject (e.g., person's name or identifier) is stated for the preference — 'Likes dogs' lacks an explicit agent; the grammatical subject is elided and not recoverable from the given text.\"\n  ]\n}",
+  "provider_response": {
+    "id": "chatcmpl-0c10680b-e092-92e9-b38d-31375e4e90be",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"memory_id\": \"d575dfc1-59ec-43b4-83c4-6b94457a83f6\",\n  \"original_text\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n  \"units\": [\n    {\n      \"unit_id\": \"u1\",\n      \"raw_statement\": \"Likes dogs\",\n      \"contextualized_statement\": \"Likes dogs\",\n      \"memory_quotes\": [\"Likes dogs\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u2\",\n      \"raw_statement\": \"Likes dogs, especially Labradors\",\n      \"contextualized_statement\": \"Likes dogs, especially Labradors\",\n      \"memory_quotes\": [\"Likes dogs, especially Labradors\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u3\",\n      \"raw_statement\": \"Labradors are friendly\",\n      \"contextualized_statement\": \"Labradors are friendly\",\n      \"memory_quotes\": [\"they are friendly\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u4\",\n      \"raw_statement\": \"Labradors are loyal\",\n      \"contextualized_statement\": \"Labradors are loyal\",\n      \"memory_quotes\": [\"they are loyal\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u5\",\n      \"raw_statement\": \"Labradors are great companions for outdoor activities like jogging\",\n      \"contextualized_statement\": \"Labradors are great companions for outdoor activities like jogging\",\n      \"memory_quotes\": [\"they are friendly, loyal, and great companions for outdoor activities like jogging\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    },\n    {\n      \"unit_id\": \"u6\",\n      \"raw_statement\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n      \"contextualized_statement\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n      \"memory_quotes\": [\"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\"],\n      \"context_quotes\": [],\n      \"entities\": [],\n      \"condition\": null,\n      \"valid_time\": null\n    }\n  ],\n  \"unresolved\": [\n    \"The pronoun 'they' in 'they are friendly, loyal, and great companions...' is ambiguous: it could refer to dogs generally or specifically to Labradors; the original text does not explicitly resolve this reference.\",\n    \"No subject (e.g., person's name or identifier) is stated for the preference — 'Likes dogs' lacks an explicit agent; the grammatical subject is elided and not recoverable from the given text.\"\n  ]\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1795070550,
+    "model": "qwen-plus-2025-12-01",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 697,
+      "prompt_tokens": 1003,
+      "total_tokens": 1700,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    }
+  },
+  "validation": {
+    "status": "failed",
+    "parsed": {
+      "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "original_text": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "units": [
+        {
+          "unit_id": "u1",
+          "raw_statement": "Likes dogs",
+          "contextualized_statement": "Likes dogs",
+          "memory_quotes": [
+            "Likes dogs"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u2",
+          "raw_statement": "Likes dogs, especially Labradors",
+          "contextualized_statement": "Likes dogs, especially Labradors",
+          "memory_quotes": [
+            "Likes dogs, especially Labradors"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u3",
+          "raw_statement": "Labradors are friendly",
+          "contextualized_statement": "Labradors are friendly",
+          "memory_quotes": [
+            "they are friendly"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u4",
+          "raw_statement": "Labradors are loyal",
+          "contextualized_statement": "Labradors are loyal",
+          "memory_quotes": [
+            "they are loyal"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u5",
+          "raw_statement": "Labradors are great companions for outdoor activities like jogging",
+          "contextualized_statement": "Labradors are great companions for outdoor activities like jogging",
+          "memory_quotes": [
+            "they are friendly, loyal, and great companions for outdoor activities like jogging"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        },
+        {
+          "unit_id": "u6",
+          "raw_statement": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "contextualized_statement": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+          "memory_quotes": [
+            "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging"
+          ],
+          "context_quotes": [],
+          "entities": [],
+          "condition": null,
+          "valid_time": null
+        }
+      ],
+      "unresolved": [
+        "The pronoun 'they' in 'they are friendly, loyal, and great companions...' is ambiguous: it could refer to dogs generally or specifically to Labradors; the original text does not explicitly resolve this reference.",
+        "No subject (e.g., person's name or identifier) is stated for the preference — 'Likes dogs' lacks an explicit agent; the grammatical subject is elided and not recoverable from the given text."
+      ]
+    },
+    "errors": [
+      "units[3].memory_quotes[0] not found verbatim in source"
+    ],
+    "warnings": [
+      "unresolved issues reported by model"
+    ],
+    "quote_locations": [
+      {
+        "unit_id": "u1",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            10
+          ]
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            32
+          ]
+        ]
+      },
+      {
+        "unit_id": "u3",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            42,
+            59
+          ]
+        ]
+      },
+      {
+        "unit_id": "u4",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": []
+      },
+      {
+        "unit_id": "u5",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            42,
+            124
+          ]
+        ]
+      },
+      {
+        "unit_id": "u6",
+        "field": "memory_quotes",
+        "index": 0,
+        "spans": [
+          [
+            0,
+            124
+          ]
+        ]
+      }
+    ],
+    "semantic_check": "not_automatically_verified",
+    "validated_units": [
+      {
+        "unit_id": "u1",
+        "raw_statement": "Likes dogs",
+        "contextualized_statement": "Likes dogs",
+        "memory_quotes": [
+          "Likes dogs"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u2",
+        "raw_statement": "Likes dogs, especially Labradors",
+        "contextualized_statement": "Likes dogs, especially Labradors",
+        "memory_quotes": [
+          "Likes dogs, especially Labradors"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u3",
+        "raw_statement": "Labradors are friendly",
+        "contextualized_statement": "Labradors are friendly",
+        "memory_quotes": [
+          "they are friendly"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u5",
+        "raw_statement": "Labradors are great companions for outdoor activities like jogging",
+        "contextualized_statement": "Labradors are great companions for outdoor activities like jogging",
+        "memory_quotes": [
+          "they are friendly, loyal, and great companions for outdoor activities like jogging"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      },
+      {
+        "unit_id": "u6",
+        "raw_statement": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        "contextualized_statement": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+        "memory_quotes": [
+          "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging"
+        ],
+        "context_quotes": [],
+        "entities": [],
+        "condition": null,
+        "valid_time": null
+      }
+    ]
+  }
+}

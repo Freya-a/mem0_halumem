@@ -1,0 +1,21 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "call_count": 1,
+  "cases": [
+    {
+      "file": "case_1.json",
+      "memory_id": "halumem-1-s4-m1-old1",
+      "status": "error",
+      "elapsed_seconds": 0.473,
+      "error": {
+        "type": "APIConnectionError"
+      }
+    }
+  ],
+  "status": "stopped_api_error",
+  "error": {
+    "type": "APIConnectionError"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "prompt_version": "prompt_v2",
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "client_trust_env": false,
+  "http_redirects": false,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "configuration_sources": {
+    "base_url": "config/medium_full_qwen_plus_20251201.json",
+    "key": ".env.server.medium-full",
+    "workspace": ".env.server.medium-full",
+    "priority": "file_only_fail_closed"
+  },
+  "cases": [
+    {
+      "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "status": "response_received",
+      "file": "case_1.json",
+      "attempts": 1,
+      "elapsed_seconds": 16.238,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "failed"
+    },
+    {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "status": "response_received",
+      "file": "case_2.json",
+      "attempts": 1,
+      "elapsed_seconds": 8.502,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "passed"
+    },
+    {
+      "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+      "status": "response_received",
+      "file": "case_3.json",
+      "attempts": 1,
+      "elapsed_seconds": 4.884,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "passed"
+    },
+    {
+      "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "status": "response_received",
+      "file": "case_4.json",
+      "attempts": 1,
+      "elapsed_seconds": 5.869,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "needs_review"
+    },
+    {
+      "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "status": "response_received",
+      "file": "case_5.json",
+      "attempts": 1,
+      "elapsed_seconds": 6.588,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "failed"
+    }
+  ]
+}

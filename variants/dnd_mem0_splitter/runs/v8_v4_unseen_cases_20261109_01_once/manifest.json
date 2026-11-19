@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-09T10:42:51.199943+08:00",
+  "cases": [
+    {
+      "case": "promotion",
+      "origin": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/calls/01_promotion_split/request.json",
+      "input_sha256": "fa1a361620b613f39bace43cbf28300cb34acb303666c7494d48e3e4438904af"
+    },
+    {
+      "case": "skydiving",
+      "origin": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/calls/02_skydiving_split/request.json",
+      "input_sha256": "65f17d39e8dbc0b5c415752ba08039d2642411a37076d41397ba723fcec0ab85"
+    },
+    {
+      "case": "career_history",
+      "origin": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/calls/03_career_history_split/request.json",
+      "input_sha256": "f5d78319715376fe7c00eac37a9371863516b5d4c47623b8925303e294b04c8d"
+    }
+  ],
+  "prompts_sha256": {
+    "v4": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3",
+    "v8": "094d8adf71bbf623d2bdc5f43dd64cebaeb8ad0ba05b77c8d7881a28eb7c2557"
+  },
+  "selection": "pre-existing downstream splitter inputs, not in the 11 earlier v3/v4 development cases; selected after v8 prompt frozen",
+  "limits": "previously used in downstream experiments, not a random sample; v4 is an existing baseline and no claim that these cases are unknown to v4 development generally"
+}

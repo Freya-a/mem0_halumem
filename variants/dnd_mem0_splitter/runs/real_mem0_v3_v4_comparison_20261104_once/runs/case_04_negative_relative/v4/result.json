@@ -1,0 +1,32 @@
+{
+  "memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+  "memory_text": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+      "raw_subfact": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+      "contextualized_subfact": "The user does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "30a88f0c-d4b8-4089-95b2-82938e45558c",
+          "quote": "Does not like drinking alcoholic drinks because they need to stay clear-headed and responsible while supporting their relative",
+          "supports": "Old memory states a dislike of alcoholic drinks, with the stated reason being the need to remain clear-headed and responsible in the context of supporting their relative."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I don't like to drink alcoholic drinks. I avoid alcoholic drinks because I need to stay clear-headed and responsible while supporting my relative.",
+          "supports": "Confirms the first-person perspective ('I'), subject ('alcoholic drinks'), attitude ('don't like' / 'avoid'), and causal rationale ('because I need to stay clear-headed and responsible while supporting my relative'); supports interpreting 'they' in the memory as a grammatical variant of 'I' used by the same speaker (the user)."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Pronoun antecedent resolution: whether 'they' in the memory text refers unambiguously to the user",
+          "reason": "The memory uses third-person plural pronoun 'they' to refer to the subject of the dislike and responsibility, but the memory text itself contains no explicit identification of who 'they' is; the source_context provides first-person self-reference ('I') with identical rationale and behavior, strongly suggesting alignment, but the memory alone does not resolve the pronoun."
+        }
+      ]
+    }
+  ]
+}

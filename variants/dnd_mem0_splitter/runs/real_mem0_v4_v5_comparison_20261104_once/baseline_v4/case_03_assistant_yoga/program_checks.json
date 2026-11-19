@@ -1,0 +1,55 @@
+{
+  "case_id": "case_03_assistant_yoga",
+  "version": "v4",
+  "program_status": "passed",
+  "strict_JSON_and_existing_validator_replay": true,
+  "replay_error": null,
+  "saved_result_equals_replay": true,
+  "candidate_fact_count": 1,
+  "accepted_fact_count": 1,
+  "raw_response_preserved": true,
+  "memory_id_echo_matches_if_present": true,
+  "memory_text_echo_matches_if_present": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        },
+        {
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        },
+        {
+          "evidence_index": 2,
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined by this audit",
+  "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+  "additional_real_model_calls": 0
+}

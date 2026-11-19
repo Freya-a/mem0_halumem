@@ -1,0 +1,63 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "client_trust_env": false,
+  "http_redirects": false,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "cases": [
+    {
+      "memory_id": "halumem-1-s4-m1-old1",
+      "status": "response_received",
+      "file": "case_1.json",
+      "attempts": 1,
+      "elapsed_seconds": 20.278,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "failed"
+    },
+    {
+      "memory_id": "halumem-1-s9-m2-old0",
+      "status": "response_received",
+      "file": "case_2.json",
+      "attempts": 1,
+      "elapsed_seconds": 11.269,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "needs_review"
+    },
+    {
+      "memory_id": "halumem-1-s11-m1-old1",
+      "status": "response_received",
+      "file": "case_3.json",
+      "attempts": 1,
+      "elapsed_seconds": 6.93,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "passed"
+    },
+    {
+      "memory_id": "halumem-1-s16-m3-old0",
+      "status": "response_received",
+      "file": "case_4.json",
+      "attempts": 1,
+      "elapsed_seconds": 4.359,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "passed"
+    },
+    {
+      "memory_id": "halumem-1-s3-m1-old0",
+      "status": "response_received",
+      "file": "case_5.json",
+      "attempts": 1,
+      "elapsed_seconds": 5.949,
+      "returned_model": "qwen-plus-2025-12-01",
+      "validation_status": "passed"
+    }
+  ],
+  "configuration_sources": {
+    "base_url": "config/medium_full_qwen_plus_20251201.json",
+    "key": ".env.server.medium-full",
+    "workspace": ".env.server.medium-full",
+    "priority": "file_only_fail_closed"
+  }
+}

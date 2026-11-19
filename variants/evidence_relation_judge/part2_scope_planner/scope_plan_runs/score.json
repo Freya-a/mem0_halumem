@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "case_id": "promotion",
+      "mode": "structured",
+      "target_change": "将旧 Director 限定为历史并记录 lead director；保留雇主，准确晋升日未知。",
+      "checks": {
+        "code:possible_change": true,
+        "code:boundary_unknown": true,
+        "code:disjoint_preserve": true,
+        "code:raw_evidence_candidate": true,
+        "no_unapproved_modify": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    },
+    {
+      "case_id": "promotion",
+      "mode": "baseline_only",
+      "target_change": "将旧 Director 限定为历史并记录 lead director；保留雇主，准确晋升日未知。",
+      "checks": {
+        "code:possible_change": true,
+        "code:attribute_unlocalized": true,
+        "code:boundary_unknown": true,
+        "code:hold_provisional": true,
+        "no_unapproved_modify": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    },
+    {
+      "case_id": "synthetic_wednesday_01",
+      "mode": "structured",
+      "target_change": "从 2026-12-01 起只调整周三，保留周一与此前周三；现有模拟关系仍为 possible_change。",
+      "checks": {
+        "code:possible_change": true,
+        "code:scope_overlap_unconfirmed": true,
+        "code:residual_preserve": true,
+        "no_unapproved_modify": true,
+        "residual_weekdays": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    },
+    {
+      "case_id": "synthetic_wednesday_01",
+      "mode": "baseline_only",
+      "target_change": "从 2026-12-01 起只调整周三，保留周一与此前周三；现有模拟关系仍为 possible_change。",
+      "checks": {
+        "code:possible_change": true,
+        "code:attribute_unlocalized": true,
+        "code:boundary_unknown": true,
+        "code:hold_provisional": true,
+        "no_unapproved_modify": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    },
+    {
+      "case_id": "job_transition",
+      "mode": "structured",
+      "target_change": "所讨论的转岗已完成，旧求职阶段应保留为历史；准确转岗日未知，不推断以后不再求职。",
+      "checks": {
+        "code:support_not_change": true,
+        "code:boundary_unknown": true,
+        "code:hold_provisional": true,
+        "code:raw_evidence_candidate": true,
+        "no_unapproved_modify": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    },
+    {
+      "case_id": "job_transition",
+      "mode": "baseline_only",
+      "target_change": "所讨论的转岗已完成，旧求职阶段应保留为历史；准确转岗日未知，不推断以后不再求职。",
+      "checks": {
+        "code:support_not_change": true,
+        "code:attribute_unlocalized": true,
+        "code:boundary_unknown": true,
+        "code:hold_provisional": true,
+        "no_unapproved_modify": true
+      },
+      "checks_passed": 5,
+      "check_count": 5,
+      "target_change_not_emitted": true,
+      "limitation": "Guard checks are not semantic accuracy; raw add is not an extracted or written fact."
+    }
+  ],
+  "checks_passed": 30,
+  "check_count": 30,
+  "note": "Expected safety checks are post-hoc; human target history/change may be withheld by evidence gates."
+}

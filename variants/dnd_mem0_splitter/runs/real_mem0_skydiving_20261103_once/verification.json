@@ -1,0 +1,88 @@
+{
+  "execution_exit_code": 0,
+  "model": "qwen-plus",
+  "model_call_attempts": 1,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1215,
+    "completion_tokens": 711,
+    "total_tokens": 1926
+  },
+  "offline_revalidation_uses_mock_backend_only": true,
+  "strict_json_and_schema_passed": true,
+  "saved_result_matches_raw_response_after_existing_validator": true,
+  "input_matches_preflight_exactly": true,
+  "memory_id_and_memory_text_preserved": true,
+  "all_fact_source_memory_ids_match": true,
+  "continuous_fact_indices": true,
+  "each_fact_has_memory_evidence": true,
+  "fact_count": 2,
+  "evidence_quote_count": 4,
+  "literal_quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "exact_match": true,
+      "start_character": 0,
+      "end_character_exclusive": 119
+    },
+    {
+      "fact_index": 1,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-old-sports-utterance",
+      "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+      "exact_match": true,
+      "start_character": 0,
+      "end_character_exclusive": 169
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 0,
+      "source_type": "memory",
+      "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "exact_match": true,
+      "start_character": 0,
+      "end_character_exclusive": 119
+    },
+    {
+      "fact_index": 2,
+      "evidence_index": 1,
+      "source_type": "context",
+      "source_id": "ctx-old-sports-utterance",
+      "quote": "I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+      "exact_match": true,
+      "start_character": 46,
+      "end_character_exclusive": 169
+    }
+  ],
+  "prompt_matches_existing_DESIGN_text_block": true,
+  "no_api_key_in_artifacts": true,
+  "existing_files_checked": 45,
+  "existing_files_unchanged": true,
+  "changed_existing_files": [],
+  "source_snapshot_files_checked": [
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/actual_operations.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/add_return.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/after.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/before.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/extracted_facts.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/input.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/after.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json",
+    "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/target_links.json"
+  ],
+  "mem0_imported_in_offline_verification": false,
+  "program_scope": "JSON/schema, IDs, source references and exact quote matching. Semantic completeness, support and fidelity require manual review.",
+  "model_pending_confirmations": [
+    [],
+    []
+  ]
+}

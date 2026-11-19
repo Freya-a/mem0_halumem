@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-11-10T10:54:52.368735+08:00",
+  "python": "/home/shu1004/anaconda3/envs/mao-agent/bin/python",
+  "python_version": "3.10.19",
+  "no_retry": true,
+  "no_mem0_write": true,
+  "max_new_tokens": 768,
+  "generation": {
+    "do_sample": false,
+    "pad_token_id": "tokenizer.eos_token_id",
+    "enable_thinking": false,
+    "other_generate_options": "model generation_config and transformers defaults"
+  },
+  "order": [
+    "v2 then v4 for each case, sequentially"
+  ],
+  "sha256": {
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/relation_judge.py": "8542d0a90bf379a5c34c4de26f5f7d56fad2de1305e01aa5b115185a17300300",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/relation_judge_v2.py": "5b6a607c4c709041f45d436b3c28b6027ebc300a84a9bea2473e7c7ad11c23e3",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/relation_judge_v4.py": "e2e4d679f2825f54eaeb6e4ad2d37ba11d1e0d9edf93d24d9b7b349526bcf280",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/run_local.py": "15c0b90ad25118bf61aa9b55f70c1868646a6a3e13c1d13ab649a46c115d5fe4",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/run_local_v2.py": "1ef860797b2400e4537f3a4098c8507f83a75ee65b289c29b07fc115dbbf3bb1",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/part1_relation_judge/run_local_v4.py": "c310da5b95f70d881e9d5aae5d60a620133e15472e71432c05b17933b6173b0a",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/.gitattributes": "34448b82c17d60fec9b65b1f093c115ddbaadc04beb1b0140b6bfed2e012a930",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/README.md": "0f36caaff9c2516411a7738db384606263ba653c1e63e61d72f511606164d5a6",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/config.json": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model-00001-of-00005.safetensors": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model-00002-of-00005.safetensors": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model-00003-of-00005.safetensors": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model-00004-of-00005.safetensors": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model-00005-of-00005.safetensors": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/model.safetensors.index.json": "f9fdbcb91c23971c13ec5d5f2573d2349e8f61f2f049371ec699281748fdb1bc",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/Qwen3-8B/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "source_files_sha256": {
+    "job_transition": "11cdeec6863bca6f25d91156e9e3ef3c0a0ceb2d12b681aa2ffc1ba490930b2d",
+    "persian_cats": "e32a7bfafe29a552d25e46c55b4fdff7d17a7440be315081481eff4b50ab52c7",
+    "skydiving": "15a6fdc2d70a82d3eb7647f19163e9fdaed3971df6013658573351622d3e4bfe",
+    "career_history": "4c1f160213759d54a0b6ae0aff7a4ac95f66e8eb3d86d9a9f42243a0edd48261",
+    "promotion": "15c73e43d19f8f42ef7895900cebee302fac6773c5db6a8699cf49052812b2c6"
+  }
+}

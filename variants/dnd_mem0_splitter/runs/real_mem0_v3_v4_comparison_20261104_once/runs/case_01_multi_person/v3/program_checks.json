@@ -1,0 +1,37 @@
+{
+  "case_id": "case_01_multi_person",
+  "version": "v3",
+  "program_status": "passed",
+  "strict_JSON_and_existing_validator_replay": true,
+  "replay_error": null,
+  "saved_result_equals_replay": true,
+  "candidate_fact_count": 1,
+  "accepted_fact_count": 1,
+  "raw_response_preserved": true,
+  "memory_id_echo_matches_if_present": true,
+  "memory_text_echo_matches_if_present": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+          "quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined by this audit",
+  "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+  "additional_real_model_calls": 0
+}

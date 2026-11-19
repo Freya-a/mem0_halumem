@@ -1,0 +1,54 @@
+{
+  "case_id": "case_03_assistant_yoga",
+  "version": "v5",
+  "program_status": "passed",
+  "strict_JSON_and_existing_validator_replay": true,
+  "replay_error": null,
+  "candidate_fact_count": 1,
+  "accepted_fact_count": 1,
+  "saved_result_equals_replay": true,
+  "raw_response_exists": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_passed": true,
+      "all_literal_quotes_passed": true,
+      "evidence_checks": [
+        {
+          "case_id": "case_03_assistant_yoga",
+          "version": "v5",
+          "fact_index": 1,
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "exact_substring": true
+        },
+        {
+          "case_id": "case_03_assistant_yoga",
+          "version": "v5",
+          "fact_index": 1,
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "exact_substring": true
+        },
+        {
+          "case_id": "case_03_assistant_yoga",
+          "version": "v5",
+          "fact_index": 1,
+          "evidence_index": 2,
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Practices like yoga could support this transition effectively.",
+          "exact_substring": true
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined; separate AI preliminary review pending human confirmation",
+  "additional_real_model_calls": 0
+}

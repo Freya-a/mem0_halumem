@@ -1,0 +1,84 @@
+{
+  "finished_at": "2026-11-09T10:31:12.403807+08:00",
+  "reports": [
+    {
+      "case_id": "case_01_multi_person",
+      "finished_at": "2026-11-09T10:29:09.706829+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 2,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "finished_at": "2026-11-09T10:29:37.484131+08:00",
+      "model_calls": 1,
+      "program_status": "failed",
+      "fact_count": null,
+      "error": {
+        "code": "quote_not_found",
+        "path": "$.facts[2].evidence[1].quote",
+        "message": "Quote is not an exact substring of the declared input source."
+      },
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "finished_at": "2026-11-09T10:29:50.051275+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 2,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "finished_at": "2026-11-09T10:29:56.626052+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 1,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "finished_at": "2026-11-09T10:30:08.793941+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 2,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "finished_at": "2026-11-09T10:30:21.670568+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 2,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "finished_at": "2026-11-09T10:30:37.589890+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 3,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "finished_at": "2026-11-09T10:31:12.403694+08:00",
+      "model_calls": 1,
+      "program_status": "passed",
+      "fact_count": 5,
+      "error": null,
+      "semantic_status": "not evaluated by program"
+    }
+  ],
+  "total": 8,
+  "calls": 8,
+  "passed": 7
+}

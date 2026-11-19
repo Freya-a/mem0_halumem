@@ -1,0 +1,469 @@
+{
+  "job_transition": {
+    "input_equal": true,
+    "user_message_equal": true,
+    "generation_parameters_equal": true,
+    "calls_attempted": 1,
+    "v2": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "fact_index": 1,
+        "old_subfact": "Looking for a new job with better work-life balance",
+        "relation": "possible_change",
+        "object": "User",
+        "attribute": "Job search status and work-life balance",
+        "conditions": "Time progression from Feb 2026 to Mar 2026",
+        "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+        "old_quote": "Looking for a new job with better work-life balance",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        },
+        "reason": "New evidence indicates the user has transitioned to a new role with better balance, suggesting the previous state of 'looking for a job' may have changed, but without explicit confirmation that the search is terminated, it is classified as a possible change rather than a definitive correction.",
+        "confirmation_questions": [
+          "Has the user officially stopped looking for a new job since transitioning to the new role?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 9.424
+    },
+    "experiment": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "fact_index": 1,
+        "old_subfact": "Looking for a new job with better work-life balance",
+        "relation": "possible_change",
+        "object": "User",
+        "attribute": "Job search status and work-life balance",
+        "conditions": "Time progression from Feb 2026 to Mar 2026",
+        "candidate_impact_fragment": "Looking for a new job with better work-life balance",
+        "old_quote": "Looking for a new job with better work-life balance",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        },
+        "reason": "New evidence indicates the user has transitioned to a new role with better work-life balance, suggesting the previous state of 'looking for a new job' may have changed, but does not explicitly confirm the search is terminated or the old fact is invalid.",
+        "confirmation_questions": [
+          "Has the user officially stopped looking for a new job?",
+          "Is the user still actively searching for other opportunities despite the new role?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 9.7
+    },
+    "changed_fields": {
+      "confirmation_questions": {
+        "v2": [
+          "Has the user officially stopped looking for a new job since transitioning to the new role?"
+        ],
+        "experiment": [
+          "Has the user officially stopped looking for a new job?",
+          "Is the user still actively searching for other opportunities despite the new role?"
+        ]
+      },
+      "reason": {
+        "v2": "New evidence indicates the user has transitioned to a new role with better balance, suggesting the previous state of 'looking for a job' may have changed, but without explicit confirmation that the search is terminated, it is classified as a possible change rather than a definitive correction.",
+        "experiment": "New evidence indicates the user has transitioned to a new role with better work-life balance, suggesting the previous state of 'looking for a new job' may have changed, but does not explicitly confirm the search is terminated or the old fact is invalid."
+      }
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "persian_cats": {
+    "input_equal": true,
+    "user_message_equal": true,
+    "generation_parameters_equal": true,
+    "calls_attempted": 1,
+    "v2": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "fact_index": 1,
+        "old_subfact": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "relation": "supplement",
+        "object": "Persian cats",
+        "attribute": "admiration reasons and practical considerations",
+        "conditions": "general preference vs. recent reflection",
+        "candidate_impact_fragment": "historical charm",
+        "old_quote": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+        },
+        "reason": "New evidence confirms and deepens the existing reason (historical lineage/royalty) without contradicting the original statement, while adding new information about practical challenges in dialogue-2.",
+        "confirmation_questions": []
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 8.338
+    },
+    "experiment": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "fact_index": 1,
+        "old_subfact": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "relation": "supplement",
+        "object": "Persian cats",
+        "attribute": "admiration reasons and practical considerations",
+        "conditions": "general preference vs. recent documentary experience and maintenance reflection",
+        "candidate_impact_fragment": "historical charm",
+        "old_quote": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty."
+        },
+        "reason": "New evidence confirms the existing preference for historical aspects but adds specific context about a recent documentary deepening this admiration and introduces a new consideration regarding practical maintenance challenges, which supplements rather than corrects or changes the original fact.",
+        "confirmation_questions": []
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 8.736
+    },
+    "changed_fields": {
+      "conditions": {
+        "v2": "general preference vs. recent reflection",
+        "experiment": "general preference vs. recent documentary experience and maintenance reflection"
+      },
+      "reason": {
+        "v2": "New evidence confirms and deepens the existing reason (historical lineage/royalty) without contradicting the original statement, while adding new information about practical challenges in dialogue-2.",
+        "experiment": "New evidence confirms the existing preference for historical aspects but adds specific context about a recent documentary deepening this admiration and introduces a new consideration regarding practical maintenance challenges, which supplements rather than corrects or changes the original fact."
+      }
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "skydiving": {
+    "input_equal": true,
+    "user_message_equal": true,
+    "generation_parameters_equal": true,
+    "calls_attempted": 1,
+    "v2": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "fact_index": 1,
+        "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "relation": "uncertain",
+        "object": "User",
+        "attribute": "Attitude towards extreme sports (specifically skydiving)",
+        "conditions": "Real-world skydiving vs. Simulated skydiving",
+        "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        },
+        "reason": "New evidence describes enjoyment of 'simulated skydiving', while the old fact concerns 'extreme sports (e.g., skydiving)' due to 'high injury risk'. It is unclear if the user's dislike of real skydiving (due to risk) has changed or if the enjoyment is limited to the simulation, as the user explicitly states they still prioritize safety.",
+        "confirmation_questions": [
+          "Does the user's enjoyment of simulated skydiving indicate a change in their dislike of real skydiving?",
+          "Is the user willing to try real skydiving now, or is the enjoyment strictly limited to the simulated experience?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 11.841
+    },
+    "experiment": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "fact_index": 1,
+        "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "relation": "uncertain",
+        "object": "User",
+        "attribute": "Attitude towards extreme sports (specifically skydiving)",
+        "conditions": "Real-world high injury risk vs. Simulated environment",
+        "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        },
+        "reason": "New evidence describes enjoyment of 'simulated skydiving' and increased openness to new things, but does not explicitly state a change in attitude towards real extreme sports or the specific risk of injury associated with them. The user still prioritizes safety. It is unclear if the dislike of real extreme sports due to injury risk remains valid or has changed based solely on a simulated experience.",
+        "confirmation_questions": [
+          "Does the user's enjoyment of simulated skydiving indicate a change in their dislike of real extreme sports due to injury risk?",
+          "Does the user still avoid real extreme sports like skydiving because of the high injury risk?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 11.846
+    },
+    "changed_fields": {
+      "conditions": {
+        "v2": "Real-world skydiving vs. Simulated skydiving",
+        "experiment": "Real-world high injury risk vs. Simulated environment"
+      },
+      "confirmation_questions": {
+        "v2": [
+          "Does the user's enjoyment of simulated skydiving indicate a change in their dislike of real skydiving?",
+          "Is the user willing to try real skydiving now, or is the enjoyment strictly limited to the simulated experience?"
+        ],
+        "experiment": [
+          "Does the user's enjoyment of simulated skydiving indicate a change in their dislike of real extreme sports due to injury risk?",
+          "Does the user still avoid real extreme sports like skydiving because of the high injury risk?"
+        ]
+      },
+      "reason": {
+        "v2": "New evidence describes enjoyment of 'simulated skydiving', while the old fact concerns 'extreme sports (e.g., skydiving)' due to 'high injury risk'. It is unclear if the user's dislike of real skydiving (due to risk) has changed or if the enjoyment is limited to the simulation, as the user explicitly states they still prioritize safety.",
+        "experiment": "New evidence describes enjoyment of 'simulated skydiving' and increased openness to new things, but does not explicitly state a change in attitude towards real extreme sports or the specific risk of injury associated with them. The user still prioritizes safety. It is unclear if the dislike of real extreme sports due to injury risk remains valid or has changed based solely on a simulated experience."
+      }
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "career_history": {
+    "input_equal": true,
+    "user_message_equal": true,
+    "generation_parameters_equal": true,
+    "calls_attempted": 1,
+    "v2": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "fact_index": 1,
+        "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+        "relation": "uncertain",
+        "object": "User",
+        "attribute": "Employment status and role",
+        "conditions": "Time period relative to Jan 05, 2026",
+        "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+        },
+        "reason": "New evidence mentions a 'consulting firm' but does not explicitly state the user's current employer or confirm if the previous role at 'Blockchain Tech' has ended or changed. It is unclear if the consulting firm is the same entity, a new venture, or if the user still works at Blockchain Tech while consulting.",
+        "confirmation_questions": [
+          "Is the 'consulting firm' mentioned in the new evidence the same entity as 'Blockchain Tech'?",
+          "Does the user still work as a senior developer at Blockchain Tech, or has that role ended?",
+          "Is the user currently employed by the consulting firm mentioned, or is it a separate side project?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 10.51
+    },
+    "experiment": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "fact_index": 1,
+        "old_subfact": "Previously worked as a senior developer in Blockchain Tech",
+        "relation": "uncertain",
+        "object": "User",
+        "attribute": "Employment history",
+        "conditions": "Time period prior to Jan 05, 2026",
+        "candidate_impact_fragment": "Previously worked as a senior developer in Blockchain Tech",
+        "old_quote": "Previously worked as a senior developer in Blockchain Tech",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+        },
+        "reason": "New evidence mentions a 'consulting firm' but does not explicitly state the user's current employer or confirm if the previous role at 'Blockchain Tech' has ended or changed. It is unclear if the consulting firm is the same entity, a new venture, or unrelated to the previous employment.",
+        "confirmation_questions": [
+          "Is the 'consulting firm' mentioned in the new evidence the same entity as 'Blockchain Tech' or a different organization?",
+          "Has the user's role as a senior developer at Blockchain Tech ended, or are they currently working there while also running a consulting firm?"
+        ]
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 10.21
+    },
+    "changed_fields": {
+      "attribute": {
+        "v2": "Employment status and role",
+        "experiment": "Employment history"
+      },
+      "conditions": {
+        "v2": "Time period relative to Jan 05, 2026",
+        "experiment": "Time period prior to Jan 05, 2026"
+      },
+      "confirmation_questions": {
+        "v2": [
+          "Is the 'consulting firm' mentioned in the new evidence the same entity as 'Blockchain Tech'?",
+          "Does the user still work as a senior developer at Blockchain Tech, or has that role ended?",
+          "Is the user currently employed by the consulting firm mentioned, or is it a separate side project?"
+        ],
+        "experiment": [
+          "Is the 'consulting firm' mentioned in the new evidence the same entity as 'Blockchain Tech' or a different organization?",
+          "Has the user's role as a senior developer at Blockchain Tech ended, or are they currently working there while also running a consulting firm?"
+        ]
+      },
+      "reason": {
+        "v2": "New evidence mentions a 'consulting firm' but does not explicitly state the user's current employer or confirm if the previous role at 'Blockchain Tech' has ended or changed. It is unclear if the consulting firm is the same entity, a new venture, or if the user still works at Blockchain Tech while consulting.",
+        "experiment": "New evidence mentions a 'consulting firm' but does not explicitly state the user's current employer or confirm if the previous role at 'Blockchain Tech' has ended or changed. It is unclear if the consulting firm is the same entity, a new venture, or unrelated to the previous employment."
+      }
+    },
+    "semantic_correctness": "not_checked"
+  },
+  "promotion": {
+    "input_equal": true,
+    "user_message_equal": true,
+    "generation_parameters_equal": true,
+    "calls_attempted": 1,
+    "v2": {
+      "status": "error",
+      "candidate": {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "fact_index": 1,
+        "old_subfact": "Works at Historical Productions Ltd. as a Director",
+        "relation": "possible_change",
+        "object": "User",
+        "attribute": "Job title at Historical Productions Ltd.",
+        "conditions": "Current employment status",
+        "candidate_impact_fragment": "as a Director",
+        "old_quote": "I work at Historical Productions Ltd. as a Director.",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        },
+        "reason": "New evidence indicates a promotion to 'lead director', suggesting a change in the specific job title attribute from 'Director' to 'lead director' at the same company.",
+        "confirmation_questions": []
+      },
+      "errors": [
+        {
+          "stage": "validation",
+          "type": "ValueError",
+          "message": "old_quote not found in this fact memory evidence"
+        }
+      ],
+      "validation": {
+        "passed": false,
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 7.268
+    },
+    "experiment": {
+      "status": "ok",
+      "candidate": {
+        "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "fact_index": 1,
+        "old_subfact": "Works at Historical Productions Ltd. as a Director",
+        "relation": "possible_change",
+        "object": "User",
+        "attribute": "Job title at Historical Productions Ltd.",
+        "conditions": "Current employment status",
+        "candidate_impact_fragment": "as a Director",
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_quote": {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        },
+        "reason": "New evidence indicates a promotion to 'lead director', suggesting a change in the specific job title attribute from 'Director' to 'lead director' at the same company.",
+        "confirmation_questions": []
+      },
+      "errors": [],
+      "validation": {
+        "passed": true,
+        "checks": [
+          "schema",
+          "relation",
+          "fact_identity",
+          "old_quote",
+          "new_quote",
+          "candidate_fragment"
+        ],
+        "semantic_correctness": "not_checked"
+      },
+      "elapsed_seconds": 7.393
+    },
+    "changed_fields": {
+      "old_quote": {
+        "v2": "I work at Historical Productions Ltd. as a Director.",
+        "experiment": "Works at Historical Productions Ltd. as a Director"
+      }
+    },
+    "semantic_correctness": "not_checked"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_03_assistant_yoga",
+      "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 3 条 supports。旧记忆的 practices OR is open to、瑜伽对象及 personal health/transition 用途均保留，未被助手 could 建议覆盖。观察到 1 项 raw 来源边界问题：raw 新补 The user，违反本批次 frozen_prompt.txt 第2条；这与主体是否可由上下文合理关联是两件事，不判为凭空人物，也不判用户直接自述。原始发言归属、析取哪一支成立及具体实践状态仍未决。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "初步判断，待人工确认：完整保留 practices or is open to 的单一析取，不拆成已实践与已开放两个肯定事实；保留 yoga、personal health、transition 及支持用途。contextualized 中 career 可由 ctx-1 的职业困境、找新工作和 ctx-2 的 job opportunities/this transition 共同消歧，属于有源且必要的语境说明。没有将 could 升格为用户实践事实，没有借来源纠正旧记忆，没有扩入职业目标、工作生活平衡等独立命题；这些额外细节仅在引文中出现。未添加日期、持续时间、姓名或关系。",
+          "semantic_findings": [
+            {
+              "type": "RAW_CONTEXT_LEAK",
+              "certainty": "observed",
+              "input_quote": "Practices or is open to yoga for supporting personal health and transition",
+              "output_quote": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+              "reason": "初步判断，待人工确认：旧 memory_text 没有 user、说话人身份或可在文本内部恢复为 user 的共享主语；raw_subfact 新增 The user。已读取本批次 frozen_prompt.txt，第2条明确禁止为语法完整把省略主语补成用户，且上下文支持的身份只能必要时用于 contextualized_subfact。ctx-1 的第一人称职业经历和 ctx-2 面向 you 的建议能合理关联语义主体，但不能使 raw 越过来源边界；因此只记录 RAW_CONTEXT_LEAK，不追加 UNSUPPORTED_ADDITION 或人物虚构标签。"
+            }
+          ],
+          "uncertainties": [
+            {
+              "type": "ORIGINAL_SPEAKER",
+              "reason": "初步判断，待人工确认：ctx-1 是 user 的职业自述，但没有瑜伽；ctx-2 明确为 assistant 的 could 建议。尚无 user 直接自述实践或开放瑜伽的引文，旧记忆的上游形成方式也无法仅凭输入确定。输出 evidence[2] 明示 assistant，pending 也记录来源未决，未观察到将助手原话写成用户原话的明确断言。"
+            },
+            {
+              "type": "MODAL_OR_RELATION_SCOPE",
+              "reason": "初步判断，待人工确认：旧记忆只记 practices OR is open to，未确定哪一支成立；assistant 的 could 建议既不证实际实践，也不证用户接受或表达开放。正文保留旧析取，符合不纠正旧记忆的要求；用户实际状态、意向强弱与具体实践持续范围仍待核实，而非据此把正文认定为错误。"
+            }
+          ],
+          "speaker_review": "初步判断，待人工确认：语义主体与原始说话人分开审查。ctx-1 的 I 与 ctx-2 的 you/this transition 可把职业过渡语境合理关联到用户，因此 contextualized 的 The user 不一概判为虚构。证据未表明用户说过瑜伽实践或开放；memory supports 使用 Old memory states，assistant supports 明确说明建议来自助手，且 pending 留下原始来源疑问，所以不另记 SPEAKER_ATTRIBUTION_OVERCLAIM。raw 新补身份的边界问题已单独记录。",
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "partially_supported",
+              "reason": "初步判断，待人工确认：该 memory 引文直接支持旧记忆如此记载 practices OR open、瑜伽及 health/transition 用途，不能证明现实状态或用户直接说过。supports 的 The user 并非引文明示主体，需要 ctx-1/ctx-2 的共享过渡语境关联；这是可合理关联的主体补足，不是用户原始发言归属证明。本项未明确声称 user said，故不自动记支持越界或说话人错误。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "directly_supported",
+              "reason": "初步判断，待人工确认：ctx-1 明示 career、current role、new job、well-being 与 work-life balance；结合紧邻 ctx-2 的 job opportunities 和 this transition，足以把 transition 消歧为 career transition，并为 personal health 的健康福祉语境提供依据。supports 未声称这段用户引文证明瑜伽实践或开放，也未把 humanitarian goals 等引文额外细节加入正文。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 2,
+              "assessment": "partially_supported",
+              "reason": "初步判断，待人工确认：ctx-2 的 speaker=assistant 且原话为 yoga could support this transition，直接支持助手提出可能有帮助的瑜伽建议及职业过渡/个人健康语境。它不能证实用户实践，也不能证实用户开放。supports 把建议称为与旧析取表述 consistent，并明确不确认 actual practice；按兼容性表述理解，未见把 could 明确变成任一用户状态的断言，因此列为部分支持和范围未决，不自动记 observed 错误。人工仍应核对 consistent 是否会被误读为对 openness 的确认。",
+              "issue_types": []
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": [
+        {
+          "item": "旧记忆中 practices OR is open to 的实际分支与来源",
+          "reason": "初步判断，待人工确认：需核实用户是否实践、是否开放，以及旧记忆形成于用户自述、助手建议提取或其他过程。不能把助手建议直接当用户同意，也不能据此删改旧记忆的析取。"
+        },
+        {
+          "item": "supports[2] 中 consistent 的解释范围",
+          "reason": "初步判断，待人工确认：建议与旧记忆可以相容，但相容不构成对用户 openness/practice 的证实；当前列为部分支持而非已观察错误。"
+        },
+        {
+          "item": "原输出关于 practices 的时间待确认理由",
+          "reason": "初步判断，待人工确认：practices 是一般现在时的第三人称单数形式，并非原 pending 理由所称的无显式时态 bare verb。具体持续时间、频率或开始日期确实未给出；这项理由措辞不准确，但正文没有改时态或推定事件日期，因此不据此另计 TIME_SCOPE_CHANGE。"
+        }
+      ]
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 2 条 supports。未发现协议分类中的明确正文忠实度或支持范围错误；否定偏好、because 原因和 while 范围完整保留。亲属具体身份及支持持续范围仍未决，不能把这些不确定计为错误。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "初步判断，待人工确认：保留不喜欢饮用 alcoholic drinks 的否定偏好，未改写为从不饮用、完全禁酒或从未饮酒；保留 because they need to stay clear-headed and responsible 的因果关系及 while supporting their relative 的作用范围。raw 的 They 可从同一旧记忆内部 they need/their relative 恢复，符合内部共享主语规则。contextualized 的 The user 有同主题 user 第一人称来源，未推定姓名、具体亲属关系、支持方式或持续时间。能量饮料、绿茶、汽水等额外偏好未扩入正文；也未把记录时间当事件时间。",
+          "semantic_findings": [],
+          "uncertainties": [
+            {
+              "type": "RELATIVE_OR_OTHER_REFERENT",
+              "reason": "初步判断，待人工确认：原 memory 的 their relative 与 user 原话的 my relative 仅能支持该主体的一位亲属，不能确定姓名或属于父母、兄弟姐妹、子女等哪种关系。输出保持泛称并记录待确认，没有补造亲属身份。"
+            },
+            {
+              "type": "MODAL_OR_RELATION_SCOPE",
+              "reason": "初步判断，待人工确认：while supporting 明确保留支持亲属时需清醒负责的范围，但没有给出支持的持续时间、频率或当前是否持续。此处是 because 因果和 while 范围，不是已明示的 if/unless 逻辑条件。输出正文未扩展为永久戒酒或无条件的支持状态。"
+            }
+          ],
+          "speaker_review": "初步判断，待人工确认：ctx-1 明确标记 speaker=user，且同一饮酒内容使用 I/my relative，可靠同主题第一人称关联支持 contextualized 将省略主体补为用户。memory 引文本身仅证明旧记忆记载；context supports 才说明用户来源。该例不是助手建议，也没有原始说话人越界；亲属本人并非饮酒偏好的主体。",
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "directly_supported",
+              "reason": "初步判断，待人工确认：supports 准确说明旧记忆记载 dislike、清醒和负责的必要性及 supporting relative 时的理由范围；没有把否定偏好强化为永不饮用，也没有声称单凭 memory 确认用户原话或现实真实性。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "directly_supported",
+              "reason": "初步判断，待人工确认：所引连续两句逐字包含 I don't like alcoholic drinks、I avoid、because I need to stay clear-headed and responsible、while supporting my relative；speaker=user 元数据与第一人称同主题内容共同支持用户来源、态度、原因和泛称亲属。avoid 虽未出现在旧记忆正文中，但直接在此 quote 内且仅在 supports 描述来源，不是正文新增戒酒事实。该项未确定亲属身份或支持时长。",
+              "issue_types": []
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": [
+        {
+          "item": "their relative 的具体身份",
+          "reason": "初步判断，待人工确认：输入没有姓名、亲属类别或其他可唯一定位信息；保持原泛称，人工确认前不补具体关系。"
+        },
+        {
+          "item": "支持亲属的持续范围及原 pending 理由的条件措辞",
+          "reason": "初步判断，待人工确认：持续时间和频率确实未知。原输出把 because...while... 概括为 conditionally，措辞需人工校核：because 表原因，while 限定支持期间，不能改成额外 if 条件。正文已经保留原 because 与 while，未观察到条件或时间范围被改写，故不把理由措辞的不精确自动计为正文错误。"
+        }
+      ]
+    }
+  ]
+}

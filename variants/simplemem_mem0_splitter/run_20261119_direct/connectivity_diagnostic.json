@@ -1,0 +1,17 @@
+{
+  "model_requests_in_diagnostic": 0,
+  "base_url_source": "config/medium_full_qwen_plus_20251201.json:llm.config.openai_base_url",
+  "workspace_source": ".env.server.medium-full",
+  "api_key_used_source": "process_environment",
+  "configuration_checks": {"https": true, "workspace_format_valid": true, "expected_domain_suffix": true, "compatible_path": true},
+  "proxy_environment_names_present": ["HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy"],
+  "http_proxy": {"points_to_server_loopback": true, "tcp": "connection_refused", "errno": 111},
+  "https_proxy": {"points_to_server_loopback": true, "tcp": "connection_refused", "errno": 111},
+  "direct": {"dns": "resolved", "tcp": "connected", "tls": "certificate_verified", "tls_version": "TLSv1.3"},
+  "process_and_file_api_keys_both_set": true,
+  "process_and_file_api_keys_match": false,
+  "project_medium_full_loader_precedence": "file_overwrites_process_environment",
+  "trial_runner_precedence": "process_environment_over_file",
+  "trial_result": {"request_attempts": 1, "http_status": 403, "provider_code": "access_denied", "model_responses": 0},
+  "interpretation": "Dead loopback proxies explain the current proxied connectivity failure, and direct TLS plus HTTP response show that the direct route reaches the HTTPS endpoint. The prior run did not save an exception cause, so its cause is not proven. Different key sources are a possible authorization issue; 403 alone does not establish its cause."
+}

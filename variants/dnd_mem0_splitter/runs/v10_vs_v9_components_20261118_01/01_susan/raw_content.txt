@@ -1,0 +1,68 @@
+{
+  "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+  "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "raw_subfact": "Has a friend named ThomasSusan (referred to as 'Susan')",
+      "contextualized_subfact": "The user has a friend named ThomasSusan, who is referred to as 'Susan'.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan')",
+          "supports": "Old memory states the user has a friend named ThomasSusan, with the nickname 'Susan'."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Semantic subject of 'Has a friend'",
+          "reason": "The memory text lacks an explicit subject (e.g., 'I', 'user', or third-person referent); while source_context.speaker = 'user', that attribution comes only from context, not the memory itself."
+        }
+      ]
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "raw_subfact": "ThomasSusan (referred to as 'Susan') provides support and encouragement",
+      "contextualized_subfact": "ThomasSusan (referred to as 'Susan') provides support and encouragement.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "supports": "Old memory states ThomasSusan ('Susan') provides support and encouragement; the relative clause modifies 'ThomasSusan'."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Semantic subject of 'provides support and encouragement'",
+          "reason": "The memory text uses a relative clause without an independent main clause subject; the antecedent 'ThomasSusan' is present, but the grammatical subject of the relative clause is syntactically bound — no ambiguity in reference, yet the memory itself does not independently assert agency outside the relative construction. No pending issue for referent identity, but the clause is embedded and not a standalone predication in the memory text."
+        }
+      ]
+    },
+    {
+      "fact_index": 3,
+      "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "raw_subfact": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+      "contextualized_subfact": "The user states: 'ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.'",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "supports": "This memory expresses a fact about ThomasSusan/Susan’s identity and role, consistent with but not identical to the quoted context."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "supports": "Direct first-person statement by speaker='user', confirming ThomasSusan is their friend, that Susan (i.e., ThomasSusan) provides support and encouragement, and specifying the effect of that support on the user's focus and goals."
+        }
+      ],
+      "pending_confirmations": []
+    }
+  ],
+  "employment_components": []
+}

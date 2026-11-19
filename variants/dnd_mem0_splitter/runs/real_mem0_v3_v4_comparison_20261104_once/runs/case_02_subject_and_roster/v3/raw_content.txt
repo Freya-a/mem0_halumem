@@ -1,0 +1,36 @@
+{
+  "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+  "memory_text": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "raw_subfact": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+      "contextualized_subfact": "The user has a friend named ThomasSusan (referred to as 'Susan'), and Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+          "supports": "Old memory states the user has a friend named ThomasSusan (called 'Susan') who provides support and encouragement."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+          "supports": "Confirms the speaker is the user (first-person 'my', 'me'); identifies ThomasSusan as the user's friend; specifies that Susan's support and encouragement inspire the user's focus on well-being across domains — this contextualizes the scope and effect of the support/encouragement mentioned in the memory."
+        }
+      ],
+      "pending_confirmations": [
+        {
+          "item": "Whether 'ThomasSusan' is a single person with a compound name (e.g., Thomas Susan as full name, or ThomasSusan as fused given name), or two people (Thomas and Susan) mistakenly concatenated",
+          "reason": "The memory text writes 'ThomasSusan' as one token and clarifies 'referred to as \"Susan\"', suggesting a single person; however, the context quote says 'ThomasSusan is my Friend, Susan's support...', using both 'ThomasSusan' and possessive 'Susan's' — which syntactically treats 'Susan' as a distinct referent. No source disambiguates orthographic convention (e.g., hyphenation, spacing) or naming practice, nor confirms whether 'ThomasSusan' reflects legal name, nickname, or transcription error."
+        },
+        {
+          "item": "Whether the user explicitly self-identifies as the speaker in the memory (i.e., whether 'Has a friend...' is third-person narration by assistant vs. user's own reported statement)",
+          "reason": "The memory text is written in third-person ('Has a friend...'), unlike the context quote which is first-person ('my Friend', 'me'). The source_context confirms the speaker is the user, but does not confirm that the memory text itself was authored or uttered by the user — it may be an assistant-generated summary. Thus, the original speaker of the memory sentence remains unconfirmed."
+        }
+      ]
+    }
+  ]
+}

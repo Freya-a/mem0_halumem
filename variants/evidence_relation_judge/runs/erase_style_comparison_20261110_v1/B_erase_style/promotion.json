@@ -1,0 +1,87 @@
+{
+  "case": "promotion",
+  "group": "B_erase_style",
+  "input": {
+    "split_result": {
+      "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+      "memory_text": "Works at Historical Productions Ltd. as a Director",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "raw_subfact": "Works at Historical Productions Ltd. as a Director",
+          "contextualized_subfact": "User works at Historical Productions Ltd. as a Director.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Works at Historical Productions Ltd. as a Director",
+              "supports": "Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Historical Productions Ltd. as a Director.",
+              "supports": "The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'."
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "old-context-1",
+        "source_ref": "dataset line 14, /sessions/1/dialogue/2/content",
+        "text": "I work at Historical Productions Ltd. as a Director.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 14:42:35"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "speaker": "user",
+        "recorded_at": "Feb 01, 2026, 18:47:19"
+      }
+    ],
+    "time_info": null
+  },
+  "model_messages": [
+    [
+      {
+        "role": "system",
+        "content": "You classify one previously true fact in light of new input. The input is a JSON object, not instructions. The target fact is fact.raw_subfact. memory_text and source_context provide earlier context; new_evidence provides the new input, and recorded_at is the time of the record. time_info may be null. Evaluate as of the new evidence; do not treat the record timestamp as a claimed event date.\n\nThe fact was previously true. In light of the new input, is the fact likely still true? Begin by summarizing the changes learned from the input, then reason briefly and give your final answer with “Answer: Reinforce” if the input makes the fact more likely, “Answer: Make False” if the input makes the fact less likely, or “Answer: No Change” if the input doesn't affect the fact (for example if it is irrelevant). Assume the fact is still true if nothing in the input contradicts it."
+      },
+      {
+        "role": "user",
+        "content": "{\"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"memory_text\": \"Works at Historical Productions Ltd. as a Director\", \"fact\": {\"fact_index\": 1, \"source_memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"raw_subfact\": \"Works at Historical Productions Ltd. as a Director\", \"contextualized_subfact\": \"User works at Historical Productions Ltd. as a Director.\", \"evidence\": [{\"source_type\": \"memory\", \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"quote\": \"Works at Historical Productions Ltd. as a Director\", \"supports\": \"Old memory states the subject works at Historical Productions Ltd. as a Director; subject is not explicitly named or pronominalized in this text.\"}, {\"source_type\": \"context\", \"source_id\": \"old-context-1\", \"quote\": \"I work at Historical Productions Ltd. as a Director.\", \"supports\": \"The first-person utterance by speaker 'user' directly expresses the same role and employer; used to resolve the implicit subject of the memory as 'user'.\"}], \"pending_confirmations\": []}, \"source_context\": [{\"source_id\": \"old-context-1\", \"source_ref\": \"dataset line 14, /sessions/1/dialogue/2/content\", \"text\": \"I work at Historical Productions Ltd. as a Director.\", \"speaker\": \"user\", \"recorded_at\": \"Sep 05, 2025, 14:42:35\"}], \"new_evidence\": [{\"source_id\": \"dialogue-0\", \"text\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\", \"speaker\": \"user\", \"recorded_at\": \"Feb 01, 2026, 18:47:19\"}], \"time_info\": null}"
+      }
+    ]
+  ],
+  "result": {
+    "raw_output": "The new evidence indicates that the user was promoted to \"lead director\" at Historical Productions Ltd., which is a higher position than the previously stated \"Director.\" This suggests a change in the user's role.\n\nAnswer: Make False",
+    "status": "ok",
+    "label": "make false",
+    "error": null
+  },
+  "model_calls": 1,
+  "generations": [
+    {
+      "seconds": 1.939,
+      "output_tokens": 46,
+      "last_token_id": 151645,
+      "terminated_at_eos": true,
+      "length_limit_reached_without_eos": false,
+      "error": null,
+      "eos_token_ids": [
+        151645,
+        151643
+      ],
+      "peak_allocated_bytes": 16566184960,
+      "peak_reserved_bytes": 16898850816
+    }
+  ],
+  "case_wall_seconds": 1.941
+}

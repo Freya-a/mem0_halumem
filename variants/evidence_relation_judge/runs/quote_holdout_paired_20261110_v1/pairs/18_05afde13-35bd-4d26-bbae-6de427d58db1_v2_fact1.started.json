@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-11-10T16:21:47.563777+08:00",
+  "record": 18,
+  "version": "v2",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+    "memory_text": "Works at Blockchain Tech as a senior developer",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "raw_subfact": "Works at Blockchain Tech as a senior developer",
+      "contextualized_subfact": "用户作为高级开发者在 Blockchain Tech 工作。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "quote": "Works at Blockchain Tech as a senior developer",
+          "supports": "旧记忆记载在 Blockchain Tech 担任高级开发者的工作事实；此引文本身未明确主语。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I work at Blockchain Tech as a senior developer.",
+          "supports": "来源中说话者（user）以第一人称陈述相同内容，用于将旧记忆中的省略主语补足为“用户”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/2/content",
+        "text": "I am currently Employed, working in the technology industry. I work at Blockchain Tech as a senior developer. My monthly income is 17000 USD, and I currently have 16800 USD in savings. I work as a senior developer at Blockchain Tech, where I earn a substantial income. My role involves innovating new solutions and ensuring our technology remains cutting-edge. Despite my high earnings, I have limited savings because I frequently contribute financially to political campaigns and causes that support the politician I believe in. My career allows me to network with influential individuals who share my views.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 09:10:09"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/0/content",
+        "text": "I've been thinking a lot about my career transition from technology to political consulting. It's a big change, but it feels like the right move to better support my relative's political ambitions.",
+        "speaker": "user",
+        "recorded_at": "Nov 10, 2025, 18:05:35"
+      },
+      {
+        "source_id": "dialogue-2",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/2/content",
+        "text": "The idea of directly advising political campaigns really excites me. I want to be more involved in shaping strategies that will help my relative win elections and establish a legislative legacy.",
+        "speaker": "user",
+        "recorded_at": "Nov 10, 2025, 18:10:01"
+      },
+      {
+        "source_id": "dialogue-12",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003 /sessions/3/dialogue/12/content",
+        "text": "My problem-solving skills and experience in technology will help me analyze data effectively and develop impactful strategies.",
+        "speaker": "user",
+        "recorded_at": "Nov 10, 2025, 18:26:34"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "30bc078a47630fa16b346a9eb9e12d80845ad31b9f2e8e6d4f15adf18f10a555"
+}

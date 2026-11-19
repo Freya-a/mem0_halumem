@@ -1,0 +1,26 @@
+{
+  "source_checks": {
+    "single_memory_selected": true,
+    "before_snapshot_not_truncated": true,
+    "api_and_database_id_text_user_match": true,
+    "previous_session_after_matches_target_before": true,
+    "origin_session_after_matches_target_before": true,
+    "origin_session_before_absent": true,
+    "origin_ADD_return_id_text_match": true,
+    "origin_actual_ADD_id_text_match": true,
+    "origin_extracted_fact_exact_text_match": true,
+    "context_is_exact_old_user_utterance_excerpt": true,
+    "old_context_precedes_target_session": true,
+    "model_input_contains_only_selected_memory_and_old_excerpt": true,
+    "no_future_evidence_or_annotation_fields_in_model_input": true,
+    "configured_model_is_qwen_plus": true,
+    "no_model_request_during_preflight": true
+  },
+  "model_call_attempts": 0,
+  "model": "qwen-plus",
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "prompt_sha256": "28f993d162e0c416afb0205f88fdb22b8314a6cf357ac33bdf0d9d91cf86e17f",
+  "input_sha256": "f0220f70af9f866061c247d64d400bac050ad2a0a847e593daae27f329427782",
+  "tracked_existing_files": 45
+}

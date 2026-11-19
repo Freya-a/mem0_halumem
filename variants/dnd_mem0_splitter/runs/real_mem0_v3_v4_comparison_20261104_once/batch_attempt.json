@@ -1,0 +1,127 @@
+{
+  "started_at": "2026-11-04T10:56:11.478333+08:00",
+  "order": [
+    {
+      "case_id": "case_01_multi_person",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_01_multi_person",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_04_negative_relative",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_05_relative_time",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_07_no_children",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_07_no_children",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "version": "v4"
+    },
+    {
+      "case_id": "case_10_sports_preferences",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "version": "v3"
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "version": "v4"
+    }
+  ],
+  "max_calls_total": 22,
+  "max_calls_each": 1,
+  "prompt_hashes": {
+    "v3": "28a8aec27d8e15c440ca3e1fb95c1dff3ad25eddb2e3c8cd7bb2700a3450731e",
+    "v4": "d9cc40259ac447e09cad93b775d7f0ff67fc9bb42443e18264b75f39b37067f3"
+  },
+  "configuration_names_and_sources": {
+    "LLM_BASE_URL": {
+      "variable": "LLM_BASE_URL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_API_KEY": {
+      "variable": "LLM_API_KEY",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_MODEL": {
+      "variable": "LLM_MODEL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    }
+  },
+  "model": "qwen-plus",
+  "generation_parameters": {},
+  "response_format": {
+    "type": "json_object"
+  },
+  "timeout_seconds": 180.0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "unknown_service_parameters": [
+    "default sampling parameters",
+    "concrete model revision",
+    "provider routing"
+  ],
+  "request_contents": "Frozen version prompt + input JSON only. No review, gold labels or target-session evidence."
+}

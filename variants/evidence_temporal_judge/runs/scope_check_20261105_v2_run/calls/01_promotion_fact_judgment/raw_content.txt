@@ -1,0 +1,29 @@
+{
+  "applicability": "involved",
+  "components": [
+    {
+      "fragment": "Works at Historical Productions Ltd. as a Director",
+      "contextualized": "User works at Historical Productions Ltd. as a Director.",
+      "action": "modify",
+      "reason": "The new evidence states the user was 'recently promoted to lead director at Historical Productions Ltd.', which implies continued employment at the same company but in an updated, more senior role ('lead director')—replacing the prior title 'Director'. The old claim is outdated but not negated in its core (employer and directorial function); however, the specific title 'Director' is superseded by 'lead director'.",
+      "old_evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "quote": "Works at Historical Productions Ltd. as a Director"
+        },
+        {
+          "source_type": "context",
+          "source_id": "old-context-1",
+          "quote": "I work at Historical Productions Ltd. as a Director."
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        }
+      ]
+    }
+  ]
+}

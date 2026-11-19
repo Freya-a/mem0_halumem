@@ -1,0 +1,80 @@
+{
+  "old_statement": "Martin 不喜欢极限运动，包括跳伞；旧记忆给出受伤风险与安全健康原则的关系。",
+  "new_statement": "用户近期尝试并享受模拟跳伞，因此更愿意尝试新事物，并表示仍优先考虑安全。",
+  "modify": [
+    {
+      "scope": "不要求以模拟体验覆盖或否定整个旧风险理由；旧泛化的当前适用范围需要具体限定，修改方案待确认。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "source_id": "new-0",
+          "quote": "I tried simulated skydiving"
+        }
+      ]
+    }
+  ],
+  "preserve": [
+    {
+      "scope": "保留旧高受伤风险、安全健康承诺及其历史语境，不将旧偏好无条件视为当前适用。",
+      "evidence": [
+        {
+          "source_id": "old",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "source_id": "new-8",
+          "quote": "I still prioritize safety, of course."
+        }
+      ]
+    }
+  ],
+  "uncertain": [
+    {
+      "scope": "真实跳伞当前态度、模拟体验准确日期及旧广泛偏好当前范围未知；模拟活动不等同于真实跳伞。",
+      "evidence": [
+        {
+          "source_id": "new-0",
+          "quote": "I tried simulated skydiving"
+        },
+        {
+          "source_id": "old",
+          "quote": "Dislikes extreme sports (e.g., skydiving)"
+        }
+      ]
+    }
+  ],
+  "add": [
+    {
+      "scope": "候选独立新增：近期团建尝试模拟跳伞并觉得刺激。",
+      "evidence": [
+        {
+          "source_id": "new-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        }
+      ]
+    },
+    {
+      "scope": "候选独立新增：用户意外享受肾上腺素感，并更愿意尝试新事物。",
+      "evidence": [
+        {
+          "source_id": "new-2",
+          "quote": "the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+        }
+      ]
+    },
+    {
+      "scope": "保留当前陈述：目前仍将安全放在首位；与旧安全原则可能重复，需去重。",
+      "evidence": [
+        {
+          "source_id": "new-8",
+          "quote": "I still prioritize safety, of course."
+        }
+      ]
+    }
+  ],
+  "status": "助手依据原文和已确认审核边界整理的候选预期，非用户确认金标准",
+  "time_policy": "实际生效/失效边界和条件，如无原文明示均为 unknown；来源 recorded_at 不作为有效日期。"
+}

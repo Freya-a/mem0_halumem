@@ -1,0 +1,493 @@
+{
+  "planner": "part2_scope_planner/plan.py:build_plan",
+  "upstream": "manual_candidate_validated_offline_not_model",
+  "structured": {
+    "status": "needs_review",
+    "mode": "structured",
+    "upstream_original": {
+      "status": "ok",
+      "results": [
+        {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "status": "ok",
+          "raw_output": "{\"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"fact_index\": 1, \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\", \"relation\": \"possible_change\", \"object\": \"user\", \"attribute\": \"job_title\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\", \"old_quote\": \"Works at Historical Productions Ltd. as a Director\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+          "candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "user",
+            "attribute": "job_title",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "located_candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "user",
+            "attribute": "job_title",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "fragment_match": {
+            "raw": "Works at Historical Productions Ltd. as a Director",
+            "located": "Works at Historical Productions Ltd. as a Director",
+            "method": "exact",
+            "start": 0,
+            "end": 50
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        }
+      ],
+      "errors": []
+    },
+    "modify": [],
+    "preserve": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": "employer",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "结构化候选范围与新属性或条件不相交；保留该旧范围，语义映射仍需复核。",
+        "code": "disjoint_preserve",
+        "old_fragment": "Historical Productions Ltd."
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": "job_title",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "修改条件未满足；暂时保留该旧范围供复核，不把未知端点填成确定日期。",
+        "code": "hold_provisional",
+        "old_fragment": "Director"
+      }
+    ],
+    "uncertain": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": "job_title",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+        "code": "possible_change"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": "job_title",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "无法确定完整交集或其有效边界，不能生成完整修改范围。",
+        "code": "boundary_unknown",
+        "missing": [
+          "old.weekdays",
+          "new.weekdays",
+          "old.valid.start",
+          "old.valid.end",
+          "new.valid.start",
+          "new.valid.end"
+        ],
+        "overlap_status": "unknown"
+      }
+    ],
+    "add": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": "job_title",
+        "conditions": {
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown",
+            "days": [],
+            "evidence": []
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            },
+            "end": {
+              "kind": "unknown",
+              "value": null,
+              "evidence": []
+            }
+          }
+        },
+        "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "code": "raw_evidence_candidate"
+      }
+    ],
+    "errors": []
+  },
+  "baseline_only": {
+    "status": "needs_review",
+    "mode": "baseline_only",
+    "upstream_original": {
+      "status": "ok",
+      "results": [
+        {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1,
+          "old_subfact": "Works at Historical Productions Ltd. as a Director",
+          "status": "ok",
+          "raw_output": "{\"memory_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\", \"fact_index\": 1, \"old_subfact\": \"Works at Historical Productions Ltd. as a Director\", \"relation\": \"possible_change\", \"object\": \"user\", \"attribute\": \"job_title\", \"conditions\": \"unknown\", \"candidate_impact_fragment\": \"Works at Historical Productions Ltd. as a Director\", \"old_quote\": \"Works at Historical Productions Ltd. as a Director\", \"new_quote\": {\"source_id\": \"new-0\", \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"}, \"reason\": \"人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。\", \"confirmation_questions\": []}",
+          "candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "user",
+            "attribute": "job_title",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "located_candidate": {
+            "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+            "fact_index": 1,
+            "old_subfact": "Works at Historical Productions Ltd. as a Director",
+            "relation": "possible_change",
+            "object": "user",
+            "attribute": "job_title",
+            "conditions": "unknown",
+            "candidate_impact_fragment": "Works at Historical Productions Ltd. as a Director",
+            "old_quote": "Works at Historical Productions Ltd. as a Director",
+            "new_quote": {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            },
+            "reason": "人工整理的关系候选，只用于离线范围规划回放；不代表模型判断或人工确认金标准。",
+            "confirmation_questions": []
+          },
+          "fragment_match": {
+            "raw": "Works at Historical Productions Ltd. as a Director",
+            "located": "Works at Historical Productions Ltd. as a Director",
+            "method": "exact",
+            "start": 0,
+            "end": 50
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        }
+      ],
+      "errors": []
+    },
+    "modify": [],
+    "preserve": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "未能安全划分范围，暂时保护原文以待复核；不声称原状态无限期有效。",
+        "code": "hold_provisional",
+        "old_fragment": "Works at Historical Productions Ltd. as a Director"
+      }
+    ],
+    "uncertain": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "possible_change 是候选关系，不足以证明明确纠正或授权修改。",
+        "code": "possible_change"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "组件一的自由文本属性和候选片段未提供经过验证的属性单元及条件边界。",
+        "code": "attribute_unlocalized",
+        "upstream_attribute": "job_title",
+        "candidate_fragment": "Works at Historical Productions Ltd. as a Director"
+      },
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "有效时间和条件范围未由带来源的结构化输入确定；记录时间不得作为生效时间。",
+        "code": "boundary_unknown"
+      }
+    ],
+    "add": [
+      {
+        "old_fact_id": {
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "fact_index": 1
+        },
+        "old_quote": "Works at Historical Productions Ltd. as a Director",
+        "new_evidence": [
+          {
+            "source_id": "new-0",
+            "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+          }
+        ],
+        "attribute": null,
+        "conditions": {
+          "status": "unknown"
+        },
+        "reason": "原始新引文供候选复核；未验证新颖性、语义拆分或是否应新增。",
+        "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "code": "raw_evidence_candidate"
+      }
+    ],
+    "errors": []
+  }
+}

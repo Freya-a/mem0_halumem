@@ -1,0 +1,95 @@
+{
+  "case_id": "case_1_multi_person",
+  "memory_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+  "observed_cli_exit_code": 0,
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "returned_model": "qwen-plus",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2126,
+    "completion_tokens": 751,
+    "total_tokens": 2877
+  },
+  "existing_validator_status": "passed",
+  "replayed_validator_error": null,
+  "offline_replay_matches_recorded_outcome": true,
+  "result_json_exists": true,
+  "validated_fact_count": 1,
+  "candidate_fact_count": 1,
+  "input_bytes_and_context_equal_to_prior": true,
+  "explicit_request_parameters_equal_to_prior": true,
+  "prompt_sha256": "164d44fb35488f0460a4c7f5ad39b490b577c6ad9a0dee676d0aecda227b51bd",
+  "candidate_ids_and_echo_text_match": true,
+  "candidate_fact_indices": [
+    1
+  ],
+  "facts_missing_required_memory_evidence": [],
+  "separate_read_only_quote_diagnostics": {
+    "scope": "Literal substring checks of the saved candidate only; this does not override or repair validator failure.",
+    "matched": 3,
+    "total": 3,
+    "quotes": [
+      {
+        "fact_index": 1,
+        "evidence_index": 0,
+        "source_type": "memory",
+        "source_id": "93d9e572-f052-41b6-9387-9e7583b8c3ab",
+        "quote": "Friends and colleagues (Susan, Daniel, and Joshua) provided instrumental support during career transition",
+        "supports": "The memory states that Susan, Daniel, and Joshua — identified as friends and colleagues — provided instrumental support during a career transition.",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          105
+        ]
+      },
+      {
+        "fact_index": 1,
+        "evidence_index": 1,
+        "source_type": "context",
+        "source_id": "ctx-1",
+        "quote": "Absolutely, my friends and colleagues were instrumental in this transition. Their support was invaluable.",
+        "supports": "The speaker ('user') explicitly identifies themselves as the recipient of instrumental support from 'my friends and colleagues' during 'this transition', confirming the subject of the transition and the possessive relationship.",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          105
+        ]
+      },
+      {
+        "fact_index": 1,
+        "evidence_index": 2,
+        "source_type": "context",
+        "source_id": "ctx-2",
+        "quote": "The support I received was incredible. Susan, Daniel, and Joshua really helped me see things differently.",
+        "supports": "The speaker ('user') confirms receiving support from Susan, Daniel, and Joshua personally, and frames it as helping 'me' — corroborating their role as supporters in the user's experience.",
+        "exact_substring": true,
+        "character_range": [
+          0,
+          105
+        ]
+      }
+    ]
+  },
+  "model_pending_confirmations": [
+    {
+      "fact_index": 1,
+      "items": [
+        {
+          "item": "Specific nature and form of 'instrumental support'",
+          "reason": "The memory and contexts describe support as 'instrumental', 'invaluable', and 'incredible', and mention helping the user 'see things differently', but do not specify concrete actions (e.g., job referrals, advice, emotional scaffolding)."
+        },
+        {
+          "item": "Temporal scope and phase of the career transition",
+          "reason": "The memory says 'during career transition' without specifying start/end points, duration, or whether it refers to a single discrete transition or multiple transitions; no context provides explicit timeline anchors beyond relative references ('this transition')."
+        },
+        {
+          "item": "Whether 'friends and colleagues' is a single overlapping group or two distinct groups, with Susan/Daniel/Joshua belonging to one or both",
+          "reason": "The phrasing 'Friends and colleagues (Susan, Daniel, and Joshua)' is syntactically ambiguous: it could mean (a) [Friends] and [colleagues] — where the parenthetical names apply to both categories, or (b) [Friends and colleagues] as a compound noun phrase, with the names exemplifying the combined group. Neither memory nor contexts resolve this syntactic scope."
+        }
+      ]
+    }
+  ],
+  "response_or_evidence_repaired": false,
+  "new_real_model_calls_during_offline_replay": 0
+}

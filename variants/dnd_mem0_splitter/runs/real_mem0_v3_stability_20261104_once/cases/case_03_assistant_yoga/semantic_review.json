@@ -1,0 +1,139 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_03_assistant_yoga",
+    "categories": [
+      "助手来源",
+      "说话人归属",
+      "析取与状态"
+    ],
+    "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+    "old_memory": "Practices or is open to yoga for supporting personal health and transition",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 3,
+    "literal_quotes_total": 3,
+    "review_label": "初步判断，待人工确认",
+    "summary": "初步判断，待人工确认：现有 report.json 为格式检查 passed；审查 1 条已返回事实和全部 3 条 supports。旧记忆的 practices OR is open to、瑜伽对象及 personal health/transition 用途均保留，未被助手 could 建议覆盖。观察到 1 项 raw 来源边界问题：raw 新补 The user，违反本批次 frozen_prompt.txt 第2条；这与主体是否可由上下文合理关联是两件事，不判为凭空人物，也不判用户直接自述。原始发言归属、析取哪一支成立及具体实践状态仍未决。",
+    "observed_issue_types": [
+      "RAW_CONTEXT_LEAK"
+    ],
+    "has_observed_issue": true,
+    "specific_uncertainty_types": [
+      "MODAL_OR_RELATION_SCOPE",
+      "ORIGINAL_SPEAKER"
+    ],
+    "has_specific_unresolved_item": true,
+    "model_pending_item_count": 3,
+    "pending_human_confirmations": [
+      {
+        "item": "旧记忆中 practices OR is open to 的实际分支与来源",
+        "reason": "初步判断，待人工确认：需核实用户是否实践、是否开放，以及旧记忆形成于用户自述、助手建议提取或其他过程。不能把助手建议直接当用户同意，也不能据此删改旧记忆的析取。"
+      },
+      {
+        "item": "supports[2] 中 consistent 的解释范围",
+        "reason": "初步判断，待人工确认：建议与旧记忆可以相容，但相容不构成对用户 openness/practice 的证实；当前列为部分支持而非已观察错误。"
+      },
+      {
+        "item": "原输出关于 practices 的时间待确认理由",
+        "reason": "初步判断，待人工确认：practices 是一般现在时的第三人称单数形式，并非原 pending 理由所称的无显式时态 bare verb。具体持续时间、频率或开始日期确实未给出；这项理由措辞不准确，但正文没有改时态或推定事件日期，因此不据此另计 TIME_SCOPE_CHANGE。"
+      }
+    ],
+    "independent_review_file": "reviews/group_02.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_03_assistant_yoga",
+      "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [
+        "MODAL_OR_RELATION_SCOPE",
+        "ORIGINAL_SPEAKER"
+      ],
+      "raw_subfact": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+      "contextualized_subfact": "The user practices yoga or is open to practicing yoga to support personal health and career transition.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+          "quote": "Practices or is open to yoga for supporting personal health and transition",
+          "supports": "Old memory states the user practices or is open to yoga for supporting personal health and transition."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "supports": "Provides contextual grounding: 'transition' refers to career transition, and 'personal health' includes well-being in the context of work-life balance."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+          "supports": "Confirms that 'yoga' was suggested by the assistant as a supportive practice for the user’s transition and personal health — consistent with the memory’s framing of openness or practice, but does not confirm the user’s actual practice status."
+        }
+      ],
+      "model_pending_confirmations": [
+        {
+          "item": "Whether the user actually practices yoga or only expresses openness to it",
+          "reason": "The memory uses the disjunctive 'or' without specifying which disjunct holds; neither source_context confirms current practice nor clarifies intent level (e.g., intention vs. exploration)."
+        },
+        {
+          "item": "The speaker of the memory statement",
+          "reason": "The memory text is third-person ('Practices or is open...'), but input source_context shows the user self-reports career concerns (ctx-1) and the assistant recommends yoga (ctx-2); it is not stated whether this memory reflects user self-report, assistant summary, or system inference."
+        },
+        {
+          "item": "Temporal scope of 'practices' (e.g., current, past, habitual)",
+          "reason": "The memory lacks tense markers or time anchors; 'Practices' is bare verb form without explicit present/habitual/ongoing marking, and no recorded_at from memory itself is provided."
+        }
+      ],
+      "coverage_summary": "初步判断，待人工确认：完整保留 practices or is open to 的单一析取，不拆成已实践与已开放两个肯定事实；保留 yoga、personal health、transition 及支持用途。contextualized 中 career 可由 ctx-1 的职业困境、找新工作和 ctx-2 的 job opportunities/this transition 共同消歧，属于有源且必要的语境说明。没有将 could 升格为用户实践事实，没有借来源纠正旧记忆，没有扩入职业目标、工作生活平衡等独立命题；这些额外细节仅在引文中出现。未添加日期、持续时间、姓名或关系。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "Practices or is open to yoga for supporting personal health and transition",
+          "output_quote": "The user practices yoga or is open to practicing yoga for supporting personal health and transition.",
+          "reason": "初步判断，待人工确认：旧 memory_text 没有 user、说话人身份或可在文本内部恢复为 user 的共享主语；raw_subfact 新增 The user。已读取本批次 frozen_prompt.txt，第2条明确禁止为语法完整把省略主语补成用户，且上下文支持的身份只能必要时用于 contextualized_subfact。ctx-1 的第一人称职业经历和 ctx-2 面向 you 的建议能合理关联语义主体，但不能使 raw 越过来源边界；因此只记录 RAW_CONTEXT_LEAK，不追加 UNSUPPORTED_ADDITION 或人物虚构标签。"
+        }
+      ],
+      "uncertainties": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：ctx-1 是 user 的职业自述，但没有瑜伽；ctx-2 明确为 assistant 的 could 建议。尚无 user 直接自述实践或开放瑜伽的引文，旧记忆的上游形成方式也无法仅凭输入确定。输出 evidence[2] 明示 assistant，pending 也记录来源未决，未观察到将助手原话写成用户原话的明确断言。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：旧记忆只记 practices OR is open to，未确定哪一支成立；assistant 的 could 建议既不证实际实践，也不证用户接受或表达开放。正文保留旧析取，符合不纠正旧记忆的要求；用户实际状态、意向强弱与具体实践持续范围仍待核实，而非据此把正文认定为错误。"
+        }
+      ],
+      "speaker_review": "初步判断，待人工确认：语义主体与原始说话人分开审查。ctx-1 的 I 与 ctx-2 的 you/this transition 可把职业过渡语境合理关联到用户，因此 contextualized 的 The user 不一概判为虚构。证据未表明用户说过瑜伽实践或开放；memory supports 使用 Old memory states，assistant supports 明确说明建议来自助手，且 pending 留下原始来源疑问，所以不另记 SPEAKER_ATTRIBUTION_OVERCLAIM。raw 新补身份的边界问题已单独记录。",
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：该 memory 引文直接支持旧记忆如此记载 practices OR open、瑜伽及 health/transition 用途，不能证明现实状态或用户直接说过。supports 的 The user 并非引文明示主体，需要 ctx-1/ctx-2 的共享过渡语境关联；这是可合理关联的主体补足，不是用户原始发言归属证明。本项未明确声称 user said，故不自动记支持越界或说话人错误。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "初步判断，待人工确认：ctx-1 明示 career、current role、new job、well-being 与 work-life balance；结合紧邻 ctx-2 的 job opportunities 和 this transition，足以把 transition 消歧为 career transition，并为 personal health 的健康福祉语境提供依据。supports 未声称这段用户引文证明瑜伽实践或开放，也未把 humanitarian goals 等引文额外细节加入正文。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 2,
+          "assessment": "partially_supported",
+          "reason": "初步判断，待人工确认：ctx-2 的 speaker=assistant 且原话为 yoga could support this transition，直接支持助手提出可能有帮助的瑜伽建议及职业过渡/个人健康语境。它不能证实用户实践，也不能证实用户开放。supports 把建议称为与旧析取表述 consistent，并明确不确认 actual practice；按兼容性表述理解，未见把 could 明确变成任一用户状态的断言，因此列为部分支持和范围未决，不自动记 observed 错误。人工仍应核对 consistent 是否会被误读为对 openness 的确认。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_02.json"
+    }
+  ]
+}

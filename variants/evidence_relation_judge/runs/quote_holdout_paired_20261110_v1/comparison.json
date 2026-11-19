@@ -1,0 +1,2457 @@
+{
+  "fact_units": 18,
+  "counts": {
+    "v2": {
+      "fact_outputs": 18,
+      "format_and_provenance_pass": 16,
+      "old_quote_literal_mismatch": 0,
+      "new_quote_literal_mismatch": 0,
+      "fragment_not_located": 2,
+      "parse_fail": 0,
+      "model_fail": 0
+    },
+    "experimental": {
+      "fact_outputs": 18,
+      "format_and_provenance_pass": 18,
+      "old_quote_literal_mismatch": 0,
+      "new_quote_literal_mismatch": 0,
+      "fragment_not_located": 0,
+      "parse_fail": 0,
+      "model_fail": 0
+    }
+  },
+  "notes": "Mismatch classes can overlap and checks only assess literal location, not whether a quote supports a claim; malformed candidates are separately represented.",
+  "rows": [
+    {
+      "record": 1,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s004:m000",
+      "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+      "old_memory": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"d575dfc1-59ec-43b4-83c4-6b94457a83f6\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.\",\n  \"relation\": \"supplement\",\n  \"object\": \"用户\",\n  \"attribute\": \"对狗的偏好及原因\",\n  \"conditions\": \"无特定条件限制\",\n  \"candidate_impact_fragment\": \"especially Labradors\",\n  \"old_quote\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-6\",\n    \"quote\": \"I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well.\"\n  },\n  \"reason\": \"旧事实指出用户特别喜欢拉布拉多犬，新证据表明用户也欣赏金毛寻回犬的适应性，并提到这是一种新的偏好。这增加了关于用户偏好的信息（增加了金毛犬），但并未否定或修正用户喜欢拉布拉多犬这一事实，两者相容。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+                "fact_index": 1,
+                "old_subfact": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.",
+                "relation": "supplement",
+                "object": "用户",
+                "attribute": "对狗的偏好及原因",
+                "conditions": "无特定条件限制",
+                "candidate_impact_fragment": "especially Labradors",
+                "old_quote": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+                "new_quote": {
+                  "source_id": "dialogue-6",
+                  "quote": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well."
+                },
+                "reason": "旧事实指出用户特别喜欢拉布拉多犬，新证据表明用户也欣赏金毛寻回犬的适应性，并提到这是一种新的偏好。这增加了关于用户偏好的信息（增加了金毛犬），但并未否定或修正用户喜欢拉布拉多犬这一事实，两者相容。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "especially Labradors",
+                "located": "especially Labradors",
+                "method": "exact",
+                "start": 12,
+                "end": 32
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/01_d575dfc1-59ec-43b4-83c4-6b94457a83f6_v2.json",
+          "seconds": [
+            9.424
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"d575dfc1-59ec-43b4-83c4-6b94457a83f6\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.\",\n  \"relation\": \"supplement\",\n  \"object\": \"user\",\n  \"attribute\": \"preference for dog breeds and reasons\",\n  \"conditions\": \"general preference\",\n  \"candidate_impact_fragment\": \"especially Labradors\",\n  \"old_quote\": \"Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-6\",\n    \"quote\": \"I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well.\"\n  },\n  \"reason\": \"旧记忆指出用户特别喜欢拉布拉多犬，新证据表明用户也欣赏金毛寻回犬的适应性，并提到这是一种新的偏好。这增加了关于用户可能喜欢的其他犬种的信息，但没有否定或修正对拉布拉多犬的喜爱，属于补充信息。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "d575dfc1-59ec-43b4-83c4-6b94457a83f6",
+                "fact_index": 1,
+                "old_subfact": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging.",
+                "relation": "supplement",
+                "object": "user",
+                "attribute": "preference for dog breeds and reasons",
+                "conditions": "general preference",
+                "candidate_impact_fragment": "especially Labradors",
+                "old_quote": "Likes dogs, especially Labradors, because they are friendly, loyal, and great companions for outdoor activities like jogging",
+                "new_quote": {
+                  "source_id": "dialogue-6",
+                  "quote": "I've always valued adaptability in pets, and Golden Retrievers seem to embody that trait well."
+                },
+                "reason": "旧记忆指出用户特别喜欢拉布拉多犬，新证据表明用户也欣赏金毛寻回犬的适应性，并提到这是一种新的偏好。这增加了关于用户可能喜欢的其他犬种的信息，但没有否定或修正对拉布拉多犬的喜爱，属于补充信息。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "especially Labradors",
+                "located": "especially Labradors",
+                "method": "exact",
+                "start": 12,
+                "end": 32
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/01_d575dfc1-59ec-43b4-83c4-6b94457a83f6_experimental.json",
+          "seconds": [
+            9.432
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 3,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s005:m004",
+      "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+      "old_memory": "Primary career motivation is improving healthcare access for underserved communities",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"b79a25de-05b7-47b7-bb0b-8c59b44a61ec\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Primary career motivation is improving healthcare access for underserved communities.\",\n  \"relation\": \"support\",\n  \"object\": \"user\",\n  \"attribute\": \"primary career motivation\",\n  \"conditions\": \"improving healthcare access for underserved communities\",\n  \"candidate_impact_fragment\": \"Primary career motivation is improving healthcare access for underserved communities\",\n  \"old_quote\": \"Primary career motivation is improving healthcare access for underserved communities\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.\"\n  },\n  \"reason\": \"New evidence explicitly states the user's desire to improve healthcare for underserved communities aligns with their consideration of roles, confirming the existing memory of their primary career motivation.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+                "fact_index": 1,
+                "old_subfact": "Primary career motivation is improving healthcare access for underserved communities.",
+                "relation": "support",
+                "object": "user",
+                "attribute": "primary career motivation",
+                "conditions": "improving healthcare access for underserved communities",
+                "candidate_impact_fragment": "Primary career motivation is improving healthcare access for underserved communities",
+                "old_quote": "Primary career motivation is improving healthcare access for underserved communities",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities."
+                },
+                "reason": "New evidence explicitly states the user's desire to improve healthcare for underserved communities aligns with their consideration of roles, confirming the existing memory of their primary career motivation.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Primary career motivation is improving healthcare access for underserved communities",
+                "located": "Primary career motivation is improving healthcare access for underserved communities",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/03_b79a25de-05b7-47b7-bb0b-8c59b44a61ec_v2.json",
+          "seconds": [
+            8.32
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"b79a25de-05b7-47b7-bb0b-8c59b44a61ec\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Primary career motivation is improving healthcare access for underserved communities.\",\n  \"relation\": \"support\",\n  \"object\": \"user\",\n  \"attribute\": \"primary career motivation\",\n  \"conditions\": \"improving healthcare access for underserved communities\",\n  \"candidate_impact_fragment\": \"Primary career motivation is improving healthcare access for underserved communities\",\n  \"old_quote\": \"Primary career motivation is improving healthcare access for underserved communities\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities.\"\n  },\n  \"reason\": \"New evidence explicitly states the user's desire to improve healthcare for underserved communities aligns with their consideration of roles, supporting the existing memory of this being their primary career motivation.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "b79a25de-05b7-47b7-bb0b-8c59b44a61ec",
+                "fact_index": 1,
+                "old_subfact": "Primary career motivation is improving healthcare access for underserved communities.",
+                "relation": "support",
+                "object": "user",
+                "attribute": "primary career motivation",
+                "conditions": "improving healthcare access for underserved communities",
+                "candidate_impact_fragment": "Primary career motivation is improving healthcare access for underserved communities",
+                "old_quote": "Primary career motivation is improving healthcare access for underserved communities",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "I've been considering roles in non-profit organizations focused on healthcare access. They align with my desire to improve healthcare for underserved communities."
+                },
+                "reason": "New evidence explicitly states the user's desire to improve healthcare for underserved communities aligns with their consideration of roles, supporting the existing memory of this being their primary career motivation.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Primary career motivation is improving healthcare access for underserved communities",
+                "located": "Primary career motivation is improving healthcare access for underserved communities",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/03_b79a25de-05b7-47b7-bb0b-8c59b44a61ec_experimental.json",
+          "seconds": [
+            8.465
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 4,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m001",
+      "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"a1332815-d6ba-4bdc-9ffa-657f7315d0ed\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n  \"relation\": \"support\",\n  \"object\": \"ThomasSusan (Susan)\",\n  \"attribute\": \"provides support and encouragement\",\n  \"conditions\": \"in the user's personal and professional life\",\n  \"candidate_impact_fragment\": \"provides support and encouragement\",\n  \"old_quote\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.\"\n  },\n  \"reason\": \"New evidence explicitly confirms that Susan continues to provide support and encouragement, aligning with the existing memory without indicating any change or contradiction.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+                "fact_index": 1,
+                "old_subfact": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+                "relation": "support",
+                "object": "ThomasSusan (Susan)",
+                "attribute": "provides support and encouragement",
+                "conditions": "in the user's personal and professional life",
+                "candidate_impact_fragment": "provides support and encouragement",
+                "old_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+                },
+                "reason": "New evidence explicitly confirms that Susan continues to provide support and encouragement, aligning with the existing memory without indicating any change or contradiction.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "provides support and encouragement",
+                "located": "provides support and encouragement",
+                "method": "exact",
+                "start": 60,
+                "end": 94
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/04_a1332815-d6ba-4bdc-9ffa-657f7315d0ed_v2.json",
+          "seconds": [
+            8.191
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"a1332815-d6ba-4bdc-9ffa-657f7315d0ed\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n  \"relation\": \"support\",\n  \"object\": \"ThomasSusan (Susan)\",\n  \"attribute\": \"provides support and encouragement\",\n  \"conditions\": \"\",\n  \"candidate_impact_fragment\": \"provides support and encouragement\",\n  \"old_quote\": \"Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.\"\n  },\n  \"reason\": \"New evidence explicitly confirms that Susan provides support and encouragement, aligning with the old memory without indicating any change or contradiction.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+                "fact_index": 1,
+                "old_subfact": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+                "relation": "support",
+                "object": "ThomasSusan (Susan)",
+                "attribute": "provides support and encouragement",
+                "conditions": "",
+                "candidate_impact_fragment": "provides support and encouragement",
+                "old_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+                },
+                "reason": "New evidence explicitly confirms that Susan provides support and encouragement, aligning with the old memory without indicating any change or contradiction.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "provides support and encouragement",
+                "located": "provides support and encouragement",
+                "method": "exact",
+                "start": 60,
+                "end": 94
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/04_a1332815-d6ba-4bdc-9ffa-657f7315d0ed_experimental.json",
+          "seconds": [
+            8.085
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 5,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m002",
+      "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+      "old_memory": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+      "versions": {
+        "v2": {
+          "status": "partial_or_error",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "error",
+              "raw_output": "{\n  \"memory_id\": \"0da9428c-2fe6-4254-b818-58991562b49d\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.\",\n  \"relation\": \"support\",\n  \"object\": \"MartinezDaniel\",\n  \"attribute\": \"colleague relationship and expertise in healthcare consulting\",\n  \"conditions\": \"current time context\",\n  \"candidate_impact_fragment\": \"MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects\",\n  \"old_quote\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"And Daniel's insights have really pushed me to think outside the box in my career.\"\n  },\n  \"reason\": \"新证据中用户再次提及 Daniel 的见解推动了其职业发展，确认了 Daniel 作为同事及其专业影响力的持续存在，支持旧事实中关于同事关系和专业能力的描述。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+                "fact_index": 1,
+                "old_subfact": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.",
+                "relation": "support",
+                "object": "MartinezDaniel",
+                "attribute": "colleague relationship and expertise in healthcare consulting",
+                "conditions": "current time context",
+                "candidate_impact_fragment": "MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects",
+                "old_quote": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "And Daniel's insights have really pushed me to think outside the box in my career."
+                },
+                "reason": "新证据中用户再次提及 Daniel 的见解推动了其职业发展，确认了 Daniel 作为同事及其专业影响力的持续存在，支持旧事实中关于同事关系和专业能力的描述。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": false,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [
+                {
+                  "stage": "validation",
+                  "type": "ValueError",
+                  "message": "candidate fragment cannot be uniquely located in fact memory evidence: not_found"
+                }
+              ],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "MartinezDaniel is my Colleague, Daniel's expertise in healthcare consulting challenges me to push boundaries and innovate in our projects",
+                "located": null,
+                "method": "not_found",
+                "start": null,
+                "end": null
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/05_0da9428c-2fe6-4254-b818-58991562b49d_v2.json",
+          "seconds": [
+            8.899
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"0da9428c-2fe6-4254-b818-58991562b49d\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.\",\n  \"relation\": \"support\",\n  \"object\": \"MartinezDaniel\",\n  \"attribute\": \"colleague relationship and expertise in healthcare consulting\",\n  \"conditions\": \"\",\n  \"candidate_impact_fragment\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\",\n  \"old_quote\": \"Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"And Daniel's insights have really pushed me to think outside the box in my career.\"\n  },\n  \"reason\": \"新证据中用户提到 Daniel 的见解推动了其职业发展，确认了 Daniel 作为同事的存在及其专业影响力，与旧记忆中关于 Daniel 是同事且具备专业知识的描述一致，属于支持关系。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "0da9428c-2fe6-4254-b818-58991562b49d",
+                "fact_index": 1,
+                "old_subfact": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting.",
+                "relation": "support",
+                "object": "MartinezDaniel",
+                "attribute": "colleague relationship and expertise in healthcare consulting",
+                "conditions": "",
+                "candidate_impact_fragment": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "old_quote": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "And Daniel's insights have really pushed me to think outside the box in my career."
+                },
+                "reason": "新证据中用户提到 Daniel 的见解推动了其职业发展，确认了 Daniel 作为同事的存在及其专业影响力，与旧记忆中关于 Daniel 是同事且具备专业知识的描述一致，属于支持关系。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "located": "Has a colleague named MartinezDaniel (referred to as 'Daniel') with expertise in healthcare consulting",
+                "method": "exact",
+                "start": 0,
+                "end": 102
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/05_0da9428c-2fe6-4254-b818-58991562b49d_experimental.json",
+          "seconds": [
+            9.027
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 6,
+      "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s006:m003",
+      "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+      "old_memory": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"a90e498c-4586-4237-8a4b-c830847f8819\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management.\",\n  \"relation\": \"support\",\n  \"object\": \"WilliamsJoshua\",\n  \"attribute\": \"collaborative approach and insights in healthcare management\",\n  \"conditions\": \"colleague relationship\",\n  \"candidate_impact_fragment\": \"known for collaborative approach and insights in healthcare management\",\n  \"old_quote\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"Joshua's approach has definitely influenced my leadership style positively.\"\n  },\n  \"reason\": \"新证据中用户确认 Joshua 的方法对其领导风格产生了积极影响，这与旧事实中描述的 Joshua 以协作方法和见解著称的属性一致，支持了旧事实的真实性。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+                "fact_index": 1,
+                "old_subfact": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management.",
+                "relation": "support",
+                "object": "WilliamsJoshua",
+                "attribute": "collaborative approach and insights in healthcare management",
+                "conditions": "colleague relationship",
+                "candidate_impact_fragment": "known for collaborative approach and insights in healthcare management",
+                "old_quote": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "Joshua's approach has definitely influenced my leadership style positively."
+                },
+                "reason": "新证据中用户确认 Joshua 的方法对其领导风格产生了积极影响，这与旧事实中描述的 Joshua 以协作方法和见解著称的属性一致，支持了旧事实的真实性。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "known for collaborative approach and insights in healthcare management",
+                "located": "known for collaborative approach and insights in healthcare management",
+                "method": "exact",
+                "start": 63,
+                "end": 133
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/06_a90e498c-4586-4237-8a4b-c830847f8819_v2.json",
+          "seconds": [
+            8.678
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"a90e498c-4586-4237-8a4b-c830847f8819\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management.\",\n  \"relation\": \"support\",\n  \"object\": \"WilliamsJoshua\",\n  \"attribute\": \"collaborative approach and insights in healthcare management\",\n  \"conditions\": \"colleague relationship\",\n  \"candidate_impact_fragment\": \"known for collaborative approach and insights in healthcare management\",\n  \"old_quote\": \"Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"Joshua's approach has definitely influenced my leadership style positively.\"\n  },\n  \"reason\": \"新证据确认了 Joshua 的协作方法对用户产生了积极影响，这与旧记忆中关于其以协作方法和见解著称的描述一致，支持了旧事实的真实性。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "a90e498c-4586-4237-8a4b-c830847f8819",
+                "fact_index": 1,
+                "old_subfact": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management.",
+                "relation": "support",
+                "object": "WilliamsJoshua",
+                "attribute": "collaborative approach and insights in healthcare management",
+                "conditions": "colleague relationship",
+                "candidate_impact_fragment": "known for collaborative approach and insights in healthcare management",
+                "old_quote": "Has a colleague named WilliamsJoshua (referred to as 'Joshua') known for collaborative approach and insights in healthcare management",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "Joshua's approach has definitely influenced my leadership style positively."
+                },
+                "reason": "新证据确认了 Joshua 的协作方法对用户产生了积极影响，这与旧记忆中关于其以协作方法和见解著称的描述一致，支持了旧事实的真实性。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "known for collaborative approach and insights in healthcare management",
+                "located": "known for collaborative approach and insights in healthcare management",
+                "method": "exact",
+                "start": 63,
+                "end": 133
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/06_a90e498c-4586-4237-8a4b-c830847f8819_experimental.json",
+          "seconds": [
+            8.824
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 9,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001",
+      "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+      "old_memory": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"8602da08-fefc-4875-ad50-dba104642365\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.\",\n  \"relation\": \"support\",\n  \"object\": \"Earl Grey tea\",\n  \"attribute\": \"preference reason\",\n  \"conditions\": \"historical authenticity\",\n  \"candidate_impact_fragment\": \"because of its rich history, tradition\",\n  \"old_quote\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity.\"\n  },\n  \"reason\": \"新证据中用户提到伯爵茶符合其庆祝历史真实性的目标，这与旧事实中因历史和传统而喜欢伯爵茶的原因一致，提供了支持性证据。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+                "fact_index": 1,
+                "old_subfact": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.",
+                "relation": "support",
+                "object": "Earl Grey tea",
+                "attribute": "preference reason",
+                "conditions": "historical authenticity",
+                "candidate_impact_fragment": "because of its rich history, tradition",
+                "old_quote": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity."
+                },
+                "reason": "新证据中用户提到伯爵茶符合其庆祝历史真实性的目标，这与旧事实中因历史和传统而喜欢伯爵茶的原因一致，提供了支持性证据。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "because of its rich history, tradition",
+                "located": "because of its rich history, tradition",
+                "method": "exact",
+                "start": 20,
+                "end": 58
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/09_8602da08-fefc-4875-ad50-dba104642365_v2.json",
+          "seconds": [
+            8.697
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"8602da08-fefc-4875-ad50-dba104642365\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.\",\n  \"relation\": \"support\",\n  \"object\": \"Earl Grey tea\",\n  \"attribute\": \"preference reason\",\n  \"conditions\": \"historical authenticity\",\n  \"candidate_impact_fragment\": \"because of its rich history, tradition\",\n  \"old_quote\": \"Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-2\",\n    \"quote\": \"Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity.\"\n  },\n  \"reason\": \"新证据中用户提到伯爵茶符合其庆祝历史真实性的目标，这与旧记忆中因历史和传统而喜欢伯爵茶的原因一致，提供了支持性延续。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+                "fact_index": 1,
+                "old_subfact": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.",
+                "relation": "support",
+                "object": "Earl Grey tea",
+                "attribute": "preference reason",
+                "conditions": "historical authenticity",
+                "candidate_impact_fragment": "because of its rich history, tradition",
+                "old_quote": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+                "new_quote": {
+                  "source_id": "dialogue-2",
+                  "quote": "Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity."
+                },
+                "reason": "新证据中用户提到伯爵茶符合其庆祝历史真实性的目标，这与旧记忆中因历史和传统而喜欢伯爵茶的原因一致，提供了支持性延续。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "because of its rich history, tradition",
+                "located": "because of its rich history, tradition",
+                "method": "exact",
+                "start": 20,
+                "end": 58
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/09_8602da08-fefc-4875-ad50-dba104642365_experimental.json",
+          "seconds": [
+            8.745
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 12,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m000",
+      "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "old_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"4ffee399-c31f-4827-b5fc-5c661baf1fc9\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Experiences stress due to historical accuracy demands and tight production schedules.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"stress levels due to historical accuracy demands and tight production schedules\",\n  \"conditions\": \"after promotion to lead director and ability to delegate tasks\",\n  \"candidate_impact_fragment\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"old_quote\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.\"\n  },\n  \"reason\": \"新证据表明用户升职并学会授权后压力水平降低，心理健康改善，这与旧事实中因历史准确性和日程压力而经历压力的状态存在潜在的时间性变化，但旧事实描述的是特定条件下的状态，新证据表明条件改变后状态可能改变，不直接否定旧事实当时的真实性。\",\n  \"confirmation_questions\": [\n    \"用户是否确认在升职前因历史准确性和日程压力导致的压力状态已完全消失？\",\n    \"授权任务是否完全消除了历史准确性要求和紧凑日程带来的压力，还是仅减轻了整体压力水平？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "fact_index": 1,
+                "old_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "stress levels due to historical accuracy demands and tight production schedules",
+                "conditions": "after promotion to lead director and ability to delegate tasks",
+                "candidate_impact_fragment": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "old_quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+                },
+                "reason": "新证据表明用户升职并学会授权后压力水平降低，心理健康改善，这与旧事实中因历史准确性和日程压力而经历压力的状态存在潜在的时间性变化，但旧事实描述的是特定条件下的状态，新证据表明条件改变后状态可能改变，不直接否定旧事实当时的真实性。",
+                "confirmation_questions": [
+                  "用户是否确认在升职前因历史准确性和日程压力导致的压力状态已完全消失？",
+                  "授权任务是否完全消除了历史准确性要求和紧凑日程带来的压力，还是仅减轻了整体压力水平？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "located": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/12_4ffee399-c31f-4827-b5fc-5c661baf1fc9_v2.json",
+          "seconds": [
+            10.738
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"4ffee399-c31f-4827-b5fc-5c661baf1fc9\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Experiences stress due to historical accuracy demands and tight production schedules.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"stress levels due to historical accuracy demands and tight production schedules\",\n  \"conditions\": \"after promotion to lead director and ability to delegate tasks\",\n  \"candidate_impact_fragment\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"old_quote\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.\"\n  },\n  \"reason\": \"新证据表明用户升职并能够委派任务后压力水平降低，心理健康改善，这与旧记忆中因历史准确性要求和紧凑日程感到压力的状态可能存在随时间或条件变化的冲突，但旧记忆未明确时间范围，无法断定旧事实完全失效。\",\n  \"confirmation_questions\": [\n    \"用户是否确认在升职前因历史准确性要求和紧凑制作日程感到压力的状态已完全改变？\",\n    \"委派任务是否完全消除了因历史准确性要求和紧凑日程带来的压力，还是仅减轻了部分压力？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "fact_index": 1,
+                "old_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "stress levels due to historical accuracy demands and tight production schedules",
+                "conditions": "after promotion to lead director and ability to delegate tasks",
+                "candidate_impact_fragment": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "old_quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+                },
+                "reason": "新证据表明用户升职并能够委派任务后压力水平降低，心理健康改善，这与旧记忆中因历史准确性要求和紧凑日程感到压力的状态可能存在随时间或条件变化的冲突，但旧记忆未明确时间范围，无法断定旧事实完全失效。",
+                "confirmation_questions": [
+                  "用户是否确认在升职前因历史准确性要求和紧凑制作日程感到压力的状态已完全改变？",
+                  "委派任务是否完全消除了因历史准确性要求和紧凑日程带来的压力，还是仅减轻了部分压力？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "located": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/12_4ffee399-c31f-4827-b5fc-5c661baf1fc9_experimental.json",
+          "seconds": [
+            10.78
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 13,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s005:m001",
+      "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+      "old_memory": "Experiences stress due to historical accuracy demands and tight production schedules",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"4ffee399-c31f-4827-b5fc-5c661baf1fc9\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Experiences stress due to historical accuracy demands and tight production schedules.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"mental health status regarding stress\",\n  \"conditions\": \"role as lead director and ability to delegate tasks\",\n  \"candidate_impact_fragment\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"old_quote\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.\"\n  },\n  \"reason\": \"新证据表明用户晋升为导演并能够委派任务后，压力水平降低且心理健康改善，这与旧事实中描述的因历史准确性和日程压力而经历压力的状态存在潜在的时间性变化，但旧事实描述的是过去或特定条件下的状态，新证据表明当前状态可能已改变，因此属于可能变化而非直接的历史纠错。\",\n  \"confirmation_questions\": [\n    \"用户是否确认在晋升为导演之前，历史准确性要求和紧凑日程是导致压力的主要原因？\",\n    \"用户目前的压力水平是否已完全消除，还是仅有所减轻？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "fact_index": 1,
+                "old_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "mental health status regarding stress",
+                "conditions": "role as lead director and ability to delegate tasks",
+                "candidate_impact_fragment": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "old_quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+                },
+                "reason": "新证据表明用户晋升为导演并能够委派任务后，压力水平降低且心理健康改善，这与旧事实中描述的因历史准确性和日程压力而经历压力的状态存在潜在的时间性变化，但旧事实描述的是过去或特定条件下的状态，新证据表明当前状态可能已改变，因此属于可能变化而非直接的历史纠错。",
+                "confirmation_questions": [
+                  "用户是否确认在晋升为导演之前，历史准确性要求和紧凑日程是导致压力的主要原因？",
+                  "用户目前的压力水平是否已完全消除，还是仅有所减轻？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "located": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/13_4ffee399-c31f-4827-b5fc-5c661baf1fc9_v2.json",
+          "seconds": [
+            10.734
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"4ffee399-c31f-4827-b5fc-5c661baf1fc9\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Experiences stress due to historical accuracy demands and tight production schedules.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"mental health status regarding stress\",\n  \"conditions\": \"role as lead director at Historical Productions Ltd.\",\n  \"candidate_impact_fragment\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"old_quote\": \"Experiences stress due to historical accuracy demands and tight production schedules\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects.\"\n  },\n  \"reason\": \"New evidence indicates a significant improvement in mental health and reduced stress levels following a promotion and ability to delegate, suggesting the previous state of experiencing stress may have changed due to new conditions, though it does not explicitly confirm the old stressors are completely eliminated.\",\n  \"confirmation_questions\": [\n    \"Does the user still experience stress specifically due to historical accuracy demands and tight production schedules despite the overall improvement in mental health?\",\n    \"Has the ability to delegate tasks completely eliminated the stress caused by historical accuracy demands and tight production schedules?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "4ffee399-c31f-4827-b5fc-5c661baf1fc9",
+                "fact_index": 1,
+                "old_subfact": "Experiences stress due to historical accuracy demands and tight production schedules.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "mental health status regarding stress",
+                "conditions": "role as lead director at Historical Productions Ltd.",
+                "candidate_impact_fragment": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "old_quote": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "Since my promotion to lead director at Historical Productions Ltd., I've noticed a significant improvement in my mental health. The ability to delegate tasks has reduced my stress levels and allowed me to focus more on my projects."
+                },
+                "reason": "New evidence indicates a significant improvement in mental health and reduced stress levels following a promotion and ability to delegate, suggesting the previous state of experiencing stress may have changed due to new conditions, though it does not explicitly confirm the old stressors are completely eliminated.",
+                "confirmation_questions": [
+                  "Does the user still experience stress specifically due to historical accuracy demands and tight production schedules despite the overall improvement in mental health?",
+                  "Has the ability to delegate tasks completely eliminated the stress caused by historical accuracy demands and tight production schedules?"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "located": "Experiences stress due to historical accuracy demands and tight production schedules",
+                "method": "exact",
+                "start": 0,
+                "end": 84
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/13_4ffee399-c31f-4827-b5fc-5c661baf1fc9_experimental.json",
+          "seconds": [
+            10.423
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 15,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s007:m006",
+      "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+      "old_memory": "Friends and colleagues are main support system",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e76eedc7-87e9-4282-b7db-68ed72b0c8ba\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Friends and colleagues are main support system\",\n  \"relation\": \"supplement\",\n  \"object\": \"用户\",\n  \"attribute\": \"支持系统构成\",\n  \"conditions\": \"当前时间\",\n  \"candidate_impact_fragment\": \"Friends and colleagues are main support system\",\n  \"old_quote\": \"Friends and colleagues are main support system\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-6\",\n    \"quote\": \"They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas.\"\n  },\n  \"reason\": \"新证据确认了朋友和同事（Mary, Steven）的支持作用，同时补充了'新网络'（new network）在提供创意方面的支持，丰富了支持系统的构成，但未否定旧事实中朋友和同事作为主要支持系统的地位。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+                "fact_index": 1,
+                "old_subfact": "Friends and colleagues are main support system",
+                "relation": "supplement",
+                "object": "用户",
+                "attribute": "支持系统构成",
+                "conditions": "当前时间",
+                "candidate_impact_fragment": "Friends and colleagues are main support system",
+                "old_quote": "Friends and colleagues are main support system",
+                "new_quote": {
+                  "source_id": "dialogue-6",
+                  "quote": "They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas."
+                },
+                "reason": "新证据确认了朋友和同事（Mary, Steven）的支持作用，同时补充了'新网络'（new network）在提供创意方面的支持，丰富了支持系统的构成，但未否定旧事实中朋友和同事作为主要支持系统的地位。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Friends and colleagues are main support system",
+                "located": "Friends and colleagues are main support system",
+                "method": "exact",
+                "start": 0,
+                "end": 46
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/15_e76eedc7-87e9-4282-b7db-68ed72b0c8ba_v2.json",
+          "seconds": [
+            8.312
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e76eedc7-87e9-4282-b7db-68ed72b0c8ba\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Friends and colleagues are main support system\",\n  \"relation\": \"supplement\",\n  \"object\": \"用户\",\n  \"attribute\": \"支持系统构成\",\n  \"conditions\": \"当前状态\",\n  \"candidate_impact_fragment\": \"Friends and colleagues are main support system\",\n  \"old_quote\": \"Friends and colleagues are main support system\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-6\",\n    \"quote\": \"They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas.\"\n  },\n  \"reason\": \"旧记忆指出朋友和同事是主要支持系统，新证据确认了这一点（Mary 和 Steven 的作用），同时补充了‘新网络’（new network）在提供创意灵感方面的具体作用，增加了支持系统的构成信息，但未否定旧事实。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "e76eedc7-87e9-4282-b7db-68ed72b0c8ba",
+                "fact_index": 1,
+                "old_subfact": "Friends and colleagues are main support system",
+                "relation": "supplement",
+                "object": "用户",
+                "attribute": "支持系统构成",
+                "conditions": "当前状态",
+                "candidate_impact_fragment": "Friends and colleagues are main support system",
+                "old_quote": "Friends and colleagues are main support system",
+                "new_quote": {
+                  "source_id": "dialogue-6",
+                  "quote": "They've been invaluable. Mary helps me unwind, and Steven's expertise in set design enhances the authenticity of my films. My new network also aids in overcoming creative blocks by providing fresh ideas."
+                },
+                "reason": "旧记忆指出朋友和同事是主要支持系统，新证据确认了这一点（Mary 和 Steven 的作用），同时补充了‘新网络’（new network）在提供创意灵感方面的具体作用，增加了支持系统的构成信息，但未否定旧事实。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Friends and colleagues are main support system",
+                "located": "Friends and colleagues are main support system",
+                "method": "exact",
+                "start": 0,
+                "end": 46
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/15_e76eedc7-87e9-4282-b7db-68ed72b0c8ba_experimental.json",
+          "seconds": [
+            8.645
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 16,
+      "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s010:m001",
+      "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+      "old_memory": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"d1e2e0e6-45fd-49ef-bbec-e6521db283e6\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"classical symphonies\",\n  \"attribute\": \"preference and reasons for liking\",\n  \"conditions\": \"after attending a live orchestral performance\",\n  \"candidate_impact_fragment\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\",\n  \"old_quote\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences.\"\n  },\n  \"reason\": \"新证据明确指出用户的音乐偏好发生了转变（shifted my musical preferences），并随后表示目前专注于巴洛克时期（focused on Baroque for now），这暗示了对旧事实中宽泛的'古典交响乐'偏好可能产生了变化或范围调整，但无法仅凭文本确定旧偏好是否完全失效或仅发生重心转移。\",\n  \"confirmation_questions\": [\n    \"用户是否不再喜欢非巴洛克时期的古典交响乐，还是仅仅目前更专注于巴洛克风格？\",\n    \"音乐偏好的转变是否意味着用户不再认为复杂性、历史意义和真实听觉体验是喜欢古典交响乐的原因？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+                "fact_index": 1,
+                "old_subfact": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.",
+                "relation": "possible_change",
+                "object": "classical symphonies",
+                "attribute": "preference and reasons for liking",
+                "conditions": "after attending a live orchestral performance",
+                "candidate_impact_fragment": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "old_quote": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences."
+                },
+                "reason": "新证据明确指出用户的音乐偏好发生了转变（shifted my musical preferences），并随后表示目前专注于巴洛克时期（focused on Baroque for now），这暗示了对旧事实中宽泛的'古典交响乐'偏好可能产生了变化或范围调整，但无法仅凭文本确定旧偏好是否完全失效或仅发生重心转移。",
+                "confirmation_questions": [
+                  "用户是否不再喜欢非巴洛克时期的古典交响乐，还是仅仅目前更专注于巴洛克风格？",
+                  "音乐偏好的转变是否意味着用户不再认为复杂性、历史意义和真实听觉体验是喜欢古典交响乐的原因？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "located": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "method": "exact",
+                "start": 0,
+                "end": 114
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/16_d1e2e0e6-45fd-49ef-bbec-e6521db283e6_v2.json",
+          "seconds": [
+            11.244
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"d1e2e0e6-45fd-49ef-bbec-e6521db283e6\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"classical symphonies\",\n  \"attribute\": \"preference and reasons for liking\",\n  \"conditions\": \"general musical preference\",\n  \"candidate_impact_fragment\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\",\n  \"old_quote\": \"Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences.\"\n  },\n  \"reason\": \"新证据表明用户的音乐偏好发生了转变（shifted my musical preferences），并特别关注巴洛克交响乐，这可能意味着对广义古典交响乐的偏好或原因发生了变化，但无法确定旧事实是否完全失效或仅部分调整。\",\n  \"confirmation_questions\": [\n    \"用户是否仍然喜欢所有古典交响乐，还是偏好已完全转向巴洛克时期？\",\n    \"音乐偏好的转变是否意味着旧记忆中提到的复杂性、历史意义和真实听觉体验不再是主要理由？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "d1e2e0e6-45fd-49ef-bbec-e6521db283e6",
+                "fact_index": 1,
+                "old_subfact": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience.",
+                "relation": "possible_change",
+                "object": "classical symphonies",
+                "attribute": "preference and reasons for liking",
+                "conditions": "general musical preference",
+                "candidate_impact_fragment": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "old_quote": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently attended a live orchestral performance at a renowned concert hall. The experience was breathtaking and really shifted my musical preferences."
+                },
+                "reason": "新证据表明用户的音乐偏好发生了转变（shifted my musical preferences），并特别关注巴洛克交响乐，这可能意味着对广义古典交响乐的偏好或原因发生了变化，但无法确定旧事实是否完全失效或仅部分调整。",
+                "confirmation_questions": [
+                  "用户是否仍然喜欢所有古典交响乐，还是偏好已完全转向巴洛克时期？",
+                  "音乐偏好的转变是否意味着旧记忆中提到的复杂性、历史意义和真实听觉体验不再是主要理由？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "located": "Likes classical symphonies because of their complexity, historical significance, and authentic auditory experience",
+                "method": "exact",
+                "start": 0,
+                "end": 114
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/16_d1e2e0e6-45fd-49ef-bbec-e6521db283e6_experimental.json",
+          "seconds": [
+            10.47
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 17,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m001",
+      "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+      "old_memory": "Employed in the technology industry",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"aca2b85d-8856-4989-bfdd-b032fde1bda3\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Employed in the technology industry\",\n  \"relation\": \"possible_change\",\n  \"object\": \"用户\",\n  \"attribute\": \"就业行业\",\n  \"conditions\": \"当前时间状态\",\n  \"candidate_impact_fragment\": \"Employed in the technology industry\",\n  \"old_quote\": \"Employed in the technology industry\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've been thinking a lot about my career transition from technology to political consulting.\"\n  },\n  \"reason\": \"新证据表明用户正在考虑从科技行业转型到政治咨询，但仅表达了思考和意愿，未确认是否已完成职业变更，因此旧事实可能随时间变化但尚未被证实失效。\",\n  \"confirmation_questions\": [\n    \"用户是否已经正式离职并开始在政治咨询领域工作？\",\n    \"用户目前的实际工作状态是仍在职于科技行业还是已处于过渡期？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+                "fact_index": 1,
+                "old_subfact": "Employed in the technology industry",
+                "relation": "possible_change",
+                "object": "用户",
+                "attribute": "就业行业",
+                "conditions": "当前时间状态",
+                "candidate_impact_fragment": "Employed in the technology industry",
+                "old_quote": "Employed in the technology industry",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I've been thinking a lot about my career transition from technology to political consulting."
+                },
+                "reason": "新证据表明用户正在考虑从科技行业转型到政治咨询，但仅表达了思考和意愿，未确认是否已完成职业变更，因此旧事实可能随时间变化但尚未被证实失效。",
+                "confirmation_questions": [
+                  "用户是否已经正式离职并开始在政治咨询领域工作？",
+                  "用户目前的实际工作状态是仍在职于科技行业还是已处于过渡期？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Employed in the technology industry",
+                "located": "Employed in the technology industry",
+                "method": "exact",
+                "start": 0,
+                "end": 35
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/17_aca2b85d-8856-4989-bfdd-b032fde1bda3_v2.json",
+          "seconds": [
+            8.372
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"aca2b85d-8856-4989-bfdd-b032fde1bda3\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Employed in the technology industry\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"employment industry\",\n  \"conditions\": \"current status\",\n  \"candidate_impact_fragment\": \"Employed in the technology industry\",\n  \"old_quote\": \"Employed in the technology industry\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've been thinking a lot about my career transition from technology to political consulting.\"\n  },\n  \"reason\": \"新证据表明用户正在考虑从科技行业转向政治咨询，但仅表达为思考阶段（thinking about），未确认是否已完成职业变更，因此旧事实可能随时间变化但尚未被明确推翻。\",\n  \"confirmation_questions\": [\n    \"用户是否已经正式离职或完成从科技行业到政治咨询的职业转换？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "aca2b85d-8856-4989-bfdd-b032fde1bda3",
+                "fact_index": 1,
+                "old_subfact": "Employed in the technology industry",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "employment industry",
+                "conditions": "current status",
+                "candidate_impact_fragment": "Employed in the technology industry",
+                "old_quote": "Employed in the technology industry",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I've been thinking a lot about my career transition from technology to political consulting."
+                },
+                "reason": "新证据表明用户正在考虑从科技行业转向政治咨询，但仅表达为思考阶段（thinking about），未确认是否已完成职业变更，因此旧事实可能随时间变化但尚未被明确推翻。",
+                "confirmation_questions": [
+                  "用户是否已经正式离职或完成从科技行业到政治咨询的职业转换？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Employed in the technology industry",
+                "located": "Employed in the technology industry",
+                "method": "exact",
+                "start": 0,
+                "end": 35
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/17_aca2b85d-8856-4989-bfdd-b032fde1bda3_experimental.json",
+          "seconds": [
+            8.221
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 18,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m003",
+      "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+      "old_memory": "Works at Blockchain Tech as a senior developer",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Blockchain Tech as a senior developer\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"current employment status and role\",\n  \"conditions\": \"transitioning from technology to political consulting\",\n  \"candidate_impact_fragment\": \"Works at Blockchain Tech as a senior developer\",\n  \"old_quote\": \"Works at Blockchain Tech as a senior developer\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've been thinking a lot about my career transition from technology to political consulting.\"\n  },\n  \"reason\": \"新证据表明用户正在考虑从技术行业转向政治咨询，暗示职业状态可能发生变化，但未明确说明是否已离职或当前仍在职，因此属于可能的变化而非确定的历史纠错。\",\n  \"confirmation_questions\": [\n    \"用户是否已经正式离职 Blockchain Tech？\",\n    \"用户目前是否仍担任高级开发者，还是已完全转入政治咨询工作？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "fact_index": 1,
+                "old_subfact": "Works at Blockchain Tech as a senior developer",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "current employment status and role",
+                "conditions": "transitioning from technology to political consulting",
+                "candidate_impact_fragment": "Works at Blockchain Tech as a senior developer",
+                "old_quote": "Works at Blockchain Tech as a senior developer",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I've been thinking a lot about my career transition from technology to political consulting."
+                },
+                "reason": "新证据表明用户正在考虑从技术行业转向政治咨询，暗示职业状态可能发生变化，但未明确说明是否已离职或当前仍在职，因此属于可能的变化而非确定的历史纠错。",
+                "confirmation_questions": [
+                  "用户是否已经正式离职 Blockchain Tech？",
+                  "用户目前是否仍担任高级开发者，还是已完全转入政治咨询工作？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Works at Blockchain Tech as a senior developer",
+                "located": "Works at Blockchain Tech as a senior developer",
+                "method": "exact",
+                "start": 0,
+                "end": 46
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/18_05afde13-35bd-4d26-bbae-6de427d58db1_v2.json",
+          "seconds": [
+            8.795
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Works at Blockchain Tech as a senior developer\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"employment status and role\",\n  \"conditions\": \"career transition from technology to political consulting\",\n  \"candidate_impact_fragment\": \"Works at Blockchain Tech as a senior developer\",\n  \"old_quote\": \"Works at Blockchain Tech as a senior developer\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I've been thinking a lot about my career transition from technology to political consulting.\"\n  },\n  \"reason\": \"New evidence indicates the user is considering a career transition from technology to political consulting, suggesting a potential change in employment status, but does not confirm the transition has occurred or that the previous role has ended.\",\n  \"confirmation_questions\": [\n    \"Has the user officially resigned from Blockchain Tech?\",\n    \"Has the user started working in political consulting?\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "fact_index": 1,
+                "old_subfact": "Works at Blockchain Tech as a senior developer",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "employment status and role",
+                "conditions": "career transition from technology to political consulting",
+                "candidate_impact_fragment": "Works at Blockchain Tech as a senior developer",
+                "old_quote": "Works at Blockchain Tech as a senior developer",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I've been thinking a lot about my career transition from technology to political consulting."
+                },
+                "reason": "New evidence indicates the user is considering a career transition from technology to political consulting, suggesting a potential change in employment status, but does not confirm the transition has occurred or that the previous role has ended.",
+                "confirmation_questions": [
+                  "Has the user officially resigned from Blockchain Tech?",
+                  "Has the user started working in political consulting?"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Works at Blockchain Tech as a senior developer",
+                "located": "Works at Blockchain Tech as a senior developer",
+                "method": "exact",
+                "start": 0,
+                "end": 46
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/18_05afde13-35bd-4d26-bbae-6de427d58db1_experimental.json",
+          "seconds": [
+            8.623
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 19,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s003:m004",
+      "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+      "old_memory": "Monthly income is 17000 USD",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"46374680-0009-4625-a3a7-f2b4e329a7b5\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Monthly income is 17000 USD\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"monthly income\",\n  \"conditions\": \"current employment status\",\n  \"candidate_impact_fragment\": \"Monthly income is 17000 USD\",\n  \"old_quote\": \"Monthly income is 17000 USD\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"I'm moving from a comfortable salary to zero income initially, which is a bit daunting.\"\n  },\n  \"reason\": \"新证据表明用户正从有薪水的状态转变为零收入，暗示月收入属性可能已随时间或条件（如离职）发生变化，但旧事实描述的是过去状态，新证据未明确否定旧事实当时的真实性，仅表明状态可能已变。\",\n  \"confirmation_questions\": [\n    \"用户是否已经正式离职导致月收入变为零？\",\n    \"新证据中的'zero income'是否指当前时刻的月收入状态？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+                "fact_index": 1,
+                "old_subfact": "Monthly income is 17000 USD",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "monthly income",
+                "conditions": "current employment status",
+                "candidate_impact_fragment": "Monthly income is 17000 USD",
+                "old_quote": "Monthly income is 17000 USD",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "I'm moving from a comfortable salary to zero income initially, which is a bit daunting."
+                },
+                "reason": "新证据表明用户正从有薪水的状态转变为零收入，暗示月收入属性可能已随时间或条件（如离职）发生变化，但旧事实描述的是过去状态，新证据未明确否定旧事实当时的真实性，仅表明状态可能已变。",
+                "confirmation_questions": [
+                  "用户是否已经正式离职导致月收入变为零？",
+                  "新证据中的'zero income'是否指当前时刻的月收入状态？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Monthly income is 17000 USD",
+                "located": "Monthly income is 17000 USD",
+                "method": "exact",
+                "start": 0,
+                "end": 27
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/19_46374680-0009-4625-a3a7-f2b4e329a7b5_v2.json",
+          "seconds": [
+            9.31
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"46374680-0009-4625-a3a7-f2b4e329a7b5\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Monthly income is 17000 USD\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"monthly income\",\n  \"conditions\": \"current employment status\",\n  \"candidate_impact_fragment\": \"Monthly income is 17000 USD\",\n  \"old_quote\": \"Monthly income is 17000 USD\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-4\",\n    \"quote\": \"One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting.\"\n  },\n  \"reason\": \"旧记忆记录月收入为 17000 美元，新证据表明用户正从舒适薪资过渡到零收入，暗示收入状态可能已随时间或条件（如离职）发生变化，但无法仅凭文本确认旧事实是否完全失效或仅为暂时状态。\",\n  \"confirmation_questions\": [\n    \"用户是否已正式离职导致月收入变为零？\",\n    \"零收入状态是暂时的过渡期还是永久性的职业变更？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "46374680-0009-4625-a3a7-f2b4e329a7b5",
+                "fact_index": 1,
+                "old_subfact": "Monthly income is 17000 USD",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "monthly income",
+                "conditions": "current employment status",
+                "candidate_impact_fragment": "Monthly income is 17000 USD",
+                "old_quote": "Monthly income is 17000 USD",
+                "new_quote": {
+                  "source_id": "dialogue-4",
+                  "quote": "One challenge is the lack of immediate income. I'm moving from a comfortable salary to zero income initially, which is a bit daunting."
+                },
+                "reason": "旧记忆记录月收入为 17000 美元，新证据表明用户正从舒适薪资过渡到零收入，暗示收入状态可能已随时间或条件（如离职）发生变化，但无法仅凭文本确认旧事实是否完全失效或仅为暂时状态。",
+                "confirmation_questions": [
+                  "用户是否已正式离职导致月收入变为零？",
+                  "零收入状态是暂时的过渡期还是永久性的职业变更？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Monthly income is 17000 USD",
+                "located": "Monthly income is 17000 USD",
+                "method": "exact",
+                "start": 0,
+                "end": 27
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/19_46374680-0009-4625-a3a7-f2b4e329a7b5_experimental.json",
+          "seconds": [
+            9.705
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 21,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s004:m000",
+      "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+      "old_memory": "Mental health is stable and normal with no mental health issues",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e5ec2bdf-d263-4e0f-a4bd-e649154c5993\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Mental health is stable and normal with no mental health issues.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"mental health status\",\n  \"conditions\": \"during career transition into political consulting\",\n  \"candidate_impact_fragment\": \"Mental health is stable and normal with no mental health issues\",\n  \"old_quote\": \"Mental health is stable and normal with no mental health issues\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now.\"\n  },\n  \"reason\": \"旧事实记录心理健康稳定且无问题，新证据显示用户在职业转型期间感到压力且明确提到压力正在影响其心理健康，表明状态可能随时间或条件发生变化，但不足以直接断定旧事实完全失效或需立即更正。\",\n  \"confirmation_questions\": [\n    \"用户当前的心理健康状况是否已不再稳定或出现具体问题？\",\n    \"压力对心理健康的影响是否已达到需要医疗干预或改变原有评估的程度？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+                "fact_index": 1,
+                "old_subfact": "Mental health is stable and normal with no mental health issues.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "mental health status",
+                "conditions": "during career transition into political consulting",
+                "candidate_impact_fragment": "Mental health is stable and normal with no mental health issues",
+                "old_quote": "Mental health is stable and normal with no mental health issues",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now."
+                },
+                "reason": "旧事实记录心理健康稳定且无问题，新证据显示用户在职业转型期间感到压力且明确提到压力正在影响其心理健康，表明状态可能随时间或条件发生变化，但不足以直接断定旧事实完全失效或需立即更正。",
+                "confirmation_questions": [
+                  "用户当前的心理健康状况是否已不再稳定或出现具体问题？",
+                  "压力对心理健康的影响是否已达到需要医疗干预或改变原有评估的程度？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Mental health is stable and normal with no mental health issues",
+                "located": "Mental health is stable and normal with no mental health issues",
+                "method": "exact",
+                "start": 0,
+                "end": 63
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/21_e5ec2bdf-d263-4e0f-a4bd-e649154c5993_v2.json",
+          "seconds": [
+            9.705
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"e5ec2bdf-d263-4e0f-a4bd-e649154c5993\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Mental health is stable and normal with no mental health issues.\",\n  \"relation\": \"possible_change\",\n  \"object\": \"user\",\n  \"attribute\": \"mental health status\",\n  \"conditions\": \"during career transition into political consulting\",\n  \"candidate_impact_fragment\": \"Mental health is stable and normal with no mental health issues\",\n  \"old_quote\": \"Mental health is stable and normal with no mental health issues\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now.\"\n  },\n  \"reason\": \"旧记忆记录心理健康稳定且无问题，新证据显示用户在职业转型期间感到压力且明确提到压力正在影响其心理健康，表明状态可能随时间或条件发生变化，但不足以直接认定旧事实完全失效。\",\n  \"confirmation_questions\": [\n    \"用户当前的心理健康状况是否已不再稳定或出现具体问题？\",\n    \"压力对心理健康的影响是否已达到需要医疗干预或改变原有评估的程度？\"\n  ]\n}",
+              "candidate": {
+                "memory_id": "e5ec2bdf-d263-4e0f-a4bd-e649154c5993",
+                "fact_index": 1,
+                "old_subfact": "Mental health is stable and normal with no mental health issues.",
+                "relation": "possible_change",
+                "object": "user",
+                "attribute": "mental health status",
+                "conditions": "during career transition into political consulting",
+                "candidate_impact_fragment": "Mental health is stable and normal with no mental health issues",
+                "old_quote": "Mental health is stable and normal with no mental health issues",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "I really need to find a way to manage this stress better. It's affecting my mental health, and I can't afford that right now."
+                },
+                "reason": "旧记忆记录心理健康稳定且无问题，新证据显示用户在职业转型期间感到压力且明确提到压力正在影响其心理健康，表明状态可能随时间或条件发生变化，但不足以直接认定旧事实完全失效。",
+                "confirmation_questions": [
+                  "用户当前的心理健康状况是否已不再稳定或出现具体问题？",
+                  "压力对心理健康的影响是否已达到需要医疗干预或改变原有评估的程度？"
+                ]
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "Mental health is stable and normal with no mental health issues",
+                "located": "Mental health is stable and normal with no mental health issues",
+                "method": "exact",
+                "start": 0,
+                "end": 63
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/21_e5ec2bdf-d263-4e0f-a4bd-e649154c5993_experimental.json",
+          "seconds": [
+            9.768
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 22,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004",
+      "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+      "old_memory": "MooreSandra is a friend who shares political views and supports the same politician",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"37756be3-aaee-4e1c-b8f7-a5fed3d94890\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"MooreSandra is a friend who shares political views and supports the same politician.\",\n  \"relation\": \"supplement\",\n  \"object\": \"MooreSandra\",\n  \"attribute\": \"supportive behavior during transition\",\n  \"conditions\": \"during this transition\",\n  \"candidate_impact_fragment\": \"\",\n  \"old_quote\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.\"\n  },\n  \"reason\": \"新证据描述了 MooreSandra 在特定过渡期间提供支持和战略建议的行为，这与旧事实中关于政治观点一致和支持同一政治家的描述相容，但增加了关于具体支持行为的新信息，未证实或否定旧事实。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "fact_index": 1,
+                "old_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+                "relation": "supplement",
+                "object": "MooreSandra",
+                "attribute": "supportive behavior during transition",
+                "conditions": "during this transition",
+                "candidate_impact_fragment": "",
+                "old_quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition."
+                },
+                "reason": "新证据描述了 MooreSandra 在特定过渡期间提供支持和战略建议的行为，这与旧事实中关于政治观点一致和支持同一政治家的描述相容，但增加了关于具体支持行为的新信息，未证实或否定旧事实。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "",
+                "located": "",
+                "method": "empty",
+                "start": null,
+                "end": null
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/22_37756be3-aaee-4e1c-b8f7-a5fed3d94890_v2.json",
+          "seconds": [
+            8.171
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"37756be3-aaee-4e1c-b8f7-a5fed3d94890\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"MooreSandra is a friend who shares political views and supports the same politician.\",\n  \"relation\": \"supplement\",\n  \"object\": \"MooreSandra\",\n  \"attribute\": \"supportive behavior during transition\",\n  \"conditions\": \"during this transition\",\n  \"candidate_impact_fragment\": \"\",\n  \"old_quote\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.\"\n  },\n  \"reason\": \"新证据描述了 MooreSandra 在特定过渡期间提供支持和战略建议的行为，这与旧记忆中关于其政治观点和朋友身份的描述相容，但增加了关于具体支持行为的新信息，未证实或否定旧事实。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "fact_index": 1,
+                "old_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+                "relation": "supplement",
+                "object": "MooreSandra",
+                "attribute": "supportive behavior during transition",
+                "conditions": "during this transition",
+                "candidate_impact_fragment": "",
+                "old_quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition."
+                },
+                "reason": "新证据描述了 MooreSandra 在特定过渡期间提供支持和战略建议的行为，这与旧记忆中关于其政治观点和朋友身份的描述相容，但增加了关于具体支持行为的新信息，未证实或否定旧事实。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "",
+                "located": "",
+                "method": "empty",
+                "start": null,
+                "end": null
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/22_37756be3-aaee-4e1c-b8f7-a5fed3d94890_experimental.json",
+          "seconds": [
+            8.312
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 22,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s005:m004",
+      "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+      "old_memory": "GonzalezMary is a close friend who discusses political strategies",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"98c6916c-8aa9-4560-94ce-5697f39ac818\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"GonzalezMary is a close friend who discusses political strategies.\",\n  \"relation\": \"support\",\n  \"object\": \"GonzalezMary\",\n  \"attribute\": \"discusses political strategies\",\n  \"conditions\": \"with the user\",\n  \"candidate_impact_fragment\": \"discusses political strategies\",\n  \"old_quote\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.\"\n  },\n  \"reason\": \"新证据提到 GonzalezMary 提供战略建议（strategic advice），这与旧事实中讨论政治策略（discusses political strategies）的行为一致，支持了该属性的真实性。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "fact_index": 1,
+                "old_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+                "relation": "support",
+                "object": "GonzalezMary",
+                "attribute": "discusses political strategies",
+                "conditions": "with the user",
+                "candidate_impact_fragment": "discusses political strategies",
+                "old_quote": "GonzalezMary is a close friend who discusses political strategies",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition."
+                },
+                "reason": "新证据提到 GonzalezMary 提供战略建议（strategic advice），这与旧事实中讨论政治策略（discusses political strategies）的行为一致，支持了该属性的真实性。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "discusses political strategies",
+                "located": "discusses political strategies",
+                "method": "exact",
+                "start": 35,
+                "end": 65
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/22_98c6916c-8aa9-4560-94ce-5697f39ac818_v2.json",
+          "seconds": [
+            7.902
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"98c6916c-8aa9-4560-94ce-5697f39ac818\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"GonzalezMary is a close friend who discusses political strategies.\",\n  \"relation\": \"support\",\n  \"object\": \"GonzalezMary\",\n  \"attribute\": \"discusses political strategies\",\n  \"conditions\": \"close friend relationship\",\n  \"candidate_impact_fragment\": \"discusses political strategies\",\n  \"old_quote\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-10\",\n    \"quote\": \"MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.\"\n  },\n  \"reason\": \"New evidence confirms GonzalezMary provides 'strategic advice', which supports the existing fact that she discusses political strategies, without indicating a change or adding unrelated information.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "fact_index": 1,
+                "old_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+                "relation": "support",
+                "object": "GonzalezMary",
+                "attribute": "discusses political strategies",
+                "conditions": "close friend relationship",
+                "candidate_impact_fragment": "discusses political strategies",
+                "old_quote": "GonzalezMary is a close friend who discusses political strategies",
+                "new_quote": {
+                  "source_id": "dialogue-10",
+                  "quote": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition."
+                },
+                "reason": "New evidence confirms GonzalezMary provides 'strategic advice', which supports the existing fact that she discusses political strategies, without indicating a change or adding unrelated information.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "discusses political strategies",
+                "located": "discusses political strategies",
+                "method": "exact",
+                "start": 35,
+                "end": 65
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/22_98c6916c-8aa9-4560-94ce-5697f39ac818_experimental.json",
+          "seconds": [
+            7.787
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 23,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001",
+      "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+      "old_memory": "MooreSandra is a friend who shares political views and supports the same politician",
+      "versions": {
+        "v2": {
+          "status": "partial_or_error",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "error",
+              "raw_output": "{\n  \"memory_id\": \"37756be3-aaee-4e1c-b8f7-a5fed3d94890\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"MooreSandra is a friend who shares political views and supports the same politician.\",\n  \"relation\": \"support\",\n  \"object\": \"MooreSandra\",\n  \"attribute\": \"friendship and political alignment\",\n  \"conditions\": \"user's network\",\n  \"candidate_impact_fragment\": \"MooreSandra is my Friend, Sandra shares my political views and supports the same politician\",\n  \"old_quote\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.\"\n  },\n  \"reason\": \"新证据中用户将 Sandra 列为其网络（network）的一部分以利用其关系，这与旧事实中定义的‘朋友’身份相容，且未出现任何否定或改变政治观点一致性的信息，因此支持旧事实的延续。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "fact_index": 1,
+                "old_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+                "relation": "support",
+                "object": "MooreSandra",
+                "attribute": "friendship and political alignment",
+                "conditions": "user's network",
+                "candidate_impact_fragment": "MooreSandra is my Friend, Sandra shares my political views and supports the same politician",
+                "old_quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I'm planning to leverage my network, including Sandra and Mary, to secure initial clients."
+                },
+                "reason": "新证据中用户将 Sandra 列为其网络（network）的一部分以利用其关系，这与旧事实中定义的‘朋友’身份相容，且未出现任何否定或改变政治观点一致性的信息，因此支持旧事实的延续。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": false,
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [
+                {
+                  "stage": "validation",
+                  "type": "ValueError",
+                  "message": "candidate fragment cannot be uniquely located in fact memory evidence: not_found"
+                }
+              ],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "MooreSandra is my Friend, Sandra shares my political views and supports the same politician",
+                "located": null,
+                "method": "not_found",
+                "start": null,
+                "end": null
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/23_37756be3-aaee-4e1c-b8f7-a5fed3d94890_v2.json",
+          "seconds": [
+            8.757
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"37756be3-aaee-4e1c-b8f7-a5fed3d94890\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"MooreSandra is a friend who shares political views and supports the same politician.\",\n  \"relation\": \"supplement\",\n  \"object\": \"MooreSandra\",\n  \"attribute\": \"friendship and political alignment\",\n  \"conditions\": \"none specified\",\n  \"candidate_impact_fragment\": \"\",\n  \"old_quote\": \"MooreSandra is a friend who shares political views and supports the same politician\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.\"\n  },\n  \"reason\": \"New evidence mentions leveraging Sandra's network for a new business venture, which adds information about her role in the user's professional plans but does not contradict or directly support the specific claim about shared political views or supporting the same politician.\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "37756be3-aaee-4e1c-b8f7-a5fed3d94890",
+                "fact_index": 1,
+                "old_subfact": "MooreSandra is a friend who shares political views and supports the same politician.",
+                "relation": "supplement",
+                "object": "MooreSandra",
+                "attribute": "friendship and political alignment",
+                "conditions": "none specified",
+                "candidate_impact_fragment": "",
+                "old_quote": "MooreSandra is a friend who shares political views and supports the same politician",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I'm planning to leverage my network, including Sandra and Mary, to secure initial clients."
+                },
+                "reason": "New evidence mentions leveraging Sandra's network for a new business venture, which adds information about her role in the user's professional plans but does not contradict or directly support the specific claim about shared political views or supporting the same politician.",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "",
+                "located": "",
+                "method": "empty",
+                "start": null,
+                "end": null
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/23_37756be3-aaee-4e1c-b8f7-a5fed3d94890_experimental.json",
+          "seconds": [
+            8.248
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    },
+    {
+      "record": 23,
+      "target_id": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001",
+      "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+      "old_memory": "GonzalezMary is a close friend who discusses political strategies",
+      "versions": {
+        "v2": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"98c6916c-8aa9-4560-94ce-5697f39ac818\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"GonzalezMary is a close friend who discusses political strategies.\",\n  \"relation\": \"support\",\n  \"object\": \"GonzalezMary\",\n  \"attribute\": \"close friend who discusses political strategies\",\n  \"conditions\": \"with the user\",\n  \"candidate_impact_fragment\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"old_quote\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.\"\n  },\n  \"reason\": \"新证据中用户计划利用包括 Mary 在内的网络来为政治咨询公司获取客户，这与旧事实中 Mary 作为讨论政治策略的密友的角色一致，支持了该关系的持续性和相关性。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "fact_index": 1,
+                "old_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+                "relation": "support",
+                "object": "GonzalezMary",
+                "attribute": "close friend who discusses political strategies",
+                "conditions": "with the user",
+                "candidate_impact_fragment": "GonzalezMary is a close friend who discusses political strategies",
+                "old_quote": "GonzalezMary is a close friend who discusses political strategies",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I'm planning to leverage my network, including Sandra and Mary, to secure initial clients."
+                },
+                "reason": "新证据中用户计划利用包括 Mary 在内的网络来为政治咨询公司获取客户，这与旧事实中 Mary 作为讨论政治策略的密友的角色一致，支持了该关系的持续性和相关性。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "GonzalezMary is a close friend who discusses political strategies",
+                "located": "GonzalezMary is a close friend who discusses political strategies",
+                "method": "exact",
+                "start": 0,
+                "end": 65
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/23_98c6916c-8aa9-4560-94ce-5697f39ac818_v2.json",
+          "seconds": [
+            8.317
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        },
+        "experimental": {
+          "status": "ok",
+          "calls_attempted": 1,
+          "facts": [
+            {
+              "fact_index": 1,
+              "status": "ok",
+              "raw_output": "{\n  \"memory_id\": \"98c6916c-8aa9-4560-94ce-5697f39ac818\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"GonzalezMary is a close friend who discusses political strategies.\",\n  \"relation\": \"support\",\n  \"object\": \"GonzalezMary\",\n  \"attribute\": \"close friend who discusses political strategies\",\n  \"conditions\": \"\",\n  \"candidate_impact_fragment\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"old_quote\": \"GonzalezMary is a close friend who discusses political strategies\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.\"\n  },\n  \"reason\": \"新证据中用户计划利用包括 Mary 在内的网络来争取客户，这与旧记忆中 Mary 是讨论政治策略的密友这一事实相容，且延续了其在政治相关事务中的角色，未出现冲突或状态变化。\",\n  \"confirmation_questions\": []\n}",
+              "candidate": {
+                "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+                "fact_index": 1,
+                "old_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+                "relation": "support",
+                "object": "GonzalezMary",
+                "attribute": "close friend who discusses political strategies",
+                "conditions": "",
+                "candidate_impact_fragment": "GonzalezMary is a close friend who discusses political strategies",
+                "old_quote": "GonzalezMary is a close friend who discusses political strategies",
+                "new_quote": {
+                  "source_id": "dialogue-0",
+                  "quote": "I'm planning to leverage my network, including Sandra and Mary, to secure initial clients."
+                },
+                "reason": "新证据中用户计划利用包括 Mary 在内的网络来争取客户，这与旧记忆中 Mary 是讨论政治策略的密友这一事实相容，且延续了其在政治相关事务中的角色，未出现冲突或状态变化。",
+                "confirmation_questions": []
+              },
+              "validation": {
+                "passed": true,
+                "checks": [
+                  "schema",
+                  "relation",
+                  "fact_identity",
+                  "old_quote",
+                  "new_quote",
+                  "candidate_fragment"
+                ],
+                "semantic_correctness": "not_checked"
+              },
+              "errors": [],
+              "old_quote_literal_match": true,
+              "new_quote_literal_match": true,
+              "fragment_match_rechecked": {
+                "raw": "GonzalezMary is a close friend who discusses political strategies",
+                "located": "GonzalezMary is a close friend who discusses political strategies",
+                "method": "exact",
+                "start": 0,
+                "end": 65
+              },
+              "semantic_correctness": "not_checked"
+            }
+          ],
+          "path": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/quote_holdout_paired_20261110_v1/pairs/23_98c6916c-8aa9-4560-94ce-5697f39ac818_experimental.json",
+          "seconds": [
+            8.474
+          ],
+          "generation_parameters": [
+            {
+              "temperature": 0,
+              "n_predict": 768,
+              "stream": false
+            }
+          ]
+        }
+      },
+      "semantic_review": "pending"
+    }
+  ]
+}

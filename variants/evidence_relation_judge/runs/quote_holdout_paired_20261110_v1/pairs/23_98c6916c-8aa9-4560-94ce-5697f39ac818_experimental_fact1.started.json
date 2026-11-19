@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-10T16:23:24.330095+08:00",
+  "record": 23,
+  "version": "experimental",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+    "memory_text": "GonzalezMary is a close friend who discusses political strategies",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+      "raw_subfact": "GonzalezMary is a close friend who discusses political strategies.",
+      "contextualized_subfact": "GonzalezMary is a close friend of the user who discusses political strategies with the user.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "98c6916c-8aa9-4560-94ce-5697f39ac818",
+          "quote": "GonzalezMary is a close friend who discusses political strategies",
+          "supports": "旧记忆记载 GonzalezMary 是密友且讨论政治策略，但未明确‘密友’的对象及‘讨论’的互动对象。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me",
+          "supports": "来源上下文由 user 发言，明确‘密友’关系指向 user，且‘讨论政治策略’是 Mary 与 user 之间的互动，用于补足 raw 中的缺失对象。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/1/dialogue/6/content",
+        "text": "Of course. I have several important friends and colleagues: MooreSandra is my Friend, Sandra shares my political views and supports the same politician, providing me with a sense of camaraderie and encouragement in my beliefs. GonzalezMary is my Friend, Mary is a close friend who often discusses political strategies with me, strengthening my resolve and commitment to support the politician. BrownMichelle is my Colleague, Michelle and I work together at Blockchain Tech, and she influences my career by helping me balance my professional responsibilities with my political interests.",
+        "speaker": "user",
+        "recorded_at": "Sep 05, 2025, 10:05:40"
+      },
+      {
+        "source_id": "ctx-2",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=348492a7-cfe4-ee1d-73c3-c276d6ba8277 /sessions/5/dialogue/10/content",
+        "text": "MooreSandra and GonzalezMary have been incredibly supportive, providing encouragement and strategic advice throughout this transition.",
+        "speaker": "user",
+        "recorded_at": "Dec 10, 2025, 18:27:24"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "348492a7-cfe4-ee1d-73c3-c276d6ba8277:s006:m001 /sessions/6/dialogue/0/content",
+        "text": "I'm really excited about finally launching my political consulting firm. It's been a long journey, but it's fulfilling to see it come to fruition. I'm planning to leverage my network, including Sandra and Mary, to secure initial clients.",
+        "speaker": "user",
+        "recorded_at": "Dec 20, 2025, 07:13:08"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a"
+}

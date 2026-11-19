@@ -1,0 +1,25 @@
+{
+  "source_baseline": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/native_official_baseline_20261113_v1",
+  "model": "qwen-plus",
+  "endpoint_host": "dashscope.aliyuncs.com",
+  "endpoint_path": "/compatible-mode/v1",
+  "temperature": 0,
+  "max_tokens": 16384,
+  "timeout_seconds": 180,
+  "official_retry_attempts": 1,
+  "sdk_retries": 2,
+  "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "openai": "2.44.0",
+  "official_commit": "718f16ff0c83413b1c86fa83fc13cc1a639871f9",
+  "official_file_sha256": {
+    "HaluMem/eval/evaluation.py": "d4c0376a7e59872093564686d77db487ecf8fb5b5ba5f499f8c2ef4e417dba31",
+    "HaluMem/eval/eval_tools.py": "0c08e5ecb8c93945bafc4bd0336bd6c9756b40d175f442ce44aca4a43169ee3b",
+    "HaluMem/eval/llms.py": "3944e8133c3777506f2f17971884f18c83ab7379fc3d79d22dfd6a748c0b8547",
+    "HaluMem/eval/prompts.py": "641a9e89c8a42cedb83feed47543ab35cbd80cb80fb515c0a7afab60fe259a58",
+    "scripts/halumem_official/prepare.py": "3a45cd860a4e84752cfd213cf58f5cb114ecf0b634cd198ea6239a64b7854f58"
+  },
+  "input_sha256": "640464d9fc083373a603d4f12d37a80dc7e88cc5d2cd43acf5b0366871d4102a",
+  "baseline_result_sha256": "f496bf90c7c0766a4c80a85af603bdf20dec70d6092cf6fafc3346846a0ff0ff",
+  "invalid_sha256": "82105fdd435b1b61625ff5c10d8b9fa5b7e1797efa484d136d46c143211c03be",
+  "note": "Exactly one official scorer invocation per item; SDK may internally retry connection failures. Model alias does not pin weights."
+}

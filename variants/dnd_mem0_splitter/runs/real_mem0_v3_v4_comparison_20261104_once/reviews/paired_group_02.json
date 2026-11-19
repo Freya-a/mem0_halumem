@@ -1,0 +1,646 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_05_relative_time",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、2 条 supports；未发现明确分类问题，全部旧信息覆盖。相对时间精确事件日保留为具体未决。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：精确晋升日期及 recently 的具体跨度未给出；ctx-1 recorded_at=Feb 01, 2026, 18:47:19 只是来源记录锚点，不是事件日。两版 pending=[] 未进一步标出这一具体未知，但不因此把保留 recently 的正文记为时间错误或关键遗漏。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：人物方面，旧记忆省略主语，ctx-1 的 user 角色加第一人称 I recently got promoted 与同一事件/职位/机构明确关联，足以支持 contextualized 的 The user，也支持用户原始发言归属。两版保留晋升、lead director、Historical Productions Ltd 与 recently；没有否定、条件或可能性内容需要额外补造，没有加入来源的 exciting 感受。v3 raw 的 Someone 是未指名占位和最小语法改写，未导入 user 等身份，不能仅因新增泛称就判 RAW_CONTEXT_LEAK；v4 raw 原样保留省略形式。没有把发言日写成晋升日，且没有与 pending 的确定性冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：memory quote 原文为 Recently promoted to lead director at Historical Productions Ltd，supports 仅称 Old memory states that someone was recently promoted...，忠实描述旧记忆的事件、职位、机构与 recency；someone 不声称具体身份，也不证明现实真实性。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：context quote 的 I recently got promoted to lead director at Historical Productions Ltd. 与 speaker=user 共同确认该同一事件的语义主体和用户直接发言；supports 中主体及逐字职位/机构比对均有依据。quote 的 It's quite exciting! 没有进入正文，不算扩写。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "晋升事件",
+              "input_span": "promoted",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版的 raw/contextualized 均保留晋升事件，而非静态在职或已经离任。"
+            },
+            {
+              "unit": "晋升后职位",
+              "input_span": "lead director",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留职位 lead director，没有降低为泛称 director。"
+            },
+            {
+              "unit": "机构",
+              "input_span": "Historical Productions Ltd",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留完整机构名称与 at 关系。"
+            },
+            {
+              "unit": "相对时间",
+              "input_span": "Recently",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留 recently，不把 recorded_at 当晋升日，不使用当前日期重算。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：1 条事实保留同一晋升事件的职位、机构、时间修饰，拆成多条没有明显收益。",
+          "uncertainties": [
+            "初步判断，待人工确认：精确晋升日期及 recently 的具体跨度未给出；ctx-1 recorded_at=Feb 01, 2026, 18:47:19 只是来源记录锚点，不是事件日。两版 pending=[] 未进一步标出这一具体未知，但不因此把保留 recently 的正文记为时间错误或关键遗漏。"
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、2 条 supports；未发现明确分类问题，全部旧信息覆盖。raw 更直接保留原省略表达。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：精确晋升日期及 recently 的具体跨度未给出；ctx-1 recorded_at=Feb 01, 2026, 18:47:19 只是来源记录锚点，不是事件日。两版 pending=[] 未进一步标出这一具体未知，但不因此把保留 recently 的正文记为时间错误或关键遗漏。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：人物方面，旧记忆省略主语，ctx-1 的 user 角色加第一人称 I recently got promoted 与同一事件/职位/机构明确关联，足以支持 contextualized 的 The user，也支持用户原始发言归属。两版保留晋升、lead director、Historical Productions Ltd 与 recently；没有否定、条件或可能性内容需要额外补造，没有加入来源的 exciting 感受。v3 raw 的 Someone 是未指名占位和最小语法改写，未导入 user 等身份，不能仅因新增泛称就判 RAW_CONTEXT_LEAK；v4 raw 原样保留省略形式。没有把发言日写成晋升日，且没有与 pending 的确定性冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：supports 准确说明旧记忆记载近期晋升及职位机构，且引文本身未明确主语和有限动词时态；没有以 memory 独自验证用户身份。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：quote 是用户第一人称 I recently got promoted...，同时含晋升、lead director、机构和 recently；supports 的确认范围限于这一直接自述。speaker 元数据与同主题第一人称共同作用，不是单靠角色判主体。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "晋升事件",
+              "input_span": "promoted",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版的 raw/contextualized 均保留晋升事件，而非静态在职或已经离任。"
+            },
+            {
+              "unit": "晋升后职位",
+              "input_span": "lead director",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留职位 lead director，没有降低为泛称 director。"
+            },
+            {
+              "unit": "机构",
+              "input_span": "Historical Productions Ltd",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留完整机构名称与 at 关系。"
+            },
+            {
+              "unit": "相对时间",
+              "input_span": "Recently",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：保留 recently，不把 recorded_at 当晋升日，不使用当前日期重算。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：与 v3 相同为 1 条同一事件事实，未因更短 raw 失去任何覆盖单元。",
+          "uncertainties": [
+            "初步判断，待人工确认：精确晋升日期及 recently 的具体跨度未给出；ctx-1 recorded_at=Feb 01, 2026, 18:47:19 只是来源记录锚点，不是事件日。两版 pending=[] 未进一步标出这一具体未知，但不因此把保留 recently 的正文记为时间错误或关键遗漏。"
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [
+          "初步判断，待人工确认：v4 raw 原样保留旧记忆的省略表达，memory supports 也明确引文本身没有主体；这提高来源边界的可见性，但 v3 的泛称 someone 本身未构成明确身份偷补错误。"
+        ],
+        "persistent": [
+          "初步判断，待人工确认：两版均保留事件、完整职位、机构和 recently，没有将记录日误作事件日，也未把兴奋感扩入正文。"
+        ],
+        "regressions": [],
+        "uncertainties": [
+          "初步判断，待人工确认：精确晋升日和 recently 跨度两版均未确定；这不是自动错误或遗漏。"
+        ]
+      }
+    },
+    {
+      "case_id": "case_06_plan_possibility",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、3 条 supports。正文完整保留计划/可能性；evidence[1] 把其他引文的 creative control 写成当前 quote 确认，观察到 SUPPORTS_OVERREACH。原始说话人与科幻意向来源已在原 pending 留出。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [
+                "SUPPORTS_OVERREACH"
+              ],
+              "findings": [
+                {
+                  "type": "SUPPORTS_OVERREACH",
+                  "input_span": "I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas.",
+                  "output_span": "Context confirms the plans are attributed to the user (second-person 'you'), and that they relate to an opportunity involving creative control.",
+                  "reason": "初步判断，待人工确认：此 evidence[1] 的 ctx-1 quote 只有 this opportunity，并没有 creative control；该词组来自另一个 ctx-2。当前 supports 把机会与创作控制的关系也写成该引文确认，超出本 quote 的局部支持范围。计划在语法上指向 you 这一部分有依据，不能据此连带验证机会的性质；此问题在支持说明中，未扩入 raw/contextualized 正文。"
+                }
+              ],
+              "uncertainties": [
+                "初步判断，待人工确认：ctx-1 是 assistant 的第二人称问题，不是 user 对历史/科幻计划的直接承诺；ctx-2 是 user 对创作控制和真实性的表态，没有说历史剧或科幻剧。语义主体可由 assistant 的 you plan 和同一工作语境合理关联到用户，但原始计划表述是否来自用户、尤其科幻可能性是否为其自身意向，仍待确认。",
+                "初步判断，待人工确认：具体机会、资源和时间安排未给出，不应补造；保留旧计划不等于这些条件已经发生。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：两版保留 plans 的计划范围、initiate 动作、groundbreaking historical dramas 对象及 possibly science fiction dramas 的较弱分支，没有写成已创作或必定创作。v3 raw 的 There are plans 是未指定身份的最小语法改写；v4 raw 直接保留省略形式，均未在 raw 导入 user。contextualized 的 user 可由 ctx-1 面向 you 的同一计划句法和同一创作语境合理关联，不能据此认定用户亲口承诺了所有类型。没有加入创作控制、真实性、机会等新正文命题，没有额外否定或 if 条件。v3 pending 关于原始说话人和科幻意向的未决，不与已有关联的语义主体相矛盾。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：memory 引文直接记载计划、突破性历史剧和科幻可能性；supports 使用 Old memory states there are plans，不声称用户直接自述或计划现实执行。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "overreach",
+                  "issue_types": [
+                    "SUPPORTS_OVERREACH"
+                  ],
+                  "reason": "初步判断，待人工确认：you plan 直接支持助手问题在语法上把计划指向被询问的用户，但 supports 又称 opportunity involving creative control 获该 quote 确认；creative control 没有出现在该 quote，须借另一个来源且关系并非本引文明说。因此记录局部 SUPPORTS_OVERREACH，不把整个用户主体判为虚构。"
+                },
+                {
+                  "evidence_index": 2,
+                  "assessment": "partially_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：quote 中 The idea of having more creative control is thrilling 和 I can push for higher authenticity... 直接支持用户的创作控制态度和能动表达；它没有历史剧、科幻剧或具体启动计划。supports 称其支持计划主体关联，只能作为同一创作语境的辅助，不能读成该用户引文确认完整计划。当前没有明确声称用户在此亲口承诺具体类型，部分支持不自动计错。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "历史剧计划及突破性限定",
+              "input_span": "Plans to initiate groundbreaking historical dramas",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版保留计划而非已完成创作，groundbreaking 限定和 historical dramas 对象完整。"
+            },
+            {
+              "unit": "同一计划中的科幻剧可能性",
+              "input_span": "and possibly science fiction dramas",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版保留 and possibly，将科幻方向置于可能性范围，而非升级为必定制作。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：1 条事实把计划和科幻较弱分支连在同一范围中，没有因未强拆而遗漏。",
+          "uncertainties": [
+            "初步判断，待人工确认：ctx-1 是 assistant 的第二人称问题，不是 user 对历史/科幻计划的直接承诺；ctx-2 是 user 对创作控制和真实性的表态，没有说历史剧或科幻剧。语义主体可由 assistant 的 you plan 和同一工作语境合理关联到用户，但原始计划表述是否来自用户、尤其科幻可能性是否为其自身意向，仍待确认。",
+            "初步判断，待人工确认：具体机会、资源和时间安排未给出，不应补造；保留旧计划不等于这些条件已经发生。"
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、3 条 supports。正文完整保留计划/可能性；未发现明确分类问题。支持说明明确区分用户一般创作表态与助手计划问句，但原 pending=[] 没有披露仍未确认的原始来源。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：ctx-1 是 assistant 的第二人称问题，不是 user 对历史/科幻计划的直接承诺；ctx-2 是 user 对创作控制和真实性的表态，没有说历史剧或科幻剧。语义主体可由 assistant 的 you plan 和同一工作语境合理关联到用户，但原始计划表述是否来自用户、尤其科幻可能性是否为其自身意向，仍待确认。",
+                "初步判断，待人工确认：具体机会、资源和时间安排未给出，不应补造；保留旧计划不等于这些条件已经发生。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：两版保留 plans 的计划范围、initiate 动作、groundbreaking historical dramas 对象及 possibly science fiction dramas 的较弱分支，没有写成已创作或必定创作。v3 raw 的 There are plans 是未指定身份的最小语法改写；v4 raw 直接保留省略形式，均未在 raw 导入 user。contextualized 的 user 可由 ctx-1 面向 you 的同一计划句法和同一创作语境合理关联，不能据此认定用户亲口承诺了所有类型。没有加入创作控制、真实性、机会等新正文命题，没有额外否定或 if 条件。v3 pending 关于原始说话人和科幻意向的未决，不与已有关联的语义主体相矛盾。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：memory supports 只记载旧计划及 possibly 范围，并明确 subject is not explicitly named，准确区分旧命题与主体补足。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "partially_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：User self-attributes agency 对 I can push 等表达有据；但它只能局部支持用户在创作工作的能动角色，不能单独证实计划对象。supports 明确 no mention of historical or sci-fi dramas，已给范围限制；supporting attribution of the plan 须结合 assistant 的另一引文，不能当本 quote 对具体计划的确认。active role 也不应读成实际已执行该计划，当前不据此另计情态改变。"
+                },
+                {
+                  "evidence_index": 2,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：supports 准确描述 Assistant’s question、addressing the user 和 you plan 的句法指向，并使用 consistent with，而非声称用户直接承诺。这直接支持语义主体关联及助手使用的计划措辞，但不证明用户原始说话人归属或具体意向真实性。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "历史剧计划及突破性限定",
+              "input_span": "Plans to initiate groundbreaking historical dramas",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版保留计划而非已完成创作，groundbreaking 限定和 historical dramas 对象完整。"
+            },
+            {
+              "unit": "同一计划中的科幻剧可能性",
+              "input_span": "and possibly science fiction dramas",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版保留 and possibly，将科幻方向置于可能性范围，而非升级为必定制作。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：与 v3 一样保留为 1 条含共享计划范围的事实；不能把事实数相同视作改进或退步。",
+          "uncertainties": [
+            "初步判断，待人工确认：ctx-1 是 assistant 的第二人称问题，不是 user 对历史/科幻计划的直接承诺；ctx-2 是 user 对创作控制和真实性的表态，没有说历史剧或科幻剧。语义主体可由 assistant 的 you plan 和同一工作语境合理关联到用户，但原始计划表述是否来自用户、尤其科幻可能性是否为其自身意向，仍待确认。",
+            "初步判断，待人工确认：具体机会、资源和时间安排未给出，不应补造；保留旧计划不等于这些条件已经发生。"
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [
+          "初步判断，待人工确认：v4 不再在助手 ctx-1 的支持说明中把 creative control 称为该 quote 已确认；对用户 ctx-2 又明确说明不含 historical/sci-fi dramas，对助手句使用 question/consistent/syntactically，修复 v3 当前可观察到的局部支持越界。"
+        ],
+        "persistent": [
+          "初步判断，待人工确认：两版均完整保留计划、groundbreaking historical dramas 和 possibly science fiction dramas；语义主体可以合理关联用户，且这与用户直接承诺未确认并存。"
+        ],
+        "regressions": [
+          "初步判断，待人工确认：v3 pending 具体保留了原始说话人和科幻 tentative 意向来源疑问，v4 pending=[] 不再披露；这是未决信息呈现减少。正文未将计划语气改为已发生，不能仅凭空 pending 自动计为明确语义错误。"
+        ],
+        "uncertainties": [
+          "初步判断，待人工确认：用户是否直接提出全部计划、科幻可能性是否为自身意向以及具体机会仍未确定；两版的主体关联均不能替代用户承诺证据。"
+        ]
+      }
+    },
+    {
+      "case_id": "case_07_no_children",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、2 条 supports。否定事实完整，但 raw 新补 The user，观察到 RAW_CONTEXT_LEAK；contextualized 的用户补足有明确来源。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [
+                "RAW_CONTEXT_LEAK"
+              ],
+              "findings": [
+                {
+                  "type": "RAW_CONTEXT_LEAK",
+                  "input_span": "No children",
+                  "output_span": "The user has no children.",
+                  "reason": "初步判断，待人工确认：旧 memory 没有 user 或可内部恢复的身份；v3 raw 只有借上下文才可补 The user，违反 raw 来源边界。第一人称家庭介绍使 contextualized 的同一补足合理，故不同时判无依据主体或原始说话人错误。"
+                }
+              ],
+              "uncertainties": [],
+              "fidelity_review": "初步判断，待人工确认：旧记忆只有 No children；否定对象 children 和家庭状态均完整保留。ctx-1 的 let me introduce my family 与同一列表中的 No children 以及 speaker=user，共同支持 contextualized 的用户主体，也支持这句话出自用户；不是仅凭角色默认全部命题主体。v3 raw 新补 The user，越过仅用 memory 的来源边界；该主体在 contextualized 中有依据，不是虚构人物。v4 raw 保留省略形式。两版均没有扩入父母存活、no_relationship 等 quote 内额外细节，没有引入时间永久性、否定偏好或生育能力推断，也没有 pending 的确定性冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：memory supports 只说明旧记忆把 No children 记作独立断言，没有把 memory quote 说成验证用户身份、亲口自述或现实真实性。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：quote 中 let me introduce my family 与同一 No children 自我家庭介绍，加上 speaker=user，直接支持用户来源与语义主体；supports 未扩出父母状态或关系字段。角色元数据不是唯一依据。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "无子女的否定家庭事实",
+              "input_span": "No children",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版正文保留无子女的否定，不转换为不想要、不能生育、没有任何亲属或其他关系判断。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：单一无子女事实保持 1 条，适合原目标的粒度。",
+          "uncertainties": []
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：1 条事实、2 条 supports。raw 保留原省略，contextualized 补足用户有明确同主题第一人称来源；未发现明确分类问题。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [],
+              "fidelity_review": "初步判断，待人工确认：旧记忆只有 No children；否定对象 children 和家庭状态均完整保留。ctx-1 的 let me introduce my family 与同一列表中的 No children 以及 speaker=user，共同支持 contextualized 的用户主体，也支持这句话出自用户；不是仅凭角色默认全部命题主体。v3 raw 新补 The user，越过仅用 memory 的来源边界；该主体在 contextualized 中有依据，不是虚构人物。v4 raw 保留省略形式。两版均没有扩入父母存活、no_relationship 等 quote 内额外细节，没有引入时间永久性、否定偏好或生育能力推断，也没有 pending 的确定性冲突。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：Old memory states 'No children' as a standalone factual claim 准确说明旧记忆内容，不越过到本人直接自述。"
+                },
+                {
+                  "evidence_index": 1,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：supports 的 first-person self-introduction 对 let me introduce my family 有据；同一来源的 No children 加 user 角色可以确定此家庭陈述的语义主体。没有把父母存活或 no_relationship 变成新增正文事实。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "无子女的否定家庭事实",
+              "input_span": "No children",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版正文保留无子女的否定，不转换为不想要、不能生育、没有任何亲属或其他关系判断。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：与 v3 同为 1 条事实，差异是来源边界而非覆盖或粒度。",
+          "uncertainties": []
+        }
+      },
+      "comparison": {
+        "improvements": [
+          "初步判断，待人工确认：v4 将 raw 的 The user has no children 改为 No children，修复 v3 raw 身份偷补，同时保留 contextualized 中有依据的用户主体。"
+        ],
+        "persistent": [
+          "初步判断，待人工确认：两版无子女否定事实完整，supports 未把来源 quote 的其他家庭信息扩入正文，且用户原始发言与主体均有同主题第一人称依据。"
+        ],
+        "regressions": [],
+        "uncertainties": []
+      }
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "versions": {
+        "v3": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：2 条事实、2 条 supports；日期、职业、专长全部覆盖，未发现明确分类问题。两版均没有把旧 specialization 改成较弱来源措辞，也均未在 pending 披露来源强度差异。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：fact1 保留 Partner 出生于 1980-06-16，人物标签和日期一致。日期是旧记忆明确生日，不是 source_context 的 Sep 04, 2025 记录时间，未转算年龄或加入地点。未增否定、条件或可能性，pending=[] 没有与正文同项冲突；memory supports 只证明旧记忆如此记载，不代表现实身份/生日已独立核验。原会话是 user 介绍 My Partner，语义主体是伴侣，不是说话用户。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：Old memory states Partner's birth date as 1980-06-16 与 memory quote 完全相符，只说明旧记忆，未宣称用户生日、原始亲口表述或现实生日已验证。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：旧记忆的 specializing in historical artifacts 比 user 原话 with a keen eye for historical artifacts 更强；keen eye 可表示鉴赏力，不能直接证明专业 specialization。两版只引用 memory 且 pending=[]，均未披露这一具体来源强度差异；需人工核实旧总结的形成依据，但不能因此改写或删除旧命题。",
+                "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：fact2 在旧句内部恢复共享 Partner 主语，保留 art curator 职业和 specializing in historical artifacts 专长，两者及其从属关系都进入 raw/contextualized 正文，不能只因它们同处一条事实判遗漏。is 是原职业同位说明的最小语法恢复，没有借 source_context 加用户/姓名，也没有把兴趣 shares a passion for history 扩入正文。保持 specializing 而不替换为 keen eye，符合旧命题忠实性；旧总结与原会话证据强度不同应列待确认。没有否定、逻辑条件或可能性被改动，也没有凭空把资料当当前现实已核验。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：Old memory states Partner's professional role and specialization 对旧记忆中的 art curator specializing in historical artifacts 有据；Partner 的主语由同一旧句内部共享，未借上下文偷补。该 supports 没有声称 user 原话 keen eye 已验证 specialization，故不记支持越界，但后者证据强度仍未决。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "Partner 出生日期",
+              "input_span": "Partner was born on 1980-06-16",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact1 均保留 Partner、born 和完整出生日期，未用来源记录日替换生日。"
+            },
+            {
+              "unit": "Partner 职业",
+              "input_span": "art curator",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact2 都从原句内部共享 Partner 主语恢复其职业 art curator，没有加入姓名或用户身份。"
+            },
+            {
+              "unit": "职业专长",
+              "input_span": "specializing in historical artifacts",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact2 均保留旧记忆的 specialization 命题和 historical artifacts 对象，没有为迁就较弱原会话 keen eye 而删改为兴趣或眼光。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：两版均拆为生日 1 条、职业连同专长 1 条。art curator 和 specializing 各有可检查信息点，但关系保留且正文无遗漏；是否进一步拆成 3 条属于粒度选择，不能记 OMISSION。",
+          "uncertainties": [
+            "初步判断，待人工确认：旧记忆的 specializing in historical artifacts 比 user 原话 with a keen eye for historical artifacts 更强；keen eye 可表示鉴赏力，不能直接证明专业 specialization。两版只引用 memory 且 pending=[]，均未披露这一具体来源强度差异；需人工核实旧总结的形成依据，但不能因此改写或删除旧命题。",
+            "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+          ]
+        },
+        "v4": {
+          "program_status": "passed",
+          "summary": "初步判断，待人工确认：2 条事实、2 条 supports；日期、职业、专长全部覆盖，未发现明确分类问题。两版均没有把旧 specialization 改成较弱来源措辞，也均未在 pending 披露来源强度差异。",
+          "facts": [
+            {
+              "fact_index": 1,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：fact1 保留 Partner 出生于 1980-06-16，人物标签和日期一致。日期是旧记忆明确生日，不是 source_context 的 Sep 04, 2025 记录时间，未转算年龄或加入地点。未增否定、条件或可能性，pending=[] 没有与正文同项冲突；memory supports 只证明旧记忆如此记载，不代表现实身份/生日已独立核验。原会话是 user 介绍 My Partner，语义主体是伴侣，不是说话用户。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：Old memory explicitly states Partner's birth date as 1980-06-16 与 memory quote 完全相符，只说明旧记忆，未宣称用户生日、原始亲口表述或现实生日已验证。"
+                }
+              ]
+            },
+            {
+              "fact_index": 2,
+              "observed_issue_types": [],
+              "findings": [],
+              "uncertainties": [
+                "初步判断，待人工确认：旧记忆的 specializing in historical artifacts 比 user 原话 with a keen eye for historical artifacts 更强；keen eye 可表示鉴赏力，不能直接证明专业 specialization。两版只引用 memory 且 pending=[]，均未披露这一具体来源强度差异；需人工核实旧总结的形成依据，但不能因此改写或删除旧命题。",
+                "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+              ],
+              "fidelity_review": "初步判断，待人工确认：fact2 在旧句内部恢复共享 Partner 主语，保留 art curator 职业和 specializing in historical artifacts 专长，两者及其从属关系都进入 raw/contextualized 正文，不能只因它们同处一条事实判遗漏。is 是原职业同位说明的最小语法恢复，没有借 source_context 加用户/姓名，也没有把兴趣 shares a passion for history 扩入正文。保持 specializing 而不替换为 keen eye，符合旧命题忠实性；旧总结与原会话证据强度不同应列待确认。没有否定、逻辑条件或可能性被改动，也没有凭空把资料当当前现实已核验。",
+              "supports": [
+                {
+                  "evidence_index": 0,
+                  "assessment": "directly_supported",
+                  "issue_types": [],
+                  "reason": "初步判断，待人工确认：Old memory explicitly states Partner's professional role and specialization 对旧记忆中的 art curator specializing in historical artifacts 有据；Partner 的主语由同一旧句内部共享，未借上下文偷补。该 supports 没有声称 user 原话 keen eye 已验证 specialization，故不记支持越界，但后者证据强度仍未决。"
+                }
+              ]
+            }
+          ],
+          "coverage_units": [
+            {
+              "unit": "Partner 出生日期",
+              "input_span": "Partner was born on 1980-06-16",
+              "raw_fact_indices": [
+                1
+              ],
+              "contextualized_fact_indices": [
+                1
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact1 均保留 Partner、born 和完整出生日期，未用来源记录日替换生日。"
+            },
+            {
+              "unit": "Partner 职业",
+              "input_span": "art curator",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact2 都从原句内部共享 Partner 主语恢复其职业 art curator，没有加入姓名或用户身份。"
+            },
+            {
+              "unit": "职业专长",
+              "input_span": "specializing in historical artifacts",
+              "raw_fact_indices": [
+                2
+              ],
+              "contextualized_fact_indices": [
+                2
+              ],
+              "status": "preserved",
+              "reason": "初步判断，待人工确认：两版 fact2 均保留旧记忆的 specialization 命题和 historical artifacts 对象，没有为迁就较弱原会话 keen eye 而删改为兴趣或眼光。"
+            }
+          ],
+          "granularity_observation": "初步判断，待人工确认：两版均拆为生日 1 条、职业连同专长 1 条。art curator 和 specializing 各有可检查信息点，但关系保留且正文无遗漏；是否进一步拆成 3 条属于粒度选择，不能记 OMISSION。",
+          "uncertainties": [
+            "初步判断，待人工确认：旧记忆的 specializing in historical artifacts 比 user 原话 with a keen eye for historical artifacts 更强；keen eye 可表示鉴赏力，不能直接证明专业 specialization。两版只引用 memory 且 pending=[]，均未披露这一具体来源强度差异；需人工核实旧总结的形成依据，但不能因此改写或删除旧命题。",
+            "初步判断，待人工确认：source_context 的 My Partner 可合理指向用户的伴侣，speaker=user 是此资料发言者而非出生或职业事实的主体。输入没有伴侣姓名或可验证的真实完整身份；保持 Partner 标签，不把伴侣等同用户本人，也不从资料真实性作额外推断。"
+          ]
+        }
+      },
+      "comparison": {
+        "improvements": [],
+        "persistent": [
+          "初步判断，待人工确认：两版除句末标点及 supports 的 explicitly 等措辞外，事实内容与拆分粒度实质一致；三个覆盖单元全部 preserved。",
+          "初步判断，待人工确认：两版均保留 specializing 旧命题并仅声称 memory 记载，但 pending 都未披露 specialization 与原会话 keen eye 的证据强度差异；当前记录为具体未决，不将不确定自动计为错误。"
+        ],
+        "regressions": [],
+        "uncertainties": [
+          "初步判断，待人工确认：需核实原会话 keen eye 是否足以支撑旧总结的专业 specialization，以及伴侣真实身份；不能补入分享历史热情，也不能因此删改现有旧命题。"
+        ]
+      }
+    }
+  ]
+}

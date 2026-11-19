@@ -1,0 +1,52 @@
+{
+  "target_number": 7,
+  "target_id": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f:s007:m000",
+  "user_uuid": "2f1f897e-d67f-dbc5-6a7b-b7634a9e294f",
+  "old_before_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/development_diagnosis_v1/target_07_evidence.json",
+  "old_memory_before_exact_match": true,
+  "dataset": "/home/shu1004/ld/system/mem0_halumem_diagnosis/dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "old_new_dialogue_pointer_text_role_time_verified": true,
+  "model_request": {
+    "split_request": {
+      "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+      "memory_text": "Looking for a new job with better work-life balance",
+      "source_context": [
+        {
+          "source_id": "old-1",
+          "source_ref": "dataset line 1, /sessions/6/dialogue/0",
+          "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:13:15"
+        },
+        {
+          "source_id": "old-2",
+          "source_ref": "dataset line 1, /sessions/6/dialogue/10",
+          "text": "I'm really looking forward to finding a position that supports both my career goals and my personal health. It's been a challenging journey, but I'm hopeful about the future.",
+          "speaker": "user",
+          "recorded_at": "Feb 05, 2026, 17:37:37"
+        }
+      ]
+    },
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "speaker": "user",
+        "recorded_at": "Mar 01, 2026, 07:04:00"
+      },
+      {
+        "source_id": "dialogue-2",
+        "text": "Yes, the new role has definitely improved my mental health. The stress and pressure from my previous job were really taking a toll.",
+        "speaker": "user",
+        "recorded_at": "Mar 01, 2026, 07:09:03"
+      }
+    ],
+    "time_info": null
+  },
+  "missing_existing_inputs": [
+    "matching pre-update v4 split",
+    "matching Qwen v2 result"
+  ],
+  "selection_note": "source selection is not part of model prompt; no review labels supplied to models"
+}

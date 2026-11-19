@@ -1,0 +1,54 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "judgement_units": [
+    "case",
+    "returned fact or rejected candidate fact",
+    "individual evidence.supports"
+  ],
+  "semantic_statuses": {
+    "issue_observed": "A concrete text-level fidelity or scope issue is identified; still preliminary, not a human-confirmed gold label.",
+    "uncertain_only": "No definite error assigned; subject, source, time or scope remains unresolved.",
+    "no_obvious_issue": "No concrete issue found in this review; not a proof of correctness."
+  },
+  "observed_issue_types": [
+    "RAW_CONTEXT_LEAK",
+    "KEY_FACT_OMISSION",
+    "PERSON_OR_RELATION_CHANGE",
+    "NEGATION_CHANGE",
+    "MODAL_OR_DISJUNCTION_CHANGE",
+    "TIME_SCOPE_CHANGE",
+    "UNSUPPORTED_ADDITION",
+    "SUPPORTED_UNNECESSARY_ADDITION",
+    "SUPPORTS_OVERREACH",
+    "SPEAKER_ATTRIBUTION_OVERCLAIM",
+    "ASSERTION_PENDING_CONFLICT"
+  ],
+  "uncertainty_types": [
+    "SUBJECT_OR_IDENTITY",
+    "ORIGINAL_SPEAKER",
+    "RELATIVE_OR_OTHER_REFERENT",
+    "RELATIVE_TIME_ANCHOR",
+    "MODAL_OR_RELATION_SCOPE"
+  ],
+  "rules": [
+    "Treat the original memory as the splitting target, not as a claim already verified in the world.",
+    "Do not silently correct old memory using source_context.",
+    "Distinguish semantic subject from original speaker; assistant utterance may discuss a user, but is not direct user testimony.",
+    "Do not treat every inferred user subject as fabricated: direct first-person source plus a reliable same-event/shared-subject link can support it.",
+    "Check supports against its declared quote and necessary context; distinguish literal quote support, reasonable paraphrase, source-attribution overstatement, and unresolved reference.",
+    "Extra details present only inside a verbatim quote do not automatically count as facts added to raw/contextualized output.",
+    "Negative preference is not the same as abstinence or never doing the activity.",
+    "A disjunction is not two separate positive assertions; preserve planning and possibility scopes.",
+    "Preserve relative time without turning utterance timestamps into event dates.",
+    "Do not infer real names, relationships or truth where the input cannot determine them.",
+    "A rejected candidate can be reviewed but must remain labelled rejected and excluded from validated-result counts."
+  ],
+  "counting_policy": {
+    "format_pass_count": "Number of cases accepted by the unchanged existing validator; independent quote diagnostics for a rejected case do not override failure.",
+    "semantic_human_review_total": "Every reviewed semantic judgement remains preliminary and awaits final human confirmation.",
+    "unresolved_case_count": "Cases containing at least one specifically identified unresolved item, separate from all-preliminary status.",
+    "issue_case_count": "Cases with at least one observed text-level issue; uncertainty alone is not counted as an error.",
+    "issue_type_counts": "Count distinct cases and distinct returned facts exhibiting each type; one fact may have multiple types."
+  },
+  "model_input_exclusion": "This protocol, post-hoc review findings and selection reasons are not sent to the real model."
+}

@@ -1,0 +1,43 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "not_gold_error_rate": true,
+  "versions": {
+    "v4": {
+      "all_candidates": {
+        "case_count": 5,
+        "observed_issue_cases": 2,
+        "issue_types_by_case": {
+          "SUPPORTS_OVERREACH": 2,
+          "RELATION_SCOPE_CHANGE": 1
+        }
+      },
+      "program_accepted": {
+        "case_count": 5,
+        "observed_issue_cases": 2,
+        "issue_types_by_case": {
+          "SUPPORTS_OVERREACH": 2,
+          "RELATION_SCOPE_CHANGE": 1
+        }
+      }
+    },
+    "v5": {
+      "all_candidates": {
+        "case_count": 5,
+        "observed_issue_cases": 3,
+        "issue_types_by_case": {
+          "SUPPORTS_OVERREACH": 2,
+          "RELATION_SCOPE_CHANGE": 1
+        }
+      },
+      "program_accepted": {
+        "case_count": 4,
+        "observed_issue_cases": 2,
+        "issue_types_by_case": {
+          "RELATION_SCOPE_CHANGE": 1,
+          "SUPPORTS_OVERREACH": 1
+        }
+      }
+    }
+  },
+  "candidate_vs_accepted_separated": true
+}

@@ -1,0 +1,77 @@
+{
+  "applicability": "involved",
+  "components": [
+    {
+      "fragment": "Dislikes extreme sports (e.g., skydiving)",
+      "contextualized": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+      "action": "modify",
+      "reason": "New evidence describes a positive simulated skydiving experience ('simulated skydiving', 'quite thrilling', 'adrenaline rush... enjoy so much'), but this is a controlled, low-risk simulation—not real skydiving. Disliking *real* extreme sports due to injury risk remains unchallenged; simulated experience does not negate the original dislike of the actual activity. However, the phrasing 'dislikes extreme sports (e.g., skydiving)' is overly broad if the user now reports enjoying a skydiving-*adjacent*, non-injurious simulation—so the generalization requires modification to reflect nuance (e.g., distinguish real vs. simulated, or specify ongoing aversion to high-risk variants).",
+      "old_evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "source_type": "context",
+          "source_id": "old-context-1",
+          "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        }
+      ]
+    },
+    {
+      "fragment": "due to high injury risk",
+      "contextualized": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+      "action": "protect",
+      "reason": "New evidence does not refute the causal link between perceived injury risk and dislike: the user explicitly reaffirms safety priority ('I still prioritize safety, of course') and only engaged in *simulated* skydiving—a context where injury risk is negligible. No new statement contradicts the belief that *real* extreme sports carry high injury risk.",
+      "old_evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "source_type": "context",
+          "source_id": "old-context-1",
+          "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ]
+    },
+    {
+      "fragment": "conflicting with commitment to safety and well-being",
+      "contextualized": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+      "action": "protect",
+      "reason": "The user’s continued affirmation of safety prioritization ('I still prioritize safety, of course') reinforces, rather than undermines, the original claim that injury risk perception conflicts with their commitment. Simulated skydiving poses no meaningful threat to safety or well-being, so participation does not contradict the conflict logic—it preserves it.",
+      "old_evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+        },
+        {
+          "source_type": "context",
+          "source_id": "old-context-1",
+          "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+        }
+      ],
+      "new_evidence": [
+        {
+          "source_id": "dialogue-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ]
+    }
+  ]
+}

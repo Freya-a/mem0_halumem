@@ -1,5 +1,7 @@
 # 真实模型适配入口（与模拟版并存）
 
+> 当前后续实验固定使用 [v9 独立入口](prompt_versions/v9_local_update/README.md)，并用 [v9_baseline.sha256](v9_baseline.sha256) 核对文件。本文件余下内容是历史 `run_real.py` 入口的记录；该入口仍读取 `DESIGN.md` 的早期提示词，**不会自动使用 v9**。
+
 原有 DESIGN.md、splitter.py、README.md、测试和样例均未修改；原有九个文件的 SHA-256 与任务开始时一致。原 README.md 描述的是模拟版，本文件补充新增真实调用能力。
 
 ## 新增文件

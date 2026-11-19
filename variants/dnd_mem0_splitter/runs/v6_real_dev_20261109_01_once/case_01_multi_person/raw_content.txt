@@ -1,0 +1,46 @@
+{
+  "facts": [
+    {
+      "fact_index": 1,
+      "source_memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "raw_subfact": "Grateful towards colleagues like Steven",
+      "contextualized_subfact": "The user is grateful towards colleagues like Steven",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+          "quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "supports": "The memory states gratitude is directed toward colleagues like Steven"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Your gratitude towards colleagues like Steven and friends like Mary highlights the importance of having a strong support network.",
+          "supports": "The assistant addresses the user directly with 'Your gratitude', confirming the gratitude belongs to the user"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    {
+      "fact_index": 2,
+      "source_memory_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+      "raw_subfact": "Grateful towards friends like Mary",
+      "contextualized_subfact": "The user is grateful towards friends like Mary",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "130bf22c-9e71-4ad2-bf51-43bac36ab2c8",
+          "quote": "Grateful towards colleagues like Steven and friends like Mary",
+          "supports": "The memory states gratitude is directed toward friends like Mary"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-2",
+          "quote": "Your gratitude towards colleagues like Steven and friends like Mary highlights the importance of having a strong support network.",
+          "supports": "The assistant uses 'Your gratitude' to refer jointly to both colleagues and friends, confirming the user’s gratitude extends to friends like Mary"
+        }
+      ],
+      "pending_confirmations": []
+    }
+  ]
+}

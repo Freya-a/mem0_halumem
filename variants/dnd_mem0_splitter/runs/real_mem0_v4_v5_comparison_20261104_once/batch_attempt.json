@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-11-04T15:03:56.934221+08:00",
+  "max_calls_total": 5,
+  "max_calls_each": 1,
+  "order": [
+    "case_10_sports_preferences",
+    "case_11_persian_care",
+    "case_09_father_profile",
+    "case_03_assistant_yoga",
+    "case_08_partner_profile"
+  ],
+  "new_v4_calls": 0,
+  "prompt_sha256": "4309af1a3a778cb475b4b69e93134253e011f602fb1bbb446cb7287a5b72c997",
+  "model": "qwen-plus",
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "response_format": {
+    "type": "json_object"
+  },
+  "configuration_names_and_sources": {
+    "LLM_BASE_URL": {
+      "variable": "LLM_BASE_URL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_API_KEY": {
+      "variable": "LLM_API_KEY",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    },
+    "LLM_MODEL": {
+      "variable": "LLM_MODEL",
+      "source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/.env.local"
+    }
+  },
+  "unknown_service_parameters": [
+    "default sampling parameters",
+    "concrete model revision",
+    "provider routing"
+  ],
+  "request_contents": "Frozen v5 prompt + identical historical input JSON only; no reviews or target evidence.",
+  "evaluation_limit": "Five previously reviewed design-informed regression cases; not independent generalization."
+}

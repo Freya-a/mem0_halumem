@@ -1,0 +1,986 @@
+{
+  "status": "needs_review",
+  "request": {
+    "split_result": {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "facts": [
+        {
+          "fact_index": 1,
+          "source_memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "raw_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "contextualized_subfact": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+              "supports": "Old memory states a dislike of extreme sports (with skydiving as example), grounded in perceived high injury risk and in tension with a commitment to safety and well-being."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+              "supports": "Confirms the subject is the user (first-person 'I'), clarifies causal structure ('because'), and matches phrasing of conflict ('goes against' ≈ 'conflicting with'); supports contextualizing 'commitment to safety and well-being' as the user's own."
+            }
+          ],
+          "pending_confirmations": []
+        }
+      ]
+    },
+    "source_context": [
+      {
+        "source_id": "old-context-1",
+        "source_ref": "dataset line 1, /sessions/2/dialogue/6/content",
+        "text": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 22:52:30"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:40:32"
+      },
+      {
+        "source_id": "dialogue-2",
+        "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:48:20"
+      },
+      {
+        "source_id": "dialogue-8",
+        "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 10:57:54"
+      }
+    ],
+    "time_info": null
+  },
+  "relation_result": {
+    "status": "ok",
+    "results": [
+      {
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "fact_index": 1,
+        "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "status": "ok",
+        "raw_output": "{\n  \"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"relation\": \"possible_change\",\n  \"object\": \"extreme sports (e.g., skydiving)\",\n  \"attribute\": \"dislike\",\n  \"conditions\": \"due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"candidate_impact_fragment\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"old_quote\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!\"\n  },\n  \"reason\": \"New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.\",\n  \"confirmation_questions\": [\n    \"Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?\",\n    \"Is the user's commitment to safety and well-being still intact despite the new experience?\"\n  ]\n}",
+        "candidate": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "relation": "possible_change",
+          "object": "extreme sports (e.g., skydiving)",
+          "attribute": "dislike",
+          "conditions": "due to high injury risk, conflicting with commitment to safety and well-being",
+          "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+          "confirmation_questions": [
+            "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+            "Is the user's commitment to safety and well-being still intact despite the new experience?"
+          ]
+        },
+        "located_candidate": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "relation": "possible_change",
+          "object": "extreme sports (e.g., skydiving)",
+          "attribute": "dislike",
+          "conditions": "due to high injury risk, conflicting with commitment to safety and well-being",
+          "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+          "confirmation_questions": [
+            "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+            "Is the user's commitment to safety and well-being still intact despite the new experience?"
+          ]
+        },
+        "fragment_match": {
+          "raw": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "located": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "method": "exact",
+          "start": 0,
+          "end": 119
+        },
+        "validation": {
+          "passed": true,
+          "checks": [
+            "schema",
+            "relation",
+            "fact_identity",
+            "old_quote",
+            "new_quote",
+            "candidate_fragment"
+          ],
+          "semantic_correctness": "not_checked"
+        },
+        "errors": []
+      }
+    ],
+    "errors": []
+  },
+  "results": [
+    {
+      "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+      "fact_index": 1,
+      "memory_text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+      "memory_sha256": "739f863881a970d663ea1a0f58e61193da2c3cf5a46aee5981fb2c0f42f3681e",
+      "old_fact": {
+        "fact_index": 1,
+        "source_memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "raw_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "contextualized_subfact": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+        "evidence": [
+          {
+            "source_type": "memory",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "supports": "Old memory states a dislike of extreme sports (with skydiving as example), grounded in perceived high injury risk and in tension with a commitment to safety and well-being."
+          },
+          {
+            "source_type": "context",
+            "source_id": "old-context-1",
+            "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+            "supports": "Confirms the subject is the user (first-person 'I'), clarifies causal structure ('because'), and matches phrasing of conflict ('goes against' ≈ 'conflicting with'); supports contextualizing 'commitment to safety and well-being' as the user's own."
+          }
+        ],
+        "pending_confirmations": []
+      },
+      "status": "needs_review",
+      "upstream": {
+        "full_row": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "status": "ok",
+          "raw_output": "{\n  \"memory_id\": \"e1d4f8f9-0520-427d-94fd-a2ac0ee69d03\",\n  \"fact_index\": 1,\n  \"old_subfact\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"relation\": \"possible_change\",\n  \"object\": \"extreme sports (e.g., skydiving)\",\n  \"attribute\": \"dislike\",\n  \"conditions\": \"due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"candidate_impact_fragment\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"old_quote\": \"Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being\",\n  \"new_quote\": {\n    \"source_id\": \"dialogue-0\",\n    \"quote\": \"Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!\"\n  },\n  \"reason\": \"New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.\",\n  \"confirmation_questions\": [\n    \"Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?\",\n    \"Is the user's commitment to safety and well-being still intact despite the new experience?\"\n  ]\n}",
+          "candidate": {
+            "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "fact_index": 1,
+            "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "relation": "possible_change",
+            "object": "extreme sports (e.g., skydiving)",
+            "attribute": "dislike",
+            "conditions": "due to high injury risk, conflicting with commitment to safety and well-being",
+            "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "new_quote": {
+              "source_id": "dialogue-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            },
+            "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+            "confirmation_questions": [
+              "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+              "Is the user's commitment to safety and well-being still intact despite the new experience?"
+            ]
+          },
+          "located_candidate": {
+            "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "fact_index": 1,
+            "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "relation": "possible_change",
+            "object": "extreme sports (e.g., skydiving)",
+            "attribute": "dislike",
+            "conditions": "due to high injury risk, conflicting with commitment to safety and well-being",
+            "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "new_quote": {
+              "source_id": "dialogue-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            },
+            "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+            "confirmation_questions": [
+              "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+              "Is the user's commitment to safety and well-being still intact despite the new experience?"
+            ]
+          },
+          "fragment_match": {
+            "raw": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "located": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+            "method": "exact",
+            "start": 0,
+            "end": 119
+          },
+          "validation": {
+            "passed": true,
+            "checks": [
+              "schema",
+              "relation",
+              "fact_identity",
+              "old_quote",
+              "new_quote",
+              "candidate_fragment"
+            ],
+            "semantic_correctness": "not_checked"
+          },
+          "errors": []
+        },
+        "semantic_correctness": "not_checked",
+        "errors": []
+      },
+      "time": {
+        "valid_start": {
+          "state": "unknown"
+        },
+        "valid_end": {
+          "state": "unknown"
+        },
+        "time_info_raw": null,
+        "recorded_times": [
+          {
+            "kind": "recorded",
+            "source_id": "old-context-1",
+            "value": "Sep 06, 2025, 22:52:30",
+            "validity_effect": "none"
+          },
+          {
+            "kind": "recorded",
+            "source_id": "dialogue-0",
+            "value": "Apr 10, 2026, 10:40:32",
+            "validity_effect": "none"
+          },
+          {
+            "kind": "recorded",
+            "source_id": "dialogue-2",
+            "value": "Apr 10, 2026, 10:48:20",
+            "validity_effect": "none"
+          },
+          {
+            "kind": "recorded",
+            "source_id": "dialogue-8",
+            "value": "Apr 10, 2026, 10:57:54",
+            "validity_effect": "none"
+          }
+        ],
+        "expressions": [
+          {
+            "source_id": "dialogue-0",
+            "quote": "recently",
+            "resolution": "unresolved",
+            "reason": "no validated event-time anchor"
+          },
+          {
+            "source_id": "dialogue-8",
+            "quote": "For now",
+            "resolution": "unresolved",
+            "reason": "no validated event-time anchor"
+          }
+        ],
+        "period_candidates": {
+          "old": [],
+          "new": []
+        },
+        "errors": [],
+        "interval_relation": "unknown"
+      },
+      "boundary": {
+        "kind": "unknown",
+        "reason": "no validated explicit validity boundary"
+      },
+      "relation": {
+        "classification": "unknown",
+        "reason": "object, attribute, conditions and exclusivity require independent semantic assessment",
+        "upstream_candidate": {
+          "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "fact_index": 1,
+          "old_subfact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "relation": "possible_change",
+          "object": "extreme sports (e.g., skydiving)",
+          "attribute": "dislike",
+          "conditions": "due to high injury risk, conflicting with commitment to safety and well-being",
+          "candidate_impact_fragment": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "new_quote": {
+            "source_id": "dialogue-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          "reason": "New evidence shows the user tried simulated skydiving and found it thrilling, indicating a possible change in attitude toward extreme sports. However, the user still prioritizes safety, which may suggest the core commitment to safety and well-being remains unchanged.",
+          "confirmation_questions": [
+            "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?",
+            "Is the user's commitment to safety and well-being still intact despite the new experience?"
+          ]
+        },
+        "exclusivity": {
+          "candidate": "unknown",
+          "semantic_verified": false,
+          "evidence_status": "literal_quote_verified",
+          "reason": "The new evidence does not directly confirm or deny the exclusivity of the user's attitude toward extreme sports, but it suggests a nuanced shift in perspective.",
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            },
+            {
+              "source_id": "dialogue-8",
+              "quote": "I still prioritize safety, of course."
+            }
+          ]
+        },
+        "candidate_assessment": {
+          "kind": "unknown",
+          "semantic_verified": false,
+          "conditions": [],
+          "reason": "candidate fields, mutual exclusivity, and temporal relation require independent support"
+        }
+      },
+      "modifications": [],
+      "protected": [
+        {
+          "text": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+          "reason": "scope and semantic impact not verified; protect complete fact",
+          "evidence_refs": [
+            {
+              "source_type": "memory",
+              "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+              "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+              "supports": "Old memory states a dislike of extreme sports (with skydiving as example), grounded in perceived high injury risk and in tension with a commitment to safety and well-being."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being.",
+              "supports": "Confirms the subject is the user (first-person 'I'), clarifies causal structure ('because'), and matches phrasing of conflict ('goes against' ≈ 'conflicting with'); supports contextualizing 'commitment to safety and well-being' as the user's own."
+            }
+          ]
+        }
+      ],
+      "pending": [
+        {
+          "code": "semantic_scope_unverified",
+          "reason": "v2 label and fragment are candidates only"
+        },
+        {
+          "code": "upstream_question_unverified",
+          "question": "Does the user's experience with simulated skydiving indicate a change in their attitude toward extreme sports?"
+        },
+        {
+          "code": "upstream_question_unverified",
+          "question": "Is the user's commitment to safety and well-being still intact despite the new experience?"
+        },
+        {
+          "code": "field_evidence_invalid",
+          "side": "new",
+          "field": "subject",
+          "invalid_refs": [
+            {
+              "source_id": "dialogue-2",
+              "quote": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+            }
+          ]
+        },
+        {
+          "code": "field_evidence_missing",
+          "fields": [
+            {
+              "side": "old",
+              "field": "object"
+            },
+            {
+              "side": "old",
+              "field": "attribute"
+            },
+            {
+              "side": "old",
+              "field": "value"
+            },
+            {
+              "side": "new",
+              "field": "object"
+            },
+            {
+              "side": "new",
+              "field": "attribute"
+            },
+            {
+              "side": "new",
+              "field": "value"
+            }
+          ]
+        }
+      ],
+      "additions": [
+        {
+          "text": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "kind": "raw_evidence_candidate",
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate",
+            "extracted_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+              "kind": "raw_evidence_candidate"
+            },
+            {
+              "source_id": "dialogue-0",
+              "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+              "kind": "extracted_candidate"
+            }
+          ]
+        },
+        {
+          "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+          "source_id": "dialogue-2",
+          "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+          "kind": "raw_evidence_candidate",
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate",
+            "extracted_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-2",
+              "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+              "kind": "raw_evidence_candidate"
+            },
+            {
+              "source_id": "dialogue-2",
+              "quote": "the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+              "kind": "extracted_candidate"
+            }
+          ]
+        },
+        {
+          "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "source_id": "dialogue-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "kind": "raw_evidence_candidate",
+          "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+          "semantic_correctness": "not_checked",
+          "kinds": [
+            "raw_evidence_candidate",
+            "extracted_candidate"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "dialogue-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+              "kind": "raw_evidence_candidate"
+            },
+            {
+              "source_id": "dialogue-8",
+              "quote": "I still prioritize safety, of course.",
+              "kind": "extracted_candidate"
+            }
+          ]
+        }
+      ],
+      "nli": {
+        "status": "ok",
+        "premise": "User dislikes extreme sports (e.g., skydiving) due to high injury risk, which conflicts with their commitment to safety and well-being.",
+        "hypothesis": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "input_order": "old contextualized subfact -> v2 new quote",
+        "model_dir": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/model/DeBERTa-v3-base-mnli-fever-anli",
+        "revision": "verified historical download 6f5cf0a2b59cabb106aca4c287eed12e357e90eb",
+        "weights_sha256": "06d6fd89edd4f97816831626daafbdb0b029cf63bae8edc0bccab1d64e2e7707",
+        "weights_match_recorded_revision": true,
+        "versions": {
+          "torch": "2.9.1+cu128",
+          "transformers": "4.57.3"
+        },
+        "device": "cuda:0",
+        "dtype": "float32",
+        "original_tokens": 58,
+        "max_tokens": 512,
+        "truncated": false,
+        "logits": {
+          "entailment": -3.285172700881958,
+          "neutral": 2.675600290298462,
+          "contradiction": 0.8306043148040771
+        },
+        "softmax_scores": {
+          "entailment": 0.0022211873438209295,
+          "neutral": 0.8616204261779785,
+          "contradiction": 0.13615839183330536
+        },
+        "predicted_label": "neutral",
+        "use": "exploratory scoring of unverified v2 pair; no effect on boundary or plan",
+        "inference_mode": "replayed_real_saved_result",
+        "source_artifact": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/scope_v1_20261109/replay_v2/skydiving.json"
+      },
+      "extraction": {
+        "status": "ok",
+        "result": {
+          "old": {
+            "subject": "user",
+            "object": "extreme sports (e.g., skydiving)",
+            "attribute": "dislike",
+            "value": "due to high injury risk, conflicting with commitment to safety and well-being"
+          },
+          "new": {
+            "subject": "user",
+            "object": "simulated skydiving",
+            "attribute": "thrilling",
+            "value": "experienced at team-building event"
+          },
+          "comparability": "different",
+          "reason": "Old fact reflects a dislike of extreme sports due to injury risk and safety commitment. New evidence shows the user tried simulated skydiving and found it thrilling, indicating a shift in attitude toward simulated experiences, while still prioritizing safety.",
+          "new_facts": [
+            {
+              "text": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+              "source_id": "dialogue-0",
+              "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            },
+            {
+              "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+              "source_id": "dialogue-2",
+              "quote": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+            },
+            {
+              "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+              "source_id": "dialogue-8",
+              "quote": "I still prioritize safety, of course."
+            }
+          ],
+          "field_evidence": {
+            "old": {
+              "subject": [
+                {
+                  "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                  "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                }
+              ]
+            },
+            "new": {
+              "subject": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+                },
+                {
+                  "source_id": "dialogue-2",
+                  "quote": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+                },
+                {
+                  "source_id": "dialogue-8",
+                  "quote": "I still prioritize safety, of course."
+                }
+              ]
+            }
+          },
+          "exclusivity": {
+            "candidate": "unknown",
+            "reason": "The new evidence does not directly confirm or deny the exclusivity of the user's attitude toward extreme sports, but it suggests a nuanced shift in perspective.",
+            "evidence": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+              },
+              {
+                "source_id": "dialogue-8",
+                "quote": "I still prioritize safety, of course."
+              }
+            ]
+          }
+        },
+        "semantic_correctness": "not_checked",
+        "new_fact_candidates": [
+          {
+            "text": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "source_id": "dialogue-0",
+            "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "quote_match": {
+              "raw": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+              "located": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+              "method": "exact",
+              "start": 5,
+              "end": 129
+            }
+          },
+          {
+            "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+            "source_id": "dialogue-2",
+            "quote": "the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+            "quote_match": {
+              "raw": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+              "located": "the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+              "method": "unique_casefold",
+              "start": 6,
+              "end": 129
+            }
+          },
+          {
+            "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "source_id": "dialogue-8",
+            "quote": "I still prioritize safety, of course.",
+            "quote_match": {
+              "raw": "I still prioritize safety, of course.",
+              "located": "I still prioritize safety, of course.",
+              "method": "exact",
+              "start": 68,
+              "end": 105
+            }
+          }
+        ],
+        "note": "literal citation only; no entailment or comparability confirmed",
+        "field_evidence": {
+          "old": {
+            "subject": {
+              "status": "literal_quote_verified",
+              "refs": [
+                {
+                  "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                  "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                }
+              ],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "object": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "attribute": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "value": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "conditions": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "modality": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            }
+          },
+          "new": {
+            "subject": {
+              "status": "invalid",
+              "refs": [
+                {
+                  "source_id": "dialogue-0",
+                  "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+                },
+                {
+                  "source_id": "dialogue-8",
+                  "quote": "I still prioritize safety, of course."
+                }
+              ],
+              "invalid_refs": [
+                {
+                  "source_id": "dialogue-2",
+                  "quote": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+                }
+              ],
+              "semantic_verified": false
+            },
+            "object": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "attribute": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "value": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "conditions": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            },
+            "modality": {
+              "status": "missing",
+              "refs": [],
+              "invalid_refs": [],
+              "semantic_verified": false
+            }
+          }
+        }
+      },
+      "scope_assessment": {
+        "status": "unknown",
+        "field_comparisons": {
+          "subject": {
+            "old": "user",
+            "new": "user",
+            "comparison": "same_text",
+            "source_refs": {
+              "old": {
+                "status": "literal_quote_verified",
+                "refs": [
+                  {
+                    "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                    "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                  }
+                ],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "invalid",
+                "refs": [
+                  {
+                    "source_id": "dialogue-0",
+                    "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+                  },
+                  {
+                    "source_id": "dialogue-8",
+                    "quote": "I still prioritize safety, of course."
+                  }
+                ],
+                "invalid_refs": [
+                  {
+                    "source_id": "dialogue-2",
+                    "quote": "The adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+                  }
+                ],
+                "semantic_verified": false
+              }
+            }
+          },
+          "object": {
+            "old": "extreme sports (e.g., skydiving)",
+            "new": "simulated skydiving",
+            "comparison": "different_text",
+            "source_refs": {
+              "old": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              }
+            }
+          },
+          "attribute": {
+            "old": "dislike",
+            "new": "thrilling",
+            "comparison": "different_text",
+            "source_refs": {
+              "old": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              }
+            }
+          },
+          "conditions": {
+            "old": null,
+            "new": null,
+            "comparison": "unknown",
+            "source_refs": {
+              "old": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              }
+            }
+          },
+          "modality": {
+            "old": null,
+            "new": null,
+            "comparison": "unknown",
+            "source_refs": {
+              "old": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              }
+            }
+          },
+          "value": {
+            "old": "due to high injury risk, conflicting with commitment to safety and well-being",
+            "new": "experienced at team-building event",
+            "comparison": "different_text",
+            "source_refs": {
+              "old": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              },
+              "new": {
+                "status": "missing",
+                "refs": [],
+                "invalid_refs": [],
+                "semantic_verified": false
+              }
+            }
+          }
+        },
+        "value_relation": "different_text",
+        "semantic_verified": false,
+        "reason": "literal comparison of unverified model candidates; no semantic entailment or exclusivity established"
+      },
+      "facttrack": {
+        "status": "not_called",
+        "reason": "exact sourced period candidates unavailable; record times are not validity intervals"
+      },
+      "fragment_match_rechecked": {
+        "raw": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "located": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+        "method": "exact",
+        "start": 0,
+        "end": 119
+      }
+    }
+  ],
+  "errors": [],
+  "modifications": [],
+  "additions": [
+    {
+      "text": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+      "source_id": "dialogue-0",
+      "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+      "kind": "raw_evidence_candidate",
+      "semantic_correctness": "not_checked",
+      "kinds": [
+        "raw_evidence_candidate",
+        "extracted_candidate"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "kind": "raw_evidence_candidate"
+        },
+        {
+          "source_id": "dialogue-0",
+          "quote": "I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "kind": "extracted_candidate"
+        }
+      ],
+      "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+      "fact_indices": [
+        1
+      ]
+    },
+    {
+      "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+      "source_id": "dialogue-2",
+      "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+      "kind": "raw_evidence_candidate",
+      "semantic_correctness": "not_checked",
+      "kinds": [
+        "raw_evidence_candidate",
+        "extracted_candidate"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "dialogue-2",
+          "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+          "kind": "raw_evidence_candidate"
+        },
+        {
+          "source_id": "dialogue-2",
+          "quote": "the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+          "kind": "extracted_candidate"
+        }
+      ],
+      "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+      "fact_indices": [
+        1
+      ]
+    },
+    {
+      "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+      "source_id": "dialogue-8",
+      "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+      "kind": "raw_evidence_candidate",
+      "semantic_correctness": "not_checked",
+      "kinds": [
+        "raw_evidence_candidate",
+        "extracted_candidate"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "dialogue-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "kind": "raw_evidence_candidate"
+        },
+        {
+          "source_id": "dialogue-8",
+          "quote": "I still prioritize safety, of course.",
+          "kind": "extracted_candidate"
+        }
+      ],
+      "dedupe": "exact_text_after_whitespace_and_optional_leading_greeting",
+      "fact_indices": [
+        1
+      ]
+    }
+  ],
+  "replay_audit": {
+    "qwen_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/scope_v2_20261109/skydiving_retry.json",
+    "qwen_new_calls": 0,
+    "nli_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/scope_v1_20261109/replay_v2/skydiving.json",
+    "nli_new_forward_passes": 0,
+    "code_sha256": {
+      "scope_planner.py": "9817c1c0dc9d55c017523140aa3aae06ef2d70dfd6c392af59c7f05298291514",
+      "scope_actions.py": "fa42d3986a8c036c9165fd719cec2ff75dd06b337837e3f237e3359f7aeb1d7e",
+      "scope_evidence.py": "d073900473cf0115629b3479f543349fd55a7e9a3d30ec088f70a0de0a03a48e",
+      "scope_extract.py": "12627da912e68b476fb1f742d14ae3252781f17bd5f7626d3ec4ef8f066299bb"
+    },
+    "qwen_source_note": "recorded actual generation, parsed again without model call"
+  }
+}

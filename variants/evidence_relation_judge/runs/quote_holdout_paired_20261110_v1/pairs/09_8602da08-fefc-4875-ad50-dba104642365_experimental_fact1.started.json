@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-11-10T16:19:43.174582+08:00",
+  "record": 9,
+  "version": "experimental",
+  "fact_index": 1,
+  "payload": {
+    "memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+    "memory_text": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+    "fact": {
+      "fact_index": 1,
+      "source_memory_id": "8602da08-fefc-4875-ad50-dba104642365",
+      "raw_subfact": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia.",
+      "contextualized_subfact": "用户喜欢伯爵茶，因为其丰富的历史、传统以及唤起怀旧感的佛手柑香气。",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "8602da08-fefc-4875-ad50-dba104642365",
+          "quote": "Likes Earl Grey tea because of its rich history, tradition, and bergamot aroma that evokes nostalgia",
+          "supports": "旧记忆记载了对伯爵茶的喜爱及其原因（历史、传统、佛手柑香气唤起怀旧感）；此引文本身未明确主语。"
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "I like to drink Earl Grey tea, because the rich history and tradition behind Earl Grey tea. Its distinctive bergamot aroma provides a comforting sense of nostalgia.",
+          "supports": "来源中说话者为 user，且陈述内容与旧记忆一致，用于将旧记忆中的主语补足为“用户”。"
+        }
+      ],
+      "pending_confirmations": []
+    },
+    "source_context": [
+      {
+        "source_id": "ctx-1",
+        "source_ref": "HaluMem/data/HaluMem-Medium.jsonl uuid=1b846c59-456e-9550-dffd-4d23f1eca81f /sessions/2/dialogue/2/content",
+        "text": "I like to drink Earl Grey tea, because the rich history and tradition behind Earl Grey tea. Its distinctive bergamot aroma provides a comforting sense of nostalgia. I dislike to drink energy drinks, because I find energy drinks too sweet and artificial. They lack the authenticity and historical roots that I value in my beverages. I dislike to drink bubble tea, because the texture of the tapioca pearls is unappealing to me, and the drink often feels overly commercialized.",
+        "speaker": "user",
+        "recorded_at": "Sep 06, 2025, 22:16:28"
+      }
+    ],
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001 /sessions/3/dialogue/0/content",
+        "text": "I recently visited a historic tea house and it was quite an enlightening experience. The ambiance transported me to a different era.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 06:49:58"
+      },
+      {
+        "source_id": "dialogue-2",
+        "source_ref": "1b846c59-456e-9550-dffd-4d23f1eca81f:s003:m001 /sessions/3/dialogue/2/content",
+        "text": "Yes, the Earl Grey tea was particularly impressive. The layers of flavor were something I hadn't fully appreciated before. It certainly aligns with my goal of celebrating historical authenticity.",
+        "speaker": "user",
+        "recorded_at": "Jan 06, 2026, 06:54:08"
+      }
+    ],
+    "time_info": null
+  },
+  "intended_generations": 1,
+  "system_prompt_sha256": "0c3bbab45d6eb1d4d8bb86461bfc3e8904ad0523bfdf9d8c17fd2e7cceb38f2a"
+}

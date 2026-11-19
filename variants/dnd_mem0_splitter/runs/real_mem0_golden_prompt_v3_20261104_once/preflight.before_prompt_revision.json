@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "model": "qwen-plus",
+  "max_real_model_calls": 1,
+  "real_model_calls_so_far": 0,
+  "sdk_max_retries": 0,
+  "http_follow_redirects": false,
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "input_sha256": "11acd12a66f2af62f0bcb2ec586de7bb812ccbbcdd1b5f044c715a76e350c2a3",
+  "prior_v2_input_sha256": "11acd12a66f2af62f0bcb2ec586de7bb812ccbbcdd1b5f044c715a76e350c2a3",
+  "input_and_allowed_contexts_byte_identical": true,
+  "explicit_parameters_equal_to_v2": true,
+  "prior_v2_attempt_parameters": {
+    "model": "qwen-plus",
+    "generation_parameters": {},
+    "timeout_seconds": 180.0,
+    "sdk_max_retries": 0,
+    "http_follow_redirects": false,
+    "prompt_sha256": "164d44fb35488f0460a4c7f5ad39b490b577c6ad9a0dee676d0aecda227b51bd"
+  },
+  "recorded_library_versions": {
+    "openai": "1.100.2",
+    "httpx": "0.27.0"
+  },
+  "allowed_existing_file_modifications": [
+    "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/DESIGN.md",
+    "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/PROMPT_CHANGELOG.md"
+  ],
+  "tracked_existing_files": 149,
+  "unconfirmed_controls": [
+    "Provider sampling defaults and concrete qwen-plus revision are not fixed.",
+    "Historical endpoint value equality cannot be independently verified from the prior attempt record."
+  ]
+}

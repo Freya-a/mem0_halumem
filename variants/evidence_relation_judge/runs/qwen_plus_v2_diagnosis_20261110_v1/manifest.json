@@ -1,0 +1,27 @@
+{
+  "started_at": "2026-11-10T14:47:50.251619+08:00",
+  "baseline": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_relation_judge/runs/erase_style_comparison_20261110_v1",
+  "source_hashes": {
+    "job_transition": "14ebe6e37c5d3c57b0d74169bb020198c4282b2339b0b328fac5a6deb804662c",
+    "persian_cats": "2b8328e74b2365946063bc68ee0d0560d826bac3ec33c6d813b0e08336b3c10c",
+    "skydiving": "09af0fcf0c96bd1280e74b1bd3bb9b5a40d2ee93b9e63671b39fd2be614eb842",
+    "career_history": "9c41eed953368cd61ce948db544b14c4d428c085f63056049d71e09044cff64b",
+    "promotion": "5b84c97e953522b67367c2fda229da5f6aeee2101fa2c1fb5eb781881e8ec713"
+  },
+  "judge_hashes": {
+    "relation_judge.py": "8542d0a90bf379a5c34c4de26f5f7d56fad2de1305e01aa5b115185a17300300",
+    "relation_judge_v2.py": "5b6a607c4c709041f45d436b3c28b6027ebc300a84a9bea2473e7c7ad11c23e3"
+  },
+  "endpoint_host": "dashscope.aliyuncs.com",
+  "sdk": "openai",
+  "sdk_retries": 0,
+  "timeout_seconds": 180,
+  "parameters": {
+    "model": "qwen-plus",
+    "temperature": 0,
+    "max_tokens": 768,
+    "stream": false
+  },
+  "differences": "Local: greedy do_sample=False, max_new_tokens=768, enable_thinking=False, model generation_config defaults. API: temperature=0 and max_tokens=768; no direct do_sample, pad/eos or tokenizer control; top_p and other parameters provider defaults; thinking setting not sent, server/model default applies; temperature=0 does not prove identical decoding. Requested alias may change; use response model for returned identifier.",
+  "pricing": "No pricing or invoice returned by standard response; no estimate."
+}

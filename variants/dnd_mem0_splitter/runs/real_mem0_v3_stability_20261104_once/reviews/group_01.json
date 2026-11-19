@@ -1,0 +1,156 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "cases": [
+    {
+      "case_id": "case_01_multi_person",
+      "summary": "初步判断，待人工确认：格式检查 passed；1 条事实覆盖感谢态度、Steven/colleagues、Mary/friends 及 like 的举例表述，未见关键命题遗漏。观察到 raw 用上下文补出 The user 的来源边界问题，以及肯定用户主体与将主体列为待确认之间的表述冲突；不据此认定用户主体虚构。原始说话人和具体人物身份仍有局部未决项。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "初步判断，待人工确认：raw/contextualized 均保留 grateful、colleagues like Steven、friends like Mary，未改人物、关系或 like 的范围。输入没有明确否定、事件日期、条件或计划/可能性成分，输出也未新增这些成分。contextualized 的用户主体可由同一事件的 ctx-1 第一人称感谢及 ctx-2 的 Your gratitude 合理关联；但冻结 v3 的 raw-only 规则不允许为省略主语补用户，因此 raw 的 The user 仍越过来源边界。正文未带入 ctx-1 的定期联系计划或 ctx-2 的 strong support network 等额外内容。",
+          "semantic_findings": [
+            {
+              "type": "RAW_CONTEXT_LEAK",
+              "certainty": "observed",
+              "input_quote": "Grateful towards colleagues like Steven and friends like Mary",
+              "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+              "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 未给出主体，也没有可在 memory 内部恢复的共享用户主体；raw 新增 The user，依赖 source_context 才能补足。依据主代理提供的冻结 v3 第2条，补足应放在 contextualized。此判断是字段来源边界问题，不是认定用户这一语义主体无依据或已被证伪。"
+            },
+            {
+              "type": "ASSERTION_PENDING_CONFLICT",
+              "certainty": "observed",
+              "input_quote": "The subject of 'Grateful' (i.e., who holds this attitude)",
+              "output_quote": "The user is grateful towards colleagues like Steven and friends like Mary.",
+              "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item，而非原始 memory。正文直接固定为用户持有此态度，pending 又将谁持有该态度本身列为待确认，存在明确的断言/待决状态不一致。pending 理由还把语义主体与是否由用户原话表达混在一起；上下文可支持用户主体，但不能证明此记忆概括是用户原话。此项不等同于主语虚构。"
+            }
+          ],
+          "uncertainties": [
+            {
+              "type": "ORIGINAL_SPEAKER",
+              "reason": "初步判断，待人工确认：ctx-1 是 user 的第一人称联系/表达感谢意向；具名的 Steven/colleagues 与 Mary/friends 在提供的片段中只由 ctx-2 assistant 表述。旧 memory 是提取概括，其原始说话人不能仅从 memory 引文认定为 user。"
+            },
+            {
+              "type": "SUBJECT_OR_IDENTITY",
+              "reason": "初步判断，待人工确认：现有文本足以保留 like Steven / like Mary 的记忆命题，但不能验证两人的真实身份或 like 在完整历史中是否只是泛指例示；这不是因此改写或否定旧记忆的依据。待决项关于“没有任何来源肯定关系”的说法过宽，ctx-2 实际给出了这些关系标签；它仍不是独立的现实核验。"
+            }
+          ],
+          "speaker_review": {
+            "semantic_subject": "初步判断，待人工确认：用户主体有上下文的同事件关联：ctx-1 用户说 I'll ... express my gratitude；ctx-2 assistant 用 Your gratitude 描述具名关系。可作为 contextualized 的主体解释，不自动构成捏造。",
+            "original_utterance_attribution": "初步判断，待人工确认：用户直接发言支持其表达感谢的意向；具体姓名与关系的可见原始发言是 assistant。模型正文及 supports 未明说“用户亲口说过完整具名命题”，故不另标 SPEAKER_ATTRIBUTION_OVERCLAIM。",
+            "pending_review": "初步判断，待人工确认：模型的第一个 pending 把主体和原始说话人混写，已记录断言/待决冲突。第二个 pending 的实际身份疑问可保留为有限未知，但维持旧记忆不要求证明人物现实身份。"
+          },
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "partially_supported",
+              "reason": "初步判断，待人工确认：memory 引文直接支持感谢、两个人名及关系/like 范围，但字面上没有 user 主语；必要上下文为用户主体提供合理关联。因此支持主体属于上下文补足，不能说 memory 本身显式写了 user，更不能由此推出完整概括是用户原话。supports 的 Old memory states 未明确声称用户直接说过，未单独判来源归属错误；partial 不自动计为错误。",
+              "issue_types": []
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": [
+        {
+          "type": "ORIGINAL_SPEAKER",
+          "reason": "初步判断，待人工确认：请人工区分“描述用户的命题”与“用户直接自述”；当前片段不能确认 Steven/Mary 的具名关系概括由用户亲口说出。"
+        },
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：具体人物身份及 like 是否泛指在现有片段内无法进一步核实；不应把这种现实身份未知自动算成拆分错误，也不应要求用补写事实来消除未知。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "reason": "初步判断，待人工确认：请人工确认输出待决状态是否应收窄为原始说话人归属；本报告所标冲突限于正文与 pending 同时对语义主体给出不同确定程度。"
+        }
+      ]
+    },
+    {
+      "case_id": "case_02_subject_and_roster",
+      "summary": "初步判断，待人工确认：格式检查 passed；1 条事实保留朋友关系、ThomasSusan/Susan 名称关联及支持鼓励。观察到 raw 主体来自上下文、contextualized 增加有源但非必要的 well-being 效果，以及 context supports 将名称 token 升格为已验证 full name 的越界与待决状态冲突。未把其他同事名单带入正文。",
+      "case_findings": [],
+      "facts": [
+        {
+          "fact_index": 1,
+          "coverage_summary": "初步判断，待人工确认：raw 完整保留 Has a friend、ThomasSusan、referred to as Susan、provides support and encouragement；contextualized 也保留朋友及别称关联，并改用有源的支持鼓励效果表述。没有遗漏关键名字/关系，没有否定、时间、条件或情态变化。user 主体由 source_context 的 user 角色及 I/my/me 直接支持；raw 增加该主体仍违反仅从 memory 内恢复内容的边界。contextualized 正文确实新增了支持鼓励激励其维持个人和职业生活 well-being 关注的命题；它有 user 来源，但不是消歧或保留旧记忆所必需。引文中的其他细节本身不计新增，MartinezDaniel/WilliamsJoshua 及工作细节也没有进入事实正文。",
+          "semantic_findings": [
+            {
+              "type": "RAW_CONTEXT_LEAK",
+              "certainty": "observed",
+              "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+              "output_quote": "The user has a friend named ThomasSusan, who is referred to as 'Susan', and who provides support and encouragement.",
+              "reason": "初步判断，待人工确认：此处 output_quote 是 raw_subfact。memory 省略拥有朋友的主体；source_context 的 user 第一人称可以支持用户主体，但冻结 v3 第2条要求此类上下文补足留在 contextualized，raw 不应填 The user。这是字段边界问题，不是将有来源的用户主体判为虚构。"
+            },
+            {
+              "type": "SUPPORTED_UNNECESSARY_ADDITION",
+              "certainty": "observed",
+              "input_quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+              "output_quote": "Susan's support and encouragement inspire the user to maintain focus on promoting well-being in both personal and professional life.",
+              "reason": "初步判断，待人工确认：output_quote 是 contextualized_subfact 的实质内容片段。旧 memory 只有支持和鼓励，并无激励保持 well-being 关注及个人/职业领域的效果；该效果虽被 ctx-1 用户原文直接支持，但超出补主体或解释别称所需。它已进入事实正文，故属于有源但非必要扩写，不是仅因证据引文含更多细节而判错。"
+            },
+            {
+              "type": "SUPPORTS_OVERREACH",
+              "certainty": "observed",
+              "input_quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+              "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+              "reason": "初步判断，待人工确认：两处输入确实使用 ThomasSusan token，并将其与 Susan 关联，足以保留原命名/别称命题；它们不能验证 ThomasSusan 是完整真实姓名而非串接、数据形式或笔误。supports 的 full name 验证结论超出所引文本。此判断只针对 supports 新加强度，不将 raw 沿用原 memory 的 named ThomasSusan 另判无依据。"
+            },
+            {
+              "type": "ASSERTION_PENDING_CONFLICT",
+              "certainty": "observed",
+              "input_quote": "Whether 'ThomasSusan' is a single compound name (e.g., a double-barrelled first name) or a conflation/typo of two names (e.g., 'Thomas' and 'Susan')",
+              "output_quote": "validates 'ThomasSusan' as the full name and 'Susan' as the used reference",
+              "reason": "初步判断，待人工确认：input_quote 引自本次输出 pending_confirmations 的 item。supports 声称已验证 full name，同时 pending 明确保留名称是否为串接/笔误的疑问，确定程度冲突。仅保留文本 token 和已使用的 Susan 称呼可以与未知并存，但 full name 已验证这一更强断言不能由现有证据消除该未知。"
+            }
+          ],
+          "uncertainties": [
+            {
+              "type": "SUBJECT_OR_IDENTITY",
+              "reason": "初步判断，待人工确认：ThomasSusan 的 token 结构、完整姓名性质、是否为串接/笔误无法在本输入中确定；应保持原记忆命名而不擅自改名或合并拆分人物。"
+            },
+            {
+              "type": "MODAL_OR_RELATION_SCOPE",
+              "reason": "初步判断，待人工确认：支持鼓励的具体方式、频率、场景没有给出。模型将它列为待确认属于额外细节未知，本身不是拆分错误，也不是完成原命题所需补全的缺口。"
+            }
+          ],
+          "speaker_review": {
+            "semantic_subject": "初步判断，待人工确认：ctx-1 的元数据 speaker=user，正文 I have / my Friend / inspire me 足以直接支持拥有朋友、接受支持者是用户；不应将省略主语的 memory 一律判为主体虚构。",
+            "original_utterance_attribution": "初步判断，待人工确认：朋友、姓名 token、Susan 称呼及 well-being 效果均出现在该 user 原始片段中。context supports 关于 speaker=user 可结合角色元数据支持；第一人称词本身并不能单独确定系统角色，但这里元数据已明确。",
+            "pending_review": "初步判断，待人工确认：姓名结构 pending 与 full name 验证冲突已单列；具体支持方式 pending 不应转化为错误计数或要求新增事实。"
+          },
+          "supports": [
+            {
+              "evidence_index_zero_based": 0,
+              "assessment": "partially_supported",
+              "reason": "初步判断，待人工确认：memory 引文直接支持朋友关系、ThomasSusan/Susan 名称关联及支持鼓励；user 主体不在该引文字面内，但同事件 user 第一人称来源足以补足。因此主体有依据，supports 作为纯 memory 来源描述并非全为字面支持；未声称其是用户原话，也未把 ThomasSusan 说成已核验 full name，此处不单独计错误。",
+              "issue_types": []
+            },
+            {
+              "evidence_index_zero_based": 1,
+              "assessment": "overreach",
+              "reason": "初步判断，待人工确认：quote 与 source 的 user 元数据共同支持用户角色、朋友关系、Susan 的使用以及激励关注 well-being 的效果；后者虽为非必要正文扩写，但确实有源。越界部分是将 ThomasSusan token 验证为 full name；输入只显示其使用形式，且模型自己保留串接/笔误 pending。不能由该 evidence 验证真实完整姓名。",
+              "issue_types": [
+                "SUPPORTS_OVERREACH",
+                "ASSERTION_PENDING_CONFLICT"
+              ]
+            }
+          ]
+        }
+      ],
+      "pending_human_confirmations": [
+        {
+          "type": "SUBJECT_OR_IDENTITY",
+          "reason": "初步判断，待人工确认：ThomasSusan 是完整姓名、复合名字还是串接/笔误仍无法确认；当前只能忠实保留 token 和 Susan 称呼，不能自动纠正。"
+        },
+        {
+          "type": "MODAL_OR_RELATION_SCOPE",
+          "reason": "初步判断，待人工确认：具体支持方式/频率在片段内未知，但不属于原记忆必须补全的内容，也不单独计为错误。"
+        },
+        {
+          "type": "ASSERTION_PENDING_CONFLICT",
+          "reason": "初步判断，待人工确认：请人工确认 full name 已验证与姓名结构 pending 的确定程度冲突；这不否定源文本确实使用了 ThomasSusan 和 Susan。"
+        }
+      ]
+    }
+  ]
+}

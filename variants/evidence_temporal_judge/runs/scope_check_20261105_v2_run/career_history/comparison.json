@@ -1,0 +1,132 @@
+{
+  "case": "career_history",
+  "human_review_source_for_comparison_only": "/home/shu1004/ld/system/mem0_halumem_diagnosis/variants/evidence_temporal_judge/runs/scope_check_20261105_v1/REPORT.md",
+  "v1": {
+    "fact_judgments": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "raw_subfact": "Previously worked as a senior developer in Blockchain Tech",
+          "contextualized_subfact": "User previously worked as a senior developer in Blockchain Tech",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Previously worked as a senior developer in Blockchain Tech",
+              "supports": "Old memory states prior employment as a senior developer at Blockchain Tech."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Blockchain Tech as a senior developer.",
+              "supports": "The context uses first-person 'I' and is attributed to speaker 'user', supporting that the subject of the memory is the user; however, this context describes current (not past) employment, so it does not confirm the tense or timing of the memory's 'previously worked'."
+            }
+          ],
+          "pending_confirmations": [
+            {
+              "item": "Temporal alignment between 'previously worked' (memory) and 'I work...' (context)",
+              "reason": "The memory asserts past employment ('previously worked'), while the context states present employment ('I work...'). No explicit time anchor (e.g., start/end dates, duration, or event-based transition) is provided in either to confirm whether the past role preceded, overlapped with, or was superseded by the present one. Thus, the factual relationship between the two statements — including whether the 'previous' role ended before Sep 05, 2025 — remains unresolved."
+            }
+          ]
+        },
+        "status": "uninvolved",
+        "erase_label": "No Change",
+        "applicability": "uninvolved",
+        "temporal_relation": "unclear",
+        "temporal_reason": "The new evidence ('I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.') contains no temporal reference to prior employment at Blockchain Tech, no mention of role transition, no indication of job change, and no lexical or factual link to 'senior developer', 'Blockchain Tech', or employment status. It introduces a new topic (consulting firm, initial clients) without anchoring it relative to the old fact's timeline.",
+        "components": [
+          {
+            "fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "action": "protect",
+            "reason": "The new evidence does not address, contradict, or corroborate the claim about prior employment at Blockchain Tech; it is topically and temporally unconnected.",
+            "new_evidence": []
+          }
+        ]
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+          "reason": "Introduces new information about the user founding or operating a consulting firm and securing initial clients, which is not present in the old facts."
+        }
+      ]
+    }
+  },
+  "scope_v2": {
+    "fact_judgments": [
+      {
+        "fact": {
+          "fact_index": 1,
+          "source_memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "raw_subfact": "Previously worked as a senior developer in Blockchain Tech",
+          "contextualized_subfact": "User previously worked as a senior developer in Blockchain Tech",
+          "evidence": [
+            {
+              "source_type": "memory",
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Previously worked as a senior developer in Blockchain Tech",
+              "supports": "Old memory states prior employment as a senior developer at Blockchain Tech."
+            },
+            {
+              "source_type": "context",
+              "source_id": "old-context-1",
+              "quote": "I work at Blockchain Tech as a senior developer.",
+              "supports": "The context uses first-person 'I' and is attributed to speaker 'user', supporting that the subject of the memory is the user; however, this context describes current (not past) employment, so it does not confirm the tense or timing of the memory's 'previously worked'."
+            }
+          ],
+          "pending_confirmations": [
+            {
+              "item": "Temporal alignment between 'previously worked' (memory) and 'I work...' (context)",
+              "reason": "The memory asserts past employment ('previously worked'), while the context states present employment ('I work...'). No explicit time anchor (e.g., start/end dates, duration, or event-based transition) is provided in either to confirm whether the past role preceded, overlapped with, or was superseded by the present one. Thus, the factual relationship between the two statements — including whether the 'previous' role ended before Sep 05, 2025 — remains unresolved."
+            }
+          ]
+        },
+        "semantic_support": "not_verified",
+        "status": "insufficient",
+        "applicability": "insufficient",
+        "components": [
+          {
+            "fragment": "Previously worked as a senior developer in Blockchain Tech",
+            "contextualized": "User previously worked as a senior developer in Blockchain Tech",
+            "action": "confirm",
+            "reason": "New evidence mentions the user's current involvement with a consulting firm and recent client acquisition, but provides no temporal, positional, or relational information about prior employment at Blockchain Tech. It neither confirms nor contradicts the 'previously worked' claim, nor does it clarify timing relative to the old context ('I work at Blockchain Tech...') from Sep 05, 2025. No date, role transition, or employment status change is stated or implied.",
+            "old_evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Previously worked as a senior developer in Blockchain Tech"
+              },
+              {
+                "source_type": "context",
+                "source_id": "old-context-1",
+                "quote": "I work at Blockchain Tech as a senior developer."
+              }
+            ],
+            "new_evidence": [
+              {
+                "source_id": "dialogue-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "new_candidates": {
+      "status": "ok",
+      "candidates": [
+        {
+          "source_id": "dialogue-0",
+          "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+          "reason": "The quote states the user has been feeling relieved lately due to their consulting firm securing initial clients, and characterizes that event as a significant milestone for them."
+        }
+      ],
+      "semantic_support": "not_verified"
+    }
+  },
+  "semantic_review": "pending_user_review"
+}

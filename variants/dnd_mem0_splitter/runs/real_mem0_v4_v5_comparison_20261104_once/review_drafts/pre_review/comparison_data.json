@@ -1,0 +1,726 @@
+{
+  "source_policy": "Exact parsed saved model fields; presentation adds no model facts.",
+  "cases": [
+    {
+      "case_id": "case_10_sports_preferences",
+      "name": "运动偏好",
+      "input": {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "source_context": [
+          {
+            "source_id": "ctx-1",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_003/input.json#/raw_dialogue/6/content [characters 294:422, zero-based, end exclusive]",
+            "text": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+            "speaker": "user",
+            "recorded_at": "Sep 06, 2025, 22:52:30"
+          }
+        ]
+      },
+      "v4": {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+            "raw_subfact": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+            "contextualized_subfact": "User dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                "quote": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+                "supports": "Old memory records a dislike of wrestling grounded in its perceived confrontational nature, and a preference for sports highlighting teamwork and personal growth."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I dislike wrestling, because I find wrestling too confrontational and prefer sports that emphasize teamwork and personal growth.",
+                "supports": "Confirms the subject is the user (first-person 'I'), validates the causal structure ('because'), and matches the core attitudes and reasons; 'wrestling' is repeated for emphasis but does not alter the proposition's scope or object."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_candidate": {
+        "memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+        "memory_text": "Dislikes wrestling because finds it too confrontational and prefers sports emphasizing teamwork and personal growth",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+            "raw_subfact": "Dislikes wrestling because finds it too confrontational.",
+            "contextualized_subfact": "The user dislikes wrestling because they find it too confrontational.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                "quote": "Dislikes wrestling because finds it too confrontational",
+                "supports": "Old memory states a dislike of wrestling grounded in finding it too confrontational; subject is omitted in this fragment."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I dislike wrestling, because I find wrestling too confrontational",
+                "supports": "First-person phrasing and speaker=user confirm the subject is the user; 'wrestling' is repeated for clarity but does not change the core causal relation."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+            "raw_subfact": "Prefers sports emphasizing teamwork and personal growth.",
+            "contextualized_subfact": "The user prefers sports that emphasize teamwork and personal growth.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "4f51947c-5cb3-419e-a04e-1142410c0b9e",
+                "quote": "prefers sports emphasizing teamwork and personal growth",
+                "supports": "Old memory states a preference for sports with these qualities; subject is omitted in this fragment."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I ... prefer sports that emphasize teamwork and personal growth.",
+                "supports": "First-person phrasing and speaker=user confirm the subject is the user; 'that emphasize' clarifies the grammatical relationship without altering the core preference."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_program_report": {
+        "case_id": "case_10_sports_preferences",
+        "version": "v5",
+        "finished_at": "2026-11-04T15:04:12.133294+08:00",
+        "model": "qwen-plus",
+        "model_call_attempts": 1,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "automatic_check": "failed",
+        "error": {
+          "code": "quote_not_found",
+          "path": "$.facts[1].evidence[1].quote",
+          "message": "Quote is not an exact substring of the declared input source."
+        },
+        "validation_scope": "schema, input identity and literal evidence quotes only",
+        "semantic_review": "not determined by program",
+        "response_repaired": false
+      },
+      "v5_accepted": false
+    },
+    {
+      "case_id": "case_11_persian_care",
+      "name": "波斯猫照料",
+      "input": {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "source_context": [
+          {
+            "source_id": "ctx-1",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/0/content [characters 0:185, zero-based, end exclusive]",
+            "text": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+            "speaker": "user",
+            "recorded_at": "Apr 10, 2026, 11:06:07"
+          },
+          {
+            "source_id": "ctx-2",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/2/content [characters 0:178, zero-based, end exclusive]",
+            "text": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+            "speaker": "user",
+            "recorded_at": "Apr 10, 2026, 11:15:58"
+          },
+          {
+            "source_id": "ctx-3",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_007/input.json#/raw_dialogue/3/content [characters 0:434, zero-based, end exclusive]",
+            "text": "Maintaining the regal appearance of Persian cats can indeed be a challenge, requiring regular grooming and care. Your strategic thinking and perfectionist traits likely help you navigate these responsibilities effectively. It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements. How do these traits influence your approach to integrating pet preferences into your lifestyle?",
+            "speaker": "assistant",
+            "recorded_at": "Apr 10, 2026, 11:15:58"
+          }
+        ]
+      },
+      "v4": {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+            "contextualized_subfact": "The user has a deep admiration for Persian cats and their historical lineage and association with royalty",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+                "supports": "Old memory states the subject has a deep admiration for Persian cats and their historical lineage and association with royalty; the subject is not explicitly named in the memory text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+                "supports": "The user (speaker = 'user') uses first-person 'my admiration' for Persian cats' historical lineage and royal association; this directly grounds the subject of the admiration as the user."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Reflects on the practical challenges of maintaining their regal appearance",
+            "contextualized_subfact": "The user reflects on the practical challenges of maintaining the regal appearance of Persian cats",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "reflects on the practical challenges of maintaining their regal appearance",
+                "supports": "Old memory states the subject reflects on the practical challenges of maintaining Persian cats' regal appearance; the subject and referent of 'their' are not explicitly named in the memory text."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-2",
+                "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                "supports": "The user (speaker = 'user') explicitly states 'I do reflect on the practical challenges of maintaining their regal appearance', confirming both the subject ('I' = user) and the referent ('their' = Persian cats, consistent with prior context)."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 3,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Balancing historical admiration with practical care requirements",
+            "contextualized_subfact": "The user balances historical admiration for Persian cats with practical care requirements",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "balancing historical admiration with practical care requirements",
+                "supports": "Old memory states the subject engages in balancing historical admiration with practical care requirements; neither subject nor object is explicit in this clause alone."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-2",
+                "quote": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                "supports": "Confirms user's historical admiration (via 'my interest in historical authenticity' aligned with Persian cat history) and reflection on practical challenges — together grounding 'balancing' as an activity undertaken by the user."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-3",
+                "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+                "supports": "Assistant attributes the balancing act directly to 'you' (i.e., the user), using identical phrasing — confirming the user is the agent performing the balance. Note: this quote references 'dog preferences' analogically; it does not assert the user has dogs or that the balancing applies to dogs in this instance — only that the *structure* of balancing is recognized by the assistant as characteristic of the user."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_candidate": {
+        "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+        "memory_text": "Has a deep admiration for Persian cats and their historical lineage and association with royalty, and reflects on the practical challenges of maintaining their regal appearance while balancing historical admiration with practical care requirements",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Has a deep admiration for Persian cats and their historical lineage and association with royalty.",
+            "contextualized_subfact": "The user has a deep admiration for Persian cats and their historical lineage and association with royalty.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "Has a deep admiration for Persian cats and their historical lineage and association with royalty",
+                "supports": "Old memory states admiration for Persian cats, including their historical lineage and royal association; subject is unspecified in this fragment."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+                "supports": "First-person 'my admiration' combined with speaker=user confirms the subject is the user; supports both the existence and content (historical lineage + royal association) of the admiration."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Reflects on the practical challenges of maintaining their regal appearance.",
+            "contextualized_subfact": "The user reflects on the practical challenges of maintaining the regal appearance of Persian cats.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "reflects on the practical challenges of maintaining their regal appearance",
+                "supports": "Old memory states reflection on practical challenges related to maintaining regal appearance; subject and referent ('their') are unspecified in this fragment."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-2",
+                "quote": "However, I do reflect on the practical challenges of maintaining their regal appearance.",
+                "supports": "First-person 'I do reflect' + speaker=user confirms subject is the user; 'their' refers contextually to Persian cats as established in prior utterance (ctx-1)."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 3,
+            "source_memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+            "raw_subfact": "Balances historical admiration with practical care requirements.",
+            "contextualized_subfact": "The user balances historical admiration for Persian cats with practical care requirements.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+                "quote": "balancing historical admiration with practical care requirements",
+                "supports": "Old memory states balancing between historical admiration and practical care requirements; subject, object, and scope of 'balancing' are unspecified in this fragment."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-3",
+                "quote": "It's similar to how you consider dog preferences, balancing historical admiration with practical care requirements.",
+                "supports": "Assistant’s use of 'you' + alignment with prior user statements (ctx-1, ctx-2) and speaker=user in those contexts supports attribution to the user; 'historical admiration' and 'practical care requirements' are explicitly linked to Persian cats in surrounding discourse (ctx-1: 'admiration for their historical lineage...', ctx-2: 'maintaining their regal appearance', ctx-3 opening clause: 'Maintaining the regal appearance... requiring regular grooming and care')."
+              }
+            ],
+            "pending_confirmations": [
+              {
+                "item": "Direct user self-attribution of the verb 'balances'",
+                "reason": "The word 'balances' appears only in the old memory fragment; the contextual quote (ctx-3) uses 'balancing' in a simile describing 'how you consider dog preferences', not a direct report of the user stating they balance Persian cat admiration and care. While strongly implied and semantically aligned, the exact phrasing 'balances' is not uttered by the user in provided context."
+              }
+            ]
+          }
+        ]
+      },
+      "v5_program_report": {
+        "case_id": "case_11_persian_care",
+        "version": "v5",
+        "finished_at": "2026-11-04T15:04:38.777883+08:00",
+        "model": "qwen-plus",
+        "model_call_attempts": 1,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "automatic_check": "passed",
+        "error": null,
+        "validation_scope": "schema, input identity and literal evidence quotes only",
+        "semantic_review": "not determined by program",
+        "response_repaired": false
+      },
+      "v5_accepted": true
+    },
+    {
+      "case_id": "case_09_father_profile",
+      "name": "父亲资料",
+      "input": {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "source_context": [
+          {
+            "source_id": "ctx-1",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_001/input.json#/raw_dialogue/8/content [characters 88:178, zero-based, end exclusive]",
+            "text": "My Father was born on 1963-08-02, Retired doctor who inspired Martin's interest in health.",
+            "speaker": "user",
+            "recorded_at": "Sep 04, 2025, 19:38:09"
+          }
+        ]
+      },
+      "v4": {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father was born on 1963-08-02",
+            "contextualized_subfact": "Father was born on 1963-08-02",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "Father was born on 1963-08-02",
+                "supports": "Old memory explicitly states Father's date of birth."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father was a retired doctor",
+            "contextualized_subfact": "Father was a retired doctor",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "retired doctor",
+                "supports": "Old memory identifies Father's occupational status and profession."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 3,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father inspired interest in health",
+            "contextualized_subfact": "Father inspired Martin's interest in health",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "retired doctor who inspired interest in health",
+                "supports": "Old memory states Father inspired 'interest in health', but does not specify whose interest."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "Retired doctor who inspired Martin's interest in health.",
+                "supports": "Context specifies 'Martin's interest' — this disambiguates the object of 'inspired interest in health' in the memory text."
+              }
+            ],
+            "pending_confirmations": [
+              {
+                "item": "Semantic subject of 'inspired interest in health' in the memory text",
+                "reason": "The memory text says 'inspired interest in health' without specifying whose interest; the context clarifies it was Martin's, but the memory itself leaves this unspecified."
+              }
+            ]
+          }
+        ]
+      },
+      "v5_candidate": {
+        "memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+        "memory_text": "Father was born on 1963-08-02, retired doctor who inspired interest in health",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father was born on 1963-08-02.",
+            "contextualized_subfact": "Father was born on 1963-08-02.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "Father was born on 1963-08-02",
+                "supports": "Old memory directly states Father's birth date."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father was a retired doctor.",
+            "contextualized_subfact": "Father was a retired doctor.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "retired doctor",
+                "supports": "Old memory states 'retired doctor' as an appositive descriptor of Father; no external context needed to retain this identity attribution."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 3,
+            "source_memory_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+            "raw_subfact": "Father inspired interest in health.",
+            "contextualized_subfact": "Father inspired Martin's interest in health.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "bde67e08-ad3b-476a-9874-0368cc33de71",
+                "quote": "who inspired interest in health",
+                "supports": "Old memory states Father inspired 'interest in health'; the object of that inspiration is unspecified in the memory text itself."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "Retired doctor who inspired Martin's interest in health.",
+                "supports": "Context explicitly identifies 'Martin' as the person whose interest in health was inspired by Father; this disambiguates the otherwise underspecified object in the memory text."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_program_report": {
+        "case_id": "case_09_father_profile",
+        "version": "v5",
+        "finished_at": "2026-11-04T15:04:55.427287+08:00",
+        "model": "qwen-plus",
+        "model_call_attempts": 1,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "automatic_check": "passed",
+        "error": null,
+        "validation_scope": "schema, input identity and literal evidence quotes only",
+        "semantic_review": "not determined by program",
+        "response_repaired": false
+      },
+      "v5_accepted": true
+    },
+    {
+      "case_id": "case_03_assistant_yoga",
+      "name": "瑜伽",
+      "input": {
+        "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+        "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+        "source_context": [
+          {
+            "source_id": "ctx-1",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content [characters 0:255, zero-based, end exclusive]",
+            "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+            "speaker": "user",
+            "recorded_at": "Feb 05, 2026, 17:13:15"
+          },
+          {
+            "source_id": "ctx-2",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/3/content [characters 327:523, zero-based, end exclusive]",
+            "text": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+            "speaker": "assistant",
+            "recorded_at": "Feb 05, 2026, 17:15:18"
+          }
+        ]
+      },
+      "v4": {
+        "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+        "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+            "raw_subfact": "Practices or is open to yoga for supporting personal health and transition",
+            "contextualized_subfact": "User practices or is open to yoga for supporting personal health and transition.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+                "quote": "Practices or is open to yoga for supporting personal health and transition",
+                "supports": "Old memory explicitly states the user practices or is open to yoga for supporting personal health and transition."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+                "supports": "Confirms user's active concern with personal well-being and ongoing life/career transition; consistent with 'personal health and transition' framing in memory, but does not itself state yoga involvement."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-2",
+                "quote": "As you continue exploring job opportunities, remember the importance of balancing professional responsibilities with personal health. Practices like yoga could support this transition effectively.",
+                "supports": "Assistant's suggestion of yoga as a supportive practice during transition; does not confirm user's actual practice or openness — only provides contextual relevance and shared framing of 'transition' and 'personal health'."
+              }
+            ],
+            "pending_confirmations": [
+              {
+                "item": "Whether 'Practices or is open to yoga' reflects user's self-reported behavior/attitude (vs. assistant's suggestion or third-party inference)",
+                "reason": "The memory text lacks explicit first-person attribution (e.g., 'I practice...', 'I'm open to...'); neither ctx-1 nor ctx-2 contains user’s direct statement affirming yoga practice or openness — ctx-1 expresses well-being concerns and transition intent, ctx-2 is assistant's recommendation. No source confirms the subject of the disjunction ('practices' vs. 'is open') or its speaker."
+              },
+              {
+                "item": "Specific meaning and scope of 'transition'",
+                "reason": "Memory uses 'transition' without specification; ctx-1 refers to career transition, but memory does not explicitly link yoga to career — only says 'for supporting personal health and transition'. Whether 'transition' here is co-referential with career transition (or broader life change) is ambiguous and unsupported by direct alignment in quoted text."
+              }
+            ]
+          }
+        ]
+      },
+      "v5_candidate": {
+        "memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+        "memory_text": "Practices or is open to yoga for supporting personal health and transition",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+            "raw_subfact": "Practices or is open to yoga for supporting personal health and transition",
+            "contextualized_subfact": "User practices or is open to yoga for supporting personal health and transition.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "992ae849-3f40-4ffe-a2ec-16e20959ca86",
+                "quote": "Practices or is open to yoga for supporting personal health and transition",
+                "supports": "Old memory states a disposition toward yoga with dual purpose: supporting personal health and transition."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+                "supports": "User self-reports concern for well-being and active engagement in a career transition; provides contextual grounding for 'personal health and transition' as referents, but does not state yoga practice or openness."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-2",
+                "quote": "Practices like yoga could support this transition effectively.",
+                "supports": "Assistant suggests yoga as a supportive practice for the user's transition; this is external recommendation, not user-asserted practice or openness. Used only to confirm relevance of 'transition' and 'personal health' framing — not to attribute yoga stance to user."
+              }
+            ],
+            "pending_confirmations": [
+              {
+                "item": "Original speaker of the memory statement",
+                "reason": "The memory text is in third-person ('Practices or is open to...') without explicit subject; neither context source attributes this exact phrasing to the user directly. ctx-1 is first-person user speech but does not mention yoga; ctx-2 is assistant speech recommending yoga but does not assert user's practice or openness."
+              },
+              {
+                "item": "Whether 'practices' or 'is open to' applies, and whether both are simultaneously true",
+                "reason": "The disjunction 'or' leaves the actual status ambiguous — it may reflect uncertainty in the original observation, or conflate two distinct possibilities. No source clarifies which holds, or if both are intended as co-true."
+              },
+              {
+                "item": "Specific meaning and scope of 'transition'",
+                "reason": "While ctx-1 describes career transition (well-being, work-life balance, humanitarian goals), the memory does not specify domain; 'transition' could be broader (e.g., life stage, identity, health status) and is not lexically anchored to career in the memory text itself."
+              }
+            ]
+          }
+        ]
+      },
+      "v5_program_report": {
+        "case_id": "case_03_assistant_yoga",
+        "version": "v5",
+        "finished_at": "2026-11-04T15:05:12.742072+08:00",
+        "model": "qwen-plus",
+        "model_call_attempts": 1,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "automatic_check": "passed",
+        "error": null,
+        "validation_scope": "schema, input identity and literal evidence quotes only",
+        "semantic_review": "not determined by program",
+        "response_repaired": false
+      },
+      "v5_accepted": true
+    },
+    {
+      "case_id": "case_08_partner_profile",
+      "name": "伴侣资料",
+      "input": {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "source_context": [
+          {
+            "source_id": "ctx-1",
+            "source_ref": "system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_001/input.json#/raw_dialogue/8/content [characters 280:398, zero-based, end exclusive]",
+            "text": "My Partner was born on 1980-06-16, Art curator with a keen eye for historical artifacts, shares a passion for history.",
+            "speaker": "user",
+            "recorded_at": "Sep 04, 2025, 10:49:29"
+          }
+        ]
+      },
+      "v4": {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+            "raw_subfact": "Partner was born on 1980-06-16",
+            "contextualized_subfact": "Partner was born on 1980-06-16",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+                "quote": "Partner was born on 1980-06-16",
+                "supports": "Old memory explicitly states Partner's birth date as 1980-06-16."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+            "raw_subfact": "Partner is an art curator specializing in historical artifacts",
+            "contextualized_subfact": "Partner is an art curator specializing in historical artifacts",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+                "quote": "art curator specializing in historical artifacts",
+                "supports": "Old memory explicitly states Partner's professional role and specialization."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_candidate": {
+        "memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+        "memory_text": "Partner was born on 1980-06-16, art curator specializing in historical artifacts",
+        "facts": [
+          {
+            "fact_index": 1,
+            "source_memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+            "raw_subfact": "Partner was born on 1980-06-16.",
+            "contextualized_subfact": "The user's partner was born on 1980-06-16.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+                "quote": "Partner was born on 1980-06-16",
+                "supports": "Old memory states the partner's birth date."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "My Partner was born on 1980-06-16",
+                "supports": "Context confirms 'Partner' refers to the user's partner and is stated by the user in first person; 'My' establishes ownership/relationship."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 2,
+            "source_memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+            "raw_subfact": "Partner is an art curator.",
+            "contextualized_subfact": "The user's partner is an art curator.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+                "quote": "art curator",
+                "supports": "Old memory states the partner's profession."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "Art curator with a keen eye for historical artifacts",
+                "supports": "Context corroborates the profession and adds descriptive phrasing; 'Art curator' appears verbatim and is attributed to the same subject ('My Partner')."
+              }
+            ],
+            "pending_confirmations": []
+          },
+          {
+            "fact_index": 3,
+            "source_memory_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+            "raw_subfact": "Partner specializes in historical artifacts.",
+            "contextualized_subfact": "The user's partner specializes in historical artifacts.",
+            "evidence": [
+              {
+                "source_type": "memory",
+                "source_id": "a0890e00-0564-4490-8e5b-15b02025e910",
+                "quote": "specializing in historical artifacts",
+                "supports": "Old memory explicitly states the specialization domain."
+              },
+              {
+                "source_type": "context",
+                "source_id": "ctx-1",
+                "quote": "Art curator with a keen eye for historical artifacts",
+                "supports": "Context supports the domain focus ('historical artifacts') and implies specialized attention; 'with a keen eye for' is a stylistic variant of 'specializing in', applied to the same subject. No contradiction; alignment confirmed."
+              }
+            ],
+            "pending_confirmations": []
+          }
+        ]
+      },
+      "v5_program_report": {
+        "case_id": "case_08_partner_profile",
+        "version": "v5",
+        "finished_at": "2026-11-04T15:05:33.295057+08:00",
+        "model": "qwen-plus",
+        "model_call_attempts": 1,
+        "sdk_max_retries": 0,
+        "http_follow_redirects": false,
+        "automatic_check": "passed",
+        "error": null,
+        "validation_scope": "schema, input identity and literal evidence quotes only",
+        "semantic_review": "not determined by program",
+        "response_repaired": false
+      },
+      "v5_accepted": true
+    }
+  ]
+}

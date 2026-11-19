@@ -1,0 +1,58 @@
+{
+  "completed_on_client_date": "2026-11-04",
+  "timezone": "Asia/Shanghai",
+  "offline_audit_consistent": true,
+  "all_model_cases_passed": false,
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "validator_status": "passed",
+      "error": null,
+      "real_calls": 1,
+      "retries": 0,
+      "result_json_exists": true
+    },
+    {
+      "case_id": "case_2_time_state",
+      "validator_status": "passed",
+      "error": null,
+      "real_calls": 1,
+      "retries": 0,
+      "result_json_exists": true
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "validator_status": "failed",
+      "error": {
+        "code": "missing_memory_evidence",
+        "path": "$.facts[0].evidence",
+        "message": "Each fact must include evidence from memory_text."
+      },
+      "real_calls": 1,
+      "retries": 0,
+      "result_json_exists": false
+    }
+  ],
+  "real_model_calls_for_entire_revision": 3,
+  "real_model_calls_added_after_resume": 0,
+  "automatic_retries": 0,
+  "offline_tests_rerun": {
+    "count": 38,
+    "status": "passed",
+    "log": "offline_tests.final.log"
+  },
+  "inputs_and_old_contexts_byte_identical": true,
+  "explicit_parameters_equal": true,
+  "old_results_and_archived_prompt_preserved": true,
+  "existing_files_checked": 104,
+  "unchanged_existing_files": 103,
+  "only_modified_existing_file": "system/mem0_halumem_diagnosis/variants/dnd_mem0_splitter/DESIGN.md",
+  "historical_source_hashes_matched": 20,
+  "all_old_and_new_fact_texts_in_reports": true,
+  "all_old_and_new_quotes_and_supports_in_case_reports": true,
+  "failed_response_not_repaired": true,
+  "failed_case_has_no_result_json": true,
+  "api_key_absent_from_new_artifacts": true,
+  "no_mem0_or_knowledge_base_writes": true,
+  "full_development_subset_executed": false
+}

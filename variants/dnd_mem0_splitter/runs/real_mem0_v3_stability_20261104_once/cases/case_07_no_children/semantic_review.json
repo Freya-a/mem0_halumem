@@ -1,0 +1,90 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case": {
+    "case_id": "case_07_no_children",
+    "categories": [
+      "明确否定状态",
+      "缺失主语",
+      "上下文家庭细节"
+    ],
+    "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+    "old_memory": "No children",
+    "program_status": "passed",
+    "fact_count": 1,
+    "literal_quotes_passed": 2,
+    "literal_quotes_total": 2,
+    "review_label": "初步判断，待人工确认",
+    "summary": "格式检查通过，1条返回事实。No children 的否定状态保留，未扩写为不想要孩子或从未有过孩子。观察到 raw 从上下文补入用户主语；用户家庭自我介绍足以支持 contextualized，但不能突破 raw 仅恢复 memory 内部成分的边界。",
+    "observed_issue_types": [
+      "RAW_CONTEXT_LEAK"
+    ],
+    "has_observed_issue": true,
+    "specific_uncertainty_types": [],
+    "has_specific_unresolved_item": false,
+    "model_pending_item_count": 0,
+    "pending_human_confirmations": [],
+    "independent_review_file": "reviews/group_03.json"
+  },
+  "facts": [
+    {
+      "case_id": "case_07_no_children",
+      "memory_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+      "fact_index": 1,
+      "review_label": "初步判断，待人工确认",
+      "program_status": "passed",
+      "semantic_status": "issue_observed",
+      "observed_issue_types": [
+        "RAW_CONTEXT_LEAK"
+      ],
+      "specific_uncertainty_types": [],
+      "raw_subfact": "The user has no children.",
+      "contextualized_subfact": "The user has no children.",
+      "evidence": [
+        {
+          "source_type": "memory",
+          "source_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+          "quote": "No children",
+          "supports": "Old memory states 'No children', expressing the absence of children in the user's family."
+        },
+        {
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children.",
+          "supports": "Confirms the phrase 'No children' is part of the user's self-introduction about their family; speaker is explicitly labeled as 'user'."
+        }
+      ],
+      "model_pending_confirmations": [],
+      "coverage_summary": "覆盖无子女状态，has no children 保留否定范围；未引申为不愿生育、永久无子女、终身从未有过孩子或无亲属。Both parents are alive 和 no_relationship 仅在逐字引文中出现，没有变成 raw/contextualized 的额外家庭事实。未增加日期、条件或其他情态。",
+      "semantic_findings": [
+        {
+          "type": "RAW_CONTEXT_LEAK",
+          "certainty": "observed",
+          "input_quote": "No children",
+          "output_quote": "The user has no children.",
+          "reason": "memory 只有 No children，内部没有可恢复的 The user 主语。raw 中新增 The user 属于借上下文补主体；该补足应留在 contextualized。ctx-1 的 let me introduce my family 为语义主体提供可靠依据，所以不将其认定为无依据的身份添加。"
+        }
+      ],
+      "uncertainties": [],
+      "speaker_review": {
+        "semantic_subject": "user；由 let me introduce my family 的自我家庭介绍可靠支持。",
+        "original_speaker": "ctx-1 明确标记为 user，且包含 No children。",
+        "assessment": "contextualized 的主体与来源归属无明显问题；raw 的用户补足违反来源边界。未将家庭介绍中的其他人物/关系细节写成新事实。"
+      },
+      "supports_review": [
+        {
+          "evidence_index_zero_based": 0,
+          "assessment": "partially_supported",
+          "reason": "No children 直接支持无子女的否定状态，但该 memory 引文本身不包含用户或家庭所属的显式主语；用户主体需结合 ctx-1 的家庭自我介绍。全输入有支持，故不另记无依据新增或 supports 越界。",
+          "issue_types": []
+        },
+        {
+          "evidence_index_zero_based": 1,
+          "assessment": "directly_supported",
+          "reason": "原引文含 let me introduce my family 与 No children，且 speaker=user；支持这是用户关于自身家庭的陈述。supports 不推导生育意愿、既往终身史或父母/伴侣新事实。",
+          "issue_types": []
+        }
+      ],
+      "independent_review_file": "reviews/group_03.json"
+    }
+  ]
+}

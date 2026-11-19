@@ -1,0 +1,45 @@
+{
+  "target_number": 14,
+  "target_id": "1b846c59-456e-9550-dffd-4d23f1eca81f:s006:m000",
+  "user_uuid": "1b846c59-456e-9550-dffd-4d23f1eca81f",
+  "old_before_source": "/home/shu1004/ld/system/mem0_halumem_diagnosis/results/medium_dev/williams_native_prefix5_20261028_v3/development_diagnosis_v1/target_14_evidence.json",
+  "old_memory_before_exact_match": true,
+  "dataset": "/home/shu1004/ld/system/mem0_halumem_diagnosis/dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "old_new_dialogue_pointer_text_role_time_verified": true,
+  "model_request": {
+    "split_request": {
+      "memory_id": "eef34a57-c82a-4995-877d-66b54b9589da",
+      "memory_text": "Likes Persian cats because of their regal and calm nature, elegance, and historical charm",
+      "source_context": [
+        {
+          "source_id": "old-1",
+          "source_ref": "dataset line 14, /sessions/2/dialogue/6",
+          "text": "I like persian cats, because I admire the regal and calm nature of Persian cats. Their presence adds a touch of elegance and history to my home. I don't like parrots, because The constant noise and chatter of parrots can be quite distracting, especially when I'm focused on creating a quiet, historical atmosphere. I like greyhounds, because greyhounds have a noble history and a gentle demeanor that I find soothing and fitting for my lifestyle. I like tortoises, because their slow, deliberate movements remind me of the passage of time and history, which I find fascinating. I like British shorthair cats, because their calm and collected nature aligns with my preference for peace and quiet, and they have a historical charm.",
+          "speaker": "user",
+          "recorded_at": "Sep 06, 2025, 22:24:16"
+        }
+      ]
+    },
+    "new_evidence": [
+      {
+        "source_id": "dialogue-0",
+        "text": "I recently attended a film festival and watched a fascinating documentary about Persian cats. It really deepened my admiration for their historical lineage and association with royalty.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 11:06:07"
+      },
+      {
+        "source_id": "dialogue-2",
+        "text": "The history of Persian cats aligns perfectly with my interest in historical authenticity. However, I do reflect on the practical challenges of maintaining their regal appearance.",
+        "speaker": "user",
+        "recorded_at": "Apr 10, 2026, 11:15:58"
+      }
+    ],
+    "time_info": null
+  },
+  "missing_existing_inputs": [
+    "matching pre-update v4 split",
+    "matching Qwen v2 result"
+  ],
+  "selection_note": "source selection is not part of model prompt; no review labels supplied to models"
+}

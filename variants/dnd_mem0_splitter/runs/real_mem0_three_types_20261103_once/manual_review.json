@@ -1,0 +1,80 @@
+{
+  "review_method": "本次助手逐项对照旧记忆及允许的旧来源上下文；未追加模型请求，尚未经用户确认，不是人工标准答案。",
+  "overall": "三条均通过程序校验，但语义问题与程序通过必须分开：发现关系信息遗漏、有来源却超出必要范围的扩写，以及语气和印象对象的变化。",
+  "coverage_limit": "三个样本没有明确的 if/unless 条件句或直接的 not 否定句；不能据此推断条件及否定范围的处理已经可靠。",
+  "cases": [
+    {
+      "case_id": "case_1_multi_person",
+      "summary": "保留三个人名、支持行为及职业转变期间这一范围；遗漏朋友和同事关系，并加入了有旧来源的评价及效果。",
+      "dimensions": {
+        "人物": "Susan、Daniel、Joshua 均保留，没有交换姓名，也未擅自给每个人分配朋友或同事身份；但 Friends and colleagues 这一组关系描述从 raw 和补充版本中均消失，只有 evidence.quote 保留，事实文本仍有遗漏。",
+        "主语与受益人": "raw 增补 the user's career transition。旧文本没有显式写出受益人；旧 user 发言中的 my friends and colleagues、I received、helped me 为上下文版本归到同一发言者提供依据。raw 是否允许这样借助上下文明确受益人，仍需确认。",
+        "时间": "保留过去式 provided 和 during career transition，没有添加日期或永久持续断言。",
+        "条件、否定与情态": "原文无显式条件或否定句。instrumental support 的强度保留，没有把支持改成计划或可能；保留三人合述，没有强拆成三人各自独立完成整个支持过程。",
+        "语气": "核心支持行为仍直接陈述，没有改成用户认为或用户感到三人提供了支持；新增的 user described、said 用来引入原文没有的上下文评价及效果。",
+        "引文支持边界": "invaluable 和 see things differently 确实出现在允许的旧上下文中，但不是理解原命题所必需的指代、时间等补充；有来源不等于符合本次最小补充范围。"
+      },
+      "concerns": [
+        {"path": "$.facts[0].raw_subfact / contextualized_subfact", "kind": "旧关系信息遗漏", "detail": "Friends and colleagues 没有进入任何事实文本；引文含有这段文字不能代替子事实保留它。"},
+        {"path": "$.facts[0].contextualized_subfact", "kind": "有来源的超范围扩写", "detail": "新增 invaluable 评价和 helped them see things differently 效果，均来自旧上下文，但超出必要上下文补足。"},
+        {"path": "$.facts[0].raw_subfact", "kind": "raw 来源边界待确认", "detail": "the user's 明确受益人主要由来源上下文支持，旧记忆本身未显式说明。"}
+      ],
+      "pending_human_confirmations": [
+        "事实文本遗漏朋友和同事这一组关系描述是否判为必须修正的漏项。",
+        "是否允许补充版本加入有来源但原记忆没有的支持评价及效果。",
+        "raw 中增补 the user's 是否超出仅依据 memory_text 的要求。",
+        "输入没有提供三人各自属于朋友还是同事的明确映射；需要逐人关系时须另找可靠旧来源，不能自行分配。"
+      ]
+    },
+    {
+      "case_id": "case_2_time_state",
+      "summary": "raw 基本覆盖旧记忆两个阶段，保留 initial、now 和 sees 的态度范围；补充版本夹入来源对照说明，人物、时间及初始怀疑的直接来源仍需确认。",
+      "dimensions": {
+        "人物与主语": "使用泛称 The speaker，没有强行填入具体姓名；模型主动标记说话人身份及 their 与 user 的对应关系待确认。",
+        "时间与状态": "initial skepticism 和 now 均保留；没有擅自把 now 换成当前日期、Mem0 处理日期或固定发言日期，也没有声称怀疑已经完全消失。模型标记初始阶段的时间范围和 now 的锚点。",
+        "条件、否定与情态": "integrating preference 仍为怀疑对象，并未改成已经整合偏好、已经养犬或完成行为；原文无显式条件或直接否定句。",
+        "语气": "原文已经写 now sees pets as，因此保留 sees 属于保留原来的态度表述，不能算把直接陈述额外改成用户认为。contextualized 中的 consistent with 是新增的来源一致性说明，不是原命题必需的补充。",
+        "覆盖与扩写": "两个旧命题均保留。第 2 条补充版本加入此前原话和 integrating preference 帮助管理压力的乐观态度；这些有旧来源，但把来源比较和额外状态写入了子事实。",
+        "旧来源限制": "已检查的生成会话中，initial skepticism 主要由 assistant 回述，而非发现 user 的直接怀疑自述。旧 Mem0 文字真实存在不等于这段原始自述已获核实。本次不改写或纠正旧记忆，该来源问题另列待确认。"
+      },
+      "concerns": [
+        {"path": "$.facts[1].contextualized_subfact", "kind": "有来源的超范围扩写及评述", "detail": "consistent with their own prior statement 及另列的乐观态度属于来源比较和额外上下文，不只是消除指代或时间歧义。"},
+        {"path": "$.facts[0].raw_subfact", "kind": "原始自述来源待确认", "detail": "old memory 直接记录 expressed initial skepticism；已查生成会话对应的是 assistant 回忆。不能把它进一步宣称为已经找到用户直接说过的原话。"}
+      ],
+      "pending_human_confirmations": [
+        "initial skepticism 究竟对应哪个阶段、事件或日期。",
+        "now 的可靠时间锚点，以及是否需要在补充版本中保留记录时间与事件时间的区别。",
+        "The speaker、their 与来源 user 的指代对应；模型也已标记此项。",
+        "是否接受第 2 条中的来源对照说明及额外乐观态度，还是应限定为必要的上下文补足。",
+        "若要确认用户确实表达过初始怀疑，需要找到可靠的用户原话；现有 assistant 回述不单独证明此点。"
+      ]
+    },
+    {
+      "case_id": "case_3_compound_preferences",
+      "summary": "四条 raw 基本覆盖旧记忆四个分号段；上下文版本改变了印象所指特征，并出现 perceive 改写和 implied 推断，部分扩写虽然有旧引文仍超出必要补足。",
+      "dimensions": {
+        "人物与主语": "raw 大体保留省略主语，contextualized 增补 The user。ctx-1 中的 I、ctx-2 中的 I think、ctx-3 中的 I find，结合同一用户同一生成会话的 ID/ADD/快照链，为这一归属提供依据；没有单凭记忆所属用户默认主语，也未补入姓名。朋友仍是犬的主人，没有改成用户拥有 Golden Retriever。",
+        "时间": "Recently 保留，没有把原始发言时间 Jan 06, 2026 当成实际互动日期。recently 的精确时间范围未确定，模型没有主动标记。",
+        "条件、否定与情态": "原文无显式 if 条件或直接否定句。values、drawn to 和 optimistic 保留为偏好、吸引理由及乐观态度，没有改成已整合偏好或已实现职业平衡。",
+        "覆盖与粒度": "raw 保留相遇与温顺印象、三个受重视的特征、吸引理由、乐观态度与两个目标。第 2 条仍合并三个偏好，第 4 条仍合并两个目标，不能认定已是最细原子粒度。",
+        "语气": "第 3 条补充版本确实将直接给出的 compatibility 理由改为 because they perceive them as compatible。原句本身包含偏好态度，但新增 perceive 是否改变其中理由的断言力度，需用户确认；程序检查无法判定。",
+        "信息增加与变更": "第 1 条由 impressed by its gentle nature 改为 finding it gentle and impressive in its adaptability，印象的对象从温顺转到了适应性。来源 ctx-1 确有适应性印象，但不能静默替换原记忆的关系。第 3 条新增 wellness goals (implied by ...) 的解释；旧记忆已明确写 wellness goals，后面的推导并非必要。第 4 条增加 interactions，属于有旧来源但原文未明确展开的细节。",
+        "引文支持边界": "第 2 条 evidence 中的 supports 把 especially after a long day 解释为 post-work recovery，来源未明确说明下班或恢复；该推断只出现在 supports，不在主事实文本。第 3 条 supports 把 openness 与 wellness goals 对齐，也不由引文字面自动推出。"
+      },
+      "concerns": [
+        {"path": "$.facts[0].contextualized_subfact", "kind": "印象对象发生变化", "detail": "原文因温顺而留下印象；补充版本把 impressed 的特征转成 adaptability，并添加朋友家这一有来源但非必要的地点。"},
+        {"path": "$.facts[1].contextualized_subfact", "kind": "有来源的超范围扩写", "detail": "新增观察例子、crucial 和 invaluable 等上下文展开，三个偏好仍合并为一条。"},
+        {"path": "$.facts[1].evidence[2].supports", "kind": "引文解释越界", "detail": "after a long day 不自动推出 post-work recovery；程序仅验证 quote 存在，不验证 supports 的这层解释。"},
+        {"path": "$.facts[2].contextualized_subfact", "kind": "perceive 语气变化及额外推断", "detail": "加入主观 perceive；并用 implied by 对 wellness goals 进行额外解释，尽管旧记忆已经明示 wellness goals。"},
+        {"path": "$.facts[3].contextualized_subfact", "kind": "有来源的范围展开", "detail": "增加 interactions；是否允许在补足 this preference 之外增加此细节需确认。"}
+      ],
+      "pending_human_confirmations": [
+        "第 1 条补充版本把温顺印象转成适应性印象，是否判为语义改变；旧记忆和旧上下文在此处的差异也需保留为待确认。",
+        "第 3 条 because they perceive them as compatible 是否允许作为原文 compatibility 理由的释义。",
+        "第 3 条 implied by 及其 wellness goals 推导，以及第 2 条 supports 中 post-work recovery 的解释是否应排除。",
+        "第 2 条三个偏好及第 4 条两个目标是否需要更细拆分；本次没有重新调用模型。",
+        "recently 的精确范围、是否接受朋友家和 interactions 等有来源的扩写，以及补充版本允许的最小范围。"
+      ]
+    }
+  ]
+}

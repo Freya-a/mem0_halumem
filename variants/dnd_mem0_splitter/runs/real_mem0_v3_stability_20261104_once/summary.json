@@ -1,0 +1,79 @@
+{
+  "review_label": "初步判断，待人工确认",
+  "case_count": 7,
+  "returned_fact_count": 7,
+  "format_pass_count": 7,
+  "format_fail_count": 0,
+  "total_real_model_calls": 7,
+  "automatic_retries": 0,
+  "literal_quotes_matched": 15,
+  "literal_quotes_total": 15,
+  "semantic_reviews_awaiting_final_human_confirmation_cases": 7,
+  "semantic_reviews_awaiting_final_human_confirmation_facts": 7,
+  "cases_with_observed_issue": 6,
+  "facts_with_observed_issue": 6,
+  "cases_with_specific_unresolved_items": 5,
+  "facts_with_specific_unresolved_items": 5,
+  "uncertainty_only_facts": 1,
+  "no_observed_issue_cases": 1,
+  "observed_finding_instances": 10,
+  "model_pending_item_count": 12,
+  "issue_type_counts": {
+    "ASSERTION_PENDING_CONFLICT": {
+      "distinct_cases": 2,
+      "distinct_facts": 2,
+      "case_ids": [
+        "case_01_multi_person",
+        "case_02_subject_and_roster"
+      ]
+    },
+    "RAW_CONTEXT_LEAK": {
+      "distinct_cases": 5,
+      "distinct_facts": 5,
+      "case_ids": [
+        "case_01_multi_person",
+        "case_02_subject_and_roster",
+        "case_03_assistant_yoga",
+        "case_05_relative_time",
+        "case_07_no_children"
+      ]
+    },
+    "SUPPORTED_UNNECESSARY_ADDITION": {
+      "distinct_cases": 1,
+      "distinct_facts": 1,
+      "case_ids": [
+        "case_02_subject_and_roster"
+      ]
+    },
+    "SUPPORTS_OVERREACH": {
+      "distinct_cases": 2,
+      "distinct_facts": 2,
+      "case_ids": [
+        "case_02_subject_and_roster",
+        "case_06_plan_possibility"
+      ]
+    }
+  },
+  "supports_assessment_counts": {
+    "partially_supported": 6,
+    "overreach": 2,
+    "directly_supported": 7
+  },
+  "counts_overlap": true,
+  "counts_are_not_gold_error_rates": true,
+  "coverage_gaps": [
+    "No reliable explicit if/unless conditional memory was found in the inspected target-before snapshot inventory; no conditional case was invented."
+  ],
+  "all_cases_produced_one_fact": true,
+  "existing_files_unchanged": 198,
+  "prompt_sha256": "28a8aec27d8e15c440ca3e1fb95c1dff3ad25eddb2e3c8cd7bb2700a3450731e",
+  "root_review_notes": [
+    "RAW_CONTEXT_LEAK means a sourced subject was placed into raw contrary to frozen rule 2; it is not automatically a fabricated person or unsupported identity.",
+    "Original speaker is different from semantic subject. Assistant you-plan presuppositions can identify the discussed actor, but do not prove user endorsement of specific plans.",
+    "Partially supported evidence is not automatically an error; observed supports overreach is counted separately.",
+    "Case07 family wording is treated as contextual family-profile language, not automatically expanded into a claim that no extended-family member has children.",
+    "Case03 assistant could suggestion is not proof of either user practice or openness; returned OR is retained, and unresolved provenance is not treated as a false memory judgement.",
+    "Case05 exact promotion date remains unprovided; recently was correctly retained, so no event-date error or mandatory new uncertainty was assigned.",
+    "Every semantic judgement is preliminary. Cases with no observed issue or no specific unresolved item are not proved correct."
+  ]
+}

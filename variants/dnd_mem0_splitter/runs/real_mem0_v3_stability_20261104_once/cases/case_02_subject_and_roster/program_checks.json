@@ -1,0 +1,66 @@
+{
+  "case_id": "case_02_subject_and_roster",
+  "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+  "program_status": "passed",
+  "model": "qwen-plus",
+  "returned_model": "qwen-plus",
+  "model_call_attempts": 1,
+  "automatic_retries": 0,
+  "generation_parameters": {},
+  "timeout_seconds": 180.0,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 2574,
+    "completion_tokens": 635,
+    "total_tokens": 3209
+  },
+  "error": null,
+  "existing_validator_replay_matches": true,
+  "result_json_exists": true,
+  "validated_fact_count": 1,
+  "candidate_fact_count": 1,
+  "input_matches_selected_snapshot": true,
+  "input_bytes_match_frozen_preflight": true,
+  "prompt_matches_frozen_v3": true,
+  "per_fact_evidence_counts": [
+    {
+      "fact_index": 1,
+      "memory_evidence_count": 1,
+      "context_evidence_count": 1
+    }
+  ],
+  "quote_checks": [
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 0,
+      "source_type": "memory",
+      "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+      "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+      "supports": "Old memory states the user has a friend named ThomasSusan (called 'Susan') who provides support and encouragement.",
+      "exact_substring": true,
+      "character_range": [
+        0,
+        94
+      ]
+    },
+    {
+      "fact_index": 1,
+      "evidence_index_zero_based": 1,
+      "source_type": "context",
+      "source_id": "ctx-1",
+      "quote": "ThomasSusan is my Friend, Susan's support and encouragement inspire me to maintain my focus on promoting well-being in both my personal and professional life.",
+      "supports": "Confirms speaker is the user (first-person 'my', 'me'); specifies that Susan's support and encouragement inspire the user's focus on well-being across domains; validates 'ThomasSusan' as the full name and 'Susan' as the used reference; supports contextualizing 'provides support and encouragement' as having an inspiring effect tied to well-being goals.",
+      "exact_substring": true,
+      "character_range": [
+        60,
+        218
+      ]
+    }
+  ],
+  "literal_quotes_matched": 2,
+  "literal_quotes_total": 2,
+  "quote_diagnostic_scope": "For an accepted case these are original-validator checks and independent read-only confirmation; for a rejected case these would be diagnostics only, not an override.",
+  "response_repaired_or_source_relabelled": false,
+  "new_real_model_calls_in_replay": 0,
+  "semantic_review": "初步判断，待人工确认；单独记录，不由程序自动判断。"
+}

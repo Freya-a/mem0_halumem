@@ -1,0 +1,46 @@
+{
+  "case_id": "case_07_no_children",
+  "version": "v4",
+  "program_status": "passed",
+  "strict_JSON_and_existing_validator_replay": true,
+  "replay_error": null,
+  "saved_result_equals_replay": true,
+  "candidate_fact_count": 1,
+  "accepted_fact_count": 1,
+  "raw_response_preserved": true,
+  "memory_id_echo_matches_if_present": true,
+  "memory_text_echo_matches_if_present": true,
+  "facts": [
+    {
+      "fact_index": 1,
+      "consecutive_index": true,
+      "source_memory_id_match": true,
+      "memory_evidence_count": 1,
+      "memory_id_and_quote_check": true,
+      "all_quotes_match": true,
+      "evidence_checks": [
+        {
+          "evidence_index": 0,
+          "source_type": "memory",
+          "source_id": "40c29476-81a2-477d-9e75-a2a3a92d46c7",
+          "quote": "No children",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        },
+        {
+          "evidence_index": 1,
+          "source_type": "context",
+          "source_id": "ctx-1",
+          "quote": "Good, let me introduce my family. Both parents are alive, no_relationship, No children.",
+          "nonempty": true,
+          "source_declared": true,
+          "exact_substring": true
+        }
+      ]
+    }
+  ],
+  "semantic_correctness": "not determined by this audit",
+  "failed_candidate_policy": "Raw response stays available; no result.json on failure, no evidence repair, no acceptance override.",
+  "additional_real_model_calls": 0
+}
