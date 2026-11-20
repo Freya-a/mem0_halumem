@@ -1,0 +1,49 @@
+{
+  "status": "prepared_no_model_calls",
+  "request_attempts": 0,
+  "model_responses": 0,
+  "model": "qwen-plus-2025-12-01",
+  "cases": [
+    "susan",
+    "promotion",
+    "career_history",
+    "transition",
+    "skydiving"
+  ],
+  "case_provenance": [
+    {
+      "case_id": "susan",
+      "all_session_messages_match_public_dataset": true,
+      "old_context_in_public_dataset": true,
+      "derived_memory_matches_prior_snapshot": true
+    },
+    {
+      "case_id": "promotion",
+      "all_session_messages_match_public_dataset": true,
+      "old_context_in_public_dataset": true,
+      "derived_memory_matches_prior_snapshot": true
+    },
+    {
+      "case_id": "career_history",
+      "all_session_messages_match_public_dataset": true,
+      "old_context_in_public_dataset": true,
+      "derived_memory_matches_prior_snapshot": true
+    },
+    {
+      "case_id": "transition",
+      "all_session_messages_match_public_dataset": true,
+      "old_context_in_public_dataset": true,
+      "derived_memory_matches_prior_snapshot": true
+    },
+    {
+      "case_id": "skydiving",
+      "all_session_messages_match_public_dataset": true,
+      "old_context_in_public_dataset": true,
+      "derived_memory_matches_prior_snapshot": true
+    }
+  ],
+  "dataset_path": "dataset/HaluMem-Medium/HaluMem-Medium.jsonl",
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "dataset_description": "Public generated benchmark: see HaluMem/README.md dataset construction and availability.",
+  "endpoint_template": "https://{DASHSCOPE_WORKSPACE_ID}.cn-beijing.maas.aliyuncs.com/compatible-mode/v1"
+}

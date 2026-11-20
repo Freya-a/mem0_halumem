@@ -1,0 +1,170 @@
+{
+  "prompt_version": "alignment_v3",
+  "prompt_sha256": "855c2a9e56f8d8e0198c565b89749a0cd4e8ab3849428e9fabeace6bbe2b25b9",
+  "model": "qwen-plus-2025-12-01",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "max_tokens": 8192,
+  "automatic_retries": 0,
+  "maximum_requests": 5,
+  "http_redirects": false,
+  "trust_env": false,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "v1_run": "runs/fixed_five_20261120",
+  "v2_run": "runs/v2_paired_20261120",
+  "cases": [
+    {
+      "case_id": "susan",
+      "status": "failed",
+      "attempts": 1,
+      "file": "susan.json",
+      "elapsed_seconds": 10.086,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 396,
+        "prompt_tokens": 8541,
+        "total_tokens": 8937,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "structure_error_count": 3,
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "friendship",
+          "support"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-0"
+        ]
+      }
+    },
+    {
+      "case_id": "promotion",
+      "status": "passed",
+      "attempts": 1,
+      "file": "promotion.json",
+      "elapsed_seconds": 6.468,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 245,
+        "prompt_tokens": 12949,
+        "total_tokens": 13194,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "structure_error_count": 0,
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "employer",
+          "title"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new"
+        ]
+      }
+    },
+    {
+      "case_id": "career_history",
+      "status": "passed",
+      "attempts": 1,
+      "file": "career_history.json",
+      "elapsed_seconds": 9.574,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 385,
+        "prompt_tokens": 14062,
+        "total_tokens": 14447,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "structure_error_count": 0,
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "employer",
+          "title"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-2"
+        ]
+      }
+    },
+    {
+      "case_id": "transition",
+      "status": "failed",
+      "attempts": 1,
+      "file": "transition.json",
+      "elapsed_seconds": 7.24,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 279,
+        "prompt_tokens": 12392,
+        "total_tokens": 12671,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "structure_error_count": 1,
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "job_search"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new"
+        ]
+      }
+    },
+    {
+      "case_id": "skydiving",
+      "status": "passed",
+      "attempts": 1,
+      "file": "skydiving.json",
+      "elapsed_seconds": 25.705,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1132,
+        "prompt_tokens": 8390,
+        "total_tokens": 9522,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "structure_error_count": 0,
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "u1",
+          "u2",
+          "u3"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-2",
+          "unsplit-new-8"
+        ]
+      }
+    }
+  ]
+}

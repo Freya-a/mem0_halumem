@@ -1,0 +1,35 @@
+{
+  "method": "Nonblind manual review of all v2 original records against selected inputs. Each item is one annotated finding; categories may overlap, and grouping is a reviewer choice. These counts are not independent observations or a gold standard.",
+  "cases": [
+    {"case_id":"susan","records_reviewed":[0,1,2],"findings":[
+      {"type":"overbroad_evidence","path":"records[0:2].new_quotes","detail":"Susan's records quote Daniel's sentence although their claims concern Susan."},
+      {"type":"claim_omission","path":"input.new_units[manually_mapped_new]","detail":"Daniel's independent contribution is not recorded."},
+      {"type":"unsupported_old_claim","path":"records[2].old_claim","detail":"The old friendship/support memory does not assert that the current job supports well-being."},
+      {"type":"unrelated_unit_link","path":"records[2].old_unit_ids","detail":"The new career claim is linked to unrelated friendship/support units."},
+      {"type":"qualifier_misclassification","path":"records[2].old_claim.qualifiers[0]","detail":"An affirmative friend memory is labelled negation."},
+      {"type":"claim_omission","path":"input.new_units[unsplit-new-0]","detail":"The intention to find another job is omitted as a claim."},
+      {"type":"qualifier_omission","path":"records[2].new_claim","detail":"lately on thinking about career and comparative negation on insufficient job support are not bound."}
+    ],"human_judgment":[{"path":"records[0].change_type","detail":"The new support statement does not explicitly assert a friendship; whether it supports that relationship is a judgment."}]},
+    {"case_id":"promotion","records_reviewed":[0,1],"findings":[
+      {"type":"qualifier_omission","path":"records[1].new_claim","detail":"recently is not bound to the promotion."}
+    ],"human_judgment":[]},
+    {"case_id":"career_history","records_reviewed":[0,1],"findings":[
+      {"type":"identity_inference","path":"records[0:2].new_claim","detail":"runs and founder/operator are generated without such identity in the selected input unit."},
+      {"type":"claim_omission","path":"input.new_units[unsplit-new-2]","detail":"The selected unit about the two contacts and maintaining relationships is entirely absent."},
+      {"type":"claim_omission","path":"input.new_units[manually_mapped_new]","detail":"Feeling relieved is not independently represented."},
+      {"type":"qualifier_omission","path":"input.new_units[manually_mapped_new]","detail":"lately qualifies relief, but the qualifier is omitted."},
+      {"type":"unsupported_context_inference","path":"records[0:2].relation_explanation","detail":"Political consulting is not stated in the selected quotes and cannot be asserted from those quotes alone."}
+    ],"human_judgment":[]},
+    {"case_id":"transition","records_reviewed":[0],"findings":[
+      {"type":"qualifier_omission","path":"records[0].new_claim","detail":"now is not bound to improved work-life balance."},
+      {"type":"compound_assertions","path":"records[0].new_claim","detail":"Completed transition and healthier balance are combined rather than separately aligned."},
+      {"type":"conflated_temporal_states","path":"records[0].relation_explanation","detail":"Calling the later completed transition a direct contradiction of the earlier search conflates successive stages."}
+    ],"human_judgment":[{"path":"records[0].target_relation","detail":"The different label is debatable because the two excerpts concern progress toward the earlier job objective."}]},
+    {"case_id":"skydiving","records_reviewed":[0,1,2,3],"findings":[
+      {"type":"unsupported_risk_reason_relation","path":"records[1].change_type","detail":"Continued safety priority is labelled support for the specific high-injury-risk reason."},
+      {"type":"qualifier_misbound","path":"records[1:3].new_claim.qualifiers","detail":"The simulated activity is attached to safety or risk-assessment claims; records[2] also lacks the qualifier's source unit."},
+      {"type":"qualifier_omission","path":"input.new_units","detail":"recently for the simulation, For now for current enjoyment, and didn't expect for prior expectation are not structured."},
+      {"type":"unsupported_simulation_assumption","path":"records[0,2].relation_explanation","detail":"Different risk profile and absence of conflict with safety are not directly established by the selected user quotes."}
+    ],"human_judgment":[]}
+  ]
+}

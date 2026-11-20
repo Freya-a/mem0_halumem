@@ -1,0 +1,29 @@
+{
+  "dataset_sha256": "486fbc130a5c8781a2af27ffa508a1d7855245137aa449c193ac4d29c45634e7",
+  "profile_sha256": "f0c1ff2c6609b5dab60af6b8cfe421857bc896de1bcf50ea3f73144245ef278d",
+  "runner_sha256": "d3e06ca50c95f5dd41bd0cf4ae1d2bad4e16e4b7cebef2b9c06045119a55046e",
+  "with_qa": true,
+  "workspace": "[REDACTED]",
+  "mem0ai_version": "0.1.118",
+  "native_source_sha256": {
+    "mem0/memory/main.py": "b4e774c71adbe1e928511a0cf96872e6c841de50a0379360d0d544af4e9df8b1",
+    "mem0/configs/prompts.py": "29f07c090ad82ab010f0a07d0dcffc828138287e9ba6ca4e6d74f6f268705dfe",
+    "mem0/llms/openai.py": "4090b2b768cf9bcaf7891bbdea3eeefec0586c29ea77b99e9dcb971efcd860e6",
+    "mem0/embeddings/openai.py": "2a246f3303a35cbb5cd678d4f6c01ceb1b3313b03970389e222187e9822c77eb",
+    "mem0/vector_stores/qdrant.py": "d74f7a787df50224cafdd61a39aeab870fe12256c7af3c4e92522c374adec769"
+  },
+  "qa_settings": {
+    "OPENAI_BASE_URL": "https://[REDACTED].cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+    "OPENAI_MODEL": "qwen-plus-2025-12-01",
+    "OPENAI_MAX_TOKENS": "16384",
+    "OPENAI_TEMPERATURE": "0",
+    "OPENAI_TIMEOUT": "180",
+    "RETRY_TIMES": "3",
+    "WAIT_TIME_LOWER": "10",
+    "WAIT_TIME_UPPER": "30"
+  },
+  "qa_source_sha256": {
+    "llms.py": "3944e8133c3777506f2f17971884f18c83ab7379fc3d79d22dfd6a748c0b8547",
+    "prompts.py": "641a9e89c8a42cedb83feed47543ab35cbd80cb80fb515c0a7afab60fe259a58"
+  }
+}

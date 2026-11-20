@@ -1,0 +1,132 @@
+{
+  "prompt_version": "alignment_v2",
+  "prompt_sha256": "9b4f6082eeb9a5eefd8ded7bbee8025b3ae51abe36652cbac428a13ddd9acc80",
+  "model": "qwen-plus-2025-12-01",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "max_tokens": 8192,
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "http_redirects": false,
+  "trust_env": false,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "v1_run": "runs/fixed_five_20261120",
+  "cases": [
+    {
+      "case_id": "susan",
+      "status": "failed",
+      "attempts": 1,
+      "file": "susan.json",
+      "elapsed_seconds": 28.886,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1250,
+        "prompt_tokens": 8842,
+        "total_tokens": 10092,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "validation_error_count": 3,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "promotion",
+      "status": "failed",
+      "attempts": 1,
+      "file": "promotion.json",
+      "elapsed_seconds": 15.389,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 649,
+        "prompt_tokens": 13250,
+        "total_tokens": 13899,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "validation_error_count": 2,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "career_history",
+      "status": "failed",
+      "attempts": 1,
+      "file": "career_history.json",
+      "elapsed_seconds": 18.608,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 790,
+        "prompt_tokens": 14363,
+        "total_tokens": 15153,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "validation_error_count": 1,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [
+          "unsplit-new-2"
+        ],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "transition",
+      "status": "failed",
+      "attempts": 1,
+      "file": "transition.json",
+      "elapsed_seconds": 10.109,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 412,
+        "prompt_tokens": 12693,
+        "total_tokens": 13105,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "validation_error_count": 2,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "skydiving",
+      "status": "failed",
+      "attempts": 1,
+      "file": "skydiving.json",
+      "elapsed_seconds": 37.993,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1689,
+        "prompt_tokens": 8691,
+        "total_tokens": 10380,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      },
+      "parse_error_count": 0,
+      "validation_error_count": 8,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    }
+  ]
+}

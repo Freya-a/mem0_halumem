@@ -1,0 +1,83 @@
+{
+  "all_checks_passed": true,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "usage_totals": {
+    "prompt_tokens": 56334,
+    "completion_tokens": 2437,
+    "total_tokens": 58771
+  },
+  "cases": [
+    {
+      "case_id": "susan",
+      "exact_pair": true,
+      "attempts_one": true,
+      "returned_snapshot_matches": true,
+      "raw_matches_provider": true,
+      "fresh_validation_matches": true,
+      "usage_arithmetic": true,
+      "all_records_reviewed": true,
+      "structure_status": "failed",
+      "raw_sha256": "1bcdf1fbe77b7030fb275212db5aad7e59da3f5d912e3497531ce7a5cd42cf71"
+    },
+    {
+      "case_id": "promotion",
+      "exact_pair": true,
+      "attempts_one": true,
+      "returned_snapshot_matches": true,
+      "raw_matches_provider": true,
+      "fresh_validation_matches": true,
+      "usage_arithmetic": true,
+      "all_records_reviewed": true,
+      "structure_status": "passed",
+      "raw_sha256": "c52beb5cae9870c2b6784b14b942f7abdd50f00024b536c2febd3e1eab99582b"
+    },
+    {
+      "case_id": "career_history",
+      "exact_pair": true,
+      "attempts_one": true,
+      "returned_snapshot_matches": true,
+      "raw_matches_provider": true,
+      "fresh_validation_matches": true,
+      "usage_arithmetic": true,
+      "all_records_reviewed": true,
+      "structure_status": "passed",
+      "raw_sha256": "6d1b8440b9709ee781dfdb58e757fd34d82870a2ef62ddd1d23e56634da35101"
+    },
+    {
+      "case_id": "transition",
+      "exact_pair": true,
+      "attempts_one": true,
+      "returned_snapshot_matches": true,
+      "raw_matches_provider": true,
+      "fresh_validation_matches": true,
+      "usage_arithmetic": true,
+      "all_records_reviewed": true,
+      "structure_status": "failed",
+      "raw_sha256": "40889efec91fd34f07b9be5e94c422c9b8252bd7cd9bbf257a831aa406c8d3cf"
+    },
+    {
+      "case_id": "skydiving",
+      "exact_pair": true,
+      "attempts_one": true,
+      "returned_snapshot_matches": true,
+      "raw_matches_provider": true,
+      "fresh_validation_matches": true,
+      "usage_arithmetic": true,
+      "all_records_reviewed": true,
+      "structure_status": "passed",
+      "raw_sha256": "b45b80a88ce5d8660f54fd790c60eaa01c605bc7bd926889f4379352121da461"
+    }
+  ],
+  "frozen_code_sha256": {
+    "aligner_v3.py": "374d68a4247b69bc25a5866ef1c1499e3b3cce74d1b087e6a525f66c24d02ead",
+    "aligner_v2.py": "08c162f0b7e53ed42ba4f5eb1c9beefa57ef11d15835d53763947a9ef9add95f",
+    "aligner.py": "81e8a0856ef179e05a6fd5ebce1e0133d8a9bb0cea37ebbb59357bd4f86eb511",
+    "qwen_backend.py": "607fc9caa9d36f80624bff1a670eb64c96939a4a3cdc71c5c1fc857b7a6ac21d",
+    "run_alignment_v3.py": "0c15875290c2103f607dade85c239a59f6793242f67923ffa456a7fcd2cb9daa",
+    "run_alignment_v2.py": "580913b9811cdc3b75204d6d0202d50edc3b72236744ed3f512e4433729fd670",
+    "run_alignment_trial.py": "bfad8d9390a75f5a88aac6939c067f89ded50c7acb8dbe834e9ed16c917ef872"
+  },
+  "prompt_sha256": "855c2a9e56f8d8e0198c565b89749a0cd4e8ab3849428e9fabeace6bbe2b25b9",
+  "semantic_review_method": "nonblind manual audit, not an independent gold standard"
+}

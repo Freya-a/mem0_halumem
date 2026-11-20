@@ -1,0 +1,1009 @@
+{
+  "input": {
+    "case_id": "career_history",
+    "old_units": [
+      {
+        "unit_id": "employer",
+        "raw_statement": "historical_employer",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_quotes": [
+          "Blockchain Tech"
+        ],
+        "upstream_manual_unit": {
+          "name": "employer",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Blockchain Tech as a senior developer."
+              }
+            ]
+          },
+          "attribute": {
+            "value": "historical_employer",
+            "evidence": [
+              {
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Blockchain Tech"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      },
+      {
+        "unit_id": "title",
+        "raw_statement": "historical_title",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "memory_quotes": [
+          "senior developer"
+        ],
+        "upstream_manual_unit": {
+          "name": "title",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Blockchain Tech as a senior developer."
+              }
+            ]
+          },
+          "attribute": {
+            "value": "historical_title",
+            "evidence": [
+              {
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "senior developer"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      }
+    ],
+    "new_units": [
+      {
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "raw_statement": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "memory_quotes": [
+          "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+        ],
+        "upstream_manual_unit": {
+          "name": "manually_mapped_new",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+              }
+            ]
+          },
+          "attribute": {
+            "value": "client_milestone",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      },
+      {
+        "unit_id": "unsplit-new-2",
+        "source_id": "new-2",
+        "raw_statement": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "memory_quotes": [
+          "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+        ],
+        "unit_origin": "unsplit_selected_source"
+      }
+    ],
+    "source_texts": {
+      "memory": {
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "text": "Previously worked as a senior developer in Blockchain Tech",
+        "speaker": "memory",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json"
+      },
+      "messages": [
+        {
+          "source_id": "new-0",
+          "side": "new",
+          "speaker": "user",
+          "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+          "recorded_at": "Jan 05, 2026, 07:43:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content"
+        },
+        {
+          "source_id": "new-1",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "That's fantastic news, Donald! Securing initial clients is indeed a major achievement, especially considering the transition from your previous career in technology to political consulting. It's clear that your innovative spirit and active thinking have paid off. Leveraging your network, including key contacts like MooreSandra and GonzalezMary, was a smart move. They must have been invaluable in connecting you with political campaigns seeking strategic advice. By the way, I remember you expressing gratitude for the support from your family during the establishment of your firm. It's always wonderful to have family backing you up. How do you plan to continue nurturing these relationships for sustained success?",
+          "recorded_at": "Jan 05, 2026, 07:43:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/1/content"
+        },
+        {
+          "source_id": "new-2",
+          "side": "new",
+          "speaker": "user",
+          "text": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+          "recorded_at": "Jan 05, 2026, 07:44:55",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content"
+        },
+        {
+          "source_id": "new-3",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Maintaining and nurturing these relationships is key, especially in the political consulting arena where connections can make all the difference. Your gratitude for the support from key contacts in your network is well-placed, as they have played pivotal roles in your success. As you brainstorm strategies for continued growth, you might consider balancing rapid expansion and immediate impact with sustainable growth and influence. This dual approach could help you establish a solid foundation while also making a noticeable impact in the field. How are you balancing these strategies?",
+          "recorded_at": "Jan 05, 2026, 07:44:55",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/3/content"
+        },
+        {
+          "source_id": "new-4",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm focusing on sustainable growth. It's important to build a firm that lasts and has a meaningful impact. I've been brainstorming strategies to achieve this.",
+          "recorded_at": "Jan 05, 2026, 07:47:30",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/4/content"
+        },
+        {
+          "source_id": "new-5",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Sustainable growth is indeed a wise approach, especially when considering the long-term influence you wish to have in the political consulting field. It's impressive how your compensatory motivation drives you to use available resources to overcome personal limitations in skills and accessibility. This focus on sustainable strategies aligns perfectly with your dedication to supporting your relative's political career and ensuring their legacy and impact on society. On a related note, have you considered adopting traditional stress management techniques to maintain your mental health while managing the firm? It's crucial to stay balanced during such a demanding time.",
+          "recorded_at": "Jan 05, 2026, 07:47:30",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/5/content"
+        },
+        {
+          "source_id": "new-6",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm exploring new stress management techniques to keep my mental health in check. It's been quite a journey, but I'm optimistic about the future.",
+          "recorded_at": "Jan 05, 2026, 07:50:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/6/content"
+        },
+        {
+          "source_id": "new-7",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Exploring new stress management techniques is a proactive step towards maintaining your mental health. It's important to find methods that resonate with you personally. Your optimism about the future is encouraging, especially as you continue to attract initial clients and expand your consulting firm. Remember, your innovative spirit and active thinking are powerful assets in navigating this journey. As you continue to brainstorm strategies for growth, consider how you might further leverage your network and the support from your family. How do you see your firm's role evolving in the political landscape?",
+          "recorded_at": "Jan 05, 2026, 07:50:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/7/content"
+        },
+        {
+          "source_id": "new-8",
+          "side": "new",
+          "speaker": "user",
+          "text": "I envision my firm becoming a key player in political consulting, offering strategic advice that shapes campaigns and influences political discourse.",
+          "recorded_at": "Jan 05, 2026, 07:54:01",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/8/content"
+        },
+        {
+          "source_id": "new-9",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "That's an inspiring vision, Donald! Becoming a key player in political consulting will require not only strategic advice but also a deep understanding of the political landscape and the ability to adapt to its changes. Your emphasis on nurturing relationships within your network will be crucial in achieving this. Remember, the gratitude you expressed for the support from your family during the establishment of your firm can be a source of strength and motivation. As you continue to innovate and explore new strategies, your dedication to supporting your relative's political career will undoubtedly drive your firm's success. What specific strategies are you considering to enhance your firm's influence?",
+          "recorded_at": "Jan 05, 2026, 07:54:01",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/9/content"
+        },
+        {
+          "source_id": "new-10",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm considering expanding my services to include digital campaign strategies and data analysis. These areas are becoming increasingly important in political consulting.",
+          "recorded_at": "Jan 05, 2026, 07:55:26",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/10/content"
+        },
+        {
+          "source_id": "new-11",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Expanding into digital campaign strategies and data analysis is a smart move, as these areas are indeed crucial in modern political consulting. This expansion aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you implement these strategies, remember to balance rapid expansion with sustainable growth to ensure lasting impact. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to integrate these new services into your existing offerings?",
+          "recorded_at": "Jan 05, 2026, 07:55:26",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/11/content"
+        },
+        {
+          "source_id": "new-12",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll be integrating these services gradually, ensuring that my team is well-equipped and trained to handle them effectively.",
+          "recorded_at": "Jan 05, 2026, 08:02:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/12/content"
+        },
+        {
+          "source_id": "new-13",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Gradual integration is a wise approach, as it allows your team to adapt and excel in these new areas without overwhelming them. Training and equipping your team will be key to providing top-notch services. As you continue to expand, the support from your network, including MooreSandra and GonzalezMary, will be invaluable. Their connections and insights can help guide your firm towards success. On a personal note, how are you managing the stress that comes with these expansions?",
+          "recorded_at": "Jan 05, 2026, 08:02:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/13/content"
+        },
+        {
+          "source_id": "new-14",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm focusing on maintaining a healthy work-life balance and using new stress management techniques to cope with the demands.",
+          "recorded_at": "Jan 05, 2026, 08:10:59",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/14/content"
+        },
+        {
+          "source_id": "new-15",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Maintaining a healthy work-life balance is essential, especially as you navigate the demands of expanding your firm. Exploring new stress management techniques will undoubtedly help you cope with the challenges ahead. Your ability to balance personal well-being with professional responsibilities is commendable. As you continue to leverage your network and express gratitude for the support from your family, you'll find the strength to overcome any obstacles. How do you envision your firm's role in supporting your relative's political career?",
+          "recorded_at": "Jan 05, 2026, 08:10:59",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/15/content"
+        },
+        {
+          "source_id": "new-16",
+          "side": "new",
+          "speaker": "user",
+          "text": "My firm will provide strategic advice and innovative solutions to ensure my relative's campaigns are successful and impactful.",
+          "recorded_at": "Jan 05, 2026, 08:13:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/16/content"
+        },
+        {
+          "source_id": "new-17",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Providing strategic advice and innovative solutions is a powerful way to support your relative's political career. Your dedication to ensuring their campaigns are successful and impactful is evident in your approach. By leveraging your network and the support from your family, you'll be able to offer unique insights and strategies that set your firm apart. As you continue to brainstorm strategies for growth, consider how you can further integrate digital campaign strategies and data analysis into your offerings. What steps are you taking to ensure your firm's longevity and influence?",
+          "recorded_at": "Jan 05, 2026, 08:13:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/17/content"
+        },
+        {
+          "source_id": "new-18",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm focusing on building a strong foundation through sustainable growth and nurturing key relationships within my network.",
+          "recorded_at": "Jan 05, 2026, 08:20:43",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/18/content"
+        },
+        {
+          "source_id": "new-19",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Building a strong foundation through sustainable growth and nurturing key relationships is a solid strategy for ensuring your firm's longevity and influence. Your commitment to nurturing these relationships, particularly with contacts like MooreSandra and GonzalezMary, will be crucial in achieving this. As you continue to express gratitude for the support from your family, you'll find the motivation and strength to overcome any challenges. Your innovative spirit and active thinking will guide your firm towards success. How do you plan to measure your firm's impact in the political consulting field?",
+          "recorded_at": "Jan 05, 2026, 08:20:43",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/19/content"
+        },
+        {
+          "source_id": "new-20",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll measure my firm's impact by the success of the campaigns we advise and the positive changes we help implement in political discourse.",
+          "recorded_at": "Jan 05, 2026, 08:24:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/20/content"
+        },
+        {
+          "source_id": "new-21",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Measuring your firm's impact by the success of the campaigns you advise and the positive changes in political discourse is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?",
+          "recorded_at": "Jan 05, 2026, 08:24:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/21/content"
+        },
+        {
+          "source_id": "new-22",
+          "side": "new",
+          "speaker": "user",
+          "text": "I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.",
+          "recorded_at": "Jan 05, 2026, 08:33:16",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/22/content"
+        },
+        {
+          "source_id": "new-23",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?",
+          "recorded_at": "Jan 05, 2026, 08:33:16",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/23/content"
+        },
+        {
+          "source_id": "new-24",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.",
+          "recorded_at": "Jan 05, 2026, 08:40:21",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/24/content"
+        },
+        {
+          "source_id": "new-25",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?",
+          "recorded_at": "Jan 05, 2026, 08:40:21",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/25/content"
+        },
+        {
+          "source_id": "new-26",
+          "side": "new",
+          "speaker": "user",
+          "text": "Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.",
+          "recorded_at": "Jan 05, 2026, 08:44:21",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/26/content"
+        },
+        {
+          "source_id": "new-27",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?",
+          "recorded_at": "Jan 05, 2026, 08:44:21",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/27/content"
+        },
+        {
+          "source_id": "new-28",
+          "side": "new",
+          "speaker": "user",
+          "text": "I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.",
+          "recorded_at": "Jan 05, 2026, 08:46:47",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/28/content"
+        },
+        {
+          "source_id": "new-29",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?",
+          "recorded_at": "Jan 05, 2026, 08:46:47",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/29/content"
+        },
+        {
+          "source_id": "new-30",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.",
+          "recorded_at": "Jan 05, 2026, 08:54:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/30/content"
+        },
+        {
+          "source_id": "new-31",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?",
+          "recorded_at": "Jan 05, 2026, 08:54:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/31/content"
+        },
+        {
+          "source_id": "new-32",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.",
+          "recorded_at": "Jan 05, 2026, 09:06:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/32/content"
+        },
+        {
+          "source_id": "new-33",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?",
+          "recorded_at": "Jan 05, 2026, 09:06:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/33/content"
+        },
+        {
+          "source_id": "new-34",
+          "side": "new",
+          "speaker": "user",
+          "text": "I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.",
+          "recorded_at": "Jan 05, 2026, 09:12:41",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/34/content"
+        },
+        {
+          "source_id": "new-35",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?",
+          "recorded_at": "Jan 05, 2026, 09:12:41",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/35/content"
+        },
+        {
+          "source_id": "new-36",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.",
+          "recorded_at": "Jan 05, 2026, 09:15:49",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/36/content"
+        },
+        {
+          "source_id": "new-37",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?",
+          "recorded_at": "Jan 05, 2026, 09:15:49",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/37/content"
+        },
+        {
+          "source_id": "new-38",
+          "side": "new",
+          "speaker": "user",
+          "text": "Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.",
+          "recorded_at": "Jan 05, 2026, 09:17:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/38/content"
+        },
+        {
+          "source_id": "new-39",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?",
+          "recorded_at": "Jan 05, 2026, 09:17:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/39/content"
+        },
+        {
+          "source_id": "new-40",
+          "side": "new",
+          "speaker": "user",
+          "text": "I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.",
+          "recorded_at": "Jan 05, 2026, 09:24:57",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/40/content"
+        },
+        {
+          "source_id": "new-41",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?",
+          "recorded_at": "Jan 05, 2026, 09:24:57",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/41/content"
+        },
+        {
+          "source_id": "new-42",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.",
+          "recorded_at": "Jan 05, 2026, 09:27:06",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/42/content"
+        },
+        {
+          "source_id": "new-43",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?",
+          "recorded_at": "Jan 05, 2026, 09:27:06",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/43/content"
+        },
+        {
+          "source_id": "new-44",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.",
+          "recorded_at": "Jan 05, 2026, 09:30:29",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/44/content"
+        },
+        {
+          "source_id": "new-45",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?",
+          "recorded_at": "Jan 05, 2026, 09:30:29",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/45/content"
+        },
+        {
+          "source_id": "new-46",
+          "side": "new",
+          "speaker": "user",
+          "text": "I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.",
+          "recorded_at": "Jan 05, 2026, 09:36:24",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/46/content"
+        },
+        {
+          "source_id": "new-47",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?",
+          "recorded_at": "Jan 05, 2026, 09:36:24",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/47/content"
+        },
+        {
+          "source_id": "new-48",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.",
+          "recorded_at": "Jan 05, 2026, 09:41:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/48/content"
+        },
+        {
+          "source_id": "new-49",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?",
+          "recorded_at": "Jan 05, 2026, 09:41:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/49/content"
+        },
+        {
+          "source_id": "new-50",
+          "side": "new",
+          "speaker": "user",
+          "text": "Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.",
+          "recorded_at": "Jan 05, 2026, 09:46:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/50/content"
+        },
+        {
+          "source_id": "new-51",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?",
+          "recorded_at": "Jan 05, 2026, 09:46:46",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/51/content"
+        },
+        {
+          "source_id": "new-52",
+          "side": "new",
+          "speaker": "user",
+          "text": "I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.",
+          "recorded_at": "Jan 05, 2026, 10:00:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/52/content"
+        },
+        {
+          "source_id": "new-53",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?",
+          "recorded_at": "Jan 05, 2026, 10:00:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/53/content"
+        },
+        {
+          "source_id": "new-54",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.",
+          "recorded_at": "Jan 05, 2026, 10:01:23",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/54/content"
+        },
+        {
+          "source_id": "new-55",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?",
+          "recorded_at": "Jan 05, 2026, 10:01:23",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/55/content"
+        },
+        {
+          "source_id": "new-56",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.",
+          "recorded_at": "Jan 05, 2026, 10:10:06",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/56/content"
+        },
+        {
+          "source_id": "new-57",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?",
+          "recorded_at": "Jan 05, 2026, 10:10:06",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/57/content"
+        },
+        {
+          "source_id": "new-58",
+          "side": "new",
+          "speaker": "user",
+          "text": "I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.",
+          "recorded_at": "Jan 05, 2026, 10:13:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/58/content"
+        },
+        {
+          "source_id": "new-59",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?",
+          "recorded_at": "Jan 05, 2026, 10:13:42",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/59/content"
+        },
+        {
+          "source_id": "ctx-1",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_002/input.json#/raw_dialogue/2/content [61:109]",
+          "text": "I work at Blockchain Tech as a senior developer.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 09:10:09",
+          "side": "old"
+        }
+      ]
+    },
+    "provenance": {
+      "fixed_case_file": "variants/evidence_relation_judge/runs/scope_positioning_20261118_v1/cases/career_history/input.json",
+      "fixed_case_sha256": "dfa39d8fbe35883f4969671aa0ef270370ab0861b98311f6013306607c8ca7ec",
+      "old_unit_origin": "previous_manual_mapping",
+      "old_unit_source_file": "variants/evidence_relation_judge/runs/scope_positioning_20261118_v1/cases/career_history/input.json",
+      "old_unit_source_sha256": "dfa39d8fbe35883f4969671aa0ef270370ab0861b98311f6013306607c8ca7ec",
+      "new_unit_origin": "previous_manual_mapping_plus_unsplit_selected_sources",
+      "selected_new_source_ids": [
+        "new-0",
+        "new-2"
+      ],
+      "full_session_file": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json",
+      "full_session_sha256": "cb6ce342b291c683ca010b62312d3cbc2f36f7e01792001a41803d0d85fa46bc",
+      "limitations": "Only selected evidence has fixed/unsplit units; remaining session messages are context, not a new-unit split."
+    }
+  },
+  "input_validation": {
+    "v1_input_sha256": "6f5fb15fcc5e3b0ac40ddbc8e7b5286b7144e90dd8bfc0ab7a0c8143525f03a2",
+    "v1_user_content_sha256": "b4be30e33fd54c00279f8c612f2d3552e433efbacee2fbd46ff88887e86391ef",
+    "v2_input_sha256": "6f5fb15fcc5e3b0ac40ddbc8e7b5286b7144e90dd8bfc0ab7a0c8143525f03a2",
+    "v2_user_content_sha256": "b4be30e33fd54c00279f8c612f2d3552e433efbacee2fbd46ff88887e86391ef",
+    "v3_input_sha256": "6f5fb15fcc5e3b0ac40ddbc8e7b5286b7144e90dd8bfc0ab7a0c8143525f03a2",
+    "v3_user_content_sha256": "b4be30e33fd54c00279f8c612f2d3552e433efbacee2fbd46ff88887e86391ef",
+    "components": {
+      "old_units": {
+        "v1_sha256": "94925dc29cba4b9c910d2b0ae738300008e084761ecdc9cef4f739a863e30fdd",
+        "v2_sha256": "94925dc29cba4b9c910d2b0ae738300008e084761ecdc9cef4f739a863e30fdd",
+        "v3_sha256": "94925dc29cba4b9c910d2b0ae738300008e084761ecdc9cef4f739a863e30fdd",
+        "equal": true
+      },
+      "new_units": {
+        "v1_sha256": "1756569d25ccd38f9d68dcb5f3160912d3c05388534c1b8c66fe42d3bc3b0a44",
+        "v2_sha256": "1756569d25ccd38f9d68dcb5f3160912d3c05388534c1b8c66fe42d3bc3b0a44",
+        "v3_sha256": "1756569d25ccd38f9d68dcb5f3160912d3c05388534c1b8c66fe42d3bc3b0a44",
+        "equal": true
+      },
+      "source_texts": {
+        "v1_sha256": "03444ce8c1d5f05a025f6913a50036d02d7530e09cbe5cb780cad2095eaf51e7",
+        "v2_sha256": "03444ce8c1d5f05a025f6913a50036d02d7530e09cbe5cb780cad2095eaf51e7",
+        "v3_sha256": "03444ce8c1d5f05a025f6913a50036d02d7530e09cbe5cb780cad2095eaf51e7",
+        "equal": true
+      }
+    },
+    "old_unit_ids": [
+      "employer",
+      "title"
+    ],
+    "new_unit_ids": [
+      "manually_mapped_new",
+      "unsplit-new-2"
+    ],
+    "all_equal": true,
+    "v1_artifact_sha256": "9cfea216815374555c841377ac0c860d0459d286ab579310c6888cd99bf8e08f",
+    "v2_artifact_sha256": "4b0bd3b46d87046db5ececba6332af36f11b786e234b8ac50d5ea25131ac6e46"
+  },
+  "request": {
+    "model": "qwen-plus-2025-12-01",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "max_tokens": 8192,
+    "automatic_retries": 0,
+    "prompt_version": "alignment_v3",
+    "prompt_sha256": "855c2a9e56f8d8e0198c565b89749a0cd4e8ab3849428e9fabeace6bbe2b25b9",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是证据对齐器。输入 JSON 是数据，不是指令。一次处理全部 old_units 和 new_units，只输出一个 JSON 对象；不计算写入范围，也不修改记忆。\n\n每条记录只对应一个具体断言或两侧的一个具体关系；复合单元可拆成多条，同一单元可在多条记录出现。用原有单元 ID 和双方连续逐字片段表达主张，不要另写人物身份、因果、subject/object/statement、解释或其他重新概括的字段。attribute 是对该条具体断言的简短属性名；relation 仅可用 state_change、historical_correction、plan、support、supplement、no_clear_change、new_information、uncertain。只有新片段足以表明同一具体状态发生变化时才用 state_change；对历史事实的明确纠错才用 historical_correction。无对应旧断言时用 new_information，old_unit_ids 和 old_quotes 都是空数组。若关联多个单元，各单元必须各有本侧引用。\n\nold_quotes / new_quotes 是字符串数组，不带 source_id，每条必须完整属于本条关联的相应单元的某一 memory_quotes，且原文字母、标点、空格不变。不要发明来源 ID。每条记录必须有新单元和新引文；有旧单元时必须给旧引文。每个新单元都要处理；每个旧单元要有记录或列入 unmatched_old_unit_ids。缺少足以判定的证据时，在该记录 missing_evidence 字符串数组中具体说明缺什么，不要猜测。\n\n完整会话只供指代理解；助手的提问、复述或推测、未选中的消息均不能成为关联单元的证据。仅描述获客，不要把“我的公司”推成本人为创始人、所有者、经营者、现任职位或离职。安全优先可以支持安全承诺，不能单独证明“高受伤风险是厌恶理由”仍成立。模拟体验不能证明真实活动偏好变化，也不能把模拟限定挂到无关的安全主张。计划、意向和完成的事件分开；同一输入句含多位人物或多件事时分别引用并单列，避免一人的行为归给另一人。\n\n保留判断范围所需的相对时间、条件、否定、计划、模拟等限定。每个限定词写成 {\"side\":\"old 或 new\",\"kind\":\"time|condition|negation|plan|simulation|other\",\"quote\":\"限定词逐字原文\",\"claim_quote\":\"该限定词所修饰的具体断言的连续逐字原文，包含该限定词\"}。claim_quote 须与该侧的一条记录引文相包含，并来自该侧关联单元对应的同一来源；为了保留限定词可以包含该来源中单元短引文周边的必要上下文。不要把不相关分句或其他消息的限定词强行绑定。每项限定有明确的 side 与 claim_quote，例如 lately 修饰感到宽慰时不得挂到获客，For now 修饰当前享受时不得自动挂到后句安全承诺；否定预期不等于否定体验。确实没有限定词时才用空数组。\n\n输出合法 JSON，所有字段必须出现。示例（仅示意结构，不是本次输入的事实；实际 ID 和引文必须来自输入）：\n{\"records\":[{\"old_unit_ids\":[\"o1\"],\"new_unit_ids\":[\"n1\"],\"attribute\":\"job title\",\"relation\":\"state_change\",\"old_quotes\":[\"Director\"],\"new_quotes\":[\"I recently got promoted to lead director\"],\"qualifiers\":[{\"side\":\"new\",\"kind\":\"time\",\"quote\":\"recently\",\"claim_quote\":\"I recently got promoted to lead director\"}],\"missing_evidence\":[]}],\"unmatched_old_unit_ids\":[]}"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"old_units\": [\n    {\n      \"unit_id\": \"employer\",\n      \"raw_statement\": \"historical_employer\",\n      \"source_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n      \"memory_quotes\": [\n        \"Blockchain Tech\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"employer\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"ctx-1\",\n              \"quote\": \"I work at Blockchain Tech as a senior developer.\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"historical_employer\",\n          \"evidence\": [\n            {\n              \"source_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n              \"quote\": \"Blockchain Tech\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    },\n    {\n      \"unit_id\": \"title\",\n      \"raw_statement\": \"historical_title\",\n      \"source_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n      \"memory_quotes\": [\n        \"senior developer\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"title\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"ctx-1\",\n              \"quote\": \"I work at Blockchain Tech as a senior developer.\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"historical_title\",\n          \"evidence\": [\n            {\n              \"source_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n              \"quote\": \"senior developer\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    }\n  ],\n  \"new_units\": [\n    {\n      \"unit_id\": \"manually_mapped_new\",\n      \"source_id\": \"new-0\",\n      \"raw_statement\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\",\n      \"memory_quotes\": [\n        \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"manually_mapped_new\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"new-0\",\n              \"quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"client_milestone\",\n          \"evidence\": [\n            {\n              \"source_id\": \"new-0\",\n              \"quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    },\n    {\n      \"unit_id\": \"unsplit-new-2\",\n      \"source_id\": \"new-2\",\n      \"raw_statement\": \"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\",\n      \"memory_quotes\": [\n        \"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\"\n      ],\n      \"unit_origin\": \"unsplit_selected_source\"\n    }\n  ],\n  \"source_texts\": {\n    \"memory\": {\n      \"source_id\": \"05afde13-35bd-4d26-bbae-6de427d58db1\",\n      \"text\": \"Previously worked as a senior developer in Blockchain Tech\",\n      \"speaker\": \"memory\",\n      \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json\"\n    },\n    \"messages\": [\n      {\n        \"source_id\": \"new-0\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:43:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content\"\n      },\n      {\n        \"source_id\": \"new-1\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"That's fantastic news, Donald! Securing initial clients is indeed a major achievement, especially considering the transition from your previous career in technology to political consulting. It's clear that your innovative spirit and active thinking have paid off. Leveraging your network, including key contacts like MooreSandra and GonzalezMary, was a smart move. They must have been invaluable in connecting you with political campaigns seeking strategic advice. By the way, I remember you expressing gratitude for the support from your family during the establishment of your firm. It's always wonderful to have family backing you up. How do you plan to continue nurturing these relationships for sustained success?\",\n        \"recorded_at\": \"Jan 05, 2026, 07:43:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/1/content\"\n      },\n      {\n        \"source_id\": \"new-2\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:44:55\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content\"\n      },\n      {\n        \"source_id\": \"new-3\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Maintaining and nurturing these relationships is key, especially in the political consulting arena where connections can make all the difference. Your gratitude for the support from key contacts in your network is well-placed, as they have played pivotal roles in your success. As you brainstorm strategies for continued growth, you might consider balancing rapid expansion and immediate impact with sustainable growth and influence. This dual approach could help you establish a solid foundation while also making a noticeable impact in the field. How are you balancing these strategies?\",\n        \"recorded_at\": \"Jan 05, 2026, 07:44:55\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/3/content\"\n      },\n      {\n        \"source_id\": \"new-4\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm focusing on sustainable growth. It's important to build a firm that lasts and has a meaningful impact. I've been brainstorming strategies to achieve this.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:47:30\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/4/content\"\n      },\n      {\n        \"source_id\": \"new-5\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Sustainable growth is indeed a wise approach, especially when considering the long-term influence you wish to have in the political consulting field. It's impressive how your compensatory motivation drives you to use available resources to overcome personal limitations in skills and accessibility. This focus on sustainable strategies aligns perfectly with your dedication to supporting your relative's political career and ensuring their legacy and impact on society. On a related note, have you considered adopting traditional stress management techniques to maintain your mental health while managing the firm? It's crucial to stay balanced during such a demanding time.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:47:30\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/5/content\"\n      },\n      {\n        \"source_id\": \"new-6\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm exploring new stress management techniques to keep my mental health in check. It's been quite a journey, but I'm optimistic about the future.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:50:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/6/content\"\n      },\n      {\n        \"source_id\": \"new-7\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Exploring new stress management techniques is a proactive step towards maintaining your mental health. It's important to find methods that resonate with you personally. Your optimism about the future is encouraging, especially as you continue to attract initial clients and expand your consulting firm. Remember, your innovative spirit and active thinking are powerful assets in navigating this journey. As you continue to brainstorm strategies for growth, consider how you might further leverage your network and the support from your family. How do you see your firm's role evolving in the political landscape?\",\n        \"recorded_at\": \"Jan 05, 2026, 07:50:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/7/content\"\n      },\n      {\n        \"source_id\": \"new-8\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I envision my firm becoming a key player in political consulting, offering strategic advice that shapes campaigns and influences political discourse.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:54:01\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/8/content\"\n      },\n      {\n        \"source_id\": \"new-9\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"That's an inspiring vision, Donald! Becoming a key player in political consulting will require not only strategic advice but also a deep understanding of the political landscape and the ability to adapt to its changes. Your emphasis on nurturing relationships within your network will be crucial in achieving this. Remember, the gratitude you expressed for the support from your family during the establishment of your firm can be a source of strength and motivation. As you continue to innovate and explore new strategies, your dedication to supporting your relative's political career will undoubtedly drive your firm's success. What specific strategies are you considering to enhance your firm's influence?\",\n        \"recorded_at\": \"Jan 05, 2026, 07:54:01\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/9/content\"\n      },\n      {\n        \"source_id\": \"new-10\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm considering expanding my services to include digital campaign strategies and data analysis. These areas are becoming increasingly important in political consulting.\",\n        \"recorded_at\": \"Jan 05, 2026, 07:55:26\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/10/content\"\n      },\n      {\n        \"source_id\": \"new-11\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Expanding into digital campaign strategies and data analysis is a smart move, as these areas are indeed crucial in modern political consulting. This expansion aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you implement these strategies, remember to balance rapid expansion with sustainable growth to ensure lasting impact. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to integrate these new services into your existing offerings?\",\n        \"recorded_at\": \"Jan 05, 2026, 07:55:26\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/11/content\"\n      },\n      {\n        \"source_id\": \"new-12\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll be integrating these services gradually, ensuring that my team is well-equipped and trained to handle them effectively.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:02:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/12/content\"\n      },\n      {\n        \"source_id\": \"new-13\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Gradual integration is a wise approach, as it allows your team to adapt and excel in these new areas without overwhelming them. Training and equipping your team will be key to providing top-notch services. As you continue to expand, the support from your network, including MooreSandra and GonzalezMary, will be invaluable. Their connections and insights can help guide your firm towards success. On a personal note, how are you managing the stress that comes with these expansions?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:02:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/13/content\"\n      },\n      {\n        \"source_id\": \"new-14\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm focusing on maintaining a healthy work-life balance and using new stress management techniques to cope with the demands.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:10:59\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/14/content\"\n      },\n      {\n        \"source_id\": \"new-15\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Maintaining a healthy work-life balance is essential, especially as you navigate the demands of expanding your firm. Exploring new stress management techniques will undoubtedly help you cope with the challenges ahead. Your ability to balance personal well-being with professional responsibilities is commendable. As you continue to leverage your network and express gratitude for the support from your family, you'll find the strength to overcome any obstacles. How do you envision your firm's role in supporting your relative's political career?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:10:59\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/15/content\"\n      },\n      {\n        \"source_id\": \"new-16\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"My firm will provide strategic advice and innovative solutions to ensure my relative's campaigns are successful and impactful.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:13:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/16/content\"\n      },\n      {\n        \"source_id\": \"new-17\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Providing strategic advice and innovative solutions is a powerful way to support your relative's political career. Your dedication to ensuring their campaigns are successful and impactful is evident in your approach. By leveraging your network and the support from your family, you'll be able to offer unique insights and strategies that set your firm apart. As you continue to brainstorm strategies for growth, consider how you can further integrate digital campaign strategies and data analysis into your offerings. What steps are you taking to ensure your firm's longevity and influence?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:13:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/17/content\"\n      },\n      {\n        \"source_id\": \"new-18\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm focusing on building a strong foundation through sustainable growth and nurturing key relationships within my network.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:20:43\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/18/content\"\n      },\n      {\n        \"source_id\": \"new-19\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Building a strong foundation through sustainable growth and nurturing key relationships is a solid strategy for ensuring your firm's longevity and influence. Your commitment to nurturing these relationships, particularly with contacts like MooreSandra and GonzalezMary, will be crucial in achieving this. As you continue to express gratitude for the support from your family, you'll find the motivation and strength to overcome any challenges. Your innovative spirit and active thinking will guide your firm towards success. How do you plan to measure your firm's impact in the political consulting field?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:20:43\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/19/content\"\n      },\n      {\n        \"source_id\": \"new-20\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll measure my firm's impact by the success of the campaigns we advise and the positive changes we help implement in political discourse.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:24:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/20/content\"\n      },\n      {\n        \"source_id\": \"new-21\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Measuring your firm's impact by the success of the campaigns you advise and the positive changes in political discourse is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:24:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/21/content\"\n      },\n      {\n        \"source_id\": \"new-22\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:33:16\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/22/content\"\n      },\n      {\n        \"source_id\": \"new-23\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:33:16\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/23/content\"\n      },\n      {\n        \"source_id\": \"new-24\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:40:21\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/24/content\"\n      },\n      {\n        \"source_id\": \"new-25\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:40:21\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/25/content\"\n      },\n      {\n        \"source_id\": \"new-26\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:44:21\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/26/content\"\n      },\n      {\n        \"source_id\": \"new-27\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:44:21\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/27/content\"\n      },\n      {\n        \"source_id\": \"new-28\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:46:47\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/28/content\"\n      },\n      {\n        \"source_id\": \"new-29\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:46:47\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/29/content\"\n      },\n      {\n        \"source_id\": \"new-30\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.\",\n        \"recorded_at\": \"Jan 05, 2026, 08:54:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/30/content\"\n      },\n      {\n        \"source_id\": \"new-31\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?\",\n        \"recorded_at\": \"Jan 05, 2026, 08:54:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/31/content\"\n      },\n      {\n        \"source_id\": \"new-32\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:06:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/32/content\"\n      },\n      {\n        \"source_id\": \"new-33\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:06:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/33/content\"\n      },\n      {\n        \"source_id\": \"new-34\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:12:41\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/34/content\"\n      },\n      {\n        \"source_id\": \"new-35\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:12:41\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/35/content\"\n      },\n      {\n        \"source_id\": \"new-36\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:15:49\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/36/content\"\n      },\n      {\n        \"source_id\": \"new-37\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:15:49\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/37/content\"\n      },\n      {\n        \"source_id\": \"new-38\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:17:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/38/content\"\n      },\n      {\n        \"source_id\": \"new-39\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:17:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/39/content\"\n      },\n      {\n        \"source_id\": \"new-40\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:24:57\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/40/content\"\n      },\n      {\n        \"source_id\": \"new-41\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:24:57\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/41/content\"\n      },\n      {\n        \"source_id\": \"new-42\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:27:06\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/42/content\"\n      },\n      {\n        \"source_id\": \"new-43\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:27:06\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/43/content\"\n      },\n      {\n        \"source_id\": \"new-44\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:30:29\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/44/content\"\n      },\n      {\n        \"source_id\": \"new-45\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:30:29\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/45/content\"\n      },\n      {\n        \"source_id\": \"new-46\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:36:24\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/46/content\"\n      },\n      {\n        \"source_id\": \"new-47\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:36:24\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/47/content\"\n      },\n      {\n        \"source_id\": \"new-48\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll keep my team motivated by fostering a collaborative environment and providing opportunities for professional growth.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:41:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/48/content\"\n      },\n      {\n        \"source_id\": \"new-49\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Fostering a collaborative environment and providing opportunities for professional growth are excellent ways to keep your team motivated and aligned with your firm's vision. Encouraging collaboration will not only enhance team cohesion but also drive innovation. As you continue to leverage your network and express gratitude for the support from your family, you'll find the motivation to lead your team towards success. Your compensatory motivation and innovative spirit will guide you in creating a thriving workplace. How do you plan to balance the demands of leadership with your personal well-being?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:41:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/49/content\"\n      },\n      {\n        \"source_id\": \"new-50\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Balancing leadership demands with personal well-being is challenging, but I'm committed to maintaining a healthy work-life balance.\",\n        \"recorded_at\": \"Jan 05, 2026, 09:46:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/50/content\"\n      },\n      {\n        \"source_id\": \"new-51\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Maintaining a healthy work-life balance is crucial, especially as you navigate the demands of leadership. Your commitment to personal well-being will serve you well in managing stress and staying focused on your firm's goals. Exploring new stress management techniques and expressing gratitude for the support from your family will provide you with the strength to overcome any challenges. As you continue to nurture relationships within your network, you'll find the motivation and inspiration to lead effectively. How do you envision your firm's role in shaping political discourse?\",\n        \"recorded_at\": \"Jan 05, 2026, 09:46:46\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/51/content\"\n      },\n      {\n        \"source_id\": \"new-52\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I envision my firm influencing political discourse by offering strategic advice that promotes positive change and innovation.\",\n        \"recorded_at\": \"Jan 05, 2026, 10:00:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/52/content\"\n      },\n      {\n        \"source_id\": \"new-53\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Influencing political discourse by offering strategic advice that promotes positive change and innovation is a powerful vision. Your firm's role in shaping political discourse will require a deep understanding of the political landscape and the ability to adapt to its changes. By leveraging your network and expressing gratitude for the support from your family, you'll be able to offer unique insights and strategies that drive impactful change. Your compensatory motivation and innovative spirit will guide your firm towards success. What strategies are you considering to enhance your firm's influence in the political landscape?\",\n        \"recorded_at\": \"Jan 05, 2026, 10:00:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/53/content\"\n      },\n      {\n        \"source_id\": \"new-54\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm considering expanding my firm's presence through digital platforms and engaging with influential figures in the political arena.\",\n        \"recorded_at\": \"Jan 05, 2026, 10:01:23\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/54/content\"\n      },\n      {\n        \"source_id\": \"new-55\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Expanding your firm's presence through digital platforms and engaging with influential figures in the political arena is a strategic move. This approach aligns with your innovative spirit and active thinking, allowing you to offer comprehensive solutions to your clients. As you continue to express gratitude for the support from your family and nurture relationships within your network, you'll find the strength to drive impactful change. Your compensatory motivation will serve you well in overcoming any challenges you face. How do you plan to measure your firm's success in these endeavors?\",\n        \"recorded_at\": \"Jan 05, 2026, 10:01:23\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/55/content\"\n      },\n      {\n        \"source_id\": \"new-56\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'll measure success by the effectiveness of our campaigns and the positive feedback from clients and stakeholders.\",\n        \"recorded_at\": \"Jan 05, 2026, 10:10:06\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/56/content\"\n      },\n      {\n        \"source_id\": \"new-57\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Measuring success by the effectiveness of your campaigns and positive feedback from clients and stakeholders is a meaningful approach. This focus on tangible outcomes will help you assess the effectiveness of your strategies and adapt as needed. As you continue to leverage your network and express gratitude for the support from your family, you'll be able to drive impactful change. Your compensatory motivation and innovative spirit will be key in navigating the complexities of the political consulting field. What challenges do you anticipate as you pursue these goals?\",\n        \"recorded_at\": \"Jan 05, 2026, 10:10:06\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/57/content\"\n      },\n      {\n        \"source_id\": \"new-58\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I anticipate challenges in adapting to the fast-paced changes in political consulting and ensuring my firm stays competitive.\",\n        \"recorded_at\": \"Jan 05, 2026, 10:13:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/58/content\"\n      },\n      {\n        \"source_id\": \"new-59\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Adapting to fast-paced changes in political consulting and ensuring your firm remains competitive are indeed significant challenges. Your ability to innovate and think actively will be crucial in overcoming these obstacles. By continuing to express gratitude for the support from your family and nurturing key relationships within your network, you'll find the strength to adapt and thrive. As you expand your services to include digital campaign strategies and data analysis, consider how you can stay ahead of industry trends. How do you plan to keep your team motivated and aligned with your firm's vision?\",\n        \"recorded_at\": \"Jan 05, 2026, 10:13:42\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/59/content\"\n      },\n      {\n        \"source_id\": \"ctx-1\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_002/input.json#/raw_dialogue/2/content [61:109]\",\n        \"text\": \"I work at Blockchain Tech as a senior developer.\",\n        \"speaker\": \"user\",\n        \"recorded_at\": \"Sep 05, 2025, 09:10:09\",\n        \"side\": \"old\"\n      }\n    ]\n  }\n}"
+      }
+    ]
+  },
+  "call": {
+    "status": "passed",
+    "attempts": 1,
+    "request_transmitted": true,
+    "elapsed_seconds": 9.574,
+    "returned_model": "qwen-plus-2025-12-01"
+  },
+  "usage": {
+    "completion_tokens": 385,
+    "prompt_tokens": 14062,
+    "total_tokens": 14447,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  },
+  "raw_response": "{\n  \"records\": [\n    {\n      \"old_unit_ids\": [\"employer\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"employer\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"Blockchain Tech\"],\n      \"new_quotes\": [\"my consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [\"title\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"title\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"senior developer\"],\n      \"new_quotes\": [\"consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [],\n      \"new_unit_ids\": [\"unsplit-new-2\"],\n      \"attribute\": \"network_support\",\n      \"relation\": \"new_information\",\n      \"old_quotes\": [],\n      \"new_quotes\": [\"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\"],\n      \"qualifiers\": [],\n      \"missing_evidence\": []\n    }\n  ],\n  \"unmatched_old_unit_ids\": []\n}",
+  "provider_response": {
+    "id": "chatcmpl-140cb715-c73f-9b3f-9b76-f8a655e20059",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"records\": [\n    {\n      \"old_unit_ids\": [\"employer\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"employer\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"Blockchain Tech\"],\n      \"new_quotes\": [\"my consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [\"title\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"title\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"senior developer\"],\n      \"new_quotes\": [\"consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [],\n      \"new_unit_ids\": [\"unsplit-new-2\"],\n      \"attribute\": \"network_support\",\n      \"relation\": \"new_information\",\n      \"old_quotes\": [],\n      \"new_quotes\": [\"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\"],\n      \"qualifiers\": [],\n      \"missing_evidence\": []\n    }\n  ],\n  \"unmatched_old_unit_ids\": []\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1795159112,
+    "model": "qwen-plus-2025-12-01",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 385,
+      "prompt_tokens": 14062,
+      "total_tokens": 14447,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    }
+  },
+  "result": {
+    "status": "passed",
+    "parsed": {
+      "records": [
+        {
+          "old_unit_ids": [
+            "employer"
+          ],
+          "new_unit_ids": [
+            "manually_mapped_new"
+          ],
+          "attribute": "employer",
+          "relation": "state_change",
+          "old_quotes": [
+            "Blockchain Tech"
+          ],
+          "new_quotes": [
+            "my consulting firm"
+          ],
+          "qualifiers": [
+            {
+              "side": "new",
+              "kind": "time",
+              "quote": "lately",
+              "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            }
+          ],
+          "missing_evidence": []
+        },
+        {
+          "old_unit_ids": [
+            "title"
+          ],
+          "new_unit_ids": [
+            "manually_mapped_new"
+          ],
+          "attribute": "title",
+          "relation": "state_change",
+          "old_quotes": [
+            "senior developer"
+          ],
+          "new_quotes": [
+            "consulting firm"
+          ],
+          "qualifiers": [
+            {
+              "side": "new",
+              "kind": "time",
+              "quote": "lately",
+              "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+            }
+          ],
+          "missing_evidence": []
+        },
+        {
+          "old_unit_ids": [],
+          "new_unit_ids": [
+            "unsplit-new-2"
+          ],
+          "attribute": "network_support",
+          "relation": "new_information",
+          "old_quotes": [],
+          "new_quotes": [
+            "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+          ],
+          "qualifiers": [],
+          "missing_evidence": []
+        }
+      ],
+      "unmatched_old_unit_ids": []
+    },
+    "parse_errors": [],
+    "structure_errors": [],
+    "coverage": {
+      "unhandled_old_unit_ids": [],
+      "unhandled_new_unit_ids": [],
+      "unmatched_old_unit_ids": [],
+      "mentioned_old_unit_ids": [
+        "employer",
+        "title"
+      ],
+      "mentioned_new_unit_ids": [
+        "manually_mapped_new",
+        "unsplit-new-2"
+      ]
+    },
+    "source_completions": [
+      {
+        "path": "records[0].old_quotes[0]",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "employer"
+        ],
+        "kind": "quote"
+      },
+      {
+        "path": "records[0].new_quotes[0]",
+        "source_id": "new-0",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "manually_mapped_new"
+        ],
+        "kind": "quote"
+      },
+      {
+        "path": "records[0].qualifiers[0]",
+        "source_id": "new-0",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "manually_mapped_new"
+        ],
+        "kind": "qualifier"
+      },
+      {
+        "path": "records[1].old_quotes[0]",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "title"
+        ],
+        "kind": "quote"
+      },
+      {
+        "path": "records[1].new_quotes[0]",
+        "source_id": "new-0",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "manually_mapped_new"
+        ],
+        "kind": "quote"
+      },
+      {
+        "path": "records[1].qualifiers[0]",
+        "source_id": "new-0",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "manually_mapped_new"
+        ],
+        "kind": "qualifier"
+      },
+      {
+        "path": "records[2].new_quotes[0]",
+        "source_id": "new-2",
+        "method": "unique_linked_unit_source",
+        "matched_unit_ids": [
+          "unsplit-new-2"
+        ],
+        "kind": "quote"
+      }
+    ],
+    "quote_locations": [
+      {
+        "path": "records[0].old_quotes[0]",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "quote": "Blockchain Tech",
+        "spans": [
+          [
+            43,
+            58
+          ]
+        ]
+      },
+      {
+        "path": "records[0].new_quotes[0]",
+        "source_id": "new-0",
+        "quote": "my consulting firm",
+        "spans": [
+          [
+            48,
+            66
+          ]
+        ]
+      },
+      {
+        "path": "records[0].qualifiers[0]",
+        "source_id": "new-0",
+        "quote": "lately",
+        "spans": [
+          [
+            33,
+            39
+          ]
+        ]
+      },
+      {
+        "path": "records[1].old_quotes[0]",
+        "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "quote": "senior developer",
+        "spans": [
+          [
+            23,
+            39
+          ]
+        ]
+      },
+      {
+        "path": "records[1].new_quotes[0]",
+        "source_id": "new-0",
+        "quote": "consulting firm",
+        "spans": [
+          [
+            51,
+            66
+          ]
+        ]
+      },
+      {
+        "path": "records[1].qualifiers[0]",
+        "source_id": "new-0",
+        "quote": "lately",
+        "spans": [
+          [
+            33,
+            39
+          ]
+        ]
+      },
+      {
+        "path": "records[2].new_quotes[0]",
+        "source_id": "new-2",
+        "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "spans": [
+          [
+            0,
+            201
+          ]
+        ]
+      }
+    ],
+    "ambiguities": [],
+    "missing_evidence": [],
+    "scope_review": [
+      {
+        "path": "records[0].qualifiers[0]",
+        "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "reason": "qualifier attachment and semantic scope require human review"
+      },
+      {
+        "path": "records[1].qualifiers[0]",
+        "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+        "reason": "qualifier attachment and semantic scope require human review"
+      }
+    ],
+    "semantic_review": {
+      "status": "not_reviewed",
+      "findings": []
+    },
+    "raw_response": "{\n  \"records\": [\n    {\n      \"old_unit_ids\": [\"employer\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"employer\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"Blockchain Tech\"],\n      \"new_quotes\": [\"my consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [\"title\"],\n      \"new_unit_ids\": [\"manually_mapped_new\"],\n      \"attribute\": \"title\",\n      \"relation\": \"state_change\",\n      \"old_quotes\": [\"senior developer\"],\n      \"new_quotes\": [\"consulting firm\"],\n      \"qualifiers\": [\n        {\n          \"side\": \"new\",\n          \"kind\": \"time\",\n          \"quote\": \"lately\",\n          \"claim_quote\": \"I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.\"\n        }\n      ],\n      \"missing_evidence\": []\n    },\n    {\n      \"old_unit_ids\": [],\n      \"new_unit_ids\": [\"unsplit-new-2\"],\n      \"attribute\": \"network_support\",\n      \"relation\": \"new_information\",\n      \"old_quotes\": [],\n      \"new_quotes\": [\"MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.\"],\n      \"qualifiers\": [],\n      \"missing_evidence\": []\n    }\n  ],\n  \"unmatched_old_unit_ids\": []\n}",
+    "request_attempts": 1,
+    "returned_model": "qwen-plus-2025-12-01"
+  }
+}

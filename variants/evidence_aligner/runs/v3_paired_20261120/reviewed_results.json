@@ -1,0 +1,457 @@
+{
+  "review_method": "Assistant manually compared every v3 record and selected input unit against verbatim sources and the v2 raw response; this is not independent blinded review or a gold standard. Paths use zero-based record indices. Literal provenance and semantic entailment are separate judgments.",
+  "source_manifest": "manifest.json",
+  "source_semantic_audit": "semantic_audit.json",
+  "summary": {
+    "case_count": 5,
+    "structure_error_counts": {
+      "missing_quote": 1,
+      "qualifier_anchor_provenance": 1,
+      "unit_without_quote": 2
+    },
+    "semantic_error_counts": {
+      "claim_omission": 1,
+      "compound_assertions": 2,
+      "compound_assertions_omitted": 1,
+      "qualifier_misclassification": 1,
+      "qualifier_omitted": 3,
+      "qualifier_scope": 2,
+      "qualifier_wrong_source": 1,
+      "unrelated_old_link": 1,
+      "unsupported_safety_inference": 1,
+      "unsupported_state_change": 4
+    },
+    "semantic_error_findings": 17,
+    "cases_requiring_attention": 5
+  },
+  "cases": [
+    {
+      "case_id": "susan",
+      "structural_status": "failed",
+      "structure_errors": [
+        {
+          "code": "missing_quote",
+          "path": "records[2].old_quotes",
+          "message": "at least one quote required"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[2].old_unit_ids",
+          "message": "friendship"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[2].old_unit_ids",
+          "message": "support"
+        }
+      ],
+      "parse_errors": [],
+      "semantic_review_status": "reviewed_nonblind",
+      "semantic_errors": [
+        {
+          "type": "compound_assertions_omitted",
+          "path": "input.new_units[manually_mapped_new]",
+          "judgment": "error",
+          "detail": "Daniel's independent contribution is omitted, despite the input unit containing it."
+        },
+        {
+          "type": "unrelated_old_link",
+          "path": "records[2]",
+          "judgment": "error",
+          "detail": "The new career and job-search material is new_information but links two unrelated old friendship/support units and omits their quotes."
+        },
+        {
+          "type": "qualifier_omitted",
+          "path": "records[2]",
+          "judgment": "error",
+          "detail": "The comparative negation isn't supporting ... as much as I'd like is not identified, and job-search intention and role insufficiency remain combined in one record."
+        }
+      ],
+      "human_judgment_needed": [
+        {
+          "type": "weak_relation",
+          "path": "records[0].relation",
+          "judgment": "needs_human_review",
+          "detail": "The quoted new statement reports Susan's support; it does not explicitly state friendship. The old memory identifies Susan as ThomasSusan, but whether this is sufficient support for the friendship relation is a judgment."
+        },
+        {
+          "type": "qualifier_scope",
+          "path": "records[2].qualifiers[0]",
+          "judgment": "needs_human_review",
+          "detail": "lately is anchored to a clause also containing a realization; its direct modifier is thinking about career."
+        }
+      ],
+      "other_semantic_findings": [],
+      "missing_evidence": [
+        {
+          "path": "records[2].old_quotes",
+          "message": "quote required"
+        },
+        {
+          "path": "records[2].old_unit_ids",
+          "message": "no uniquely sourced quote for unit",
+          "side": "old",
+          "unit_id": "friendship"
+        },
+        {
+          "path": "records[2].old_unit_ids",
+          "message": "no uniquely sourced quote for unit",
+          "side": "old",
+          "unit_id": "support"
+        }
+      ],
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "friendship",
+          "support"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-0"
+        ]
+      },
+      "ambiguities": [],
+      "scope_review": [
+        {
+          "path": "records[2].qualifiers[0]",
+          "claim_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        }
+      ],
+      "source_completion_count": 6,
+      "overall_status": "requires_attention"
+    },
+    {
+      "case_id": "promotion",
+      "structural_status": "passed",
+      "structure_errors": [],
+      "parse_errors": [],
+      "semantic_review_status": "reviewed_nonblind",
+      "semantic_errors": [],
+      "human_judgment_needed": [
+        {
+          "type": "coarse_relation",
+          "path": "records[0].relation",
+          "judgment": "needs_human_review",
+          "detail": "no_clear_change is conservative, but the same named employer is directly reaffirmed and support is also defensible."
+        }
+      ],
+      "other_semantic_findings": [
+        {
+          "type": "correct_qualified_change",
+          "path": "records[1]",
+          "judgment": "supported",
+          "detail": "Promotion is directly stated and recently is attached to the promotion quote."
+        }
+      ],
+      "missing_evidence": [],
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "employer",
+          "title"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new"
+        ]
+      },
+      "ambiguities": [],
+      "scope_review": [
+        {
+          "path": "records[1].qualifiers[0]",
+          "claim_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        }
+      ],
+      "source_completion_count": 5,
+      "overall_status": "requires_attention"
+    },
+    {
+      "case_id": "career_history",
+      "structural_status": "passed",
+      "structure_errors": [],
+      "parse_errors": [],
+      "semantic_review_status": "reviewed_nonblind",
+      "semantic_errors": [
+        {
+          "type": "unsupported_state_change",
+          "path": "records[0].relation",
+          "judgment": "error",
+          "detail": "my consulting firm does not establish that the historical employer changed or ended; v2 had avoided state_change."
+        },
+        {
+          "type": "unsupported_state_change",
+          "path": "records[1].relation",
+          "judgment": "error",
+          "detail": "consulting firm does not establish a replacement for the historical senior developer title; v2 had avoided state_change."
+        },
+        {
+          "type": "qualifier_scope",
+          "path": "records[0:2].qualifiers[0]",
+          "judgment": "error",
+          "detail": "lately directly modifies feeling relieved; the anchors span the entire source but attach it to employer and title records."
+        },
+        {
+          "type": "claim_omission",
+          "path": "input.new_units[manually_mapped_new]",
+          "judgment": "error",
+          "detail": "No record's primary new quote states that the consulting firm secured initial clients; that text occurs only in qualifier anchors. The relief is also not its own claim."
+        },
+        {
+          "type": "compound_assertions",
+          "path": "records[2]",
+          "judgment": "error",
+          "detail": "The previously unhandled new unit is now cited, but instrumental contacts, opened doors and maintaining relationships remain bundled as one record."
+        }
+      ],
+      "human_judgment_needed": [
+        {
+          "type": "identity_extrapolation",
+          "path": "records[0:2]",
+          "judgment": "partly_improved_but_unresolved",
+          "detail": "The compact schema no longer generates explicit founder/operator claims, but the employer/title state_change relations still imply an unsupported career transition. The selected input's raw statement and manual attribute client_milestone do not assert founder/operator."
+        }
+      ],
+      "other_semantic_findings": [],
+      "missing_evidence": [],
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "employer",
+          "title"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-2"
+        ]
+      },
+      "ambiguities": [],
+      "scope_review": [
+        {
+          "path": "records[0].qualifiers[0]",
+          "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[1].qualifiers[0]",
+          "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        }
+      ],
+      "source_completion_count": 7,
+      "overall_status": "requires_attention"
+    },
+    {
+      "case_id": "transition",
+      "structural_status": "failed",
+      "structure_errors": [
+        {
+          "code": "qualifier_anchor_provenance",
+          "path": "records[0].qualifiers[0]",
+          "message": "claim_quote must overlap a cited quote in its linked source"
+        }
+      ],
+      "parse_errors": [],
+      "semantic_review_status": "reviewed_nonblind",
+      "semantic_errors": [
+        {
+          "type": "qualifier_wrong_source",
+          "path": "records[0].qualifiers[0]",
+          "judgment": "error",
+          "detail": "The old lately anchor is not in the linked old memory source; deterministic validation rejects it."
+        },
+        {
+          "type": "qualifier_omitted",
+          "path": "records[0]",
+          "judgment": "error",
+          "detail": "now is not attached to the work-life-balance claim."
+        },
+        {
+          "type": "compound_assertions",
+          "path": "records[0]",
+          "judgment": "error",
+          "detail": "Completed transition, relief and healthier work-life balance remain combined; finally pertains to the transition."
+        }
+      ],
+      "human_judgment_needed": [],
+      "other_semantic_findings": [
+        {
+          "type": "correct_transition",
+          "path": "records[0].relation",
+          "judgment": "supported_with_limits",
+          "detail": "The quote says the role transition was completed; it does not prove there will never be another job search."
+        }
+      ],
+      "missing_evidence": [
+        {
+          "path": "records[0].qualifiers[0]",
+          "message": "qualifier and its assertion need linked same-source evidence"
+        }
+      ],
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "job_search"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new"
+        ]
+      },
+      "ambiguities": [],
+      "scope_review": [
+        {
+          "path": "records[0].qualifiers[1]",
+          "claim_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        }
+      ],
+      "source_completion_count": 3,
+      "overall_status": "requires_attention"
+    },
+    {
+      "case_id": "skydiving",
+      "structural_status": "passed",
+      "structure_errors": [],
+      "parse_errors": [],
+      "semantic_review_status": "reviewed_nonblind",
+      "semantic_errors": [
+        {
+          "type": "unsupported_state_change",
+          "path": "records[0].relation",
+          "judgment": "error",
+          "detail": "The simulated experience is labelled a change in attitude to extreme sports even as missing_evidence says the required evidence is absent; v2 avoided this state_change."
+        },
+        {
+          "type": "unsupported_state_change",
+          "path": "records[1].relation",
+          "judgment": "error",
+          "detail": "The new quotes do not establish that the high-injury-risk reason changed. The missing_evidence text also says continued safety priority affirms that original concern remains operative, which overstates the evidence."
+        },
+        {
+          "type": "unsupported_safety_inference",
+          "path": "records[2].missing_evidence",
+          "judgment": "error",
+          "detail": "Calling the safety commitment unconflicted by this activity goes beyond the user quote."
+        },
+        {
+          "type": "qualifier_misclassification",
+          "path": "records[1:3].qualifiers",
+          "judgment": "error",
+          "detail": "For now is classified as plan instead of time, and still prioritize safety is classified as negation despite being an affirmation of continuity."
+        },
+        {
+          "type": "qualifier_scope",
+          "path": "records[1:3].qualifiers",
+          "judgment": "error",
+          "detail": "For now is anchored to both sentences, obscuring that it directly qualifies current enjoyment/seeing where it leads, not necessarily the safety commitment. The simulation anchor belongs to the experience, not a free-standing safety claim."
+        },
+        {
+          "type": "qualifier_omitted",
+          "path": "input.new_units[unsplit-new-2]",
+          "judgment": "error",
+          "detail": "didn't expect qualifies prior expectation, not actual enjoyment, but is not extracted; enjoyment and greater openness are not separate assertion records."
+        }
+      ],
+      "human_judgment_needed": [],
+      "other_semantic_findings": [
+        {
+          "type": "correct_qualifier",
+          "path": "records[0].qualifiers",
+          "judgment": "supported",
+          "detail": "simulated and recently appear in the experience anchor; this does not repair the unsupported state_change label."
+        }
+      ],
+      "missing_evidence": [
+        {
+          "path": "records[0].missing_evidence",
+          "message": "No evidence that simulated skydiving implies changed attitude toward *actual* extreme sports; 'dislikes' refers to real skydiving, not simulation",
+          "origin": "model"
+        },
+        {
+          "path": "records[1].missing_evidence",
+          "message": "No statement retracting or qualifying that high injury risk *itself* is no longer a reason for dislike; 'still prioritize safety' affirms the original safety concern remains operative; 'simulated' explicitly limits scope — no evidence about real skydiving risk perception change",
+          "origin": "model"
+        },
+        {
+          "path": "records[2].missing_evidence",
+          "message": "No evidence that simulated skydiving resolves or negates the conflict with safety commitment; 'still prioritize safety' confirms the commitment remains intact and unconflicted *by this activity* — but does not address whether real extreme sports would still conflict",
+          "origin": "model"
+        }
+      ],
+      "coverage": {
+        "unhandled_old_unit_ids": [],
+        "unhandled_new_unit_ids": [],
+        "unmatched_old_unit_ids": [],
+        "mentioned_old_unit_ids": [
+          "u1",
+          "u2",
+          "u3"
+        ],
+        "mentioned_new_unit_ids": [
+          "manually_mapped_new",
+          "unsplit-new-2",
+          "unsplit-new-8"
+        ]
+      },
+      "ambiguities": [],
+      "scope_review": [
+        {
+          "path": "records[0].qualifiers[0]",
+          "claim_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[0].qualifiers[1]",
+          "claim_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[1].qualifiers[0]",
+          "claim_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[1].qualifiers[1]",
+          "claim_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[1].qualifiers[2]",
+          "claim_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[1].qualifiers[3]",
+          "claim_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[2].qualifiers[0]",
+          "claim_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[2].qualifiers[1]",
+          "claim_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        },
+        {
+          "path": "records[2].qualifiers[2]",
+          "claim_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+          "reason": "qualifier attachment and semantic scope require human review"
+        }
+      ],
+      "source_completion_count": 18,
+      "overall_status": "requires_attention"
+    }
+  ]
+}

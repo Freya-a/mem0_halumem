@@ -1,0 +1,60 @@
+{
+  "method": "Assistant manually compared every v3 record and selected input unit against verbatim sources and the v2 raw response; this is not independent blinded review or a gold standard. Paths use zero-based record indices. Literal provenance and semantic entailment are separate judgments.",
+  "status": "reviewed_nonblind",
+  "cases": [
+    {
+      "case_id": "susan",
+      "records_reviewed": [0, 1, 2],
+      "findings": [
+        {"type": "weak_relation", "path": "records[0].relation", "judgment": "needs_human_review", "detail": "The quoted new statement reports Susan's support; it does not explicitly state friendship. The old memory identifies Susan as ThomasSusan, but whether this is sufficient support for the friendship relation is a judgment."},
+        {"type": "compound_assertions_omitted", "path": "input.new_units[manually_mapped_new]", "judgment": "error", "detail": "Daniel's independent contribution is omitted, despite the input unit containing it."},
+        {"type": "unrelated_old_link", "path": "records[2]", "judgment": "error", "detail": "The new career and job-search material is new_information but links two unrelated old friendship/support units and omits their quotes."},
+        {"type": "qualifier_scope", "path": "records[2].qualifiers[0]", "judgment": "needs_human_review", "detail": "lately is anchored to a clause also containing a realization; its direct modifier is thinking about career."},
+        {"type": "qualifier_omitted", "path": "records[2]", "judgment": "error", "detail": "The comparative negation isn't supporting ... as much as I'd like is not identified, and job-search intention and role insufficiency remain combined in one record."}
+      ]
+    },
+    {
+      "case_id": "promotion",
+      "records_reviewed": [0, 1],
+      "findings": [
+        {"type": "coarse_relation", "path": "records[0].relation", "judgment": "needs_human_review", "detail": "no_clear_change is conservative, but the same named employer is directly reaffirmed and support is also defensible."},
+        {"type": "correct_qualified_change", "path": "records[1]", "judgment": "supported", "detail": "Promotion is directly stated and recently is attached to the promotion quote."}
+      ]
+    },
+    {
+      "case_id": "career_history",
+      "records_reviewed": [0, 1, 2],
+      "findings": [
+        {"type": "unsupported_state_change", "path": "records[0].relation", "judgment": "error", "detail": "my consulting firm does not establish that the historical employer changed or ended; v2 had avoided state_change."},
+        {"type": "unsupported_state_change", "path": "records[1].relation", "judgment": "error", "detail": "consulting firm does not establish a replacement for the historical senior developer title; v2 had avoided state_change."},
+        {"type": "identity_extrapolation", "path": "records[0:2]", "judgment": "partly_improved_but_unresolved", "detail": "The compact schema no longer generates explicit founder/operator claims, but the employer/title state_change relations still imply an unsupported career transition. The selected input's raw statement and manual attribute client_milestone do not assert founder/operator."},
+        {"type": "qualifier_scope", "path": "records[0:2].qualifiers[0]", "judgment": "error", "detail": "lately directly modifies feeling relieved; the anchors span the entire source but attach it to employer and title records."},
+        {"type": "claim_omission", "path": "input.new_units[manually_mapped_new]", "judgment": "error", "detail": "No record's primary new quote states that the consulting firm secured initial clients; that text occurs only in qualifier anchors. The relief is also not its own claim."},
+        {"type": "compound_assertions", "path": "records[2]", "judgment": "error", "detail": "The previously unhandled new unit is now cited, but instrumental contacts, opened doors and maintaining relationships remain bundled as one record."}
+      ]
+    },
+    {
+      "case_id": "transition",
+      "records_reviewed": [0],
+      "findings": [
+        {"type": "qualifier_wrong_source", "path": "records[0].qualifiers[0]", "judgment": "error", "detail": "The old lately anchor is not in the linked old memory source; deterministic validation rejects it."},
+        {"type": "qualifier_omitted", "path": "records[0]", "judgment": "error", "detail": "now is not attached to the work-life-balance claim."},
+        {"type": "compound_assertions", "path": "records[0]", "judgment": "error", "detail": "Completed transition, relief and healthier work-life balance remain combined; finally pertains to the transition."},
+        {"type": "correct_transition", "path": "records[0].relation", "judgment": "supported_with_limits", "detail": "The quote says the role transition was completed; it does not prove there will never be another job search."}
+      ]
+    },
+    {
+      "case_id": "skydiving",
+      "records_reviewed": [0, 1, 2],
+      "findings": [
+        {"type": "unsupported_state_change", "path": "records[0].relation", "judgment": "error", "detail": "The simulated experience is labelled a change in attitude to extreme sports even as missing_evidence says the required evidence is absent; v2 avoided this state_change."},
+        {"type": "unsupported_state_change", "path": "records[1].relation", "judgment": "error", "detail": "The new quotes do not establish that the high-injury-risk reason changed. The missing_evidence text also says continued safety priority affirms that original concern remains operative, which overstates the evidence."},
+        {"type": "unsupported_safety_inference", "path": "records[2].missing_evidence", "judgment": "error", "detail": "Calling the safety commitment unconflicted by this activity goes beyond the user quote."},
+        {"type": "qualifier_misclassification", "path": "records[1:3].qualifiers", "judgment": "error", "detail": "For now is classified as plan instead of time, and still prioritize safety is classified as negation despite being an affirmation of continuity."},
+        {"type": "qualifier_scope", "path": "records[1:3].qualifiers", "judgment": "error", "detail": "For now is anchored to both sentences, obscuring that it directly qualifies current enjoyment/seeing where it leads, not necessarily the safety commitment. The simulation anchor belongs to the experience, not a free-standing safety claim."},
+        {"type": "qualifier_omitted", "path": "input.new_units[unsplit-new-2]", "judgment": "error", "detail": "didn't expect qualifies prior expectation, not actual enjoyment, but is not extracted; enjoyment and greater openness are not separate assertion records."},
+        {"type": "correct_qualifier", "path": "records[0].qualifiers", "judgment": "supported", "detail": "simulated and recently appear in the experience anchor; this does not repair the unsupported state_change label."}
+      ]
+    }
+  ]
+}

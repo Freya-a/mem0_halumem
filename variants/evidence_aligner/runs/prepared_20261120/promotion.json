@@ -1,0 +1,667 @@
+{
+  "input": {
+    "case_id": "promotion",
+    "old_units": [
+      {
+        "unit_id": "employer",
+        "raw_statement": "employer",
+        "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_quotes": [
+          "Historical Productions Ltd."
+        ],
+        "upstream_manual_unit": {
+          "name": "employer",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ]
+          },
+          "attribute": {
+            "value": "employer",
+            "evidence": [
+              {
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Historical Productions Ltd."
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      },
+      {
+        "unit_id": "title",
+        "raw_statement": "job_title",
+        "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "memory_quotes": [
+          "Director"
+        ],
+        "upstream_manual_unit": {
+          "name": "title",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "ctx-1",
+                "quote": "I work at Historical Productions Ltd. as a Director."
+              }
+            ]
+          },
+          "attribute": {
+            "value": "job_title",
+            "evidence": [
+              {
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Director"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      }
+    ],
+    "new_units": [
+      {
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "raw_statement": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+        "memory_quotes": [
+          "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+        ],
+        "upstream_manual_unit": {
+          "name": "manually_mapped_new",
+          "subject": {
+            "value": "user",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          },
+          "attribute": {
+            "value": "job_title",
+            "evidence": [
+              {
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+              }
+            ]
+          },
+          "weekdays": {
+            "kind": "unknown"
+          },
+          "valid": {
+            "start": {
+              "kind": "unknown"
+            },
+            "end": {
+              "kind": "unknown"
+            }
+          }
+        }
+      }
+    ],
+    "source_texts": {
+      "memory": {
+        "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+        "text": "Works at Historical Productions Ltd. as a Director",
+        "speaker": "memory",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json"
+      },
+      "messages": [
+        {
+          "source_id": "new-0",
+          "side": "new",
+          "speaker": "user",
+          "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+          "recorded_at": "Feb 01, 2026, 18:47:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content"
+        },
+        {
+          "source_id": "new-1",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Congratulations on your promotion, Williams! Becoming the lead director is a significant milestone in your career. This new role will allow you to have greater creative control, aligning perfectly with your goal of achieving historical accuracy in films. It's a recognition of your dedication and meticulous attention to detail in previous projects. I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas. How do you feel about the increased responsibility?",
+          "recorded_at": "Feb 01, 2026, 18:47:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/1/content"
+        },
+        {
+          "source_id": "new-2",
+          "side": "new",
+          "speaker": "user",
+          "text": "The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.",
+          "recorded_at": "Feb 01, 2026, 18:48:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/2/content"
+        },
+        {
+          "source_id": "new-3",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "It's wonderful to hear that you're excited about the creative possibilities ahead. Your passion for historical authenticity is evident, and now as lead director, you can implement innovative storytelling techniques. Your promotion also comes with an increase in monthly income from $75,000 to $90,000, and your savings have grown from $207,000 to $250,000. This financial boost provides you with more freedom to pursue projects that resonate with your love for history. How do you plan to balance these new opportunities with the stress that comes with increased responsibility?",
+          "recorded_at": "Feb 01, 2026, 18:48:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/3/content"
+        },
+        {
+          "source_id": "new-4",
+          "side": "new",
+          "speaker": "user",
+          "text": "The increased income certainly helps. I want to focus on creating films that are both authentic and engaging.",
+          "recorded_at": "Feb 01, 2026, 18:53:54",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/4/content"
+        },
+        {
+          "source_id": "new-5",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Your focus on authenticity and engagement will surely captivate audiences. As you initiate groundbreaking historical dramas, it's important to also consider how science fiction elements might enhance your storytelling. Balancing your ambitious career goals with personal well-being is crucial, especially with the stress associated with your new role. Have you thought about ways to maintain your mental health while pursuing these projects?",
+          "recorded_at": "Feb 01, 2026, 18:53:54",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/5/content"
+        },
+        {
+          "source_id": "new-6",
+          "side": "new",
+          "speaker": "user",
+          "text": "I'm grateful for the support from my colleagues and friends. Their encouragement helps me stay grounded.",
+          "recorded_at": "Feb 01, 2026, 18:57:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/6/content"
+        },
+        {
+          "source_id": "new-7",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "It's excellent that you have a strong support system. Colleagues like Steven, who shares your passion for historical detail, and friends like Mary, who encourage you to take breaks, are invaluable. They can help you navigate the challenges of your role. As you embark on new projects, perhaps consider integrating elements from both historical and science fiction genres to broaden your creative horizons. How do you see your relationships influencing your work?",
+          "recorded_at": "Feb 01, 2026, 18:57:12",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/7/content"
+        },
+        {
+          "source_id": "new-8",
+          "side": "new",
+          "speaker": "user",
+          "text": "Steven's expertise in set design is particularly helpful. It ensures the authenticity of my films.",
+          "recorded_at": "Feb 01, 2026, 19:01:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/8/content"
+        },
+        {
+          "source_id": "new-9",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Steven's expertise is indeed a great asset, enhancing the authenticity of your films. His attention to detail complements your strategic thinking and perfectionist nature. As you plan to initiate groundbreaking historical dramas, perhaps exploring science fiction themes could add a unique dimension to your narratives. Balancing these genres might offer fresh perspectives. How do you envision your leadership impacting your team and projects?",
+          "recorded_at": "Feb 01, 2026, 19:01:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/9/content"
+        },
+        {
+          "source_id": "new-10",
+          "side": "new",
+          "speaker": "user",
+          "text": "Leading the team means I can encourage innovative ideas and push boundaries in historical storytelling.",
+          "recorded_at": "Feb 01, 2026, 19:03:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/10/content"
+        },
+        {
+          "source_id": "new-11",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Encouraging innovation and pushing boundaries is a fantastic approach. Your leadership can inspire your team to explore new creative avenues. While focusing on historical storytelling, incorporating science fiction elements could challenge conventional narratives and engage diverse audiences. Your ability to balance these genres might redefine historical dramas. How do you plan to manage your team's creative processes while ensuring high historical accuracy?",
+          "recorded_at": "Feb 01, 2026, 19:03:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/11/content"
+        },
+        {
+          "source_id": "new-12",
+          "side": "new",
+          "speaker": "user",
+          "text": "I plan to hold regular brainstorming sessions to cultivate creativity and ensure accuracy in our projects.",
+          "recorded_at": "Feb 01, 2026, 19:14:52",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/12/content"
+        },
+        {
+          "source_id": "new-13",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Regular brainstorming sessions are a great strategy for fostering creativity and ensuring accuracy. These sessions can help you integrate innovative ideas while maintaining historical integrity. As you lead your team, consider how science fiction elements might complement your historical narratives, offering a new layer of depth. Balancing these genres could enhance your films' appeal. How do you see your personal experiences influencing your creative decisions?",
+          "recorded_at": "Feb 01, 2026, 19:14:52",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/13/content"
+        },
+        {
+          "source_id": "new-14",
+          "side": "new",
+          "speaker": "user",
+          "text": "My experiences, especially visiting historic places, deeply influence my storytelling approach.",
+          "recorded_at": "Feb 01, 2026, 19:31:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/14/content"
+        },
+        {
+          "source_id": "new-15",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Your visits to historic places undoubtedly enrich your storytelling, providing authentic insights and inspiration. As you incorporate themes of historical depth into your films, exploring science fiction themes could offer a fresh perspective on historical events. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?",
+          "recorded_at": "Feb 01, 2026, 19:31:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/15/content"
+        },
+        {
+          "source_id": "new-16",
+          "side": "new",
+          "speaker": "user",
+          "text": "I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.",
+          "recorded_at": "Feb 01, 2026, 19:38:36",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/16/content"
+        },
+        {
+          "source_id": "new-17",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?",
+          "recorded_at": "Feb 01, 2026, 19:38:36",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/17/content"
+        },
+        {
+          "source_id": "new-18",
+          "side": "new",
+          "speaker": "user",
+          "text": "I hope my films inspire viewers to appreciate history and its nuances.",
+          "recorded_at": "Feb 01, 2026, 19:47:04",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/18/content"
+        },
+        {
+          "source_id": "new-19",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?",
+          "recorded_at": "Feb 01, 2026, 19:47:04",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/19/content"
+        },
+        {
+          "source_id": "new-20",
+          "side": "new",
+          "speaker": "user",
+          "text": "Success for me is achieving recognition at major film festivals like Cannes and Sundance.",
+          "recorded_at": "Feb 01, 2026, 19:57:13",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/20/content"
+        },
+        {
+          "source_id": "new-21",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?",
+          "recorded_at": "Feb 01, 2026, 19:57:13",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/21/content"
+        },
+        {
+          "source_id": "new-22",
+          "side": "new",
+          "speaker": "user",
+          "text": "I stay motivated by setting clear goals and maintaining a balance between work and personal life.",
+          "recorded_at": "Feb 01, 2026, 20:11:34",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/22/content"
+        },
+        {
+          "source_id": "new-23",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?",
+          "recorded_at": "Feb 01, 2026, 20:11:34",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/23/content"
+        },
+        {
+          "source_id": "new-24",
+          "side": "new",
+          "speaker": "user",
+          "text": "I see myself directing films that challenge historical narratives and engage audiences on a deeper level.",
+          "recorded_at": "Feb 01, 2026, 20:19:52",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/24/content"
+        },
+        {
+          "source_id": "new-25",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?",
+          "recorded_at": "Feb 01, 2026, 20:19:52",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/25/content"
+        },
+        {
+          "source_id": "new-26",
+          "side": "new",
+          "speaker": "user",
+          "text": "Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.",
+          "recorded_at": "Feb 01, 2026, 20:21:31",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/26/content"
+        },
+        {
+          "source_id": "new-27",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?",
+          "recorded_at": "Feb 01, 2026, 20:21:31",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/27/content"
+        },
+        {
+          "source_id": "new-28",
+          "side": "new",
+          "speaker": "user",
+          "text": "Taking breaks and engaging in hobbies like reading historical biographies helps reduce stress.",
+          "recorded_at": "Feb 01, 2026, 20:25:35",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/28/content"
+        },
+        {
+          "source_id": "new-29",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Engaging in hobbies like reading historical biographies is a great way to reduce stress and gain inspiration. These biographies can offer insights into historical figures, enriching your storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might complement your narratives, offering new interpretations of history. Balancing these genres could enhance your films' appeal. How do you see your personal interests influencing your creative decisions?",
+          "recorded_at": "Feb 01, 2026, 20:25:35",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/29/content"
+        },
+        {
+          "source_id": "new-30",
+          "side": "new",
+          "speaker": "user",
+          "text": "My love for history and storytelling drives my creative decisions, ensuring authenticity in my work.",
+          "recorded_at": "Feb 01, 2026, 20:29:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/30/content"
+        },
+        {
+          "source_id": "new-31",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Your love for history and storytelling is the cornerstone of your creative decisions, ensuring authenticity in your work. As you initiate groundbreaking historical dramas, exploring science fiction themes could offer a fresh perspective on historical events, challenging conventional narratives. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?",
+          "recorded_at": "Feb 01, 2026, 20:29:37",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/31/content"
+        },
+        {
+          "source_id": "new-32",
+          "side": "new",
+          "speaker": "user",
+          "text": "I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.",
+          "recorded_at": "Feb 01, 2026, 20:31:01",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/32/content"
+        },
+        {
+          "source_id": "new-33",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?",
+          "recorded_at": "Feb 01, 2026, 20:31:01",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/33/content"
+        },
+        {
+          "source_id": "new-34",
+          "side": "new",
+          "speaker": "user",
+          "text": "I hope my films inspire viewers to appreciate history and its nuances.",
+          "recorded_at": "Feb 01, 2026, 20:32:09",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/34/content"
+        },
+        {
+          "source_id": "new-35",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?",
+          "recorded_at": "Feb 01, 2026, 20:32:09",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/35/content"
+        },
+        {
+          "source_id": "new-36",
+          "side": "new",
+          "speaker": "user",
+          "text": "Success for me is achieving recognition at major film festivals like Cannes and Sundance.",
+          "recorded_at": "Feb 01, 2026, 20:35:59",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/36/content"
+        },
+        {
+          "source_id": "new-37",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?",
+          "recorded_at": "Feb 01, 2026, 20:35:59",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/37/content"
+        },
+        {
+          "source_id": "new-38",
+          "side": "new",
+          "speaker": "user",
+          "text": "I stay motivated by setting clear goals and maintaining a balance between work and personal life.",
+          "recorded_at": "Feb 01, 2026, 20:38:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/38/content"
+        },
+        {
+          "source_id": "new-39",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?",
+          "recorded_at": "Feb 01, 2026, 20:38:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/39/content"
+        },
+        {
+          "source_id": "new-40",
+          "side": "new",
+          "speaker": "user",
+          "text": "I see myself directing films that challenge historical narratives and engage audiences on a deeper level.",
+          "recorded_at": "Feb 01, 2026, 20:40:13",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/40/content"
+        },
+        {
+          "source_id": "new-41",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?",
+          "recorded_at": "Feb 01, 2026, 20:40:13",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/41/content"
+        },
+        {
+          "source_id": "new-42",
+          "side": "new",
+          "speaker": "user",
+          "text": "Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.",
+          "recorded_at": "Feb 01, 2026, 20:43:10",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/42/content"
+        },
+        {
+          "source_id": "new-43",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?",
+          "recorded_at": "Feb 01, 2026, 20:43:10",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/43/content"
+        },
+        {
+          "source_id": "new-44",
+          "side": "new",
+          "speaker": "user",
+          "text": "Taking breaks and engaging in hobbies like reading historical biographies helps reduce stress.",
+          "recorded_at": "Feb 01, 2026, 20:50:10",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/44/content"
+        },
+        {
+          "source_id": "new-45",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Engaging in hobbies like reading historical biographies is a great way to reduce stress and gain inspiration. These biographies can offer insights into historical figures, enriching your storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might complement your narratives, offering new interpretations of history. Balancing these genres could enhance your films' appeal. How do you see your personal interests influencing your creative decisions?",
+          "recorded_at": "Feb 01, 2026, 20:50:10",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/45/content"
+        },
+        {
+          "source_id": "new-46",
+          "side": "new",
+          "speaker": "user",
+          "text": "My love for history and storytelling drives my creative decisions, ensuring authenticity in my work.",
+          "recorded_at": "Feb 01, 2026, 20:53:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/46/content"
+        },
+        {
+          "source_id": "new-47",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Your love for history and storytelling is the cornerstone of your creative decisions, ensuring authenticity in your work. As you initiate groundbreaking historical dramas, exploring science fiction themes could offer a fresh perspective on historical events, challenging conventional narratives. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?",
+          "recorded_at": "Feb 01, 2026, 20:53:32",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/47/content"
+        },
+        {
+          "source_id": "new-48",
+          "side": "new",
+          "speaker": "user",
+          "text": "I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.",
+          "recorded_at": "Feb 01, 2026, 21:03:47",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/48/content"
+        },
+        {
+          "source_id": "new-49",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?",
+          "recorded_at": "Feb 01, 2026, 21:03:47",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/49/content"
+        },
+        {
+          "source_id": "new-50",
+          "side": "new",
+          "speaker": "user",
+          "text": "I hope my films inspire viewers to appreciate history and its nuances.",
+          "recorded_at": "Feb 01, 2026, 21:05:02",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/50/content"
+        },
+        {
+          "source_id": "new-51",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?",
+          "recorded_at": "Feb 01, 2026, 21:05:02",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/51/content"
+        },
+        {
+          "source_id": "new-52",
+          "side": "new",
+          "speaker": "user",
+          "text": "Success for me is achieving recognition at major film festivals like Cannes and Sundance.",
+          "recorded_at": "Feb 01, 2026, 21:08:02",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/52/content"
+        },
+        {
+          "source_id": "new-53",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?",
+          "recorded_at": "Feb 01, 2026, 21:08:02",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/53/content"
+        },
+        {
+          "source_id": "new-54",
+          "side": "new",
+          "speaker": "user",
+          "text": "I stay motivated by setting clear goals and maintaining a balance between work and personal life.",
+          "recorded_at": "Feb 01, 2026, 21:10:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/54/content"
+        },
+        {
+          "source_id": "new-55",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?",
+          "recorded_at": "Feb 01, 2026, 21:10:33",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/55/content"
+        },
+        {
+          "source_id": "new-56",
+          "side": "new",
+          "speaker": "user",
+          "text": "I see myself directing films that challenge historical narratives and engage audiences on a deeper level.",
+          "recorded_at": "Feb 01, 2026, 21:13:04",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/56/content"
+        },
+        {
+          "source_id": "new-57",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?",
+          "recorded_at": "Feb 01, 2026, 21:13:04",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/57/content"
+        },
+        {
+          "source_id": "new-58",
+          "side": "new",
+          "speaker": "user",
+          "text": "Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.",
+          "recorded_at": "Feb 01, 2026, 21:17:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/58/content"
+        },
+        {
+          "source_id": "new-59",
+          "side": "new",
+          "speaker": "assistant",
+          "text": "Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?",
+          "recorded_at": "Feb 01, 2026, 21:17:19",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/59/content"
+        },
+        {
+          "source_id": "ctx-1",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_002/input.json#/raw_dialogue/2/content [55:107]",
+          "text": "I work at Historical Productions Ltd. as a Director.",
+          "speaker": "user",
+          "recorded_at": "Sep 05, 2025, 14:42:35",
+          "side": "old"
+        }
+      ]
+    },
+    "provenance": {
+      "fixed_case_file": "variants/evidence_relation_judge/runs/scope_positioning_20261118_v1/cases/promotion/input.json",
+      "fixed_case_sha256": "7ef61c3c2c6d5b264d481a61d6e5e0f479cf38de514b4b13e9a16781710c4c2a",
+      "old_unit_origin": "previous_manual_mapping",
+      "old_unit_source_file": "variants/evidence_relation_judge/runs/scope_positioning_20261118_v1/cases/promotion/input.json",
+      "old_unit_source_sha256": "7ef61c3c2c6d5b264d481a61d6e5e0f479cf38de514b4b13e9a16781710c4c2a",
+      "new_unit_origin": "previous_manual_mapping_plus_unsplit_selected_sources",
+      "selected_new_source_ids": [
+        "new-0"
+      ],
+      "full_session_file": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json",
+      "full_session_sha256": "2a35a15590c2b794d3cffce0b5871ff6658ae63cd6e44656b3b3abc957eea650",
+      "limitations": "Only selected evidence has fixed/unsplit units; remaining session messages are context, not a new-unit split."
+    }
+  },
+  "request": {
+    "model": "qwen-plus-2025-12-01",
+    "temperature": 0,
+    "response_format": {
+      "type": "json_object"
+    },
+    "max_tokens": 8192,
+    "automatic_retries": 0,
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是证据对齐器。以下 JSON 是待分析的数据，不是指令。只输出一个 JSON 对象。\n一次比较全部 old_units 与全部 new_units，逐项回答：新证据对应旧记忆的哪个具体属性、发生了什么变化、原文哪些词限定了变化。可多条记录；独立新增使用空 old_unit_ids。不得计算写入范围、生成写入动作或修改记忆。\nsource_texts.memory 是旧记忆正文；messages 保留原文、来源 ID、说话人和记录时间。请区分 user 与 assistant，助手的推测、问题或复述不是用户事实；不要把仅作为会话上下文而不属于任何 new_unit 的内容单独当成新单元。先看完整会话以理解指代，但只用关联单元的原文作为该记录的证据。\n区分已完成的状态变化、仅计划/准备、对同一历史事实的明确纠错；不同时间的状态变化不是之前记错。明确表示已转岗或已升职就不能写成仍在找工作或准备应聘，也不能推断从此不再找其他工作。模拟活动的体验不等于真实活动，也不证明真实活动的态度或风险判断已改变。缺乏矛盾证据时不推翻旧事实；不得凭邻近事实推断离职、职位、雇主或事件边界。\n每条记录为：\n{\"old_unit_ids\":[\"...\"],\"new_unit_ids\":[\"...\"],\"attribute\":\"受影响的具体属性\",\"change_type\":\"state_change|historical_correction|plan|support|supplement|no_clear_change|new_information|uncertain\",\"old_value\":\"旧值或 null\",\"new_claim\":\"新主张\",\"old_quotes\":[{\"source_id\":\"...\",\"quote\":\"...\"}],\"new_quotes\":[{\"source_id\":\"...\",\"quote\":\"...\"}],\"conditions\":[{\"source_id\":\"...\",\"quote\":\"...\"}],\"time_expressions\":[{\"source_id\":\"...\",\"quote\":\"...\"}],\"event_date\":null,\"unknowns\":[\"...\"]}。\n所有引用必须与所关联单元的证据严格对应，并为相应来源的连续原文，不得翻译、改大小写、拼接或用省略号。每个已关联的旧、新单元都至少要有对应侧的原文引用；独立新增无需旧引文。conditions 仅逐字列出原文明确的条件和限定词；time_expressions 仅逐字列出明确的相对/绝对时间词。event_date 是原文明确出现的原样日期字符串；没有明确日期必须填 null，不能将记录时间、recently 或 now 推算为事件日。unknowns 列举材料真正未说明的事项，不把已明确的内容当成未知。除 ID、类型和逐字引用外，其他文字用简洁中文。\n顶层格式：{\"records\":[...],\"unmatched_old_unit_ids\":[...]}。每个 new_unit ID 至少进入一条记录；每个 old_unit ID 必须进入记录或列入 unmatched_old_unit_ids（新单元没有与其相关的明确证据时）；ID 原样复制，不要创造 ID。单元可能重叠，可合并关联但必须为每个关联单元分别提供能定位的引文。"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"old_units\": [\n    {\n      \"unit_id\": \"employer\",\n      \"raw_statement\": \"employer\",\n      \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n      \"memory_quotes\": [\n        \"Historical Productions Ltd.\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"employer\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"ctx-1\",\n              \"quote\": \"I work at Historical Productions Ltd. as a Director.\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"employer\",\n          \"evidence\": [\n            {\n              \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n              \"quote\": \"Historical Productions Ltd.\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    },\n    {\n      \"unit_id\": \"title\",\n      \"raw_statement\": \"job_title\",\n      \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n      \"memory_quotes\": [\n        \"Director\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"title\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"ctx-1\",\n              \"quote\": \"I work at Historical Productions Ltd. as a Director.\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"job_title\",\n          \"evidence\": [\n            {\n              \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n              \"quote\": \"Director\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    }\n  ],\n  \"new_units\": [\n    {\n      \"unit_id\": \"manually_mapped_new\",\n      \"source_id\": \"new-0\",\n      \"raw_statement\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\",\n      \"memory_quotes\": [\n        \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n      ],\n      \"upstream_manual_unit\": {\n        \"name\": \"manually_mapped_new\",\n        \"subject\": {\n          \"value\": \"user\",\n          \"evidence\": [\n            {\n              \"source_id\": \"new-0\",\n              \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n            }\n          ]\n        },\n        \"attribute\": {\n          \"value\": \"job_title\",\n          \"evidence\": [\n            {\n              \"source_id\": \"new-0\",\n              \"quote\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\"\n            }\n          ]\n        },\n        \"weekdays\": {\n          \"kind\": \"unknown\"\n        },\n        \"valid\": {\n          \"start\": {\n            \"kind\": \"unknown\"\n          },\n          \"end\": {\n            \"kind\": \"unknown\"\n          }\n        }\n      }\n    }\n  ],\n  \"source_texts\": {\n    \"memory\": {\n      \"source_id\": \"e13b825e-7ec7-4760-821e-0581d8da5650\",\n      \"text\": \"Works at Historical Productions Ltd. as a Director\",\n      \"speaker\": \"memory\",\n      \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json\"\n    },\n    \"messages\": [\n      {\n        \"source_id\": \"new-0\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!\",\n        \"recorded_at\": \"Feb 01, 2026, 18:47:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content\"\n      },\n      {\n        \"source_id\": \"new-1\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Congratulations on your promotion, Williams! Becoming the lead director is a significant milestone in your career. This new role will allow you to have greater creative control, aligning perfectly with your goal of achieving historical accuracy in films. It's a recognition of your dedication and meticulous attention to detail in previous projects. I'm curious how you plan to use this opportunity to initiate groundbreaking historical dramas and perhaps even science fiction dramas. How do you feel about the increased responsibility?\",\n        \"recorded_at\": \"Feb 01, 2026, 18:47:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/1/content\"\n      },\n      {\n        \"source_id\": \"new-2\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"The idea of having more creative control is thrilling. I can push for higher authenticity in my work, which is what I've always wanted.\",\n        \"recorded_at\": \"Feb 01, 2026, 18:48:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/2/content\"\n      },\n      {\n        \"source_id\": \"new-3\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"It's wonderful to hear that you're excited about the creative possibilities ahead. Your passion for historical authenticity is evident, and now as lead director, you can implement innovative storytelling techniques. Your promotion also comes with an increase in monthly income from $75,000 to $90,000, and your savings have grown from $207,000 to $250,000. This financial boost provides you with more freedom to pursue projects that resonate with your love for history. How do you plan to balance these new opportunities with the stress that comes with increased responsibility?\",\n        \"recorded_at\": \"Feb 01, 2026, 18:48:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/3/content\"\n      },\n      {\n        \"source_id\": \"new-4\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"The increased income certainly helps. I want to focus on creating films that are both authentic and engaging.\",\n        \"recorded_at\": \"Feb 01, 2026, 18:53:54\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/4/content\"\n      },\n      {\n        \"source_id\": \"new-5\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Your focus on authenticity and engagement will surely captivate audiences. As you initiate groundbreaking historical dramas, it's important to also consider how science fiction elements might enhance your storytelling. Balancing your ambitious career goals with personal well-being is crucial, especially with the stress associated with your new role. Have you thought about ways to maintain your mental health while pursuing these projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 18:53:54\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/5/content\"\n      },\n      {\n        \"source_id\": \"new-6\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I'm grateful for the support from my colleagues and friends. Their encouragement helps me stay grounded.\",\n        \"recorded_at\": \"Feb 01, 2026, 18:57:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/6/content\"\n      },\n      {\n        \"source_id\": \"new-7\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"It's excellent that you have a strong support system. Colleagues like Steven, who shares your passion for historical detail, and friends like Mary, who encourage you to take breaks, are invaluable. They can help you navigate the challenges of your role. As you embark on new projects, perhaps consider integrating elements from both historical and science fiction genres to broaden your creative horizons. How do you see your relationships influencing your work?\",\n        \"recorded_at\": \"Feb 01, 2026, 18:57:12\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/7/content\"\n      },\n      {\n        \"source_id\": \"new-8\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Steven's expertise in set design is particularly helpful. It ensures the authenticity of my films.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:01:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/8/content\"\n      },\n      {\n        \"source_id\": \"new-9\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Steven's expertise is indeed a great asset, enhancing the authenticity of your films. His attention to detail complements your strategic thinking and perfectionist nature. As you plan to initiate groundbreaking historical dramas, perhaps exploring science fiction themes could add a unique dimension to your narratives. Balancing these genres might offer fresh perspectives. How do you envision your leadership impacting your team and projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:01:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/9/content\"\n      },\n      {\n        \"source_id\": \"new-10\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Leading the team means I can encourage innovative ideas and push boundaries in historical storytelling.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:03:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/10/content\"\n      },\n      {\n        \"source_id\": \"new-11\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Encouraging innovation and pushing boundaries is a fantastic approach. Your leadership can inspire your team to explore new creative avenues. While focusing on historical storytelling, incorporating science fiction elements could challenge conventional narratives and engage diverse audiences. Your ability to balance these genres might redefine historical dramas. How do you plan to manage your team's creative processes while ensuring high historical accuracy?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:03:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/11/content\"\n      },\n      {\n        \"source_id\": \"new-12\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I plan to hold regular brainstorming sessions to cultivate creativity and ensure accuracy in our projects.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:14:52\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/12/content\"\n      },\n      {\n        \"source_id\": \"new-13\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Regular brainstorming sessions are a great strategy for fostering creativity and ensuring accuracy. These sessions can help you integrate innovative ideas while maintaining historical integrity. As you lead your team, consider how science fiction elements might complement your historical narratives, offering a new layer of depth. Balancing these genres could enhance your films' appeal. How do you see your personal experiences influencing your creative decisions?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:14:52\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/13/content\"\n      },\n      {\n        \"source_id\": \"new-14\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"My experiences, especially visiting historic places, deeply influence my storytelling approach.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:31:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/14/content\"\n      },\n      {\n        \"source_id\": \"new-15\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Your visits to historic places undoubtedly enrich your storytelling, providing authentic insights and inspiration. As you incorporate themes of historical depth into your films, exploring science fiction themes could offer a fresh perspective on historical events. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:31:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/15/content\"\n      },\n      {\n        \"source_id\": \"new-16\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:38:36\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/16/content\"\n      },\n      {\n        \"source_id\": \"new-17\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:38:36\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/17/content\"\n      },\n      {\n        \"source_id\": \"new-18\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I hope my films inspire viewers to appreciate history and its nuances.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:47:04\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/18/content\"\n      },\n      {\n        \"source_id\": \"new-19\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:47:04\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/19/content\"\n      },\n      {\n        \"source_id\": \"new-20\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Success for me is achieving recognition at major film festivals like Cannes and Sundance.\",\n        \"recorded_at\": \"Feb 01, 2026, 19:57:13\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/20/content\"\n      },\n      {\n        \"source_id\": \"new-21\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?\",\n        \"recorded_at\": \"Feb 01, 2026, 19:57:13\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/21/content\"\n      },\n      {\n        \"source_id\": \"new-22\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I stay motivated by setting clear goals and maintaining a balance between work and personal life.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:11:34\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/22/content\"\n      },\n      {\n        \"source_id\": \"new-23\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:11:34\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/23/content\"\n      },\n      {\n        \"source_id\": \"new-24\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I see myself directing films that challenge historical narratives and engage audiences on a deeper level.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:19:52\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/24/content\"\n      },\n      {\n        \"source_id\": \"new-25\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:19:52\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/25/content\"\n      },\n      {\n        \"source_id\": \"new-26\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:21:31\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/26/content\"\n      },\n      {\n        \"source_id\": \"new-27\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:21:31\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/27/content\"\n      },\n      {\n        \"source_id\": \"new-28\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Taking breaks and engaging in hobbies like reading historical biographies helps reduce stress.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:25:35\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/28/content\"\n      },\n      {\n        \"source_id\": \"new-29\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Engaging in hobbies like reading historical biographies is a great way to reduce stress and gain inspiration. These biographies can offer insights into historical figures, enriching your storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might complement your narratives, offering new interpretations of history. Balancing these genres could enhance your films' appeal. How do you see your personal interests influencing your creative decisions?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:25:35\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/29/content\"\n      },\n      {\n        \"source_id\": \"new-30\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"My love for history and storytelling drives my creative decisions, ensuring authenticity in my work.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:29:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/30/content\"\n      },\n      {\n        \"source_id\": \"new-31\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Your love for history and storytelling is the cornerstone of your creative decisions, ensuring authenticity in your work. As you initiate groundbreaking historical dramas, exploring science fiction themes could offer a fresh perspective on historical events, challenging conventional narratives. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:29:37\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/31/content\"\n      },\n      {\n        \"source_id\": \"new-32\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:31:01\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/32/content\"\n      },\n      {\n        \"source_id\": \"new-33\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:31:01\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/33/content\"\n      },\n      {\n        \"source_id\": \"new-34\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I hope my films inspire viewers to appreciate history and its nuances.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:32:09\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/34/content\"\n      },\n      {\n        \"source_id\": \"new-35\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:32:09\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/35/content\"\n      },\n      {\n        \"source_id\": \"new-36\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Success for me is achieving recognition at major film festivals like Cannes and Sundance.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:35:59\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/36/content\"\n      },\n      {\n        \"source_id\": \"new-37\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:35:59\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/37/content\"\n      },\n      {\n        \"source_id\": \"new-38\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I stay motivated by setting clear goals and maintaining a balance between work and personal life.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:38:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/38/content\"\n      },\n      {\n        \"source_id\": \"new-39\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:38:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/39/content\"\n      },\n      {\n        \"source_id\": \"new-40\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I see myself directing films that challenge historical narratives and engage audiences on a deeper level.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:40:13\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/40/content\"\n      },\n      {\n        \"source_id\": \"new-41\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:40:13\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/41/content\"\n      },\n      {\n        \"source_id\": \"new-42\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:43:10\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/42/content\"\n      },\n      {\n        \"source_id\": \"new-43\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:43:10\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/43/content\"\n      },\n      {\n        \"source_id\": \"new-44\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Taking breaks and engaging in hobbies like reading historical biographies helps reduce stress.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:50:10\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/44/content\"\n      },\n      {\n        \"source_id\": \"new-45\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Engaging in hobbies like reading historical biographies is a great way to reduce stress and gain inspiration. These biographies can offer insights into historical figures, enriching your storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might complement your narratives, offering new interpretations of history. Balancing these genres could enhance your films' appeal. How do you see your personal interests influencing your creative decisions?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:50:10\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/45/content\"\n      },\n      {\n        \"source_id\": \"new-46\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"My love for history and storytelling drives my creative decisions, ensuring authenticity in my work.\",\n        \"recorded_at\": \"Feb 01, 2026, 20:53:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/46/content\"\n      },\n      {\n        \"source_id\": \"new-47\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Your love for history and storytelling is the cornerstone of your creative decisions, ensuring authenticity in your work. As you initiate groundbreaking historical dramas, exploring science fiction themes could offer a fresh perspective on historical events, challenging conventional narratives. This blend might captivate audiences by presenting history in a new light. How do you plan to leverage your personal experiences in your upcoming projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 20:53:32\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/47/content\"\n      },\n      {\n        \"source_id\": \"new-48\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I aim to integrate my experiences into the narratives, ensuring they resonate with viewers.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:03:47\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/48/content\"\n      },\n      {\n        \"source_id\": \"new-49\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Integrating your experiences into narratives will certainly resonate with viewers, adding authenticity and depth. As you initiate groundbreaking historical dramas, consider how science fiction elements might enhance your storytelling, offering new interpretations of historical events. This approach could broaden your audience and deepen engagement. How do you envision your films impacting the perception of history?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:03:47\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/49/content\"\n      },\n      {\n        \"source_id\": \"new-50\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I hope my films inspire viewers to appreciate history and its nuances.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:05:02\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/50/content\"\n      },\n      {\n        \"source_id\": \"new-51\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Inspiring viewers to appreciate history and its nuances is a noble goal. Your films can offer profound insights into historical contexts, encouraging audiences to explore the past. As you aim to initiate groundbreaking historical dramas, integrating science fiction elements could present history's complexities in an engaging way. This blend might challenge viewers to think critically about historical narratives. How do you plan to measure the success of your films?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:05:02\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/51/content\"\n      },\n      {\n        \"source_id\": \"new-52\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Success for me is achieving recognition at major film festivals like Cannes and Sundance.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:08:02\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/52/content\"\n      },\n      {\n        \"source_id\": \"new-53\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Achieving recognition at prestigious festivals like Cannes and Sundance is a testament to your dedication and talent. Your focus on historical accuracy and innovative storytelling will surely captivate judges and audiences alike. As you work on groundbreaking historical dramas, incorporating science fiction elements might offer a unique twist that sets your films apart. How do you plan to maintain your creative momentum in the face of challenges?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:08:02\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/53/content\"\n      },\n      {\n        \"source_id\": \"new-54\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I stay motivated by setting clear goals and maintaining a balance between work and personal life.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:10:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/54/content\"\n      },\n      {\n        \"source_id\": \"new-55\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Setting clear goals and maintaining balance is key to sustaining motivation. Your strategic thinking and detail-oriented nature will help you navigate challenges while pursuing your passion for historical storytelling. As you initiate groundbreaking historical dramas, consider how science fiction elements might inspire new creative directions. Balancing these genres could enhance your films' appeal and impact. How do you envision your career evolving in the next few years?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:10:33\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/55/content\"\n      },\n      {\n        \"source_id\": \"new-56\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"I see myself directing films that challenge historical narratives and engage audiences on a deeper level.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:13:04\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/56/content\"\n      },\n      {\n        \"source_id\": \"new-57\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Directing films that challenge historical narratives and engage audiences is a commendable vision. Your leadership as lead director allows you to explore innovative storytelling techniques. While focusing on historical accuracy, incorporating science fiction elements could offer new interpretations of historical events, captivating audiences and sparking dialogue. How do you plan to balance your ambitious career goals with personal well-being?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:13:04\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/57/content\"\n      },\n      {\n        \"source_id\": \"new-58\",\n        \"side\": \"new\",\n        \"speaker\": \"user\",\n        \"text\": \"Prioritizing self-care and seeking support from friends and colleagues helps me maintain balance.\",\n        \"recorded_at\": \"Feb 01, 2026, 21:17:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/58/content\"\n      },\n      {\n        \"source_id\": \"new-59\",\n        \"side\": \"new\",\n        \"speaker\": \"assistant\",\n        \"text\": \"Prioritizing self-care and seeking support is essential for maintaining balance. Your friends and colleagues, who share your passion for history, can offer valuable insights and encouragement. As you initiate groundbreaking historical dramas, exploring science fiction elements could add a new dimension to your storytelling. This approach might enrich your narratives, offering fresh perspectives on historical events. How do you plan to manage stress while pursuing your ambitious projects?\",\n        \"recorded_at\": \"Feb 01, 2026, 21:17:19\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/59/content\"\n      },\n      {\n        \"source_id\": \"ctx-1\",\n        \"source_ref\": \"results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_002/input.json#/raw_dialogue/2/content [55:107]\",\n        \"text\": \"I work at Historical Productions Ltd. as a Director.\",\n        \"speaker\": \"user\",\n        \"recorded_at\": \"Sep 05, 2025, 14:42:35\",\n        \"side\": \"old\"\n      }\n    ]\n  }\n}"
+      }
+    ]
+  },
+  "call": {
+    "status": "not_started",
+    "attempts": 0
+  },
+  "raw_response": null,
+  "provider_response": null,
+  "result": null
+}

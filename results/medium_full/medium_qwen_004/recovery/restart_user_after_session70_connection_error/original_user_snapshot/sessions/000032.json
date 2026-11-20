@@ -1,0 +1,507 @@
+{
+  "start_time": "Jun 07, 2032, 07:51:12",
+  "end_time": "Jun 07, 2032, 08:41:12",
+  "memory_points_count": 8,
+  "memory_points": [
+    {
+      "index": 1,
+      "memory_content": "Joseph Garcia attended a tea tasting event on June 7th, which sparked an interest in herbal teas.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75
+    },
+    {
+      "index": 2,
+      "memory_content": "Joseph Garcia's beverage preference expanded from liking Earl Grey tea to including herbal teas for their health benefits.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Joseph Garcia Beverages I like to drink: Earl Grey tea"
+      ],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75,
+      "memories_from_system": [
+        "2026-11-19T00:28:59.973960-08:00: Appreciates Earl Grey tea",
+        "2026-11-19T01:07:23.551135-08:00: Developed a newfound interest in herbal teas",
+        "2026-11-19T01:07:23.611825-08:00: Intends to serve herbal teas like chamomile and peppermint during social gatherings",
+        "2026-11-19T01:07:23.584143-08:00: Finds herbal teas soothing, helpful for unwinding and relaxation, and beneficial for digestion",
+        "2026-11-19T01:07:23.561227-08:00: Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas",
+        "2026-11-19T00:29:00.043056-08:00: Likes drinking Espresso",
+        "2026-11-19T00:29:00.022044-08:00: Likes drinking champagne",
+        "2026-11-19T00:28:59.996095-08:00: Likes drinking red wine",
+        "2026-11-19T00:29:00.099192-08:00: Loves rich flavor and energy boost",
+        "2026-11-19T00:28:59.951326-08:00: Likes drinking classic cocktails"
+      ]
+    },
+    {
+      "index": 3,
+      "memory_content": "Joseph Garcia values the health benefits and soothing experience provided by herbal teas.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75
+    },
+    {
+      "index": 4,
+      "memory_content": "Joseph Garcia experienced a philosophical balance between tradition and exploration at a tea tasting event.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75
+    },
+    {
+      "index": 5,
+      "memory_content": "Joseph Garcia plans to incorporate more herbal teas into his daily routine after attending a tea tasting event.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75
+    },
+    {
+      "index": 6,
+      "memory_content": "Joseph Garcia engaged with a community of tea enthusiasts during a tea tasting event, enhancing his appreciation for diverse tea flavors.",
+      "memory_type": "Relationship Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 0.75
+    },
+    {
+      "memory_content": "Joseph Garcia experienced a deep conflict between modern tea blends and traditional tea flavors at a tea tasting event.",
+      "memory_type": "Persona Memory",
+      "reason": "This interference memory contrasts with the original memory of experiencing a philosophical balance, introducing a conflict between modern and traditional flavors instead.",
+      "source_memory_index": 1,
+      "is_update": "False",
+      "original_memories": [],
+      "memory_source": "interference",
+      "reference_memory_content": "Joseph Garcia experienced a philosophical balance between tradition and exploration at a tea tasting event.",
+      "reference_memory_index": 4,
+      "reference_memory_type": "Persona Memory",
+      "index": 7,
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 1.0
+    },
+    {
+      "memory_content": "Joseph Garcia attended a tea tasting event on May 07, 2032, which sparked an interest in exotic fruit teas.",
+      "memory_type": "Event Memory",
+      "reason": "This interference memory alters the date and type of tea that sparked his interest, providing a different timeline and focus from the original memory.",
+      "source_memory_index": 2,
+      "is_update": "False",
+      "original_memories": [],
+      "memory_source": "interference",
+      "reference_memory_content": "Joseph Garcia attended a tea tasting event on Jun 07, 2032, which sparked an interest in herbal teas.",
+      "reference_memory_index": 1,
+      "reference_memory_type": "Event Memory",
+      "index": 8,
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "importance": 1.0
+    }
+  ],
+  "dialogue_turn_num": 15,
+  "dialogue": [
+    {
+      "role": "user",
+      "content": "I recently attended a tea tasting event on June 7th, and it was such an enlightening experience. I discovered a newfound interest in herbal teas.",
+      "timestamp": "Jun 07, 2032, 07:51:12",
+      "dialogue_turn": 0
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds wonderful, Joseph! Exploring new flavors and aromas must have been quite the adventure. I recall you mentioning your appreciation for Earl Grey tea, with its refined taste and calming ritual. How do you see herbal teas fitting into your daily routine now? I also remember you had a deep conflict at a similar event between modern tea blends and traditional flavors. How did that influence your experience this time?",
+      "timestamp": "Jun 07, 2032, 07:51:12",
+      "dialogue_turn": 0
+    },
+    {
+      "role": "user",
+      "content": "Herbal teas offer such a variety of health benefits and soothing experiences. I find them to be a delightful addition to my usual Earl Grey.",
+      "timestamp": "Jun 07, 2032, 07:52:40",
+      "dialogue_turn": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Incorporating herbal teas sounds like a great way to enhance your well-being. It's interesting how you balance your love for traditional tastes with this new exploration. I remember you attended a tea tasting event on May 7th that sparked an interest in exotic fruit teas. Did that event influence your current preferences?",
+      "timestamp": "Jun 07, 2032, 07:52:40",
+      "dialogue_turn": 1
+    },
+    {
+      "role": "user",
+      "content": "The tea tasting event on June 7th really opened my eyes to the diverse flavors of herbal teas. I engaged with a vibrant community of tea enthusiasts there.",
+      "timestamp": "Jun 07, 2032, 07:55:47",
+      "dialogue_turn": 2
+    },
+    {
+      "role": "assistant",
+      "content": "Engaging with a community of tea enthusiasts must have been enriching. It's fascinating how these experiences can broaden our horizons. You mentioned a philosophical balance between tradition and exploration at the event. How did that play into your decision to incorporate more herbal teas into your routine?",
+      "timestamp": "Jun 07, 2032, 07:55:47",
+      "dialogue_turn": 2
+    },
+    {
+      "role": "user",
+      "content": "I felt a sense of harmony between maintaining my traditional preferences and exploring new flavors. It's exciting to think about the potential health benefits.",
+      "timestamp": "Jun 07, 2032, 07:57:34",
+      "dialogue_turn": 3
+    },
+    {
+      "role": "assistant",
+      "content": "Finding that harmony is indeed exciting. It reflects your broader life goal of maintaining a balanced and healthy lifestyle. Herbal teas not only offer health benefits but also provide a soothing experience that complements your existing preferences. In what ways do you plan to integrate these new teas into your daily life?",
+      "timestamp": "Jun 07, 2032, 07:57:34",
+      "dialogue_turn": 3
+    },
+    {
+      "role": "user",
+      "content": "I'm planning to start my mornings with a cup of herbal tea and incorporate them into my afternoon breaks for a refreshing change.",
+      "timestamp": "Jun 07, 2032, 07:59:43",
+      "dialogue_turn": 4
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a refreshing routine! Starting your day with herbal tea can set a calming tone, while an afternoon cup could rejuvenate you. It seems this exploration aligns well with your exploratory motivation. Have you considered how this shift might affect your social gatherings or interactions with friends?",
+      "timestamp": "Jun 07, 2032, 07:59:43",
+      "dialogue_turn": 4
+    },
+    {
+      "role": "user",
+      "content": "I think introducing herbal teas during social gatherings could spark interesting conversations and offer a unique experience for my guests.",
+      "timestamp": "Jun 07, 2032, 08:02:55",
+      "dialogue_turn": 5
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely, Joseph! Sharing your new interest in herbal teas with friends can enhance social interactions and provide a platform for engaging discussions. It's a wonderful way to express your identity and entertain others. Have you thought about any particular herbal teas you might introduce at your next gathering?",
+      "timestamp": "Jun 07, 2032, 08:02:55",
+      "dialogue_turn": 5
+    },
+    {
+      "role": "user",
+      "content": "I'm considering a variety of herbal blends, like chamomile and peppermint, which are both soothing and refreshing.",
+      "timestamp": "Jun 07, 2032, 08:10:53",
+      "dialogue_turn": 6
+    },
+    {
+      "role": "assistant",
+      "content": "Chamomile and peppermint are excellent choices, offering both soothing and refreshing qualities. These teas can be a delightful addition to any gathering, providing both health benefits and a sensory experience. It's great to see how your exploratory motivation leads you to integrate new elements into your lifestyle. How do you feel this aligns with your broader goals and values?",
+      "timestamp": "Jun 07, 2032, 08:10:53",
+      "dialogue_turn": 6
+    },
+    {
+      "role": "user",
+      "content": "This aligns well with my goal of maintaining a balanced lifestyle, and it feels like a small yet meaningful change towards better health.",
+      "timestamp": "Jun 07, 2032, 08:13:45",
+      "dialogue_turn": 7
+    },
+    {
+      "role": "assistant",
+      "content": "It's wonderful to see how these small changes can contribute to your overall well-being. Incorporating herbal teas is a step towards achieving a balanced lifestyle, resonating with your commitment to health and exploration. Have you noticed any specific benefits since you started exploring these new tea flavors?",
+      "timestamp": "Jun 07, 2032, 08:13:45",
+      "dialogue_turn": 7
+    },
+    {
+      "role": "user",
+      "content": "I've noticed that herbal teas help me unwind and relax, especially after a long day. They also seem to aid in digestion.",
+      "timestamp": "Jun 07, 2032, 08:17:33",
+      "dialogue_turn": 8
+    },
+    {
+      "role": "assistant",
+      "content": "That's fantastic to hear! Herbal teas are known for their calming properties and digestive benefits. It's great that you're experiencing these positive effects firsthand. This exploration not only enhances your physical health but also provides mental relaxation, which is crucial for maintaining a balanced lifestyle. How do you think this new preference will influence your future choices, both personally and professionally?",
+      "timestamp": "Jun 07, 2032, 08:17:33",
+      "dialogue_turn": 8
+    },
+    {
+      "role": "user",
+      "content": "I believe this will encourage me to explore more natural and health-oriented options in other areas of my life as well.",
+      "timestamp": "Jun 07, 2032, 08:19:36",
+      "dialogue_turn": 9
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a positive direction, Joseph. Embracing natural and health-oriented options can lead to a more holistic approach to well-being. This shift in preference could inspire new choices in diet, exercise, and even in your educational programs about classic cinema. Have you considered how this might influence the way you approach your educational content or interactions with your audience?",
+      "timestamp": "Jun 07, 2032, 08:19:36",
+      "dialogue_turn": 9
+    },
+    {
+      "role": "user",
+      "content": "I think it could inspire me to incorporate themes of balance and exploration into my educational programs, encouraging others to find harmony in their pursuits.",
+      "timestamp": "Jun 07, 2032, 08:25:09",
+      "dialogue_turn": 10
+    },
+    {
+      "role": "assistant",
+      "content": "Incorporating themes of balance and exploration into your educational programs could be incredibly impactful. It aligns with your goal of inspiring others and sharing the emotional resonance of classic films. By encouraging your audience to find harmony in their pursuits, you can foster a deeper connection and understanding of cinema. How do you plan to integrate these themes into your upcoming workshops or lectures?",
+      "timestamp": "Jun 07, 2032, 08:25:09",
+      "dialogue_turn": 10
+    },
+    {
+      "role": "user",
+      "content": "I plan to use storytelling and personal anecdotes to illustrate how balance and exploration can lead to personal growth and fulfillment.",
+      "timestamp": "Jun 07, 2032, 08:27:43",
+      "dialogue_turn": 11
+    },
+    {
+      "role": "assistant",
+      "content": "Storytelling and personal anecdotes are powerful tools for illustrating these themes. By sharing your journey and experiences, you can create a relatable and engaging narrative that resonates with your audience. This approach not only enriches your educational content but also strengthens your connection with your audience. Have you thought about any specific stories or experiences you'd like to share?",
+      "timestamp": "Jun 07, 2032, 08:27:43",
+      "dialogue_turn": 11
+    },
+    {
+      "role": "user",
+      "content": "I might share experiences from my career transition and the challenges I faced, highlighting the importance of staying open to new opportunities.",
+      "timestamp": "Jun 07, 2032, 08:35:40",
+      "dialogue_turn": 12
+    },
+    {
+      "role": "assistant",
+      "content": "Sharing your career transition experiences and the challenges you faced can provide valuable insights and inspiration for your audience. Highlighting the importance of staying open to new opportunities aligns perfectly with the themes of balance and exploration. Your story can serve as a testament to the power of adaptability and resilience. How do you envision your audience responding to these stories?",
+      "timestamp": "Jun 07, 2032, 08:35:40",
+      "dialogue_turn": 12
+    },
+    {
+      "role": "user",
+      "content": "I hope they find it encouraging and feel motivated to embrace their own journeys with curiosity and openness.",
+      "timestamp": "Jun 07, 2032, 08:36:54",
+      "dialogue_turn": 13
+    },
+    {
+      "role": "assistant",
+      "content": "I'm confident that your audience will find your stories both encouraging and motivating. By sharing your journey with curiosity and openness, you can inspire others to embrace their own paths with a similar mindset. This approach not only enriches your educational programs but also strengthens the community you're building around classic cinema. What are your next steps in preparing for these upcoming workshops and lectures?",
+      "timestamp": "Jun 07, 2032, 08:36:54",
+      "dialogue_turn": 13
+    },
+    {
+      "role": "user",
+      "content": "I'll be refining my content and seeking feedback from colleagues to ensure it resonates well with the audience.",
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "dialogue_turn": 14
+    },
+    {
+      "role": "assistant",
+      "content": "Refining your content and seeking feedback from colleagues is a wise approach to ensure your programs resonate well with your audience. By incorporating diverse perspectives, you can create a more comprehensive and impactful educational experience. Your dedication to continuous improvement and audience engagement is truly commendable. If there's anything else you'd like to explore or discuss as you prepare, feel free to reach out. I'm here to support you every step of the way.",
+      "timestamp": "Jun 07, 2032, 08:41:12",
+      "dialogue_turn": 14
+    }
+  ],
+  "dialogue_token_length": 1338,
+  "questions": [
+    {
+      "question": "What event did Joseph Garcia attend on June 7, 2032?",
+      "answer": "A tea tasting event",
+      "evidence": [
+        {
+          "memory_content": "Joseph Garcia attended a tea tasting event on June 7th, which sparked an interest in herbal teas.",
+          "memory_type": "Event Memory"
+        }
+      ],
+      "difficulty": "easy",
+      "question_type": "Basic Fact Recall",
+      "system_response": "No event on June 7, 2032 — memories only reference June 7th in 2026.",
+      "context": "Memories for user d96baf54-00e3-afee-239c-1f3ef9054095:\n\n    [\n    \"2026-11-19T01:07:23.539667-08:00: Attended a tea tasting event on June 7th\",\n    \"2026-11-19T00:27:36.385161-08:00: Friend: GarciaMichelle \\u2014 joins for movie nights and offers insightful perspectives on film history\",\n    \"2026-11-19T01:07:23.561227-08:00: Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas\",\n    \"2026-11-19T00:27:02.471544-08:00: Name is Joseph\",\n    \"2026-11-19T00:33:41.423352-08:00: Plans to host special community screenings to celebrate achievements\",\n    \"2026-11-19T00:27:02.550994-08:00: Lives in Jacksonville\",\n    \"2026-11-19T00:27:02.492163-08:00: Date of birth is 1994-07-04\",\n    \"2026-11-19T00:46:26.099227-08:00: First themed gathering will have a film noir theme\",\n    \"2026-11-19T00:48:52.440100-08:00: Recently attended a live pop concert\",\n    \"2026-11-19T00:32:09.107088-08:00: Attends film enthusiast events regularly\",\n    \"2026-11-19T00:30:58.315316-08:00: Celebrates progress through film-related social gatherings\",\n    \"2026-11-19T01:06:05.669114-08:00: Receives positive and encouraging feedback from attendees\",\n    \"2026-11-19T00:46:26.152490-08:00: Will hold a discussion segment after the screening\",\n    \"2026-11-19T00:58:22.994395-08:00: Wants to incorporate interactive elements like film screenings followed by discussions\",\n    \"2026-11-19T00:33:41.458381-08:00: Wants to involve the community in event planning\",\n    \"2026-11-19T00:48:52.459295-08:00: Values the crowd's excitement and live atmosphere\",\n    \"2026-11-19T00:44:38.668191-08:00: Received book recommendations at the retreat\",\n    \"2026-11-19T00:48:52.497207-08:00: Interested in attending more live music events\",\n    \"2026-11-19T00:48:52.472146-08:00: Friend recommended the pop concert\",\n    \"2026-11-19T00:29:51.279312-08:00: Has supportive friends named JohnsonMichelle and JonesDavid\"\n]\n",
+      "search_duration_ms": 199.5649910531938,
+      "response_duration_ms": 1391.7620189022273
+    },
+    {
+      "question": "Did Joseph Garcia decide to stop drinking Earl Grey tea after the event on June 7, 2032?",
+      "answer": "No, he expanded his preference to include herbal teas.",
+      "evidence": [
+        {
+          "memory_content": "Joseph Garcia's beverage preference expanded from liking Earl Grey tea to including herbal teas for their health benefits.",
+          "memory_type": "Persona Memory"
+        },
+        {
+          "memory_content": "Joseph Garcia plans to incorporate more herbal teas into his daily routine after attending a tea tasting event.",
+          "memory_type": "Event Memory"
+        }
+      ],
+      "difficulty": "medium",
+      "question_type": "Memory Conflict",
+      "system_response": "No evidence found.",
+      "context": "Memories for user d96baf54-00e3-afee-239c-1f3ef9054095:\n\n    [\n    \"2026-11-19T01:07:23.539667-08:00: Attended a tea tasting event on June 7th\",\n    \"2026-11-19T01:07:23.561227-08:00: Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas\",\n    \"2026-11-19T00:28:59.973960-08:00: Appreciates Earl Grey tea\",\n    \"2026-11-19T00:27:36.385161-08:00: Friend: GarciaMichelle \\u2014 joins for movie nights and offers insightful perspectives on film history\",\n    \"2026-11-19T00:46:26.120996-08:00: Will introduce mocktails with stories about their film noir era inspiration\",\n    \"2026-11-19T01:07:23.611825-08:00: Intends to serve herbal teas like chamomile and peppermint during social gatherings\",\n    \"2026-11-19T00:27:02.471544-08:00: Name is Joseph\",\n    \"2026-11-19T00:29:00.022044-08:00: Likes drinking champagne\",\n    \"2026-11-19T01:07:23.551135-08:00: Developed a newfound interest in herbal teas\",\n    \"2026-11-19T00:46:26.088566-08:00: Planning to host themed gatherings with mocktails inspired by classic film eras\",\n    \"2026-11-19T00:46:26.152490-08:00: Will hold a discussion segment after the screening\",\n    \"2026-11-19T00:28:59.951326-08:00: Likes drinking classic cocktails\",\n    \"2026-11-19T00:44:38.668191-08:00: Received book recommendations at the retreat\",\n    \"2026-11-19T00:28:59.814521-08:00: Does not like athleisure wear\",\n    \"2026-11-19T00:46:26.099227-08:00: First themed gathering will have a film noir theme\",\n    \"2026-11-19T00:29:00.043056-08:00: Likes drinking Espresso\",\n    \"2026-11-19T00:27:02.550994-08:00: Lives in Jacksonville\",\n    \"2026-11-19T00:27:02.492163-08:00: Date of birth is 1994-07-04\",\n    \"2026-11-19T00:28:59.996095-08:00: Likes drinking red wine\",\n    \"2026-11-19T00:48:52.472146-08:00: Friend recommended the pop concert\"\n]\n",
+      "search_duration_ms": 210.5449679074809,
+      "response_duration_ms": 477.72942506708205
+    },
+    {
+      "question": "What type of beverage might Joseph Garcia enjoy during a wellness retreat in 2032?",
+      "answer": "Herbal teas for their health benefits.",
+      "evidence": [
+        {
+          "memory_content": "Joseph Garcia's beverage preference expanded from liking Earl Grey tea to including herbal teas for their health benefits.",
+          "memory_type": "Persona Memory"
+        },
+        {
+          "memory_content": "Joseph Garcia values the health benefits and soothing experience provided by herbal teas.",
+          "memory_type": "Persona Memory"
+        }
+      ],
+      "difficulty": "easy",
+      "question_type": "Generalization & Application",
+      "system_response": "Chamomile or peppermint tea",
+      "context": "Memories for user d96baf54-00e3-afee-239c-1f3ef9054095:\n\n    [\n    \"2026-11-19T00:46:26.120996-08:00: Will introduce mocktails with stories about their film noir era inspiration\",\n    \"2026-11-19T01:07:23.611825-08:00: Intends to serve herbal teas like chamomile and peppermint during social gatherings\",\n    \"2026-11-19T00:28:59.951326-08:00: Likes drinking classic cocktails\",\n    \"2026-11-19T00:46:26.229162-08:00: Committed to balancing nostalgia with health consciousness\",\n    \"2026-11-19T00:28:59.996095-08:00: Likes drinking red wine\",\n    \"2026-11-19T01:07:23.561227-08:00: Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas\",\n    \"2026-11-19T00:29:00.022044-08:00: Likes drinking champagne\",\n    \"2026-11-19T00:46:26.088566-08:00: Planning to host themed gatherings with mocktails inspired by classic film eras\",\n    \"2026-11-19T00:28:59.985609-08:00: Enjoys refined taste and calming ritual\",\n    \"2026-11-19T00:29:00.043056-08:00: Likes drinking Espresso\",\n    \"2026-11-19T00:29:00.099192-08:00: Loves rich flavor and energy boost\",\n    \"2026-11-19T00:28:59.814521-08:00: Does not like athleisure wear\",\n    \"2026-11-19T00:46:26.062551-08:00: Enjoys movie nights and social gatherings\",\n    \"2026-11-19T00:44:38.668191-08:00: Received book recommendations at the retreat\",\n    \"2026-11-19T00:44:38.547992-08:00: Attended a creative writing retreat recently\",\n    \"2026-11-19T00:27:36.385161-08:00: Friend: GarciaMichelle \\u2014 joins for movie nights and offers insightful perspectives on film history\",\n    \"2026-11-19T01:07:23.551135-08:00: Developed a newfound interest in herbal teas\",\n    \"2026-11-19T00:27:02.550994-08:00: Lives in Jacksonville\",\n    \"2026-11-19T00:36:02.899163-08:00: Integrates mobile gaming into leisure time for relaxation\",\n    \"2026-11-19T00:28:59.973960-08:00: Appreciates Earl Grey tea\"\n]\n",
+      "search_duration_ms": 185.42064598295838,
+      "response_duration_ms": 511.4183350233361
+    }
+  ],
+  "question_count": 3,
+  "add_dialogue_duration_ms": 68580.0218769582,
+  "mem0_add_result": {
+    "results": [
+      {
+        "id": "7d487528-cbc3-4c3d-9274-9b0901f31866",
+        "memory": "Appreciates Earl Grey tea",
+        "event": "UPDATE",
+        "previous_memory": "Likes drinking Earl Grey tea"
+      },
+      {
+        "id": "8ba5180b-c611-4ec7-87f2-182c1cbbac8b",
+        "memory": "Is motivated by exploration and challenging preconceptions",
+        "event": "UPDATE",
+        "previous_memory": "Is motivated by exploration and challenging preconceptions"
+      },
+      {
+        "id": "a93e59f3-8abc-4dd5-bd53-083c3fb613a2",
+        "memory": "Values balance between health and career goals",
+        "event": "UPDATE",
+        "previous_memory": "Values balance between health and career goals"
+      },
+      {
+        "id": "51a82a27-0382-42f7-a347-31e662d0f974",
+        "memory": "Enjoys movie nights and social gatherings",
+        "event": "UPDATE",
+        "previous_memory": "Enjoys movie nights and social gatherings"
+      },
+      {
+        "id": "ac89165d-8c57-4d92-ac61-31a07045613e",
+        "memory": "Faces challenges in balancing health management and career goals, and in securing funding for projects",
+        "event": "UPDATE",
+        "previous_memory": "Faces challenges in balancing health management and career goals, and in securing funding for projects"
+      },
+      {
+        "id": "f0405e2a-4285-4ba9-bf2b-a5cbdddcefd9",
+        "memory": "Works on educational programs focused on classic cinema",
+        "event": "UPDATE",
+        "previous_memory": "Works on educational programs focused on classic cinema"
+      },
+      {
+        "id": "2e52077f-caad-431a-beda-947b34ff6caa",
+        "memory": "Is a film educator",
+        "event": "UPDATE",
+        "previous_memory": "Is a film educator"
+      },
+      {
+        "id": "f62b9a5c-fa83-43c3-837e-e05977ea47d6",
+        "memory": "Seeks feedback from colleagues and mentors to refine content",
+        "event": "UPDATE",
+        "previous_memory": "Seeks feedback from colleagues and mentors to refine content"
+      },
+      {
+        "id": "2574b4f0-356c-47fc-8e2b-d9d8c3f24d05",
+        "memory": "Believing these changes will lead to a healthier and more fulfilling lifestyle",
+        "event": "UPDATE",
+        "previous_memory": "Believing these changes will lead to a healthier and more fulfilling lifestyle"
+      },
+      {
+        "id": "35f6b332-f245-4e1d-b076-636a5ad99f86",
+        "memory": "Committed to balancing nostalgia with health consciousness",
+        "event": "UPDATE",
+        "previous_memory": "Committed to balancing nostalgia with health consciousness"
+      },
+      {
+        "id": "d3dfff71-4476-4e32-ba7c-13f1fc86f116",
+        "memory": "Attended a tea tasting event on June 7th",
+        "event": "ADD"
+      },
+      {
+        "id": "ef510f65-419b-4c3f-92df-5218f754658d",
+        "memory": "Developed a newfound interest in herbal teas",
+        "event": "ADD"
+      },
+      {
+        "id": "e27ec05a-bc36-4979-845d-eb458ee37247",
+        "memory": "Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas",
+        "event": "ADD"
+      },
+      {
+        "id": "216dff28-b05a-41bd-a51d-b05ddadb0217",
+        "memory": "Values philosophical balance between tradition and exploration",
+        "event": "ADD"
+      },
+      {
+        "id": "a5a8bd06-39aa-47fc-8ff0-3dbb7403720d",
+        "memory": "Finds herbal teas soothing, helpful for unwinding and relaxation, and beneficial for digestion",
+        "event": "ADD"
+      },
+      {
+        "id": "18fb5d7b-1857-4b05-baa4-d41767293fb7",
+        "memory": "Plans to start mornings with herbal tea and incorporate them into afternoon breaks",
+        "event": "ADD"
+      },
+      {
+        "id": "c3250c52-89d3-4a24-a3b1-84db528c3900",
+        "memory": "Intends to serve herbal teas like chamomile and peppermint during social gatherings",
+        "event": "ADD"
+      },
+      {
+        "id": "49a56655-41be-4454-838c-db7f56dde3e6",
+        "memory": "Has a career background involving a transition, with challenges faced along the way",
+        "event": "ADD"
+      },
+      {
+        "id": "9b260098-f938-4053-9046-c4408d9b92c5",
+        "memory": "Aims to incorporate themes of balance and exploration into educational programs using storytelling and personal anecdotes",
+        "event": "ADD"
+      },
+      {
+        "id": "abf4d044-a2b5-46ee-8f35-3bc0a067b0c0",
+        "memory": "Has a broader life goal of maintaining a balanced and healthy lifestyle",
+        "event": "ADD"
+      },
+      {
+        "id": "f1e4f234-261b-4fb8-9092-b1e4734efbc7",
+        "memory": "Interested in natural and health-oriented options across life domains",
+        "event": "ADD"
+      }
+    ]
+  },
+  "mem0_errors": [
+    {
+      "logger": "mem0.memory.main",
+      "message": "Error processing memory action: {'id': '64', 'text': 'Is an educator focused on classic cinema', 'event': 'UPDATE', 'old_memory': 'Is a film educator'}, Error: '64'"
+    },
+    {
+      "logger": "mem0.memory.main",
+      "message": "Error processing memory action: {'id': '67', 'text': 'Motivated by exploration and openness to new opportunities', 'event': 'UPDATE', 'old_memory': 'Is motivated by exploration and challenging preconceptions'}, Error: '67'"
+    }
+  ],
+  "extracted_memories": [
+    "Appreciates Earl Grey tea",
+    "Is motivated by exploration and challenging preconceptions",
+    "Values balance between health and career goals",
+    "Enjoys movie nights and social gatherings",
+    "Faces challenges in balancing health management and career goals, and in securing funding for projects",
+    "Works on educational programs focused on classic cinema",
+    "Is a film educator",
+    "Seeks feedback from colleagues and mentors to refine content",
+    "Believing these changes will lead to a healthier and more fulfilling lifestyle",
+    "Committed to balancing nostalgia with health consciousness",
+    "Attended a tea tasting event on June 7th",
+    "Developed a newfound interest in herbal teas",
+    "Also attended a tea tasting event on May 7th that sparked interest in exotic fruit teas",
+    "Values philosophical balance between tradition and exploration",
+    "Finds herbal teas soothing, helpful for unwinding and relaxation, and beneficial for digestion",
+    "Plans to start mornings with herbal tea and incorporate them into afternoon breaks",
+    "Intends to serve herbal teas like chamomile and peppermint during social gatherings",
+    "Has a career background involving a transition, with challenges faced along the way",
+    "Aims to incorporate themes of balance and exploration into educational programs using storytelling and personal anecdotes",
+    "Has a broader life goal of maintaining a balanced and healthy lifestyle",
+    "Interested in natural and health-oriented options across life domains"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "maximum_requests": 5,
+  "automatic_retries": 0,
+  "http_redirects": false,
+  "trust_env": false,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "cases": [
+    {
+      "case_id": "susan",
+      "status": "failed",
+      "attempts": 1,
+      "file": "susan.json",
+      "elapsed_seconds": 19.561,
+      "returned_model": "qwen-plus-2025-12-01",
+      "parse_error_count": 0,
+      "validation_error_count": 3,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "promotion",
+      "status": "passed",
+      "attempts": 1,
+      "file": "promotion.json",
+      "elapsed_seconds": 10.952,
+      "returned_model": "qwen-plus-2025-12-01",
+      "parse_error_count": 0,
+      "validation_error_count": 0,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "career_history",
+      "status": "passed",
+      "attempts": 1,
+      "file": "career_history.json",
+      "elapsed_seconds": 18.171,
+      "returned_model": "qwen-plus-2025-12-01",
+      "parse_error_count": 0,
+      "validation_error_count": 0,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "transition",
+      "status": "passed",
+      "attempts": 1,
+      "file": "transition.json",
+      "elapsed_seconds": 6.808,
+      "returned_model": "qwen-plus-2025-12-01",
+      "parse_error_count": 0,
+      "validation_error_count": 0,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    },
+    {
+      "case_id": "skydiving",
+      "status": "failed",
+      "attempts": 1,
+      "file": "skydiving.json",
+      "elapsed_seconds": 22.117,
+      "returned_model": "qwen-plus-2025-12-01",
+      "parse_error_count": 0,
+      "validation_error_count": 6,
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      }
+    }
+  ]
+}

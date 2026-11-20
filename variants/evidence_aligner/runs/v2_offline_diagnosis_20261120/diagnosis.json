@@ -1,0 +1,235 @@
+{
+  "source_run": "runs/v2_paired_20261120",
+  "model_calls": 0,
+  "method": "Rerun frozen v2 validator against each original raw_response and original input; compare saved validation_errors. Semantic findings are documented separately in REPORT.md.",
+  "cases": [
+    {
+      "case_id": "susan",
+      "source_artifact_sha256": "32d9f5511f96e54e209919bb3d29f02238c589cfd9dfd1193cf41ead1f091f82",
+      "raw_response_sha256": "ce069910d1f4c4ab373eee7fc2cc2626ace44d55f831341721486ef335ab8bf6",
+      "same_saved_validation_errors": true,
+      "parse_errors": [],
+      "validation_errors": [
+        {
+          "code": "quote_provenance",
+          "path": "records[2].old_quotes[0]",
+          "message": "quote not found in the linked source/units on the correct side"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[2].old_unit_ids",
+          "message": "friendship"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[2].old_unit_ids",
+          "message": "support"
+        }
+      ],
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      },
+      "record_count": 3
+    },
+    {
+      "case_id": "promotion",
+      "source_artifact_sha256": "4434d03b0d055be92647379a085a23bb435fe7d9e274c9644d9398d946a02f19",
+      "raw_response_sha256": "5120b0e6c391998102e233bdf63cbe9fd53cd7ac509ec8ca7abd5e50774d5d0e",
+      "same_saved_validation_errors": true,
+      "parse_errors": [],
+      "validation_errors": [
+        {
+          "code": "schema",
+          "path": "records[1].change_evidence[0]",
+          "message": "source_id and quote required"
+        },
+        {
+          "code": "change_evidence_not_in_new_quote",
+          "path": "records[1].change_evidence[0]",
+          "message": "must be within a cited new quote"
+        }
+      ],
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      },
+      "record_count": 2
+    },
+    {
+      "case_id": "career_history",
+      "source_artifact_sha256": "4b0bd3b46d87046db5ececba6332af36f11b786e234b8ac50d5ea25131ac6e46",
+      "raw_response_sha256": "26fef69f72486749ea6884e38c2a4e737bba30713c99e9e9351df3bf468ae8dd",
+      "same_saved_validation_errors": true,
+      "parse_errors": [],
+      "validation_errors": [
+        {
+          "code": "uncovered_unit",
+          "path": "new_units",
+          "message": "unsplit-new-2"
+        }
+      ],
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [
+          "unsplit-new-2"
+        ],
+        "unmatched_old_unit_ids": []
+      },
+      "record_count": 2
+    },
+    {
+      "case_id": "transition",
+      "source_artifact_sha256": "d677e24716f6561a0fa030c7feb7fa3b75b9d98c9c547d1cc8586e1b23d64f87",
+      "raw_response_sha256": "b792aa5477fed759ebc890533befa95ee47be8b5f04934e46ef8fc82768fbd27",
+      "same_saved_validation_errors": true,
+      "parse_errors": [],
+      "validation_errors": [
+        {
+          "code": "schema",
+          "path": "records[0].change_evidence[0]",
+          "message": "source_id and quote required"
+        },
+        {
+          "code": "change_evidence_not_in_new_quote",
+          "path": "records[0].change_evidence[0]",
+          "message": "must be within a cited new quote"
+        }
+      ],
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      },
+      "record_count": 1
+    },
+    {
+      "case_id": "skydiving",
+      "source_artifact_sha256": "0bd7099e2fc557033ef597ec9b20092c8ceaa21e00d8da2913d1469b2dea32e3",
+      "raw_response_sha256": "a179f8588bfaf87f12236b428a79b6ed6ad63a27c9f52ff69b3cf60c6f8f967b",
+      "same_saved_validation_errors": true,
+      "parse_errors": [],
+      "validation_errors": [
+        {
+          "code": "unit_without_quote",
+          "path": "records[1].new_unit_ids",
+          "message": "manually_mapped_new"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[1].new_unit_ids",
+          "message": "unsplit-new-2"
+        },
+        {
+          "code": "schema",
+          "path": "records[1].change_evidence[0]",
+          "message": "source_id and quote required"
+        },
+        {
+          "code": "change_evidence_not_in_new_quote",
+          "path": "records[1].change_evidence[0]",
+          "message": "must be within a cited new quote"
+        },
+        {
+          "code": "quote_provenance",
+          "path": "records[2].new_claim.qualifiers[0]",
+          "message": "quote not found in the linked source/units on the correct side"
+        },
+        {
+          "code": "schema",
+          "path": "records[2].change_evidence[0]",
+          "message": "source_id and quote required"
+        },
+        {
+          "code": "change_evidence_not_in_new_quote",
+          "path": "records[2].change_evidence[0]",
+          "message": "must be within a cited new quote"
+        },
+        {
+          "code": "unit_without_quote",
+          "path": "records[3].old_unit_ids",
+          "message": "u3"
+        }
+      ],
+      "coverage": {
+        "uncovered_old_unit_ids": [],
+        "uncovered_new_unit_ids": [],
+        "unmatched_old_unit_ids": []
+      },
+      "record_count": 4
+    }
+  ],
+  "error_counts": {
+    "change_evidence_not_in_new_quote": 4,
+    "quote_provenance": 2,
+    "schema": 4,
+    "uncovered_unit": 1,
+    "unit_without_quote": 5
+  },
+  "error_total": 16,
+  "change_evidence_source_candidates": [
+    {
+      "case_id": "promotion",
+      "path": "records[1].change_evidence[0]",
+      "original_string": "got promoted to lead director",
+      "candidate_source_ids": [
+        "new-0"
+      ],
+      "unique": true,
+      "method": "linked new unit quote and existing new_quote, exact containment"
+    },
+    {
+      "case_id": "skydiving",
+      "path": "records[1].change_evidence[0]",
+      "original_string": "I still prioritize safety, of course.",
+      "candidate_source_ids": [
+        "new-8"
+      ],
+      "unique": true,
+      "method": "linked new unit quote and existing new_quote, exact containment"
+    },
+    {
+      "case_id": "skydiving",
+      "path": "records[2].change_evidence[0]",
+      "original_string": "I still prioritize safety, of course.",
+      "candidate_source_ids": [
+        "new-8"
+      ],
+      "unique": true,
+      "method": "linked new unit quote and existing new_quote, exact containment"
+    },
+    {
+      "case_id": "transition",
+      "path": "records[0].change_evidence[0]",
+      "original_string": "I've finally transitioned to a new role",
+      "candidate_source_ids": [
+        "new-0"
+      ],
+      "unique": true,
+      "method": "linked new unit quote and existing new_quote, exact containment"
+    }
+  ],
+  "semantic_audit_summary": {
+    "file": "semantic_audit.json",
+    "finding_counts": {
+      "claim_omission": 4,
+      "compound_assertions": 1,
+      "conflated_temporal_states": 1,
+      "identity_inference": 1,
+      "overbroad_evidence": 1,
+      "qualifier_misbound": 1,
+      "qualifier_misclassification": 1,
+      "qualifier_omission": 5,
+      "unrelated_unit_link": 1,
+      "unsupported_context_inference": 1,
+      "unsupported_old_claim": 1,
+      "unsupported_risk_reason_relation": 1,
+      "unsupported_simulation_assumption": 1
+    },
+    "finding_total": 20,
+    "type_count": 13,
+    "human_judgment_items": 2
+  }
+}

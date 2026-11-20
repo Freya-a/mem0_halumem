@@ -1,0 +1,589 @@
+{
+  "purpose": "Offline revalidation using the current code; no model call and no edits to the original result.",
+  "request_attempts": 0,
+  "frozen_aligner_sha256": "2ff589b50fc8b33c459e3a734b1986a511840e6e561e67463bdc651c55b895f9",
+  "current_aligner_sha256": "81e8a0856ef179e05a6fd5ebce1e0133d8a9bb0cea37ebbb59357bd4f86eb511",
+  "results": [
+    {
+      "case_id": "susan",
+      "original_status": "failed",
+      "revalidated_status": "failed",
+      "same_validation_errors": true,
+      "same_coverage": true,
+      "validation": {
+        "status": "failed",
+        "parsed": {
+          "records": [
+            {
+              "old_unit_ids": [
+                "friendship"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "friendship",
+              "change_type": "support",
+              "old_value": "ThomasSusan (referred to as 'Susan')",
+              "new_claim": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+              "old_quotes": [
+                {
+                  "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+                  "quote": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [
+                "support"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "support_context",
+              "change_type": "supplement",
+              "old_value": "provides support and encouragement",
+              "new_claim": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+              "old_quotes": [
+                {
+                  "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+                  "quote": "provides support and encouragement"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [],
+              "event_date": null,
+              "unknowns": [
+                "Daniel's identity or relationship status (e.g., friend, colleague, mentor) is not specified in user's own words"
+              ]
+            },
+            {
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "unsplit-new-0"
+              ],
+              "attribute": "career_status",
+              "change_type": "plan",
+              "old_value": null,
+              "new_claim": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                "lately"
+              ],
+              "event_date": null,
+              "unknowns": [
+                "Current employer name",
+                "Current job title",
+                "Timeline for job search completion",
+                "Whether any applications or interviews have occurred yet"
+              ]
+            }
+          ],
+          "unmatched_old_unit_ids": []
+        },
+        "parse_errors": [],
+        "validation_errors": [
+          {
+            "code": "quote_provenance",
+            "path": "records[0].old_quotes[0]",
+            "message": "not an exact quote within a linked unit on the correct side"
+          },
+          {
+            "code": "unit_without_quote",
+            "path": "records[0].old_unit_ids",
+            "message": "friendship"
+          },
+          {
+            "code": "schema",
+            "path": "records[2].time_expressions[0]",
+            "message": "source_id and quote required"
+          }
+        ],
+        "coverage": {
+          "uncovered_old_unit_ids": [],
+          "uncovered_new_unit_ids": [],
+          "unmatched_old_unit_ids": []
+        },
+        "semantic_correctness": "not_automatically_verified"
+      }
+    },
+    {
+      "case_id": "promotion",
+      "original_status": "passed",
+      "revalidated_status": "passed",
+      "same_validation_errors": true,
+      "same_coverage": true,
+      "validation": {
+        "status": "passed",
+        "parsed": {
+          "records": [
+            {
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "job_title",
+              "change_type": "state_change",
+              "old_value": "Director",
+              "new_claim": "lead director",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "employer",
+              "change_type": "no_clear_change",
+              "old_value": "Historical Productions Ltd.",
+              "new_claim": "Historical Productions Ltd.",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd."
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            }
+          ],
+          "unmatched_old_unit_ids": []
+        },
+        "parse_errors": [],
+        "validation_errors": [],
+        "coverage": {
+          "uncovered_old_unit_ids": [],
+          "uncovered_new_unit_ids": [],
+          "unmatched_old_unit_ids": []
+        },
+        "semantic_correctness": "not_automatically_verified"
+      }
+    },
+    {
+      "case_id": "career_history",
+      "original_status": "passed",
+      "revalidated_status": "passed",
+      "same_validation_errors": true,
+      "same_coverage": true,
+      "validation": {
+        "status": "passed",
+        "parsed": {
+          "records": [
+            {
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "employer",
+              "change_type": "state_change",
+              "old_value": "Blockchain Tech",
+              "new_claim": "consulting firm",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients"
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "title",
+              "change_type": "state_change",
+              "old_value": "senior developer",
+              "new_claim": "founder/owner of consulting firm",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients"
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "event_date": null,
+              "unknowns": [
+                "exact title or role name in the consulting firm"
+              ]
+            },
+            {
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "client_milestone",
+              "change_type": "new_information",
+              "old_value": null,
+              "new_claim": "consulting firm secured some initial clients",
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "unsplit-new-2"
+              ],
+              "attribute": "network_contact_effectiveness",
+              "change_type": "new_information",
+              "old_value": null,
+              "new_claim": "MooreSandra and GonzalezMary were instrumental; their connections opened doors",
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [],
+              "event_date": null,
+              "unknowns": []
+            }
+          ],
+          "unmatched_old_unit_ids": []
+        },
+        "parse_errors": [],
+        "validation_errors": [],
+        "coverage": {
+          "uncovered_old_unit_ids": [],
+          "uncovered_new_unit_ids": [],
+          "unmatched_old_unit_ids": []
+        },
+        "semantic_correctness": "not_automatically_verified"
+      }
+    },
+    {
+      "case_id": "transition",
+      "original_status": "passed",
+      "revalidated_status": "passed",
+      "same_validation_errors": true,
+      "same_coverage": true,
+      "validation": {
+        "status": "passed",
+        "parsed": {
+          "records": [
+            {
+              "old_unit_ids": [
+                "job_search"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "transition_progress",
+              "change_type": "state_change",
+              "old_value": "looking for a new job",
+              "new_claim": "has transitioned to a new role",
+              "old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "finally"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            }
+          ],
+          "unmatched_old_unit_ids": []
+        },
+        "parse_errors": [],
+        "validation_errors": [],
+        "coverage": {
+          "uncovered_old_unit_ids": [],
+          "uncovered_new_unit_ids": [],
+          "unmatched_old_unit_ids": []
+        },
+        "semantic_correctness": "not_automatically_verified"
+      }
+    },
+    {
+      "case_id": "skydiving",
+      "original_status": "failed",
+      "revalidated_status": "failed",
+      "same_validation_errors": true,
+      "same_coverage": true,
+      "validation": {
+        "status": "failed",
+        "parsed": {
+          "records": [
+            {
+              "old_unit_ids": [
+                "u1"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "attribute": "attitude_toward_extreme_sports",
+              "change_type": "state_change",
+              "old_value": "dislikes",
+              "new_claim": "tried simulated skydiving and found it thrilling",
+              "old_quotes": [
+                {
+                  "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                  "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+                }
+              ],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [
+                "u2"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new",
+                "unsplit-new-2",
+                "unsplit-new-8"
+              ],
+              "attribute": "reason_for_disliking_extreme_sports",
+              "change_type": "state_change",
+              "old_value": "high injury risk",
+              "new_claim": "still prioritizes safety, but now enjoys the thrill and is more open to trying new things",
+              "old_quotes": [
+                {
+                  "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                  "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+                },
+                {
+                  "source_id": "new-2",
+                  "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+                },
+                {
+                  "source_id": "new-8",
+                  "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+                }
+              ],
+              "conditions": [
+                {
+                  "source_id": "new-8",
+                  "quote": "For now"
+                }
+              ],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            },
+            {
+              "old_unit_ids": [
+                "u3"
+              ],
+              "new_unit_ids": [
+                "unsplit-new-8"
+              ],
+              "attribute": "commitment_to_safety_and_well_being",
+              "change_type": "support",
+              "old_value": "conflicts with commitment to safety and well-being",
+              "new_claim": "still prioritizes safety, while enjoying the thrill",
+              "old_quotes": [
+                {
+                  "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+                  "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-8",
+                  "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+                }
+              ],
+              "conditions": [
+                {
+                  "source_id": "new-8",
+                  "quote": "For now"
+                }
+              ],
+              "time_expressions": [
+                {
+                  "source_id": "new-8",
+                  "quote": "For now"
+                }
+              ],
+              "event_date": null,
+              "unknowns": []
+            }
+          ],
+          "unmatched_old_unit_ids": []
+        },
+        "parse_errors": [],
+        "validation_errors": [
+          {
+            "code": "quote_provenance",
+            "path": "records[0].old_quotes[0]",
+            "message": "not an exact quote within a linked unit on the correct side"
+          },
+          {
+            "code": "unit_without_quote",
+            "path": "records[0].old_unit_ids",
+            "message": "u1"
+          },
+          {
+            "code": "quote_provenance",
+            "path": "records[1].old_quotes[0]",
+            "message": "not an exact quote within a linked unit on the correct side"
+          },
+          {
+            "code": "unit_without_quote",
+            "path": "records[1].old_unit_ids",
+            "message": "u2"
+          },
+          {
+            "code": "quote_provenance",
+            "path": "records[2].old_quotes[0]",
+            "message": "not an exact quote within a linked unit on the correct side"
+          },
+          {
+            "code": "unit_without_quote",
+            "path": "records[2].old_unit_ids",
+            "message": "u3"
+          }
+        ],
+        "coverage": {
+          "uncovered_old_unit_ids": [],
+          "uncovered_new_unit_ids": [],
+          "unmatched_old_unit_ids": []
+        },
+        "semantic_correctness": "not_automatically_verified"
+      }
+    }
+  ]
+}

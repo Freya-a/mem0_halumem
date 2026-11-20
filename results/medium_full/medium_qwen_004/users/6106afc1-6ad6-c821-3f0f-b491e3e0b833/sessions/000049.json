@@ -1,0 +1,527 @@
+{
+  "start_time": "Dec 05, 2033, 15:48:09",
+  "end_time": "Dec 05, 2033, 17:14:39",
+  "memory_points_count": 9,
+  "memory_points": [
+    {
+      "index": 1,
+      "memory_content": "Donald Brown's food preference changed from disliking processed meats to liking homemade turkey sausage, appreciating its fresh taste and non-salty flavor.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "True",
+      "original_memories": [
+        "Donald Brown Foods I dislike: Processed meats",
+        "Donald Brown Foods I dislike Processed meats reason: I avoid processed meats because I find them overly salty and prefer fresher, healthier options."
+      ],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75,
+      "memories_from_system": [
+        "2026-11-17T20:56:13.282175-08:00: Experiments with making homemade turkey sausage using fresh ingredients and less salt",
+        "2026-11-17T20:56:13.293173-08:00: Homemade turkey sausage is popular with friends",
+        "2026-11-17T20:08:04.567187-08:00: Used to avoid processed meats because they're too salty and not fresh enough",
+        "2026-11-17T20:56:13.318923-08:00: Considers sharing the turkey sausage recipe more widely via social media or AI-generated content",
+        "2026-11-17T20:56:13.330394-08:00: Interested in sharing a homemade vegan sausage recipe with friends",
+        "2026-11-17T20:08:04.522845-08:00: Used to love grilled salmon but now dislikes it due to a recent overcooked, flavorless experience",
+        "2026-11-17T20:30:39.915209-08:00: Prefers sweet and savory fusion dishes",
+        "2026-11-17T20:19:39.085552-08:00: Enjoyed tropical fruits, especially mango and pineapple",
+        "2026-11-17T20:08:04.747211-08:00: Dislikes opera music for being too dramatic; prefers lighter genres",
+        "2026-11-17T20:26:34.150572-08:00: Prefers flexible food choices at gatherings to avoid feeling restricted"
+      ]
+    },
+    {
+      "index": 2,
+      "memory_content": "Donald Brown expressed excitement about sharing his homemade turkey sausage recipe with friends, reflecting his social motivation to entertain and connect with others.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "index": 3,
+      "memory_content": "Donald Brown emphasized the importance of balancing enjoyment with health concerns in his dietary choices.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "index": 4,
+      "memory_content": "Donald Brown's social motivation includes using AI-generated content to share culinary experiences and express his identity.",
+      "memory_type": "Persona Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "index": 5,
+      "memory_content": "Donald Brown discovered a new appreciation for homemade processed meats after experimenting with fresh ingredients and minimal salt.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "index": 6,
+      "memory_content": "Donald Brown plans to continue exploring healthier food preparation methods while maintaining social engagement through culinary experiences.",
+      "memory_type": "Event Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "index": 7,
+      "memory_content": "Donald Brown expressed a desire to entertain friends with his culinary skills, using AI-generated content to enhance social interactions.",
+      "memory_type": "Relationship Memory",
+      "memory_source": "secondary",
+      "is_update": "False",
+      "original_memories": [],
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 0.75
+    },
+    {
+      "memory_content": "Donald Brown expressed a desire to entertain friends with his culinary skills, focusing on traditional recipes passed down from his family.",
+      "memory_type": "Relationship Memory",
+      "reason": "This interference memory introduces a different approach to Donald's culinary skills, suggesting a focus on family traditions rather than AI-generated content.",
+      "source_memory_index": 1,
+      "is_update": "False",
+      "original_memories": [],
+      "memory_source": "interference",
+      "reference_memory_content": "Donald Brown expressed a desire to entertain friends with his culinary skills, using AI-generated content to enhance social interactions.",
+      "reference_memory_index": 7,
+      "reference_memory_type": "Relationship Memory",
+      "index": 8,
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 1.0
+    },
+    {
+      "memory_content": "Donald Brown expressed excitement about sharing his homemade vegan sausage recipe with friends, reflecting his commitment to health and plant-based diets.",
+      "memory_type": "Event Memory",
+      "reason": "This interference memory shifts the focus from turkey sausage to vegan sausage, indicating a different dietary preference and health motivation.",
+      "source_memory_index": 2,
+      "is_update": "False",
+      "original_memories": [],
+      "memory_source": "interference",
+      "reference_memory_content": "Donald Brown expressed excitement about sharing his homemade turkey sausage recipe with friends, reflecting his social motivation to entertain and connect with others.",
+      "reference_memory_index": 2,
+      "reference_memory_type": "Event Memory",
+      "index": 9,
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "importance": 1.0
+    }
+  ],
+  "dialogue_turn_num": 19,
+  "dialogue": [
+    {
+      "role": "user",
+      "content": "I've been thinking about my food preferences lately, especially processed meats. I used to avoid them because they're too salty and not fresh enough. But recently, I've been experimenting with making my own turkey sausage at home using fresh ingredients and less salt.",
+      "timestamp": "Dec 05, 2033, 15:48:09",
+      "dialogue_turn": 0
+    },
+    {
+      "role": "assistant",
+      "content": "It's wonderful to hear that you're exploring new culinary experiences, Donald. Your homemade turkey sausage sounds delicious, especially with the fresh taste and non-salty flavor you've achieved. It's great that you're balancing enjoyment with health concerns in your dietary choices. Sharing your culinary creations with friends is a fantastic way to entertain and connect with others. I remember you mentioning your excitement about using AI-generated content to express your identity and enhance social interactions. It's also interesting how you've expressed a desire to entertain friends with your culinary skills, focusing on traditional recipes passed down from your family. That connection to family heritage can add a unique touch to your culinary journey.",
+      "timestamp": "Dec 05, 2033, 15:48:09",
+      "dialogue_turn": 0
+    },
+    {
+      "role": "user",
+      "content": "Yes, the turkey sausage has been a hit with my friends. They love the fresh taste. I'm considering sharing the recipe more widely, perhaps through social media or AI-generated content to reach a broader audience.",
+      "timestamp": "Dec 05, 2033, 16:00:21",
+      "dialogue_turn": 1
+    },
+    {
+      "role": "assistant",
+      "content": "Sharing your homemade turkey sausage recipe through social media or AI-generated content is a brilliant idea! It aligns perfectly with your social motivation to entertain and connect with others. Your culinary skills and creativity can inspire many people to explore healthier food options. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends, reflecting your commitment to health and plant-based diets. This approach can also help you maintain social engagement while exploring healthier food preparation methods. Have you thought about incorporating other fresh ingredients or flavors into your recipes to keep them exciting and diverse?",
+      "timestamp": "Dec 05, 2033, 16:00:21",
+      "dialogue_turn": 1
+    },
+    {
+      "role": "user",
+      "content": "Absolutely, I'm always looking for new ingredients to experiment with. I've been trying different herbs and spices to enhance the flavor while keeping it healthy.",
+      "timestamp": "Dec 05, 2033, 16:06:50",
+      "dialogue_turn": 2
+    },
+    {
+      "role": "assistant",
+      "content": "That's a fantastic approach, Donald. Experimenting with herbs and spices can significantly enhance the flavor profile of your dishes while maintaining their health benefits. Your commitment to balancing enjoyment with health concerns is commendable. Sharing these culinary experiences with friends can be a great way to express your identity and entertain others. It's interesting how you plan to continue exploring healthier food preparation methods while maintaining social engagement through culinary experiences. This journey not only reflects your culinary creativity but also highlights your dedication to your humanitarian life goal of positively impacting individuals globally. How do you feel about using AI-generated content to share your culinary journey and inspire others?",
+      "timestamp": "Dec 05, 2033, 16:06:50",
+      "dialogue_turn": 2
+    },
+    {
+      "role": "user",
+      "content": "Using AI-generated content to share my culinary journey sounds intriguing. It could be a great way to reach more people and inspire them to try healthier recipes.",
+      "timestamp": "Dec 05, 2033, 16:12:00",
+      "dialogue_turn": 3
+    },
+    {
+      "role": "assistant",
+      "content": "AI-generated content can indeed amplify your culinary journey and inspire others to explore healthier food choices. It's a powerful tool for expressing your identity and entertaining friends, aligning with your social motivation. Your enthusiasm for sharing culinary experiences with others reflects your desire to entertain and connect through food. It's also fascinating how you've expressed a desire to entertain friends with your culinary skills, focusing on traditional recipes passed down from your family. This blend of tradition and innovation can create a unique culinary narrative that resonates with many. How do you envision integrating AI-generated content into your culinary sharing process?",
+      "timestamp": "Dec 05, 2033, 16:12:00",
+      "dialogue_turn": 3
+    },
+    {
+      "role": "user",
+      "content": "I imagine using AI to create engaging posts or videos that showcase the cooking process and the final dish, making it visually appealing and informative.",
+      "timestamp": "Dec 05, 2033, 16:15:04",
+      "dialogue_turn": 4
+    },
+    {
+      "role": "assistant",
+      "content": "Creating engaging posts or videos with AI can certainly make your culinary content visually appealing and informative. It allows you to showcase the cooking process and highlight the fresh ingredients and flavors you've incorporated. This approach not only entertains but also educates your audience about healthier food preparation methods. It's exciting how you're using AI-generated content to enhance social interactions and express your culinary identity. Your journey from disliking processed meats to appreciating homemade turkey sausage reflects a remarkable transformation in your food preferences. Have you considered collaborating with other food enthusiasts or communities to expand your reach and impact?",
+      "timestamp": "Dec 05, 2033, 16:15:04",
+      "dialogue_turn": 4
+    },
+    {
+      "role": "user",
+      "content": "Collaboration sounds like a great idea. It could open up new opportunities to learn and share experiences with others who have similar interests.",
+      "timestamp": "Dec 05, 2033, 16:16:34",
+      "dialogue_turn": 5
+    },
+    {
+      "role": "assistant",
+      "content": "Collaborating with other food enthusiasts or communities can indeed open up new opportunities for learning and sharing. It aligns with your social motivation to connect and entertain through culinary experiences. By engaging with others who share your interests, you can exchange ideas and discover new techniques to enhance your culinary skills. Your excitement about sharing your homemade turkey sausage recipe with friends reflects your commitment to connecting with others and expressing your identity. It's also fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends. This approach could lead to innovative collaborations and inspire others to embrace healthier eating habits. What kind of collaborations are you most interested in pursuing?",
+      "timestamp": "Dec 05, 2033, 16:16:34",
+      "dialogue_turn": 5
+    },
+    {
+      "role": "user",
+      "content": "I'm interested in collaborating with local chefs or cooking classes to explore new techniques and flavors.",
+      "timestamp": "Dec 05, 2033, 16:22:31",
+      "dialogue_turn": 6
+    },
+    {
+      "role": "assistant",
+      "content": "Collaborating with local chefs or cooking classes is a fantastic way to explore new techniques and flavors. It provides a platform for exchanging culinary insights and expanding your repertoire. Your interest in collaboration reflects your exploratory motivation to test boundaries and try new things. Sharing your culinary journey with others can inspire them to explore healthier food options and express their creativity. It's fascinating how you've discovered a new appreciation for homemade processed meats after experimenting with fresh ingredients and minimal salt. This journey can lead to exciting culinary innovations and strengthen your social engagement through food. Have you considered organizing cooking workshops or events to share your knowledge and skills with a wider audience?",
+      "timestamp": "Dec 05, 2033, 16:22:31",
+      "dialogue_turn": 6
+    },
+    {
+      "role": "user",
+      "content": "Organizing cooking workshops sounds exciting. It would be a great way to share my knowledge and connect with others who are passionate about cooking.",
+      "timestamp": "Dec 05, 2033, 16:28:19",
+      "dialogue_turn": 7
+    },
+    {
+      "role": "assistant",
+      "content": "Organizing cooking workshops is an excellent way to share your culinary knowledge and connect with others who share your passion for cooking. It aligns with your social motivation to entertain and engage through food. By hosting workshops, you can inspire participants to explore healthier food preparation methods and enhance their culinary skills. Your journey from disliking processed meats to appreciating homemade turkey sausage is a testament to the transformative power of fresh ingredients and creativity. It's also interesting how you've expressed excitement about sharing your homemade vegan sausage recipe with friends. This approach can create a supportive community of food enthusiasts eager to learn and share. What kind of topics or themes do you envision for your cooking workshops?",
+      "timestamp": "Dec 05, 2033, 16:28:19",
+      "dialogue_turn": 7
+    },
+    {
+      "role": "user",
+      "content": "I envision workshops focused on using fresh, local ingredients to create healthy and flavorful dishes. We could also explore different cuisines and cooking techniques.",
+      "timestamp": "Dec 05, 2033, 16:30:51",
+      "dialogue_turn": 8
+    },
+    {
+      "role": "assistant",
+      "content": "Focusing your workshops on using fresh, local ingredients to create healthy and flavorful dishes is a brilliant idea. It emphasizes the importance of sustainability and supports local producers. Exploring different cuisines and cooking techniques can broaden participants' culinary horizons and inspire creativity. Your commitment to balancing enjoyment with health concerns is evident in your approach to food. It's exciting how your culinary skills and social motivation are driving you to entertain and connect with others through workshops. Sharing your journey from disliking processed meats to appreciating homemade turkey sausage can inspire participants to embrace healthier food choices. How do you plan to promote these workshops and attract participants?",
+      "timestamp": "Dec 05, 2033, 16:30:51",
+      "dialogue_turn": 8
+    },
+    {
+      "role": "user",
+      "content": "I plan to promote the workshops through social media and local community boards, highlighting the benefits of using fresh ingredients and the fun of learning new cooking techniques.",
+      "timestamp": "Dec 05, 2033, 16:42:51",
+      "dialogue_turn": 9
+    },
+    {
+      "role": "assistant",
+      "content": "Promoting your workshops through social media and local community boards is an effective strategy to attract participants. Highlighting the benefits of using fresh ingredients and the joy of learning new cooking techniques can engage your audience and spark interest. Your social motivation to entertain and connect with others through culinary experiences is evident in your approach. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends, reflecting your commitment to health and plant-based diets. This promotional strategy can help you reach a wider audience and inspire them to explore healthier food options. Have you considered offering online sessions for those who can't attend in person?",
+      "timestamp": "Dec 05, 2033, 16:42:51",
+      "dialogue_turn": 9
+    },
+    {
+      "role": "user",
+      "content": "Offering online sessions is a great idea. It would allow more people to participate and learn from the comfort of their homes.",
+      "timestamp": "Dec 05, 2033, 16:47:23",
+      "dialogue_turn": 10
+    },
+    {
+      "role": "assistant",
+      "content": "Offering online sessions is an excellent way to expand your reach and make your workshops accessible to a broader audience. It provides flexibility for participants to learn from the comfort of their homes while still engaging with your culinary expertise. Your interest in using AI-generated content to share your culinary journey aligns perfectly with this approach. It's exciting how you're using technology to enhance social interactions and express your culinary identity. Sharing your journey from disliking processed meats to appreciating homemade turkey sausage can inspire participants to explore healthier food preparation methods. Have you thought about incorporating interactive elements into your online sessions to enhance engagement?",
+      "timestamp": "Dec 05, 2033, 16:47:23",
+      "dialogue_turn": 10
+    },
+    {
+      "role": "user",
+      "content": "Interactive elements would definitely enhance engagement. I could include live Q&A sessions or cooking demonstrations where participants can follow along.",
+      "timestamp": "Dec 05, 2033, 16:49:54",
+      "dialogue_turn": 11
+    },
+    {
+      "role": "assistant",
+      "content": "Including live Q&A sessions or cooking demonstrations in your online workshops is a fantastic way to enhance engagement. These interactive elements allow participants to ask questions and follow along with the cooking process, creating a more immersive experience. Your social motivation to entertain and connect with others through culinary experiences is evident in your approach. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends, reflecting your commitment to health and plant-based diets. This interactive format can inspire participants to explore healthier food options and express their culinary creativity. What other features do you think could make your online sessions more engaging?",
+      "timestamp": "Dec 05, 2033, 16:49:54",
+      "dialogue_turn": 11
+    },
+    {
+      "role": "user",
+      "content": "I think incorporating polls or quizzes about cooking techniques could make the sessions more engaging and informative.",
+      "timestamp": "Dec 05, 2033, 16:51:45",
+      "dialogue_turn": 12
+    },
+    {
+      "role": "assistant",
+      "content": "Incorporating polls or quizzes about cooking techniques is a brilliant idea to make your online sessions more engaging and informative. These features can encourage active participation and provide valuable insights into participants' preferences and knowledge. Your commitment to balancing enjoyment with health concerns is evident in your approach to food. It's exciting how you're using AI-generated content to enhance social interactions and express your culinary identity. Sharing your journey from disliking processed meats to appreciating homemade turkey sausage can inspire participants to embrace healthier food choices. How do you plan to gather feedback from participants to continually improve your workshops?",
+      "timestamp": "Dec 05, 2033, 16:51:45",
+      "dialogue_turn": 12
+    },
+    {
+      "role": "user",
+      "content": "Gathering feedback is crucial. I plan to use surveys or feedback forms after each session to understand participants' experiences and suggestions for improvement.",
+      "timestamp": "Dec 05, 2033, 17:01:58",
+      "dialogue_turn": 13
+    },
+    {
+      "role": "assistant",
+      "content": "Using surveys or feedback forms after each session is a great way to gather valuable insights into participants' experiences and suggestions for improvement. This approach allows you to continually refine your workshops and ensure they meet participants' needs and expectations. Your social motivation to entertain and connect with others through culinary experiences is evident in your commitment to providing engaging and informative sessions. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends, reflecting your commitment to health and plant-based diets. Gathering feedback can help you adapt your workshops to evolving interests and inspire participants to explore healthier food options. What are your thoughts on using social media to share participants' success stories and culinary creations?",
+      "timestamp": "Dec 05, 2033, 17:01:58",
+      "dialogue_turn": 13
+    },
+    {
+      "role": "user",
+      "content": "Sharing participants' success stories on social media would be a wonderful way to celebrate their achievements and inspire others.",
+      "timestamp": "Dec 05, 2033, 17:04:28",
+      "dialogue_turn": 14
+    },
+    {
+      "role": "assistant",
+      "content": "Sharing participants' success stories on social media is a fantastic way to celebrate their achievements and inspire others. It aligns with your social motivation to entertain and connect through culinary experiences. Highlighting participants' culinary creations can provide encouragement and motivation for others to explore healthier food options. Your journey from disliking processed meats to appreciating homemade turkey sausage is a testament to the transformative power of fresh ingredients and creativity. It's also interesting how you've expressed excitement about sharing your homemade vegan sausage recipe with friends. This approach can create a supportive community of food enthusiasts eager to learn and share. How do you envision using social media to engage with your audience and promote your workshops?",
+      "timestamp": "Dec 05, 2033, 17:04:28",
+      "dialogue_turn": 14
+    },
+    {
+      "role": "user",
+      "content": "I envision using social media to share engaging content, such as cooking tips, recipe ideas, and participant highlights, to keep the audience engaged and informed.",
+      "timestamp": "Dec 05, 2033, 17:08:28",
+      "dialogue_turn": 15
+    },
+    {
+      "role": "assistant",
+      "content": "Using social media to share engaging content like cooking tips, recipe ideas, and participant highlights is a brilliant way to keep your audience engaged and informed. It aligns with your social motivation to entertain and connect through culinary experiences. Your enthusiasm for sharing your homemade turkey sausage recipe reflects your commitment to connecting with others and expressing your culinary identity. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends. This approach can inspire others to explore healthier food options and create a vibrant online community of food enthusiasts. How do you plan to measure the impact of your social media presence on your culinary workshops?",
+      "timestamp": "Dec 05, 2033, 17:08:28",
+      "dialogue_turn": 15
+    },
+    {
+      "role": "user",
+      "content": "I plan to measure the impact through engagement metrics like comments, shares, and likes, as well as tracking the number of workshop sign-ups resulting from social media promotions.",
+      "timestamp": "Dec 05, 2033, 17:10:54",
+      "dialogue_turn": 16
+    },
+    {
+      "role": "assistant",
+      "content": "Measuring the impact of your social media presence through engagement metrics like comments, shares, and likes is an effective strategy. Tracking the number of workshop sign-ups resulting from social media promotions can provide valuable insights into your audience's interest and engagement. Your social motivation to entertain and connect through culinary experiences is evident in your approach. It's exciting how you're using AI-generated content to enhance social interactions and express your culinary identity. Sharing your journey from disliking processed meats to appreciating homemade turkey sausage can inspire participants to explore healthier food preparation methods. What other strategies do you think could enhance the visibility and impact of your workshops?",
+      "timestamp": "Dec 05, 2033, 17:10:54",
+      "dialogue_turn": 16
+    },
+    {
+      "role": "user",
+      "content": "Collaborating with influencers or local food bloggers could enhance the visibility and impact of my workshops by reaching a wider audience.",
+      "timestamp": "Dec 05, 2033, 17:12:14",
+      "dialogue_turn": 17
+    },
+    {
+      "role": "assistant",
+      "content": "Collaborating with influencers or local food bloggers is a fantastic strategy to enhance the visibility and impact of your workshops. It allows you to reach a wider audience and leverage their platforms to promote your culinary experiences. Your social motivation to entertain and connect through food is evident in your approach. It's fascinating how you've expressed excitement about sharing your homemade vegan sausage recipe with friends, reflecting your commitment to health and plant-based diets. Collaborating with influencers can inspire others to explore healthier food options and create a vibrant community of food enthusiasts. How do you plan to engage with influencers to maximize the impact of your collaborations?",
+      "timestamp": "Dec 05, 2033, 17:12:14",
+      "dialogue_turn": 17
+    },
+    {
+      "role": "user",
+      "content": "I plan to engage with influencers by inviting them to participate in workshops, share their experiences, and collaborate on content creation to reach their audiences.",
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "dialogue_turn": 18
+    },
+    {
+      "role": "assistant",
+      "content": "Inviting influencers to participate in workshops and collaborate on content creation is an excellent way to engage with their audiences and maximize the impact of your collaborations. It aligns with your social motivation to entertain and connect through culinary experiences. Your journey from disliking processed meats to appreciating homemade turkey sausage is a testament to the transformative power of fresh ingredients and creativity. It's also interesting how you've expressed excitement about sharing your homemade vegan sausage recipe with friends. Collaborating with influencers can inspire others to explore healthier food options and create a supportive community of food enthusiasts eager to learn and share. What are your thoughts on using AI-generated content to enhance these collaborations?",
+      "timestamp": "Dec 05, 2033, 17:14:39",
+      "dialogue_turn": 18
+    }
+  ],
+  "dialogue_token_length": 2811,
+  "questions": [
+    {
+      "question": "What is Donald Brown's middle name as of Dec 05, 2033?",
+      "answer": "Unknown; not provided in the input.",
+      "evidence": [],
+      "difficulty": "easy",
+      "question_type": "Memory Boundary",
+      "system_response": "No middle name mentioned",
+      "context": "Memories for user 6106afc1-6ad6-c821-3f0f-b491e3e0b833:\n\n    [\n    \"2026-11-17T20:06:33.684848-08:00: Name is Donald\",\n    \"2026-11-17T20:06:33.889110-08:00: Partner's date of birth is 1992-10-03\",\n    \"2026-11-17T20:06:33.855390-08:00: Father is Supportive and inspiring, encouraging Donald in his non-profit endeavors\",\n    \"2026-11-17T20:06:33.843116-08:00: Father's date of birth is 1965-10-03\",\n    \"2026-11-17T20:06:33.709133-08:00: Date of birth is 1994-10-03\",\n    \"2026-11-17T20:07:08.465187-08:00: Neighbor is MartinezJoseph, who helps with community initiatives\",\n    \"2026-11-17T20:06:33.718914-08:00: Age is 31\",\n    \"2026-11-17T20:06:33.866769-08:00: Mother's date of birth is 1965-10-03\",\n    \"2026-11-17T20:24:37.420247-08:00: Attended a professional development seminar on Nov 09, 2028\",\n    \"2026-11-17T20:55:08.407252-08:00: Needs to reassess work commitments and priorities\",\n    \"2026-11-17T20:07:08.485157-08:00: Friends named Michael and Robert\",\n    \"2026-11-17T20:49:53.356204-08:00: Works at TechConsult Solutions\",\n    \"2026-11-17T20:27:49.173166-08:00: Works at TechConsult Solutions\",\n    \"2026-11-17T20:27:49.184157-08:00: Role is Project Leader\",\n    \"2026-11-17T20:53:46.887150-08:00: Sets aside specific weekly time for new activities and reflection\",\n    \"2026-11-17T20:06:33.699250-08:00: Gender is Male\",\n    \"2026-11-17T20:08:59.484072-08:00: Allocates time for hobbies and relaxation to maintain balance\",\n    \"2026-11-17T20:19:39.183009-08:00: Will use light background music and simple tropical-themed decor\",\n    \"2026-11-17T20:55:08.312533-08:00: Physical health has deteriorated (currently stable)\",\n    \"2026-11-17T20:11:58.114561-08:00: Wants to continue mission through new ventures such as consulting or mentoring\"\n]\n",
+      "search_duration_ms": 166.89234494697303,
+      "response_duration_ms": 774.4107539765537
+    },
+    {
+      "question": "What type of homemade processed meat does Donald Brown appreciate as of December 5, 2033?",
+      "answer": "Homemade turkey sausage",
+      "evidence": [
+        {
+          "memory_content": "Donald Brown's food preference changed from disliking processed meats to liking homemade turkey sausage, appreciating its fresh taste and non-salty flavor.",
+          "memory_type": "Persona Memory"
+        }
+      ],
+      "difficulty": "easy",
+      "question_type": "Basic Fact Recall",
+      "system_response": "Turkey sausage",
+      "context": "Memories for user 6106afc1-6ad6-c821-3f0f-b491e3e0b833:\n\n    [\n    \"2026-11-17T20:56:13.293173-08:00: Homemade turkey sausage is popular with friends\",\n    \"2026-11-17T20:08:04.567187-08:00: Used to avoid processed meats because they're too salty and not fresh enough\",\n    \"2026-11-17T20:56:13.282175-08:00: Experiments with making homemade turkey sausage using fresh ingredients and less salt\",\n    \"2026-11-17T20:56:13.318923-08:00: Considers sharing the turkey sausage recipe more widely via social media or AI-generated content\",\n    \"2026-11-17T20:56:13.330394-08:00: Interested in sharing a homemade vegan sausage recipe with friends\",\n    \"2026-11-17T20:08:04.556252-08:00: Removed dark chocolate from diet due to health concerns\",\n    \"2026-11-17T20:08:04.522845-08:00: Used to love grilled salmon but now dislikes it due to a recent overcooked, flavorless experience\",\n    \"2026-11-17T20:06:33.684848-08:00: Name is Donald\",\n    \"2026-11-17T20:30:39.915209-08:00: Prefers sweet and savory fusion dishes\",\n    \"2026-11-17T20:19:39.137224-08:00: Wants to share tropical-inspired recipes with friends\",\n    \"2026-11-17T20:30:39.959141-08:00: Plans to host a dinner party to share new dishes with friends\",\n    \"2026-11-17T20:19:39.170199-08:00: Prefers a relaxed and enjoyable atmosphere for the dinner\",\n    \"2026-11-17T20:19:39.217645-08:00: Will create a flavor guide with tasting notes and pairing suggestions for guests\",\n    \"2026-11-17T20:56:13.395470-08:00: Wants to offer online workshop sessions with interactive elements like live Q&A, cooking demonstrations, polls, and quizzes\",\n    \"2026-11-17T20:19:39.160277-08:00: Will start the themed dinner with a tropical fruit salad and end with a mango dessert\",\n    \"2026-11-17T20:18:46.088625-08:00: Envisions monthly meet-ups with wellness topics and cooking challenges\",\n    \"2026-11-17T20:19:39.085552-08:00: Enjoyed tropical fruits, especially mango and pineapple\",\n    \"2026-11-17T20:19:39.228543-08:00: Excited to suggest pairing mango with coconut and figs with creamy cheese\",\n    \"2026-11-17T20:26:34.150572-08:00: Prefers flexible food choices at gatherings to avoid feeling restricted\",\n    \"2026-11-17T20:56:13.343888-08:00: Enjoys experimenting with herbs and spices to enhance flavor while keeping dishes healthy\"\n]\n",
+      "search_duration_ms": 185.7772689545527,
+      "response_duration_ms": 341.3579559419304
+    },
+    {
+      "question": "What new culinary experience might Donald Brown enjoy based on his preferences as of 2033-12-05?",
+      "answer": "Homemade low-salt charcuterie using fresh ingredients.",
+      "evidence": [
+        {
+          "memory_content": "Donald Brown's food preference changed from disliking processed meats to liking homemade turkey sausage, appreciating its fresh taste and non-salty flavor.",
+          "memory_type": "Persona Memory"
+        },
+        {
+          "memory_content": "Donald Brown discovered a new appreciation for homemade processed meats after experimenting with fresh ingredients and minimal salt.",
+          "memory_type": "Event Memory"
+        },
+        {
+          "memory_content": "Donald Brown plans to continue exploring healthier food preparation methods while maintaining social engagement through culinary experiences.",
+          "memory_type": "Event Memory"
+        }
+      ],
+      "difficulty": "medium",
+      "question_type": "Generalization & Application",
+      "system_response": "No memories from 2033-12-05 exist — all memories are timestamped **2026-11-17**.  \nNo mention of “Donald Brown” — only “Donald” (2026-11-17T20:06:33.684845-08:00).  \nAll culinary preferences described are from 2026, not 2033.  \nSince the question asks about preferences *as of 2033-12-05*, but **no memories exist from that date or later**, there is no valid basis to infer new experiences for that time.\n\nAnswer must be concise (<6 words) and grounded *only* in provided memories.\n\n→ No evidence supports any culinary experience *as of 2033-12-05*.\n\n**Answer:** No data for 2033",
+      "context": "Memories for user 6106afc1-6ad6-c821-3f0f-b491e3e0b833:\n\n    [\n    \"2026-11-17T20:30:39.915209-08:00: Prefers sweet and savory fusion dishes\",\n    \"2026-11-17T20:30:39.959141-08:00: Plans to host a dinner party to share new dishes with friends\",\n    \"2026-11-17T20:41:14.861242-08:00: Experimenting with different recipes to discover new flavors\",\n    \"2026-11-17T20:19:39.170199-08:00: Prefers a relaxed and enjoyable atmosphere for the dinner\",\n    \"2026-11-17T20:19:39.137224-08:00: Wants to share tropical-inspired recipes with friends\",\n    \"2026-11-17T20:06:33.684848-08:00: Name is Donald\",\n    \"2026-11-17T20:15:55.444229-08:00: Looking into cooking classes and food festivals for inspiration\",\n    \"2026-11-17T20:19:39.241078-08:00: Hopes guests will develop a newfound appreciation for diverse flavors and be inspired to try new recipes\",\n    \"2026-11-17T20:56:13.353610-08:00: Interested in collaborating with local chefs or cooking classes to explore new techniques and flavors\",\n    \"2026-11-17T20:08:04.522845-08:00: Used to love grilled salmon but now dislikes it due to a recent overcooked, flavorless experience\",\n    \"2026-11-17T20:19:39.217645-08:00: Will create a flavor guide with tasting notes and pairing suggestions for guests\",\n    \"2026-11-17T20:15:55.459018-08:00: Hopes to develop deeper appreciation for different cuisines and improve cooking skills\",\n    \"2026-11-17T20:26:34.150572-08:00: Prefers flexible food choices at gatherings to avoid feeling restricted\",\n    \"2026-11-17T20:56:13.343888-08:00: Enjoys experimenting with herbs and spices to enhance flavor while keeping dishes healthy\",\n    \"2026-11-17T20:19:39.160277-08:00: Will start the themed dinner with a tropical fruit salad and end with a mango dessert\",\n    \"2026-11-17T20:08:59.464140-08:00: Believes cultural experiences will spark ideas for future projects\",\n    \"2026-11-17T20:15:55.472131-08:00: Believes culinary experiences will broaden culinary knowledge and enhance ability to create delicious, healthy dishes\",\n    \"2026-11-17T20:19:39.112186-08:00: Interested in experimenting with tropical ingredients in new recipes\",\n    \"2026-11-17T20:15:55.429144-08:00: Researching local markets for fresh ingredients and scheduling dining out for weekends\",\n    \"2026-11-17T20:09:31.391160-08:00: Eager to discover new interests and passions; is interested in exploring more music genres in the future; plans to explore other art forms and creative expressions\"\n]\n",
+      "search_duration_ms": 218.60672906041145,
+      "response_duration_ms": 4695.19132305868
+    }
+  ],
+  "question_count": 3,
+  "add_dialogue_duration_ms": 64669.88642397337,
+  "mem0_add_result": {
+    "results": [
+      {
+        "id": "e0041997-db99-49f1-a818-222ccd85e420",
+        "memory": "Used to avoid processed meats because they're too salty and not fresh enough",
+        "event": "UPDATE",
+        "previous_memory": "Dislikes processed meats due to excessive saltiness and preference for fresher, healthier options"
+      },
+      {
+        "id": "476387f5-bbac-46b0-9336-4bb25ef986b4",
+        "memory": "Plans to include exercise, mindfulness, and cooking segments in workshops",
+        "event": "UPDATE",
+        "previous_memory": "Plans to include exercise, mindfulness, and cooking segments in workshops"
+      },
+      {
+        "id": "1376d468-f9e5-4bf6-8a00-a736e9a77c05",
+        "memory": "Will use surveys to gather feedback and measure impact",
+        "event": "UPDATE",
+        "previous_memory": "Will use surveys to gather feedback and measure impact"
+      },
+      {
+        "id": "aeec2a19-aa52-47e8-a9ff-e189819898ef",
+        "memory": "Will use surveys to gather feedback and measure impact",
+        "event": "DELETE"
+      },
+      {
+        "id": "35ec67ca-e91a-4810-8e62-a3480eb21392",
+        "memory": "Experiments with making homemade turkey sausage using fresh ingredients and less salt",
+        "event": "ADD"
+      },
+      {
+        "id": "5722c05f-99e4-4acd-9dc3-e21b2f70823a",
+        "memory": "Homemade turkey sausage is popular with friends",
+        "event": "ADD"
+      },
+      {
+        "id": "a8591d33-7088-4002-a4eb-d4e6722a8ab0",
+        "memory": "Considers sharing the turkey sausage recipe more widely via social media or AI-generated content",
+        "event": "ADD"
+      },
+      {
+        "id": "0e76106c-41ba-4e77-975d-d96336c4b291",
+        "memory": "Interested in sharing a homemade vegan sausage recipe with friends",
+        "event": "ADD"
+      },
+      {
+        "id": "7a955dd8-8b92-4ed9-8a5c-9fd8da553f5b",
+        "memory": "Enjoys experimenting with herbs and spices to enhance flavor while keeping dishes healthy",
+        "event": "ADD"
+      },
+      {
+        "id": "722fc979-2652-4d5e-a794-545bc086adf6",
+        "memory": "Interested in collaborating with local chefs or cooking classes to explore new techniques and flavors",
+        "event": "ADD"
+      },
+      {
+        "id": "90a6ff62-2e3c-4fac-b173-d4628ec732dc",
+        "memory": "Plans to organize cooking workshops focused on fresh, local ingredients, healthy and flavorful dishes, different cuisines, and cooking techniques",
+        "event": "ADD"
+      },
+      {
+        "id": "2b04d675-92b4-4b5f-94db-e8dec6730b33",
+        "memory": "Plans to promote workshops via social media and local community boards",
+        "event": "ADD"
+      },
+      {
+        "id": "848ac43d-c0ee-4b08-a31b-0aeee7c7f1b5",
+        "memory": "Wants to offer online workshop sessions with interactive elements like live Q&A, cooking demonstrations, polls, and quizzes",
+        "event": "ADD"
+      },
+      {
+        "id": "93dcc6c5-e70f-4623-bb83-c90579a109b9",
+        "memory": "Plans to gather participant feedback using surveys or feedback forms",
+        "event": "ADD"
+      },
+      {
+        "id": "c73a57dc-8e04-4cff-b6a2-6d2d9d72e157",
+        "memory": "Wants to share participants' success stories and culinary creations on social media",
+        "event": "ADD"
+      },
+      {
+        "id": "af53f339-1be9-483f-bc3d-eb6e53f31d9d",
+        "memory": "Shares cooking tips, recipe ideas, and participant highlights on social media",
+        "event": "ADD"
+      },
+      {
+        "id": "e73967d7-10b8-43e4-80c5-460d560f5363",
+        "memory": "Measures social media impact via engagement metrics (comments, shares, likes) and workshop sign-ups from social media",
+        "event": "ADD"
+      },
+      {
+        "id": "88e2b6f9-ee51-42fa-85d0-f95ab93d45b1",
+        "memory": "Plans to collaborate with influencers or local food bloggers by inviting them to workshops and co-creating content",
+        "event": "ADD"
+      }
+    ]
+  },
+  "mem0_errors": [],
+  "extracted_memories": [
+    "Used to avoid processed meats because they're too salty and not fresh enough",
+    "Plans to include exercise, mindfulness, and cooking segments in workshops",
+    "Will use surveys to gather feedback and measure impact",
+    "Will use surveys to gather feedback and measure impact",
+    "Experiments with making homemade turkey sausage using fresh ingredients and less salt",
+    "Homemade turkey sausage is popular with friends",
+    "Considers sharing the turkey sausage recipe more widely via social media or AI-generated content",
+    "Interested in sharing a homemade vegan sausage recipe with friends",
+    "Enjoys experimenting with herbs and spices to enhance flavor while keeping dishes healthy",
+    "Interested in collaborating with local chefs or cooking classes to explore new techniques and flavors",
+    "Plans to organize cooking workshops focused on fresh, local ingredients, healthy and flavorful dishes, different cuisines, and cooking techniques",
+    "Plans to promote workshops via social media and local community boards",
+    "Wants to offer online workshop sessions with interactive elements like live Q&A, cooking demonstrations, polls, and quizzes",
+    "Plans to gather participant feedback using surveys or feedback forms",
+    "Wants to share participants' success stories and culinary creations on social media",
+    "Shares cooking tips, recipe ideas, and participant highlights on social media",
+    "Measures social media impact via engagement metrics (comments, shares, likes) and workshop sign-ups from social media",
+    "Plans to collaborate with influencers or local food bloggers by inviting them to workshops and co-creating content"
+  ]
+}
