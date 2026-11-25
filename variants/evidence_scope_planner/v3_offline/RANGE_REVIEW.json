@@ -1,0 +1,135 @@
+{
+  "method": "对20组完整计划逐案依据旧记忆、新引文、既有 v4 独立审核及 v2/v3 输出人工评阅；计划内容 SHA-256 绑定。不同组含重复事实，不是20个独立案例或准确率。",
+  "cases": {
+    "susan": {
+      "unprotected": {
+        "v2": {
+          "plan_sha256": "4672fe8eb90928a0f2a6097b802c2124f46f664e55b174dd115a572d35923255",
+          "verdict": "appropriate_with_limit",
+          "reason": "五项暂缓：Susan 支持与求职意向有子事实依据，但旧名映射、跨源 ctx-1、非逐字时间依据和独立语义授权未解决；模型漏掉 Daniel 的独立见解，不能把暂缓等同完整预期。"
+        },
+        "v3": {
+          "plan_sha256": "524d3a8414f6f831eb0474c6c8d8ea68ca0916fad040470b288b8e999e0ce469",
+          "verdict": "appropriate_with_limit",
+          "reason": "与未防护旧版的五项范围动作一致；不授权含错源/未认证的判断是保守的，求职计划与 Susan 鼓励可待独立确认，Daniel 未覆盖。"
+        }
+      },
+      "guarded": {
+        "v2": {
+          "plan_sha256": "4672fe8eb90928a0f2a6097b802c2124f46f664e55b174dd115a572d35923255",
+          "verdict": "appropriate_with_limit",
+          "reason": "五项防护后待确认与既存 17 项来源和原因一致；模型未独立输出 Daniel，不能说已完整保留或新增。"
+        },
+        "v3": {
+          "plan_sha256": "524d3a8414f6f831eb0474c6c8d8ea68ca0916fad040470b288b8e999e0ce469",
+          "verdict": "appropriate_with_limit",
+          "reason": "同一防护投影给新版仍为五项待确认，未把有效子事实等同经过独立授权；该输出并不代表 Susan 或计划为假。"
+        }
+      }
+    },
+    "promotion": {
+      "unprotected": {
+        "v2": {
+          "plan_sha256": "788cae30eef3413507644d896e99c79593a236f3724afaa9d66ecf92388a89fb",
+          "verdict": "appropriate_with_limit",
+          "reason": "两项暂缓；公司名称重现和晋升发生有依据，但模型误写公司为主体、recently 不证明晚于旧事实且宽泛 Director 不必失效；缺独立认证。"
+        },
+        "v3": {
+          "plan_sha256": "3417ad83bdec6f5fdfbcb2c1cf7c816edcd41d23f49e858ca342329af62ef81d",
+          "verdict": "appropriate_with_limit",
+          "reason": "相同未防护输入的两项暂缓合理；这是缺独立授权和相对顺序，不是因为缺具体日期，原有职位历史仍需要单独保护。"
+        }
+      },
+      "guarded": {
+        "v2": {
+          "plan_sha256": "788cae30eef3413507644d896e99c79593a236f3724afaa9d66ecf92388a89fb",
+          "verdict": "appropriate_with_limit",
+          "reason": "防护组与原存记录一致：同雇主与晋升子事实可审核，但模型的主体/范围和先后不足以授权旧职位替换。"
+        },
+        "v3": {
+          "plan_sha256": "3417ad83bdec6f5fdfbcb2c1cf7c816edcd41d23f49e858ca342329af62ef81d",
+          "verdict": "appropriate_with_limit",
+          "reason": "防护组仍两项暂缓；不会把 recently 当做相对旧事实 after，但仍未给出人工预期中经审阅的历史保留与晋升表达。"
+        }
+      }
+    },
+    "career_history": {
+      "unprotected": {
+        "v2": {
+          "plan_sha256": "5cd6686b3b73eb5f7c93e3f950c435f954e1b657b2d076d2bcdb2c58135cc2aa",
+          "verdict": "appropriate_with_limit",
+          "reason": "三项暂缓：咨询公司获客不证明原职位/雇主变动、本人 founder 或 operator；时间依据越过引文边界，联系人值数组不合契约，获客未被独立输出。"
+        },
+        "v3": {
+          "plan_sha256": "92a59988b508f0340b43f831c9a93bf4c5ea2038f5ee2f864b93b8ef5d81e194",
+          "verdict": "appropriate_with_limit",
+          "reason": "相同投影的三项待确认合理；旧文是 Previously 历史，模型错误变化未获授权，但缺少对历史及获客子事实的独立保留/新增。"
+        }
+      },
+      "guarded": {
+        "v2": {
+          "plan_sha256": "5cd6686b3b73eb5f7c93e3f950c435f954e1b657b2d076d2bcdb2c58135cc2aa",
+          "verdict": "appropriate_with_limit",
+          "reason": "保留旧版四类结果和来源限制：联系人的新信息有部分依据但结构字段错误，历史角色变化及相对时序不能由获客推知。"
+        },
+        "v3": {
+          "plan_sha256": "92a59988b508f0340b43f831c9a93bf4c5ea2038f5ee2f864b93b8ef5d81e194",
+          "verdict": "appropriate_with_limit",
+          "reason": "防护组与 v2 同为三项暂缓；尚未独立保留过去任职或新增获客，暂缓不等于否定这些子事实。"
+        }
+      }
+    },
+    "transition": {
+      "unprotected": {
+        "v2": {
+          "plan_sha256": "a028621a3b97d4b4f19767248b5cb932e9a1c618d8ce484fc08c9e5505e7d77e",
+          "verdict": "appropriate_with_limit",
+          "reason": "三项暂缓：引文支持已转岗与现在平衡更健康，但不证明停止找工作、原目标完全实现或新状态晚于旧事实；平衡目标未输出为保留。"
+        },
+        "v3": {
+          "plan_sha256": "ba0c49f87a20ab4bf7354599f4f823739154bf7170510dd572955f7eb8840c04",
+          "verdict": "appropriate_with_limit",
+          "reason": "同一未防护输入的三项暂缓是保守处理，finally 不足以单独证明先后；尚未独立表达已发生转岗和改善。"
+        }
+      },
+      "guarded": {
+        "v2": {
+          "plan_sha256": "a028621a3b97d4b4f19767248b5cb932e9a1c618d8ce484fc08c9e5505e7d77e",
+          "verdict": "appropriate_with_limit",
+          "reason": "保留既存三项待确认：补充改善与旧目标影响分别审核；没有具体日期并非自动失败原因。"
+        },
+        "v3": {
+          "plan_sha256": "ba0c49f87a20ab4bf7354599f4f823739154bf7170510dd572955f7eb8840c04",
+          "verdict": "appropriate_with_limit",
+          "reason": "防护组两版均没有授权覆盖或新增；仍须分别保护平衡目标和记录更健康平衡，不可将待确认误作反证。"
+        }
+      }
+    },
+    "skydiving": {
+      "unprotected": {
+        "v2": {
+          "plan_sha256": "1e57e55f017d9fa3978b85cd98040d98ce5d21f7e52246f2bfaab25d5890f51b",
+          "verdict": "unsupported",
+          "reason": "u1/u2 两项无条件 preserve 的 outside-scope 理由不可成立：无条件旧域无法枚举有限新条件的余集，且模型时间依据引用未关联 ctx-1；漏列受影响部分的待确认。旧顾虑可以作为原文被保留，但不能把错误的范围证明当成依据。"
+        },
+        "v3": {
+          "plan_sha256": "72da72bcc537c1ffdf83bd7b9bc303a7b3050e0a55b483a08511f768d8cb8149",
+          "verdict": "appropriate_with_limit",
+          "reason": "两项旧事实无条件 preserve 已撤回；未枚举的旧域剩余列 unknown，并对模型提出的有限候选列待确认。模型把 simulated 与 team-building 置于同一维度的两个值，属于未经证实的候选表达，不能视作实际两个正确范围；仍未独立新增模拟体验和安全偏好。"
+        }
+      },
+      "guarded": {
+        "v2": {
+          "plan_sha256": "0e5d61778366ada9c23c59fd6d1853dc82cfe8ed98c0e96ddcb1ef04f22693f9",
+          "verdict": "appropriate_with_limit",
+          "reason": "四项暂缓与保存的 v4 防护后 17 项一致；适配器将无法求差的新范围降为 unknown，避免旧版误报无条件保留，原条件保存在 raw_record。"
+        },
+        "v3": {
+          "plan_sha256": "d5c181f983e4b23707980373ddc7cfe188e12ee054bb8eeb16f88d870f72e1d4",
+          "verdict": "appropriate_with_limit",
+          "reason": "四项暂缓适合已经被防护改成 unknown 的投影，不能用来证明 v3 处理原 finite 条件的能力；模拟体验与安全子事实仍缺独立授权，真实偏好不能由模拟推翻。"
+        }
+      }
+    }
+  }
+}

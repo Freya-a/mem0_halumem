@@ -1,0 +1,383 @@
+{
+  "case_id": "skydiving",
+  "human_alignment": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "unknown",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 77,
+          "end": 129
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "old_value": "dislike",
+        "new_value": "enjoyed",
+        "subject": "user",
+        "attribute": "preference.extreme_sports",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [],
+        "note": "模拟与真实跳伞是否同一适用范围、旧偏好是否改变无法确认。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "模拟与真实跳伞是否同一适用范围、旧偏好是否改变无法确认。"
+      },
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "supplement",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 77,
+          "end": 129
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "old_value": "dislike",
+        "new_value": "tried and found thrilling",
+        "subject": "user",
+        "attribute": "preference.extreme_sports",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [],
+        "note": "独立记录模拟体验，不能等同真实跳伞偏好变化。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "condition kind missing or unsupported"
+      },
+      {
+        "unit_id": "u2",
+        "fact": "Dislikes extreme sports due to high injury risk",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "old_position": {
+          "start": 0,
+          "end": 65
+        },
+        "reason": "no alignment for unit"
+      },
+      {
+        "unit_id": "u3",
+        "fact": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "relation": "unknown",
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "new_quote": "I still prioritize safety, of course.",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_position": {
+          "start": 68,
+          "end": 105
+        },
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "old_value": "prioritize safety",
+        "new_value": "prioritize safety",
+        "subject": "user",
+        "attribute": "safety.priority",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [],
+        "note": "安全优先得到新证据支持，但新证据未证明极限运动与安全福祉的完整冲突关系仍成立，u3 的短引文本身也不足以支持完整因果关系。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "安全优先得到新证据支持，但新证据未证明极限运动与安全福祉的完整冲突关系仍成立，u3 的短引文本身也不足以支持完整因果关系。"
+      }
+    ],
+    "add": [
+      {
+        "unit_id": null,
+        "relation": "supplement",
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "new_quote": "I still prioritize safety, of course.",
+        "new_position": {
+          "start": 68,
+          "end": 105
+        },
+        "subject": "user",
+        "attribute": "safety.priority",
+        "value": "prioritize safety",
+        "scope": {
+          "kind": "unknown"
+        },
+        "missing_reasons": [],
+        "status": "asserted",
+        "reason": "independent addition"
+      },
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "supplement",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 77,
+          "end": 129
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "old_value": "dislike",
+        "new_value": "tried and found thrilling",
+        "subject": "user",
+        "attribute": "experience.simulated_skydiving",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [],
+        "note": "独立记录模拟体验，不能等同真实跳伞偏好变化。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "value": "tried and found thrilling",
+        "scope": {
+          "kind": "unknown"
+        },
+        "status": "asserted",
+        "reason": "independent addition"
+      }
+    ],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": null,
+        "source_id": "new-8",
+        "new_quote": "I still prioritize safety, of course.",
+        "new_position": {
+          "start": 68,
+          "end": 105
+        },
+        "status": "valid",
+        "new_error": null
+      },
+      {
+        "unit_id": "u1",
+        "alignment_index": 0,
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "source_id": "new-0",
+        "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 77,
+          "end": 129
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "u1",
+        "alignment_index": 1,
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "source_id": "new-0",
+        "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 77,
+          "end": 129
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "u3",
+        "alignment_index": 0,
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "source_id": "new-8",
+        "new_quote": "I still prioritize safety, of course.",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_position": {
+          "start": 68,
+          "end": 105
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      }
+    ]
+  },
+  "saved_v3_alignment": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "change",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "new_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "attitude_toward_extreme_sports",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized",
+          "model missing evidence: No evidence that simulated skydiving implies changed attitude toward *actual* extreme sports; 'dislikes' refers to real skydiving, not simulation"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized; model missing evidence: No evidence that simulated skydiving implies changed attitude toward *actual* extreme sports; 'dislikes' refers to real skydiving, not simulation"
+      },
+      {
+        "unit_id": "u2",
+        "fact": "Dislikes extreme sports due to high injury risk",
+        "relation": "change",
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "new_quote": null,
+        "old_position": {
+          "start": 0,
+          "end": 65
+        },
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "reason_for_disliking_extreme_sports",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [
+          "new side lacks a single uniquely represented quote",
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized",
+          "model missing evidence: No statement retracting or qualifying that high injury risk *itself* is no longer a reason for dislike; 'still prioritize safety' affirms the original safety concern remains operative; 'simulated' explicitly limits scope — no evidence about real skydiving risk perception change"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "evidence source missing or source id duplicated"
+      },
+      {
+        "unit_id": "u3",
+        "fact": "Dislikes extreme sports because it conflicts with commitment to safety and well-being",
+        "relation": "unknown",
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "new_quote": null,
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "safety_commitment_conflict_with_extreme_sports",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "missing_reasons": [
+          "new side lacks a single uniquely represented quote",
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized",
+          "model missing evidence: No evidence that simulated skydiving resolves or negates the conflict with safety commitment; 'still prioritize safety' confirms the commitment remains intact and unconflicted *by this activity* — but does not address whether real extreme sports would still conflict"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "evidence source missing or source id duplicated"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": "u1",
+        "alignment_index": 0,
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "source_id": "new-0",
+        "new_quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_position": {
+          "start": 0,
+          "end": 129
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "u2",
+        "alignment_index": 0,
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "source_id": null,
+        "new_quote": null,
+        "old_position": {
+          "start": 0,
+          "end": 65
+        },
+        "new_position": null,
+        "status": "invalid",
+        "old_error": null,
+        "new_error": "evidence source missing or source id duplicated"
+      },
+      {
+        "unit_id": "u3",
+        "alignment_index": 0,
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "source_id": null,
+        "new_quote": null,
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_position": null,
+        "status": "invalid",
+        "old_error": null,
+        "new_error": "evidence source missing or source id duplicated"
+      }
+    ]
+  }
+}

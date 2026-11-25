@@ -1,0 +1,77 @@
+{
+  "case_id": "promotion",
+  "old_memory": "Works at Historical Productions Ltd. as a Director",
+  "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+  "old_memory_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+  "units": [
+    {
+      "id": "employer",
+      "quote": "Historical Productions Ltd.",
+      "fact": "employer"
+    },
+    {
+      "id": "title",
+      "quote": "Director",
+      "fact": "job_title"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "new-0",
+      "text": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+      "speaker": "user",
+      "recorded_at": "Feb 01, 2026, 18:47:19"
+    }
+  ],
+  "alignments": [
+    {
+      "unit_id": "employer",
+      "relation": "same",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "employment.employer",
+      "new_attribute": "employment.employer",
+      "old_value": "Historical Productions Ltd.",
+      "new_value": "Historical Productions Ltd.",
+      "old_quote": "Historical Productions Ltd.",
+      "new_quote": "lead director at Historical Productions Ltd.",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "same_as_old"
+      },
+      "note": "雇主关系仍成立。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": "title",
+      "relation": "change",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "employment.title",
+      "new_attribute": "employment.title",
+      "old_value": "Director",
+      "new_value": "lead director",
+      "old_quote": "Director",
+      "new_quote": "promoted to lead director",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "same_as_old"
+      },
+      "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+      "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+      "preserve_history": true,
+      "uncertainties": [
+        "晋升具体生效日期未知。",
+        "Director 作为当前宽泛职位称谓是否仍成立无法仅靠字符串比较判断。"
+      ]
+    }
+  ],
+  "input_provenance": "人工根据旧记忆、用户对话和旧上下文整理；不是模型输出，也不是评估预期。"
+}

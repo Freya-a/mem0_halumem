@@ -1,0 +1,484 @@
+{
+  "provenance": "研究者基于原始引用和既有审核逐项拆分；非模型输出、非用户确认金标准；不输入规划器。",
+  "extractability_definitions": {
+    "atomic": "模型有对应独立结构化记录，但其语义仍须独立审核",
+    "combined": "模型在合并值或理由中明确表述，但没有可靠独立结构化子记录",
+    "quote_or_rationale": "仅在引文或理由中出现，结构化值和属性未表达该子事实",
+    "unsupported_relation": "模型输出该关系，但依据不足以认定正确",
+    "not_asserted": "该扩展或未知关系并非模型单独输出的可靠事实"
+  },
+  "reviews": [
+    {
+      "case": "susan",
+      "prior_category": "add",
+      "prior_index": 0,
+      "prior_action_sha256": "f453f7e71b2e17110a198594a9d7d80759cfa69669fc3c15896e5c3fd0046020",
+      "prior_audit_verdict": "partial_add",
+      "prior_audit_reason": "Susan 的支持和帮助专注有依据；unconditional 及该结构化关系的完整适用范围并未独立证实。",
+      "model_record_index": 1,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "Susan 的支持被说成很有价值",
+          "verbatim_excerpt": "Susan's support has indeed been invaluable.",
+          "linked_quotations": [
+            {
+              "source_id": "new-2",
+              "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "值与理由含此内容，但和帮助专注合并；要独立结构化需拆分。"
+        },
+        {
+          "kind": "supported",
+          "claim": "她的鼓励帮助用户专注目标",
+          "verbatim_excerpt": "Her encouragement helps me stay focused on my goals.",
+          "linked_quotations": [
+            {
+              "source_id": "new-2",
+              "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "已有模型值/理由包含该事实，但并非独立记录。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "完整无条件适用范围及旧支持关系是否受影响",
+          "verbatim_excerpt": "Susan's support has indeed been invaluable.",
+          "linked_quotations": [
+            {
+              "source_id": "new-2",
+              "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals."
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型写 unconditional；引文不足以确立完整范围或旧事实同一关系。"
+        }
+      ]
+    },
+    {
+      "case": "susan",
+      "prior_category": "add",
+      "prior_index": 1,
+      "prior_action_sha256": "e43102c522457c4ca0863d0474d557f2d047470a5c75ce58245e681a9c4b99e1",
+      "prior_audit_verdict": "correct_add",
+      "prior_audit_reason": "用户明确说当前角色对福祉支持不如希望；这里仅按当前角色和相对期望理解，不推定永久状态。",
+      "model_record_index": 2,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户当时认为当前岗位对福祉的支持不如期望",
+          "verbatim_excerpt": "my current role isn't supporting my well-being as much as I'd like",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my current role isn't supporting my well-being as much as I'd like"
+            }
+          ],
+          "extractability": "atomic",
+          "explanation": "模型已有独立 new_information 值，但应保持 current 与相对期望限定。"
+        },
+        {
+          "kind": "extension",
+          "claim": "该评价适用于所有岗位或所有时间",
+          "verbatim_excerpt": "my current role isn't supporting my well-being as much as I'd like",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my current role isn't supporting my well-being as much as I'd like"
+            }
+          ],
+          "extractability": "not_asserted",
+          "explanation": "这是需要排除的扩展；原模型未单独声称所有岗位或永远如此。"
+        }
+      ]
+    },
+    {
+      "case": "promotion",
+      "prior_category": "modify",
+      "prior_index": 0,
+      "prior_action_sha256": "926b2c47bfbe8cdd4aa8adc62848600e712bfbea7bbc3f9058bb3cbf8b94a65d",
+      "prior_audit_verdict": "unsupported_modify",
+      "prior_audit_reason": "recently 只相对发话，不证明晋升晚于旧记忆有效期；lead director 不必否定宽泛 Director。此修改缺依据，并非证明晋升为假。",
+      "model_record_index": 1,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "发话时用户已晋升为 lead director",
+          "verbatim_excerpt": "I recently got promoted to lead director",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "模型 new_value 给出 lead director，事件也写在理由；晋升事件并非独立记录。"
+        },
+        {
+          "kind": "supported",
+          "claim": "新话语将该职位与 Historical Productions Ltd. 联系起来",
+          "verbatim_excerpt": "at Historical Productions Ltd.",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "公司和职位同时出现于引文与模型说明；主体需从话语明确为用户。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "该晋升是否晚于旧记忆所描述的职位有效期",
+          "verbatim_excerpt": "I recently got promoted",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型明确写 after；recently 仅确定相对话语发生，不能证明相对旧状态的先后。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "旧 Director 是否因此不再成立",
+          "verbatim_excerpt": "I recently got promoted to lead director",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型声称 supersedes，但宽泛职位称谓可能仍成立，现有字段不能证明替代。"
+        }
+      ]
+    },
+    {
+      "case": "career_history",
+      "prior_category": "add",
+      "prior_index": 0,
+      "prior_action_sha256": "e6560b4f6cd962ed59257cce1ea14e68db4d9498e450c2d43b49de37ff72d6ef",
+      "prior_audit_verdict": "incorrect_add",
+      "prior_audit_reason": "my consulting firm 获客不证明用户现在以其为雇主或具有公司所有权。",
+      "model_record_index": 0,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户所称咨询公司获得了首批客户",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "quote_or_rationale",
+          "explanation": "模型引文和语义理由提及获客，但 new_value 是公司而非获客事件；要独立结构化需重新拆分。"
+        },
+        {
+          "kind": "extension",
+          "claim": "用户当前以该咨询公司为雇主或为公司的所有者",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型的 current employer / business ownership 是有依据不足的关系；my 不足以确定所有权或雇佣。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "用户是否已结束 Blockchain Tech 旧工作",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型推断工作互斥和转变；获客不证明离职或新旧关系先后。"
+        }
+      ]
+    },
+    {
+      "case": "career_history",
+      "prior_category": "add",
+      "prior_index": 1,
+      "prior_action_sha256": "247d555dffd88a7d4f5dc87846650b6c68e729dd7f07b041431011fa388fc845",
+      "prior_audit_verdict": "incorrect_add",
+      "prior_audit_reason": "原文未证明 founder/operator 职位；不能从公司获客反推。",
+      "model_record_index": 1,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户所称咨询公司获得了首批客户",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "quote_or_rationale",
+          "explanation": "原模型理由和引文包含事件，结构化 new_value 却是职位；需要重新拆分。"
+        },
+        {
+          "kind": "extension",
+          "claim": "用户是咨询公司的创办者或经营者",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型明确提出 founder/operator，但引文没有证明。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "新活动是否替代此前 senior developer 职位",
+          "verbatim_excerpt": "my consulting firm finally secured some initial clients",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型推断替代；没有独立事实证明职位互斥或有效时间。"
+        }
+      ]
+    },
+    {
+      "case": "transition",
+      "prior_category": "add",
+      "prior_index": 0,
+      "prior_action_sha256": "6428171fa80fcc64a314ba35766ec0fea4888ecfaebc28056b4cfad7a67253b9",
+      "prior_audit_verdict": "incorrect_add",
+      "prior_audit_reason": "原话只说平衡更健康；模型结构称原目标已实现，证据不证明达到原目标。",
+      "model_record_index": 1,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户表示现在工作与个人生活平衡更健康",
+          "verbatim_excerpt": "The balance between work and personal life is much healthier now.",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "模型值与理由包含改善，但和旧目标实现合并；应分为独立新断言。"
+        },
+        {
+          "kind": "extension",
+          "claim": "原来的求职平衡目标已完全实现",
+          "verbatim_excerpt": "The balance between work and personal life is much healthier now.",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型标为 realized；更健康不证明达到旧目标或所有目标已实现。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "更健康状态与旧目标之间的对应及持续性",
+          "verbatim_excerpt": "The balance between work and personal life is much healthier now.",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "not_asserted",
+          "explanation": "需要更多证据；原话没有独立确认目标实现和持续时间。"
+        }
+      ]
+    },
+    {
+      "case": "transition",
+      "prior_category": "add",
+      "prior_index": 1,
+      "prior_action_sha256": "eedc126a5526c45c00e181dc5c76e25808635d0b9241f09ac45a897b9da8800f",
+      "prior_audit_verdict": "partial_add",
+      "prior_audit_reason": "转岗与平衡更健康都有原话支持；但以 job search status 表述容易暗示停止求职，且适用范围未核实。",
+      "model_record_index": 0,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户说自己已经转到新职位",
+          "verbatim_excerpt": "I've finally transitioned to a new role",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "模型 new_value 合并了转岗与平衡改善；要单独表示事件需拆分。"
+        },
+        {
+          "kind": "supported",
+          "claim": "用户说现在工作与生活的平衡更健康",
+          "verbatim_excerpt": "The balance between work and personal life is much healthier now.",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "该事实与转岗合在同一 new_value，不能把整个 job search status 当成独立事实。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "转岗后用户是否已经停止求职",
+          "verbatim_excerpt": "I've finally transitioned to a new role",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型以 job search status 和 successful transition 推断替换，原话并未说停止求职。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "转岗相对旧求职事实有效时间是否更晚",
+          "verbatim_excerpt": "I've finally transitioned to a new role",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "finally 相对话语表示转岗完成，不证明相对旧事实的先后。"
+        }
+      ]
+    },
+    {
+      "case": "skydiving",
+      "prior_category": "add",
+      "prior_index": 0,
+      "prior_action_sha256": "320fc6afc3cc71ca740ead963c37075cdb34a9cefae71198821ad7db498c542f",
+      "prior_audit_verdict": "incorrect_add",
+      "prior_audit_reason": "“未称为当前障碍”是从未提及作出的推断；新话语不证明旧受伤风险理由已不再适用。",
+      "model_record_index": 1,
+      "subfacts": [
+        {
+          "kind": "supported",
+          "claim": "用户尝试了模拟跳伞并认为刺激",
+          "verbatim_excerpt": "I tried simulated skydiving. It was quite thrilling!",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "extractability": "quote_or_rationale",
+          "explanation": "相关引文在原记录 1；该动作的 new_value 却不是体验事实；原记录 0 合并表达了模拟体验。"
+        },
+        {
+          "kind": "supported",
+          "claim": "用户仍然优先考虑安全",
+          "verbatim_excerpt": "I still prioritize safety, of course.",
+          "linked_quotations": [
+            {
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "extractability": "combined",
+          "explanation": "原记录 1 的 new_value 将此与另一个无依据判断合并；不能把整值视为已证实。"
+        },
+        {
+          "kind": "extension",
+          "claim": "旧受伤风险现在不再是障碍",
+          "verbatim_excerpt": "I still prioritize safety, of course.",
+          "linked_quotations": [
+            {
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型写 not stated as current barrier；没有再次提及并不证明原理由已消失。"
+        },
+        {
+          "kind": "unresolved",
+          "claim": "模拟体验是否改变真实极限运动偏好",
+          "verbatim_excerpt": "I tried simulated skydiving. It was quite thrilling!",
+          "linked_quotations": [
+            {
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "extractability": "unsupported_relation",
+          "explanation": "模型另条 change 声称态度变化，模拟与真实活动不能自动等同。"
+        }
+      ]
+    }
+  ],
+  "extra_review": {
+    "case": "skydiving",
+    "record_index": 0,
+    "record_sha256": "0302e545080f924a0045fc8ed630380f9f393747f62b0e5a89bcfd58fbf2150d",
+    "subfacts": [
+      {
+        "kind": "supported",
+        "claim": "用户尝试模拟跳伞并觉得刺激",
+        "verbatim_excerpt": "I tried simulated skydiving. It was quite thrilling!",
+        "linked_quotations": [
+          {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "extractability": "combined",
+        "explanation": "模型 new_value 有该内容但与更愿尝新合并，属性却是极限运动态度。"
+      },
+      {
+        "kind": "supported",
+        "claim": "用户表示更愿尝试新事物",
+        "verbatim_excerpt": "It's definitely made me more open to trying new things.",
+        "linked_quotations": [
+          {
+            "source_id": "new-2",
+            "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+          }
+        ],
+        "extractability": "combined",
+        "explanation": "模型 new_value 含该内容；要保留新事物范围须单独拆分，不能换成真实极限运动偏好。"
+      },
+      {
+        "kind": "unresolved",
+        "claim": "真实极限运动或真实跳伞偏好是否改变",
+        "verbatim_excerpt": "I tried simulated skydiving. It was quite thrilling!",
+        "linked_quotations": [
+          {
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "extractability": "unsupported_relation",
+        "explanation": "模型 change 把模拟体验联系到旧真实极限运动偏好；引文不足以确定该关系。"
+      }
+    ]
+  }
+}

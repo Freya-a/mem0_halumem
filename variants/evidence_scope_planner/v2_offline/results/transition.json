@@ -1,0 +1,2154 @@
+{
+  "case_id": "transition",
+  "human_alignment": {
+    "planner_v1": {
+      "modify": [
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "old_quote": "Looking for a new job",
+          "new_quote": "I've finally transitioned to a new role",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "missing_reasons": [],
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "different explicit values in overlapping scope"
+        }
+      ],
+      "preserve": [
+        {
+          "unit_id": "job_search",
+          "fact": "求职时追求更好的工作生活平衡",
+          "old_quote": "better work-life balance",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "reason": "explicit protected claim",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "old_quote": "Looking for a new job",
+          "new_quote": "I've finally transitioned to a new role",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "missing_reasons": [],
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "reason": "转岗后是否继续寻找工作未知；不应将转岗解释为不再求职。"
+        },
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "old_quote": "Looking for a new job",
+          "new_quote": "I've finally transitioned to a new role",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "missing_reasons": [],
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "reason": "职位切换的具体生效日期未知。"
+        },
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "supplement",
+          "old_quote": "better work-life balance",
+          "new_quote": "The balance between work and personal life is much healthier now.",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "new_position": {
+            "start": 70,
+            "end": 135
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "seeks better work-life balance",
+          "new_value": "balance much healthier",
+          "subject": "user",
+          "attribute": "career.work_life_balance",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "missing_reasons": [],
+          "note": "工作与生活平衡仍是相关事实；目标与改善并非相同取值。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "reason": "condition kind missing or unsupported"
+        }
+      ],
+      "add": [
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "supplement",
+          "old_quote": "better work-life balance",
+          "new_quote": "The balance between work and personal life is much healthier now.",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "new_position": {
+            "start": 70,
+            "end": 135
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "seeks better work-life balance",
+          "new_value": "balance much healthier",
+          "subject": "user",
+          "attribute": "career.work_life_balance",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "missing_reasons": [],
+          "note": "工作与生活平衡仍是相关事实；目标与改善并非相同取值。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "value": "balance much healthier",
+          "scope": {
+            "kind": "unknown"
+          },
+          "status": "asserted",
+          "reason": "independent addition"
+        }
+      ],
+      "editable_spans": [
+        {
+          "unit_id": "job_search",
+          "start": 0,
+          "end": 21,
+          "old_quote": "Looking for a new job"
+        }
+      ],
+      "protected_facts": [
+        {
+          "unit_id": "job_search",
+          "fact": "求职时追求更好的工作生活平衡",
+          "old_quote": "better work-life balance",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "reason": "explicit protected claim",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json"
+        }
+      ],
+      "quote_checks": [
+        {
+          "unit_id": "job_search",
+          "kind": "protected_claim",
+          "old_quote": "better work-life balance",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "status": "valid",
+          "old_error": null
+        },
+        {
+          "unit_id": "job_search",
+          "alignment_index": 0,
+          "old_quote": "Looking for a new job",
+          "source_id": "new-0",
+          "new_quote": "I've finally transitioned to a new role",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        },
+        {
+          "unit_id": "job_search",
+          "alignment_index": 1,
+          "old_quote": "better work-life balance",
+          "source_id": "new-0",
+          "new_quote": "The balance between work and personal life is much healthier now.",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "new_position": {
+            "start": 70,
+            "end": 135
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        }
+      ]
+    },
+    "planner_v2": {
+      "modify": [],
+      "preserve": [
+        {
+          "unit_id": "job_search",
+          "fact": "求职时追求更好的工作生活平衡",
+          "old_quote": "better work-life balance",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "reason": "explicit protected claim"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "job_search",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "position": {
+                "start": 0,
+                "end": 21
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "job_search",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "position": {
+                "start": 0,
+                "end": 39
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Looking for a new job",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_quote": "I've finally transitioned to a new role",
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "side": "new"
+            }
+          ],
+          "reason": "转岗后是否继续寻找工作未知；不应将转岗解释为不再求职。"
+        },
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "job_search",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "position": {
+                "start": 0,
+                "end": 21
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "job_search",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "position": {
+                "start": 0,
+                "end": 39
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Looking for a new job",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_quote": "I've finally transitioned to a new role",
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "side": "new"
+            }
+          ],
+          "reason": "职位切换的具体生效日期未知。"
+        },
+        {
+          "unit_id": "job_search",
+          "fact": "transition_progress",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "career.transition_status",
+          "old_value": "looking for a new job",
+          "new_value": "transitioned to a new role",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "job_search",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "position": {
+                "start": 0,
+                "end": 21
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "job_search",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "position": {
+                "start": 0,
+                "end": 39
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Looking for a new job",
+          "old_position": {
+            "start": 0,
+            "end": 21
+          },
+          "new_quote": "I've finally transitioned to a new role",
+          "new_position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "note": "新职位转换已发生；不能推断从此不再找任何工作。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role",
+              "side": "new"
+            }
+          ],
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "temporal order unknown"
+        }
+      ],
+      "add": [
+        {
+          "unit_id": null,
+          "fact": null,
+          "relation": "supplement",
+          "subject": "user",
+          "attribute": "career.work_life_balance",
+          "old_value": null,
+          "new_value": "balance much healthier",
+          "old_quotes": [],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": null,
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now.",
+              "position": {
+                "start": 70,
+                "end": 135
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": null,
+          "old_position": null,
+          "new_quote": "The balance between work and personal life is much healthier now.",
+          "new_position": {
+            "start": 70,
+            "end": 135
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": null,
+          "old_source_ref": null,
+          "note": "新证据所述内容可独立新增；不作为旧事实是否变化的依据。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now.",
+              "side": "new"
+            }
+          ],
+          "value": "balance much healthier",
+          "scope": {
+            "kind": "unknown"
+          },
+          "status": "asserted",
+          "reason": "independent evidence-supported addition"
+        }
+      ],
+      "editable_spans": [],
+      "protected_facts": [
+        {
+          "unit_id": "job_search",
+          "fact": "求职时追求更好的工作生活平衡",
+          "old_quote": "better work-life balance",
+          "old_position": {
+            "start": 27,
+            "end": 51
+          },
+          "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "reason": "explicit protected claim"
+        }
+      ],
+      "quote_checks": [
+        {
+          "alignment_index": 0,
+          "side": "old",
+          "unit_id": "job_search",
+          "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "quote": "Looking for a new job",
+          "position": {
+            "start": 0,
+            "end": 21
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 0,
+          "side": "new",
+          "unit_id": "job_search",
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role",
+          "position": {
+            "start": 0,
+            "end": 39
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 1,
+          "side": "new",
+          "unit_id": null,
+          "source_id": "new-0",
+          "quote": "The balance between work and personal life is much healthier now.",
+          "position": {
+            "start": 70,
+            "end": 135
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "unit_id": "job_search",
+          "side": "old",
+          "kind": "protected_claim",
+          "quote": "better work-life balance",
+          "position": {
+            "start": 27,
+            "end": 51
+          },
+          "status": "valid",
+          "reason": null
+        }
+      ]
+    }
+  },
+  "models": {
+    "v1": {
+      "artifact": "variants/evidence_aligner/runs/fixed_five_20261120/transition.json",
+      "upstream_status": "passed",
+      "raw_record_count": 1,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": "looking for a new job",
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Looking for a new job with better work-life balance",
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "transition_progress",
+                "change_type": "state_change",
+                "old_value": "looking for a new job",
+                "new_claim": "has transitioned to a new role",
+                "old_quotes": [
+                  {
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "finally"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "old_quote": "Looking for a new job with better work-life balance",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": "looking for a new job",
+                "new_value": null,
+                "subject": null,
+                "attribute": "transition_progress",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "job_search",
+                "alignment_index": 0,
+                "old_quote": "Looking for a new job with better work-life balance",
+                "source_id": "new-0",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "old_unit_ids": [
+                "job_search"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": "looking for a new job",
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "finally"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "has transitioned to a new role",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "transition_progress",
+                "change_type": "state_change",
+                "old_value": "looking for a new job",
+                "new_claim": "has transitioned to a new role",
+                "old_quotes": [
+                  {
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "finally"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "subject": null,
+                "attribute": "transition_progress",
+                "old_value": "looking for a new job",
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "job_search",
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance",
+                    "position": {
+                      "start": 0,
+                      "end": 51
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                    "position": {
+                      "start": 0,
+                      "end": 135
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Looking for a new job with better work-life balance",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "job_search",
+                "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "quote": "Looking for a new job with better work-life balance",
+                "position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        }
+      }
+    },
+    "v2": {
+      "artifact": "variants/evidence_aligner/runs/v2_paired_20261120/transition.json",
+      "upstream_status": "failed",
+      "raw_record_count": 1,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "relation": "change",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream validation error: {'code': 'schema', 'path': 'records[0].change_evidence[0]', 'message': 'source_id and quote required'}",
+                "upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[0].change_evidence[0]', 'message': 'must be within a cited new quote'}",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v2",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": "different",
+              "upstream_structure_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Looking for a new job with better work-life balance",
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "transition_progress",
+                  "statement": "Looking for a new job with better work-life balance",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "transition_progress",
+                  "statement": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "state_change",
+                "old_quotes": [
+                  {
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "change_evidence": [
+                  "I've finally transitioned to a new role"
+                ],
+                "relation_explanation": "The old claim describes an ongoing search (‘looking for’), indicating an uncompleted state. The new claim explicitly states completion (‘finally transitioned’) and reports improved work-life balance as an achieved outcome. ‘Finally transitioned’ directly contradicts the prior searching state and confirms a change in status.",
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "old_quote": "Looking for a new job with better work-life balance",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": "user",
+                "attribute": "transition_progress",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "missing_reasons": [
+                  "upstream validation error: {'code': 'schema', 'path': 'records[0].change_evidence[0]', 'message': 'source_id and quote required'}",
+                  "upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[0].change_evidence[0]', 'message': 'must be within a cited new quote'}",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: upstream validation error: {'code': 'schema', 'path': 'records[0].change_evidence[0]', 'message': 'source_id and quote required'}; upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[0].change_evidence[0]', 'message': 'must be within a cited new quote'}; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "job_search",
+                "alignment_index": 0,
+                "old_quote": "Looking for a new job with better work-life balance",
+                "source_id": "new-0",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "old_unit_ids": [
+                "job_search"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": {
+                "subject": "user",
+                "object": null,
+                "attribute": "transition_progress",
+                "statement": "Looking for a new job with better work-life balance",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "new_claim": {
+                "subject": "user",
+                "object": null,
+                "attribute": "transition_progress",
+                "statement": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "unknowns": [],
+              "validation_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "missing_reasons": [
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[0].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "upstream_version": "v2",
+              "upstream_target_relation": "different",
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "transition_progress",
+                  "statement": "Looking for a new job with better work-life balance",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "transition_progress",
+                  "statement": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "state_change",
+                "old_quotes": [
+                  {
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "change_evidence": [
+                  "I've finally transitioned to a new role"
+                ],
+                "relation_explanation": "The old claim describes an ongoing search (‘looking for’), indicating an uncompleted state. The new claim explicitly states completion (‘finally transitioned’) and reports improved work-life balance as an achieved outcome. ‘Finally transitioned’ directly contradicts the prior searching state and confirms a change in status.",
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "subject": "user",
+                "attribute": "transition_progress",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "job_search",
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance",
+                    "position": {
+                      "start": 0,
+                      "end": 51
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                    "position": {
+                      "start": 0,
+                      "end": 135
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Looking for a new job with better work-life balance",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [
+                  {
+                    "code": "schema",
+                    "path": "records[0].change_evidence[0]",
+                    "message": "source_id and quote required"
+                  },
+                  {
+                    "code": "change_evidence_not_in_new_quote",
+                    "path": "records[0].change_evidence[0]",
+                    "message": "must be within a cited new quote"
+                  }
+                ],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "upstream validation errors: [{'code': 'schema', 'path': 'records[0].change_evidence[0]', 'message': 'source_id and quote required'}, {'code': 'change_evidence_not_in_new_quote', 'path': 'records[0].change_evidence[0]', 'message': 'must be within a cited new quote'}]"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "job_search",
+                "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "quote": "Looking for a new job with better work-life balance",
+                "position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        }
+      }
+    },
+    "v3": {
+      "artifact": "variants/evidence_aligner/runs/v3_paired_20261120/transition.json",
+      "upstream_status": "failed",
+      "raw_record_count": 1,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream validation error: {'code': 'qualifier_anchor_provenance', 'path': 'records[0].qualifiers[0]', 'message': 'claim_quote must overlap a cited quote in its linked source'}",
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [
+                {
+                  "code": "qualifier_anchor_provenance",
+                  "path": "records[0].qualifiers[0]",
+                  "message": "claim_quote must overlap a cited quote in its linked source"
+                }
+              ],
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Looking for a new job with better work-life balance",
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "transition_progress",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Looking for a new job with better work-life balance"
+                ],
+                "new_quotes": [
+                  "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                ],
+                "qualifiers": [
+                  {
+                    "side": "old",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                  },
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "finally",
+                    "claim_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "old_quote": "Looking for a new job with better work-life balance",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": null,
+                "attribute": "transition_progress",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "missing_reasons": [
+                  "upstream validation error: {'code': 'qualifier_anchor_provenance', 'path': 'records[0].qualifiers[0]', 'message': 'claim_quote must overlap a cited quote in its linked source'}",
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: upstream validation error: {'code': 'qualifier_anchor_provenance', 'path': 'records[0].qualifiers[0]', 'message': 'claim_quote must overlap a cited quote in its linked source'}; not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "job_search",
+                "alignment_index": 0,
+                "old_quote": "Looking for a new job with better work-life balance",
+                "source_id": "new-0",
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "job_search",
+              "old_unit_ids": [
+                "job_search"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "transition_progress",
+              "new_attribute": "transition_progress",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Looking for a new job with better work-life balance",
+              "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "source_id": "new-0",
+              "old_quote_source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                  "quote": "Looking for a new job with better work-life balance",
+                  "unit_id": "job_search"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [
+                {
+                  "side": "old",
+                  "kind": "time",
+                  "quote": "lately",
+                  "claim_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                },
+                {
+                  "side": "new",
+                  "kind": "time",
+                  "quote": "finally",
+                  "claim_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                }
+              ],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [
+                {
+                  "code": "qualifier_anchor_provenance",
+                  "path": "records[0].qualifiers[0]",
+                  "message": "claim_quote must overlap a cited quote in its linked source"
+                }
+              ],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [
+                {
+                  "code": "qualifier_anchor_provenance",
+                  "path": "records[0].qualifiers[0]",
+                  "message": "claim_quote must overlap a cited quote in its linked source"
+                }
+              ],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "job_search"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "transition_progress",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Looking for a new job with better work-life balance"
+                ],
+                "new_quotes": [
+                  "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                ],
+                "qualifiers": [
+                  {
+                    "side": "old",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals."
+                  },
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "finally",
+                    "claim_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "job_search",
+                "fact": "transition_progress",
+                "relation": "change",
+                "subject": null,
+                "attribute": "transition_progress",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "job_search",
+                    "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                    "quote": "Looking for a new job with better work-life balance",
+                    "position": {
+                      "start": 0,
+                      "end": 51
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                    "position": {
+                      "start": 0,
+                      "end": 135
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Looking for a new job with better work-life balance",
+                "old_position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "new_position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [
+                  {
+                    "code": "qualifier_anchor_provenance",
+                    "path": "records[0].qualifiers[0]",
+                    "message": "claim_quote must overlap a cited quote in its linked source"
+                  }
+                ],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "upstream validation errors: [{'code': 'qualifier_anchor_provenance', 'path': 'records[0].qualifiers[0]', 'message': 'claim_quote must overlap a cited quote in its linked source'}]"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "job_search",
+                "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+                "quote": "Looking for a new job with better work-life balance",
+                "position": {
+                  "start": 0,
+                  "end": 51
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+                "position": {
+                  "start": 0,
+                  "end": 135
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Looking for a new job with better work-life balance",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e6ab178b-c0f9-4adb-bfb7-e4648617a950"
+              ],
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 2,
+            "source_resolved": 2,
+            "unique_correct_side_on_disk": 2,
+            "list_text_retained": 2,
+            "list_resolved_with_source": 2,
+            "scalar_projection": 2,
+            "scalar_source_valid": 2,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 1
+        }
+      }
+    }
+  }
+}

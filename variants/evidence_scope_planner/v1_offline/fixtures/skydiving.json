@@ -1,0 +1,125 @@
+{
+  "case_id": "skydiving",
+  "old_memory": "Dislikes extreme sports (e.g., skydiving) due to high injury risk, conflicting with commitment to safety and well-being",
+  "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+  "old_memory_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+  "units": [
+    {
+      "id": "u1",
+      "quote": "Dislikes extreme sports (e.g., skydiving)",
+      "fact": "Dislikes extreme sports (e.g., skydiving)"
+    },
+    {
+      "id": "u2",
+      "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+      "fact": "Dislikes extreme sports due to high injury risk"
+    },
+    {
+      "id": "u3",
+      "quote": "conflicting with commitment to safety and well-being",
+      "fact": "Dislikes extreme sports because it conflicts with commitment to safety and well-being"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "new-0",
+      "text": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+      "speaker": "user",
+      "recorded_at": "Apr 10, 2026, 10:40:32"
+    },
+    {
+      "source_id": "new-2",
+      "text": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content",
+      "speaker": "user",
+      "recorded_at": "Apr 10, 2026, 10:48:20"
+    },
+    {
+      "source_id": "new-8",
+      "text": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+      "speaker": "user",
+      "recorded_at": "Apr 10, 2026, 10:57:54"
+    }
+  ],
+  "alignments": [
+    {
+      "unit_id": "u1",
+      "relation": "unknown",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "preference.extreme_sports",
+      "new_attribute": "preference.simulated_skydiving",
+      "old_value": "dislike",
+      "new_value": "enjoyed",
+      "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+      "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unknown"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "模拟与真实跳伞是否同一适用范围、旧偏好是否改变无法确认。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": "u1",
+      "relation": "supplement",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "preference.extreme_sports",
+      "new_attribute": "experience.simulated_skydiving",
+      "old_value": "dislike",
+      "new_value": "tried and found thrilling",
+      "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+      "new_quote": "I tried simulated skydiving. It was quite thrilling!",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unknown"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "独立记录模拟体验，不能等同真实跳伞偏好变化。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": "u3",
+      "relation": "unknown",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "safety.priority",
+      "new_attribute": "safety.priority",
+      "old_value": "prioritize safety",
+      "new_value": "prioritize safety",
+      "old_quote": "conflicting with commitment to safety and well-being",
+      "new_quote": "I still prioritize safety, of course.",
+      "source_id": "new-8",
+      "old_conditions": {
+        "kind": "unknown"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "安全优先得到新证据支持，但新证据未证明极限运动与安全福祉的完整冲突关系仍成立，u3 的短引文本身也不足以支持完整因果关系。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": null,
+      "relation": "supplement",
+      "new_subject": "user",
+      "new_attribute": "safety.priority",
+      "new_value": "prioritize safety",
+      "new_quote": "I still prioritize safety, of course.",
+      "source_id": "new-8",
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "新证据独立表达仍重视安全，未确认原因果关系。"
+    }
+  ],
+  "input_provenance": "人工根据旧记忆、用户对话和旧上下文整理；不是模型输出，也不是评估预期。"
+}

@@ -1,0 +1,98 @@
+{
+  "case_id": "career_history",
+  "old_memory": "Previously worked as a senior developer in Blockchain Tech",
+  "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+  "old_memory_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+  "units": [
+    {
+      "id": "employer",
+      "quote": "Blockchain Tech",
+      "fact": "historical_employer"
+    },
+    {
+      "id": "title",
+      "quote": "senior developer",
+      "fact": "historical_title"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "new-0",
+      "text": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+      "speaker": "user",
+      "recorded_at": "Jan 05, 2026, 07:43:42"
+    },
+    {
+      "source_id": "new-2",
+      "text": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+      "speaker": "user",
+      "recorded_at": "Jan 05, 2026, 07:44:55"
+    }
+  ],
+  "alignments": [
+    {
+      "unit_id": null,
+      "relation": "supplement",
+      "new_subject": "user",
+      "new_attribute": "career.consulting_firm",
+      "new_value": "secured initial clients",
+      "new_quote": "my consulting firm finally secured some initial clients",
+      "source_id": "new-0",
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "咨询公司获得客户可独立新增；历史雇主不因此失效。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": "employer",
+      "relation": "unrelated",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "career.historical_employer",
+      "new_attribute": "career.consulting_firm",
+      "old_value": "Blockchain Tech",
+      "new_value": "secured initial clients",
+      "old_quote": "Blockchain Tech",
+      "new_quote": "my consulting firm finally secured some initial clients",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+      "no_impact_confirmed": true,
+      "uncertainties": [
+        "具体离职或转型时间未知；咨询公司获客不证明当前雇佣关系或所有权细节。"
+      ]
+    },
+    {
+      "unit_id": "title",
+      "relation": "unrelated",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "career.historical_title",
+      "new_attribute": "career.consulting_firm",
+      "old_value": "senior developer",
+      "new_value": "secured initial clients",
+      "old_quote": "senior developer",
+      "new_quote": "my consulting firm finally secured some initial clients",
+      "source_id": "new-0",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "保留过去 senior developer 的历史；咨询公司获客不否定过去职位，不能推断具体时间或当前身份。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+      "no_impact_confirmed": true
+    }
+  ],
+  "input_provenance": "人工根据旧记忆、用户对话和旧上下文整理；不是模型输出，也不是评估预期。"
+}

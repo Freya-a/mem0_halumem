@@ -1,0 +1,946 @@
+{
+  "case_id": "transition",
+  "model_call": false,
+  "provenance": {
+    "artifact_sha256": "c6f872cd0576508c836fed057e9838e4baa55007d8cf7bb1225010933ce87d78",
+    "adapter_sha256": "d6c1a3f08c6a77d8908007422a68d710fa5d1ca9941f82ef277afbaff6077b8e",
+    "planner_sha256": "3c46dc51936a19d0b52dcaf08f4f5b1edb2ed8e41ad403fd0c9b4dbdf49042a1",
+    "raw_response_sha256": "cde9b74d0b53618e501b17f1aa53663553beafb5b2db3046d65c9f3a61d15420"
+  },
+  "initial_plan": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "motivation for job search",
+        "old_value": "better work-life balance",
+        "new_value": "better work-life balance (now realized as healthier balance)",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 70,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "value": "better work-life balance (now realized as healthier balance)",
+        "scope": {
+          "kind": "unconditional"
+        },
+        "status": "asserted",
+        "reason": "semantic support or bound basis missing"
+      },
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "job search status",
+        "old_value": "looking for a new job with better work-life balance",
+        "new_value": "transitioned to a new role with healthier work-life balance",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 0,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 0,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job with better work-life balance"
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role"
+            }
+          ],
+          "explanation": "'Finally' signals completion of prior search; 'transitioned' is past-tense achievement, contrasting ongoing 'looking for'"
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "semantic support or bound basis missing"
+      },
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "motivation for job search",
+        "old_value": "better work-life balance",
+        "new_value": "better work-life balance (now realized as healthier balance)",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 70,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "impact of new information on old fact is not established"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "alignment_index": 0,
+        "side": "old",
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "position": {
+          "start": 0,
+          "end": 135
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "old",
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "The balance between work and personal life is much healthier now.",
+        "position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      }
+    ]
+  },
+  "safe_plan": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "motivation for job search",
+        "old_value": "better work-life balance",
+        "new_value": "better work-life balance (now realized as healthier balance)",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 70,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "value": "better work-life balance (now realized as healthier balance)",
+        "scope": {
+          "kind": "unconditional"
+        },
+        "status": "asserted",
+        "reason": "semantic support or bound basis missing"
+      },
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "job search status",
+        "old_value": "looking for a new job with better work-life balance",
+        "new_value": "transitioned to a new role with healthier work-life balance",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 0,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 0,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job with better work-life balance"
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role"
+            }
+          ],
+          "explanation": "'Finally' signals completion of prior search; 'transitioned' is past-tense achievement, contrasting ongoing 'looking for'"
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "semantic support or bound basis missing"
+      },
+      {
+        "unit_id": "job_search",
+        "fact": "Looking for a new job with better work-life balance",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "motivation for job search",
+        "old_value": "better work-life balance",
+        "new_value": "better work-life balance (now realized as healthier balance)",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance",
+            "position": {
+              "start": 0,
+              "end": 51
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now.",
+            "position": {
+              "start": 70,
+              "end": 135
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Looking for a new job with better work-life balance",
+        "old_position": {
+          "start": 0,
+          "end": 51
+        },
+        "new_quote": "The balance between work and personal life is much healthier now.",
+        "new_position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "memory_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "impact of new information on old fact is not established"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "alignment_index": 0,
+        "side": "old",
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "position": {
+          "start": 0,
+          "end": 135
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "old",
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "The balance between work and personal life is much healthier now.",
+        "position": {
+          "start": 70,
+          "end": 135
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_008/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      }
+    ]
+  },
+  "adapted_alignments": [
+    {
+      "unit_id": "job_search",
+      "relation": "change",
+      "old_subject": "I",
+      "new_subject": "I",
+      "old_attribute": "job search status",
+      "new_attribute": "job search status",
+      "old_value": "looking for a new job with better work-life balance",
+      "new_value": "transitioned to a new role with healthier work-life balance",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unconditional"
+      },
+      "modality": "asserted",
+      "old_quotes": [
+        {
+          "unit_id": "job_search",
+          "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "quote": "Looking for a new job with better work-life balance"
+        }
+      ],
+      "new_quotes": [
+        {
+          "unit_id": "manually_mapped_new",
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        }
+      ],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "side": "old",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance"
+          },
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role"
+          }
+        ],
+        "explanation": "'Finally' signals completion of prior search; 'transitioned' is past-tense achievement, contrasting ongoing 'looking for'"
+      },
+      "semantic_rationale": "The old unit states an active job search motivated by work-life balance; the new unit asserts successful transition to a role delivering that balance — a direct change in status.",
+      "semantic_basis": [
+        {
+          "side": "new",
+          "source_id": "new-0",
+          "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+        }
+      ],
+      "uncertainties": [],
+      "semantic_support": "unknown",
+      "validation_errors": [],
+      "missing_reasons": [],
+      "raw_record": {
+        "unit_id": "job_search",
+        "relation": "change",
+        "old_subject": "I",
+        "new_subject": "I",
+        "old_attribute": "job search status",
+        "new_attribute": "job search status",
+        "old_value": "looking for a new job with better work-life balance",
+        "new_value": "transitioned to a new role with healthier work-life balance",
+        "old_conditions": {
+          "kind": "unconditional"
+        },
+        "new_conditions": {
+          "kind": "unconditional"
+        },
+        "modality": "asserted",
+        "old_quotes": [
+          {
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance"
+          }
+        ],
+        "new_quotes": [
+          {
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+              "quote": "Looking for a new job with better work-life balance"
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "I've finally transitioned to a new role"
+            }
+          ],
+          "explanation": "'Finally' signals completion of prior search; 'transitioned' is past-tense achievement, contrasting ongoing 'looking for'"
+        },
+        "semantic_rationale": "The old unit states an active job search motivated by work-life balance; the new unit asserts successful transition to a role delivering that balance — a direct change in status.",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now."
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "unit_id": "job_search",
+      "relation": "supplement",
+      "old_subject": "I",
+      "new_subject": "I",
+      "old_attribute": "motivation for job search",
+      "new_attribute": "motivation for job search",
+      "old_value": "better work-life balance",
+      "new_value": "better work-life balance (now realized as healthier balance)",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unconditional"
+      },
+      "modality": "asserted",
+      "old_quotes": [
+        {
+          "unit_id": "job_search",
+          "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+          "quote": "Looking for a new job with better work-life balance"
+        }
+      ],
+      "new_quotes": [
+        {
+          "unit_id": "manually_mapped_new",
+          "source_id": "new-0",
+          "quote": "The balance between work and personal life is much healthier now."
+        }
+      ],
+      "temporal_order": {
+        "relation": "same",
+        "basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+      },
+      "semantic_rationale": "The new utterance confirms the original goal ('better work-life balance') has been achieved ('much healthier now'), supplementing the old unit with outcome evidence without altering the core motivational attribute.",
+      "semantic_basis": [
+        {
+          "side": "new",
+          "source_id": "new-0",
+          "quote": "The balance between work and personal life is much healthier now."
+        }
+      ],
+      "uncertainties": [],
+      "semantic_support": "unknown",
+      "validation_errors": [],
+      "missing_reasons": [],
+      "raw_record": {
+        "unit_id": "job_search",
+        "relation": "supplement",
+        "old_subject": "I",
+        "new_subject": "I",
+        "old_attribute": "motivation for job search",
+        "new_attribute": "motivation for job search",
+        "old_value": "better work-life balance",
+        "new_value": "better work-life balance (now realized as healthier balance)",
+        "old_conditions": {
+          "kind": "unconditional"
+        },
+        "new_conditions": {
+          "kind": "unconditional"
+        },
+        "modality": "asserted",
+        "old_quotes": [
+          {
+            "unit_id": "job_search",
+            "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+            "quote": "Looking for a new job with better work-life balance"
+          }
+        ],
+        "new_quotes": [
+          {
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "The balance between work and personal life is much healthier now."
+            }
+          ],
+          "explanation": "The new statement affirms the *fulfillment* of the previously stated motivation, not a temporal shift in the motivation itself."
+        },
+        "semantic_rationale": "The new utterance confirms the original goal ('better work-life balance') has been achieved ('much healthier now'), supplementing the old unit with outcome evidence without altering the core motivational attribute.",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "The balance between work and personal life is much healthier now."
+          }
+        ],
+        "uncertainties": []
+      }
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "errors": [],
+    "schema_status": "passed",
+    "quote_status": "passed",
+    "basis_status": "passed",
+    "coverage_status": "passed",
+    "schema_errors": [],
+    "quote_errors": [],
+    "basis_errors": [],
+    "coverage_errors": [],
+    "record_errors": [
+      [],
+      []
+    ],
+    "quote_checks": [
+      {
+        "record_index": 0,
+        "side": "old",
+        "index": 0,
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "reason": null
+      },
+      {
+        "record_index": 0,
+        "side": "new",
+        "index": 0,
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "I've finally transitioned to a new role, and it's been a huge relief. The balance between work and personal life is much healthier now.",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 135
+        },
+        "reason": null
+      },
+      {
+        "record_index": 1,
+        "side": "old",
+        "index": 0,
+        "unit_id": "job_search",
+        "source_id": "e6ab178b-c0f9-4adb-bfb7-e4648617a950",
+        "quote": "Looking for a new job with better work-life balance",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 51
+        },
+        "reason": null
+      },
+      {
+        "record_index": 1,
+        "side": "new",
+        "index": 0,
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "The balance between work and personal life is much healthier now.",
+        "status": "valid",
+        "position": {
+          "start": 70,
+          "end": 135
+        },
+        "reason": null
+      }
+    ],
+    "coverage": {
+      "unhandled_old_unit_ids": [],
+      "unhandled_new_unit_ids": [],
+      "unmatched_old_unit_ids": []
+    }
+  },
+  "status": "completed_offline"
+}

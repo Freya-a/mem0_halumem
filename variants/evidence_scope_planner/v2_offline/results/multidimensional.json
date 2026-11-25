@@ -1,0 +1,622 @@
+{
+  "modify": [
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "外带",
+        "门店": "上海"
+      },
+      "reason": "different values and evidenced later state"
+    }
+  ],
+  "preserve": [
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "堂食",
+        "门店": "上海"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    },
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "堂食",
+        "门店": "南京"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    },
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "外带",
+        "门店": "南京"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    }
+  ],
+  "uncertain": [],
+  "add": [],
+  "editable_spans": [
+    {
+      "unit_id": "policy",
+      "start": 0,
+      "end": 22,
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。"
+    }
+  ],
+  "protected_facts": [
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "堂食",
+        "门店": "上海"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    },
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "堂食",
+        "门店": "南京"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    },
+    {
+      "unit_id": "policy",
+      "fact": "两家门店两种服务的旧政策",
+      "relation": "change",
+      "subject": "门店",
+      "attribute": "政策",
+      "old_value": "旧政策",
+      "new_value": "新政策",
+      "old_quotes": [
+        {
+          "side": "old",
+          "unit_id": "policy",
+          "source_id": "synthetic-memory",
+          "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+          "position": {
+            "start": 0,
+            "end": 22
+          },
+          "source_ref": "synthetic:old",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "new_quotes": [
+        {
+          "side": "new",
+          "unit_id": "policy",
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "position": {
+            "start": 0,
+            "end": 23
+          },
+          "source_ref": "synthetic:new",
+          "status": "valid",
+          "reason": null
+        }
+      ],
+      "old_quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "old_position": {
+        "start": 0,
+        "end": 22
+      },
+      "new_quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "new_position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_id": "synthetic-new",
+      "source_ref": "synthetic:new",
+      "memory_id": "synthetic-memory",
+      "old_source_ref": "synthetic:old",
+      "note": null,
+      "time_note": null,
+      "missing_reasons": [],
+      "validation_errors": [],
+      "unknowns": [],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "source_id": "synthetic-new",
+            "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+            "side": "new"
+          }
+        ],
+        "explanation": "新句明确此前实行旧政策、现改为新政策。"
+      },
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "synthetic-new",
+          "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+          "side": "new"
+        }
+      ],
+      "scope": {
+        "服务": "外带",
+        "门店": "南京"
+      },
+      "reason": "unchanged, earlier evidence, or outside evidence scope"
+    }
+  ],
+  "quote_checks": [
+    {
+      "alignment_index": 0,
+      "side": "old",
+      "unit_id": "policy",
+      "source_id": "synthetic-memory",
+      "quote": "上海、南京两家门店的堂食、外带均实行旧政策。",
+      "position": {
+        "start": 0,
+        "end": 22
+      },
+      "source_ref": "synthetic:old",
+      "status": "valid",
+      "reason": null
+    },
+    {
+      "alignment_index": 0,
+      "side": "new",
+      "unit_id": "policy",
+      "source_id": "synthetic-new",
+      "quote": "此前均实行旧政策，现上海门店的外带改用新政策。",
+      "position": {
+        "start": 0,
+        "end": 23
+      },
+      "source_ref": "synthetic:new",
+      "status": "valid",
+      "reason": null
+    }
+  ]
+}

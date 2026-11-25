@@ -1,0 +1,3327 @@
+{
+  "case_id": "promotion",
+  "human_alignment": {
+    "planner_v1": {
+      "modify": [
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "old_quote": "Director",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "subject": "user",
+          "attribute": "employment.title",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "different explicit values in overlapping scope"
+        }
+      ],
+      "preserve": [
+        {
+          "unit_id": "employer",
+          "fact": "employer",
+          "relation": "same",
+          "old_quote": "Historical Productions Ltd.",
+          "new_quote": "lead director at Historical Productions Ltd.",
+          "old_position": {
+            "start": 9,
+            "end": 36
+          },
+          "new_position": {
+            "start": 27,
+            "end": 71
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Historical Productions Ltd.",
+          "new_value": "Historical Productions Ltd.",
+          "subject": "user",
+          "attribute": "employment.employer",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "雇主关系仍成立。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "unchanged or outside evidence scope"
+        },
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "old_quote": "Director",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "subject": "user",
+          "attribute": "employment.title",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "status": "historical",
+          "reason": "explicitly retained as historical, not as current"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "old_quote": "Director",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "subject": "user",
+          "attribute": "employment.title",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "reason": "晋升具体生效日期未知。"
+        },
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "old_quote": "Director",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "subject": "user",
+          "attribute": "employment.title",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "reason": "Director 作为当前宽泛职位称谓是否仍成立无法仅靠字符串比较判断。"
+        }
+      ],
+      "add": [],
+      "editable_spans": [
+        {
+          "unit_id": "title",
+          "start": 42,
+          "end": 50,
+          "old_quote": "Director"
+        }
+      ],
+      "protected_facts": [
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "old_quote": "Director",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "subject": "user",
+          "attribute": "employment.title",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "missing_reasons": [],
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "status": "historical",
+          "reason": "explicitly retained as historical, not as current"
+        }
+      ],
+      "quote_checks": [
+        {
+          "unit_id": "employer",
+          "alignment_index": 0,
+          "old_quote": "Historical Productions Ltd.",
+          "source_id": "new-0",
+          "new_quote": "lead director at Historical Productions Ltd.",
+          "old_position": {
+            "start": 9,
+            "end": 36
+          },
+          "new_position": {
+            "start": 27,
+            "end": 71
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        },
+        {
+          "unit_id": "title",
+          "alignment_index": 0,
+          "old_quote": "Director",
+          "source_id": "new-0",
+          "new_quote": "promoted to lead director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        }
+      ]
+    },
+    "planner_v2": {
+      "modify": [],
+      "preserve": [
+        {
+          "unit_id": "employer",
+          "fact": "employer",
+          "relation": "same",
+          "subject": "user",
+          "attribute": "employment.employer",
+          "old_value": "Historical Productions Ltd.",
+          "new_value": "Historical Productions Ltd.",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "employer",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Historical Productions Ltd.",
+              "position": {
+                "start": 9,
+                "end": 36
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "employer",
+              "source_id": "new-0",
+              "quote": "lead director at Historical Productions Ltd.",
+              "position": {
+                "start": 27,
+                "end": 71
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Historical Productions Ltd.",
+          "old_position": {
+            "start": 9,
+            "end": 36
+          },
+          "new_quote": "lead director at Historical Productions Ltd.",
+          "new_position": {
+            "start": 27,
+            "end": 71
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "note": "雇主关系仍成立。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Historical Productions Ltd.",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "lead director at Historical Productions Ltd.",
+              "side": "new"
+            }
+          ],
+          "scope": {
+            "kind": "unconditional"
+          },
+          "current_evidence_value": "Historical Productions Ltd.",
+          "reason": "same value supported by new evidence"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "employment.title",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "title",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "position": {
+                "start": 42,
+                "end": 50
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "title",
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "position": {
+                "start": 15,
+                "end": 40
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_quote": "promoted to lead director",
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "side": "new"
+            }
+          ],
+          "reason": "晋升具体生效日期未知。"
+        },
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "employment.title",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "title",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "position": {
+                "start": 42,
+                "end": 50
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "title",
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "position": {
+                "start": 15,
+                "end": 40
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_quote": "promoted to lead director",
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "side": "new"
+            }
+          ],
+          "reason": "Director 作为当前宽泛职位称谓是否仍成立无法仅靠字符串比较判断。"
+        },
+        {
+          "unit_id": "title",
+          "fact": "job_title",
+          "relation": "change",
+          "subject": "user",
+          "attribute": "employment.title",
+          "old_value": "Director",
+          "new_value": "lead director",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "title",
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "position": {
+                "start": 42,
+                "end": 50
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "title",
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "position": {
+                "start": 15,
+                "end": 40
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Director",
+          "old_position": {
+            "start": 42,
+            "end": 50
+          },
+          "new_quote": "promoted to lead director",
+          "new_position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "note": "晋升已发生；Director 是宽泛职位表述，历史职位和雇主应保留。",
+          "time_note": "旧职位曾成立；晋升与旧职位的具体起止日期未知，记录时间不等于有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": {
+            "relation": "unknown",
+            "basis": [],
+            "explanation": "现有引文没有明确证明该事件发生在旧记忆所述状态之前还是之后；相对说话时间和记录时间不等于事件与旧记忆之间的先后关系。"
+          },
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "quote": "Director",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "promoted to lead director",
+              "side": "new"
+            }
+          ],
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "temporal order unknown"
+        }
+      ],
+      "add": [],
+      "editable_spans": [],
+      "protected_facts": [],
+      "quote_checks": [
+        {
+          "alignment_index": 0,
+          "side": "old",
+          "unit_id": "employer",
+          "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "quote": "Historical Productions Ltd.",
+          "position": {
+            "start": 9,
+            "end": 36
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 0,
+          "side": "new",
+          "unit_id": "employer",
+          "source_id": "new-0",
+          "quote": "lead director at Historical Productions Ltd.",
+          "position": {
+            "start": 27,
+            "end": 71
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 1,
+          "side": "old",
+          "unit_id": "title",
+          "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+          "quote": "Director",
+          "position": {
+            "start": 42,
+            "end": 50
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 1,
+          "side": "new",
+          "unit_id": "title",
+          "source_id": "new-0",
+          "quote": "promoted to lead director",
+          "position": {
+            "start": 15,
+            "end": 40
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        }
+      ]
+    }
+  },
+  "models": {
+    "v1": {
+      "artifact": "variants/evidence_aligner/runs/fixed_five_20261120/promotion.json",
+      "upstream_status": "passed",
+      "raw_record_count": 2,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "title",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": "Director",
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Director",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "job_title",
+                "change_type": "state_change",
+                "old_value": "Director",
+                "new_claim": "lead director",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "recently"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "employer",
+              "relation": "unknown",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": "Historical Productions Ltd.",
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "no_clear_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Historical Productions Ltd.",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "change_type": "no_clear_change",
+                "old_value": "Historical Productions Ltd.",
+                "new_claim": "Historical Productions Ltd.",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd."
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "recently"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "old_quote": "Historical Productions Ltd.",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": "Historical Productions Ltd.",
+                "new_value": null,
+                "subject": null,
+                "attribute": "employer",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "old_quote": "Director",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": "Director",
+                "new_value": null,
+                "subject": null,
+                "attribute": "job_title",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Historical Productions Ltd.",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "Director",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": "Director",
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "lead director",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "job_title",
+                "change_type": "state_change",
+                "old_value": "Director",
+                "new_claim": "lead director",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "recently"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "unknown",
+              "upstream_relation": "no_clear_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": "Historical Productions Ltd.",
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "recently"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "Historical Productions Ltd.",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "change_type": "no_clear_change",
+                "old_value": "Historical Productions Ltd.",
+                "new_claim": "Historical Productions Ltd.",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd."
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "recently"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "subject": null,
+                "attribute": "employer",
+                "old_value": "Historical Productions Ltd.",
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd.",
+                    "position": {
+                      "start": 9,
+                      "end": 36
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Historical Productions Ltd.",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "subject": null,
+                "attribute": "job_title",
+                "old_value": "Director",
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director",
+                    "position": {
+                      "start": 42,
+                      "end": 50
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Director",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Director",
+                "position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Historical Productions Ltd.",
+                "position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        }
+      }
+    },
+    "v2": {
+      "artifact": "variants/evidence_aligner/runs/v2_paired_20261120/promotion.json",
+      "upstream_status": "failed",
+      "raw_record_count": 2,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "relation": "unknown",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v2",
+              "upstream_relation": "support",
+              "upstream_target_relation": "same",
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Historical Productions Ltd.",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "Historical Productions Ltd.",
+                  "attribute": "employer",
+                  "statement": "user works at Historical Productions Ltd.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "Historical Productions Ltd.",
+                  "attribute": "employer",
+                  "statement": "user works at Historical Productions Ltd.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "same",
+                "change_type": "support",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd."
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "Both claims assert the same employer–employee relationship with Historical Productions Ltd.; the new statement reaffirms the employer without altering it.",
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "relation": "change",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream validation error: {'code': 'schema', 'path': 'records[1].change_evidence[0]', 'message': 'source_id and quote required'}",
+                "upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[1].change_evidence[0]', 'message': 'must be within a cited new quote'}",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v2",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": "partially_overlapping",
+              "upstream_structure_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Director",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "job_title",
+                  "statement": "user is a Director",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "job_title",
+                  "statement": "user is a lead director",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "partially_overlapping",
+                "change_type": "state_change",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "change_evidence": [
+                  "got promoted to lead director"
+                ],
+                "relation_explanation": "The new claim specifies a promotion from 'Director' to 'lead director', indicating a change in job title. The phrase 'got promoted to lead director' directly supports that the prior title has changed.",
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "old_quote": "Historical Productions Ltd.",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": "user",
+                "attribute": "employer",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "old_quote": "Director",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": "user",
+                "attribute": "job_title",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "upstream validation error: {'code': 'schema', 'path': 'records[1].change_evidence[0]', 'message': 'source_id and quote required'}",
+                  "upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[1].change_evidence[0]', 'message': 'must be within a cited new quote'}",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: upstream validation error: {'code': 'schema', 'path': 'records[1].change_evidence[0]', 'message': 'source_id and quote required'}; upstream validation error: {'code': 'change_evidence_not_in_new_quote', 'path': 'records[1].change_evidence[0]', 'message': 'must be within a cited new quote'}; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Historical Productions Ltd.",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "Director",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "unknown",
+              "upstream_relation": "support",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": {
+                "subject": "user",
+                "object": "Historical Productions Ltd.",
+                "attribute": "employer",
+                "statement": "user works at Historical Productions Ltd.",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "new_claim": {
+                "subject": "user",
+                "object": "Historical Productions Ltd.",
+                "attribute": "employer",
+                "statement": "user works at Historical Productions Ltd.",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v2",
+              "upstream_target_relation": "same",
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "Historical Productions Ltd.",
+                  "attribute": "employer",
+                  "statement": "user works at Historical Productions Ltd.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "Historical Productions Ltd.",
+                  "attribute": "employer",
+                  "statement": "user works at Historical Productions Ltd.",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "same",
+                "change_type": "support",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd."
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "Both claims assert the same employer–employee relationship with Historical Productions Ltd.; the new statement reaffirms the employer without altering it.",
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": {
+                "subject": "user",
+                "object": null,
+                "attribute": "job_title",
+                "statement": "user is a Director",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "new_claim": {
+                "subject": "user",
+                "object": null,
+                "attribute": "job_title",
+                "statement": "user is a lead director",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "unknowns": [],
+              "validation_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "missing_reasons": [
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [
+                {
+                  "code": "schema",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "source_id and quote required"
+                },
+                {
+                  "code": "change_evidence_not_in_new_quote",
+                  "path": "records[1].change_evidence[0]",
+                  "message": "must be within a cited new quote"
+                }
+              ],
+              "upstream_version": "v2",
+              "upstream_target_relation": "partially_overlapping",
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "job_title",
+                  "statement": "user is a Director",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": null,
+                  "attribute": "job_title",
+                  "statement": "user is a lead director",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "partially_overlapping",
+                "change_type": "state_change",
+                "old_quotes": [
+                  {
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "change_evidence": [
+                  "got promoted to lead director"
+                ],
+                "relation_explanation": "The new claim specifies a promotion from 'Director' to 'lead director', indicating a change in job title. The phrase 'got promoted to lead director' directly supports that the prior title has changed.",
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "subject": "user",
+                "attribute": "employer",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd.",
+                    "position": {
+                      "start": 9,
+                      "end": 36
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Historical Productions Ltd.",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "subject": "user",
+                "attribute": "job_title",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director",
+                    "position": {
+                      "start": 42,
+                      "end": 50
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Director",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [
+                  {
+                    "code": "schema",
+                    "path": "records[1].change_evidence[0]",
+                    "message": "source_id and quote required"
+                  },
+                  {
+                    "code": "change_evidence_not_in_new_quote",
+                    "path": "records[1].change_evidence[0]",
+                    "message": "must be within a cited new quote"
+                  }
+                ],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "upstream validation errors: [{'code': 'schema', 'path': 'records[1].change_evidence[0]', 'message': 'source_id and quote required'}, {'code': 'change_evidence_not_in_new_quote', 'path': 'records[1].change_evidence[0]', 'message': 'must be within a cited new quote'}]"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Historical Productions Ltd.",
+                "position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Director",
+                "position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        }
+      }
+    },
+    "v3": {
+      "artifact": "variants/evidence_aligner/runs/v3_paired_20261120/promotion.json",
+      "upstream_status": "passed",
+      "raw_record_count": 2,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "relation": "unknown",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "no_clear_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Historical Productions Ltd.",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "relation": "no_clear_change",
+                "old_quotes": [
+                  "Historical Productions Ltd."
+                ],
+                "new_quotes": [
+                  "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                ],
+                "qualifiers": [],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Director",
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "job_title",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Director"
+                ],
+                "new_quotes": [
+                  "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "recently",
+                    "claim_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "old_quote": "Historical Productions Ltd.",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": null,
+                "attribute": "employer",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "old_quote": "Director",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": null,
+                "attribute": "job_title",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Historical Productions Ltd.",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "Director",
+                "source_id": "new-0",
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "unknown",
+              "upstream_relation": "no_clear_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Historical Productions Ltd.",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Historical Productions Ltd.",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "relation": "no_clear_change",
+                "old_quotes": [
+                  "Historical Productions Ltd."
+                ],
+                "new_quotes": [
+                  "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                ],
+                "qualifiers": [],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "job_title",
+              "new_attribute": "job_title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Director",
+              "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "source_id": "new-0",
+              "old_quote_source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                  "quote": "Director",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [
+                {
+                  "side": "new",
+                  "kind": "time",
+                  "quote": "recently",
+                  "claim_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                }
+              ],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "job_title",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Director"
+                ],
+                "new_quotes": [
+                  "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "recently",
+                    "claim_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!"
+                  }
+                ],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": "employer",
+                "fact": "employer",
+                "relation": "unknown",
+                "subject": null,
+                "attribute": "employer",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Historical Productions Ltd.",
+                    "position": {
+                      "start": 9,
+                      "end": 36
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Historical Productions Ltd.",
+                "old_position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "job_title",
+                "relation": "change",
+                "subject": null,
+                "attribute": "job_title",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                    "quote": "Director",
+                    "position": {
+                      "start": 42,
+                      "end": 50
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                    "position": {
+                      "start": 0,
+                      "end": 92
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Director",
+                "old_position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "new_quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "new_position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "memory_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Historical Productions Ltd.",
+                "position": {
+                  "start": 9,
+                  "end": 36
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+                "quote": "Director",
+                "position": {
+                  "start": 42,
+                  "end": 50
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+                "position": {
+                  "start": 0,
+                  "end": 92
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Historical Productions Ltd.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Director",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "e13b825e-7ec7-4760-821e-0581d8da5650"
+              ],
+              "source_id": "e13b825e-7ec7-4760-821e-0581d8da5650",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I recently got promoted to lead director at Historical Productions Ltd. It's quite exciting!",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/1b846c59-456e-9550-dffd-4d23f1eca81f/session_005/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        }
+      }
+    }
+  }
+}

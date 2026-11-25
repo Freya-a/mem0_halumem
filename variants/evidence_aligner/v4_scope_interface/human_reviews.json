@@ -1,0 +1,312 @@
+{
+  "method": "研究者对保存的原文、各条证据和规划输出独立核对；不是模型自评或用户确认金标准。",
+  "cases": {
+    "susan": {
+      "records": {
+        "0": {
+          "sha256": "8c58fc2178c70dfedd19429d66b60473ff730ef2a80de6017fc04c43760adf8a",
+          "verdict": "partially_supported",
+          "reason": "旧记忆包含朋友 ThomasSusan，新话语有 Susan 的支持；但所引旧片段未体现别名，模型把 ctx-1 当未绑定的 semantic_basis，无法用已引用单元证明同一时间友谊及同值；无条件亦无依据。"
+        },
+        "1": {
+          "sha256": "ca6d1c572284c3c2fd518e2f39859342c4aae95f412db9476d0e2d70f0b16a52",
+          "verdict": "partially_supported",
+          "reason": "新话语确实描述 Susan 的鼓励与帮助专注，能补充支持细节；但同一时间、无条件适用并未证明，原单元短引文未独立表明对象。"
+        },
+        "2": {
+          "sha256": "c2deb92e099da22d6ceae0df7e71476726c0e2e9da7b5486d90edfadbdb3cb3e",
+          "verdict": "partially_supported",
+          "reason": "用户确实称当前角色对福祉支持不及期望，可作为独立陈述；无旧单元却给新旧时间关系 same，且 unconditional 缺充分依据。"
+        },
+        "3": {
+          "sha256": "d629b9dce70f6573424901c1f7076838d59e367c03d612637407e371e8bdb801",
+          "verdict": "partially_supported",
+          "reason": "找符合平衡和人道目标的新工作是愿望/计划，不是已完成；但 after 只比较该句内心理活动，不是相对旧事实，所引时间依据还含省略号且不在已引用片段内。"
+        }
+      },
+      "actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "db43f7440a259ccaf45d57d739447930356929a9910952fd7d875495f8378f62",
+            "verdict": "supported",
+            "reason": "补充的支持细节有证据，但模型语义自证不可作为独立授权；暂缓新增符合 v2 契约，人工核对后可另评。"
+          },
+          "1": {
+            "sha256": "0bbb70d8003a56a1585a41f4acfb9eec8bfb8c179f7a269e72560ba654841e3e",
+            "verdict": "supported",
+            "reason": "角色对福祉的评价有新证据，但模型无独立语义授权，暂缓符合接口；并不能因此认定该事实为假。"
+          },
+          "2": {
+            "sha256": "f3cc1940ce20fb3f9475820bf1e08c35a8631b5758fe3207484d46c9cda2914f",
+            "verdict": "supported",
+            "reason": "目标是计划；语义授权未给且时间依据不属于关联引文，暂缓符合接口，不能当已找到工作。"
+          },
+          "3": {
+            "sha256": "7237caa7348ce7fb3dda03768cea258ef5abffed8d2057ecaeb495583e6547b6",
+            "verdict": "supported",
+            "reason": "friendship 语义依据引入未绑定 ctx-1，并且 same 与姓名映射缺充分关联证据；暂缓适当。"
+          },
+          "4": {
+            "sha256": "f101fbbc47cc8bcd2528262649be99494325bd818612e3f8454d89f37fea8504",
+            "verdict": "supported",
+            "reason": "支持补充本身并不证明对旧事实影响；暂缓该影响符合契约，同时应保留原文，不应解释成支持消失。"
+          }
+        }
+      },
+      "overall": "结构四字段组中 schema、引文、覆盖通过，basis 因 #0 使用未绑定 ctx-1、#3 时间引文含省略号且未绑定而失败；6 条主引文都唯一匹配。预期保留 Susan 的朋友支持、独立新增 Daniel 的见解和求职计划；直接规划均待确认，未产生编辑/新增，属于对模型语义未知的保守结果而非事实不存在。模型对两条时间 same 与 unconditional 推断不足，Daniel 语义未独立输出，单元覆盖不能证明事实覆盖。",
+      "safe_actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "db43f7440a259ccaf45d57d739447930356929a9910952fd7d875495f8378f62",
+            "verdict": "supported",
+            "reason": "补充的支持细节有证据，但模型语义自证不可作为独立授权；暂缓新增符合 v2 契约，人工核对后可另评。"
+          },
+          "1": {
+            "sha256": "0bbb70d8003a56a1585a41f4acfb9eec8bfb8c179f7a269e72560ba654841e3e",
+            "verdict": "supported",
+            "reason": "角色对福祉的评价有新证据，但模型无独立语义授权，暂缓符合接口；并不能因此认定该事实为假。"
+          },
+          "2": {
+            "sha256": "f3cc1940ce20fb3f9475820bf1e08c35a8631b5758fe3207484d46c9cda2914f",
+            "verdict": "supported",
+            "reason": "目标是计划；语义授权未给且时间依据不属于关联引文，暂缓符合接口，不能当已找到工作。"
+          },
+          "3": {
+            "sha256": "7237caa7348ce7fb3dda03768cea258ef5abffed8d2057ecaeb495583e6547b6",
+            "verdict": "supported",
+            "reason": "friendship 语义依据引入未绑定 ctx-1，并且 same 与姓名映射缺充分关联证据；暂缓适当。"
+          },
+          "4": {
+            "sha256": "f101fbbc47cc8bcd2528262649be99494325bd818612e3f8454d89f37fea8504",
+            "verdict": "supported",
+            "reason": "支持补充本身并不证明对旧事实影响；暂缓该影响符合契约，同时应保留原文，不应解释成支持消失。"
+          }
+        }
+      }
+    },
+    "promotion": {
+      "records": {
+        "0": {
+          "sha256": "9c51846f5da1d00717f68c7a05260b85c51761d1ece351deb987343b209fdbe2",
+          "verdict": "partially_supported",
+          "reason": "引文确实显示同一公司出现在旧文和晋升句；但 employer 的主体误写公司本身而非 user，单凭未提变化不足以证明旧新状态同时或 unconditional。"
+        },
+        "1": {
+          "sha256": "f6852da7cee031c64fa2bfeff627426e57e03a8edd9b9adf046021d6e4182ac9",
+          "verdict": "partially_supported",
+          "reason": "旧文 Director 与新话语 lead director 的晋升均有来源；recently 只相对说话时间，不能证明该晋升晚于旧记忆事实有效期，更不能自动否定 Director 作为宽泛称谓。"
+        }
+      },
+      "actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "4368518c3747f9a719c762303c31eb32d57831f90a5e995ee9b1d0eeacdfa97c",
+            "verdict": "supported",
+            "reason": "模型将公司当主体且缺独立语义支持，适配后暂缓旧项保留符合 v2 安全契约；人工可据原文进一步判断同雇主。"
+          },
+          "1": {
+            "sha256": "286f996abfb7ed3033025f97f9ea6cbe5d4874a8d4042bb586aa82bf86b50469",
+            "verdict": "supported",
+            "reason": "模型 after 缺相对旧状态先后证明，semantic_support 亦 unknown；即使无精确日期不是自动失败，当前情况暂缓编辑是合理的。"
+          }
+        }
+      },
+      "overall": "schema、引用、依据绑定和覆盖均通过，4 条主引文唯一定位，但结构通过并未证明语义。预期保留同雇主与历史职位并表达晋升；直接规划两条待确认且无编辑/新增，较预期保守。晋升已发生与晋升是否晚于旧事实、旧宽泛称谓是否不再成立需要分别判断。",
+      "safe_actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "4368518c3747f9a719c762303c31eb32d57831f90a5e995ee9b1d0eeacdfa97c",
+            "verdict": "supported",
+            "reason": "模型将公司当主体且缺独立语义支持，适配后暂缓旧项保留符合 v2 安全契约；人工可据原文进一步判断同雇主。"
+          },
+          "1": {
+            "sha256": "286f996abfb7ed3033025f97f9ea6cbe5d4874a8d4042bb586aa82bf86b50469",
+            "verdict": "supported",
+            "reason": "模型 after 缺相对旧状态先后证明，semantic_support 亦 unknown；即使无精确日期不是自动失败，当前情况暂缓编辑是合理的。"
+          }
+        }
+      }
+    },
+    "career_history": {
+      "records": {
+        "0": {
+          "sha256": "c22408c0b7c5e39f3e533e75c8e11a91aaf6f0c45c04a9f85a34b5e421ee6435",
+          "verdict": "unsupported",
+          "reason": "新句只说咨询公司获初始客户；不能由此推断本人所有权、正在经营、旧雇佣已结束或互不兼容，也不能由 lately/finally 判其晚于旧事实。旧整句及新前缀被用作时间依据但不在关联短引文内。"
+        },
+        "1": {
+          "sha256": "d9b507b62151f84138dca6b06cb509a3e7089ba018f1b4349a7d9faf8970c313",
+          "verdict": "unsupported",
+          "reason": "新句未给出本人咨询公司的 founder/operator 职位，不能由 my firm 推断创办者或经营者，更不能得出前职位被替代；时间依据也超出已引用片段。"
+        },
+        "2": {
+          "sha256": "1890f71a3388be7cb93f80164a524fdb6e2b9c07935322beb775d187c08e2f79",
+          "verdict": "partially_supported",
+          "reason": "两位联系人和其联系开门得到用户原句支持，但 new_value 输出数组不符合字符串/null 结构，且 unconditional 未给出完整依据。"
+        }
+      },
+      "actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "0d05606577f9661b1e45bdcb52865969e4c25ba2b6da3219a372863698ab4440",
+            "verdict": "supported",
+            "reason": "联系人可作独立信息，但值类型错误且无独立语义授权，规划器暂缓而不添加符合契约。"
+          },
+          "1": {
+            "sha256": "25fd19268f098e42f96159610ad92cebdd68f99af4e2cf0e2160808891a73cbb",
+            "verdict": "supported",
+            "reason": "新旧雇主变化与时间均无证据，basis 超出引文；暂缓正确，并应保留过去 Blockchain Tech 历史。"
+          },
+          "2": {
+            "sha256": "9247313cdd69c5233657181e0f651a1bc59aff25a1694272ea53801adee3a93f",
+            "verdict": "supported",
+            "reason": "founder/operator 为无证推断，时间依据也不受引用约束；暂缓正确，不能删除 senior developer 历史。"
+          }
+        }
+      },
+      "overall": "schema 失败于联系人 new_value 数组，basis 因前两条时序依据不落在其引用内而失败；5 条主引文来源唯一、覆盖通过。原模型把咨询公司获客扩展为离职、经营/创办并判 change，证据不支持；现有人工预期保留旧历史并新增获客，模型没有独立输出获客记录，直接计划保守无新增或修改，不能误认为历史已核实保留。",
+      "safe_actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "0d05606577f9661b1e45bdcb52865969e4c25ba2b6da3219a372863698ab4440",
+            "verdict": "supported",
+            "reason": "联系人可作独立信息，但值类型错误且无独立语义授权，规划器暂缓而不添加符合契约。"
+          },
+          "1": {
+            "sha256": "25fd19268f098e42f96159610ad92cebdd68f99af4e2cf0e2160808891a73cbb",
+            "verdict": "supported",
+            "reason": "新旧雇主变化与时间均无证据，basis 超出引文；暂缓正确，并应保留过去 Blockchain Tech 历史。"
+          },
+          "2": {
+            "sha256": "9247313cdd69c5233657181e0f651a1bc59aff25a1694272ea53801adee3a93f",
+            "verdict": "supported",
+            "reason": "founder/operator 为无证推断，时间依据也不受引用约束；暂缓正确，不能删除 senior developer 历史。"
+          }
+        }
+      }
+    },
+    "transition": {
+      "records": {
+        "0": {
+          "sha256": "5187a431953f4f9b9ffd8720136b22ab5e14df3d5756e9de20826512e4b2a998",
+          "verdict": "partially_supported",
+          "reason": "已转岗和平衡改善有新引文；finally 不单独证明切换晚于旧记忆有效期，也不证明停止找工作，且 unconditional 和完整替换旧求职状态缺依据。"
+        },
+        "1": {
+          "sha256": "77ba3f9295a72a8885abf8fb309b2eeafcc1b7f54331d29170f710450ee9d1aa",
+          "verdict": "partially_supported",
+          "reason": "新话语确实称现在平衡更健康；是否完全实现此前目标、此前和现在动机同一时间及 unconditional 未证明。"
+        }
+      },
+      "actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "7346beae6f15c8d643c8f0533f8766e7b0fe190b081132e0b53831ca9ba24a86",
+            "verdict": "supported",
+            "reason": "平衡改善有新证据，但未经独立语义授权，暂缓此补充符合 v2 契约。"
+          },
+          "1": {
+            "sha256": "5e09e309ac1215e387d53f8cc9ec7cefcf1b833bc309a4e734e9701f140f0eb4",
+            "verdict": "supported",
+            "reason": "是否继续求职、相对旧事实先后均未明，暂缓覆盖旧状态符合要求。"
+          },
+          "2": {
+            "sha256": "ba8b3ed9785e3b7c23a6c676e619fdb0026c4c90fa9dea2eb2c87462e6540b4b",
+            "verdict": "supported",
+            "reason": "平衡改善不自动证明原求职目标消失或目标完全实现，对旧事实影响待确认适当。"
+          }
+        }
+      },
+      "overall": "schema、主引文、basis 绑定和覆盖都通过，4 条主引文唯一命中；但结构通过不证明语义先后。人工预期保护旧平衡目标、表达已转岗及平衡改善；模型直接计划没有编辑、保留或新增，只列待确认。模型根据 finally 认定结束求职和时间 after 超出了证据；没有具体日期并不是拒绝的直接原因。",
+      "safe_actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "7346beae6f15c8d643c8f0533f8766e7b0fe190b081132e0b53831ca9ba24a86",
+            "verdict": "supported",
+            "reason": "平衡改善有新证据，但未经独立语义授权，暂缓此补充符合 v2 契约。"
+          },
+          "1": {
+            "sha256": "5e09e309ac1215e387d53f8cc9ec7cefcf1b833bc309a4e734e9701f140f0eb4",
+            "verdict": "supported",
+            "reason": "是否继续求职、相对旧事实先后均未明，暂缓覆盖旧状态符合要求。"
+          },
+          "2": {
+            "sha256": "ba8b3ed9785e3b7c23a6c676e619fdb0026c4c90fa9dea2eb2c87462e6540b4b",
+            "verdict": "supported",
+            "reason": "平衡改善不自动证明原求职目标消失或目标完全实现，对旧事实影响待确认适当。"
+          }
+        }
+      }
+    },
+    "skydiving": {
+      "records": {
+        "0": {
+          "sha256": "0302e545080f924a0045fc8ed630380f9f393747f62b0e5a89bcfd58fbf2150d",
+          "verdict": "unsupported",
+          "reason": "新引文支持模拟跳伞刺激及更愿尝新，不证明真实极限运动或旧偏好改变；模型自身声称与旧厌恶矛盾并把模拟/团建写成同一维度的两个互斥枚举而不是组合，同时用 ctx-1 未关联时间依据及发言日期推 after。"
+        },
+        "1": {
+          "sha256": "3e3b236f11100b1bb2716306a70b3df8c766e70ae43648587d320c55175c6c36",
+          "verdict": "unsupported",
+          "reason": "新句没有撤回高受伤风险是旧厌恶理由；模型将未再提及当变化，模拟亦不能证明低风险，更不能据对话日期推事实时序；旧 ctx-1 不在已关联旧引文内。"
+        },
+        "2": {
+          "sha256": "a24a702bb40ef825a9c90f3d84afb54d872dff5a9f602bdecac678f14a8a109c",
+          "verdict": "partially_supported",
+          "reason": "新话语支持现在重视安全，但不证明旧极限运动与安全福祉的整条冲突因果继续成立，亦未证明只接受模拟；old_conditions 使用 same_as_old 违反结构约定。"
+        }
+      },
+      "actions": {
+        "preserve": {
+          "0": {
+            "sha256": "6f684dfc517b436a627bd53f3842d3e2d249fdc336756ca9597c6878fe2f506b",
+            "verdict": "unsupported",
+            "reason": "旧厌恶原文本身可被保留，但此输出宣称其在证据范围之外被确定保留：本条 old unconditional 与 new finite 不可相减，且模型时间依据引用了未关联 ctx-1；规划器应将受影响部分列待确认，而不是把未能计算当成不重叠。"
+          },
+          "1": {
+            "sha256": "5cea5735127918b35988a31f6d7332d02790fafebda732ad4a03246fc9fe61f9",
+            "verdict": "unsupported",
+            "reason": "旧高受伤风险理由没有被新证据推翻，可保留原文；但确定的 outside-evidence-scope 理由无法从 unconditional 对 finite 的条件差和未绑定时间依据推出，漏掉该部分待确认。"
+          }
+        },
+        "uncertain": {
+          "0": {
+            "sha256": "260be55b9674de4bb3a23ea2ebad40bc70ee366454ea6a160e4a7979fd8c5eeb",
+            "verdict": "supported",
+            "reason": "same_as_old 不能放在旧条件，且语义证据不足；该新增暂缓符合 v2 契约，但新话语独立表达安全优先仍可由人工另审。"
+          },
+          "1": {
+            "sha256": "9b5a15194e2b875744337a6fa050a84c817d93fdb69a9e880050818ec75ebd59",
+            "verdict": "supported",
+            "reason": "旧安全冲突关系无法由安全优先单独证实且条件结构错误，暂缓相关影响适当。"
+          }
+        }
+      },
+      "overall": "schema 因旧侧 same_as_old 失败，basis 因前两条引用未关联 ctx-1 失败，8 条主引文唯一且单位关联有效、覆盖通过。模型仍把模拟体验扩展成真实极限运动偏好/风险理由变化，并依据对话时间声称 after；这不成立。v2 直接计划没有修改、新增，u3 列待确认，但对 u1/u2 输出了无条件 preserve：其旧 unconditional 与新 finite 的条件无法求差，且依据错误被空交集路径掩盖；保留原文方向虽可审慎接受，报告必须指出范围理由错误和遗漏待确认。人工预期保留旧顾虑、独立增加模拟体验及安全优先；未授权模型直接添加，因此当前计划比预期更保守。 事后离线保护重算将两条不成立的 preserve 转为待确认；这只是在现有适配层防止不支持的范围计算，并非证明旧条件或模型语义。首次输出原样保存，未重跑模型。",
+      "safe_actions": {
+        "uncertain": {
+          "0": {
+            "sha256": "260be55b9674de4bb3a23ea2ebad40bc70ee366454ea6a160e4a7979fd8c5eeb",
+            "verdict": "supported",
+            "reason": "旧侧 same_as_old 不符合字段规则；独立新事实语义未知，暂缓合适，仍可由人工另审安全优先。"
+          },
+          "1": {
+            "sha256": "b63efea1bac883a01e3737b1a8e1feb2683b8d87395d4046a82b44a595a3e3b3",
+            "verdict": "supported",
+            "reason": "新模拟条件不能从旧无条件范围计算差，旧 ctx-1 时间依据也未绑定；保护后 u1 明确待确认，未把模拟扩展到真实偏好。"
+          },
+          "2": {
+            "sha256": "25ccb8ea1f847e11d9f7b9d3c7f8ccbabe6962b9659a72cbee5aaaad550d1974",
+            "verdict": "supported",
+            "reason": "对旧受伤风险理由的更改没有证据，且新条件范围不可在 v2 中安全求差；保护后 u2 待确认。"
+          },
+          "3": {
+            "sha256": "9b5a15194e2b875744337a6fa050a84c817d93fdb69a9e880050818ec75ebd59",
+            "verdict": "supported",
+            "reason": "u3 旧条件结构错误且安全优先不证明冲突因果保持，旧项影响待确认合适。"
+          }
+        }
+      }
+    }
+  }
+}

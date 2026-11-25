@@ -1,0 +1,1560 @@
+{
+  "case_id": "skydiving",
+  "model_call": false,
+  "provenance": {
+    "artifact_sha256": "a276e0066d48de68a4ffd6226eeca28390a89390db3308639830778282fa1654",
+    "adapter_sha256": "d6c1a3f08c6a77d8908007422a68d710fa5d1ca9941f82ef277afbaff6077b8e",
+    "planner_sha256": "3c46dc51936a19d0b52dcaf08f4f5b1edb2ed8e41ad403fd0c9b4dbdf49042a1",
+    "raw_response_sha256": "4452eb6fd8ada021ff8c82f79763081c0d002cecee49c5a45d02747aab461741"
+  },
+  "initial_plan": {
+    "modify": [],
+    "preserve": [
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "attitude toward extreme sports (e.g., skydiving)",
+        "old_value": "dislikes",
+        "new_value": "found simulated skydiving thrilling; more open to trying new things",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u1",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving)",
+            "position": {
+              "start": 0,
+              "end": 41
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          },
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-2",
+            "source_id": "new-2",
+            "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_quote": null,
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[0].temporal_order.basis[0] not bound to cited same-side source/quote"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "The old statement is from Sep 2025; the new statement uses 'recently' and is timestamped Apr 2026, confirming temporal succession."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "unchanged, earlier evidence, or outside evidence scope"
+      },
+      {
+        "unit_id": "u2",
+        "fact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "reason for disliking extreme sports",
+        "old_value": "high injury risk",
+        "new_value": "not stated as current barrier; explicitly affirms continued prioritization of safety",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u2",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+            "position": {
+              "start": 0,
+              "end": 65
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          },
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "old_position": {
+          "start": 0,
+          "end": 65
+        },
+        "new_quote": null,
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[1].temporal_order.basis[0] not bound to cited same-side source/quote"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "Same temporal basis as previous record: old statement predates new by ~7 months; 'recently' anchors new event in Apr 2026."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "unchanged, earlier evidence, or outside evidence scope"
+      }
+    ],
+    "uncertain": [
+      {
+        "unit_id": "u3",
+        "fact": "conflicting with commitment to safety and well-being",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "commitment to safety and well-being",
+        "old_value": "conflicting with extreme sports",
+        "new_value": "still prioritized, even amid new thrill-seeking",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u3",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "conflicting with commitment to safety and well-being",
+            "position": {
+              "start": 67,
+              "end": 119
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "new_position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[2].old_conditions cannot use same_as_old"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "I still prioritize safety, of course."
+          }
+        ],
+        "value": "still prioritized, even amid new thrill-seeking",
+        "scope": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated skydiving",
+              "team-building event"
+            ]
+          }
+        },
+        "status": "asserted",
+        "reason": "upstream validation errors: ['records[2].old_conditions cannot use same_as_old']"
+      },
+      {
+        "unit_id": "u3",
+        "fact": "conflicting with commitment to safety and well-being",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "commitment to safety and well-being",
+        "old_value": "conflicting with extreme sports",
+        "new_value": "still prioritized, even amid new thrill-seeking",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u3",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "conflicting with commitment to safety and well-being",
+            "position": {
+              "start": 67,
+              "end": 119
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "new_position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[2].old_conditions cannot use same_as_old"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "I still prioritize safety, of course."
+          }
+        ],
+        "reason": "upstream validation errors: ['records[2].old_conditions cannot use same_as_old']"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "alignment_index": 0,
+        "side": "old",
+        "unit_id": "u1",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving)",
+        "position": {
+          "start": 0,
+          "end": 41
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "unsplit-new-2",
+        "source_id": "new-2",
+        "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "old",
+        "unit_id": "u2",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "position": {
+          "start": 0,
+          "end": 65
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 2,
+        "side": "old",
+        "unit_id": "u3",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "conflicting with commitment to safety and well-being",
+        "position": {
+          "start": 67,
+          "end": 119
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 2,
+        "side": "new",
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "status": "valid",
+        "reason": null
+      }
+    ]
+  },
+  "safe_plan": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": "u3",
+        "fact": "conflicting with commitment to safety and well-being",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "commitment to safety and well-being",
+        "old_value": "conflicting with extreme sports",
+        "new_value": "still prioritized, even amid new thrill-seeking",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u3",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "conflicting with commitment to safety and well-being",
+            "position": {
+              "start": 67,
+              "end": 119
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "new_position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[2].old_conditions cannot use same_as_old"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "I still prioritize safety, of course."
+          }
+        ],
+        "value": "still prioritized, even amid new thrill-seeking",
+        "scope": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated skydiving",
+              "team-building event"
+            ]
+          }
+        },
+        "status": "asserted",
+        "reason": "upstream validation errors: ['records[2].old_conditions cannot use same_as_old']"
+      },
+      {
+        "unit_id": "u1",
+        "fact": "Dislikes extreme sports (e.g., skydiving)",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "attitude toward extreme sports (e.g., skydiving)",
+        "old_value": "dislikes",
+        "new_value": "found simulated skydiving thrilling; more open to trying new things",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u1",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving)",
+            "position": {
+              "start": 0,
+              "end": 41
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          },
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-2",
+            "source_id": "new-2",
+            "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Dislikes extreme sports (e.g., skydiving)",
+        "old_position": {
+          "start": 0,
+          "end": 41
+        },
+        "new_quote": null,
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[0].temporal_order.basis[0] not bound to cited same-side source/quote",
+          "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "The old statement is from Sep 2025; the new statement uses 'recently' and is timestamped Apr 2026, confirming temporal succession."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "upstream validation errors: ['records[0].temporal_order.basis[0] not bound to cited same-side source/quote', 'planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope']"
+      },
+      {
+        "unit_id": "u2",
+        "fact": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "relation": "change",
+        "subject": "I",
+        "attribute": "reason for disliking extreme sports",
+        "old_value": "high injury risk",
+        "new_value": "not stated as current barrier; explicitly affirms continued prioritization of safety",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u2",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+            "position": {
+              "start": 0,
+              "end": 65
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+            "position": {
+              "start": 0,
+              "end": 129
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+            "status": "valid",
+            "reason": null
+          },
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "old_position": {
+          "start": 0,
+          "end": 65
+        },
+        "new_quote": null,
+        "new_position": null,
+        "source_id": null,
+        "source_ref": null,
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[1].temporal_order.basis[0] not bound to cited same-side source/quote",
+          "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "Same temporal basis as previous record: old statement predates new by ~7 months; 'recently' anchors new event in Apr 2026."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "upstream validation errors: ['records[1].temporal_order.basis[0] not bound to cited same-side source/quote', 'planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope']"
+      },
+      {
+        "unit_id": "u3",
+        "fact": "conflicting with commitment to safety and well-being",
+        "relation": "supplement",
+        "subject": "I",
+        "attribute": "commitment to safety and well-being",
+        "old_value": "conflicting with extreme sports",
+        "new_value": "still prioritized, even amid new thrill-seeking",
+        "old_quotes": [
+          {
+            "side": "old",
+            "unit_id": "u3",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "conflicting with commitment to safety and well-being",
+            "position": {
+              "start": 67,
+              "end": 119
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "new_quotes": [
+          {
+            "side": "new",
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+            "position": {
+              "start": 0,
+              "end": 105
+            },
+            "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+            "status": "valid",
+            "reason": null
+          }
+        ],
+        "old_quote": "conflicting with commitment to safety and well-being",
+        "old_position": {
+          "start": 67,
+          "end": 119
+        },
+        "new_quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "new_position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_id": "new-8",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "memory_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "note": null,
+        "time_note": null,
+        "missing_reasons": [],
+        "validation_errors": [
+          "records[2].old_conditions cannot use same_as_old"
+        ],
+        "unknowns": [],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+        },
+        "semantic_support": "unknown",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "I still prioritize safety, of course."
+          }
+        ],
+        "reason": "upstream validation errors: ['records[2].old_conditions cannot use same_as_old']"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "alignment_index": 0,
+        "side": "old",
+        "unit_id": "u1",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving)",
+        "position": {
+          "start": 0,
+          "end": 41
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 0,
+        "side": "new",
+        "unit_id": "unsplit-new-2",
+        "source_id": "new-2",
+        "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/2/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "old",
+        "unit_id": "u2",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "position": {
+          "start": 0,
+          "end": 65
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/0/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 1,
+        "side": "new",
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 2,
+        "side": "old",
+        "unit_id": "u3",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "conflicting with commitment to safety and well-being",
+        "position": {
+          "start": 67,
+          "end": 119
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/before.json",
+        "status": "valid",
+        "reason": null
+      },
+      {
+        "alignment_index": 2,
+        "side": "new",
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_009/input.json#/raw_dialogue/8/content",
+        "status": "valid",
+        "reason": null
+      }
+    ]
+  },
+  "adapted_alignments": [
+    {
+      "unit_id": "u1",
+      "relation": "change",
+      "old_subject": "I",
+      "new_subject": "I",
+      "old_attribute": "attitude toward extreme sports (e.g., skydiving)",
+      "new_attribute": "attitude toward extreme sports (e.g., skydiving)",
+      "old_value": "dislikes",
+      "new_value": "found simulated skydiving thrilling; more open to trying new things",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "modality": "asserted",
+      "old_quotes": [
+        {
+          "unit_id": "u1",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "Dislikes extreme sports (e.g., skydiving)"
+        }
+      ],
+      "new_quotes": [
+        {
+          "unit_id": "manually_mapped_new",
+          "source_id": "new-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        },
+        {
+          "unit_id": "unsplit-new-2",
+          "source_id": "new-2",
+          "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+        }
+      ],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "side": "old",
+            "source_id": "ctx-1",
+            "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+          },
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "explanation": "The old statement is from Sep 2025; the new statement uses 'recently' and is timestamped Apr 2026, confirming temporal succession."
+      },
+      "semantic_rationale": "The new statements report direct positive affect ('thrilling', 'enjoy') toward a skydiving-adjacent activity under controlled conditions, directly contradicting the prior categorical dislike — but only for simulated, not real, skydiving.",
+      "semantic_basis": [
+        {
+          "side": "new",
+          "source_id": "new-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        }
+      ],
+      "uncertainties": [],
+      "semantic_support": "unknown",
+      "validation_errors": [
+        "records[0].temporal_order.basis[0] not bound to cited same-side source/quote",
+        "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope"
+      ],
+      "scope_guard": {
+        "status": "deferred",
+        "reason": "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope",
+        "original_new_conditions": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated",
+              "team-building event"
+            ]
+          }
+        }
+      },
+      "missing_reasons": [],
+      "raw_record": {
+        "unit_id": "u1",
+        "relation": "change",
+        "old_subject": "I",
+        "new_subject": "I",
+        "old_attribute": "attitude toward extreme sports (e.g., skydiving)",
+        "new_attribute": "attitude toward extreme sports (e.g., skydiving)",
+        "old_value": "dislikes",
+        "new_value": "found simulated skydiving thrilling; more open to trying new things",
+        "old_conditions": {
+          "kind": "unconditional"
+        },
+        "new_conditions": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated",
+              "team-building event"
+            ]
+          }
+        },
+        "modality": "asserted",
+        "old_quotes": [
+          {
+            "unit_id": "u1",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving)"
+          }
+        ],
+        "new_quotes": [
+          {
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          {
+            "unit_id": "unsplit-new-2",
+            "source_id": "new-2",
+            "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things."
+          }
+        ],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I dislike extreme sports (such as skydiving). I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "The old statement is from Sep 2025; the new statement uses 'recently' and is timestamped Apr 2026, confirming temporal succession."
+        },
+        "semantic_rationale": "The new statements report direct positive affect ('thrilling', 'enjoy') toward a skydiving-adjacent activity under controlled conditions, directly contradicting the prior categorical dislike — but only for simulated, not real, skydiving.",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "unit_id": "u2",
+      "relation": "change",
+      "old_subject": "I",
+      "new_subject": "I",
+      "old_attribute": "reason for disliking extreme sports",
+      "new_attribute": "reason for disliking extreme sports",
+      "old_value": "high injury risk",
+      "new_value": "not stated as current barrier; explicitly affirms continued prioritization of safety",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "modality": "asserted",
+      "old_quotes": [
+        {
+          "unit_id": "u2",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+        }
+      ],
+      "new_quotes": [
+        {
+          "unit_id": "manually_mapped_new",
+          "source_id": "new-0",
+          "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+        },
+        {
+          "unit_id": "unsplit-new-8",
+          "source_id": "new-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ],
+      "temporal_order": {
+        "relation": "after",
+        "basis": [
+          {
+            "side": "old",
+            "source_id": "ctx-1",
+            "quote": "I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+          },
+          {
+            "side": "new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          }
+        ],
+        "explanation": "Same temporal basis as previous record: old statement predates new by ~7 months; 'recently' anchors new event in Apr 2026."
+      },
+      "semantic_rationale": "The old claim ties dislike to injury risk as a general, unconditional barrier. The new statements do not retract that risk assessment, but show willingness to engage *only* in a low-risk variant (simulated), while reaffirming safety as a continuing priority — indicating refinement, not rejection, of the original rationale.",
+      "semantic_basis": [
+        {
+          "side": "new",
+          "source_id": "new-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ],
+      "uncertainties": [],
+      "semantic_support": "unknown",
+      "validation_errors": [
+        "records[1].temporal_order.basis[0] not bound to cited same-side source/quote",
+        "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope"
+      ],
+      "scope_guard": {
+        "status": "deferred",
+        "reason": "planner_scope_unrepresentable: v2 cannot partition unconditional old scope by finite new scope",
+        "original_new_conditions": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated",
+              "team-building event"
+            ]
+          }
+        }
+      },
+      "missing_reasons": [],
+      "raw_record": {
+        "unit_id": "u2",
+        "relation": "change",
+        "old_subject": "I",
+        "new_subject": "I",
+        "old_attribute": "reason for disliking extreme sports",
+        "new_attribute": "reason for disliking extreme sports",
+        "old_value": "high injury risk",
+        "new_value": "not stated as current barrier; explicitly affirms continued prioritization of safety",
+        "old_conditions": {
+          "kind": "unconditional"
+        },
+        "new_conditions": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated",
+              "team-building event"
+            ]
+          }
+        },
+        "modality": "asserted",
+        "old_quotes": [
+          {
+            "unit_id": "u2",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk"
+          }
+        ],
+        "new_quotes": [
+          {
+            "unit_id": "manually_mapped_new",
+            "source_id": "new-0",
+            "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+          },
+          {
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "temporal_order": {
+          "relation": "after",
+          "basis": [
+            {
+              "side": "old",
+              "source_id": "ctx-1",
+              "quote": "I avoid extreme sports because they carry a high risk of injury, which goes against my commitment to safety and well-being."
+            },
+            {
+              "side": "new",
+              "source_id": "new-0",
+              "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!"
+            }
+          ],
+          "explanation": "Same temporal basis as previous record: old statement predates new by ~7 months; 'recently' anchors new event in Apr 2026."
+        },
+        "semantic_rationale": "The old claim ties dislike to injury risk as a general, unconditional barrier. The new statements do not retract that risk assessment, but show willingness to engage *only* in a low-risk variant (simulated), while reaffirming safety as a continuing priority — indicating refinement, not rejection, of the original rationale.",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "unit_id": "u3",
+      "relation": "supplement",
+      "old_subject": "I",
+      "new_subject": "I",
+      "old_attribute": "commitment to safety and well-being",
+      "new_attribute": "commitment to safety and well-being",
+      "old_value": "conflicting with extreme sports",
+      "new_value": "still prioritized, even amid new thrill-seeking",
+      "old_conditions": {
+        "kind": "unknown"
+      },
+      "new_conditions": {
+        "kind": "finite",
+        "dimensions": {
+          "context": [
+            "simulated skydiving",
+            "team-building event"
+          ]
+        }
+      },
+      "modality": "asserted",
+      "old_quotes": [
+        {
+          "unit_id": "u3",
+          "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+          "quote": "conflicting with commitment to safety and well-being"
+        }
+      ],
+      "new_quotes": [
+        {
+          "unit_id": "unsplit-new-8",
+          "source_id": "new-8",
+          "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+        }
+      ],
+      "temporal_order": {
+        "relation": "same",
+        "basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+      },
+      "semantic_rationale": "The new utterance does not negate the old conflict claim; instead, it clarifies that the commitment remains active and constrains the scope of acceptable experiences (e.g., simulated only), thereby refining rather than replacing the prior association.",
+      "semantic_basis": [
+        {
+          "side": "new",
+          "source_id": "new-8",
+          "quote": "I still prioritize safety, of course."
+        }
+      ],
+      "uncertainties": [],
+      "semantic_support": "unknown",
+      "validation_errors": [
+        "records[2].old_conditions cannot use same_as_old"
+      ],
+      "missing_reasons": [],
+      "raw_record": {
+        "unit_id": "u3",
+        "relation": "supplement",
+        "old_subject": "I",
+        "new_subject": "I",
+        "old_attribute": "commitment to safety and well-being",
+        "new_attribute": "commitment to safety and well-being",
+        "old_value": "conflicting with extreme sports",
+        "new_value": "still prioritized, even amid new thrill-seeking",
+        "old_conditions": {
+          "kind": "same_as_old"
+        },
+        "new_conditions": {
+          "kind": "finite",
+          "dimensions": {
+            "context": [
+              "simulated skydiving",
+              "team-building event"
+            ]
+          }
+        },
+        "modality": "asserted",
+        "old_quotes": [
+          {
+            "unit_id": "u3",
+            "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+            "quote": "conflicting with commitment to safety and well-being"
+          }
+        ],
+        "new_quotes": [
+          {
+            "unit_id": "unsplit-new-8",
+            "source_id": "new-8",
+            "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+          }
+        ],
+        "temporal_order": {
+          "relation": "same",
+          "basis": [
+            {
+              "side": "new",
+              "source_id": "new-8",
+              "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course."
+            }
+          ],
+          "explanation": "The new statement affirms continuity of the safety commitment — no temporal shift implied; it coexists with the new experience."
+        },
+        "semantic_rationale": "The new utterance does not negate the old conflict claim; instead, it clarifies that the commitment remains active and constrains the scope of acceptable experiences (e.g., simulated only), thereby refining rather than replacing the prior association.",
+        "semantic_basis": [
+          {
+            "side": "new",
+            "source_id": "new-8",
+            "quote": "I still prioritize safety, of course."
+          }
+        ],
+        "uncertainties": []
+      }
+    }
+  ],
+  "validation": {
+    "status": "failed",
+    "errors": [
+      "records[0].temporal_order.basis[0] not bound to cited same-side source/quote",
+      "records[1].temporal_order.basis[0] not bound to cited same-side source/quote",
+      "records[2].old_conditions cannot use same_as_old"
+    ],
+    "schema_status": "failed",
+    "quote_status": "passed",
+    "basis_status": "failed",
+    "coverage_status": "passed",
+    "schema_errors": [
+      "records[2].old_conditions cannot use same_as_old"
+    ],
+    "quote_errors": [],
+    "basis_errors": [
+      "records[0].temporal_order.basis[0] not bound to cited same-side source/quote",
+      "records[1].temporal_order.basis[0] not bound to cited same-side source/quote"
+    ],
+    "coverage_errors": [],
+    "record_errors": [
+      [
+        "records[0].temporal_order.basis[0] not bound to cited same-side source/quote"
+      ],
+      [
+        "records[1].temporal_order.basis[0] not bound to cited same-side source/quote"
+      ],
+      [
+        "records[2].old_conditions cannot use same_as_old"
+      ]
+    ],
+    "quote_checks": [
+      {
+        "record_index": 0,
+        "side": "old",
+        "index": 0,
+        "unit_id": "u1",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving)",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 41
+        },
+        "reason": null
+      },
+      {
+        "record_index": 0,
+        "side": "new",
+        "index": 0,
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "reason": null
+      },
+      {
+        "record_index": 0,
+        "side": "new",
+        "index": 1,
+        "unit_id": "unsplit-new-2",
+        "source_id": "new-2",
+        "quote": "Yeah, the adrenaline rush was something I didn't expect to enjoy so much. It's definitely made me more open to trying new things.",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "reason": null
+      },
+      {
+        "record_index": 1,
+        "side": "old",
+        "index": 0,
+        "unit_id": "u2",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "Dislikes extreme sports (e.g., skydiving) due to high injury risk",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 65
+        },
+        "reason": null
+      },
+      {
+        "record_index": 1,
+        "side": "new",
+        "index": 0,
+        "unit_id": "manually_mapped_new",
+        "source_id": "new-0",
+        "quote": "Hey, I recently had an interesting experience at a team-building event where I tried simulated skydiving. It was quite thrilling!",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 129
+        },
+        "reason": null
+      },
+      {
+        "record_index": 1,
+        "side": "new",
+        "index": 1,
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "reason": null
+      },
+      {
+        "record_index": 2,
+        "side": "old",
+        "index": 0,
+        "unit_id": "u3",
+        "source_id": "e1d4f8f9-0520-427d-94fd-a2ac0ee69d03",
+        "quote": "conflicting with commitment to safety and well-being",
+        "status": "valid",
+        "position": {
+          "start": 67,
+          "end": 119
+        },
+        "reason": null
+      },
+      {
+        "record_index": 2,
+        "side": "new",
+        "index": 0,
+        "unit_id": "unsplit-new-8",
+        "source_id": "new-8",
+        "quote": "For now, I'm just enjoying the thrill and seeing where it takes me. I still prioritize safety, of course.",
+        "status": "valid",
+        "position": {
+          "start": 0,
+          "end": 105
+        },
+        "reason": null
+      }
+    ],
+    "coverage": {
+      "unhandled_old_unit_ids": [],
+      "unhandled_new_unit_ids": [],
+      "unmatched_old_unit_ids": []
+    }
+  },
+  "status": "completed_offline"
+}

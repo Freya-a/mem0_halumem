@@ -1,0 +1,318 @@
+{
+  "case_id": "career_history",
+  "human_alignment": {
+    "modify": [],
+    "preserve": [
+      {
+        "unit_id": "employer",
+        "fact": "historical_employer",
+        "relation": "unrelated",
+        "old_quote": "Blockchain Tech",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "old_position": {
+          "start": 43,
+          "end": 58
+        },
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "old_value": "Blockchain Tech",
+        "new_value": "secured initial clients",
+        "subject": "user",
+        "attribute": "career.historical_employer",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "missing_reasons": [],
+        "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "unchanged or outside evidence scope"
+      },
+      {
+        "unit_id": "title",
+        "fact": "historical_title",
+        "relation": "unrelated",
+        "old_quote": "senior developer",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "old_position": {
+          "start": 23,
+          "end": 39
+        },
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "old_value": "senior developer",
+        "new_value": "secured initial clients",
+        "subject": "user",
+        "attribute": "career.historical_title",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "missing_reasons": [],
+        "note": "保留过去 senior developer 的历史；咨询公司获客不否定过去职位，不能推断具体时间或当前身份。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "unchanged or outside evidence scope"
+      }
+    ],
+    "uncertain": [
+      {
+        "unit_id": "employer",
+        "fact": "historical_employer",
+        "relation": "unrelated",
+        "old_quote": "Blockchain Tech",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "old_position": {
+          "start": 43,
+          "end": 58
+        },
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "old_value": "Blockchain Tech",
+        "new_value": "secured initial clients",
+        "subject": "user",
+        "attribute": "career.historical_employer",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "missing_reasons": [],
+        "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "具体离职或转型时间未知；咨询公司获客不证明当前雇佣关系或所有权细节。"
+      }
+    ],
+    "add": [
+      {
+        "unit_id": null,
+        "relation": "supplement",
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "subject": "user",
+        "attribute": "career.consulting_firm",
+        "value": "secured initial clients",
+        "scope": {
+          "kind": "unknown"
+        },
+        "missing_reasons": [],
+        "status": "asserted",
+        "reason": "independent addition"
+      }
+    ],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": null,
+        "source_id": "new-0",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "status": "valid",
+        "new_error": null
+      },
+      {
+        "unit_id": "employer",
+        "alignment_index": 0,
+        "old_quote": "Blockchain Tech",
+        "source_id": "new-0",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "old_position": {
+          "start": 43,
+          "end": 58
+        },
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "title",
+        "alignment_index": 0,
+        "old_quote": "senior developer",
+        "source_id": "new-0",
+        "new_quote": "my consulting firm finally secured some initial clients",
+        "old_position": {
+          "start": 23,
+          "end": 39
+        },
+        "new_position": {
+          "start": 48,
+          "end": 103
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      }
+    ]
+  },
+  "saved_v3_alignment": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": null,
+        "relation": "unrelated",
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+        "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "new_position": {
+          "start": 0,
+          "end": 201
+        },
+        "subject": null,
+        "attribute": "network_support",
+        "value": null,
+        "scope": null,
+        "missing_reasons": [
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "employer",
+        "fact": "historical_employer",
+        "relation": "change",
+        "old_quote": "Blockchain Tech",
+        "new_quote": "my consulting firm",
+        "old_position": {
+          "start": 43,
+          "end": 58
+        },
+        "new_position": {
+          "start": 48,
+          "end": 66
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "employer",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "missing_reasons": [
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "title",
+        "fact": "historical_title",
+        "relation": "change",
+        "old_quote": "senior developer",
+        "new_quote": "consulting firm",
+        "old_position": {
+          "start": 23,
+          "end": 39
+        },
+        "new_position": {
+          "start": 51,
+          "end": 66
+        },
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "title",
+        "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+        "missing_reasons": [
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": null,
+        "source_id": "new-2",
+        "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+        "new_position": {
+          "start": 0,
+          "end": 201
+        },
+        "status": "invalid",
+        "new_error": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "employer",
+        "alignment_index": 0,
+        "old_quote": "Blockchain Tech",
+        "source_id": "new-0",
+        "new_quote": "my consulting firm",
+        "old_position": {
+          "start": 43,
+          "end": 58
+        },
+        "new_position": {
+          "start": 48,
+          "end": 66
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "title",
+        "alignment_index": 0,
+        "old_quote": "senior developer",
+        "source_id": "new-0",
+        "new_quote": "consulting firm",
+        "old_position": {
+          "start": 23,
+          "end": 39
+        },
+        "new_position": {
+          "start": 51,
+          "end": 66
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      }
+    ]
+  }
+}

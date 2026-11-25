@@ -1,0 +1,4287 @@
+{
+  "case_id": "career_history",
+  "human_alignment": {
+    "planner_v1": {
+      "modify": [],
+      "preserve": [
+        {
+          "unit_id": "employer",
+          "fact": "historical_employer",
+          "relation": "unrelated",
+          "old_quote": "Blockchain Tech",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "old_position": {
+            "start": 43,
+            "end": 58
+          },
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "Blockchain Tech",
+          "new_value": "secured initial clients",
+          "subject": "user",
+          "attribute": "career.historical_employer",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "missing_reasons": [],
+          "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "unchanged or outside evidence scope"
+        },
+        {
+          "unit_id": "title",
+          "fact": "historical_title",
+          "relation": "unrelated",
+          "old_quote": "senior developer",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "old_position": {
+            "start": 23,
+            "end": 39
+          },
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "senior developer",
+          "new_value": "secured initial clients",
+          "subject": "user",
+          "attribute": "career.historical_title",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "missing_reasons": [],
+          "note": "保留过去 senior developer 的历史；咨询公司获客不否定过去职位，不能推断具体时间或当前身份。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "unchanged or outside evidence scope"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "employer",
+          "fact": "historical_employer",
+          "relation": "unrelated",
+          "old_quote": "Blockchain Tech",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "old_position": {
+            "start": 43,
+            "end": 58
+          },
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "old_value": "Blockchain Tech",
+          "new_value": "secured initial clients",
+          "subject": "user",
+          "attribute": "career.historical_employer",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "missing_reasons": [],
+          "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "reason": "具体离职或转型时间未知；咨询公司获客不证明当前雇佣关系或所有权细节。"
+        }
+      ],
+      "add": [
+        {
+          "unit_id": null,
+          "relation": "supplement",
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "subject": "user",
+          "attribute": "career.consulting_firm",
+          "value": "secured initial clients",
+          "scope": {
+            "kind": "unknown"
+          },
+          "missing_reasons": [],
+          "status": "asserted",
+          "reason": "independent addition"
+        }
+      ],
+      "editable_spans": [],
+      "protected_facts": [],
+      "quote_checks": [
+        {
+          "unit_id": null,
+          "source_id": "new-0",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "status": "valid",
+          "new_error": null
+        },
+        {
+          "unit_id": "employer",
+          "alignment_index": 0,
+          "old_quote": "Blockchain Tech",
+          "source_id": "new-0",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "old_position": {
+            "start": 43,
+            "end": 58
+          },
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        },
+        {
+          "unit_id": "title",
+          "alignment_index": 0,
+          "old_quote": "senior developer",
+          "source_id": "new-0",
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "old_position": {
+            "start": 23,
+            "end": 39
+          },
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "status": "valid",
+          "old_error": null,
+          "new_error": null
+        }
+      ]
+    },
+    "planner_v2": {
+      "modify": [],
+      "preserve": [
+        {
+          "unit_id": "employer",
+          "fact": "historical_employer",
+          "relation": "unrelated",
+          "subject": "user",
+          "attribute": "career.historical_employer",
+          "old_value": "Blockchain Tech",
+          "new_value": "secured initial clients",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "employer",
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Blockchain Tech",
+              "position": {
+                "start": 43,
+                "end": 58
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "employer",
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "position": {
+                "start": 48,
+                "end": 103
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Blockchain Tech",
+          "old_position": {
+            "start": 43,
+            "end": 58
+          },
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Blockchain Tech",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "side": "new"
+            }
+          ],
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "unchanged, earlier evidence, or outside evidence scope"
+        },
+        {
+          "unit_id": "title",
+          "fact": "historical_title",
+          "relation": "unrelated",
+          "subject": "user",
+          "attribute": "career.historical_title",
+          "old_value": "senior developer",
+          "new_value": "secured initial clients",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "title",
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "senior developer",
+              "position": {
+                "start": 23,
+                "end": 39
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "title",
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "position": {
+                "start": 48,
+                "end": 103
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "senior developer",
+          "old_position": {
+            "start": 23,
+            "end": 39
+          },
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "note": "保留过去 senior developer 的历史；咨询公司获客不否定过去职位，不能推断具体时间或当前身份。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "senior developer",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "side": "new"
+            }
+          ],
+          "scope": {
+            "kind": "unconditional"
+          },
+          "reason": "unchanged, earlier evidence, or outside evidence scope"
+        }
+      ],
+      "uncertain": [
+        {
+          "unit_id": "employer",
+          "fact": "historical_employer",
+          "relation": "unrelated",
+          "subject": "user",
+          "attribute": "career.historical_employer",
+          "old_value": "Blockchain Tech",
+          "new_value": "secured initial clients",
+          "old_quotes": [
+            {
+              "side": "old",
+              "unit_id": "employer",
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Blockchain Tech",
+              "position": {
+                "start": 43,
+                "end": 58
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": "employer",
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "position": {
+                "start": 48,
+                "end": 103
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": "Blockchain Tech",
+          "old_position": {
+            "start": 43,
+            "end": 58
+          },
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "note": "保留过去 Blockchain Tech 雇主关系；咨询公司获客不否定过去雇佣关系，不能推断具体时间或当前状态。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "quote": "Blockchain Tech",
+              "side": "old"
+            },
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "side": "new"
+            }
+          ],
+          "reason": "具体离职或转型时间未知；咨询公司获客不证明当前雇佣关系或所有权细节。"
+        }
+      ],
+      "add": [
+        {
+          "unit_id": null,
+          "fact": null,
+          "relation": "supplement",
+          "subject": "user",
+          "attribute": "career.consulting_firm",
+          "old_value": null,
+          "new_value": "secured initial clients",
+          "old_quotes": [],
+          "new_quotes": [
+            {
+              "side": "new",
+              "unit_id": null,
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "position": {
+                "start": 48,
+                "end": 103
+              },
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "status": "valid",
+              "reason": null
+            }
+          ],
+          "old_quote": null,
+          "old_position": null,
+          "new_quote": "my consulting firm finally secured some initial clients",
+          "new_position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_id": "new-0",
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "memory_id": null,
+          "old_source_ref": null,
+          "note": "咨询公司获得客户可独立新增；历史雇主不因此失效。",
+          "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+          "missing_reasons": [],
+          "validation_errors": [],
+          "unknowns": [],
+          "temporal_order": null,
+          "semantic_support": "supported",
+          "semantic_basis": [
+            {
+              "source_id": "new-0",
+              "quote": "my consulting firm finally secured some initial clients",
+              "side": "new"
+            }
+          ],
+          "value": "secured initial clients",
+          "scope": {
+            "kind": "unknown"
+          },
+          "status": "asserted",
+          "reason": "independent evidence-supported addition"
+        }
+      ],
+      "editable_spans": [],
+      "protected_facts": [],
+      "quote_checks": [
+        {
+          "alignment_index": 0,
+          "side": "new",
+          "unit_id": null,
+          "source_id": "new-0",
+          "quote": "my consulting firm finally secured some initial clients",
+          "position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 1,
+          "side": "old",
+          "unit_id": "employer",
+          "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "quote": "Blockchain Tech",
+          "position": {
+            "start": 43,
+            "end": 58
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 1,
+          "side": "new",
+          "unit_id": "employer",
+          "source_id": "new-0",
+          "quote": "my consulting firm finally secured some initial clients",
+          "position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 2,
+          "side": "old",
+          "unit_id": "title",
+          "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+          "quote": "senior developer",
+          "position": {
+            "start": 23,
+            "end": 39
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+          "status": "valid",
+          "reason": null
+        },
+        {
+          "alignment_index": 2,
+          "side": "new",
+          "unit_id": "title",
+          "source_id": "new-0",
+          "quote": "my consulting firm finally secured some initial clients",
+          "position": {
+            "start": 48,
+            "end": 103
+          },
+          "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+          "status": "valid",
+          "reason": null
+        }
+      ]
+    }
+  },
+  "models": {
+    "v1": {
+      "artifact": "variants/evidence_aligner/runs/fixed_five_20261120/career_history.json",
+      "upstream_status": "passed",
+      "raw_record_count": 4,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": "Blockchain Tech",
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "my consulting firm finally secured some initial clients",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Blockchain Tech",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "change_type": "state_change",
+                "old_value": "Blockchain Tech",
+                "new_claim": "consulting firm",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "title",
+              "new_attribute": "title",
+              "old_value": "senior developer",
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "my consulting firm finally secured some initial clients",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized",
+                "model unknown: exact title or role name in the consulting firm"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "senior developer",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "title",
+                "change_type": "state_change",
+                "old_value": "senior developer",
+                "new_claim": "founder/owner of consulting firm",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": [
+                  "exact title or role name in the consulting firm"
+                ]
+              }
+            },
+            {
+              "unit_id": null,
+              "relation": "unrelated",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "client_milestone",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "new_information",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": null,
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "client_milestone",
+                "change_type": "new_information",
+                "old_value": null,
+                "new_claim": "consulting firm secured some initial clients",
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": null,
+              "relation": "unrelated",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "network_contact_effectiveness",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "source_id": "new-2",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v1",
+              "upstream_relation": "new_information",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": null,
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "source_id": "new-2"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "unsplit-new-2"
+                ],
+                "attribute": "network_contact_effectiveness",
+                "change_type": "new_information",
+                "old_value": null,
+                "new_claim": "MooreSandra and GonzalezMary were instrumental; their connections opened doors",
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "source_id": "new-2",
+                    "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "relation": "unrelated",
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "subject": null,
+                "attribute": "client_milestone",
+                "value": null,
+                "scope": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": null,
+                "relation": "unrelated",
+                "source_id": "new-2",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "subject": null,
+                "attribute": "network_contact_effectiveness",
+                "value": null,
+                "scope": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "change",
+                "old_quote": "Blockchain Tech",
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": "Blockchain Tech",
+                "new_value": null,
+                "subject": null,
+                "attribute": "employer",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "change",
+                "old_quote": "senior developer",
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": "senior developer",
+                "new_value": null,
+                "subject": null,
+                "attribute": "title",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized",
+                  "model unknown: exact title or role name in the consulting firm"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized; model unknown: exact title or role name in the consulting firm"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": null,
+                "source_id": "new-0",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "status": "invalid",
+                "new_error": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": null,
+                "source_id": "new-2",
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "status": "invalid",
+                "new_error": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Blockchain Tech",
+                "source_id": "new-0",
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "senior developer",
+                "source_id": "new-0",
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm finally secured some initial clients",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm finally secured some initial clients",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 2,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 3,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "explicit_source_id": "new-2",
+              "candidate_source_ids": [
+                "new-2"
+              ],
+              "source_id": "new-2",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 6,
+            "source_resolved": 6,
+            "unique_correct_side_on_disk": 6,
+            "list_text_retained": 6,
+            "list_resolved_with_source": 6,
+            "scalar_projection": 6,
+            "scalar_source_valid": 6,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 4
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": "Blockchain Tech",
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "my consulting firm finally secured some initial clients",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "consulting firm",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "change_type": "state_change",
+                "old_value": "Blockchain Tech",
+                "new_claim": "consulting firm",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "title",
+              "new_attribute": "title",
+              "old_value": "senior developer",
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "my consulting firm finally secured some initial clients",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm finally secured some initial clients",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "founder/owner of consulting firm",
+              "unknowns": [
+                "exact title or role name in the consulting firm"
+              ],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "title",
+                "change_type": "state_change",
+                "old_value": "senior developer",
+                "new_claim": "founder/owner of consulting firm",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients"
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": [
+                  "exact title or role name in the consulting firm"
+                ]
+              }
+            },
+            {
+              "unit_id": null,
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "new_information",
+              "upstream_relation": "new_information",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "client_milestone",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_quote_source_id": null,
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [
+                {
+                  "source_id": "new-0",
+                  "quote": "lately"
+                }
+              ],
+              "old_claim": null,
+              "new_claim": "consulting firm secured some initial clients",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "client_milestone",
+                "change_type": "new_information",
+                "old_value": null,
+                "new_claim": "consulting firm secured some initial clients",
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "lately"
+                  }
+                ],
+                "event_date": null,
+                "unknowns": []
+              }
+            },
+            {
+              "unit_id": null,
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "unsplit-new-2"
+              ],
+              "relation": "new_information",
+              "upstream_relation": "new_information",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "network_contact_effectiveness",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "source_id": "new-2",
+              "old_quote_source_id": null,
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "unit_id": "unsplit-new-2"
+                }
+              ],
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "unit_id": "unsplit-new-2"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": "MooreSandra and GonzalezMary were instrumental; their connections opened doors",
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v1",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "unsplit-new-2"
+                ],
+                "attribute": "network_contact_effectiveness",
+                "change_type": "new_information",
+                "old_value": null,
+                "new_claim": "MooreSandra and GonzalezMary were instrumental; their connections opened doors",
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "source_id": "new-2",
+                    "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+                  }
+                ],
+                "conditions": [],
+                "time_expressions": [],
+                "event_date": null,
+                "unknowns": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "fact": null,
+                "relation": "new_information",
+                "subject": null,
+                "attribute": "client_milestone",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                    "position": {
+                      "start": 0,
+                      "end": 141
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": null,
+                "old_position": null,
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": null,
+                "old_source_ref": null,
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "value": null,
+                "scope": null,
+                "status": null,
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": null,
+                "fact": null,
+                "relation": "new_information",
+                "subject": null,
+                "attribute": "network_contact_effectiveness",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "unsplit-new-2",
+                    "source_id": "new-2",
+                    "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                    "position": {
+                      "start": 0,
+                      "end": 201
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": null,
+                "old_position": null,
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "source_id": "new-2",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "memory_id": null,
+                "old_source_ref": null,
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "value": null,
+                "scope": null,
+                "status": null,
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "change",
+                "subject": null,
+                "attribute": "employer",
+                "old_value": "Blockchain Tech",
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech",
+                    "position": {
+                      "start": 43,
+                      "end": 58
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients",
+                    "position": {
+                      "start": 48,
+                      "end": 103
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Blockchain Tech",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "change",
+                "subject": null,
+                "attribute": "title",
+                "old_value": "senior developer",
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer",
+                    "position": {
+                      "start": 23,
+                      "end": 39
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "my consulting firm finally secured some initial clients",
+                    "position": {
+                      "start": 48,
+                      "end": 103
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "senior developer",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_quote": "my consulting firm finally secured some initial clients",
+                "new_position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [
+                  "exact title or role name in the consulting firm"
+                ],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Blockchain Tech",
+                "position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "my consulting firm finally secured some initial clients",
+                "position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "senior developer",
+                "position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "my consulting firm finally secured some initial clients",
+                "position": {
+                  "start": 48,
+                  "end": 103
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 2,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 3,
+                "side": "new",
+                "unit_id": "unsplit-new-2",
+                "source_id": "new-2",
+                "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm finally secured some initial clients",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm finally secured some initial clients",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 2,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 3,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "explicit_source_id": "new-2",
+              "candidate_source_ids": [
+                "new-2"
+              ],
+              "source_id": "new-2",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 6,
+            "source_resolved": 6,
+            "unique_correct_side_on_disk": 6,
+            "list_text_retained": 6,
+            "list_resolved_with_source": 6,
+            "scalar_projection": 6,
+            "scalar_source_valid": 6,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 4
+        }
+      }
+    },
+    "v2": {
+      "artifact": "variants/evidence_aligner/runs/v2_paired_20261120/career_history.json",
+      "upstream_status": "failed",
+      "raw_record_count": 2,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "relation": "unrelated",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "historical_employer",
+              "new_attribute": "current_activity",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized",
+                "model unknown: start date of consulting firm",
+                "model unknown: end date of Blockchain Tech employment"
+              ],
+              "upstream_version": "v2",
+              "upstream_relation": "new_information",
+              "upstream_target_relation": "different",
+              "upstream_structure_errors": [
+                {
+                  "code": "uncovered_unit",
+                  "path": "new_units",
+                  "message": "unsplit-new-2"
+                }
+              ],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Blockchain Tech",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "Blockchain Tech",
+                  "attribute": "historical_employer",
+                  "statement": "user was employed by Blockchain Tech",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "consulting firm",
+                  "attribute": "current_activity",
+                  "statement": "user runs a consulting firm that secured initial clients",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "new_information",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "The old claim states a past employer (Blockchain Tech); the new claim describes current entrepreneurial activity (own consulting firm securing clients). These are distinct roles — historical employment vs. current founder/operator status — with no textual indication that the prior role ended or was replaced, nor any identity link between 'Blockchain Tech' and 'consulting firm'. The new evidence introduces a new domain (political consulting), not a revision of the old employer.",
+                "unknowns": [
+                  "start date of consulting firm",
+                  "end date of Blockchain Tech employment"
+                ]
+              }
+            },
+            {
+              "unit_id": "title",
+              "relation": "unrelated",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "historical_title",
+              "new_attribute": "current_role",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized",
+                "model unknown: whether senior developer role has ended",
+                "model unknown: current formal title at consulting firm"
+              ],
+              "upstream_version": "v2",
+              "upstream_relation": "new_information",
+              "upstream_target_relation": "different",
+              "upstream_structure_errors": [
+                {
+                  "code": "uncovered_unit",
+                  "path": "new_units",
+                  "message": "unsplit-new-2"
+                }
+              ],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "senior developer",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "senior developer",
+                  "attribute": "historical_title",
+                  "statement": "user held the title of senior developer",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "consulting firm",
+                  "attribute": "current_role",
+                  "statement": "user is the founder/operator of a consulting firm",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "new_information",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "The old claim specifies a historical job title ('senior developer'); the new claim implies a current role as head of a consulting firm. No statement in the new evidence denies or replaces the prior title, nor equates 'senior developer' with any current function. The two reflect different career stages and domains (technology employment vs. political consulting entrepreneurship) without overlap in subject-object-attribute alignment.",
+                "unknowns": [
+                  "whether senior developer role has ended",
+                  "current formal title at consulting firm"
+                ]
+              }
+            },
+            {
+              "unit_id": null,
+              "relation": "unknown",
+              "old_quote": null,
+              "new_quote": null,
+              "source_id": null,
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream new unit unhandled or uncovered: unsplit-new-2"
+              ],
+              "unhandled_new_unit_id": "unsplit-new-2",
+              "upstream_coverage": true
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "relation": "unknown",
+                "source_id": null,
+                "source_ref": null,
+                "new_quote": null,
+                "new_position": null,
+                "subject": null,
+                "attribute": null,
+                "value": null,
+                "scope": null,
+                "missing_reasons": [
+                  "upstream new unit unhandled or uncovered: unsplit-new-2"
+                ],
+                "reason": "evidence source missing or source id duplicated"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "unrelated",
+                "old_quote": "Blockchain Tech",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": "user",
+                "attribute": "historical_employer",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized",
+                  "model unknown: start date of consulting firm",
+                  "model unknown: end date of Blockchain Tech employment"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized; model unknown: start date of consulting firm; model unknown: end date of Blockchain Tech employment"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "unrelated",
+                "old_quote": "senior developer",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": "user",
+                "attribute": "historical_title",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized",
+                  "model unknown: whether senior developer role has ended",
+                  "model unknown: current formal title at consulting firm"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: upstream validation error: {'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized; model unknown: whether senior developer role has ended; model unknown: current formal title at consulting firm"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": null,
+                "source_id": null,
+                "new_quote": null,
+                "new_position": null,
+                "status": "invalid",
+                "new_error": "evidence source missing or source id duplicated"
+              },
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Blockchain Tech",
+                "source_id": "new-0",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "senior developer",
+                "source_id": "new-0",
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "unknown",
+              "upstream_relation": "new_information",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "historical_employer",
+              "new_attribute": "current_activity",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": {
+                "subject": "user",
+                "object": "Blockchain Tech",
+                "attribute": "historical_employer",
+                "statement": "user was employed by Blockchain Tech",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "new_claim": {
+                "subject": "user",
+                "object": "consulting firm",
+                "attribute": "current_activity",
+                "statement": "user runs a consulting firm that secured initial clients",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "unknowns": [
+                "start date of consulting firm",
+                "end date of Blockchain Tech employment"
+              ],
+              "validation_errors": [],
+              "missing_reasons": [
+                "new_information is linked to an old unit; independence requires confirmation",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v2",
+              "upstream_target_relation": "different",
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "Blockchain Tech",
+                  "attribute": "historical_employer",
+                  "statement": "user was employed by Blockchain Tech",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "consulting firm",
+                  "attribute": "current_activity",
+                  "statement": "user runs a consulting firm that secured initial clients",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "new_information",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "The old claim states a past employer (Blockchain Tech); the new claim describes current entrepreneurial activity (own consulting firm securing clients). These are distinct roles — historical employment vs. current founder/operator status — with no textual indication that the prior role ended or was replaced, nor any identity link between 'Blockchain Tech' and 'consulting firm'. The new evidence introduces a new domain (political consulting), not a revision of the old employer.",
+                "unknowns": [
+                  "start date of consulting firm",
+                  "end date of Blockchain Tech employment"
+                ]
+              }
+            },
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "unknown",
+              "upstream_relation": "new_information",
+              "old_subject": "user",
+              "new_subject": "user",
+              "old_attribute": "historical_title",
+              "new_attribute": "current_role",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": {
+                "subject": "user",
+                "object": "senior developer",
+                "attribute": "historical_title",
+                "statement": "user held the title of senior developer",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "new_claim": {
+                "subject": "user",
+                "object": "consulting firm",
+                "attribute": "current_role",
+                "statement": "user is the founder/operator of a consulting firm",
+                "qualifiers": [],
+                "event_date": null
+              },
+              "unknowns": [
+                "whether senior developer role has ended",
+                "current formal title at consulting firm"
+              ],
+              "validation_errors": [],
+              "missing_reasons": [
+                "new_information is linked to an old unit; independence requires confirmation",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v2",
+              "upstream_target_relation": "different",
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "old_claim": {
+                  "subject": "user",
+                  "object": "senior developer",
+                  "attribute": "historical_title",
+                  "statement": "user held the title of senior developer",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "new_claim": {
+                  "subject": "user",
+                  "object": "consulting firm",
+                  "attribute": "current_role",
+                  "statement": "user is the founder/operator of a consulting firm",
+                  "qualifiers": [],
+                  "event_date": null
+                },
+                "target_relation": "different",
+                "change_type": "new_information",
+                "old_quotes": [
+                  {
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer"
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "change_evidence": [],
+                "relation_explanation": "The old claim specifies a historical job title ('senior developer'); the new claim implies a current role as head of a consulting firm. No statement in the new evidence denies or replaces the prior title, nor equates 'senior developer' with any current function. The two reflect different career stages and domains (technology employment vs. political consulting entrepreneurship) without overlap in subject-object-attribute alignment.",
+                "unknowns": [
+                  "whether senior developer role has ended",
+                  "current formal title at consulting firm"
+                ]
+              }
+            },
+            {
+              "unit_id": null,
+              "relation": "unknown",
+              "old_quote": null,
+              "new_quote": null,
+              "source_id": null,
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream new unit unhandled or uncovered: unsplit-new-2"
+              ],
+              "validation_errors": [],
+              "unhandled_new_unit_id": "unsplit-new-2",
+              "upstream_coverage": true,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown"
+            },
+            {
+              "unit_id": null,
+              "relation": "unknown",
+              "old_quote": null,
+              "new_quote": null,
+              "source_id": null,
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "upstream non-record-specific error: [{'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}]"
+              ],
+              "validation_errors": [],
+              "upstream_coverage": true,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown"
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "fact": null,
+                "relation": "unknown",
+                "subject": null,
+                "attribute": null,
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": null,
+                    "source_id": null,
+                    "quote": null,
+                    "position": null,
+                    "source_ref": null,
+                    "status": "invalid",
+                    "reason": "evidence source missing or duplicated"
+                  }
+                ],
+                "old_quote": null,
+                "old_position": null,
+                "new_quote": null,
+                "new_position": null,
+                "source_id": null,
+                "source_ref": null,
+                "memory_id": null,
+                "old_source_ref": null,
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "upstream new unit unhandled or uncovered: unsplit-new-2"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: upstream new unit unhandled or uncovered: unsplit-new-2"
+              },
+              {
+                "unit_id": null,
+                "fact": null,
+                "relation": "unknown",
+                "subject": null,
+                "attribute": null,
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": null,
+                    "source_id": null,
+                    "quote": null,
+                    "position": null,
+                    "source_ref": null,
+                    "status": "invalid",
+                    "reason": "evidence source missing or duplicated"
+                  }
+                ],
+                "old_quote": null,
+                "old_position": null,
+                "new_quote": null,
+                "new_position": null,
+                "source_id": null,
+                "source_ref": null,
+                "memory_id": null,
+                "old_source_ref": null,
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "upstream non-record-specific error: [{'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}]"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: upstream non-record-specific error: [{'code': 'uncovered_unit', 'path': 'new_units', 'message': 'unsplit-new-2'}]"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "unknown",
+                "subject": "user",
+                "attribute": "historical_employer",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech",
+                    "position": {
+                      "start": 43,
+                      "end": 58
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                    "position": {
+                      "start": 0,
+                      "end": 141
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Blockchain Tech",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "new_information is linked to an old unit; independence requires confirmation",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [
+                  "start date of consulting firm",
+                  "end date of Blockchain Tech employment"
+                ],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: new_information is linked to an old unit; independence requires confirmation; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "unknown",
+                "subject": "user",
+                "attribute": "historical_title",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer",
+                    "position": {
+                      "start": 23,
+                      "end": 39
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                    "position": {
+                      "start": 0,
+                      "end": 141
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "senior developer",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "new_position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "new_information is linked to an old unit; independence requires confirmation",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [
+                  "whether senior developer role has ended",
+                  "current formal title at consulting firm"
+                ],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: new_information is linked to an old unit; independence requires confirmation; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Blockchain Tech",
+                "position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "senior developer",
+                "position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+                "position": {
+                  "start": 0,
+                  "end": 141
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 2,
+                "side": "new",
+                "unit_id": null,
+                "source_id": null,
+                "quote": null,
+                "position": null,
+                "source_ref": null,
+                "status": "invalid",
+                "reason": "evidence source missing or duplicated"
+              },
+              {
+                "alignment_index": 3,
+                "side": "new",
+                "unit_id": null,
+                "source_id": null,
+                "quote": null,
+                "position": null,
+                "source_ref": null,
+                "status": "invalid",
+                "reason": "evidence source missing or duplicated"
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me.",
+              "explicit_source_id": "new-0",
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 4,
+            "source_resolved": 4,
+            "unique_correct_side_on_disk": 4,
+            "list_text_retained": 4,
+            "list_resolved_with_source": 4,
+            "scalar_projection": 4,
+            "scalar_source_valid": 4,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 2
+        }
+      }
+    },
+    "v3": {
+      "artifact": "variants/evidence_aligner/runs/v3_paired_20261120/career_history.json",
+      "upstream_status": "passed",
+      "raw_record_count": 3,
+      "engines": {
+        "planner_v1": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "my consulting firm",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "Blockchain Tech",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "my consulting firm",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Blockchain Tech"
+                ],
+                "new_quotes": [
+                  "my consulting firm"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "relation": "change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "title",
+              "new_attribute": "title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "consulting firm",
+              "source_id": "new-0",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "state_change",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "resolved_old_quotes": [
+                {
+                  "quote": "senior developer",
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "quote": "consulting firm",
+                  "source_id": "new-0"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "title",
+                "relation": "state_change",
+                "old_quotes": [
+                  "senior developer"
+                ],
+                "new_quotes": [
+                  "consulting firm"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": null,
+              "relation": "unrelated",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "network_support",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "source_id": "new-2",
+              "old_conditions": null,
+              "new_conditions": null,
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_version": "v3",
+              "upstream_relation": "new_information",
+              "upstream_target_relation": null,
+              "upstream_structure_errors": [],
+              "old_quote_source_id": null,
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "source_id": "new-2"
+                }
+              ],
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "unsplit-new-2"
+                ],
+                "attribute": "network_support",
+                "relation": "new_information",
+                "old_quotes": [],
+                "new_quotes": [
+                  "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+                ],
+                "qualifiers": [],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "relation": "unrelated",
+                "source_id": "new-2",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "subject": null,
+                "attribute": "network_support",
+                "value": null,
+                "scope": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "change",
+                "old_quote": "Blockchain Tech",
+                "new_quote": "my consulting firm",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 66
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": null,
+                "attribute": "employer",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "change",
+                "old_quote": "senior developer",
+                "new_quote": "consulting firm",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 51,
+                  "end": 66
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "old_value": null,
+                "new_value": null,
+                "subject": null,
+                "attribute": "title",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "note": null,
+                "time_note": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "unit_id": null,
+                "source_id": "new-2",
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "status": "invalid",
+                "new_error": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "alignment_index": 0,
+                "old_quote": "Blockchain Tech",
+                "source_id": "new-0",
+                "new_quote": "my consulting firm",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_position": {
+                  "start": 48,
+                  "end": 66
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              },
+              {
+                "unit_id": "title",
+                "alignment_index": 0,
+                "old_quote": "senior developer",
+                "source_id": "new-0",
+                "new_quote": "consulting firm",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_position": {
+                  "start": 51,
+                  "end": 66
+                },
+                "status": "valid",
+                "old_error": null,
+                "new_error": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "consulting firm",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 2,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-2"
+              ],
+              "source_id": "new-2",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 5,
+            "source_resolved": 5,
+            "unique_correct_side_on_disk": 5,
+            "list_text_retained": 5,
+            "list_resolved_with_source": 5,
+            "scalar_projection": 5,
+            "scalar_source_valid": 5,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 3
+        },
+        "planner_v2": {
+          "projection": [
+            {
+              "unit_id": "employer",
+              "old_unit_ids": [
+                "employer"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "employer",
+              "new_attribute": "employer",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "Blockchain Tech",
+              "new_quote": "my consulting firm",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "Blockchain Tech",
+                  "unit_id": "employer"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "my consulting firm",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [
+                {
+                  "side": "new",
+                  "kind": "time",
+                  "quote": "lately",
+                  "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                }
+              ],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "employer"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "employer",
+                "relation": "state_change",
+                "old_quotes": [
+                  "Blockchain Tech"
+                ],
+                "new_quotes": [
+                  "my consulting firm"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": "title",
+              "old_unit_ids": [
+                "title"
+              ],
+              "new_unit_ids": [
+                "manually_mapped_new"
+              ],
+              "relation": "change",
+              "upstream_relation": "state_change",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": "title",
+              "new_attribute": "title",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": "senior developer",
+              "new_quote": "consulting firm",
+              "source_id": "new-0",
+              "old_quote_source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "consulting firm",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "resolved_old_quotes": [
+                {
+                  "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                  "quote": "senior developer",
+                  "unit_id": "title"
+                }
+              ],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-0",
+                  "quote": "consulting firm",
+                  "unit_id": "manually_mapped_new"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [
+                {
+                  "side": "new",
+                  "kind": "time",
+                  "quote": "lately",
+                  "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                }
+              ],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as old_subject",
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as old_value",
+                "not explicitly supplied as new_value",
+                "old_conditions not explicitly normalized",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [
+                  "title"
+                ],
+                "new_unit_ids": [
+                  "manually_mapped_new"
+                ],
+                "attribute": "title",
+                "relation": "state_change",
+                "old_quotes": [
+                  "senior developer"
+                ],
+                "new_quotes": [
+                  "consulting firm"
+                ],
+                "qualifiers": [
+                  {
+                    "side": "new",
+                    "kind": "time",
+                    "quote": "lately",
+                    "claim_quote": "I've been feeling quite relieved lately because my consulting firm finally secured some initial clients. It's a significant milestone for me."
+                  }
+                ],
+                "missing_evidence": []
+              }
+            },
+            {
+              "unit_id": null,
+              "old_unit_ids": [],
+              "new_unit_ids": [
+                "unsplit-new-2"
+              ],
+              "relation": "new_information",
+              "upstream_relation": "new_information",
+              "old_subject": null,
+              "new_subject": null,
+              "old_attribute": null,
+              "new_attribute": "network_support",
+              "old_value": null,
+              "new_value": null,
+              "old_quote": null,
+              "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "source_id": "new-2",
+              "old_quote_source_id": null,
+              "old_quotes": [],
+              "new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "unit_id": "unsplit-new-2"
+                }
+              ],
+              "resolved_old_quotes": [],
+              "resolved_new_quotes": [
+                {
+                  "source_id": "new-2",
+                  "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                  "unit_id": "unsplit-new-2"
+                }
+              ],
+              "old_conditions": null,
+              "new_conditions": null,
+              "temporal_order": {
+                "relation": "unknown",
+                "basis": []
+              },
+              "semantic_support": "unknown",
+              "qualifiers": [],
+              "old_qualifiers": [],
+              "new_qualifiers": [],
+              "conditions": [],
+              "time_expressions": [],
+              "old_claim": null,
+              "new_claim": null,
+              "unknowns": [],
+              "validation_errors": [],
+              "missing_reasons": [
+                "not explicitly supplied as new_subject",
+                "not explicitly supplied as new_value",
+                "new_conditions not explicitly normalized"
+              ],
+              "upstream_structure_errors": [],
+              "upstream_version": "v3",
+              "upstream_target_relation": null,
+              "raw_record": {
+                "old_unit_ids": [],
+                "new_unit_ids": [
+                  "unsplit-new-2"
+                ],
+                "attribute": "network_support",
+                "relation": "new_information",
+                "old_quotes": [],
+                "new_quotes": [
+                  "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth."
+                ],
+                "qualifiers": [],
+                "missing_evidence": []
+              }
+            }
+          ],
+          "plan": {
+            "modify": [],
+            "preserve": [],
+            "uncertain": [
+              {
+                "unit_id": null,
+                "fact": null,
+                "relation": "new_information",
+                "subject": null,
+                "attribute": "network_support",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "unsplit-new-2",
+                    "source_id": "new-2",
+                    "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                    "position": {
+                      "start": 0,
+                      "end": 201
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": null,
+                "old_position": null,
+                "new_quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "new_position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "source_id": "new-2",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "memory_id": null,
+                "old_source_ref": null,
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as new_value",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "value": null,
+                "scope": null,
+                "status": null,
+                "reason": "missing upstream information: not explicitly supplied as new_subject; not explicitly supplied as new_value; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "employer",
+                "fact": "historical_employer",
+                "relation": "change",
+                "subject": null,
+                "attribute": "employer",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "employer",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "Blockchain Tech",
+                    "position": {
+                      "start": 43,
+                      "end": 58
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "my consulting firm",
+                    "position": {
+                      "start": 48,
+                      "end": 66
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "Blockchain Tech",
+                "old_position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "new_quote": "my consulting firm",
+                "new_position": {
+                  "start": 48,
+                  "end": 66
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              },
+              {
+                "unit_id": "title",
+                "fact": "historical_title",
+                "relation": "change",
+                "subject": null,
+                "attribute": "title",
+                "old_value": null,
+                "new_value": null,
+                "old_quotes": [
+                  {
+                    "side": "old",
+                    "unit_id": "title",
+                    "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                    "quote": "senior developer",
+                    "position": {
+                      "start": 23,
+                      "end": 39
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "new_quotes": [
+                  {
+                    "side": "new",
+                    "unit_id": "manually_mapped_new",
+                    "source_id": "new-0",
+                    "quote": "consulting firm",
+                    "position": {
+                      "start": 51,
+                      "end": 66
+                    },
+                    "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                    "status": "valid",
+                    "reason": null
+                  }
+                ],
+                "old_quote": "senior developer",
+                "old_position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "new_quote": "consulting firm",
+                "new_position": {
+                  "start": 51,
+                  "end": 66
+                },
+                "source_id": "new-0",
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "memory_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "note": null,
+                "time_note": null,
+                "missing_reasons": [
+                  "not explicitly supplied as old_subject",
+                  "not explicitly supplied as new_subject",
+                  "not explicitly supplied as old_value",
+                  "not explicitly supplied as new_value",
+                  "old_conditions not explicitly normalized",
+                  "new_conditions not explicitly normalized"
+                ],
+                "validation_errors": [],
+                "unknowns": [],
+                "temporal_order": {
+                  "relation": "unknown",
+                  "basis": []
+                },
+                "semantic_support": "unknown",
+                "semantic_basis": null,
+                "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+              }
+            ],
+            "add": [],
+            "editable_spans": [],
+            "protected_facts": [],
+            "quote_checks": [
+              {
+                "alignment_index": 0,
+                "side": "old",
+                "unit_id": "employer",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "Blockchain Tech",
+                "position": {
+                  "start": 43,
+                  "end": 58
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 0,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "my consulting firm",
+                "position": {
+                  "start": 48,
+                  "end": 66
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "old",
+                "unit_id": "title",
+                "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+                "quote": "senior developer",
+                "position": {
+                  "start": 23,
+                  "end": 39
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 1,
+                "side": "new",
+                "unit_id": "manually_mapped_new",
+                "source_id": "new-0",
+                "quote": "consulting firm",
+                "position": {
+                  "start": 51,
+                  "end": 66
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+                "status": "valid",
+                "reason": null
+              },
+              {
+                "alignment_index": 2,
+                "side": "new",
+                "unit_id": "unsplit-new-2",
+                "source_id": "new-2",
+                "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+                "position": {
+                  "start": 0,
+                  "end": 201
+                },
+                "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+                "status": "valid",
+                "reason": null
+              }
+            ]
+          },
+          "quote_audit": [
+            {
+              "record_index": 0,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "Blockchain Tech",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 0,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "my consulting firm",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "old",
+              "quote_index": 0,
+              "quote": "senior developer",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "05afde13-35bd-4d26-bbae-6de427d58db1"
+              ],
+              "source_id": "05afde13-35bd-4d26-bbae-6de427d58db1",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/before.json",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 1,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "consulting firm",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-0"
+              ],
+              "source_id": "new-0",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/0/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            },
+            {
+              "record_index": 2,
+              "side": "new",
+              "quote_index": 0,
+              "quote": "MooreSandra and GonzalezMary were indeed instrumental. Their connections opened doors I couldn't have imagined. I'm focusing on maintaining these relationships as they are crucial for my firm's growth.",
+              "explicit_source_id": null,
+              "candidate_source_ids": [
+                "new-2"
+              ],
+              "source_id": "new-2",
+              "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/348492a7-cfe4-ee1d-73c3-c276d6ba8277/session_008/input.json#/raw_dialogue/2/content",
+              "source_side_ok": true,
+              "unique_in_source": true,
+              "source_matches_disk": true,
+              "retained_text_in_resolved_list": true,
+              "resolved_in_projection_list": true,
+              "retained_as_scalar": true,
+              "scalar_source_valid": true
+            }
+          ],
+          "counts": {
+            "raw_quotes": 5,
+            "source_resolved": 5,
+            "unique_correct_side_on_disk": 5,
+            "list_text_retained": 5,
+            "list_resolved_with_source": 5,
+            "scalar_projection": 5,
+            "scalar_source_valid": 5,
+            "source_unresolved_in_list": 0
+          },
+          "projected_record_count": 3
+        }
+      }
+    }
+  }
+}

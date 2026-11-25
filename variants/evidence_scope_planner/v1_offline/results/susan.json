@@ -1,0 +1,372 @@
+{
+  "case_id": "susan",
+  "human_alignment": {
+    "modify": [],
+    "preserve": [
+      {
+        "unit_id": "support",
+        "fact": "friend_support",
+        "relation": "same",
+        "old_quote": "provides support and encouragement",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": "support and encouragement",
+        "new_value": "support and encouragement",
+        "subject": "user",
+        "attribute": "relationship.support",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [],
+        "note": "支持和鼓励得到新证据确认。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "scope": {
+          "kind": "unconditional"
+        },
+        "reason": "unchanged or outside evidence scope"
+      }
+    ],
+    "uncertain": [
+      {
+        "unit_id": "friendship",
+        "fact": "friendship",
+        "relation": "unknown",
+        "old_quote": "friend named ThomasSusan",
+        "new_quote": "Susan's support has indeed been invaluable.",
+        "old_position": {
+          "start": 6,
+          "end": 30
+        },
+        "new_position": {
+          "start": 0,
+          "end": 43
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": "friend named ThomasSusan",
+        "new_value": "Susan provides support",
+        "subject": "user",
+        "attribute": "relationship.friendship",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [],
+        "note": "新话语支持 Susan 的支持，但未独立明确重新确认朋友关系；原句仍可保留，姓名指代依据旧来源。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "新话语支持 Susan 的支持，但未独立明确重新确认朋友关系；原句仍可保留，姓名指代依据旧来源。"
+      },
+      {
+        "unit_id": "support",
+        "fact": "friend_support",
+        "relation": "supplement",
+        "old_quote": "provides support and encouragement",
+        "new_quote": "Daniel's insights have really pushed me to think outside the box in my career.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 101,
+          "end": 179
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": "support and encouragement",
+        "new_value": "insights helped career thinking",
+        "subject": "user",
+        "attribute": "relationship.support",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [],
+        "note": "Daniel 的帮助可独立新增，不替代 Susan。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "reason": "condition kind missing or unsupported"
+      }
+    ],
+    "add": [
+      {
+        "unit_id": null,
+        "relation": "plan",
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content",
+        "new_quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "new_position": {
+          "start": 140,
+          "end": 255
+        },
+        "subject": "user",
+        "attribute": "career.job_search",
+        "value": "find a new job offering better work-life balance and alignment with humanitarian goals",
+        "scope": {
+          "kind": "unknown"
+        },
+        "missing_reasons": [],
+        "status": "planned",
+        "reason": "planned; not asserted as completed"
+      },
+      {
+        "unit_id": "support",
+        "fact": "friend_support",
+        "relation": "supplement",
+        "old_quote": "provides support and encouragement",
+        "new_quote": "Daniel's insights have really pushed me to think outside the box in my career.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 101,
+          "end": 179
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": "support and encouragement",
+        "new_value": "insights helped career thinking",
+        "subject": "user",
+        "attribute": "relationship.Daniel",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [],
+        "note": "Daniel 的帮助可独立新增，不替代 Susan。",
+        "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+        "value": "insights helped career thinking",
+        "scope": {
+          "kind": "unknown"
+        },
+        "status": "asserted",
+        "reason": "independent addition"
+      }
+    ],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": null,
+        "source_id": "new-0",
+        "new_quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "new_position": {
+          "start": 140,
+          "end": 255
+        },
+        "status": "valid",
+        "new_error": null
+      },
+      {
+        "unit_id": "friendship",
+        "alignment_index": 0,
+        "old_quote": "friend named ThomasSusan",
+        "source_id": "new-2",
+        "new_quote": "Susan's support has indeed been invaluable.",
+        "old_position": {
+          "start": 6,
+          "end": 30
+        },
+        "new_position": {
+          "start": 0,
+          "end": 43
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "support",
+        "alignment_index": 0,
+        "old_quote": "provides support and encouragement",
+        "source_id": "new-2",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "support",
+        "alignment_index": 1,
+        "old_quote": "provides support and encouragement",
+        "source_id": "new-2",
+        "new_quote": "Daniel's insights have really pushed me to think outside the box in my career.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 101,
+          "end": 179
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      }
+    ]
+  },
+  "saved_v3_alignment": {
+    "modify": [],
+    "preserve": [],
+    "uncertain": [
+      {
+        "unit_id": null,
+        "relation": "unrelated",
+        "source_id": "new-0",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content",
+        "new_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "new_position": {
+          "start": 0,
+          "end": 255
+        },
+        "subject": null,
+        "attribute": "career_wellbeing_alignment",
+        "value": null,
+        "scope": null,
+        "missing_reasons": [
+          "upstream validation error: {'code': 'missing_quote', 'path': 'records[2].old_quotes', 'message': 'at least one quote required'}",
+          "upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'friendship'}",
+          "upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'support'}",
+          "multiple old unit IDs; no unique unit binding",
+          "old side lacks a single uniquely represented quote",
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "reason": "missing upstream information: upstream validation error: {'code': 'missing_quote', 'path': 'records[2].old_quotes', 'message': 'at least one quote required'}; upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'friendship'}; upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'support'}; multiple old unit IDs; no unique unit binding; old side lacks a single uniquely represented quote; not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "friendship",
+        "fact": "friendship",
+        "relation": "unknown",
+        "old_quote": "friend named ThomasSusan",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 6,
+          "end": 30
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "friendship",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "support",
+        "fact": "friend_support",
+        "relation": "supplement",
+        "old_quote": "provides support and encouragement",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "source_id": "new-2",
+        "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+        "old_value": null,
+        "new_value": null,
+        "subject": null,
+        "attribute": "support",
+        "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+        "old_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+        "missing_reasons": [
+          "not explicitly supplied as old_subject",
+          "not explicitly supplied as new_subject",
+          "not explicitly supplied as old_value",
+          "not explicitly supplied as new_value",
+          "old_conditions not explicitly normalized",
+          "new_conditions not explicitly normalized"
+        ],
+        "note": null,
+        "time_note": null,
+        "reason": "missing upstream information: not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      }
+    ],
+    "add": [],
+    "editable_spans": [],
+    "protected_facts": [],
+    "quote_checks": [
+      {
+        "unit_id": null,
+        "source_id": "new-0",
+        "new_quote": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+        "new_position": {
+          "start": 0,
+          "end": 255
+        },
+        "status": "invalid",
+        "new_error": "missing upstream information: upstream validation error: {'code': 'missing_quote', 'path': 'records[2].old_quotes', 'message': 'at least one quote required'}; upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'friendship'}; upstream validation error: {'code': 'unit_without_quote', 'path': 'records[2].old_unit_ids', 'message': 'support'}; multiple old unit IDs; no unique unit binding; old side lacks a single uniquely represented quote; not explicitly supplied as old_subject; not explicitly supplied as new_subject; not explicitly supplied as old_value; not explicitly supplied as new_value; old_conditions not explicitly normalized; new_conditions not explicitly normalized"
+      },
+      {
+        "unit_id": "friendship",
+        "alignment_index": 0,
+        "old_quote": "friend named ThomasSusan",
+        "source_id": "new-2",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 6,
+          "end": 30
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      },
+      {
+        "unit_id": "support",
+        "alignment_index": 0,
+        "old_quote": "provides support and encouragement",
+        "source_id": "new-2",
+        "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+        "old_position": {
+          "start": 60,
+          "end": 94
+        },
+        "new_position": {
+          "start": 0,
+          "end": 96
+        },
+        "status": "valid",
+        "old_error": null,
+        "new_error": null
+      }
+    ]
+  }
+}

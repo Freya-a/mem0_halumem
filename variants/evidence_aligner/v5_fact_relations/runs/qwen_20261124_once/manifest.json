@@ -1,0 +1,86 @@
+{
+  "model": "qwen-plus-2025-12-01",
+  "temperature": 0,
+  "response_format": {
+    "type": "json_object"
+  },
+  "max_tokens": 8192,
+  "automatic_retries": 0,
+  "maximum_requests": 5,
+  "request_attempts": 5,
+  "model_responses": 5,
+  "status": "completed",
+  "prompt_sha256": "6f4edc1e3636386b19f981fc3465ecb170e3cdecc8b22192d7a1e8c2f646cf6d",
+  "cases": [
+    {
+      "case_id": "susan",
+      "status": "failed",
+      "attempts": 1,
+      "elapsed_seconds": 45.622,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 2006,
+        "prompt_tokens": 8027,
+        "total_tokens": 10033,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case_id": "promotion",
+      "status": "passed",
+      "attempts": 1,
+      "elapsed_seconds": 28.991,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1269,
+        "prompt_tokens": 12642,
+        "total_tokens": 13911,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case_id": "career_history",
+      "status": "failed",
+      "attempts": 1,
+      "elapsed_seconds": 35.45,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1561,
+        "prompt_tokens": 13680,
+        "total_tokens": 15241,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case_id": "transition",
+      "status": "passed",
+      "attempts": 1,
+      "elapsed_seconds": 25.733,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 1125,
+        "prompt_tokens": 12199,
+        "total_tokens": 13324,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    },
+    {
+      "case_id": "skydiving",
+      "status": "passed",
+      "attempts": 1,
+      "elapsed_seconds": 72.353,
+      "returned_model": "qwen-plus-2025-12-01",
+      "usage": {
+        "completion_tokens": 3253,
+        "prompt_tokens": 8339,
+        "total_tokens": 11592,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "case_id": "susan",
+  "old_memory": "Has a friend named ThomasSusan (referred to as 'Susan') who provides support and encouragement",
+  "memory_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+  "old_memory_source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/before.json",
+  "units": [
+    {
+      "id": "friendship",
+      "quote": "friend named ThomasSusan",
+      "fact": "friendship"
+    },
+    {
+      "id": "support",
+      "quote": "provides support and encouragement",
+      "fact": "friend_support"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "new-0",
+      "text": "I've been thinking a lot about my career lately, and I've realized that my current role isn't supporting my well-being as much as I'd like. It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/0/content",
+      "speaker": "user",
+      "recorded_at": "Feb 05, 2026, 17:13:15",
+      "side": "new"
+    },
+    {
+      "source_id": "new-2",
+      "text": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals. And Daniel's insights have really pushed me to think outside the box in my career. It's been exciting to see how these connections have opened up new possibilities.",
+      "source_ref": "results/medium_dev/williams_native_prefix5_20261028_v3/users/2f1f897e-d67f-dbc5-6a7b-b7634a9e294f/session_007/input.json#/raw_dialogue/2/content",
+      "speaker": "user",
+      "recorded_at": "Feb 05, 2026, 17:15:18",
+      "side": "new"
+    }
+  ],
+  "alignments": [
+    {
+      "unit_id": "friendship",
+      "relation": "unknown",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "relationship.friendship",
+      "new_attribute": "relationship.friendship",
+      "old_value": "friend named ThomasSusan",
+      "new_value": "Susan provides support",
+      "old_quote": "friend named ThomasSusan",
+      "new_quote": "Susan's support has indeed been invaluable.",
+      "source_id": "new-2",
+      "old_conditions": {
+        "kind": "unknown"
+      },
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "新话语支持 Susan 的支持，但未独立明确重新确认朋友关系；原句仍可保留，姓名指代依据旧来源。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。"
+    },
+    {
+      "unit_id": "support",
+      "relation": "same",
+      "old_subject": "user",
+      "new_subject": "user",
+      "old_attribute": "relationship.support",
+      "new_attribute": "relationship.support",
+      "old_value": "support and encouragement",
+      "new_value": "support and encouragement",
+      "old_quote": "provides support and encouragement",
+      "new_quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+      "source_id": "new-2",
+      "old_conditions": {
+        "kind": "unconditional"
+      },
+      "new_conditions": {
+        "kind": "same_as_old"
+      },
+      "note": "支持和鼓励得到新证据确认。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "a1332815-d6ba-4bdc-9ffa-657f7315d0ed",
+          "quote": "provides support and encouragement",
+          "side": "old"
+        },
+        {
+          "source_id": "new-2",
+          "quote": "Susan's support has indeed been invaluable. Her encouragement helps me stay focused on my goals.",
+          "side": "new"
+        }
+      ]
+    },
+    {
+      "unit_id": null,
+      "relation": "supplement",
+      "new_subject": "user",
+      "new_attribute": "relationship.Daniel",
+      "new_value": "insights helped career thinking",
+      "new_quote": "Daniel's insights have really pushed me to think outside the box in my career.",
+      "source_id": "new-2",
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "新证据所述内容可独立新增；不作为旧事实是否变化的依据。",
+      "time_note": "事实有效日期未知；对话记录时间不是有效日期。",
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "new-2",
+          "quote": "Daniel's insights have really pushed me to think outside the box in my career.",
+          "side": "new"
+        }
+      ],
+      "modality": "asserted"
+    },
+    {
+      "unit_id": null,
+      "relation": "plan",
+      "new_subject": "user",
+      "new_attribute": "career.job_search",
+      "new_value": "find a new job offering better work-life balance and alignment with humanitarian goals",
+      "new_quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+      "source_id": "new-0",
+      "new_conditions": {
+        "kind": "unknown"
+      },
+      "note": "求职意向，未证明完成。",
+      "semantic_support": "supported",
+      "semantic_basis": [
+        {
+          "source_id": "new-0",
+          "quote": "It's crucial for me to find a new job that offers a better work-life balance and aligns with my humanitarian goals.",
+          "side": "new"
+        }
+      ],
+      "modality": "planned"
+    }
+  ],
+  "input_provenance": "人工根据旧记忆、用户对话和旧上下文整理；不是模型输出，也不是评估预期。"
+}
